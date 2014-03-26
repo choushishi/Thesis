@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: first try.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: literature.aux
+A level-1 auxiliary file: theoretical.aux
+A level-1 auxiliary file: calculation.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: first_try-blx.bib
+Database file #2: ref.bib
+I was expecting a `,' or a `}'---line 201 of file ref.bib
+ : 
+ : author={Eurocode, CEN},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 211 of file ref.bib
+ : 
+ : author={Eurocode, CEN},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 221 of file ref.bib
+ : 
+ : author={Eurocode, CEn},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Biblatex version: 1.7
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 16 entries,
+            6019 wiz_defined-function locations,
+            1198 strings with 10370 characters,
+and the built_in function-call counts, 45979 in all, are:
+= -- 1545
+> -- 2220
+< -- 444
++ -- 1285
+- -- 1331
+* -- 2721
+:= -- 3411
+add.period$ -- 0
+call.type$ -- 16
+change.case$ -- 181
+chr.to.int$ -- 84
+cite$ -- 30
+duplicate$ -- 4916
+empty$ -- 4756
+format.name$ -- 735
+if$ -- 9718
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 0
+newline$ -- 298
+num.names$ -- 561
+pop$ -- 4843
+preamble$ -- 1
+purify$ -- 204
+quote$ -- 0
+skip$ -- 2549
+stack$ -- 0
+substring$ -- 963
+swap$ -- 1519
+text.length$ -- 412
+text.prefix$ -- 15
+top$ -- 1
+type$ -- 595
+warning$ -- 0
+while$ -- 311
+width$ -- 0
+write$ -- 281
+(There were 3 error messages)

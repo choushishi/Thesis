@@ -1,0 +1,311 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{calgaro2010designers}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Calgaro}{C.}%
+     {Jean-Armand}{J.-A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tschumi}{T.}%
+     {Marcel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gulvanessian}{G.}%
+     {Haig}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CJATMGH1}
+  \strng{fullhash}{CJATMGH1}
+  \field{sortinit}{C}
+  \field{title}{Designers' Guide to Eurocode 1: Actions on Bridges}
+  \field{year}{2010}
+\endentry
+
+\entry{code2005518}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Code}{C.}%
+     {UIC}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CU1}
+  \strng{fullhash}{CU1}
+  \field{sortinit}{C}
+  \field{title}{518: Testing and approval of railway vehicles from the point of
+  view of their dynamic behaviour--Safety--Track fatigue--Ride quality}
+  \field{journaltitle}{International Union of Railways, 3rd ed., Paris}
+  \field{year}{2005}
+\endentry
+
+\entry{cuadrado2008analysis}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Cuadrado~Sanguino}{C.~S.}%
+     {Manuel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gonz{\'a}lez~Requejo}{G.~R.}%
+     {Pedro}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goicolea~Ruigomez}{G.~R.}%
+     {Jose~Maria}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nasarre}{N.}%
+     {Jorge}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dias}{D.}%
+     {Rui}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Plasser \& Theurer}%
+  }
+  \strng{namehash}{CSM+1}
+  \strng{fullhash}{CSMGRPGRJMNJDR1}
+  \field{sortinit}{C}
+  \field{title}{Analysis of Lateral Displacements in Large Railway Viaducts
+  Under Traffic Loads. Impact on Ride Safety and Passenger Comfort.}
+  \field{year}{2008}
+\endentry
+
+\entry{dominguez2001dinamica}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Dom{\'\i}nguez~Barbero}{D.~B.}%
+     {Jaime}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DBJ1}
+  \strng{fullhash}{DBJ1}
+  \field{sortinit}{D}
+  \field{title}{Din{\'a}mica de puentes de ferrocarril para alta velocidad:
+  m{\'e}todos de c{\'a}lculo y estudio de la resonancia}
+  \list{institution}{1}{%
+    {Caminos}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2001}
+\endentry
+
+\entry{en200714363}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {EN}{E.}%
+     {BS}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EB1}
+  \strng{fullhash}{EB1}
+  \field{sortinit}{E}
+  \field{pages}{6\bibrangedash 36}
+  \field{title}{14363: 2005}
+  \field{journaltitle}{Railway applications-Testing for the acceptance of
+  running characteristics of railway vehicles-Testing of running behavior and
+  stationary tests}
+  \field{year}{2007}
+\endentry
+
+\entry{1990a2}{book}{}
+  \field{sortinit}{E}
+  \field{title}{EN 1990 AMD 2 : 2005(E) Annex A2 to EN 1990}
+\endentry
+
+\entry{EC12}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Eurocode}{E.}%
+     {CEN}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EC1}
+  \strng{fullhash}{EC1}
+  \field{sortinit}{E}
+  \field{pages}{2003}
+  \field{title}{1: Actions on structures, Part 2: Traffic loads on bridges}
+  \field{volume}{2}
+  \field{journaltitle}{Brussels: European Standard EN}
+  \field{year}{1991}
+\endentry
+
+\entry{fryba1996dynamics}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Fryba}{F.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fr{\`y}ba}{F.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {T. Telford}%
+  }
+  \strng{namehash}{FLFL1}
+  \strng{fullhash}{FLFL1}
+  \field{sortinit}{F}
+  \field{isbn}{9780727720443}
+  \field{title}{Dynamics of railway bridges}
+  \field{year}{1996}
+\endentry
+
+\entry{EC0}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Institution}{I.}%
+     {British~Standards}{B.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BSI}%
+  }
+  \strng{namehash}{IBS1}
+  \strng{fullhash}{IBS1}
+  \field{sortinit}{I}
+  \field{title}{Eurocode: Basis of structural design}
+  \field{year}{2002}
+\endentry
+
+\entry{lei2002analyses}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Lei}{L.}%
+     {Xiaoyan}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Noda}{N.}%
+     {N-A}{N.-A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{LXNNA1}
+  \strng{fullhash}{LXNNA1}
+  \field{sortinit}{L}
+  \field{number}{1}
+  \field{pages}{147\bibrangedash 165}
+  \field{title}{Analyses of dynamic response of vehicle and track coupling
+  system with random irregularity of track vertical profile}
+  \field{volume}{258}
+  \field{journaltitle}{Journal of Sound and Vibration}
+  \field{year}{2002}
+\endentry
+
+\entry{uic}{manual}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Railways(UIC)}{R.}%
+     {International~Union}{I.~U.}%
+     {of}{o.}%
+     {}{}}%
+  }
+  \strng{namehash}{RIUo1}
+  \strng{fullhash}{RIUo1}
+  \field{sortinit}{R}
+  \field{title}{Design requirements for rail-bridges based on interaction
+  phenomena between train, track and bridge}
+  \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+\endentry
+
+\entry{da2007dynamic}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Silva~Dias}{S.~D.}%
+     {Rui~Filipe}{R.~F.}%
+     {da}{d.}%
+     {}{}}%
+  }
+  \strng{namehash}{SDRFd1}
+  \strng{fullhash}{SDRFd1}
+  \field{sortinit}{S}
+  \field{title}{Dynamic Behaviour of High Speed Railway Bridges. Vehicles
+  Lateral Dynamic Behaviour}
+  \field{year}{2007}
+\endentry
+
+\entry{sun2002dynamic}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sun}{S.}%
+     {Yan~Quan}{Y.~Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dhanasekar}{D.}%
+     {Manicka}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{SYQDM1}
+  \strng{fullhash}{SYQDM1}
+  \field{sortinit}{S}
+  \field{number}{5}
+  \field{pages}{1337\bibrangedash 1359}
+  \field{title}{A dynamic model for the vertical interaction of the rail track
+  and wagon system}
+  \field{volume}{39}
+  \field{journaltitle}{International Journal of Solids and Structures}
+  \field{year}{2002}
+\endentry
+
+\entry{12299}{book}{}
+  \field{sortinit}{U}
+  \field{title}{UNE-ENV 12299: Aplicaciones ferroviarias. Comodidad de viaje
+  para los viajeros. Medici\'{o}n y evaluaci\'{o}n.}
+  \field{year}{2000}
+\endentry
+
+\entry{13803}{book}{}
+  \field{sortinit}{U}
+  \field{title}{UNE-ENV 13803-1 EX: Aplicaciones ferroviarias. Par\'{a}metros
+  de proyecto de trazado de la v\'{\i}a. Ancho de v\'{\i}a de 1 435mm y
+  mayores. Parte 1: Plena v\'{\i}a.}
+  \field{year}{2006}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
