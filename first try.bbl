@@ -201,6 +201,24 @@
   \field{year}{2002}
 \endentry
 
+\entry{iwnicki2006handbook}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Iwnicki}{I.}%
+     {Simon}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {CRC Press}%
+  }
+  \strng{namehash}{IS1}
+  \strng{fullhash}{IS1}
+  \field{sortinit}{I}
+  \field{title}{Handbook of railway vehicle dynamics}
+  \field{year}{2006}
+\endentry
+
 \entry{lei2002analyses}{article}{}
   \name{author}{2}{}{%
     {{}%

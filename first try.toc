@@ -56,108 +56,122 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.3}Requirements for traffic safety(horizontal)}{13}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.4}Requirements for traffic serviceability(horizontal)}{13}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.4}Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{13}{subsection.2.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Torsional vibration}{14}{section.2.7}
+\contentsline {subsubsection}{\numberline {2.6.4.1}Flange limb derailment}{14}{subsubsection.2.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}General design principles and procedures concerning railway bridge dynamics proposed by Eurocodes }{14}{section.2.8}
+\contentsline {subsubsection}{\numberline {2.6.4.2}Derailment caused by guage widening and rail rollover}{14}{subsubsection.2.6.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.1}Requirements for railway bridge verification}{14}{subsection.2.8.1}
+\contentsline {paragraph}{AAR Chapter XI rail roll criterion}{14}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.2}Conceptual check}{15}{subsection.2.8.2}
+\contentsline {subsubsection}{\numberline {2.6.4.3}Derailment caused by track panel shift}{15}{subsubsection.2.6.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.3}Logic diagram}{15}{subsection.2.8.3}
+\contentsline {paragraph}{Panel shift criterion}{15}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.4}Train models}{15}{subsection.2.8.4}
+\contentsline {subsubsection}{\numberline {2.6.4.4}Derailment caused by vehicle lateral instability}{16}{subsubsection.2.6.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.4.1}Load Model 71}{15}{subsubsection.2.8.4.1}
+\contentsline {subsection}{\numberline {2.6.5}Requirements for traffic serviceability(horizontal)}{17}{subsection.2.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.4.2}Load Models SW/0 and SW/2}{16}{subsubsection.2.8.4.2}
+\contentsline {section}{\numberline {2.7}Torsional vibration}{17}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.4.3}Load Model 'unloaded train'}{17}{subsubsection.2.8.4.3}
+\contentsline {section}{\numberline {2.8}General design principles and procedures concerning railway bridge dynamics proposed by Eurocodes }{17}{section.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.4.4}Load Models SHLM}{17}{subsubsection.2.8.4.4}
+\contentsline {subsection}{\numberline {2.8.1}Requirements for railway bridge verification}{17}{subsection.2.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.5}Dynamic factor}{18}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.2}Conceptual check}{18}{subsection.2.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.6}Static analysis}{18}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.3}Logic diagram}{18}{subsection.2.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.7}Bridge parameters}{18}{subsection.2.8.7}
+\contentsline {subsection}{\numberline {2.8.4}Train models}{18}{subsection.2.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.7.1}Structural damping}{18}{subsubsection.2.8.7.1}
+\contentsline {subsubsection}{\numberline {2.8.4.1}Load Model 71}{19}{subsubsection.2.8.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.7.2}Mass of the bridge}{19}{subsubsection.2.8.7.2}
+\contentsline {subsubsection}{\numberline {2.8.4.2}Load Models SW/0 and SW/2}{20}{subsubsection.2.8.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.7.3}Stiffness of the bridge}{19}{subsubsection.2.8.7.3}
+\contentsline {subsubsection}{\numberline {2.8.4.3}Load Model 'unloaded train'}{20}{subsubsection.2.8.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.8}Dynamic analysis}{19}{subsection.2.8.8}
+\contentsline {subsubsection}{\numberline {2.8.4.4}Load Models SHLM}{20}{subsubsection.2.8.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.9}Verification of the Limit States}{20}{subsection.2.8.9}
+\contentsline {subsection}{\numberline {2.8.5}Dynamic factor}{22}{subsection.2.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.9.1}Ultimate limit states}{20}{subsubsection.2.8.9.1}
+\contentsline {subsection}{\numberline {2.8.6}Static analysis}{22}{subsection.2.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.9.2}Serviceability limit states - traffic safety}{20}{subsubsection.2.8.9.2}
+\contentsline {subsection}{\numberline {2.8.7}Bridge parameters}{22}{subsection.2.8.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vertical accelerations of the deck}{20}{section*.19}
+\contentsline {subsubsection}{\numberline {2.8.7.1}Structural damping}{23}{subsubsection.2.8.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Deck twist}{20}{section*.20}
+\contentsline {subsubsection}{\numberline {2.8.7.2}Mass of the bridge}{23}{subsubsection.2.8.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vertical deformations}{21}{section*.23}
+\contentsline {subsubsection}{\numberline {2.8.7.3}Stiffness of the bridge}{23}{subsubsection.2.8.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Transverse deformations and vibrations}{21}{section*.25}
+\contentsline {subsection}{\numberline {2.8.8}Dynamic analysis}{23}{subsection.2.8.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Longitudinal displacements}{22}{section*.27}
+\contentsline {subsection}{\numberline {2.8.9}Verification of the Limit States}{23}{subsection.2.8.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.9.3}Serviceability limit states - passenger comfort}{24}{subsubsection.2.8.9.3}
+\contentsline {subsubsection}{\numberline {2.8.9.1}Ultimate limit states}{23}{subsubsection.2.8.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.10}Principal supplementary checks}{25}{subsection.2.8.10}
+\contentsline {subsubsection}{\numberline {2.8.9.2}Serviceability limit states - traffic safety}{23}{subsubsection.2.8.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.10.1}Verification of maximum peak deck acceleration along each track}{25}{subsubsection.2.8.10.1}
+\contentsline {paragraph}{Vertical accelerations of the deck}{23}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.10.2}Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)}{25}{subsubsection.2.8.10.2}
+\contentsline {paragraph}{Deck twist}{24}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.10.3}Additional verification for fatigue where dynamic analysis is required}{25}{subsubsection.2.8.10.3}
+\contentsline {paragraph}{Vertical deformations}{25}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.10.4}Verification of limiting values for the maximum vertical deflection for passenger comfort}{25}{subsubsection.2.8.10.4}
+\contentsline {paragraph}{Transverse deformations and vibrations}{25}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.11}Diagram of general procedures}{25}{subsection.2.8.11}
+\contentsline {paragraph}{Longitudinal displacements}{26}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Dynamic analysing methods}{26}{section.2.9}
+\contentsline {subsubsection}{\numberline {2.8.9.3}Serviceability limit states - passenger comfort}{26}{subsubsection.2.8.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}Method based on impact factor}{26}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.8.10}Principal supplementary checks}{28}{subsection.2.8.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Method based on dynamic train signature}{26}{subsection.2.9.2}
+\contentsline {subsubsection}{\numberline {2.8.10.1}Verification of maximum peak deck acceleration along each track}{28}{subsubsection.2.8.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.2.1}DER method}{26}{subsubsection.2.9.2.1}
+\contentsline {subsubsection}{\numberline {2.8.10.2}Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)}{28}{subsubsection.2.8.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.2.2}LIR method}{27}{subsubsection.2.9.2.2}
+\contentsline {subsubsection}{\numberline {2.8.10.3}Additional verification for fatigue where dynamic analysis is required}{28}{subsubsection.2.8.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.3}Methods based on finite element models}{27}{subsection.2.9.3}
+\contentsline {subsubsection}{\numberline {2.8.10.4}Verification of limiting values for the maximum vertical deflection for passenger comfort}{28}{subsubsection.2.8.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.3.1}Direct time integration methods}{27}{subsubsection.2.9.3.1}
+\contentsline {subsection}{\numberline {2.8.11}Diagram of general procedures}{28}{subsection.2.8.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.3.2}Modelling a train of moving loads}{28}{subsubsection.2.9.3.2}
+\contentsline {section}{\numberline {2.9}Dynamic analysing methods}{29}{section.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.4}Analytical methods based on modal analysis}{28}{subsection.2.9.4}
+\contentsline {subsection}{\numberline {2.9.1}Method based on impact factor}{29}{subsection.2.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.1}Modal analysis of a simply supported beam}{28}{subsubsection.2.9.4.1}
+\contentsline {subsection}{\numberline {2.9.2}Method based on dynamic train signature}{29}{subsection.2.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.2}Modes of vibration}{28}{subsubsection.2.9.4.2}
+\contentsline {subsubsection}{\numberline {2.9.2.1}DER method}{29}{subsubsection.2.9.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.3}Number of modes of vibration to consider in the analysis}{29}{subsubsection.2.9.4.3}
+\contentsline {subsubsection}{\numberline {2.9.2.2}LIR method}{30}{subsubsection.2.9.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.5}Method based on vehicle-Structure interaction dynamic analysis}{29}{subsection.2.9.5}
+\contentsline {subsection}{\numberline {2.9.3}Methods based on finite element models}{31}{subsection.2.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}POSSIBLE THEORETICAL RESEARCH}{31}{chapter.3}
+\contentsline {subsubsection}{\numberline {2.9.3.1}Direct time integration methods}{31}{subsubsection.2.9.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Horizontal Train dynamic signature method for bridge lateral frequency under 1.2Hz}{31}{section.3.1}
+\contentsline {subsubsection}{\numberline {2.9.3.2}Modelling a train of moving loads}{31}{subsubsection.2.9.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}3-d model Train dynamic signature method for bridge lateral frequency under 1.2Hz}{31}{section.3.2}
+\contentsline {subsection}{\numberline {2.9.4}Analytical methods based on modal analysis}{32}{subsection.2.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Study for bridge horizontal vibration criteria}{31}{section.3.3}
+\contentsline {subsubsection}{\numberline {2.9.4.1}Modal analysis of a simply supported beam}{32}{subsubsection.2.9.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Study for sufficiency of criterion `Lateral first natural frequency udner 1.2Hz'}{31}{section.3.4}
+\contentsline {subsubsection}{\numberline {2.9.4.2}Modes of vibration}{32}{subsubsection.2.9.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Case study}{32}{chapter.4}
+\contentsline {subsubsection}{\numberline {2.9.4.3}Number of modes of vibration to consider in the analysis}{33}{subsubsection.2.9.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}
+\contentsline {subsection}{\numberline {2.9.5}Method based on vehicle-Structure interaction dynamic analysis}{33}{subsection.2.9.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}POSSIBLE THEORETICAL RESEARCH}{35}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Horizontal Train dynamic signature method for bridge lateral frequency under 1.2Hz}{35}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}3-d model Train dynamic signature method for bridge lateral frequency under 1.2Hz}{35}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Study for bridge horizontal vibration criteria}{35}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Study for sufficiency of criterion `Lateral first natural frequency udner 1.2Hz'}{35}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Case study}{36}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}

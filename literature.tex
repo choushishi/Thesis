@@ -274,9 +274,88 @@ Requirements other than bridge first lateral frequency higher than 1.2Hz. Since 
 	\cite{EC0} A2.4.4.1(2): Horizontal transverse deflection(to ensure acceptable horizontal track radii) and horizontal rotation of a deck about a vertical axis at ends of a deck(to ensure acceptable acceptable horizontal track geometry and passenger comfort)
 \end{enumerate}
 
+\subsection{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}
+The four types of derailment: flange climb derailment, derailment caused by guage widening and rail rollover, derailment caused by track panel shift, derailment cause by vehicle lateral instability have a common cause of high lateral force at the wheel-rail interface. According to \cite[Chapter 8, IV]{iwnicki2006handbook} any conditions that lead to high lateral forces or lead to lower the ability of the system to sustain the force should be corrected. 
 
+\subsubsection{Flange limb derailment}
+Wheel flange climb derailments are caused by wheels climbing onto the top of the railhead then further running over the rail. Wheel climb derailments generally occur in situations where the wheel experiences a high lateral force combined with circumstances where the vertical force is reduced on the flanging wheel. The high lateral force is usually induced by a large wheelset angle-of-attack. The vertical force on the flanging wheel can be reduced significantly on bogies having poor vertical wheel load equalisations, such as when negotiating rough track, large track twist, or when the car is experiencing roll resonances. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{forcesatflangecontactlocation.pdf}
+	\caption{Forces at flange contact location. Extracted from \cite[Figure8.4]{iwnicki2006handbook}}
+	\label{fig:forcesatflangecontactlocation}
+\end{figure}
 
+The criterion L/V ratio can be expressed as:
+
+\begin{equation}
+	\frac{L}{V}=\frac{\tan \delta -\frac{F_2}{F_3}}{1+\frac{F_2}{F_3}\tan \delta}
+\end{equation}
+
+Nadal's famous L/V ratio limiting criterion, given by Equation.\ref{eq:nadalcriterion}, was proposed for the saturated condition $F_2/F_3=\mu$
+
+\begin{equation}\label{eq:nadalcriterion}
+	\frac{L}{V}=\frac{\tan \delta - \mu}{1+ \mu \tan \delta}
+\end{equation}
+
+\subsubsection{Derailment caused by guage widening and rail rollover}
+Derailments caused by guage widening usually involve a combination of wide gauges and large lateral rail defections(rail roll), as shown in Figure\ref{fig:gaugewideningderailment}. Large lateral forces from the wheels act to spread the rails in curves. Both rails may experience significant lateral translation and/or railhead roll, which often cause the nonflanging wheel to drop between rails.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gaugewideningderailment.pdf}
+	\caption{Gauge widening derailment. Extracted from \cite[Figure8.18]{iwnicki2006handbook}}
+	\label{fig:gaugewideningderailment}
+\end{figure}
+
+\paragraph{AAR Chapter XI rail roll criterion}
+The AAR Chapter XI rail roll criterion is established by using the L/V ratio. The roll moment about the pivot point is given by,
+
+\begin{equation}
+	M=Vd-Lh
+\end{equation}
+
+under an equilibrium condition, just before the rail starts to roll, $M$ approaches to zero, then,
+
+\begin{equation}
+	\frac{L}{V}=\frac{d}{h}
+\end{equation}
+
+This L/V ratio is considered as the critical value to evaluate the risk of rail roll. When the L/V ratio is larger than the ratio of $d/h$, the risk of rail roll becomes high. The critical L/V ratio for rail roll can vary from above 0.6 for contact at the gauge side to approximately 0.2 when the contact position is at the far-field side based on the dimension of the rails. This is because the distance $d$ is reduced. Note that this L/V ratio is calculate assuming that neither the rail fasteners nor the torsional stiffness of the rail section provide any restraint.
+
+\subsubsection{Derailment caused by track panel shift}
+Track panel shift is the cumulative lateral displacement of the track panel, including rails, tie plates and ties, over the ballast, as shown in Figure\ref{fig:lateraltrackpanelshift}. A small shift of these components may not immediately cause the loss of guidance to bogies. However, as the situation gradually depreciates to a certain level, wheels could lose guidance and drop to the ground at some speed. The derailments caused by track panel usually result in one wheel falling between the rails and the other falling outside of the track.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{lateraltrackpanelshift.pdf}
+	\caption{Lateral track panel shift. Extracted from \cite[Figure8.27]{iwnicki2006handbook}}
+	\label{fig:lateraltrackpanelshift}
+\end{figure}
+
+\paragraph{Panel shift criterion}
+Researched by the French National Railways suggested that the limiting lateral axle load can be defined in a general expression for preventing excessive track panel shift:
+
+\begin{equation}
+	L_c = aV+b
+\end{equation}
+
+where $L_c$ is the critical lateral load and $V$ is the vertical axle load. \cite[Table 8.2]{iwnicki2006handbook} lists two groups of suggested valued of $a$ and $b$. It is possible that different values for $a$ and $b$ can be specified in different area.
+
+\subsubsection{Derailment caused by vehicle lateral instability}
+On tangent track, the wheelset generally oscillates around the track centre due to any vehicle and track irregularities, as shown in Figure\ref{fig:wheelsetoscillatesaroundthetrackcentre}. This movement occurs because vehicle and track are never absolutely smooth and symmetric. This self-centring capability of a wheelset is induced by the coned shape of the wheel tread. However, as speed is increased, if the whelset conicity is high, the lateral movement of wheelset, as well as the associated bogie and car body motion, can cause oscillations with large amplitude  and a well-defined wavelength. The lateral movements are limited only by the contact of the wheel flanges with the rail. This vehicle dynamic response is also termed as vehicle hunting, and can produce high lateral forces to damage track to cause derailments.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{wheelsetoscillatesaroundthetrackcentre.pdf}
+	\caption{Wheelset oscillates around the track centre. Extracted from \cite[Figure8.28]{iwnicki2006handbook}}
+	\label{fig:wheelsetoscillatesaroundthetrackcentre}
+\end{figure}
+
+Derailment cause by vehicle hunting can have derailment mechanisms of all four types discussed in the previous sections. The high lateral force induced from hunting may cause wheel flange climbing on the rail, guage widening, rail rollover, track panel shift, or combinations of these. The safety concerns for this type of derailment, usually occuring at higher speeds, make it an important area of study.
+
+Hunting predominantly occurs in empty or lightweight vehicles. The critical hunting speed is highly dependent on the vehicle/track characteristics. Investigation of the critical speed for such a system with nonlinearities is to examine the vehicle response to a disturbance using a numerical solution of the equations of motion.
 
 \subsection{Requirements for traffic serviceability(horizontal)}
 
@@ -392,7 +471,7 @@ The actions listed below, associated with LM71, have to be multiplied by factor 
 	\item Load Model SW/0 for continuous span bridges
 \end{enumerate}
 
-\textit{For international lines, it is recommended that a value of $ \alpha \geq 1.0 $ is adopted. But this freedom of choice of the factor $ \alpha $ could lead to a non-uniform railway network in Europe. Therefore in UIC Code 702\textsuperscript{4} $ \alpha=1.33 $ is generally recommended for all new bridges constructed for the international freight network, but not compulsory}
+\textit{For international lines, it is recommended that a value of $ \alpha \geq 1.0 $ is adopted. But this freedom of choice of the factor $ \alpha $ could lead to a non-uniform railway network in Europe. Therefore in UIC Code 702\textsuperscript{4} $ \alpha=1.33 $ is generally recommended for all new bridges constructed for the international freight network, but not compulsory}. 
 
 \begin{figure}[h]
 	\centering
