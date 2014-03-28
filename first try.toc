@@ -58,19 +58,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.4}Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{13}{subsection.2.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.4.1}Flange limb derailment}{14}{subsubsection.2.6.4.1}
+\contentsline {subsubsection}{\numberline {2.6.4.1}Flange climb derailment}{14}{subsubsection.2.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.4.2}Derailment caused by guage widening and rail rollover}{14}{subsubsection.2.6.4.2}
+\contentsline {subsubsection}{\numberline {2.6.4.2}Derailment caused by guage widening and rail rollover}{15}{subsubsection.2.6.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{AAR Chapter XI rail roll criterion}{14}{section*.12}
+\contentsline {paragraph}{AAR Chapter XI rail roll criterion}{15}{section*.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.6.4.3}Derailment caused by track panel shift}{15}{subsubsection.2.6.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Panel shift criterion}{15}{section*.14}
+\contentsline {paragraph}{Panel shift criterion}{16}{section*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.6.4.4}Derailment caused by vehicle lateral instability}{16}{subsubsection.2.6.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.5}Requirements for traffic serviceability(horizontal)}{17}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.5}Requirements for traffic serviceability(horizontal)}{16}{subsection.2.6.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.7}Torsional vibration}{17}{section.2.7}
 \defcounter {refsection}{0}\relax 
@@ -82,7 +82,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.3}Logic diagram}{18}{subsection.2.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.4}Train models}{18}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.4}Train models}{19}{subsection.2.8.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.8.4.1}Load Model 71}{19}{subsubsection.2.8.4.1}
 \defcounter {refsection}{0}\relax 
@@ -90,13 +90,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.8.4.3}Load Model 'unloaded train'}{20}{subsubsection.2.8.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.4.4}Load Models SHLM}{20}{subsubsection.2.8.4.4}
+\contentsline {subsubsection}{\numberline {2.8.4.4}Load Models SHLM}{21}{subsubsection.2.8.4.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.5}Dynamic factor}{22}{subsection.2.8.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.6}Static analysis}{22}{subsection.2.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.8.7}Bridge parameters}{22}{subsection.2.8.7}
+\contentsline {subsection}{\numberline {2.8.7}Bridge parameters}{23}{subsection.2.8.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.8.7.1}Structural damping}{23}{subsubsection.2.8.7.1}
 \defcounter {refsection}{0}\relax 
@@ -108,21 +108,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.9}Verification of the Limit States}{23}{subsection.2.8.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.9.1}Ultimate limit states}{23}{subsubsection.2.8.9.1}
+\contentsline {subsubsection}{\numberline {2.8.9.1}Ultimate limit states}{24}{subsubsection.2.8.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.9.2}Serviceability limit states - traffic safety}{23}{subsubsection.2.8.9.2}
+\contentsline {subsubsection}{\numberline {2.8.9.2}Serviceability limit states - traffic safety}{24}{subsubsection.2.8.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vertical accelerations of the deck}{23}{section*.25}
+\contentsline {paragraph}{Vertical accelerations of the deck}{24}{section*.25}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Deck twist}{24}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vertical deformations}{25}{section*.29}
+\contentsline {paragraph}{Vertical deformations}{24}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Transverse deformations and vibrations}{25}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Longitudinal displacements}{26}{section*.33}
+\contentsline {paragraph}{Longitudinal displacements}{25}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.8.9.3}Serviceability limit states - passenger comfort}{26}{subsubsection.2.8.9.3}
+\contentsline {subsubsection}{\numberline {2.8.9.3}Serviceability limit states - passenger comfort}{27}{subsubsection.2.8.9.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.10}Principal supplementary checks}{28}{subsection.2.8.10}
 \defcounter {refsection}{0}\relax 
@@ -142,7 +142,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.2}Method based on dynamic train signature}{29}{subsection.2.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.2.1}DER method}{29}{subsubsection.2.9.2.1}
+\contentsline {subsubsection}{\numberline {2.9.2.1}DER method}{30}{subsubsection.2.9.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.9.2.2}LIR method}{30}{subsubsection.2.9.2.2}
 \defcounter {refsection}{0}\relax 
@@ -150,13 +150,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.9.3.1}Direct time integration methods}{31}{subsubsection.2.9.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.3.2}Modelling a train of moving loads}{31}{subsubsection.2.9.3.2}
+\contentsline {subsubsection}{\numberline {2.9.3.2}Modelling a train of moving loads}{32}{subsubsection.2.9.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.4}Analytical methods based on modal analysis}{32}{subsection.2.9.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.9.4.1}Modal analysis of a simply supported beam}{32}{subsubsection.2.9.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.2}Modes of vibration}{32}{subsubsection.2.9.4.2}
+\contentsline {subsubsection}{\numberline {2.9.4.2}Modes of vibration}{33}{subsubsection.2.9.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.9.4.3}Number of modes of vibration to consider in the analysis}{33}{subsubsection.2.9.4.3}
 \defcounter {refsection}{0}\relax 
