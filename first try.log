@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.5.19)  28 MAR 2014 07:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.5.19)  2 APR 2014 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,7 +685,7 @@ Package biblatex Info: Reference segment=0 on input line 39.
 me{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 ...{2.8.4}Train models}{19}{subsection.2.8.4}
+l.85 ....2}Conceptual check}{19}{subsection.2.8.2}
                                                    [1
 
 ])
@@ -705,7 +705,7 @@ Chapter 1.
 
  (./literature.tex
 Chapter 2.
-<./Image/dynamiceffects.pdf, id=451, 963.6pt x 759.83875pt>
+<./Image/dynamiceffects.pdf, id=461, 963.6pt x 759.83875pt>
 File: ./Image/dynamiceffects.pdf Graphic file (type pdf)
 
 <use ./Image/dynamiceffects.pdf>
@@ -728,7 +728,7 @@ LaTeX Warning: The counter will not be printed.
 LaTeX Warning: The counter will not be printed.
              The label is: - on input line 40.
 
-<./Image/massbeammodel.pdf, id=470, 770.88pt x 297.11pt>
+<./Image/massbeammodel.pdf, id=480, 770.88pt x 297.11pt>
 File: ./Image/massbeammodel.pdf Graphic file (type pdf)
 
 <use ./Image/massbeammodel.pdf>
@@ -743,196 +743,194 @@ LaTeX Warning: The counter will not be printed.
              The label is:  on input line 62.
 
 [6 <./Image/dynamiceffects.pdf>]
-<./Image/continuousbeammodel.pdf, id=495, 694.39601pt x 215.01031pt>
+<./Image/continuousbeammodel.pdf, id=505, 694.39601pt x 215.01031pt>
 File: ./Image/continuousbeammodel.pdf Graphic file (type pdf)
 
 <use ./Image/continuousbeammodel.pdf>
 Package pdftex.def Info: ./Image/continuousbeammodel.pdf used on input line 76.
 
 (pdftex.def)             Requested size: 346.89732pt x 107.41302pt.
-
-<./Image/verticalmodel.pdf, id=498, 741.77126pt x 268.00125pt>
+ [7 <./Image/massbeammodel.pdf> <./Image/continuousbeammodel.pdf>]
+<./Image/verticalmodel.pdf, id=524, 741.77126pt x 268.00125pt>
 File: ./Image/verticalmodel.pdf Graphic file (type pdf)
 
 <use ./Image/verticalmodel.pdf>
-Package pdftex.def Info: ./Image/verticalmodel.pdf used on input line 97.
+Package pdftex.def Info: ./Image/verticalmodel.pdf used on input line 112.
 (pdftex.def)             Requested size: 346.89732pt x 125.33492pt.
- [7 <./Image/massbeammodel.pdf> <./Image/continuousbeammodel.pdf>]
-<./Image/advancedmodel.pdf, id=513, 1270.74211pt x 1314.82097pt>
+
+<./Image/advancedmodel.pdf, id=526, 1270.74211pt x 1314.82097pt>
 File: ./Image/advancedmodel.pdf Graphic file (type pdf)
 
 <use ./Image/advancedmodel.pdf>
-Package pdftex.def Info: ./Image/advancedmodel.pdf used on input line 109.
+Package pdftex.def Info: ./Image/advancedmodel.pdf used on input line 124.
 (pdftex.def)             Requested size: 346.89732pt x 358.9186pt.
-
-<./Image/trackmodel.pdf, id=518, 760.8425pt x 432.61626pt>
+ [8 <./Image/verticalmodel.pdf>] [9 <./Image/advancedmodel.pdf>] <./Image/track
+model.pdf, id=554, 760.8425pt x 432.61626pt>
 File: ./Image/trackmodel.pdf Graphic file (type pdf)
 
 <use ./Image/trackmodel.pdf>
-Package pdftex.def Info: ./Image/trackmodel.pdf used on input line 128.
+Package pdftex.def Info: ./Image/trackmodel.pdf used on input line 143.
 (pdftex.def)             Requested size: 346.89732pt x 197.24997pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 138.
-
-[8 <./Image/verticalmodel.pdf>] [9 <./Image/advancedmodel.pdf>]
-
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 157.
+             The label is: - on input line 153.
 
 [10 <./Image/trackmodel.pdf>]
-<./Image/trackirregularities.pdf, id=558, 583.17876pt x 833.1125pt>
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 176.
+
+[11] <./Image/trackirregularities.pdf, id=588, 583.17876pt x 833.1125pt>
 File: ./Image/trackirregularities.pdf Graphic file (type pdf)
 
 <use ./Image/trackirregularities.pdf>
-Package pdftex.def Info: ./Image/trackirregularities.pdf used on input line 221
+Package pdftex.def Info: ./Image/trackirregularities.pdf used on input line 240
 .
 (pdftex.def)             Requested size: 346.89732pt x 495.57462pt.
- [11] [12 <./Image/trackirregularities.pdf>]
+ [12] [13 <./Image/trackirregularities.pdf>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 267.
+             The label is: - on input line 286.
 
-[13]
-<./Image/forcesatflangecontactlocation.pdf, id=612, 170.79619pt x 135.8693pt>
+[14]
+<./Image/forcesatflangecontactlocation.pdf, id=642, 170.79619pt x 135.8693pt>
 File: ./Image/forcesatflangecontactlocation.pdf Graphic file (type pdf)
 
 <use ./Image/forcesatflangecontactlocation.pdf>
 Package pdftex.def Info: ./Image/forcesatflangecontactlocation.pdf used on inpu
-t line 298.
+t line 317.
 (pdftex.def)             Requested size: 260.17465pt x 206.98785pt.
- [14 <./Image/forcesatflangecontactlocation.pdf>]
-<./Image/gaugewideningderailment.pdf, id=713, 227.68272pt x 162.59465pt>
+
+<./Image/gaugewideningderailment.pdf, id=647, 227.68272pt x 162.59465pt>
 File: ./Image/gaugewideningderailment.pdf Graphic file (type pdf)
 
 <use ./Image/gaugewideningderailment.pdf>
 Package pdftex.def Info: ./Image/gaugewideningderailment.pdf used on input line
- 320.
+ 339.
 (pdftex.def)             Requested size: 346.89732pt x 247.75673pt.
- [15 <./Image/gaugewideningderailment.pdf>] <./Image/lateraltrackpanelshift.pdf
-, id=781, 308.99602pt x 118.08171pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./Image/forcesatflangecontactlocation.pdf>]
+<./Image/lateraltrackpanelshift.pdf, id=746, 308.99602pt x 118.08171pt>
 File: ./Image/lateraltrackpanelshift.pdf Graphic file (type pdf)
 
 <use ./Image/lateraltrackpanelshift.pdf>
 Package pdftex.def Info: ./Image/lateraltrackpanelshift.pdf used on input line 
-345.
+364.
 (pdftex.def)             Requested size: 346.89732pt x 132.5767pt.
 
-<./Image/wheelsetoscillatesaroundthetrackcentre.pdf, id=786, 393.54468pt x 172.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <./Image/gaugewideningderailment.pdf>]
+<./Image/wheelsetoscillatesaroundthetrackcentre.pdf, id=813, 393.54468pt x 172.
 61835pt>
 File: ./Image/wheelsetoscillatesaroundthetrackcentre.pdf Graphic file (type pdf
 )
  <use ./Image/wheelsetoscillatesaroundthetrackcentre.pdf>
 Package pdftex.def Info: ./Image/wheelsetoscillatesaroundthetrackcentre.pdf use
-d on input line 364.
+d on input line 383.
 (pdftex.def)             Requested size: 346.89732pt x 152.1601pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./Image/lateraltrackpanelshift.pdf>]
-Overfull \hbox (0.89955pt too wide) in paragraph at lines 387--387
+ [17 <./Image/lateraltrackpanelshift.pdf> <./Image/wheelsetoscillatesaroundthet
+rackcentre.pdf>]
+Overfull \hbox (0.89955pt too wide) in paragraph at lines 406--406
 []\OT1/cmr/bx/n/14.4 General de-sign prin-ci-ples and pro-ce-dures con-cern-ing
  rail-
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 396.
+             The label is: - on input line 415.
 
-[17 <./Image/wheelsetoscillatesaroundthetrackcentre.pdf>] [18]
-<./Image/logicdiagram.pdf, id=948, 1032.85875pt x 1404.24625pt>
+[18] <./Image/logicdiagram.pdf, id=960, 1032.85875pt x 1404.24625pt>
 File: ./Image/logicdiagram.pdf Graphic file (type pdf)
 
 <use ./Image/logicdiagram.pdf>
-Package pdftex.def Info: ./Image/logicdiagram.pdf used on input line 449.
+Package pdftex.def Info: ./Image/logicdiagram.pdf used on input line 468.
 (pdftex.def)             Requested size: 195.12767pt x 265.28824pt.
 
-<./Image/frequencylimit.pdf, id=951, 606.265pt x 795.97375pt>
+<./Image/frequencylimit.pdf, id=963, 606.265pt x 795.97375pt>
 File: ./Image/frequencylimit.pdf Graphic file (type pdf)
 
 <use ./Image/frequencylimit.pdf>
-Package pdftex.def Info: ./Image/frequencylimit.pdf used on input line 454.
+Package pdftex.def Info: ./Image/frequencylimit.pdf used on input line 473.
 (pdftex.def)             Requested size: 195.12767pt x 256.18642pt.
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: $\bullet $ on input line 464.
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 478.
-
-[19 <./Image/logicdiagram.pdf> <./Image/frequencylimit.pdf>]
-<./Image/lm71.pdf, id=976, 924.45375pt x 246.9225pt>
-File: ./Image/lm71.pdf Graphic file (type pdf)
- <use ./Image/lm71.pdf>
-Package pdftex.def Info: ./Image/lm71.pdf used on input line 491.
-(pdftex.def)             Requested size: 346.89732pt x 92.65598pt.
-
-<./Image/lmsw.pdf, id=981, 826.08624pt x 123.46124pt>
-File: ./Image/lmsw.pdf Graphic file (type pdf)
- <use ./Image/lmsw.pdf>
-Package pdftex.def Info: ./Image/lmsw.pdf used on input line 505.
-(pdftex.def)             Requested size: 346.89732pt x 51.84583pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20 <./Image/lm71.pdf> <./Image/lmsw.pdf>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: $\space \bullet $ on input line 530.
+             The label is: $\bullet $ on input line 483.
 
-<./Image/hslma.pdf, id=1006, 932.48375pt x 334.24875pt>
+[19]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 497.
+
+[20 <./Image/logicdiagram.pdf> <./Image/frequencylimit.pdf>]
+<./Image/lm71.pdf, id=1008, 924.45375pt x 246.9225pt>
+File: ./Image/lm71.pdf Graphic file (type pdf)
+ <use ./Image/lm71.pdf>
+Package pdftex.def Info: ./Image/lm71.pdf used on input line 510.
+(pdftex.def)             Requested size: 346.89732pt x 92.65598pt.
+
+<./Image/lmsw.pdf, id=1013, 826.08624pt x 123.46124pt>
+File: ./Image/lmsw.pdf Graphic file (type pdf)
+ <use ./Image/lmsw.pdf>
+Package pdftex.def Info: ./Image/lmsw.pdf used on input line 524.
+(pdftex.def)             Requested size: 346.89732pt x 51.84583pt.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: $\space \bullet $ on input line 549.
+
+[21 <./Image/lm71.pdf> <./Image/lmsw.pdf>]
+<./Image/hslma.pdf, id=1031, 932.48375pt x 334.24875pt>
 File: ./Image/hslma.pdf Graphic file (type pdf)
 
 <use ./Image/hslma.pdf>
-Package pdftex.def Info: ./Image/hslma.pdf used on input line 537.
+Package pdftex.def Info: ./Image/hslma.pdf used on input line 556.
 (pdftex.def)             Requested size: 346.89732pt x 124.34332pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
 []|\OT1/cmr/m/n/8 Number of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
 \OT1/cmr/m/n/8 in-ter-me-di-ate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
 []|\OT1/cmr/m/n/8 Coach length
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
 []|\OT1/cmr/m/n/8 Bogie axle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 []|\OT1/cmr/m/n/8 Point force
  []
 
-<./Image/hslmb.pdf, id=1011, 891.33pt x 248.93pt>
+<./Image/hslmb.pdf, id=1036, 891.33pt x 248.93pt>
 File: ./Image/hslmb.pdf Graphic file (type pdf)
  <use ./Image/hslmb.pdf>
-Package pdftex.def Info: ./Image/hslmb.pdf used on input line 566.
+Package pdftex.def Info: ./Image/hslmb.pdf used on input line 585.
 (pdftex.def)             Requested size: 346.89732pt x 96.88098pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Image/hslmb2.pdf, id=1014, 776.9025pt x 420.57124pt>
+<./Image/hslmb2.pdf, id=1039, 776.9025pt x 420.57124pt>
 File: ./Image/hslmb2.pdf Graphic file (type pdf)
 
 <use ./Image/hslmb2.pdf>
-Package pdftex.def Info: ./Image/hslmb2.pdf used on input line 573.
+Package pdftex.def Info: ./Image/hslmb2.pdf used on input line 592.
 (pdftex.def)             Requested size: 346.89732pt x 187.79214pt.
 
 
@@ -941,129 +939,116 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./Image/hslma.pdf>] [22 <./Image/hslmb.pdf> <./Image/hslmb2.pdf>] [23]
-<./Image/definitiondecktwist.pdf, id=1070, 572.1375pt x 295.1025pt>
+[22 <./Image/hslma.pdf> <./Image/hslmb.pdf>] [23 <./Image/hslmb2.pdf>] [24]
+<./Image/definitiondecktwist.pdf, id=1099, 572.1375pt x 295.1025pt>
 File: ./Image/definitiondecktwist.pdf Graphic file (type pdf)
 
 <use ./Image/definitiondecktwist.pdf>
-Package pdftex.def Info: ./Image/definitiondecktwist.pdf used on input line 688
+Package pdftex.def Info: ./Image/definitiondecktwist.pdf used on input line 707
 .
 (pdftex.def)             Requested size: 346.89732pt x 178.92705pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Image/definitionangularrotations.pdf, id=1074, 701.62125pt x 99.37125pt>
+ [25 <./Image/definitiondecktwist.pdf>]
+<./Image/definitionangularrotations.pdf, id=1118, 701.62125pt x 99.37125pt>
 File: ./Image/definitionangularrotations.pdf Graphic file (type pdf)
 
 <use ./Image/definitionangularrotations.pdf>
 Package pdftex.def Info: ./Image/definitionangularrotations.pdf used on input l
-ine 698.
+ine 717.
 (pdftex.def)             Requested size: 346.89732pt x 49.13205pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[24]
-Overfull \hbox (3.99228pt too wide) in paragraph at lines 725--725
+Overfull \hbox (3.99228pt too wide) in paragraph at lines 744--744
 []|\OT1/cmr/m/n/10 Maximum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 744--744
 \OT1/cmr/m/n/10 hor-i-zon-
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 725--725
+Underfull \hbox (badness 1418) in paragraph at lines 744--744
 \OT1/cmr/m/n/10 tal ro-ta-
  []
 
 
-Overfull \hbox (12.6312pt too wide) in paragraph at lines 725--725
+Overfull \hbox (12.6312pt too wide) in paragraph at lines 744--744
 \OT1/cmr/m/n/10 tion(radian)| 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Image/modeltrackstructure.pdf, id=1099, 831.105pt x 255.95625pt>
+[26 <./Image/definitionangularrotations.pdf>]
+<./Image/modeltrackstructure.pdf, id=1137, 831.105pt x 255.95625pt>
 File: ./Image/modeltrackstructure.pdf Graphic file (type pdf)
 
 <use ./Image/modeltrackstructure.pdf>
-Package pdftex.def Info: ./Image/modeltrackstructure.pdf used on input line 756
+Package pdftex.def Info: ./Image/modeltrackstructure.pdf used on input line 775
 .
 (pdftex.def)             Requested size: 346.89732pt x 106.83302pt.
 
-<./Image/variationlongitudinalshearforce.pdf, id=1102, 795.97375pt x 684.5575pt
+<./Image/variationlongitudinalshearforce.pdf, id=1140, 795.97375pt x 684.5575pt
 >
 File: ./Image/variationlongitudinalshearforce.pdf Graphic file (type pdf)
  <use ./Image/variationlongitudinalshearforce.pdf>
 Package pdftex.def Info: ./Image/variationlongitudinalshearforce.pdf used on in
-put line 763.
+put line 782.
 (pdftex.def)             Requested size: 346.89732pt x 298.33371pt.
- [25 <./Image/definitiondecktwist.pdf> <./Image/definitionangularrotations.pdf>
-] [26 <./Image/modeltrackstructure.pdf> <./Image/variationlongitudinalshearforc
-e.pdf>]
-<./Image/recommendedlevelofcomfort.pdf, id=1138, 920.43875pt x 507.8975pt>
+
+<./Image/recommendedlevelofcomfort.pdf, id=1150, 920.43875pt x 507.8975pt>
 File: ./Image/recommendedlevelofcomfort.pdf Graphic file (type pdf)
 
 <use ./Image/recommendedlevelofcomfort.pdf>
 Package pdftex.def Info: ./Image/recommendedlevelofcomfort.pdf used on input li
-ne 801.
+ne 820.
 (pdftex.def)             Requested size: 346.89732pt x 191.42207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28 <./Image/recommendedlevelofcomfort.pdf>] [29]
+[27] [28 <./Image/modeltrackstructure.pdf> <./Image/variationlongitudinalshearf
+orce.pdf>] [29 <./Image/recommendedlevelofcomfort.pdf>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 869.
+             The label is: - on input line 888.
 
-[30] <./Image/trainsig.pdf, id=1206, 901.3675pt x 605.26125pt>
+[30] [31] <./Image/trainsig.pdf, id=1232, 901.3675pt x 605.26125pt>
 File: ./Image/trainsig.pdf Graphic file (type pdf)
 
 <use ./Image/trainsig.pdf>
-Package pdftex.def Info: ./Image/trainsig.pdf used on input line 947.
+Package pdftex.def Info: ./Image/trainsig.pdf used on input line 966.
 (pdftex.def)             Requested size: 260.17465pt x 174.70853pt.
- [31 <./Image/trainsig.pdf>]
-<./Image/movingloads.pdf, id=1221, 1195.46625pt x 944.52875pt>
+
+<./Image/movingloads.pdf, id=1236, 1195.46625pt x 944.52875pt>
 File: ./Image/movingloads.pdf Graphic file (type pdf)
 
 <use ./Image/movingloads.pdf>
-Package pdftex.def Info: ./Image/movingloads.pdf used on input line 971.
+Package pdftex.def Info: ./Image/movingloads.pdf used on input line 990.
 (pdftex.def)             Requested size: 346.89732pt x 274.07927pt.
- [32 <./Image/movingloads.pdf>]
-<./Image/vehicle-structure.pdf, id=1232, 933.4875pt x 644.4075pt>
-File: ./Image/vehicle-structure.pdf Graphic file (type pdf)
-
-<use ./Image/vehicle-structure.pdf>
-Package pdftex.def Info: ./Image/vehicle-structure.pdf used on input line 1002.
-
-(pdftex.def)             Requested size: 346.89732pt x 239.46933pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/simplifiedvehiclestructure.pdf, id=1236, 945.5325pt x 280.04625pt>
+[32 <./Image/trainsig.pdf>] [33 <./Image/movingloads.pdf>]
+<./Image/vehicle-structure.pdf, id=1257, 933.4875pt x 644.4075pt>
+File: ./Image/vehicle-structure.pdf Graphic file (type pdf)
+
+<use ./Image/vehicle-structure.pdf>
+Package pdftex.def Info: ./Image/vehicle-structure.pdf used on input line 1021.
+
+(pdftex.def)             Requested size: 346.89732pt x 239.46933pt.
+
+<./Image/simplifiedvehiclestructure.pdf, id=1261, 945.5325pt x 280.04625pt>
 File: ./Image/simplifiedvehiclestructure.pdf Graphic file (type pdf)
 
 <use ./Image/simplifiedvehiclestructure.pdf>
 Package pdftex.def Info: ./Image/simplifiedvehiclestructure.pdf used on input l
-ine 1011.
+ine 1030.
 (pdftex.def)             Requested size: 346.89732pt x 102.74376pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [33] [34 <./Image/vehicle-structure.pdf> <./Image/simplifiedvehiclestructure.
+ [34 <./Image/vehicle-structure.pdf>]) [35 <./Image/simplifiedvehiclestructure.
 pdf>]
 \openout2 = `theoretical.aux'.
 
  (./theoretical.tex
 Chapter 3.
-) [35
+) [36
 
 
 
@@ -1072,13 +1057,13 @@ Chapter 3.
 
  (./calculation.tex
 Chapter 4.
-[36
+[37
 
 
 
 ]
 Chapter 5.
-) [37
+) [38
 
 ]
 Overfull \hbox (2.58188pt too wide) in paragraph at lines 55--55
@@ -1087,27 +1072,27 @@ Overfull \hbox (2.58188pt too wide) in paragraph at lines 55--55
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-[38
+[39
 
 
-]
+] [40]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./first try.aux (./introduction.aux) (./literature.aux)
 (./theoretical.aux) (./calculation.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `"first try".out' has not changed.
-(rerunfilecheck)             Checksum: 37C623CE0406622EF2F4C43F118B0BB4;7133.
+(rerunfilecheck)             Checksum: C546E061454A384D75F8FA93EBCB55C4;7280.
 Package logreq Info: Writing requests to '"first try".run.xml'.
 \openout1 = `"first try.run.xml"'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 12992 strings out of 493488
- 206252 string characters out of 3141326
+ 13010 strings out of 493488
+ 206522 string characters out of 3141326
  411420 words of memory out of 3000000
- 15776 multiletter control sequences out of 15000+200000
+ 15781 multiletter control sequences out of 15000+200000
  15164 words of font info for 53 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,12n,49p,944b,1695s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1133,10 +1118,10 @@ dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on "first try.pdf" (39 pages, 2146970 bytes).
+Output written on "first try.pdf" (41 pages, 2150107 bytes).
 PDF statistics:
- 1415 PDF objects out of 1440 (max. 8388607)
- 1217 compressed objects within 13 object streams
- 316 named destinations out of 1000 (max. 500000)
- 776 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1447 PDF objects out of 1728 (max. 8388607)
+ 1247 compressed objects within 13 object streams
+ 329 named destinations out of 1000 (max. 500000)
+ 792 words of extra memory for PDF output out of 10000 (max. 10000000)
 

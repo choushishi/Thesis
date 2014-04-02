@@ -14,67 +14,69 @@
 \BOOKMARK [3][-]{subsubsection.2.2.3.1}{Trusses}{subsection.2.2.3}% 14
 \BOOKMARK [3][-]{subsubsection.2.2.3.2}{Frames}{subsection.2.2.3}% 15
 \BOOKMARK [3][-]{subsubsection.2.2.3.3}{Curved bars}{subsection.2.2.3}% 16
-\BOOKMARK [1][-]{section.2.3}{Modelling of railway vehicles}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.3.1}{Moving vertical forces model}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.2}{Advanced models}{section.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.3.3}{Models proposed in Eurocodes}{section.2.3}% 20
-\BOOKMARK [1][-]{section.2.4}{Track model}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.5}{Vertical Dynamic effects}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.6}{Horizontal transverse dynamic effects}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.6.1}{Sources induce transverse reactions}{section.2.6}% 24
-\BOOKMARK [2][-]{subsection.2.6.2}{Horizontal vibration of a beam}{section.2.6}% 25
-\BOOKMARK [3][-]{subsubsection.2.6.2.1}{Centrifugal forces}{subsection.2.6.2}% 26
-\BOOKMARK [2][-]{subsection.2.6.3}{Requirements for traffic safety\(horizontal\)}{section.2.6}% 27
-\BOOKMARK [2][-]{subsection.2.6.4}{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{section.2.6}% 28
-\BOOKMARK [3][-]{subsubsection.2.6.4.1}{Flange climb derailment}{subsection.2.6.4}% 29
-\BOOKMARK [3][-]{subsubsection.2.6.4.2}{Derailment caused by guage widening and rail rollover}{subsection.2.6.4}% 30
-\BOOKMARK [3][-]{subsubsection.2.6.4.3}{Derailment caused by track panel shift}{subsection.2.6.4}% 31
-\BOOKMARK [3][-]{subsubsection.2.6.4.4}{Derailment caused by vehicle lateral instability}{subsection.2.6.4}% 32
-\BOOKMARK [2][-]{subsection.2.6.5}{Requirements for traffic serviceability\(horizontal\)}{section.2.6}% 33
-\BOOKMARK [1][-]{section.2.7}{Torsional vibration}{chapter.2}% 34
-\BOOKMARK [1][-]{section.2.8}{General design principles and procedures concerning railway bridge dynamics proposed by Eurocodes }{chapter.2}% 35
-\BOOKMARK [2][-]{subsection.2.8.1}{Requirements for railway bridge verification}{section.2.8}% 36
-\BOOKMARK [2][-]{subsection.2.8.2}{Conceptual check}{section.2.8}% 37
-\BOOKMARK [2][-]{subsection.2.8.3}{Logic diagram}{section.2.8}% 38
-\BOOKMARK [2][-]{subsection.2.8.4}{Train models}{section.2.8}% 39
-\BOOKMARK [3][-]{subsubsection.2.8.4.1}{Load Model 71}{subsection.2.8.4}% 40
-\BOOKMARK [3][-]{subsubsection.2.8.4.2}{Load Models SW/0 and SW/2}{subsection.2.8.4}% 41
-\BOOKMARK [3][-]{subsubsection.2.8.4.3}{Load Model 'unloaded train'}{subsection.2.8.4}% 42
-\BOOKMARK [3][-]{subsubsection.2.8.4.4}{Load Models SHLM}{subsection.2.8.4}% 43
-\BOOKMARK [2][-]{subsection.2.8.5}{Dynamic factor}{section.2.8}% 44
-\BOOKMARK [2][-]{subsection.2.8.6}{Static analysis}{section.2.8}% 45
-\BOOKMARK [2][-]{subsection.2.8.7}{Bridge parameters}{section.2.8}% 46
-\BOOKMARK [3][-]{subsubsection.2.8.7.1}{Structural damping}{subsection.2.8.7}% 47
-\BOOKMARK [3][-]{subsubsection.2.8.7.2}{Mass of the bridge}{subsection.2.8.7}% 48
-\BOOKMARK [3][-]{subsubsection.2.8.7.3}{Stiffness of the bridge}{subsection.2.8.7}% 49
-\BOOKMARK [2][-]{subsection.2.8.8}{Dynamic analysis}{section.2.8}% 50
-\BOOKMARK [2][-]{subsection.2.8.9}{Verification of the Limit States}{section.2.8}% 51
-\BOOKMARK [3][-]{subsubsection.2.8.9.1}{Ultimate limit states}{subsection.2.8.9}% 52
-\BOOKMARK [3][-]{subsubsection.2.8.9.2}{Serviceability limit states - traffic safety}{subsection.2.8.9}% 53
-\BOOKMARK [3][-]{subsubsection.2.8.9.3}{Serviceability limit states - passenger comfort}{subsection.2.8.9}% 54
-\BOOKMARK [2][-]{subsection.2.8.10}{Principal supplementary checks}{section.2.8}% 55
-\BOOKMARK [3][-]{subsubsection.2.8.10.1}{Verification of maximum peak deck acceleration along each track}{subsection.2.8.10}% 56
-\BOOKMARK [3][-]{subsubsection.2.8.10.2}{Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading\(LM71''+''SW/0\)}{subsection.2.8.10}% 57
-\BOOKMARK [3][-]{subsubsection.2.8.10.3}{Additional verification for fatigue where dynamic analysis is required}{subsection.2.8.10}% 58
-\BOOKMARK [3][-]{subsubsection.2.8.10.4}{Verification of limiting values for the maximum vertical deflection for passenger comfort}{subsection.2.8.10}% 59
-\BOOKMARK [2][-]{subsection.2.8.11}{Diagram of general procedures}{section.2.8}% 60
-\BOOKMARK [1][-]{section.2.9}{Dynamic analysing methods}{chapter.2}% 61
-\BOOKMARK [2][-]{subsection.2.9.1}{Method based on impact factor}{section.2.9}% 62
-\BOOKMARK [2][-]{subsection.2.9.2}{Method based on dynamic train signature}{section.2.9}% 63
-\BOOKMARK [3][-]{subsubsection.2.9.2.1}{DER method}{subsection.2.9.2}% 64
-\BOOKMARK [3][-]{subsubsection.2.9.2.2}{LIR method}{subsection.2.9.2}% 65
-\BOOKMARK [2][-]{subsection.2.9.3}{Methods based on finite element models}{section.2.9}% 66
-\BOOKMARK [3][-]{subsubsection.2.9.3.1}{Direct time integration methods}{subsection.2.9.3}% 67
-\BOOKMARK [3][-]{subsubsection.2.9.3.2}{Modelling a train of moving loads}{subsection.2.9.3}% 68
-\BOOKMARK [2][-]{subsection.2.9.4}{Analytical methods based on modal analysis}{section.2.9}% 69
-\BOOKMARK [3][-]{subsubsection.2.9.4.1}{Modal analysis of a simply supported beam}{subsection.2.9.4}% 70
-\BOOKMARK [3][-]{subsubsection.2.9.4.2}{Modes of vibration}{subsection.2.9.4}% 71
-\BOOKMARK [3][-]{subsubsection.2.9.4.3}{Number of modes of vibration to consider in the analysis}{subsection.2.9.4}% 72
-\BOOKMARK [2][-]{subsection.2.9.5}{Method based on vehicle-Structure interaction dynamic analysis}{section.2.9}% 73
-\BOOKMARK [0][-]{chapter.3}{POSSIBLE THEORETICAL RESEARCH}{}% 74
-\BOOKMARK [1][-]{section.3.1}{Horizontal Train dynamic signature method for bridge lateral frequency under 1.2Hz}{chapter.3}% 75
-\BOOKMARK [1][-]{section.3.2}{3-d model Train dynamic signature method for bridge lateral frequency under 1.2Hz}{chapter.3}% 76
-\BOOKMARK [1][-]{section.3.3}{Study for bridge horizontal vibration criteria}{chapter.3}% 77
-\BOOKMARK [1][-]{section.3.4}{Study for sufficiency of criterion `Lateral first natural frequency udner 1.2Hz'}{chapter.3}% 78
-\BOOKMARK [0][-]{chapter.4}{Case study}{}% 79
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 80
+\BOOKMARK [2][-]{subsection.2.2.4}{High strength steel bridges}{section.2.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Modelling of railway vehicles}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.3.1}{Moving vertical forces model}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.2}{Advanced models}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.3}{Models proposed in Eurocodes}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{Track model}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.5}{Vertical Dynamic effects}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.5.1}{Wind Actions}{section.2.5}% 24
+\BOOKMARK [1][-]{section.2.6}{Horizontal transverse dynamic effects}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.6.1}{Sources induce transverse reactions}{section.2.6}% 26
+\BOOKMARK [2][-]{subsection.2.6.2}{Horizontal vibration of a beam}{section.2.6}% 27
+\BOOKMARK [3][-]{subsubsection.2.6.2.1}{Centrifugal forces}{subsection.2.6.2}% 28
+\BOOKMARK [2][-]{subsection.2.6.3}{Requirements for traffic safety\(horizontal\)}{section.2.6}% 29
+\BOOKMARK [2][-]{subsection.2.6.4}{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{section.2.6}% 30
+\BOOKMARK [3][-]{subsubsection.2.6.4.1}{Flange climb derailment}{subsection.2.6.4}% 31
+\BOOKMARK [3][-]{subsubsection.2.6.4.2}{Derailment caused by guage widening and rail rollover}{subsection.2.6.4}% 32
+\BOOKMARK [3][-]{subsubsection.2.6.4.3}{Derailment caused by track panel shift}{subsection.2.6.4}% 33
+\BOOKMARK [3][-]{subsubsection.2.6.4.4}{Derailment caused by vehicle lateral instability}{subsection.2.6.4}% 34
+\BOOKMARK [2][-]{subsection.2.6.5}{Requirements for traffic serviceability\(horizontal\)}{section.2.6}% 35
+\BOOKMARK [1][-]{section.2.7}{Torsional vibration}{chapter.2}% 36
+\BOOKMARK [1][-]{section.2.8}{General design principles and procedures concerning railway bridge dynamics proposed by Eurocodes }{chapter.2}% 37
+\BOOKMARK [2][-]{subsection.2.8.1}{Requirements for railway bridge verification}{section.2.8}% 38
+\BOOKMARK [2][-]{subsection.2.8.2}{Conceptual check}{section.2.8}% 39
+\BOOKMARK [2][-]{subsection.2.8.3}{Logic diagram}{section.2.8}% 40
+\BOOKMARK [2][-]{subsection.2.8.4}{Train models}{section.2.8}% 41
+\BOOKMARK [3][-]{subsubsection.2.8.4.1}{Load Model 71}{subsection.2.8.4}% 42
+\BOOKMARK [3][-]{subsubsection.2.8.4.2}{Load Models SW/0 and SW/2}{subsection.2.8.4}% 43
+\BOOKMARK [3][-]{subsubsection.2.8.4.3}{Load Model 'unloaded train'}{subsection.2.8.4}% 44
+\BOOKMARK [3][-]{subsubsection.2.8.4.4}{Load Models SHLM}{subsection.2.8.4}% 45
+\BOOKMARK [2][-]{subsection.2.8.5}{Dynamic factor}{section.2.8}% 46
+\BOOKMARK [2][-]{subsection.2.8.6}{Static analysis}{section.2.8}% 47
+\BOOKMARK [2][-]{subsection.2.8.7}{Bridge parameters}{section.2.8}% 48
+\BOOKMARK [3][-]{subsubsection.2.8.7.1}{Structural damping}{subsection.2.8.7}% 49
+\BOOKMARK [3][-]{subsubsection.2.8.7.2}{Mass of the bridge}{subsection.2.8.7}% 50
+\BOOKMARK [3][-]{subsubsection.2.8.7.3}{Stiffness of the bridge}{subsection.2.8.7}% 51
+\BOOKMARK [2][-]{subsection.2.8.8}{Dynamic analysis}{section.2.8}% 52
+\BOOKMARK [2][-]{subsection.2.8.9}{Verification of the Limit States}{section.2.8}% 53
+\BOOKMARK [3][-]{subsubsection.2.8.9.1}{Ultimate limit states}{subsection.2.8.9}% 54
+\BOOKMARK [3][-]{subsubsection.2.8.9.2}{Serviceability limit states - traffic safety}{subsection.2.8.9}% 55
+\BOOKMARK [3][-]{subsubsection.2.8.9.3}{Serviceability limit states - passenger comfort}{subsection.2.8.9}% 56
+\BOOKMARK [2][-]{subsection.2.8.10}{Principal supplementary checks}{section.2.8}% 57
+\BOOKMARK [3][-]{subsubsection.2.8.10.1}{Verification of maximum peak deck acceleration along each track}{subsection.2.8.10}% 58
+\BOOKMARK [3][-]{subsubsection.2.8.10.2}{Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading\(LM71''+''SW/0\)}{subsection.2.8.10}% 59
+\BOOKMARK [3][-]{subsubsection.2.8.10.3}{Additional verification for fatigue where dynamic analysis is required}{subsection.2.8.10}% 60
+\BOOKMARK [3][-]{subsubsection.2.8.10.4}{Verification of limiting values for the maximum vertical deflection for passenger comfort}{subsection.2.8.10}% 61
+\BOOKMARK [2][-]{subsection.2.8.11}{Diagram of general procedures}{section.2.8}% 62
+\BOOKMARK [1][-]{section.2.9}{Dynamic analysing methods}{chapter.2}% 63
+\BOOKMARK [2][-]{subsection.2.9.1}{Method based on impact factor}{section.2.9}% 64
+\BOOKMARK [2][-]{subsection.2.9.2}{Method based on dynamic train signature}{section.2.9}% 65
+\BOOKMARK [3][-]{subsubsection.2.9.2.1}{DER method}{subsection.2.9.2}% 66
+\BOOKMARK [3][-]{subsubsection.2.9.2.2}{LIR method}{subsection.2.9.2}% 67
+\BOOKMARK [2][-]{subsection.2.9.3}{Methods based on finite element models}{section.2.9}% 68
+\BOOKMARK [3][-]{subsubsection.2.9.3.1}{Direct time integration methods}{subsection.2.9.3}% 69
+\BOOKMARK [3][-]{subsubsection.2.9.3.2}{Modelling a train of moving loads}{subsection.2.9.3}% 70
+\BOOKMARK [2][-]{subsection.2.9.4}{Analytical methods based on modal analysis}{section.2.9}% 71
+\BOOKMARK [3][-]{subsubsection.2.9.4.1}{Modal analysis of a simply supported beam}{subsection.2.9.4}% 72
+\BOOKMARK [3][-]{subsubsection.2.9.4.2}{Modes of vibration}{subsection.2.9.4}% 73
+\BOOKMARK [3][-]{subsubsection.2.9.4.3}{Number of modes of vibration to consider in the analysis}{subsection.2.9.4}% 74
+\BOOKMARK [2][-]{subsection.2.9.5}{Method based on vehicle-Structure interaction dynamic analysis}{section.2.9}% 75
+\BOOKMARK [0][-]{chapter.3}{POSSIBLE THEORETICAL RESEARCH}{}% 76
+\BOOKMARK [1][-]{section.3.1}{Horizontal Train dynamic signature method for bridge lateral frequency under 1.2Hz}{chapter.3}% 77
+\BOOKMARK [1][-]{section.3.2}{3-d model Train dynamic signature method for bridge lateral frequency under 1.2Hz}{chapter.3}% 78
+\BOOKMARK [1][-]{section.3.3}{Study for bridge horizontal vibration criteria}{chapter.3}% 79
+\BOOKMARK [1][-]{section.3.4}{Study for sufficiency of criterion `Lateral first natural frequency udner 1.2Hz'}{chapter.3}% 80
+\BOOKMARK [0][-]{chapter.4}{Case study}{}% 81
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 82

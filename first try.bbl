@@ -247,6 +247,54 @@
   \field{year}{2002}
 \endentry
 
+\entry{macdougall2004state}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {MacDOUGALL}{M.}%
+     {Colin}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Driver}{D.}%
+     {Robert~G}{R.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grondin}{G.}%
+     {Gilbert~Y}{G.~Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MCDRGGGY1}
+  \strng{fullhash}{MCDRGGGY1}
+  \field{sortinit}{M}
+  \field{booktitle}{Transports Quebec 11e Colloque}
+  \field{title}{A state-of-the-art review of high performance steel for bridge
+  design}
+  \field{year}{2004}
+\endentry
+
+\entry{mohammadi2013wind}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Mohammadi}{M.}%
+     {M~Sajad}{M.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mukherjee}{M.}%
+     {Rishiraj}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MMSMR1}
+  \strng{fullhash}{MMSMR1}
+  \field{sortinit}{M}
+  \field{title}{Wind Loads on Bridges: Analysis of a three span bridge based on
+  theoretical methods and Eurocode 1}
+  \field{year}{2013}
+\endentry
+
 \entry{uic}{manual}{}
   \name{author}{1}{}{%
     {{}%
