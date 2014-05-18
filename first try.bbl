@@ -274,6 +274,24 @@
   \field{year}{2004}
 \endentry
 
+\entry{dynamicslecturenote}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Metrikine}{M.}%
+     {A.V.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Delft University of Technology}%
+  }
+  \strng{namehash}{MA1}
+  \strng{fullhash}{MA1}
+  \field{sortinit}{M}
+  \field{title}{Dynamics, Slender Structures and an Introduction to Continuum
+  Mechanics: CT 4145}
+\endentry
+
 \entry{mohammadi2013wind}{article}{}
   \name{author}{2}{}{%
     {{}%

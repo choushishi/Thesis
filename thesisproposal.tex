@@ -1,0 +1,91 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{fixltx2e}
+
+ % \usepackage[left=1.5in, right=1in, top=1in, bottom=1in, includefoot, headheight=13.6pt]{geometry}
+
+\usepackage{xcolor}
+\usepackage{sectsty}
+\chapterfont{\color{cyan}}  % sets colour of chapters
+\sectionfont{\color{cyan}}  % sets colour of sections
+\subsectionfont{\color{cyan}}
+
+% Package and setting for including pictures
+\usepackage{graphicx}
+\graphicspath{ {./Image/} }
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Packages for tables
+\usepackage{tabularx}   %limiting table width
+\usepackage{multirow}
+
+% Package for generating dummy text
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+% Package and Settings for table of contents
+% Hyperlink Settings
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\chapter*{Analysing method for dynamic behaviour of steel railway bridge.}
+
+MSc Thesis proposal - Sijian Deng
+
+
+\section*{Summary of topic}
+
+The lateral dynamic behaviour of steel railway bridges are minimally discussed in Eurocodes and designers lack knowledge of background of criteria proposed in the code. For example, there is one criterion in Eurocode requiring railway bridges should have a lateral natural frequency higher than 1.2Hz. However, this criterion is becoming more and more unsuitable because longer span provides lower natural frequencies. For bridges having span more than 100m, it is almost guaranteed that the first lateral natural frequency of the bridge fall below 1.2Hz, unable to meet the requirement of Eurocode. 
+
+Criteria on lateral dynamics of railway bridges are complicated if taking vehicle systems and interaction into account. Designers need a better knowledge on railway dynamics and a tool in calculating the lateral dynamic behaviour of the whole system. This tool needs to be simple to meet the engineering needs.  
+
+\section*{Objectives of the thesis}
+The main goal is to think of a method to verify whether a bridge is expected to encounter transverse dynamic problems. 
+
+In the literature study the background of criteria of different systems involved in dynamic response of steel railway bridges will be investigated. The dynamic actions of bridge, train system will be studied. The aim is to extract their dynamic characteristics including loading frequencies, magnitude, etc.
+
+The simplified model will be developed based on real train information in order to natively support Dutch designers. The result simplified model output shall be in cooperation with the criteria inventory made in previous steps.
+
+Using the developed model and the knowledge of literature study, an imaginary steel railway bridge can be designed, in order to verify the reliability of the newly developed tool. 
+
+\section*{Main steps}
+
+In order to provide a better tool for designers when they encounter lateral dynamic problems on steel railway bridges, following objectives are made:
+
+\begin{enumerate}
+
+\item Literature research of dynamic actions as well as their criteria on railway bridges, rails and train vehicles in order to give a better understanding of the background of the criteria which is unclear to the designers. Study the dynamic behaviour of these system respectively. Then discuss their effects when combined.
+
+\item Develop a method to check if a bridge is prone to encounter dynamic problems. The method should be simple. It should be compatible with FEM software and give suggestions for further bridge modification. However form of the method will depend on output of the literature research.
+
+Several forms of method have been made and will be illustrated during kick-off presentation.
+
+\item Verify the model developed in the previous step by checking a long-span railway bridge. 
+
+\end{enumerate}
+
+
+\section*{Time planning}
+
+\begin{tabular}{c|c|c}
+    \hline
+    Step & Description & Period \\
+    \hline
+    1 & Literature study & 2 months \\
+    2 & Analytical development of tool & 1.5 months \\
+    3 & Designing of an imaginary railway bridge project & 1.5 months \\
+    4 & Report finalization, presentation & 0.5 month \\
+    \hline
+    & Estimated date of finish: & September 2014  \\
+\end{tabular}
+
+
+
+
+
+
+\end{document}

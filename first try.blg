@@ -19,17 +19,17 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: first_try-blx.bib
 Database file #2: ref.bib
-I was expecting a `,' or a `}'---line 201 of file ref.bib
+I was expecting a `,' or a `}'---line 213 of file ref.bib
  : 
  : author={Eurocode, CEN},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 211 of file ref.bib
+I was expecting a `,' or a `}'---line 223 of file ref.bib
  : 
  : author={Eurocode, CEN},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 221 of file ref.bib
+I was expecting a `,' or a `}'---line 233 of file ref.bib
  : 
  : author={Eurocode, CEn},
 (Error may have been on previous line)
@@ -37,45 +37,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 1.7
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 19 entries,
+You've used 20 entries,
             6019 wiz_defined-function locations,
-            1211 strings with 10792 characters,
-and the built_in function-call counts, 54854 in all, are:
-= -- 1847
-> -- 2557
-< -- 540
-+ -- 1381
-- -- 1460
-* -- 3395
-:= -- 3936
+            1215 strings with 10935 characters,
+and the built_in function-call counts, 58362 in all, are:
+= -- 2052
+> -- 2666
+< -- 594
++ -- 1426
+- -- 1484
+* -- 3547
+:= -- 4108
 add.period$ -- 0
-call.type$ -- 19
-change.case$ -- 218
+call.type$ -- 20
+change.case$ -- 257
 chr.to.int$ -- 84
-cite$ -- 36
-duplicate$ -- 5925
-empty$ -- 5676
-format.name$ -- 943
-if$ -- 11761
+cite$ -- 38
+duplicate$ -- 6315
+empty$ -- 6024
+format.name$ -- 992
+if$ -- 12605
 int.to.chr$ -- 0
-int.to.str$ -- 40
+int.to.str$ -- 43
 missing$ -- 0
-newline$ -- 362
-num.names$ -- 696
-pop$ -- 5807
+newline$ -- 379
+num.names$ -- 770
+pop$ -- 6125
 preamble$ -- 1
-purify$ -- 250
+purify$ -- 290
 quote$ -- 0
-skip$ -- 3107
+skip$ -- 3356
 stack$ -- 0
-substring$ -- 1053
-swap$ -- 1828
-text.length$ -- 502
-text.prefix$ -- 18
+substring$ -- 1218
+swap$ -- 1940
+text.length$ -- 526
+text.prefix$ -- 19
 top$ -- 1
-type$ -- 709
+type$ -- 747
 warning$ -- 0
-while$ -- 360
+while$ -- 377
 width$ -- 0
-write$ -- 342
+write$ -- 358
 (There were 3 error messages)
