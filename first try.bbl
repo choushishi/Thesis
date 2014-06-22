@@ -58,6 +58,43 @@
   \field{year}{2005}
 \endentry
 
+\entry{d181dt329}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Committee}{C.}%
+     {ERRI~D181}{E.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {UIC}%
+  }
+  \strng{namehash}{CED1}
+  \strng{fullhash}{CED1}
+  \field{sortinit}{C}
+  \field{title}{ERRI D 181/DT 329 E: LATERAL FORCES ON RAILWAY BRIDGES,
+  PARAMETRIC STUDY PART1,PART 2}
+  \field{year}{1995}
+\endentry
+
+\entry{d181}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Committee}{C.}%
+     {ERRI~D181}{E.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {UIC}%
+  }
+  \strng{namehash}{CED1}
+  \strng{fullhash}{CED1}
+  \field{sortinit}{C}
+  \field{title}{RP6: Final report, D181 LATERAL FORCES ON RAILWAY BRIDGES}
+  \field{year}{1996}
+\endentry
+
 \entry{cuadrado2008analysis}{article}{}
   \name{author}{5}{}{%
     {{}%
@@ -387,6 +424,11 @@
   de proyecto de trazado de la v\'{\i}a. Ancho de v\'{\i}a de 1 435mm y
   mayores. Parte 1: Plena v\'{\i}a.}
   \field{year}{2006}
+\endentry
+
+\entry{vampire}{misc}{}
+  \field{sortinit}{V}
+  \field{title}{VAMPIRE}
 \endentry
 
 \lossort

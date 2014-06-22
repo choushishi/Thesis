@@ -1,5 +1,69 @@
 %!TEX root = first try.tex
 
-\chapter{POSSIBLE THEORETICAL RESEARCH}
+\chapter{Background research for Criterion on Lateral Dynamics of Railway Bridges in Eurocode 1991-2}
 
-Develop a method to check if a bridge is prone to encounter dynamic problems.
+Eurocode is made by committees consist of experts from a variety of engineering fields. During the creating of Eurocode, it is believed that committee member will refer to existing scientific research to base code contents on. Since there isn't any explanation nor description for 1.2Hz criterion, this chapter aims to discover the supporting research behind this criterion. 
+
+Quoting mr. Paul Vos, one of the committee member composing Eurocode 1991-2 who is also a committee member of UIC ERRI D181 research committee, said a majority of the criteria/requirements regarding railway infrastructures are extracted from researching fruits of UIC. UIC stands for International Union of Railways. It regulates railway vehicle, infrastructure and maintenance standard for member countries all over the world. My investigation starts from reports created by ERRI, a scientific research department under UIC.
+
+\section{ERRI reports investigation}
+ERRI reports are created by ERRI committees, which are categorized into research topics. For example, committee D181, investigated lateral forces that acting on railway bridges. Among reports created by D181, origin of 1.2Hz criterion is found in RP6. 
+
+\subsection{Supporting report D181 RP6}
+Evidence of \cite{d181} is the origin of \cite[A.2.4.4.2.4(3)]{EC12} is found in \cite[p4.2: Lateral Frequencies]{d181}:
+
+In order to avoid the phenomena of lateral resonance in vehicles, the first natural frequency of lateral vibration of the span $f_{lt}$ such that:
+
+\begin{equation}
+f_{lt} \geq 1.2Hz
+\end{equation}
+
+The statement exactly coincides with criterion A.2.4.4.2.4(3) in Eurocode 1991. It is sufficient to acknowledge D181 RP6 as the origin of criterion A.2.4.4.2.4(3).
+
+The value of frequency limit, 1.2Hz is explained in \cite[p3.2: Criterion 2]{d181}:
+
+In order to avoid the appearance of resonance of the lateral movement of vehicles, should be set a value lower than the first natural frequency of lateral vibration of the span studied. We know that the resonance frequency of the lateral movement is between 0.5 and 0.7 Hz pure cars, and between 0.7 and 1 Hz for locomotives. We offer security when $f_{lt} \geq 1.2Hz$
+
+Till now, the origin of vehicle data involved in above explanation remains unknown. Since UIC publishes train vehicle standards to all its members including European Union, it is reasonable to believe researcher of Committee D181 use internal information of UIC to get the frequency of lateral vehicle moving.
+
+From this statement we can conclude that the background of 1.2Hz criterion is Eurocode 1991-2 avoids bridges having a first lateral natural frequency that falls between lateral vibrating frequency of running train. But this criterion can be judged as too conservative since it covers a frequency bandwidth of 0-1.2Hz, which is over 100\% exceeding the train frequency bandwidth 0.5-1.0Hz.
+
+It can also be concluded that the bridge is actually meeting the origin purpose of the criterion if the first lateral frequency of the bridge is out of the domain of train frequency. But it arouses another problem that trains' lateral movement frequency is completely dependent on train parameters. However, the train frequency domain proposed in RP6 is extracted from data obtained before 1996 in France. It means that for example, the train vehicle running on railways nowadays can be completely different from the train running before 1996. So updating train dynamics data is also essential to make use of this requirement.
+
+It's also important to study how did D181 committee obtained the train frequency data. The procedure is described in report D181 DT329 E\cite{d181dt329}. 
+
+\subsection{Supporting report D181 DT329 E}
+The methodology used to obtain train frequency was described as following quoting \cite[p.4]{d181dt329}:
+
+\begin{quote}
+The dynamic lateral response to the passage of different train types of various theoretical bridge models to be examined using VAMPIRE\cite{vampire}. The method of modelling behaviour adopted is the Theory of Normal Modes. Each train is modelled as a series of masses interconnected by suspension components of known characteristic. Time-step integrations are then performed to simulate the passage of a train over the bridge model along a track sample, which extends beyond the bridge.
+
+Comparisons of measured bridge responses with VAMPIRE simulations of the bridges and trains involved were the subject of earlier studies for ERRI Committee D 181, the results being documented in RP 3, RP 4, and RP 5 of the Committee. Each vibration model was derived from finite element analysis of the bridge structure.
+\end{quote}
+
+It can be acknowledged from above statement that 2 sets of data were taken into account, one is generated in simulations, the other is measure via situ tests. Please note that VAMPIRE is a simulation software developed and maintained by DeltaRail. An input file for VAMPIRE is given in \cite{d181dt329} but VAMPIRE is inaccessible since it's a commercial software. Thus the lateral effects taken into account are unclear. So hypothesis was made based on input data given by \cite{d181dt329}
+
+Inventory of input data
+\begein{enumerate}
+    \item Vehicle parameters including train type, suspension parameters and speed
+    \item Contact data including rail inclination and wheel conicity
+    \item Track irregularity sample
+    \item bridge span
+    \item bridge mass per unit
+\end{enumerate}
+
+It is deducted that following effects are taken into account in the software. Please note this is not specified in any document but a hypothesis based on reasonable deduction. 
+\begin{enumerate}
+    \item Train kinetic movement(Klingel movement) because wheel conicity is introduced
+    \item Train lateral suspension system vibration because suspension parameters are introduced
+    \item Track irregular impacts on wheels since track irregularity profile is introduced
+    \item Train hunting effect. Please note that no evidence shows this effects was taken into account but because of the unpredictable characteristics of this effect, it's recommended to take this effect into consideration.
+\end{enumerate}
+
+\chapter{Recommendations on improvement on Eurocode}
+
+Define eigen frequency and natural frequency
+
+Define how-to-do and what-to-do a dynamic analysis
+
+Polish requirement for lateral dynamics
