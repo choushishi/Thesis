@@ -178,6 +178,24 @@
   \field{title}{EN 1990 AMD 2 : 2005(E) Annex A2 to EN 1990}
 \endentry
 
+\entry{esveld2001modern}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Esveld}{E.}%
+     {Coenraad}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MRT-productions Zaltbommel, Netherlands}%
+  }
+  \strng{namehash}{EC1}
+  \strng{fullhash}{EC1}
+  \field{sortinit}{E}
+  \field{title}{Modern railway track}
+  \field{year}{2001}
+\endentry
+
 \entry{EC12}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -186,14 +204,31 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{EC1}
-  \strng{fullhash}{EC1}
+  \strng{namehash}{EC2}
+  \strng{fullhash}{EC2}
   \field{sortinit}{E}
   \field{pages}{2003}
   \field{title}{1: Actions on structures, Part 2: Traffic loads on bridges}
   \field{volume}{2}
   \field{journaltitle}{Brussels: European Standard EN}
   \field{year}{1991}
+\endentry
+
+\entry{EC15528}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Eurocode}{E.}%
+     {CEN}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EC2}
+  \strng{fullhash}{EC2}
+  \field{sortinit}{E}
+  \field{title}{prEN 15528:2013, Railway applications — Line categories for
+  managing the interface between load limits of vehicles and infrastructure}
+  \field{journaltitle}{Brussels: European Standard EN}
+  \field{year}{2013}
 \endentry
 
 \entry{fryba1996dynamics}{book}{}

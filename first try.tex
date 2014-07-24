@@ -1,7 +1,9 @@
 \documentclass{report}
 \usepackage{amsmath}
-\usepackage{enumerate}
+% \usepackage{enumerate}
 \usepackage{fixltx2e}
+\usepackage[shortlabels]{enumitem}
+\setlist{nosep}
 
 \usepackage[left=1.5in, right=1in, top=1in, bottom=1in, includefoot, headheight=13.6pt]{geometry}
 
@@ -21,6 +23,7 @@
 % Packages for tables
 \usepackage{tabularx}	%limiting table width
 \usepackage{multirow}
+\usepackage{booktabs}
 
 % Package for generating dummy text
 \usepackage[english]{babel}
@@ -34,9 +37,17 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+%Package for creating appendix
+\usepackage[toc,page]{appendix}
 
 % Packages for citing and reference
 \usepackage[backend=bibtex]{biblatex} 
+
+% Packages for plotting
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+\usepgfplotslibrary{fillbetween}  
+
 \bibliography{ref} 
 
 \title{\textcolor{cyan}{Analysing method for checking dynamic behaviour of steel railway bridges \\ \textit{\normalsize study of dynamics of railway bridges and applicability assessment of simplified dynamic analysing method. }}}
