@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 1.7 $
+% $ biblatex version 2.4 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -132,26 +132,6 @@
   \field{title}{Analysis of Lateral Displacements in Large Railway Viaducts
   Under Traffic Loads. Impact on Ride Safety and Passenger Comfort.}
   \field{year}{2008}
-\endentry
-
-\entry{dominguez2001dinamica}{thesis}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Dom{\'\i}nguez~Barbero}{D.~B.}%
-     {Jaime}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DBJ1}
-  \strng{fullhash}{DBJ1}
-  \field{sortinit}{D}
-  \field{title}{Din{\'a}mica de puentes de ferrocarril para alta velocidad:
-  m{\'e}todos de c{\'a}lculo y estudio de la resonancia}
-  \list{institution}{1}{%
-    {Caminos}%
-  }
-  \field{type}{phdthesis}
-  \field{year}{2001}
 \endentry
 
 \entry{en200714363}{article}{}
@@ -289,34 +269,6 @@
   \field{sortinit}{I}
   \field{title}{Handbook of railway vehicle dynamics}
   \field{year}{2006}
-\endentry
-
-\entry{lei2002analyses}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Lei}{L.}%
-     {Xiaoyan}{X.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Noda}{N.}%
-     {N-A}{N.-A.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Elsevier}%
-  }
-  \strng{namehash}{LXNNA1}
-  \strng{fullhash}{LXNNA1}
-  \field{sortinit}{L}
-  \field{number}{1}
-  \field{pages}{147\bibrangedash 165}
-  \field{title}{Analyses of dynamic response of vehicle and track coupling
-  system with random irregularity of track vertical profile}
-  \field{volume}{258}
-  \field{journaltitle}{Journal of Sound and Vibration}
-  \field{year}{2002}
 \endentry
 
 \entry{macdougall2004state}{inproceedings}{}
@@ -459,11 +411,6 @@
   de proyecto de trazado de la v\'{\i}a. Ancho de v\'{\i}a de 1 435mm y
   mayores. Parte 1: Plena v\'{\i}a.}
   \field{year}{2006}
-\endentry
-
-\entry{vampire}{misc}{}
-  \field{sortinit}{V}
-  \field{title}{VAMPIRE}
 \endentry
 
 \lossort

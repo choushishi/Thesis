@@ -218,121 +218,7 @@ For Load Model 71 (and where required Load Model SW/0) the reduction factor $f$ 
 	f=[1-\frac{V-120}{1000}(\frac{814}{V}+1.75)(1-\sqrt{\frac{2.88}{L_f}})]
 \end{equation}
 
-\subsection{Requirements for traffic safety(horizontal)}
-Requirements other than bridge first lateral frequency higher than 1.2Hz. Since there's no further requirements mentioned by Eurocode, following requirements are gathered from other European codes, eg. British standards, UIC leaflet, etc.
-
-\begin{enumerate}[-]
-	\item Requirements regarding traffic safety for vehicles
-	\begin{enumerate}
-		\item Guiding Force: \cite{code2005518} , \cite{en200714363} and\cite{cuadrado2008analysis} propose safty limitations against railway vehicle overturning. From\cite{en200714363} the maximum guiding force for a vehicle with a load per axle of 170kN(AVE) is 66kN per axle and 48kN per axle for a vehicle with a load per axle of 112kN(ICE2). For the R1 freight wagon(load per axle of 245kN), the maximum guiding force per axle is 78kN.
-		\item Maximum lateral acceleration of the railway vehicle: proposed by \cite{13803}
-	\end{enumerate}
-	\item Requirements regarding safety for bridge\\
-	\cite{EC0} A2.4.4.1(2): Horizontal transverse deflection(to ensure acceptable horizontal track radii) and horizontal rotation of a deck about a vertical axis at ends of a deck(to ensure acceptable acceptable horizontal track geometry and passenger comfort)
-\end{enumerate}
-
-
-\subsection{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}
-
-Derailment mechanisms
-\begin{enumerate}
-	\item vehicle resonant response
-	\item lateral instability
-	\item vehicle overturning
-	\item vertical wheel unloading
-	\item flange climb
-	\item rail roll-over
-	\item track panel shift
-	\item longitudinal train forces
-\end{enumerate}
-
-The four types of derailment: flange climb derailment, derailment caused by guage widening and rail roll-over, derailment caused by track panel shift, derailment cause by vehicle lateral instability have a common cause of high lateral force at the wheel-rail interface. According to \cite[Chapter 8, IV]{iwnicki2006handbook} any conditions that lead to high lateral forces or lead to lower the ability of the system to sustain the force should be corrected. 
-
-\subsubsection{Flange climb derailment}
-Wheel flange climb derailments are caused by wheels climbing onto the top of the railhead then further running over the rail. Wheel climb derailments generally occur in situations where the wheel experiences a high lateral force combined with circumstances where the vertical force is reduced on the flanging wheel. The high lateral force is usually induced by a large wheelset angle-of-attack. The vertical force on the flanging wheel can be reduced significantly on bogies having poor vertical wheel load equalisations, such as when negotiating rough track, large track twist, or when the car is experiencing roll resonances. 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\textwidth]{forcesatflangecontactlocation.pdf}
-	\caption{Forces at flange contact location. Extracted from \cite[Figure8.4]{iwnicki2006handbook}}
-	\label{fig:forcesatflangecontactlocation}
-\end{figure}
-
-The criterion L/V ratio can be expressed as:
-
-\begin{equation}
-	\frac{L}{V}=\frac{\tan \delta -\frac{F_2}{F_3}}{1+\frac{F_2}{F_3}\tan \delta}
-\end{equation}
-
-Nadal's famous L/V ratio limiting criterion, given by Equation.\ref{eq:nadalcriterion}, was proposed for the saturated condition $F_2/F_3=\mu$
-
-\begin{equation}\label{eq:nadalcriterion}
-	\frac{L}{V}=\frac{\tan \delta - \mu}{1+ \mu \tan \delta}
-\end{equation}
-
-\subsubsection{Derailment caused by guage widening and rail rollover}
-Derailments caused by guage widening usually involve a combination of wide gauges and large lateral rail defections(rail roll), as shown in Figure\ref{fig:gaugewideningderailment}. Large lateral forces from the wheels act to spread the rails in curves. Both rails may experience significant lateral translation and/or railhead roll, which often cause the nonflanging wheel to drop between rails.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{gaugewideningderailment.pdf}
-	\caption{Gauge widening derailment. Extracted from \cite[Figure8.18]{iwnicki2006handbook}}
-	\label{fig:gaugewideningderailment}
-\end{figure}
-
-\paragraph{AAR Chapter XI rail roll criterion}
-The AAR Chapter XI rail roll criterion is established by using the L/V ratio. The roll moment about the pivot point is given by,
-
-\begin{equation}
-	M=Vd-Lh
-\end{equation}
-
-under an equilibrium condition, just before the rail starts to roll, $M$ approaches to zero, then,
-
-\begin{equation}
-	\frac{L}{V}=\frac{d}{h}
-\end{equation}
-
-This L/V ratio is considered as the critical value to evaluate the risk of rail roll. When the L/V ratio is larger than the ratio of $d/h$, the risk of rail roll becomes high. The critical L/V ratio for rail roll can vary from above 0.6 for contact at the gauge side to approximately 0.2 when the contact position is at the far-field side based on the dimension of the rails. This is because the distance $d$ is reduced. Note that this L/V ratio is calculate assuming that neither the rail fasteners nor the torsional stiffness of the rail section provide any restraint.
-
-\subsubsection{Derailment caused by track panel shift}
-Track panel shift is the cumulative lateral displacement of the track panel, including rails, tie plates and ties, over the ballast, as shown in Figure\ref{fig:lateraltrackpanelshift}. A small shift of these components may not immediately cause the loss of guidance to bogies. However, as the situation gradually depreciates to a certain level, wheels could lose guidance and drop to the ground at some speed. The derailments caused by track panel usually result in one wheel falling between the rails and the other falling outside of the track.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{lateraltrackpanelshift.pdf}
-	\caption{Lateral track panel shift. Extracted from \cite[Figure8.27]{iwnicki2006handbook}}
-	\label{fig:lateraltrackpanelshift}
-\end{figure}
-
-\paragraph{Panel shift criterion}
-Researched by the French National Railways suggested that the limiting lateral axle load can be defined in a general expression for preventing excessive track panel shift:
-
-\begin{equation}
-	L_c = aV+b
-\end{equation}
-
-where $L_c$ is the critical lateral load and $V$ is the vertical axle load. \cite[Table 8.2]{iwnicki2006handbook} lists two groups of suggested valued of $a$ and $b$. It is possible that different values for $a$ and $b$ can be specified in different area.
-
-\subsubsection{Derailment caused by vehicle lateral instability}
-On tangent track, the wheelset generally oscillates around the track centre due to any vehicle and track irregularities, as shown in Figure\ref{fig:wheelsetoscillatesaroundthetrackcentre}. This movement occurs because vehicle and track are never absolutely smooth and symmetric. This self-centring capability of a wheelset is induced by the coned shape of the wheel tread. However, as speed is increased, if the whelset conicity is high, the lateral movement of wheelset, as well as the associated bogie and car body motion, can cause oscillations with large amplitude  and a well-defined wavelength. The lateral movements are limited only by the contact of the wheel flanges with the rail. This vehicle dynamic response is also termed as vehicle hunting, and can produce high lateral forces to damage track to cause derailments.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{wheelsetoscillatesaroundthetrackcentre.pdf}
-	\caption{Wheelset oscillates around the track centre. Extracted from \cite[Figure8.28]{iwnicki2006handbook}}
-	\label{fig:wheelsetoscillatesaroundthetrackcentre}
-\end{figure}
-
-Derailment cause by vehicle hunting can have derailment mechanisms of all four types discussed in the previous sections. The high lateral force induced from hunting may cause wheel flange climbing on the rail, gauge widening, rail roll-over, track panel shift, or combinations of these. The safety concerns for this type of derailment, usually occurring at higher speeds, make it an important area of study.
-
-Hunting predominantly occurs in empty or lightweight vehicles. The critical hunting speed is highly dependent on the vehicle/track characteristics. Investigation of the critical speed for such a system with nonlinearities is to examine the vehicle response to a disturbance using a numerical solution of the equations of motion.
-
-\subsection{Requirements for traffic serviceability(horizontal)}
-
-The criteria Comfort Indexes for assessing ride comfort in railway vehicles proposed in \cite{12299}. This standard describes a methodology for assessing ride comfort as a function of longitudinal, vertical and transverse accelerations.
-
-Comfort Index indicates the percentage of passengers experimenting discomfort in a specific situation. These indexes can be computed via empiric formula given in the standard, which depend on variables such as lateral acceleration, rate of change of acceleration and rolling velocity. All these values are filtered with a moving average filter that eliminates small wavelength components. Using this methodology for the computed worst-case situations, the comfort indexes have been found excellent, therefore no passenger should feel uncomfortable. 
+ 
 
 \section{Torsional vibration}
 According to \cite[9.1.3]{fryba1996dynamics}, the horizontal lateral forces of railway vehicles act on the rial top level,i.e. outside the cross section centroid of the bridge in the majority of cases. Let the difference of elevations be $ h $. Consequently, they affect the bridge by twisting moments $ hH_n(t) $. The differential equation of a beam due to simple torsion is 
@@ -881,205 +767,191 @@ Additionally, the limiting values of $L/\delta$, defined in Figure\ref{fig:recom
 
 Vertical deflections should be determined with the LM 71 model multiplied by the factor $\phi$ and adopting $\alpha=1$, being only one track loaded for the case of bridges with two or more tracks.
 
-\subsection{Principal supplementary checks}
-\subsubsection{Verification of maximum peak deck acceleration along each track}
-\subsubsection{Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)}
-\subsubsection{Additional verification for fatigue where dynamic analysis is required}
-\subsubsection{Verification of limiting values for the maximum vertical deflection for passenger comfort}
+% \subsection{Principal supplementary checks}
+% \subsubsection{Verification of maximum peak deck acceleration along each track}
+% \subsubsection{Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)}
+% \subsubsection{Additional verification for fatigue where dynamic analysis is required}
+% \subsubsection{Verification of limiting values for the maximum vertical deflection for passenger comfort}
 
-\subsection{Diagram of general procedures}
-By summarizing Eurocode several steps of calculation are extracted as following, arranged in chronological order.
+% \subsection{Diagram of general procedures}
+% By summarizing Eurocode several steps of calculation are extracted as following, arranged in chronological order.
 
-\begin{enumerate}
-	\item  Follow the conceptual check to avoid unsafe designs
-	\item  Follow the logic diagram in Figure~\ref{fig:logicdiagram} to check whether dynamic analyses are required 
-	\item  Find the appropriate train models, including 
-	\begin{enumerate}
-		\item-Hypotheses relating to rolling stock
-		\item-Rolling stock for interoperability
-		\item-Load models HSLM
-		\item-Load distribution
-		\item-Load combinations and partial factors
-		\item-Train speeds to be considered
-	\end{enumerate}
-	\item Perform the static analyses
-	\item  Examine bridge parameters, including
-		\begin{enumerate}
-			\item-Structural damping
-			\item-Mass of the bridge
-			\item-Stiffness of the bridge
-		\end{enumerate}
-	\item Perform the dynamic analyses
-	\item  Principal supplementary design checks, including
-	\begin{enumerate}
-		\item-Verification of maximum peak deck acceleration along each track
-		\item-Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)
-		\item-Additional verification for fatigue where dynamic analysis is required
-		\item-Verification of limiting values for the maximum vertical deflection for passenger comfort
-	\end{enumerate}
-	\item The results of the dynamic analysis shall be compared with the results of the static
-analysis multiplied by the dynamic factor $\varPhi$ in 6.4.5 The most unfavourable values of the load effects shall be used. 
-\end{enumerate}
+% \begin{enumerate}
+% 	\item  Follow the conceptual check to avoid unsafe designs
+% 	\item  Follow the logic diagram in Figure~\ref{fig:logicdiagram} to check whether dynamic analyses are required 
+% 	\item  Find the appropriate train models, including 
+% 	\begin{enumerate}
+% 		\item-Hypotheses relating to rolling stock
+% 		\item-Rolling stock for interoperability
+% 		\item-Load models HSLM
+% 		\item-Load distribution
+% 		\item-Load combinations and partial factors
+% 		\item-Train speeds to be considered
+% 	\end{enumerate}
+% 	\item Perform the static analyses
+% 	\item  Examine bridge parameters, including
+% 		\begin{enumerate}
+% 			\item-Structural damping
+% 			\item-Mass of the bridge
+% 			\item-Stiffness of the bridge
+% 		\end{enumerate}
+% 	\item Perform the dynamic analyses
+% 	\item  Principal supplementary design checks, including
+% 	\begin{enumerate}
+% 		\item-Verification of maximum peak deck acceleration along each track
+% 		\item-Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)
+% 		\item-Additional verification for fatigue where dynamic analysis is required
+% 		\item-Verification of limiting values for the maximum vertical deflection for passenger comfort
+% 	\end{enumerate}
+% 	\item The results of the dynamic analysis shall be compared with the results of the static
+% analysis multiplied by the dynamic factor $\varPhi$ in 6.4.5 The most unfavourable values of the load effects shall be used. 
+% \end{enumerate}
 
-\section{Dynamic analysing methods}\label{sec:dynamic-analysing-methods}
-There are several dynamic analysing methods developed in Europe over time since Eurocodes don't specify what method to be used during dynamic analysing. These methods differ from each other in the level of calculation complexity. For example, Dynamic train signature method is a good solution for simple structures with well-known train types since it cost less time and effort. On the other hand, Train-vehicle method is an inevitable process for some complicated bridge structures thanks to its wide applicability. However, generally, Train-vehicle method is much more time and money consuming. In following paragraphs, some state-of-art dynamic analysing methods will be reviewed.
-
-
-\subsection{Method based on impact factor}
-
-\subsection{Method based on dynamic train signature}
-As mentioned in \cite[A.4.3]{uic}, the dynamic signature of a train is obtained by breaking down the load diagram of a train in Fourier series and by extrapolating it to the natural modes. It represents the dynamic excitation features of the train and is independent of the characteristics of the structure. The signature depends on axle spacing and loads only. However, newly developed Train dynamic signature method like LIR method takes structure characteristics into account, giving more applicable solutions for specific bridge projects.
-
-Train dynamic signature is a useful method of producing quick analyses on resonance characteristics of the vehicle-bridge systems. The method is especially effective for simple bridge structures.
-
-\subsubsection{DER method}
-
-DER = Decomposition of the Resonance Excitation
-
-The development used in DER method begins from the analysis of the frequency of excitation produced by a train of moving loads. This method is based in the following assumptions:
-
-\begin{enumerate} [-]
-	\item Applicable only on statistically determined bridges
-	\item For the analysis of statistically determined bridges, is considered that the dynamic response is significantly represented by the first mode of vibration
-\end{enumerate}
-
-The development of the method is summarised as follows:
-
-\begin{enumerate}
-	\item Reduce the response of a statistically determinate beam to a single degree of freeedom system
-	\item Decomposition of the dynamic response of the bridge, in Fourier series;
-	\item Consideration of the term which corresponds to the condition of resonance frequencies.
-\end{enumerate}
-
-The maximum accelerations at the midspan of the beam for a certain speed, is given as follows:
-
-\begin{equation}
-	\ddot{y}(t)\leq C_t\cdot A(L/\lambda)\cdot G(\lambda)
-\end{equation}
-
-where the first factor is a constant that depends from bridge characteristics:
-
-\begin{equation}
-	C_t=\dfrac{8\pi f_0^2}{K}=\dfrac{4}{\rho\pi L}  
-\end{equation}
-
-The second factor is a function called dynamic influence line:
-
-\begin{equation}
-	A(L/\lambda )= \bigg\vert\dfrac{\cos (\pi L/\lambda)}{(2L/\lambda)^2-1} \bigg\vert
-\end{equation}
-
-and the third factor represents the train dynamic signature, defined as follows:
-
-\begin{equation}
-	G(\lambda)=\sqrt{[\sum_{k=1}^N F_k\cos(\dfrac{2\pi x_k}{\lambda})]^2+[\sum_{k=1}^N F_k \sin(\dfrac{2\pi x_k}{\lambda})]^2}\cdot (1-e^{-2\pi \xi \dfrac{x_N}{\lambda}})\cdot \dfrac{L}{\xi x_N}
-\end{equation}
-
-\subsubsection{LIR method}
-LIR method is based on residual influence line. It is applicable only on statistically determined bridges, too. The solution of the displacements and accelerations in the midspan, of the simply supported beam, is developed by \citeauthor{dominguez2001dinamica}. The solution is given as follows:
-
-\begin{equation}
-	\centering
-	y_{max}=C_{desp}\cdot A(r) \cdot G(\lambda)
-\end{equation}
-
-\begin{equation}
-	\ddot{y}_{max}=C_{acel}\cdot A(r) \cdot G(\lambda)
-\end{equation}
-
-with,
-
-\begin{equation}
-	C_{desp} = \frac{1}{M\omega_0^2},
-	C_{acel} = \frac{1}{M}
-\end{equation}
-
-The factor $ A(r) $ is the dynamic influence line, give as:
-
-\begin{equation}
-	A(r)=\frac{r}{1-r^2}\sqrt{e^{-2\xi \frac{\pi}{r}}+1+2\cos (\frac{\pi}{r})e^{-2\xi \frac{\pi}{r}}}
-\end{equation}
-
-with $ r=\lambda/2L $.
-
-$G(\lambda)$ is named train dynamic signature, depending from train characteristics and from the damping coefficient of the structure, give as follows:
-
-\begin{equation}
-\end{equation}
-
-To make $G(\lambda)$ representative for the maximum response, maximum value of $G(\lambda)$ for each different subtrain is considered the value of $G(\lambda)$
-
-\begin{equation}
-	G(\lambda) = \max_{i=1}^{N} \sqrt{[\sum_{x_1}^{x_i}F_i\cos (2\pi \delta_i) e^{-2\pi \xi \delta_i}]^2+[\sum_{x_1}^{x_i}F_i \sin (2\pi \delta_i) e^{-2\pi \xi \delta_i}]^2}
-\end{equation}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\textwidth]{trainsig.pdf}
-	\caption{Train dynamic signatures for the seven real trains, considering a damping value of $\xi = 0.00$. Extracted from \cite[Figure 2.20]{da2007dynamic}}
-	\label{trainsig}
-\end{figure}
-
-\subsection{Methods based on finite element models}
-Finite element methods are the most applicable methods available. The methods are based on direct time integration.
-
-\subsubsection{Direct time integration methods}
-General equation of motion for a SDOF system can be given in following form:
-
-\begin{equation}
-	\boldsymbol{M\ddot{d}}+\boldsymbol{C\dot{d}}+\boldsymbol{Kd}=\boldsymbol{f}(t)
-\end{equation}
-
-where $\boldsymbol{M}$ is the mass matrix, $ \boldsymbol{c} $ is the damping matrix, $ \boldsymbol{K} $ is the stiffness matrix, $ \boldsymbol{f}(t) $ is the vector of external loads and $ \boldsymbol{d} $ the unknown vector of nodal displacements. 
-
-Direct time integration method is the principle of finite element models. Due to the expected huge amount of calculation, computers are used to process time integration calculations. Thanks to the reliability and efficiency of computers, there are more and more project done with the help of computer FEM software nowadays.
-
-\subsubsection{Modelling a train of moving loads}
-The method of modelling spatial moving loads in FEM software is applying load histories in each convenient node. At a certain time-step, a load F, whose magnitude depending linearly on the distance from the axle to the node, is assigned to each node if the load axis is above an element that contains the node. The procedure is outlined in Figure.\ref{fig:movingloads}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{movingloads.pdf}
-	\caption{Nodal force time history definition for a single moving load $F$, with speed $v$. Extracted from \cite[Figure 2.15]{da2007dynamic}}
-	\label{fig:movingloads}
-\end{figure}
-
-\subsection{Analytical methods based on modal analysis}
-Modal analysis is the study of the dynamic properties of structures under vibrational excitation. Applied on railway bridge structures, the analysis can be simple if the bridge is modelled as a simply supported beam.
-
-\subsubsection{Modal analysis of a simply supported beam}
-blahblahblahblahblah stuff
-
-\blindtext
-
-Contents to be added
-
-\subsubsection{Modes of vibration}
-
-\blindtext
-
-\subsubsection{Number of modes of vibration to consider in the analysis}
-
-\blindtext
+% \section{Dynamic analysing methods}\label{sec:dynamic-analysing-methods}
+% There are several dynamic analysing methods developed in Europe over time since Eurocodes don't specify what method to be used during dynamic analysing. These methods differ from each other in the level of calculation complexity. For example, Dynamic train signature method is a good solution for simple structures with well-known train types since it cost less time and effort. On the other hand, Train-vehicle method is an inevitable process for some complicated bridge structures thanks to its wide applicability. However, generally, Train-vehicle method is much more time and money consuming. In following paragraphs, some state-of-art dynamic analysing methods will be reviewed.
 
 
-\subsection{Method based on vehicle-Structure interaction dynamic analysis}\label{sec:tds}
-Different from point load models, vehicle-structure models takes suspension systems of train vehicles into account, providing associations between train carriage and structure. Impact of suspension system vibration on bridge structure can be neglected when the span of the bridge is comparably small since there's little chance for suspension system and bridge to resonant. As the span of bridges increase, the first vertical/transverse natural frequency of bridge can decrease into the natural frequency range of train suspension system. This means long-span bridges can resonant with train suspension system. To study the effects related to train suspension system, vehicle-structure interaction method is developed. 
+% \subsection{Method based on impact factor}
 
-A general model for a conventional coach on two bogies are shown in Figure.\ref{fig:vehicle-structure}, including the stiffness and damping $(K_P,c_P)$ of the primary suspension of each axle, the secondary suspension of the bogies $(K_s,c_s)$, the unsprung mass of the wheels $(M_w)$, the bogies $(M_b, J_b)$, and the vehicle body $(M,J)$. Similar models may be developed for articulated or regular trains.
+% \subsection{Method based on dynamic train signature}
+% As mentioned in \cite[A.4.3]{uic}, the dynamic signature of a train is obtained by breaking down the load diagram of a train in Fourier series and by extrapolating it to the natural modes. It represents the dynamic excitation features of the train and is independent of the characteristics of the structure. The signature depends on axle spacing and loads only. However, newly developed Train dynamic signature method like LIR method takes structure characteristics into account, giving more applicable solutions for specific bridge projects.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{vehicle-structure.pdf}
-	\caption{Model for analysis of vehicle-structure system. Extracted from \cite[Figure 12]{lei2002analyses}}
-	\label{fig:vehicle-structure}
-\end{figure}
+% Train dynamic signature is a useful method of producing quick analyses on resonance characteristics of the vehicle-bridge systems. The method is especially effective for simple bridge structures.
 
-Sometimes more simplified model , represented by one mass, one spring and one damper per bogie can be considered, depending on the purpose of the analysis. See Figure\ref{fig:simplified-vehicle-structure} for example.
+% \subsubsection{DER method}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{simplifiedvehiclestructure.pdf}
-	\caption{Load train with vehicle-bridge interaction: simplified interaction model and variables definition. Extracted from \cite[Figure15]{lei2002analyses}}
-	\label{fig:simplified-vehicle-structure}
-\end{figure}
+% DER = Decomposition of the Resonance Excitation
+
+% The development used in DER method begins from the analysis of the frequency of excitation produced by a train of moving loads. This method is based in the following assumptions:
+
+% \begin{enumerate} [-]
+% 	\item Applicable only on statistically determined bridges
+% 	\item For the analysis of statistically determined bridges, is considered that the dynamic response is significantly represented by the first mode of vibration
+% \end{enumerate}
+
+% The development of the method is summarised as follows:
+
+% \begin{enumerate}
+% 	\item Reduce the response of a statistically determinate beam to a single degree of freeedom system
+% 	\item Decomposition of the dynamic response of the bridge, in Fourier series;
+% 	\item Consideration of the term which corresponds to the condition of resonance frequencies.
+% \end{enumerate}
+
+% The maximum accelerations at the midspan of the beam for a certain speed, is given as follows:
+
+% \begin{equation}
+% 	\ddot{y}(t)\leq C_t\cdot A(L/\lambda)\cdot G(\lambda)
+% \end{equation}
+
+% where the first factor is a constant that depends from bridge characteristics:
+
+% \begin{equation}
+% 	C_t=\dfrac{8\pi f_0^2}{K}=\dfrac{4}{\rho\pi L}  
+% \end{equation}
+
+% The second factor is a function called dynamic influence line:
+
+% \begin{equation}
+% 	A(L/\lambda )= \bigg\vert\dfrac{\cos (\pi L/\lambda)}{(2L/\lambda)^2-1} \bigg\vert
+% \end{equation}
+
+% and the third factor represents the train dynamic signature, defined as follows:
+
+% \begin{equation}
+% 	G(\lambda)=\sqrt{[\sum_{k=1}^N F_k\cos(\dfrac{2\pi x_k}{\lambda})]^2+[\sum_{k=1}^N F_k \sin(\dfrac{2\pi x_k}{\lambda})]^2}\cdot (1-e^{-2\pi \xi \dfrac{x_N}{\lambda}})\cdot \dfrac{L}{\xi x_N}
+% \end{equation}
+
+% \subsubsection{LIR method}
+% LIR method is based on residual influence line. It is applicable only on statistically determined bridges, too. The solution of the displacements and accelerations in the midspan, of the simply supported beam, is developed by \citeauthor{dominguez2001dinamica}. The solution is given as follows:
+
+% \begin{equation}
+% 	\centering
+% 	y_{max}=C_{desp}\cdot A(r) \cdot G(\lambda)
+% \end{equation}
+
+% \begin{equation}
+% 	\ddot{y}_{max}=C_{acel}\cdot A(r) \cdot G(\lambda)
+% \end{equation}
+
+% with,
+
+% \begin{equation}
+% 	C_{desp} = \frac{1}{M\omega_0^2},
+% 	C_{acel} = \frac{1}{M}
+% \end{equation}
+
+% The factor $ A(r) $ is the dynamic influence line, give as:
+
+% \begin{equation}
+% 	A(r)=\frac{r}{1-r^2}\sqrt{e^{-2\xi \frac{\pi}{r}}+1+2\cos (\frac{\pi}{r})e^{-2\xi \frac{\pi}{r}}}
+% \end{equation}
+
+% with $ r=\lambda/2L $.
+
+% $G(\lambda)$ is named train dynamic signature, depending from train characteristics and from the damping coefficient of the structure, give as follows:
+
+% \begin{equation}
+% \end{equation}
+
+% To make $G(\lambda)$ representative for the maximum response, maximum value of $G(\lambda)$ for each different subtrain is considered the value of $G(\lambda)$
+
+% \begin{equation}
+% 	G(\lambda) = \max_{i=1}^{N} \sqrt{[\sum_{x_1}^{x_i}F_i\cos (2\pi \delta_i) e^{-2\pi \xi \delta_i}]^2+[\sum_{x_1}^{x_i}F_i \sin (2\pi \delta_i) e^{-2\pi \xi \delta_i}]^2}
+% \end{equation}
+
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.6\textwidth]{trainsig.pdf}
+% 	\caption{Train dynamic signatures for the seven real trains, considering a damping value of $\xi = 0.00$. Extracted from \cite[Figure 2.20]{da2007dynamic}}
+% 	\label{trainsig}
+% \end{figure}
+
+% \subsection{Methods based on finite element models}
+% Finite element methods are the most applicable methods available. The methods are based on direct time integration.
+
+% \subsubsection{Direct time integration methods}
+% General equation of motion for a SDOF system can be given in following form:
+
+% \begin{equation}
+% 	\boldsymbol{M\ddot{d}}+\boldsymbol{C\dot{d}}+\boldsymbol{Kd}=\boldsymbol{f}(t)
+% \end{equation}
+
+% where $\boldsymbol{M}$ is the mass matrix, $ \boldsymbol{c} $ is the damping matrix, $ \boldsymbol{K} $ is the stiffness matrix, $ \boldsymbol{f}(t) $ is the vector of external loads and $ \boldsymbol{d} $ the unknown vector of nodal displacements. 
+
+% Direct time integration method is the principle of finite element models. Due to the expected huge amount of calculation, computers are used to process time integration calculations. Thanks to the reliability and efficiency of computers, there are more and more project done with the help of computer FEM software nowadays.
+
+% \subsubsection{Modelling a train of moving loads}
+% The method of modelling spatial moving loads in FEM software is applying load histories in each convenient node. At a certain time-step, a load F, whose magnitude depending linearly on the distance from the axle to the node, is assigned to each node if the load axis is above an element that contains the node. The procedure is outlined in Figure.\ref{fig:movingloads}.
+
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.8\textwidth]{movingloads.pdf}
+% 	\caption{Nodal force time history definition for a single moving load $F$, with speed $v$. Extracted from \cite[Figure 2.15]{da2007dynamic}}
+% 	\label{fig:movingloads}
+% \end{figure}
+
+% \subsection{Analytical methods based on modal analysis}
+% Modal analysis is the study of the dynamic properties of structures under vibrational excitation. Applied on railway bridge structures, the analysis can be simple if the bridge is modelled as a simply supported beam.
+
+
+
+% \subsection{Method based on vehicle-Structure interaction dynamic analysis}\label{sec:tds}
+% Different from point load models, vehicle-structure models takes suspension systems of train vehicles into account, providing associations between train carriage and structure. Impact of suspension system vibration on bridge structure can be neglected when the span of the bridge is comparably small since there's little chance for suspension system and bridge to resonant. As the span of bridges increase, the first vertical/transverse natural frequency of bridge can decrease into the natural frequency range of train suspension system. This means long-span bridges can resonant with train suspension system. To study the effects related to train suspension system, vehicle-structure interaction method is developed. 
+
+% A general model for a conventional coach on two bogies are shown in Figure.\ref{fig:vehicle-structure}, including the stiffness and damping $(K_P,c_P)$ of the primary suspension of each axle, the secondary suspension of the bogies $(K_s,c_s)$, the unsprung mass of the wheels $(M_w)$, the bogies $(M_b, J_b)$, and the vehicle body $(M,J)$. Similar models may be developed for articulated or regular trains.
+
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.8\textwidth]{vehicle-structure.pdf}
+% 	\caption{Model for analysis of vehicle-structure system. Extracted from \cite[Figure 12]{lei2002analyses}}
+% 	\label{fig:vehicle-structure}
+% \end{figure}
+
+% Sometimes more simplified model , represented by one mass, one spring and one damper per bogie can be considered, depending on the purpose of the analysis. See Figure\ref{fig:simplified-vehicle-structure} for example.
+
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.8\textwidth]{simplifiedvehiclestructure.pdf}
+% 	\caption{Load train with vehicle-bridge interaction: simplified interaction model and variables definition. Extracted from \cite[Figure15]{lei2002analyses}}
+% 	\label{fig:simplified-vehicle-structure}
+% \end{figure}

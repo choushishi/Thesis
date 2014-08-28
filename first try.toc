@@ -38,218 +38,206 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.2.1}Centrifugal forces}{9}{subsubsection.2.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}Requirements for traffic safety(horizontal)}{11}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Torsional vibration}{11}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.4}Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{12}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.6}Theoretical bridge models}{12}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.4.1}Flange climb derailment}{12}{subsubsection.2.4.4.1}
+\contentsline {subsection}{\numberline {2.6.1}Mass beams}{12}{subsection.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.4.2}Derailment caused by guage widening and rail rollover}{12}{subsubsection.2.4.4.2}
+\contentsline {subsection}{\numberline {2.6.2}Continuous beam}{12}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{AAR Chapter XI rail roll criterion}{13}{section*.8}
+\contentsline {subsection}{\numberline {2.6.3}Complex systems}{13}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.4.3}Derailment caused by track panel shift}{14}{subsubsection.2.4.4.3}
+\contentsline {subsubsection}{\numberline {2.6.3.1}Trusses}{13}{subsubsection.2.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Panel shift criterion}{14}{section*.10}
+\contentsline {subsubsection}{\numberline {2.6.3.2}Frames}{13}{subsubsection.2.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.4.4}Derailment caused by vehicle lateral instability}{14}{subsubsection.2.4.4.4}
+\contentsline {subsubsection}{\numberline {2.6.3.3}Curved bars}{13}{subsubsection.2.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.5}Requirements for traffic serviceability(horizontal)}{15}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.6.4}High strength steel bridges}{13}{subsection.2.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Torsional vibration}{15}{section.2.5}
+\contentsline {section}{\numberline {2.7}Modelling of railway vehicles}{13}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Theoretical bridge models}{16}{section.2.6}
+\contentsline {subsection}{\numberline {2.7.1}Moving vertical forces model}{13}{subsection.2.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Mass beams}{16}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.7.2}Advanced models}{14}{subsection.2.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Continuous beam}{16}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.7.3}Models proposed in Eurocodes}{14}{subsection.2.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Complex systems}{16}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.8}Track model}{14}{section.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.3.1}Trusses}{16}{subsubsection.2.6.3.1}
+\contentsline {section}{\numberline {2.9}General design principles and procedures concerning railway bridge dynamics proposed by Eurocodes }{14}{section.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.3.2}Frames}{16}{subsubsection.2.6.3.2}
+\contentsline {subsection}{\numberline {2.9.1}Requirements for railway bridge verification}{14}{subsection.2.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.3.3}Curved bars}{16}{subsubsection.2.6.3.3}
+\contentsline {subsection}{\numberline {2.9.2}Conceptual check}{16}{subsection.2.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.4}High strength steel bridges}{16}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.9.3}Logic diagram}{17}{subsection.2.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Modelling of railway vehicles}{17}{section.2.7}
+\contentsline {subsection}{\numberline {2.9.4}Train models}{18}{subsection.2.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}Moving vertical forces model}{17}{subsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.9.4.1}Load Model 71}{18}{subsubsection.2.9.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Advanced models}{18}{subsection.2.7.2}
+\contentsline {subsubsection}{\numberline {2.9.4.2}Load Models SW/0 and SW/2}{18}{subsubsection.2.9.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.3}Models proposed in Eurocodes}{18}{subsection.2.7.3}
+\contentsline {subsubsection}{\numberline {2.9.4.3}Load Model 'unloaded train'}{18}{subsubsection.2.9.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Track model}{18}{section.2.8}
+\contentsline {subsubsection}{\numberline {2.9.4.4}Load Models SHLM}{19}{subsubsection.2.9.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}General design principles and procedures concerning railway bridge dynamics proposed by Eurocodes }{18}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.5}Dynamic factor}{19}{subsection.2.9.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}Requirements for railway bridge verification}{18}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.6}Static analysis}{20}{subsection.2.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Conceptual check}{20}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.7}Bridge parameters}{20}{subsection.2.9.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.3}Logic diagram}{20}{subsection.2.9.3}
+\contentsline {subsubsection}{\numberline {2.9.7.1}Structural damping}{20}{subsubsection.2.9.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.4}Train models}{21}{subsection.2.9.4}
+\contentsline {subsubsection}{\numberline {2.9.7.2}Mass of the bridge}{20}{subsubsection.2.9.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.1}Load Model 71}{22}{subsubsection.2.9.4.1}
+\contentsline {subsubsection}{\numberline {2.9.7.3}Stiffness of the bridge}{21}{subsubsection.2.9.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.2}Load Models SW/0 and SW/2}{22}{subsubsection.2.9.4.2}
+\contentsline {subsection}{\numberline {2.9.8}Dynamic analysis}{21}{subsection.2.9.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.3}Load Model 'unloaded train'}{23}{subsubsection.2.9.4.3}
+\contentsline {subsection}{\numberline {2.9.9}Verification of the Limit States}{21}{subsection.2.9.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.4.4}Load Models SHLM}{23}{subsubsection.2.9.4.4}
+\contentsline {subsubsection}{\numberline {2.9.9.1}Ultimate limit states}{22}{subsubsection.2.9.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.5}Dynamic factor}{23}{subsection.2.9.5}
+\contentsline {subsubsection}{\numberline {2.9.9.2}Serviceability limit states - traffic safety}{22}{subsubsection.2.9.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.6}Static analysis}{24}{subsection.2.9.6}
+\contentsline {paragraph}{Vertical accelerations of the deck}{22}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.7}Bridge parameters}{24}{subsection.2.9.7}
+\contentsline {paragraph}{Deck twist}{22}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.7.1}Structural damping}{25}{subsubsection.2.9.7.1}
+\contentsline {paragraph}{Vertical deformations}{22}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.7.2}Mass of the bridge}{25}{subsubsection.2.9.7.2}
+\contentsline {paragraph}{Transverse deformations and vibrations}{23}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.7.3}Stiffness of the bridge}{25}{subsubsection.2.9.7.3}
+\contentsline {paragraph}{Longitudinal displacements}{23}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.8}Dynamic analysis}{25}{subsection.2.9.8}
+\contentsline {subsubsection}{\numberline {2.9.9.3}Serviceability limit states - passenger comfort}{25}{subsubsection.2.9.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.9}Verification of the Limit States}{25}{subsection.2.9.9}
+\contentsline {chapter}{\numberline {3}Train vehicles layouts and geometry}{27}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.9.1}Ultimate limit states}{26}{subsubsection.2.9.9.1}
+\contentsline {section}{\numberline {3.1}Locomotives}{27}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.9.2}Serviceability limit states - traffic safety}{26}{subsubsection.2.9.9.2}
+\contentsline {subsection}{\numberline {3.1.1}4-axle locomotives}{27}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vertical accelerations of the deck}{26}{section*.26}
+\contentsline {subsection}{\numberline {3.1.2}6-axle locomotives}{27}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Deck twist}{26}{section*.27}
+\contentsline {section}{\numberline {3.2}Passenger carriages}{27}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vertical deformations}{26}{section*.30}
+\contentsline {section}{\numberline {3.3}Wheelset and track dimensions}{27}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Transverse deformations and vibrations}{26}{section*.32}
+\contentsline {section}{\numberline {3.4}Conicity and Equivalent Conicity of Wheels}{27}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Longitudinal displacements}{27}{section*.34}
+\contentsline {section}{\numberline {3.5}Worn wheel profiles}{28}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.9.3}Serviceability limit states - passenger comfort}{27}{subsubsection.2.9.9.3}
+\contentsline {section}{\numberline {3.6}Trains in Netherlands}{28}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.10}Principal supplementary checks}{29}{subsection.2.9.10}
+\contentsline {chapter}{\numberline {4}Parametric Study}{31}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.10.1}Verification of maximum peak deck acceleration along each track}{29}{subsubsection.2.9.10.1}
+\contentsline {section}{\numberline {4.1}Effects investigated in Parametric Study}{31}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.10.2}Verification of whether the calculated load effects from high-speed rail traffic, including HSLM on high-speed interoperable routes, are greater than those of normal rail traffic loading(LM71''+''SW/0)}{29}{subsubsection.2.9.10.2}
+\contentsline {section}{\numberline {4.2}Speed range of dynamic consideration}{31}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.10.3}Additional verification for fatigue where dynamic analysis is required}{30}{subsubsection.2.9.10.3}
+\contentsline {section}{\numberline {4.3}Equivalent conicity used in this study}{32}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.9.10.4}Verification of limiting values for the maximum vertical deflection for passenger comfort}{30}{subsubsection.2.9.10.4}
+\contentsline {section}{\numberline {4.4}Parametric Study on Frequency of Klingel movement}{32}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.11}Diagram of general procedures}{30}{subsection.2.9.11}
+\contentsline {section}{\numberline {4.5}Comparison between Klingle movement and train kinematic movement studied in D181 DT329}{32}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Dynamic analysing methods}{31}{section.2.10}
+\contentsline {section}{\numberline {4.6}Assess of frequency bandwidth based on realistic data of Dutch Rail/Vehicle}{33}{section.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.1}Method based on impact factor}{31}{subsection.2.10.1}
+\contentsline {section}{\numberline {4.7}Parametric study on frequency caused by axle repeat pattern}{34}{section.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.2}Method based on dynamic train signature}{31}{subsection.2.10.2}
+\contentsline {section}{\numberline {4.8}Conclusion of parametric study}{36}{section.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.2.1}DER method}{31}{subsubsection.2.10.2.1}
+\contentsline {chapter}{\numberline {5}Recommendations on improvement on Eurocode}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.2.2}LIR method}{32}{subsubsection.2.10.2.2}
+\contentsline {section}{\numberline {5.1}Another criterion proposed by J.J.Reber}{37}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.3}Methods based on finite element models}{32}{subsection.2.10.3}
+\contentsline {section}{\numberline {5.2}Misc}{37}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.3.1}Direct time integration methods}{32}{subsubsection.2.10.3.1}
+\contentsline {section}{\numberline {5.3}Improve criteria for lateral bridge dynamics}{37}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.3.2}Modelling a train of moving loads}{33}{subsubsection.2.10.3.2}
+\contentsline {subsection}{\numberline {5.3.1}Requirements for traffic safety(horizontal)}{37}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.4}Analytical methods based on modal analysis}{33}{subsection.2.10.4}
+\contentsline {subsection}{\numberline {5.3.2}Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{38}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.4.1}Modal analysis of a simply supported beam}{33}{subsubsection.2.10.4.1}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Flange climb derailment}{38}{subsubsection.5.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.4.2}Modes of vibration}{33}{subsubsection.2.10.4.2}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Derailment caused by guage widening and rail rollover}{39}{subsubsection.5.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.10.4.3}Number of modes of vibration to consider in the analysis}{34}{subsubsection.2.10.4.3}
+\contentsline {paragraph}{AAR Chapter XI rail roll criterion}{39}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.5}Method based on vehicle-Structure interaction dynamic analysis}{34}{subsection.2.10.5}
+\contentsline {subsubsection}{\numberline {5.3.2.3}Derailment caused by track panel shift}{39}{subsubsection.5.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Background research for Criterion on Lateral Dynamics of Railway Bridges in Eurocode 1991-2}{36}{chapter.3}
+\contentsline {paragraph}{Panel shift criterion}{40}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}ERRI reports investigation}{36}{section.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2.4}Derailment caused by vehicle lateral instability}{40}{subsubsection.5.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Supporting report D181 RP6}{36}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {5.3.3}Requirements for traffic serviceability(horizontal)}{40}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Supporting report D181 DT329 E}{37}{subsection.3.1.2}
+\contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.1}Methodology adopted in D181 DT329 E}{37}{subsubsection.3.1.2.1}
+\contentsline {chapter}{Appendices}{43}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.2}Types of resonance investigated in DT329}{38}{subsubsection.3.1.2.2}
+\contentsline {chapter}{\numberline {A}Investigation of report series created by D181 Committee Group}{44}{Appendix.1.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Summary of result on resonant studies of D181 DT 329}{38}{section.3.2}
+\contentsline {section}{\numberline {A.1}Structure of report series}{44}{section.1.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Conclusion}{40}{section.3.3}
+\contentsline {section}{\numberline {A.2}Items of interests in report series}{44}{section.1.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Train vehicles layouts and geometry}{41}{chapter.4}
+\contentsline {section}{\numberline {A.3}Resonance mechanisms studied in DT329}{44}{section.1.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Locomotives}{41}{section.4.1}
+\contentsline {subsection}{\numberline {A.3.1}Methodology of Parametric Research DT329}{45}{subsection.1.A.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}4-axle locomotives}{41}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {A.3.2}Model of bridge}{45}{subsection.1.A.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}6-axle locomotives}{41}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {A.3.3}Bridge parameters}{46}{subsection.1.A.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Passenger carriages}{41}{section.4.2}
+\contentsline {subsection}{\numberline {A.3.4}Vehicle parameters}{46}{subsection.1.A.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Wheelset and track dimensions}{41}{section.4.3}
+\contentsline {subsection}{\numberline {A.3.5}Track}{46}{subsection.1.A.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Conicity and Equivalent Conicity of Wheels}{41}{section.4.4}
+\contentsline {subsection}{\numberline {A.3.6}Contact data}{46}{subsection.1.A.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Worn wheel profiles}{42}{section.4.5}
+\contentsline {subsection}{\numberline {A.3.7}Summary of modelling procedure}{47}{subsection.1.A.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Trains in Netherlands}{42}{section.4.6}
+\contentsline {subsection}{\numberline {A.3.8}Data produced}{47}{subsection.1.A.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Parametric Study}{45}{chapter.5}
+\contentsline {subsection}{\numberline {A.3.9}Resonance caused by axle repeat pattern}{48}{subsection.1.A.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Effects investigated in Parametric Study}{45}{section.5.1}
+\contentsline {subsection}{\numberline {A.3.10}Resonance caused by kinematic movement of trains}{48}{subsection.1.A.3.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Speed range of dynamic consideration}{45}{section.5.2}
+\contentsline {subsection}{\numberline {A.3.11}Apparent shift in resonance frequency}{48}{subsection.1.A.3.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Equivalent conicity used in this study}{46}{section.5.3}
+\contentsline {section}{\numberline {A.4}Debate on proposed 1.2Hz Criterion in RP6}{49}{section.1.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Parametric Study on Frequency of Klingel movement}{46}{section.5.4}
+\contentsline {section}{\numberline {A.5}Lateral forces on railway bridges}{50}{section.1.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Comparison between Klingle movement and train kinematic movement studied in D181 DT329}{46}{section.5.5}
+\contentsline {section}{\numberline {A.6}Summary of D181 report series}{51}{section.1.A.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Assess of frequency bandwidth based on realistic data of Dutch Rail/Vehicle}{47}{section.5.6}
+\contentsline {chapter}{\numberline {B}Plots and diagrams used in D181 DT 329}{53}{Appendix.1.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Parametric study on frequency caused by axle repeat pattern}{48}{section.5.7}
+\contentsline {chapter}{\numberline {C}Speeds which do not require dynamic compatibility checks}{69}{Appendix.1.C}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Recommendations on improvement on Eurocode}{49}{chapter.6}
+\contentsline {chapter}{\numberline {D}MU-Groups and MU-Classes}{70}{Appendix.1.D}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Case study}{50}{chapter.7}
+\contentsline {section}{\numberline {D.1}Definition}{70}{section.1.D.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{51}{chapter.8}
+\contentsline {subsection}{\numberline {D.1.1}Train parameters of MU-Class CB\_1}{70}{subsection.1.D.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{52}{section*.50}
+\contentsline {subsection}{\numberline {D.1.2}Train parameters of MU-Class CB\_2}{70}{subsection.1.D.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Frequency and wavelength data used in D181 DT 329}{53}{Appendix.1.A}
+\contentsline {subsection}{\numberline {D.1.3}Train parameters of MU-Class AB\_1}{70}{subsection.1.D.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Speeds which do not require dynamic compatibility checks}{54}{Appendix.1.B}
+\contentsline {subsection}{\numberline {D.1.4}Train parameters of MU-Class AB\_2}{71}{subsection.1.D.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}MU-Groups and MU-Classes}{55}{Appendix.1.C}
+\contentsline {subsection}{\numberline {D.1.5}Train parameters of MU-Class AB\_3}{71}{subsection.1.D.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C.1}Definition}{55}{section.1.C.1}
+\contentsline {subsection}{\numberline {D.1.6}Train parameters of MU-Class AB\_4}{71}{subsection.1.D.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.1}Train parameters of MU-Class CB\_1}{55}{subsection.1.C.1.1}
+\contentsline {subsection}{\numberline {D.1.7}Train parameters of MU-Class SA\_1}{71}{subsection.1.D.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.2}Train parameters of MU-Class CB\_2}{55}{subsection.1.C.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.3}Train parameters of MU-Class AB\_1}{55}{subsection.1.C.1.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.4}Train parameters of MU-Class AB\_2}{56}{subsection.1.C.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.5}Train parameters of MU-Class AB\_3}{56}{subsection.1.C.1.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.6}Train parameters of MU-Class AB\_4}{56}{subsection.1.C.1.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.7}Train parameters of MU-Class SA\_1}{56}{subsection.1.C.1.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.8}Train parameters of MU-Class SA\_2}{56}{subsection.1.C.1.8}
+\contentsline {subsection}{\numberline {D.1.8}Train parameters of MU-Class SA\_2}{71}{subsection.1.D.1.8}
