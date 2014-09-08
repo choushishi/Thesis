@@ -204,6 +204,40 @@ All of passenger train coaches have a wheel diameter of 920 mm.
 
 Locomotives of freight trains have wheel diameter of 1000 mm.
 
+\section{Lateral Track Irregularities}
+This section describes allowable lateral track irregularities defined in EN13848-5\cite{13848}. 
+
+Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
+
+For lateral deviations, the following wavelengths shall be considered: $D1 = 3 -25 m$, $D2 = 25 - 70 m$ and $D3 = 70 - 200 m$. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{lateraldeviationdefine}
+    \caption{Lateral deviation definition. Lateral deviations $y_p$ for each rail with 1: running surface, 2: reference line and 3: centre line of running table}
+    \label{fig:lateraldeviationdefine}
+\end{figure}
+
+Table \ref{tab:lateraldeviation} defines the allowable standard deviation for lateral track irregularities.
+
+\begin{table}[h]
+    \centering
+    \caption{Alignment - AL - Standard deviation. Extracted from \cite[Table B.6]{13848}}
+    \begin{tabular}{cc}
+        \hline
+        Speed(km/h) & Standard deviation(mm) \\
+        \hline
+        $V\leq 90$ & 1.5 to 1.8 \\
+        $80 < V \leq 120$ & 1.2 to 1.5 \\
+        $120 < V \leq 160$ & 1.0 to 1.3 \\
+        $160 <V \leq 230$ & 0.8 to 1.1 \\
+        $230 <V \leq 300$ & 0.7 to 1.0 \\
+        \hline
+    \end{tabular}
+    \label{tab:lateraldeviation}
+\end{table}
+
+
 \chapter{Parametric Study}
 % The objective of parametric study is to observe lateral vibration frequency range of different trains types. Due to limited source of reliable vehicle data, train modelled in this study is the same train data used in ERRI Report RP6\cite{d181} where necessary. Considering effects that was assumed to have been taken into account by ERRI in previous chapter, following parameters to be checked are determined. 
 
@@ -526,7 +560,6 @@ $$ f = v \frac{1}{\lambda} $$
 \end{tikzpicture}
 
 \end{figure}
-
 
 \section{Parametric study on frequency caused by axle repeat pattern}
 

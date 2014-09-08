@@ -41,6 +41,21 @@
   \field{year}{2010}
 \endentry
 
+\entry{13848}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {CEN}{C.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{C1}
+  \strng{fullhash}{C1}
+  \field{sortinit}{C}
+  \field{title}{EN 13848-5:2008+A1 Railway applications - Track - Track
+  geometry quality - Part 5: Geometric quality levels - Plain line}
+\endentry
+
 \entry{code2005518}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -316,25 +331,25 @@
   Mechanics: CT 4145}
 \endentry
 
-\entry{mohammadi2013wind}{article}{}
+\entry{giuseppe2012dynamic}{article}{}
   \name{author}{2}{}{%
     {{}%
-     {Mohammadi}{M.}%
-     {M~Sajad}{M.~S.}%
+     {Piccardoa}{P.}%
+     {Giuseppe}{G.}%
      {}{}%
      {}{}}%
     {{}%
-     {Mukherjee}{M.}%
-     {Rishiraj}{R.}%
+     {Tubino}{T.}%
+     {Federica}{F.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{MMSMR1}
-  \strng{fullhash}{MMSMR1}
-  \field{sortinit}{M}
-  \field{title}{Wind Loads on Bridges: Analysis of a three span bridge based on
-  theoretical methods and Eurocode 1}
-  \field{year}{2013}
+  \strng{namehash}{PGTF1}
+  \strng{fullhash}{PGTF1}
+  \field{sortinit}{P}
+  \field{title}{Dynamic response of Euler-Bernoulli beams to resonant harmonic
+  moving loads}
+  \field{year}{2012}
 \endentry
 
 \entry{uic}{manual}{}

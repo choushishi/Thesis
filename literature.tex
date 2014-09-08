@@ -1,13 +1,230 @@
 %!TEX root = first try.tex  
 
-\chapter{LITERATURE REVIEW} 
-Eurocode 1990 and Eurocode 1991-2 and their corresponding National Annex are primary codes to be fulfilled through out the whole process of conducting a railway bridge in Netherlands. It is of great importance to study dynamic effect on railway bridges due to increasing usage of public train service. What's more, as the need on capacity of railway service increase, high-speed train dynamic loading becomes a more general issue in the design of railway bridges. It is common knowledge that bridge structures loaded by high-speed trains have bigger chance of resonance, as well as of being required to be dynamic analysed in designing process. 
+\chapter{Basic concepts of railway bridge dynamics}
 
-Unfortunately in Chapter 6.4 of Eurocode NEN-EN 1991-2-2003, the description of various subjects is vague including general procedures of conductinga dynamic analyses and methods of additional dynamic analysing calculating, etc. The following paragraphs aim to summarize Chapter 6.4 of Eurocode 1991-2 \cite{EC12}, in order to give a better interpretation. 
+In this chapter some basic concepts of railway bridge dynamics will be described in order to provide preliminary relevant knowledge for following chapters. The knowledge will be introduced in the order of railway related only to bridge related. 
 
-This literature research will be done by reviewing both physics knowledge and engineering standards.
+\section{Wheel-Rail Interface}
 
-\section{Forced Vibrations under Harmonic Force}
+\subsection{Wheelset and track dimensions}
+
+Generally the track guage is used as a distance measured between the two rails, more specifically the distance between the inside of the railheads measured 14mm below the surface of the rail. By choosing 14 mm the measurement is less influenced by lipping or lateral wear on the rail head and by the radius r = 13 mm of the rail head face. On normal track the gauge is $1435^{+10}_{-3}$ mm with with a maximum gradient of 1:3000. For new track, however, NS apply the following standards:
+
+\begin{enumerate}
+\item Mean gauge per 200 m: $1435^{+10}_{-1}$ mm
+\item Standard deviation within a 200 m section less than 1 mm
+\end{enumerate}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
+\caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \cite[p.17]{esveld2001modern}}
+\label{fig:wheelset and track dimensions}
+\end{figure}
+
+\subsection{Conicity and Equivalent Conicity of Wheels}
+
+Originally conical tire profiles with an inclination of 1:20 were used. Since a centrally applied load on the railhead is desired, a rail inclination of 1:20, as shown in Figure 2.1, was also selected; this for instance still applies to NS profile NP 46. UIC 54 rail usually has an inclination of 1:40. This inclination matches the S 1002 worn wheel profile which is in general use in Europe. During manufacturing the tires are given a profile which matches the average shape cause by wear. In contrast to the straight conical profile this has a hollow form.
+
+It is clear that regarding a worn profile the conicity depends on the actual shape of the rail head and tire, including any wear, track gauge, and rail inclination. Likewise, elastic deformation of the wheelset and rail fastenings plays a role.
+
+Generally, the effective or equivalent conicity is defined as:
+
+$$ \gamma_e = \frac{\Delta r}{2y} = \frac{r_1 - r_2}{2y}  $$
+
+Here $r_1 - r_2$ is the instantaneous difference in rolling radius of the wheel treads; generally speaking this is a non-linear function of the lateral displacement y of the wheelset with respect to the central position. The difference between conical and worn profiles is given in Figure.\ref{fig:conicalwornprofiles}. To enable numerical comparisons $\gamma_e$ is determined at a certain lateral displacement $y=\bar{y}$.
+
+\subsection{Worn wheel profiles}
+
+A perfectly conical wheel profile is unstable as far as its shape is concerned, but will take on a shape that is stable as the effect of wear.
+
+Practical research has shown that over a period of time wheel profiles stabilise with wear at an equivalent conicity of 0.2 to 0.3. With regards to running stability, the equivalent conicity must remain below 0.4 and to ensure the centering effect it must be greater than 0.1.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
+    \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \cite[2.4]{esveld2001modern}}
+    \label{fig:conicalwornprofiles}
+\end{figure}
+
+With a conical profile the conicity is constant and above equation becomes:
+
+$$ \gamma_e = \frac{\Delta r}{2y} =\frac{(r+\gamma y)-(r-\gamma y)}{2y} = \gamma $$
+
+\subsection{Lateral Track Irregularities}
+This section describes allowable lateral track irregularities defined in EN13848-5\cite{13848}. 
+
+Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
+
+For lateral deviations, the following wavelengths shall be considered: $D1 = 3 -25 m$, $D2 = 25 - 70 m$ and $D3 = 70 - 200 m$. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{lateraldeviationdefine}
+    \caption{Lateral deviation definition. Lateral deviations $y_p$ for each rail with 1: running surface, 2: reference line and 3: centre line of running table}
+    \label{fig:lateraldeviationdefine}
+\end{figure}
+
+Table \ref{tab:lateraldeviation} defines the allowable standard deviation for lateral track irregularities. Lateral track irregularity has great influence on vehicle's lateral dynamic behaviour.
+
+\begin{table}[h]
+    \centering
+    \caption{Alignment - AL - Standard deviation. Extracted from \cite[Table B.6]{13848}}
+    \begin{tabular}{cc}
+        \hline
+        Speed(km/h) & Standard deviation(mm) \\
+        \hline
+        $V\leq 90$ & 1.5 to 1.8 \\
+        $80 < V \leq 120$ & 1.2 to 1.5 \\
+        $120 < V \leq 160$ & 1.0 to 1.3 \\
+        $160 <V \leq 230$ & 0.8 to 1.1 \\
+        $230 <V \leq 300$ & 0.7 to 1.0 \\
+        \hline
+    \end{tabular}
+    \label{tab:lateraldeviation}
+\end{table}
+
+\section{Lateral movement of a wheelset on straight track}
+
+\subsection{Theory according to Klingel}
+
+If a wheelset with conical tire profiles is laterally displaced from central position, this displacement is counteracted due to different rolling radii of the wheels. This results in a periodical movement of the wheelset which was described by Klingel in 1883 and is therefore often referred to as the Klingel movement. When analysing the case, the wheelset is modelled as a biconus travelling on an ideally straight track as shown in Figure.\ref{fig:wheelsetbiconus}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{wheelsetbiconus}
+	\caption{Wheelset biconus in general position. Extracted from \cite[Figure 2.2]{esveld2001modern}}
+	\label{fig:wheelsetbiconus}
+\end{figure}
+
+
+The Klingel movement is therefore purely a kinematic movement in which forces play no part in the derivation. As a result, Figure.\ref{fig:klingelmovement} visualizes the Klingel movement. The lateral displacement $y$ is a harmonic, undamped function of the distance co-ordinate $x$ as long as the amplitude moves within the flangeway clearance $fwc$. This is illustrated in Figure.\ref{fig:fwc}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{klingelmovement}
+	\caption{Klingel movement. Extracted from \cite[Figure 2.3]{esveld2001modern}}
+	\label{fig:klingelmovement}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{fwc}
+	\caption{Undisturbed lateral movement of a wheelset. Extracted from \cite[Figure 2.4]{esveld2001modern}}
+	\label{fig:fwc}
+\end{figure}
+
+Introducing the speed, the time domain frequency of the Klingel movement is:
+
+$$ f = \frac{V}{L_k} $$
+
+and hence the maximum lateral acceleration can be calculated as:
+
+$$\ddot{y}_{max} = 4\pi^2y_0\frac{v^2}{L_k^2}$$
+
+If the frequency $f$ coincides with one of the natural frequencies of the rolling stock, the vehicle ride becomes unstable. The lateral acceleration, which is a measure of the forces, shows the adverse effect of high speed and/or small wavelength. A conicity, for example, of 1:40 in comparison with 1:20 therefore gives a greater wavelength and a lower lateral acceleration at the same speed. The progressively increasing conicity in the case of worn profiles due to increasing lateral axle movement, therefore, has an adverse effect in this respect.
+
+\subsection{Hunting movement}
+
+It should be noted that the Klingel theory is simple and instructive but does not include the effect of coupled axes, mas forces, and adhension forces. In reality, the amplitude $y_0$ of the Klingel movement is dependent on alignment, dynamic vehicle behaviour, and the speed of the rolling stock. 
+
+Generally speaking, $y_0$ due to slip will increase with speed until it is equal to half the flangeway clearance. Flanging then occurs as a result of which the axle will rebound. 
+
+This means that the lateral movement takes on a completely different behaviour which is known as hunting. As shown in the drawing in Figure\ref{fig:flangingwheelset} the movement changes from a harmonic to a zig-zag shape. The wavelength becomes shorter and the frequency increases quickly until it is in the critical range for the rollin g stock and resonance occurs.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{flangingwheelset}
+	\caption{Influence of flanging on lateral wheelset movement. Extracted from \cite[Figure 2.5]{esveld2001modern}}
+	\label{fig:flangingwheelset}
+\end{figure}
+
+This phenomenon is shown in Figure\ref{fig:amplitudefrequencystability}. The bogie design, as far as conicity and flangeway clearance are concerned, must be such that stable running is always guaranteed for the speed range in which the vehicle is to be used.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{amplitudefrequencyinstability}
+	\caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \cite[Figure 2.6]{esveld2001modern}}
+	\label{fig:amplitudefrequencystability}
+\end{figure}
+
+\section{Single and two-point contact between wheel and rail}
+In the case of single-point contact, according to Figure, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure, the application points do not coincide.
+
+Flanging occurs in the situation of double contact. 
+
+\begin{figure}[h!]
+\centering
+	\begin{subfigure}[b]{0.2\textwidth}
+    	\centering
+    	\includegraphics[width=\textwidth]{singlecontact}
+    	\caption{Single contact point.  Extracted from \cite[Figure 2.13]{esveld2001modern}}
+    	\label{fig:singlecontact}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+    	\includegraphics[width=\textwidth]{doublecontact}
+    	\caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \cite[Figure 2.14]{esveld2001modern}}
+    	\label{fig:doublecontract}
+	\end{subfigure}
+\end{figure}
+
+\section{Dynamic theories}
+
+\subsection{Natural frequencies and shapes of bridge}
+Undamped Euler-Bernoulli beam theory is adopted to obtain natural wave shapes and frequencies of a bridge structure. This theory is the simplest bridge dynamic model which assumes that the bridge behaves as a vibrating uniform beam. 
+
+The bridge is simply supported at both ends, and the stiffness is specified as a deflection at the mid span per unit span length arising from a static point load of 100kN at mid span.
+
+The equation of vibration of a uniform beam is:
+
+$$\frac{\partial^2 y}{\partial t^2} + a^2\frac{\partial^4 y}{\partial x^4}=0$$
+
+where: 
+
+y = deflection of beam
+
+x = coordinates along longitudinal axis
+
+t = time 
+
+$a^2$ = EI/m
+
+EI = flexural rigidity
+
+and, m = mass per unit length
+
+The general solution is:
+
+$$y(x,t) = (A\cos pt+B\sin pt)(C\cos kx + D\sin kx + F\cosh kx + Gsinh kx)$$
+
+which consists of independent time and distance parts. The distance dependent part of the solution gives the family of mode shapes which the beam will exhibit. Thus, generally, a beam has mode shapes which satisfy:
+
+$$y(x) = C\cos kx + D\sin kx + F\cosh kx + Gsinh kx $$
+
+For a beam which is simply supported at either end the general solution simplifies, giving a family of normalized amplitude mode shapes as follows:
+
+$$y_r = \sin \frac{r\pi x}{L}$$
+
+for $r = 1,2,3...,n$ and $L = span length$
+
+with corresponding angular frequencies, $\omega_r$, of:
+
+$$\omega_r = \frac{r^2 \pi^2}{L^2}\sqrt{\frac{EI}{m}}$$
+
+thus natural frequencies $f_r$ of beam, are:
+
+$$f_r = \frac{r^2 \pi}{2L^2}\sqrt{\frac{EI}{m}}$$
+
+\subsection{Basic resonance concept}
+The most simplest resonance scenario happens at a one degree-of-freedom mass-spring system loaded by a force whose frequency coincides with the natural frequency of mass-spring system.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{massbeammodel.pdf}
+	\caption{Mass beam model of span L}
+	\label{fig:massbeammodel}
+\end{figure}
+
 Assume there is a simple one degree-of-freedom mass-spring system and an external force is acting on it. The force is given as $F(t)= F_0 \cos(\omega t)$. In this case the equation of motion takes the form
 \begin{equation}
 	m\ddot{x} + kx = F_0 \cos(\omega t)
@@ -17,6 +234,8 @@ The general solution can be written as
 \begin{equation}
 	x(t) = A\cos(\omega_n t)+B\sin(\omega_n t) +\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
 \end{equation}
+
+where $\omega_n = 2\pi\sqrt{k/m}$
 
 The unknown constants A and B depend on the initial conditions.
 
@@ -40,17 +259,105 @@ The amplitude-frequency dependencies is shown in \ref{fig:amplitude-frequency-ch
 	\label{fig:amplitude-frequency-characteristic}
 \end{figure}
 
+When the frequency of force equals frequency of mass-spring system, the amplitude of vibration is infinitely high. It means system becomes unstable and normally it's a dangerous sign. This phenomenon is called resonance. Resonance can happen if the frequency of excitation coincides with the natural frequency of the excited systems.
 
-\section{Introduction to the dynamics of railway bridges}
+Resonance can also happen when a harmonic force is loaded on an Euler-Bernoulli beam. It can be loaded anywhere on the beam to produce resonance. 
 
-\cite{fryba1996dynamics}Dynamics of railway bridges is concerned with the study of deflections and stresses in railway bridges. The loads are represented by the moving wheel and axle forces, by means of which railway vehicles transmit their load and inertia actions to railway bridges. A survey of the dynamic effects of vehicles on railway bridges is given in Figure.\ref{fig:dynamic effects}
+\subsection{Resonance between moving load and simplified beam bridge model}
+It becomes a much more complicated problem when moving load is applied on an Euler-Bernoulli beam though analytical solution is still possible. Moving harmonic loads can represent, for instance, a component of the load transmitted to rails by moving trains. Thus it suits the aim of this thesis well.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\textwidth]{dynamiceffects.pdf}
-	\caption{Dynamic effects of railway vehicles on bridges. Extracted from \cite[1.1]{fryba1996dynamics} }
-	\label{fig:dynamic effects}
+	\includegraphics[width=0.5\textwidth]{harmonicloadbeam}
+	\caption{Schematic representation of a generic beam crossed by a harmonic load}
+	\label{fig:harmonicloadbeam}
 \end{figure}
+
+In most cases force input are hard to determine because of the complicity of wheel-rail interaction. But, in the context of lateral dynamics, the process can be simplified by adopting nosing forces. 
+
+Giuseppe Piccoardo \cite{giuseppe2012dynamic} has provided following solutions:
+
+The deflection $q(x,t)$ of a Euler-Bernoulli prismatic beam to a harmonic load moving with a constant speed $c$ (Figure\ref{fig:harmonicloadbeam}) is described by the well-known field equation
+
+$$\mu \frac{\partial^2 q(x,t)}{\partial t^2} + \chi \frac{\partial q(x,t)}{\partial t}+EJ\frac{\partial^4 q(x,t)}{\partial x^4} = F_0 \sin(\Omega t)\delta(x-ct)[H(t)-H(t-L/c)]$$
+
+where $\mu$ is the mass per unit length, $\chi$ is the damping coefficient, $EJ$ is the flexural stiffness, $F_0$ and $\Omega$ are, respectively, the amplitude and the circular frequency of the moving load, $\delta$ is the Dirac delta function, $H$ is the Heaviside step function, $L$ is the beam span length.
+
+By using convolution integral, the solution can be expressed as:
+
+\begin{equation}
+	\label{eq:convolutionbefore}
+	\begin{split}
+		\tilde{p}(\tilde{t})=\varepsilon \exp (-\varepsilon \xi^* \tilde{t}) & \{ [\int_0^{\tilde{t}} \sin (\tilde{\Omega}\tilde{\tau})\phi_j(\varepsilon\Omega_c^* \tilde{\tau}) \exp (\xi^* \tilde{tau}) \cos(\tilde{\tau})]\sin(\tilde{t}) \\ 
+		& -[\int_0^{\tilde{t}} \sin (\tilde{\Omega}\tilde{\tau})\phi_j(\varepsilon\Omega_c^* \tilde{\tau}) \exp (\xi^* \tilde{tau}) \cos(\tilde{\tau})]\cos(\tilde{t})\}
+	\end{split}
+\end{equation}
+
+Under the hypothesis that $\tilde{\Omega} = 1$ (i.e., perfect resonance), Eq.\ref{eq:convolutionbefore} can be rewritten as follows
+
+\begin{equation}
+	\begin{split}
+		\tilde{p}(\tilde{t})=\varepsilon \exp (-\varepsilon \xi^* \tilde{t}) & \{-[\frac{1}{2}\int_0^{\tilde{t}}\phi_j (\varepsilon \Omega_c^* \exp (\varepsilon \xi^* \tilde{tau}d\tilde{\tau}))]\cos (\tilde{t}) \\
+		& +[\frac{1}{2}\int_0^{\tilde{t}}\sin(2\tilde{\tau})\phi_j (\varepsilon \Omega_c^* \exp (\varepsilon \xi^* \tilde{tau}d\tilde{\tau}))]\sin (\tilde{t}) \\
+		& +[\frac{1}{2}\int_0^{\tilde{t}}\cos(2\tilde{\tau})\phi_j (\varepsilon \Omega_c^* \exp (\varepsilon \xi^* \tilde{tau}d\tilde{\tau}))]\cos (\tilde{t})\}
+	\end{split}
+\end{equation}
+
+This equation can be solved numerically.
+
+\subsection{FEM Modelling of rail-vehicle system}
+
+\chapter{LITERATURE REVIEW} 
+Eurocode 1990 and Eurocode 1991-2 and their corresponding National Annex are primary codes to be fulfilled through out the whole process of conducting a railway bridge in Netherlands. It is of great importance to study dynamic effect on railway bridges due to increasing usage of public train service. What's more, as the need on capacity of railway service increase, high-speed train dynamic loading becomes a more general issue in the design of railway bridges. It is common knowledge that bridge structures loaded by high-speed trains have bigger chance of resonance, as well as of being required to be dynamic analysed in designing process. 
+
+Unfortunately in Chapter 6.4 of Eurocode NEN-EN 1991-2-2003, the description of various subjects is vague including general procedures of conductinga dynamic analyses and methods of additional dynamic analysing calculating, etc. The following paragraphs aim to summarize Chapter 6.4 of Eurocode 1991-2 \cite{EC12}, in order to give a better interpretation. 
+
+This literature research will be done by reviewing both physics knowledge and engineering standards.
+
+% \section{Forced Vibrations under Harmonic Force}
+% Assume there is a simple one degree-of-freedom mass-spring system and an external force is acting on it. The force is given as $F(t)= F_0 \cos(\omega t)$. In this case the equation of motion takes the form
+% \begin{equation}
+% 	m\ddot{x} + kx = F_0 \cos(\omega t)
+% \end{equation}
+
+% The general solution can be written as
+% \begin{equation}
+% 	x(t) = A\cos(\omega_n t)+B\sin(\omega_n t) +\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
+% \end{equation}
+
+% The unknown constants A and B depend on the initial conditions.
+
+% The steady-state solution is given as:
+
+% \begin{equation}
+% 	x_{steady}= X \cos(\omega t) = \frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
+% \end{equation}
+
+% The amplitude of vibrations of the mass-spring system is given by:
+% \begin{equation}
+% 	|X|=|\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}|
+% \end{equation}
+
+% The amplitude-frequency dependencies is shown in \ref{fig:amplitude-frequency-characteristic} 
+
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.6\textwidth]{amplitudefrequencycharacteristic.pdf}
+% 	\caption{Amplitude-frequency characteristic. Extracted from \cite[2.2.2]{dynamicslecturenote}}
+% 	\label{fig:amplitude-frequency-characteristic}
+% \end{figure}
+
+
+% \section{Introduction to the dynamics of railway bridges}
+
+% \cite{fryba1996dynamics}Dynamics of railway bridges is concerned with the study of deflections and stresses in railway bridges. The loads are represented by the moving wheel and axle forces, by means of which railway vehicles transmit their load and inertia actions to railway bridges. A survey of the dynamic effects of vehicles on railway bridges is given in Figure.\ref{fig:dynamic effects}
+
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.6\textwidth]{dynamiceffects.pdf}
+% 	\caption{Dynamic effects of railway vehicles on bridges. Extracted from \cite[1.1]{fryba1996dynamics} }
+% 	\label{fig:dynamic effects}
+% \end{figure}
 
 \subsection{Factors influencing dynamic behaviour}
 As stated in\cite[6.4.2]{EC12} there are 11 factors influencing dynamic behaviour of a railway bridge. The principal factors which influence dynamic behaviour are:
@@ -80,25 +387,25 @@ Other factors may include:
 
 
 
-\section{Vertical Dynamic effects}
-As stated in EN 1991-2\cite{EC12}, the static stress and deformations (and associated bridge deck acceleration) induced in a bridge are increased and decreased under the effects of moving traffic by the following:
+% \section{Vertical Dynamic effects}
+% As stated in EN 1991-2\cite{EC12}, the static stress and deformations (and associated bridge deck acceleration) induced in a bridge are increased and decreased under the effects of moving traffic by the following:
 
-\begin{enumerate}[-]
-	\item the rapid rate of loading due to the speed of traffic crossing the structure and the inertial response (impact) of the structure,
-	\item the passage of successive loads with approximately uniform spacing which can excite the structure and under certain circumstances create resonance (where the frequency excitation(or a multiple there of) matches a natural frequency of the structure (or a multiple there of), there is a possibility that the vibrations caused by successive axles running onto the structure will be excessive),
-	\item variations in wheel loads resulting from track or vehicle imperfections (including wheel irregulations).
-\end{enumerate}
-For determining the effects (stresses, deflections, bridge deck acceleration etc.) of rail traffic actions the above effects shall be taken into account.
-
-
-\subsection{Train Actions}
-See section \ref{designprocedures}
+% \begin{enumerate}[-]
+% 	\item the rapid rate of loading due to the speed of traffic crossing the structure and the inertial response (impact) of the structure,
+% 	\item the passage of successive loads with approximately uniform spacing which can excite the structure and under certain circumstances create resonance (where the frequency excitation(or a multiple there of) matches a natural frequency of the structure (or a multiple there of), there is a possibility that the vibrations caused by successive axles running onto the structure will be excessive),
+% 	\item variations in wheel loads resulting from track or vehicle imperfections (including wheel irregulations).
+% \end{enumerate}
+% For determining the effects (stresses, deflections, bridge deck acceleration etc.) of rail traffic actions the above effects shall be taken into account.
 
 
-\subsection{Wind Actions}
-The nature of the wind load is dynamic. This means that its magnitude varies with respect to time and space.
+% \subsection{Train Actions}
+% See section \ref{designprocedures}
 
-According to \cite{mohammadi2013wind}: The limitations behind the applications of the EN-1991-1-4, Eurocode1, actions on structures-general actions-wind load-part 1-4, lead the structural designers to a great confusion. This may be due to the fact that, EC1 provides only the guid- ance for the bridges whose fundamental mode of vibrations have constant sign (e.g. simply supported structures) or a simple linear sign (e.g. cantilever structures) and these modes are the governing mode of vibrations of the structure; it analyzes only the along-wind response of the structure and not the cross wind response and the simplified methods recommended in this code are covering only the structures with simple geometrical configurations.
+
+% \subsection{Wind Actions}
+% The nature of the wind load is dynamic. This means that its magnitude varies with respect to time and space.
+
+% According to \cite{mohammadi2013wind}: The limitations behind the applications of the EN-1991-1-4, Eurocode1, actions on structures-general actions-wind load-part 1-4, lead the structural designers to a great confusion. This may be due to the fact that, EC1 provides only the guid- ance for the bridges whose fundamental mode of vibrations have constant sign (e.g. simply supported structures) or a simple linear sign (e.g. cantilever structures) and these modes are the governing mode of vibrations of the structure; it analyzes only the along-wind response of the structure and not the cross wind response and the simplified methods recommended in this code are covering only the structures with simple geometrical configurations.
 
 \section{Horizontal transverse dynamic effects}
 There's only one criterion in the Eurocodes mentioned that the bridge's first lateral natural frequency should no lower that 1.2 Hz. 
@@ -117,60 +424,60 @@ According to \cite{da2007dynamic}\cite{fryba1996dynamics}\cite{EC12}, following 
 	\item Train switches
 \end{enumerate}
 
-\subsection{Horizontal vibration of a beam}
+% \subsection{Horizontal vibration of a beam}
 
-Fryba\cite{fryba1996dynamics} described the first two sources in mathematical terms:
-Consider a simply supported beam loaded by moving train loading, horizontal vibrations of the beam in a transverse direction $ w(x,t) $ are generated by lateral random forces $ H_n (t) $ due to random irregularities and sinusoidal motion. The differential equation for the deformation is:
+% Fryba\cite{fryba1996dynamics} described the first two sources in mathematical terms:
+% Consider a simply supported beam loaded by moving train loading, horizontal vibrations of the beam in a transverse direction $ w(x,t) $ are generated by lateral random forces $ H_n (t) $ due to random irregularities and sinusoidal motion. The differential equation for the deformation is:
 
-\begin{equation}
-	EI_yw^{IV}(w,t)+\mu \ddot{w} (x,t)=\sum_{n=1}^{N} \varepsilon_n\delta(x+d_n-ct)H_n(t) 
-\end{equation}
+% \begin{equation}
+% 	EI_yw^{IV}(w,t)+\mu \ddot{w} (x,t)=\sum_{n=1}^{N} \varepsilon_n\delta(x+d_n-ct)H_n(t) 
+% \end{equation}
 
-where $ H_n(t) $ stands for forces due to random irregularities and sinusoidal motion. $ H_n(t) $ is of a typically random character and can be replaced by horizontal transverse forces with zero mean values. See Figure.~\ref{fig:trackirrg} for example.
+% where $ H_n(t) $ stands for forces due to random irregularities and sinusoidal motion. $ H_n(t) $ is of a typically random character and can be replaced by horizontal transverse forces with zero mean values. See Figure.~\ref{fig:trackirrg} for example.
 
-\cite[Table 9.1]{fryba1996dynamics} gives sample of natural frequencies of steel truss bridges with open deck. Shown as follow Table~\ref{tab:spatialvibrationsteel}. Please note that truss bridges have high stiffness.
+% \cite[Table 9.1]{fryba1996dynamics} gives sample of natural frequencies of steel truss bridges with open deck. Shown as follow Table~\ref{tab:spatialvibrationsteel}. Please note that truss bridges have high stiffness.
 
-\begin{table}[h]
-	\centering
-	\begin{tabular}{ccccc}
-		\hline
-		\multirow{2}{*}{Vibration Type} & \multirow{2}{*}{Symbol} & \multirow{2}{*}{j} & \multicolumn{2}{c}{Bridge with span} \\
-		\cline{4-5}
-		 & & & $ l=25.85m $ & $ l=48.4m $\\
-		\hline
-		\multirow{3}{*}{Vertical} & \multirow{3}{*}{$ f_j $} & 1 & 8.7 & 5.4\\
-		 & & 2 & 34.7 & 21.5 \\
-	 	 & & 3 & 78.1 & 48.3 \\
-	 	\hline
-	 	\multirow{9}{*}{Horizontal} & \multirow{3}{*}{$ f_{hj} $} & 1 & 15.3 & 4.7 \\
-	 	 & & 2 & 61.1 & 19.0 \\
-	 	 & & 3 & 137.5 & 42.7 \\
-	 	\cline{2-5}
-	 	 & \multirow{3}{*}{$ f_{yj} $} & 1 & 14.8 & 4.7 \\
-	 	 & & 2 & 53.9 & 18.1 \\
-	 	 & & 3 & 107.4 & 38.8 \\ 
-	 	\cline{2-5}
-	 	 & \multirow{3}{*}{$ {f}'_{yj} $} & 1 & 14.7 & 4.6 \\
-	 	 & & 2 & 52.5 & 17.5 \\
-	 	 & & 3 & 101.7 & 36.4 \\ 
-	 	\cline{2-5}
-	 	\hline
-	 	\multirow{9}{*}{Torsional} & \multirow{3}{*}{$ f_{\xi j} $} & 1 & 35.7 & 19.2 \\
-	 	 & & 2 & 71.3 & 38.4 \\
-	 	 & & 3 & 107.0 & 57.7 \\
-	 	\cline{2-5}
-	 	 & \multirow{3}{*}{$ f_{\varphi j} $} & 1 & 34.9 & 16.7 \\
-	 	 & & 2 & 73.5 & 35.4 \\
-	 	 & & 3 & 117.4 & 56.9 \\ 
-	 	\cline{2-5}
-	 	 & \multirow{3}{*}{$ {f}'_{\varphi j} $} & 1 & 36.5 & 19.7 \\
-	 	 & & 2 & 77.6 & 41.9 \\
-	 	 & & 3 & 126.4 & 67.5 \\ 
-	 	\hline
-	\end{tabular}
-	\caption{Spatial vibrations of steel truss bridges with open bridge deck}
-	\label{tab:spatialvibrationsteel}
-\end{table}
+% \begin{table}[h]
+% 	\centering
+% 	\begin{tabular}{ccccc}
+% 		\hline
+% 		\multirow{2}{*}{Vibration Type} & \multirow{2}{*}{Symbol} & \multirow{2}{*}{j} & \multicolumn{2}{c}{Bridge with span} \\
+% 		\cline{4-5}
+% 		 & & & $ l=25.85m $ & $ l=48.4m $\\
+% 		\hline
+% 		\multirow{3}{*}{Vertical} & \multirow{3}{*}{$ f_j $} & 1 & 8.7 & 5.4\\
+% 		 & & 2 & 34.7 & 21.5 \\
+% 	 	 & & 3 & 78.1 & 48.3 \\
+% 	 	\hline
+% 	 	\multirow{9}{*}{Horizontal} & \multirow{3}{*}{$ f_{hj} $} & 1 & 15.3 & 4.7 \\
+% 	 	 & & 2 & 61.1 & 19.0 \\
+% 	 	 & & 3 & 137.5 & 42.7 \\
+% 	 	\cline{2-5}
+% 	 	 & \multirow{3}{*}{$ f_{yj} $} & 1 & 14.8 & 4.7 \\
+% 	 	 & & 2 & 53.9 & 18.1 \\
+% 	 	 & & 3 & 107.4 & 38.8 \\ 
+% 	 	\cline{2-5}
+% 	 	 & \multirow{3}{*}{$ {f}'_{yj} $} & 1 & 14.7 & 4.6 \\
+% 	 	 & & 2 & 52.5 & 17.5 \\
+% 	 	 & & 3 & 101.7 & 36.4 \\ 
+% 	 	\cline{2-5}
+% 	 	\hline
+% 	 	\multirow{9}{*}{Torsional} & \multirow{3}{*}{$ f_{\xi j} $} & 1 & 35.7 & 19.2 \\
+% 	 	 & & 2 & 71.3 & 38.4 \\
+% 	 	 & & 3 & 107.0 & 57.7 \\
+% 	 	\cline{2-5}
+% 	 	 & \multirow{3}{*}{$ f_{\varphi j} $} & 1 & 34.9 & 16.7 \\
+% 	 	 & & 2 & 73.5 & 35.4 \\
+% 	 	 & & 3 & 117.4 & 56.9 \\ 
+% 	 	\cline{2-5}
+% 	 	 & \multirow{3}{*}{$ {f}'_{\varphi j} $} & 1 & 36.5 & 19.7 \\
+% 	 	 & & 2 & 77.6 & 41.9 \\
+% 	 	 & & 3 & 126.4 & 67.5 \\ 
+% 	 	\hline
+% 	\end{tabular}
+% 	\caption{Spatial vibrations of steel truss bridges with open bridge deck}
+% 	\label{tab:spatialvibrationsteel}
+% \end{table}
 
 
 \begin{figure}[p]
@@ -181,52 +488,52 @@ where $ H_n(t) $ stands for forces due to random irregularities and sinusoidal m
 \end{figure}
 
 
-\subsubsection{Centrifugal forces}
-In \cite[6.5.1]{EC12} specifies following principles about centrifugal forces act on railway bridges:
+% \subsubsection{Centrifugal forces}
+% In \cite[6.5.1]{EC12} specifies following principles about centrifugal forces act on railway bridges:
 
-Where the track on a bridge is curved over the whole or part of the length of the bridge, the centrifugal force and the track cant shall be taken into account.
+% Where the track on a bridge is curved over the whole or part of the length of the bridge, the centrifugal force and the track cant shall be taken into account.
 
-The centrifugal forces should be taken to act outwards in a horizontal direction at a height of 1.80m above the running surface (see \cite[Figure 1.1]{EC12}). For some traffic types, e.g. double stacked containers, an increased value of $h_t$ should be specified.
+% The centrifugal forces should be taken to act outwards in a horizontal direction at a height of 1.80m above the running surface (see \cite[Figure 1.1]{EC12}). For some traffic types, e.g. double stacked containers, an increased value of $h_t$ should be specified.
 
-The centrifugal force shall always be combined with the vertical load. The centrifugal force shall not be multiplied by the dynamic factor $\varPhi_1$ or $\varPhi_3$.
+% The centrifugal force shall always be combined with the vertical load. The centrifugal force shall not be multiplied by the dynamic factor $\varPhi_1$ or $\varPhi_3$.
 
-The characteristic value of the centrifugal force shall be determined according to the following equations:
+% The characteristic value of the centrifugal force shall be determined according to the following equations:
 
-\begin{equation}
-	Q_tk=\frac{v^2}{g \cdot r}(f \cdot Q_{vk})=\frac{V^2}{127r}(f \cdot Q_{vk})
-\end{equation}
+% \begin{equation}
+% 	Q_tk=\frac{v^2}{g \cdot r}(f \cdot Q_{vk})=\frac{V^2}{127r}(f \cdot Q_{vk})
+% \end{equation}
 
-\begin{equation}
-	q_{tk}=\frac{v^2}{g \cdot r}(f \cdot q_{vk})=\frac{V^2}{127r}(f \cdot q_{vk})
-\end{equation}
+% \begin{equation}
+% 	q_{tk}=\frac{v^2}{g \cdot r}(f \cdot q_{vk})=\frac{V^2}{127r}(f \cdot q_{vk})
+% \end{equation}
 
-where:
+% where:
 
-\begin{tabular}{ll}
-$Q_{tk}$,$q_{tk}$ & Characteristic values of the centrifugal forces\\
-$Q_{vk}$,$q_{vk}$ & Characteristic values of the vertical loads specified in \cite[6.3]{EC12}\\
-$f$ & Reduction factor, see below \\
-$v$ & Maximum speed in accordance with \cite[6.5.1(5)]{EC12}[m/s]\\
-$V$ & Maximum speed in accordance with \cite[6.5.1(5)]{EC12}[km/h]\\
-$g$ & Acceleration due to gravity [9.81$m/s^2$]\\
-$r$ & Radius of curvature [m].
-\end{tabular}
+% \begin{tabular}{ll}
+% $Q_{tk}$,$q_{tk}$ & Characteristic values of the centrifugal forces\\
+% $Q_{vk}$,$q_{vk}$ & Characteristic values of the vertical loads specified in \cite[6.3]{EC12}\\
+% $f$ & Reduction factor, see below \\
+% $v$ & Maximum speed in accordance with \cite[6.5.1(5)]{EC12}[m/s]\\
+% $V$ & Maximum speed in accordance with \cite[6.5.1(5)]{EC12}[km/h]\\
+% $g$ & Acceleration due to gravity [9.81$m/s^2$]\\
+% $r$ & Radius of curvature [m].
+% \end{tabular}
 
-For Load Model 71 (and where required Load Model SW/0) the reduction factor $f$ is given by:
+% For Load Model 71 (and where required Load Model SW/0) the reduction factor $f$ is given by:
 
-\begin{equation}
-	f=[1-\frac{V-120}{1000}(\frac{814}{V}+1.75)(1-\sqrt{\frac{2.88}{L_f}})]
-\end{equation}
+% \begin{equation}
+% 	f=[1-\frac{V-120}{1000}(\frac{814}{V}+1.75)(1-\sqrt{\frac{2.88}{L_f}})]
+% \end{equation}
 
  
 
-\section{Torsional vibration}
-According to \cite[9.1.3]{fryba1996dynamics}, the horizontal lateral forces of railway vehicles act on the rial top level,i.e. outside the cross section centroid of the bridge in the majority of cases. Let the difference of elevations be $ h $. Consequently, they affect the bridge by twisting moments $ hH_n(t) $. The differential equation of a beam due to simple torsion is 
-\begin{equation}
-	-GI_\xi \xi''(x,t)+\mu \ddot{\xi}(x,t)=\sum_{n=1}^{N}\varepsilon_n \delta (x+d_n-ct)h H_n(t)
-\end{equation}
+% \section{Torsional vibration}
+% According to \cite[9.1.3]{fryba1996dynamics}, the horizontal lateral forces of railway vehicles act on the rial top level,i.e. outside the cross section centroid of the bridge in the majority of cases. Let the difference of elevations be $ h $. Consequently, they affect the bridge by twisting moments $ hH_n(t) $. The differential equation of a beam due to simple torsion is 
+% \begin{equation}
+% 	-GI_\xi \xi''(x,t)+\mu \ddot{\xi}(x,t)=\sum_{n=1}^{N}\varepsilon_n \delta (x+d_n-ct)h H_n(t)
+% \end{equation}
 
-where $ \xi (x,t) $ is the rotation about the longitudinal beam axis x, $ G $ is the modulus of elasticity in shear, $ GI_\xi $ is the moment of torsional rigidity per unit length, $ \mu_\xi $ is the mass polar moment of inertia with regard to axis $ x $ per unit length.
+% where $ \xi (x,t) $ is the rotation about the longitudinal beam axis x, $ G $ is the modulus of elasticity in shear, $ GI_\xi $ is the moment of torsional rigidity per unit length, $ \mu_\xi $ is the mass polar moment of inertia with regard to axis $ x $ per unit length.
 
 
 
@@ -567,6 +874,31 @@ Generally the dynamic factor $ \varPhi $ is taken as either $ \varPhi_2 $ or $ \
 	where $ L_\varPhi $ is the `determinant' length (length associated with $ \varPhi $ ) in metres as defined in Table 6.2, EN1991-2\cite{EC12}.
 \end{enumerate}
 
+\subsection{Nosing force}\label{sec:nosingforce}
+Nosing force is defined in Eurocode 1991-2. Its original background can be found in \cite[Proposed criteria]{d181}. It is defined as a representation of actions, in combine with actions like vertical loads, dynamic effects, centrifugal forces, traction and braking forces, etc.
+
+The evidence of RP6 is the background of nosing force in EN1991-2 is the following repeating literature:
+
+In \cite[6.5.2]{EC12}:
+\begin{quote}
+	(1)P The nosing force shall be taken as a concentrated force acting horizontally, at the top of the rails, perpendicular to the centre-line of track. It shall be applied on both straight track....
+\end{quote}
+
+In \cite[4.1B]{d181}:
+\begin{quote}
+	These forces shall be applied at the top of the rails in the most unfavourable position and acting horizontally, perpendicular to the track centreline...
+\end{quote}
+
+With another statement also helps proofing RP6 is the background of nosing force in EN1991-2 in \cite[4:Draft Recommendations]{d181}:
+
+\begin{quote}
+	These can therefore be expressed as follows: (Article \textbf{6.5.2} of ENV 1991-3 of 1994)...
+\end{quote}
+
+ENV 1991-3 was renamed to EN 1991-2 in 2003.
+
+Originally in \cite[4:Draft Recommendations]{d181}, nosing forces was defined as lateral forces from vehicle/bridge interaction as a result of \textbf{hunting}. 
+	
 \subsection{Static analysis}
 A static analysis shall be carried out with the load models defined in Section Load Models(LM71 and where required Load Models SW/0 and SW/2). The result shall be multiplied by the dynamic factor $ \Phi $ (and if required multiplied by $ \alpha $)
 

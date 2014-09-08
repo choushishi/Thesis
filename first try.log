@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.25)  27 AUG 2014 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.25)  8 SEP 2014 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1242,6 +1242,30 @@ Package pgfplots: loading complementary 'name path' implementation for your pgf
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.decorations.softclip.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count393
+\lst@gtempboxa=\box58
+\lst@token=\toks40
+\lst@length=\count394
+\lst@currlwidth=\dimen307
+\lst@column=\count395
+\lst@pos=\count396
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count397
+\lst@lineno=\count398
+\lst@maxwidth=\dimen310
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count399
+\lst@skipnumbers=\count400
+\lst@framebox=\box59
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1252,50 +1276,66 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count393
-\@quotereset=\count394
-(./first try.aux (./introduction.aux) (./literature.aux) (./theoretical.aux)
-(./calculation.aux
+\@quotelevel=\count401
+\@quotereset=\count402
+(./first try.aux (./introduction.aux) (./literature.aux
+
+LaTeX Warning: Label `fig:massbeammodel' multiply defined.
+
+) (./theoretical.aux
+
+LaTeX Warning: Label `fig:wheelset and track dimensions' multiply defined.
+
+
+LaTeX Warning: Label `fig:conicalwornprofiles' multiply defined.
+
+
+LaTeX Warning: Label `fig:lateraldeviationdefine' multiply defined.
+
+
+LaTeX Warning: Label `tab:lateraldeviation' multiply defined.
+
+) (./calculation.aux
 
 LaTeX Warning: Label `tab:SA1' multiply defined.
 
 ))
 \openout1 = `"first try.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count395
-\scratchdimen=\dimen307
-\scratchbox=\box58
-\nofMPsegments=\count396
-\nofMParguments=\count397
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count398
-\MPscratchDim=\dimen308
-\MPnumerator=\count399
-\makeMPintoPDFobject=\count400
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count403
+\scratchdimen=\dimen311
+\scratchbox=\box60
+\nofMPsegments=\count404
+\nofMParguments=\count405
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count406
+\MPscratchDim=\dimen312
+\MPnumerator=\count407
+\makeMPintoPDFobject=\count408
+\everyMPtoPDFconversion=\toks42
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1347,20 +1387,21 @@ e
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 61.
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring ON on input line 67.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count401
+\c@section@level=\count409
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
 
 (./first try.out) (./first try.out)
 \@outlinefile=\write5
@@ -1382,12 +1423,13 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'date'.
 
 )
-Package biblatex Info: Reference section=0 on input line 61.
-Package biblatex Info: Reference segment=0 on input line 61.
+Package biblatex Info: Reference section=0 on input line 67.
+Package biblatex Info: Reference segment=0 on input line 67.
  ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.10} (current compat level: 1.8).
 
+\c@lstlisting=\count410
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1395,202 +1437,313 @@ enefit from \pgfplotsset{compat=1.10} (current compat level: 1.8).
 me{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 ...nloaded train'}{18}{subsubsection.2.9.4.3}
+l.83 ...s proposed by Eurocodes }{20}{section.3.5}
                                                    [1
 
-] [2])
+] [2] [3])
 \tf@toc=\write6
 \openout6 = `"first try.toc"'.
 
- [3]
+ [4]
 \openout2 = `introduction.aux'.
 
 
 (./introduction.tex
 Chapter 1.
-[4
+[5
 
 
-]) [5]
+]) [6]
 \openout2 = `literature.aux'.
 
  (./literature.tex
 Chapter 2.
+<./Image/wheelsettrackdimension.pdf, id=708, 381.92035pt x 174.15143pt>
+File: ./Image/wheelsettrackdimension.pdf Graphic file (type pdf)
 
-<./Image/amplitudefrequencycharacteristic.pdf, id=614, 207.2019pt x 179.02855pt
+<use ./Image/wheelsettrackdimension.pdf>
+Package pdftex.def Info: ./Image/wheelsettrackdimension.pdf used on input line 
+20.
+(pdftex.def)             Requested size: 346.89732pt x 158.18571pt.
+ [7
+
+
+
+ <./Image/wheelsettrackdimension.pdf>] <./Image/conicalwornprofiles.pdf, id=730
+, 173.2589pt x 203.025pt>
+File: ./Image/conicalwornprofiles.pdf Graphic file (type pdf)
+
+<use ./Image/conicalwornprofiles.pdf>
+Package pdftex.def Info: ./Image/conicalwornprofiles.pdf used on input line 45.
+
+(pdftex.def)             Requested size: 260.17465pt x 304.88676pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Image/lateraldeviationdefine.pdf, id=735, 368.15895pt x 116.70752pt>
+File: ./Image/lateraldeviationdefine.pdf Graphic file (type pdf)
+
+<use ./Image/lateraldeviationdefine.pdf>
+Package pdftex.def Info: ./Image/lateraldeviationdefine.pdf used on input line 
+63.
+(pdftex.def)             Requested size: 346.89732pt x 109.96684pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8] <./Image/wheelsetbiconus.pdf, id=752, 174.47966pt x 164.22876pt>
+File: ./Image/wheelsetbiconus.pdf Graphic file (type pdf)
+
+<use ./Image/wheelsetbiconus.pdf>
+Package pdftex.def Info: ./Image/wheelsetbiconus.pdf used on input line 95.
+(pdftex.def)             Requested size: 216.81pt x 204.08257pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Image/klingelmovement.pdf, id=757, 307.64876pt x 113.15866pt>
+File: ./Image/klingelmovement.pdf Graphic file (type pdf)
+
+<use ./Image/klingelmovement.pdf>
+Package pdftex.def Info: ./Image/klingelmovement.pdf used on input line 105.
+(pdftex.def)             Requested size: 346.89732pt x 127.60359pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Image/fwc.pdf, id=760, 185.27237pt x 87.6607pt>
+File: ./Image/fwc.pdf Graphic file (type pdf)
+ <use ./Image/fwc.pdf>
+Package pdftex.def Info: ./Image/fwc.pdf used on input line 112.
+(pdftex.def)             Requested size: 216.81pt x 102.58533pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./Image/conicalwornprofiles.pdf>]
+<./Image/flangingwheelset.pdf, id=780, 188.13828pt x 93.1184pt>
+File: ./Image/flangingwheelset.pdf Graphic file (type pdf)
+
+<use ./Image/flangingwheelset.pdf>
+Package pdftex.def Info: ./Image/flangingwheelset.pdf used on input line 137.
+(pdftex.def)             Requested size: 216.81pt x 107.31548pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./Image/lateraldeviationdefine.pdf> <./Image/wheelsetbiconus.pdf>]
+<./Image/amplitudefrequencyinstability.pdf, id=875, 175.68806pt x 186.71878pt>
+File: ./Image/amplitudefrequencyinstability.pdf Graphic file (type pdf)
+
+<use ./Image/amplitudefrequencyinstability.pdf>
+Package pdftex.def Info: ./Image/amplitudefrequencyinstability.pdf used on inpu
+t line 147.
+(pdftex.def)             Requested size: 216.81pt x 230.42058pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Image/singlecontact.pdf, id=878, 79.61324pt x 108.9165pt>
+File: ./Image/singlecontact.pdf Graphic file (type pdf)
+
+<use ./Image/singlecontact.pdf>
+Package pdftex.def Info: ./Image/singlecontact.pdf used on input line 161.
+(pdftex.def)             Requested size: 86.72267pt x 118.64682pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\OT1/cmr/m/n/9 (a) |Sin-gle con-tact
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 162--162
+\OT1/cmr/m/n/9 point. Ex-tracted
+ []
+
+<./Image/doublecontact.pdf, id=881, 182.97942pt x 103.71237pt>
+File: ./Image/doublecontact.pdf Graphic file (type pdf)
+
+<use ./Image/doublecontact.pdf>
+Package pdftex.def Info: ./Image/doublecontact.pdf used on input line 166.
+(pdftex.def)             Requested size: 216.81pt x 122.89384pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./Image/klingelmovement.pdf> <./Image/fwc.pdf> <./Image/flangingwheelset.p
+df>] [12 <./Image/amplitudefrequencyinstability.pdf> <./Image/singlecontact.pdf
+> <./Image/doublecontact.pdf>]
+<./Image/massbeammodel.pdf, id=944, 770.88pt x 297.11pt>
+File: ./Image/massbeammodel.pdf Graphic file (type pdf)
+
+<use ./Image/massbeammodel.pdf>
+Package pdftex.def Info: ./Image/massbeammodel.pdf used on input line 223.
+(pdftex.def)             Requested size: 346.89732pt x 133.69826pt.
+ [13 <./Image/massbeammodel.pdf>]
+<./Image/amplitudefrequencycharacteristic.pdf, id=956, 207.2019pt x 179.02855pt
 >
 File: ./Image/amplitudefrequencycharacteristic.pdf Graphic file (type pdf)
  <use ./Image/amplitudefrequencycharacteristic.pdf>
 Package pdftex.def Info: ./Image/amplitudefrequencycharacteristic.pdf used on i
-nput line 38.
+nput line 257.
 (pdftex.def)             Requested size: 260.17465pt x 224.81227pt.
 
+<./Image/harmonicloadbeam.pdf, id=959, 269.31555pt x 92.85616pt>
+File: ./Image/harmonicloadbeam.pdf Graphic file (type pdf)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6
-
-
-
-] <./Image/dynamiceffects.pdf, id=634, 963.6pt x 759.83875pt>
-File: ./Image/dynamiceffects.pdf Graphic file (type pdf)
-
-<use ./Image/dynamiceffects.pdf>
-Package pdftex.def Info: ./Image/dynamiceffects.pdf used on input line 50.
-(pdftex.def)             Requested size: 260.17465pt x 205.1592pt.
+<use ./Image/harmonicloadbeam.pdf>
+Package pdftex.def Info: ./Image/harmonicloadbeam.pdf used on input line 271.
+(pdftex.def)             Requested size: 216.81pt x 74.75258pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./Image/amplitudefrequencycharacteristic.pdf>] [8 <./Image/dynamiceffects.p
-df>]
+[14 <./Image/amplitudefrequencycharacteristic.pdf>] [15 <./Image/harmonicloadbe
+am.pdf>]
+Chapter 3.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 362.
 
-<./Image/trackirregularities.pdf, id=705, 583.17876pt x 833.1125pt>
+[16
+
+] <./Image/trackirregularities.pdf, id=1097, 583.17876pt x 833.1125pt>
 File: ./Image/trackirregularities.pdf Graphic file (type pdf)
 
 <use ./Image/trackirregularities.pdf>
-Package pdftex.def Info: ./Image/trackirregularities.pdf used on input line 178
+Package pdftex.def Info: ./Image/trackirregularities.pdf used on input line 485
 .
 (pdftex.def)             Requested size: 346.89732pt x 495.57462pt.
- [9] [10 <./Image/trackirregularities.pdf>] [11] <./Image/massbeammodel.pdf, id
-=743, 770.88pt x 297.11pt>
 File: ./Image/massbeammodel.pdf Graphic file (type pdf)
-
-<use ./Image/massbeammodel.pdf>
-Package pdftex.def Info: ./Image/massbeammodel.pdf used on input line 247.
+ <use ./Image/massbeammodel.pdf>
+Package pdftex.def Info: ./Image/massbeammodel.pdf used on input line 554.
 (pdftex.def)             Requested size: 346.89732pt x 133.69826pt.
 
-<./Image/continuousbeammodel.pdf, id=745, 694.39601pt x 215.01031pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Image/continuousbeammodel.pdf, id=1103, 694.39601pt x 215.01031pt>
 File: ./Image/continuousbeammodel.pdf Graphic file (type pdf)
 
 <use ./Image/continuousbeammodel.pdf>
-Package pdftex.def Info: ./Image/continuousbeammodel.pdf used on input line 272
+Package pdftex.def Info: ./Image/continuousbeammodel.pdf used on input line 579
 .
 (pdftex.def)             Requested size: 346.89732pt x 107.41302pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./Image/massbeammodel.pdf>]
-<./Image/verticalmodel.pdf, id=769, 741.77126pt x 268.00125pt>
+[17] [18 <./Image/trackirregularities.pdf>] [19 <./Image/continuousbeammodel.pd
+f>] <./Image/verticalmodel.pdf, id=1151, 741.77126pt x 268.00125pt>
 File: ./Image/verticalmodel.pdf Graphic file (type pdf)
 
 <use ./Image/verticalmodel.pdf>
-Package pdftex.def Info: ./Image/verticalmodel.pdf used on input line 308.
+Package pdftex.def Info: ./Image/verticalmodel.pdf used on input line 615.
 (pdftex.def)             Requested size: 346.89732pt x 125.33492pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <./Image/continuousbeammodel.pdf>]
-<./Image/advancedmodel.pdf, id=788, 1270.74211pt x 1314.82097pt>
+<./Image/advancedmodel.pdf, id=1153, 1270.74211pt x 1314.82097pt>
 File: ./Image/advancedmodel.pdf Graphic file (type pdf)
 
 <use ./Image/advancedmodel.pdf>
-Package pdftex.def Info: ./Image/advancedmodel.pdf used on input line 320.
+Package pdftex.def Info: ./Image/advancedmodel.pdf used on input line 627.
 (pdftex.def)             Requested size: 346.89732pt x 358.9186pt.
 
-<./Image/trackmodel.pdf, id=793, 760.8425pt x 432.61626pt>
+<./Image/trackmodel.pdf, id=1158, 760.8425pt x 432.61626pt>
 File: ./Image/trackmodel.pdf Graphic file (type pdf)
 
 <use ./Image/trackmodel.pdf>
-Package pdftex.def Info: ./Image/trackmodel.pdf used on input line 339.
+Package pdftex.def Info: ./Image/trackmodel.pdf used on input line 646.
 (pdftex.def)             Requested size: 346.89732pt x 197.24997pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (0.89955pt too wide) in paragraph at lines 345--345
+Overfull \hbox (0.89955pt too wide) in paragraph at lines 652--652
 []\OT1/cmr/bx/n/14.4 General de-sign prin-ci-ples and pro-ce-dures con-cern-ing
  rail-
  []
 
-[14 <./Image/verticalmodel.pdf>] [15 <./Image/advancedmodel.pdf>] [16 <./Image/
+[20 <./Image/verticalmodel.pdf>] [21 <./Image/advancedmodel.pdf>] [22 <./Image/
 trackmodel.pdf>]
-<./Image/logicdiagram.pdf, id=841, 1032.85875pt x 1404.24625pt>
+<./Image/logicdiagram.pdf, id=1207, 1032.85875pt x 1404.24625pt>
 File: ./Image/logicdiagram.pdf Graphic file (type pdf)
 
 <use ./Image/logicdiagram.pdf>
-Package pdftex.def Info: ./Image/logicdiagram.pdf used on input line 407.
+Package pdftex.def Info: ./Image/logicdiagram.pdf used on input line 714.
 (pdftex.def)             Requested size: 195.12767pt x 265.28824pt.
 
-<./Image/frequencylimit.pdf, id=844, 606.265pt x 795.97375pt>
+<./Image/frequencylimit.pdf, id=1210, 606.265pt x 795.97375pt>
 File: ./Image/frequencylimit.pdf Graphic file (type pdf)
 
 <use ./Image/frequencylimit.pdf>
-Package pdftex.def Info: ./Image/frequencylimit.pdf used on input line 412.
+Package pdftex.def Info: ./Image/frequencylimit.pdf used on input line 719.
 (pdftex.def)             Requested size: 195.12767pt x 256.18642pt.
- [17 <./Image/logicdiagram.pdf> <./Image/frequencylimit.pdf>] <./Image/lm71.pdf
-, id=866, 924.45375pt x 246.9225pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23] <./Image/lm71.pdf, id=1238, 924.45375pt x 246.9225pt>
 File: ./Image/lm71.pdf Graphic file (type pdf)
 
 <use ./Image/lm71.pdf>
-Package pdftex.def Info: ./Image/lm71.pdf used on input line 449.
+Package pdftex.def Info: ./Image/lm71.pdf used on input line 756.
 (pdftex.def)             Requested size: 346.89732pt x 92.65598pt.
- <./Image/lmsw.pdf, id=871, 826.08624pt x 123.46124pt>
+ [24 <./Image/logicdiagram.pdf> <./Image/frequencylimit.pdf> <./Image/lm71.pdf>
+] <./Image/lmsw.pdf, id=1257, 826.08624pt x 123.46124pt>
 File: ./Image/lmsw.pdf Graphic file (type pdf)
 
 <use ./Image/lmsw.pdf>
-Package pdftex.def Info: ./Image/lmsw.pdf used on input line 463.
+Package pdftex.def Info: ./Image/lmsw.pdf used on input line 770.
 (pdftex.def)             Requested size: 346.89732pt x 51.84583pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18 <./Image/lm71.pdf>] <./Image/hslma.pdf, id=900, 932.48375pt x 334.24875pt>
+ <./Image/hslma.pdf, id=1264, 932.48375pt x 334.24875pt>
 File: ./Image/hslma.pdf Graphic file (type pdf)
 
 <use ./Image/hslma.pdf>
-Package pdftex.def Info: ./Image/hslma.pdf used on input line 495.
+Package pdftex.def Info: ./Image/hslma.pdf used on input line 802.
 (pdftex.def)             Requested size: 346.89732pt x 124.34332pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--504
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 []|\OT1/cmr/m/n/8 Number of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--504
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 \OT1/cmr/m/n/8 in-ter-me-di-ate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--504
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 []|\OT1/cmr/m/n/8 Coach length
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--504
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 []|\OT1/cmr/m/n/8 Bogie axle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 811--812
 []|\OT1/cmr/m/n/8 Point force
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/hslmb.pdf, id=905, 891.33pt x 248.93pt>
+<./Image/hslmb.pdf, id=1269, 891.33pt x 248.93pt>
 File: ./Image/hslmb.pdf Graphic file (type pdf)
  <use ./Image/hslmb.pdf>
-Package pdftex.def Info: ./Image/hslmb.pdf used on input line 524.
+Package pdftex.def Info: ./Image/hslmb.pdf used on input line 831.
 (pdftex.def)             Requested size: 346.89732pt x 96.88098pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/hslmb2.pdf, id=908, 776.9025pt x 420.57124pt>
+<./Image/hslmb2.pdf, id=1272, 776.9025pt x 420.57124pt>
 File: ./Image/hslmb2.pdf Graphic file (type pdf)
 
 <use ./Image/hslmb2.pdf>
-Package pdftex.def Info: ./Image/hslmb2.pdf used on input line 531.
+Package pdftex.def Info: ./Image/hslmb2.pdf used on input line 838.
 (pdftex.def)             Requested size: 346.89732pt x 187.79214pt.
 
 
@@ -1599,93 +1752,82 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./Image/lmsw.pdf> <./Image/hslma.pdf>] [20 <./Image/hslmb.pdf>]
+[25 <./Image/lmsw.pdf> <./Image/hslma.pdf>] [26 <./Image/hslmb.pdf>] [27 <./Ima
+ge/hslmb2.pdf>]
 
-LaTeX Warning: Reference `sec:dynamic-analysing-methods' on page 21 undefined o
-n input line 588.
+LaTeX Warning: Reference `sec:dynamic-analysing-methods' on page 28 undefined o
+n input line 920.
 
-[21 <./Image/hslmb2.pdf>]
-<./Image/definitiondecktwist.pdf, id=965, 572.1375pt x 295.1025pt>
+[28] <./Image/definitiondecktwist.pdf, id=1345, 572.1375pt x 295.1025pt>
 File: ./Image/definitiondecktwist.pdf Graphic file (type pdf)
 
 <use ./Image/definitiondecktwist.pdf>
-Package pdftex.def Info: ./Image/definitiondecktwist.pdf used on input line 646
+Package pdftex.def Info: ./Image/definitiondecktwist.pdf used on input line 978
 .
 (pdftex.def)             Requested size: 346.89732pt x 178.92705pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Image/definitionangularrotations.pdf, id=969, 701.62125pt x 99.37125pt>
+ [29 <./Image/definitiondecktwist.pdf>]
+<./Image/definitionangularrotations.pdf, id=1364, 701.62125pt x 99.37125pt>
 File: ./Image/definitionangularrotations.pdf Graphic file (type pdf)
 
 <use ./Image/definitionangularrotations.pdf>
 Package pdftex.def Info: ./Image/definitionangularrotations.pdf used on input l
-ine 656.
+ine 988.
 (pdftex.def)             Requested size: 346.89732pt x 49.13205pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[22]
-Overfull \hbox (3.99228pt too wide) in paragraph at lines 683--683
+Overfull \hbox (3.99228pt too wide) in paragraph at lines 1015--1015
 []|\OT1/cmr/m/n/10 Maximum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
 \OT1/cmr/m/n/10 hor-i-zon-
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 683--683
+Underfull \hbox (badness 1418) in paragraph at lines 1015--1015
 \OT1/cmr/m/n/10 tal ro-ta-
  []
 
 
-Overfull \hbox (12.6312pt too wide) in paragraph at lines 683--683
+Overfull \hbox (12.6312pt too wide) in paragraph at lines 1015--1015
 \OT1/cmr/m/n/10 tion(radian)| 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Image/modeltrackstructure.pdf, id=992, 831.105pt x 255.95625pt>
+[30 <./Image/definitionangularrotations.pdf>]
+<./Image/modeltrackstructure.pdf, id=1385, 831.105pt x 255.95625pt>
 File: ./Image/modeltrackstructure.pdf Graphic file (type pdf)
 
 <use ./Image/modeltrackstructure.pdf>
-Package pdftex.def Info: ./Image/modeltrackstructure.pdf used on input line 714
-.
+Package pdftex.def Info: ./Image/modeltrackstructure.pdf used on input line 104
+6.
 (pdftex.def)             Requested size: 346.89732pt x 106.83302pt.
 
-<./Image/variationlongitudinalshearforce.pdf, id=995, 795.97375pt x 684.5575pt>
+<./Image/variationlongitudinalshearforce.pdf, id=1388, 795.97375pt x 684.5575pt
+>
 File: ./Image/variationlongitudinalshearforce.pdf Graphic file (type pdf)
-<use ./Image/variationlongitudinalshearforce.pdf>
+ <use ./Image/variationlongitudinalshearforce.pdf>
 Package pdftex.def Info: ./Image/variationlongitudinalshearforce.pdf used on in
-put line 721.
+put line 1053.
 (pdftex.def)             Requested size: 346.89732pt x 298.33371pt.
- [23 <./Image/definitiondecktwist.pdf> <./Image/definitionangularrotations.pdf>
-] [24 <./Image/modeltrackstructure.pdf> <./Image/variationlongitudinalshearforc
-e.pdf>]
-<./Image/recommendedlevelofcomfort.pdf, id=1034, 920.43875pt x 507.8975pt>
+
+<./Image/recommendedlevelofcomfort.pdf, id=1398, 920.43875pt x 507.8975pt>
 File: ./Image/recommendedlevelofcomfort.pdf Graphic file (type pdf)
 
 <use ./Image/recommendedlevelofcomfort.pdf>
 Package pdftex.def Info: ./Image/recommendedlevelofcomfort.pdf used on input li
-ne 759.
+ne 1091.
 (pdftex.def)             Requested size: 346.89732pt x 191.42207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [25] [26 <./Image/recommendedlevelofcomfort.pdf>]
+) [31] [32 <./Image/modeltrackstructure.pdf> <./Image/variationlongitudinalshea
+rforce.pdf>] [33 <./Image/recommendedlevelofcomfort.pdf>]
 \openout2 = `theoretical.aux'.
 
  (./theoretical.tex
-Chapter 3.
-<./Image/wheelsettrackdimension.pdf, id=1055, 381.92035pt x 174.15143pt>
+Chapter 4.
 File: ./Image/wheelsettrackdimension.pdf Graphic file (type pdf)
-
 <use ./Image/wheelsettrackdimension.pdf>
 Package pdftex.def Info: ./Image/wheelsettrackdimension.pdf used on input line 
 155.
@@ -1694,14 +1836,13 @@ Package pdftex.def Info: ./Image/wheelsettrackdimension.pdf used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[34
 
 
 
-] <./Image/conicalwornprofiles.pdf, id=1067, 173.2589pt x 203.025pt>
+]
 File: ./Image/conicalwornprofiles.pdf Graphic file (type pdf)
-
-<use ./Image/conicalwornprofiles.pdf>
+ <use ./Image/conicalwornprofiles.pdf>
 Package pdftex.def Info: ./Image/conicalwornprofiles.pdf used on input line 176
 .
 (pdftex.def)             Requested size: 260.17465pt x 304.88676pt.
@@ -1712,61 +1853,71 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[28 <./Image/wheelsettrackdimension.pdf>]
+[35]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [29 <./Image/conicalwornprofiles.pdf>] [30]
-Chapter 4.
+ [36]
+File: ./Image/lateraldeviationdefine.pdf Graphic file (type pdf)
+ <use ./Image/lateraldeviationdefine.pdf>
+Package pdftex.def Info: ./Image/lateraldeviationdefine.pdf used on input line 
+216.
+(pdftex.def)             Requested size: 346.89732pt x 109.96684pt.
 
-LaTeX Warning: Reference `sec:resonanceinvestigated' on page 31 undefined on in
-put line 358.
 
-[31
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37] [38]
+Chapter 5.
+
+LaTeX Warning: Reference `sec:resonanceinvestigated' on page 39 undefined on in
+put line 392.
+
+[39
 
 ]
-Overfull \hbox (345.4241pt too wide) in paragraph at lines 423--444
+Overfull \hbox (345.4241pt too wide) in paragraph at lines 457--478
  [][][] 
  []
 
-[32]
+[40]
 Package pgfplots info: fill between: activating layered graphics
 Package pgfplots info: fill between: found 'clip=true'. installing clip path fo
 r layer 'pre main'...
-\pgf@layerbox@axis background=\box60
-\pgf@layerboxsaved@axis background=\box61
-\pgf@layerbox@axis grid=\box62
-\pgf@layerboxsaved@axis grid=\box63
-\pgf@layerbox@axis ticks=\box64
-\pgf@layerboxsaved@axis ticks=\box65
-\pgf@layerbox@axis lines=\box66
-\pgf@layerboxsaved@axis lines=\box67
-\pgf@layerbox@axis tick labels=\box68
-\pgf@layerboxsaved@axis tick labels=\box69
-\pgf@layerbox@pre main=\box70
-\pgf@layerboxsaved@pre main=\box71
-\pgf@layerbox@axis descriptions=\box72
-\pgf@layerboxsaved@axis descriptions=\box73
-\pgf@layerbox@axis foreground=\box74
-\pgf@layerboxsaved@axis foreground=\box75
+\pgf@layerbox@axis background=\box62
+\pgf@layerboxsaved@axis background=\box63
+\pgf@layerbox@axis grid=\box64
+\pgf@layerboxsaved@axis grid=\box65
+\pgf@layerbox@axis ticks=\box66
+\pgf@layerboxsaved@axis ticks=\box67
+\pgf@layerbox@axis lines=\box68
+\pgf@layerboxsaved@axis lines=\box69
+\pgf@layerbox@axis tick labels=\box70
+\pgf@layerboxsaved@axis tick labels=\box71
+\pgf@layerbox@pre main=\box72
+\pgf@layerboxsaved@pre main=\box73
+\pgf@layerbox@axis descriptions=\box74
+\pgf@layerboxsaved@axis descriptions=\box75
+\pgf@layerbox@axis foreground=\box76
+\pgf@layerboxsaved@axis foreground=\box77
 Package pgfplots info: Setting layers 'axis background,axis grid,axis ticks,axi
 s lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
-LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 502
+LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 536
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.49998> not available
-(Font)              size <5> substituted on input line 502.
+(Font)              size <5> substituted on input line 536.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.49998> not available
-(Font)              size <5> substituted on input line 502.
+(Font)              size <5> substituted on input line 536.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.49998> not available
-(Font)              size <5> substituted on input line 502.
+(Font)              size <5> substituted on input line 536.
 
-[33]
+[41]
 Package pgfplots info: fill between: activating layered graphics
 Package pgfplots info: fill between: found 'clip=true'. installing clip path fo
 r layer 'pre main'...
@@ -1776,8 +1927,8 @@ s lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34]
-Overfull \hbox (3.24678pt too wide) detected at line 565
+[42]
+Overfull \hbox (3.24678pt too wide) detected at line 598
 [] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 036\O
 ML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 042) \OMS/c
 msy/m/n/10 [ \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 051\OML/cmm/m/
@@ -1793,7 +1944,7 @@ it/10 :\OT1/cmr/m/n/10 109)
  []
 
 
-Overfull \hbox (5.55782pt too wide) detected at line 569
+Overfull \hbox (5.55782pt too wide) detected at line 602
 [] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 018\O
 ML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 021) \OMS/c
 msy/m/n/10 [ \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 026\OML/cmm/m/
@@ -1813,58 +1964,58 @@ Package pgfplots info: fill between: found 'clip=true'. installing clip path fo
 r layer 'pre main'...
 Package pgfplots info: Setting layers 'axis background,axis grid,axis ticks,axi
 s lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
-[35] [36]
-Chapter 5.
-[37
+[43] [44]
+Chapter 6.
+[45
 
 ]
-<./Image/forcesatflangecontactlocation.pdf, id=1167, 170.79619pt x 135.8693pt>
+<./Image/forcesatflangecontactlocation.pdf, id=1533, 170.79619pt x 135.8693pt>
 File: ./Image/forcesatflangecontactlocation.pdf Graphic file (type pdf)
 
 <use ./Image/forcesatflangecontactlocation.pdf>
 Package pdftex.def Info: ./Image/forcesatflangecontactlocation.pdf used on inpu
-t line 699.
+t line 732.
 (pdftex.def)             Requested size: 173.44534pt x 137.98776pt.
- [38 <./Image/forcesatflangecontactlocation.pdf>]
-<./Image/gaugewideningderailment.pdf, id=1273, 227.68272pt x 162.59465pt>
+ [46 <./Image/forcesatflangecontactlocation.pdf>]
+<./Image/gaugewideningderailment.pdf, id=1638, 227.68272pt x 162.59465pt>
 File: ./Image/gaugewideningderailment.pdf Graphic file (type pdf)
 
 <use ./Image/gaugewideningderailment.pdf>
 Package pdftex.def Info: ./Image/gaugewideningderailment.pdf used on input line
- 721.
+ 754.
 (pdftex.def)             Requested size: 346.89732pt x 247.75673pt.
- [39 <./Image/gaugewideningderailment.pdf>] <./Image/lateraltrackpanelshift.pdf
-, id=1340, 308.99602pt x 118.08171pt>
+ [47 <./Image/gaugewideningderailment.pdf>] <./Image/lateraltrackpanelshift.pdf
+, id=1706, 308.99602pt x 118.08171pt>
 File: ./Image/lateraltrackpanelshift.pdf Graphic file (type pdf)
 
 <use ./Image/lateraltrackpanelshift.pdf>
 Package pdftex.def Info: ./Image/lateraltrackpanelshift.pdf used on input line 
-746.
+779.
 (pdftex.def)             Requested size: 346.89732pt x 132.5767pt.
 
-<./Image/wheelsetoscillatesaroundthetrackcentre.pdf, id=1345, 393.54468pt x 172
+<./Image/wheelsetoscillatesaroundthetrackcentre.pdf, id=1711, 393.54468pt x 172
 .61835pt>
 File: ./Image/wheelsetoscillatesaroundthetrackcentre.pdf Graphic file (type pdf
 )
  <use ./Image/wheelsetoscillatesaroundthetrackcentre.pdf>
 Package pdftex.def Info: ./Image/wheelsetoscillatesaroundthetrackcentre.pdf use
-d on input line 765.
+d on input line 798.
 (pdftex.def)             Requested size: 346.89732pt x 152.1601pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [40 <./Image/lateraltrackpanelshift.pdf>] [41 <./Image/wheelsetoscillatesarou
+) [48 <./Image/lateraltrackpanelshift.pdf>] [49 <./Image/wheelsetoscillatesarou
 ndthetrackcentre.pdf>]
 \openout2 = `calculation.aux'.
 
  (./calculation.tex
-Chapter 6.
-[42
+Chapter 7.
+[50
 
 
 
-] [43
+] [51
 
 
 ]
@@ -1881,238 +2032,253 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
-[44
+[52
 
-] [45] [46] [47] [48]
-<./Image/apparentshift.pdf, id=1531, 843.75223pt x 596.58884pt>
+] [53]
+<./Image/bridgeparametercombination.pdf, id=1882, 396.29198pt x 296.2264pt>
+File: ./Image/bridgeparametercombination.pdf Graphic file (type pdf)
+
+<use ./Image/bridgeparametercombination.pdf>
+Package pdftex.def Info: ./Image/bridgeparametercombination.pdf used on input l
+ine 162.
+(pdftex.def)             Requested size: 433.62001pt x 324.13242pt.
+ [54 <./Image/bridgeparametercombination.pdf>] [55] [56]
+<./Image/apparentshift.pdf, id=1936, 843.75223pt x 596.58884pt>
 File: ./Image/apparentshift.pdf Graphic file (type pdf)
 
 <use ./Image/apparentshift.pdf>
-Package pdftex.def Info: ./Image/apparentshift.pdf used on input line 195.
+Package pdftex.def Info: ./Image/apparentshift.pdf used on input line 300.
 (pdftex.def)             Requested size: 433.62001pt x 306.5958pt.
- [49 <./Image/apparentshift.pdf>] [50]
-<./Image/lateralloadcasesample.pdf, id=1596, 597.432pt x 845.31813pt>
-File: ./Image/lateralloadcasesample.pdf Graphic file (type pdf)
-
-<use ./Image/lateralloadcasesample.pdf>
-Package pdftex.def Info: ./Image/lateralloadcasesample.pdf used on input line 2
-53.
-(pdftex.def)             Requested size: 433.62001pt x 613.55582pt.
-
-
-LaTeX Warning: Float too large for page by 15.12581pt on input line 256.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51] [52 <./Image/lateralloadcasesample.pdf>]
+[57] [58 <./Image/apparentshift.pdf>] [59] [60] [61]
+Missing character: There is no ] in font nullfont!
+Missing character: There is no , in font nullfont!
+ [62] [63]
 Appendix B.
-<./Image/vp11.pdf, id=1642, 596.58884pt x 843.75223pt>
+<./Image/vp11.pdf, id=2050, 596.58884pt x 843.75223pt>
 File: ./Image/vp11.pdf Graphic file (type pdf)
  <use ./Image/vp11.pdf>
-Package pdftex.def Info: ./Image/vp11.pdf used on input line 275.
+Package pdftex.def Info: ./Image/vp11.pdf used on input line 513.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 277.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 515.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp12.pdf, id=1645, 596.58884pt x 843.75223pt>
+<./Image/vp12.pdf, id=2053, 596.58884pt x 843.75223pt>
 File: ./Image/vp12.pdf Graphic file (type pdf)
  <use ./Image/vp12.pdf>
-Package pdftex.def Info: ./Image/vp12.pdf used on input line 281.
+Package pdftex.def Info: ./Image/vp12.pdf used on input line 519.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 283.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 521.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp21.pdf, id=1648, 596.58884pt x 843.75223pt>
+<./Image/vp21.pdf, id=2056, 596.58884pt x 843.75223pt>
 File: ./Image/vp21.pdf Graphic file (type pdf)
  <use ./Image/vp21.pdf>
-Package pdftex.def Info: ./Image/vp21.pdf used on input line 287.
+Package pdftex.def Info: ./Image/vp21.pdf used on input line 525.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 289.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 527.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp22.pdf, id=1651, 596.58884pt x 843.75223pt>
+<./Image/vp22.pdf, id=2059, 596.58884pt x 843.75223pt>
 File: ./Image/vp22.pdf Graphic file (type pdf)
  <use ./Image/vp22.pdf>
-Package pdftex.def Info: ./Image/vp22.pdf used on input line 293.
+Package pdftex.def Info: ./Image/vp22.pdf used on input line 531.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 295.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 533.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp31.pdf, id=1654, 596.58884pt x 843.75223pt>
+<./Image/vp31.pdf, id=2062, 596.58884pt x 843.75223pt>
 File: ./Image/vp31.pdf Graphic file (type pdf)
  <use ./Image/vp31.pdf>
-Package pdftex.def Info: ./Image/vp31.pdf used on input line 299.
+Package pdftex.def Info: ./Image/vp31.pdf used on input line 537.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 301.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 539.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp32.pdf, id=1657, 596.58884pt x 843.75223pt>
+<./Image/vp32.pdf, id=2065, 596.58884pt x 843.75223pt>
 File: ./Image/vp32.pdf Graphic file (type pdf)
  <use ./Image/vp32.pdf>
-Package pdftex.def Info: ./Image/vp32.pdf used on input line 305.
+Package pdftex.def Info: ./Image/vp32.pdf used on input line 543.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 307.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 545.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp41.pdf, id=1660, 596.58884pt x 843.75223pt>
+<./Image/vp41.pdf, id=2068, 596.58884pt x 843.75223pt>
 File: ./Image/vp41.pdf Graphic file (type pdf)
  <use ./Image/vp41.pdf>
-Package pdftex.def Info: ./Image/vp41.pdf used on input line 311.
+Package pdftex.def Info: ./Image/vp41.pdf used on input line 549.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 313.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 551.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp42.pdf, id=1663, 596.58884pt x 843.75223pt>
+<./Image/vp42.pdf, id=2071, 596.58884pt x 843.75223pt>
 File: ./Image/vp42.pdf Graphic file (type pdf)
  <use ./Image/vp42.pdf>
-Package pdftex.def Info: ./Image/vp42.pdf used on input line 317.
+Package pdftex.def Info: ./Image/vp42.pdf used on input line 555.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 319.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 557.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp51.pdf, id=1666, 596.58884pt x 843.75223pt>
+<./Image/vp51.pdf, id=2074, 596.58884pt x 843.75223pt>
 File: ./Image/vp51.pdf Graphic file (type pdf)
  <use ./Image/vp51.pdf>
-Package pdftex.def Info: ./Image/vp51.pdf used on input line 323.
+Package pdftex.def Info: ./Image/vp51.pdf used on input line 561.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 325.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 563.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp52.pdf, id=1669, 596.58884pt x 843.75223pt>
+<./Image/vp52.pdf, id=2077, 596.58884pt x 843.75223pt>
 File: ./Image/vp52.pdf Graphic file (type pdf)
  <use ./Image/vp52.pdf>
-Package pdftex.def Info: ./Image/vp52.pdf used on input line 329.
+Package pdftex.def Info: ./Image/vp52.pdf used on input line 567.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 331.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 569.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp61.pdf, id=1672, 596.58884pt x 843.75223pt>
+<./Image/vp61.pdf, id=2080, 596.58884pt x 843.75223pt>
 File: ./Image/vp61.pdf Graphic file (type pdf)
  <use ./Image/vp61.pdf>
-Package pdftex.def Info: ./Image/vp61.pdf used on input line 335.
+Package pdftex.def Info: ./Image/vp61.pdf used on input line 573.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 337.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 575.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp62.pdf, id=1675, 596.58884pt x 843.75223pt>
+<./Image/vp62.pdf, id=2083, 596.58884pt x 843.75223pt>
 File: ./Image/vp62.pdf Graphic file (type pdf)
  <use ./Image/vp62.pdf>
-Package pdftex.def Info: ./Image/vp62.pdf used on input line 341.
+Package pdftex.def Info: ./Image/vp62.pdf used on input line 579.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
 
 
-LaTeX Warning: Float too large for page by 14.85184pt on input line 343.
+LaTeX Warning: Float too large for page by 14.85184pt on input line 581.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/track1.pdf, id=1678, 597.23125pt x 845.1575pt>
+<./Image/track1.pdf, id=2086, 597.23125pt x 845.1575pt>
 File: ./Image/track1.pdf Graphic file (type pdf)
 
 <use ./Image/track1.pdf>
-Package pdftex.def Info: ./Image/track1.pdf used on input line 346.
+Package pdftex.def Info: ./Image/track1.pdf used on input line 584.
 (pdftex.def)             Requested size: 433.62001pt x 613.63268pt.
 
 
-LaTeX Warning: Float too large for page by 15.20267pt on input line 349.
+LaTeX Warning: Float too large for page by 15.20267pt on input line 587.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/track2.pdf, id=1681, 597.23125pt x 845.1575pt>
+<./Image/track2.pdf, id=2089, 597.23125pt x 845.1575pt>
 File: ./Image/track2.pdf Graphic file (type pdf)
 
 <use ./Image/track2.pdf>
-Package pdftex.def Info: ./Image/track2.pdf used on input line 353.
+Package pdftex.def Info: ./Image/track2.pdf used on input line 591.
 (pdftex.def)             Requested size: 433.62001pt x 613.63268pt.
 
 
-LaTeX Warning: Float too large for page by 27.20267pt on input line 355.
+LaTeX Warning: Float too large for page by 27.20267pt on input line 593.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/track3.pdf, id=1684, 597.23125pt x 845.1575pt>
+<./Image/track3.pdf, id=2092, 597.23125pt x 845.1575pt>
 File: ./Image/track3.pdf Graphic file (type pdf)
 
 <use ./Image/track3.pdf>
-Package pdftex.def Info: ./Image/track3.pdf used on input line 359.
+Package pdftex.def Info: ./Image/track3.pdf used on input line 597.
 (pdftex.def)             Requested size: 433.62001pt x 613.63268pt.
 
 
-LaTeX Warning: Float too large for page by 27.20267pt on input line 362.
+LaTeX Warning: Float too large for page by 27.20267pt on input line 600.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53
+[64
 
-] [54 <./Image/vp11.pdf>] [55 <./Image/vp12.pdf>] [56 <./Image/vp21.pdf>]
-[57 <./Image/vp22.pdf>] [58 <./Image/vp31.pdf>] [59 <./Image/vp32.pdf>]
-[60 <./Image/vp41.pdf>] [61 <./Image/vp42.pdf>] [62 <./Image/vp51.pdf>]
-[63 <./Image/vp52.pdf>] [64 <./Image/vp61.pdf>] [65 <./Image/vp62.pdf>]
-[66 <./Image/track1.pdf>] [67 <./Image/track2.pdf>] [68 <./Image/track3.pdf>]
+] [65 <./Image/vp11.pdf>] [66 <./Image/vp12.pdf>] [67 <./Image/vp21.pdf>]
+[68 <./Image/vp22.pdf>] [69 <./Image/vp31.pdf>] [70 <./Image/vp32.pdf>]
+[71 <./Image/vp41.pdf>] [72 <./Image/vp42.pdf>] [73 <./Image/vp51.pdf>]
+[74 <./Image/vp52.pdf>] [75 <./Image/vp61.pdf>] [76 <./Image/vp62.pdf>]
+[77 <./Image/track1.pdf>] [78 <./Image/track2.pdf>] [79 <./Image/track3.pdf>]
 Appendix C.
-<./Image/speedsafe.pdf, id=2137, 412.07883pt x 462.6613pt>
+<./Image/speedsafe.pdf, id=2545, 412.07883pt x 462.6613pt>
 File: ./Image/speedsafe.pdf Graphic file (type pdf)
 
 <use ./Image/speedsafe.pdf>
-Package pdftex.def Info: ./Image/speedsafe.pdf used on input line 414.
+Package pdftex.def Info: ./Image/speedsafe.pdf used on input line 652.
 (pdftex.def)             Requested size: 303.53267pt x 340.79675pt.
- [69
 
- <./Image/speedsafe.pdf>]
+<./Image/lateralloadcasesample.pdf, id=2548, 597.432pt x 845.31813pt>
+File: ./Image/lateralloadcasesample.pdf Graphic file (type pdf)
+
+<use ./Image/lateralloadcasesample.pdf>
+Package pdftex.def Info: ./Image/lateralloadcasesample.pdf used on input line 6
+59.
+(pdftex.def)             Requested size: 433.62001pt x 613.55582pt.
+
+
+LaTeX Warning: Float too large for page by 15.12581pt on input line 662.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[80
+
+ <./Image/speedsafe.pdf>] [81 <./Image/lateralloadcasesample.pdf>]
 Appendix D.
-<./Image/trainparameters.pdf, id=2175, 510.81027pt x 395.41486pt>
+<./Image/trainparameters.pdf, id=2623, 510.81027pt x 395.41486pt>
 File: ./Image/trainparameters.pdf Graphic file (type pdf)
 
 <use ./Image/trainparameters.pdf>
-Package pdftex.def Info: ./Image/trainparameters.pdf used on input line 459.
+Package pdftex.def Info: ./Image/trainparameters.pdf used on input line 705.
 (pdftex.def)             Requested size: 346.89732pt x 268.54065pt.
 
 
@@ -2130,7 +2296,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[70
+[82
 
 ]
 
@@ -2148,20 +2314,61 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [71 <./Image/trainparameters.pdf>] [72] [73]
-Overfull \hbox (13.23164pt too wide) in paragraph at lines 77--77
+[83 <./Image/trainparameters.pdf>] [84] [85]
+Appendix E.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2014/03/04 1.5c listings language file
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2014/03/04 1.5c listings language file
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 870.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 870.
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 870.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 872.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 872.
+ [86
+
+]
+Appendix F.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+[87
+
+]) [88]
+Overfull \hbox (13.23164pt too wide) in paragraph at lines 83--83
 []\OT1/cmr/m/n/10 ERRI D181 Com-mit-tee. \OT1/cmr/m/it/10 ERRI D 181/DT 329 E: 
 LAT-ERAL FORCES ON RAIL-WAY BRIDGES,
  []
 
 
-Overfull \hbox (13.92355pt too wide) in paragraph at lines 77--77
+Overfull \hbox (13.92355pt too wide) in paragraph at lines 83--83
 []\OT1/cmr/m/n/10 ERRI D181 Com-mit-tee. \OT1/cmr/m/it/10 RP6: Fi-nal re-port, 
 D181 LAT-ERAL FORCES ON RAIL-WAY BRIDGES\OT1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (2.58188pt too wide) in paragraph at lines 77--77
+Overfull \hbox (2.58188pt too wide) in paragraph at lines 83--83
 []\OT1/cmr/m/n/10 Manuel Cuadrado San-guino et al. ``Anal-y-sis of Lat-eral Dis
 -place-ments in Large Rail-way Viaducts
  []
@@ -2169,18 +2376,18 @@ Overfull \hbox (2.58188pt too wide) in paragraph at lines 77--77
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
-[74
+[89
 
 
-] [75]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+] [90]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
  (./first try.aux (./introduction.aux) (./literature.aux)
 (./theoretical.aux) (./calculation.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `"first try".out' has not changed.
-(rerunfilecheck)             Checksum: 56E756D4439206CC3AD6704E19A9F94F;9275.
+(rerunfilecheck)             Checksum: FEED4F9B67F9D574178DD9447F08A264;10819.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2195,40 +2402,45 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to '"first try".run.xml'.
 \openout1 = `"first try.run.xml"'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 39895 strings out of 493108
- 885208 string characters out of 6134847
- 1295475 words of memory out of 5000000
- 42297 multiletter control sequences out of 15000+600000
- 14531 words of font info for 53 fonts, out of 8000000 for 9000
+ 42229 strings out of 493108
+ 918450 string characters out of 6134847
+ 1318853 words of memory out of 5000000
+ 44502 multiletter control sequences out of 15000+600000
+ 15588 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,27n,102p,10432b,2273s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+ 66i,27n,102p,10432b,2275s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on "first try.pdf" (76 pages, 6413668 bytes).
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/cm-super/sfbx1000.pfb>
+Output written on "first try.pdf" (91 pages, 15425743 bytes).
 PDF statistics:
- 2422 PDF objects out of 2487 (max. 8388607)
- 2002 compressed objects within 21 object streams
- 430 named destinations out of 1000 (max. 500000)
- 1142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2947 PDF objects out of 2984 (max. 8388607)
+ 2424 compressed objects within 25 object streams
+ 519 named destinations out of 1000 (max. 500000)
+ 1331 words of extra memory for PDF output out of 10000 (max. 10000000)
 
