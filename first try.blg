@@ -34,7 +34,7 @@ I was expecting a `,' or a `}'---line 295 of file ref.bib
  : author={Eurocode, CEn},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 419 of file ref.bib
+I was expecting a `,' or a `}'---line 433 of file ref.bib
  :   
  :   author={DelatRail}
 (Error may have been on previous line)
@@ -42,45 +42,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 2.9
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 23 entries,
+You've used 22 entries,
             6047 wiz_defined-function locations,
-            1230 strings with 11154 characters,
-and the built_in function-call counts, 71569 in all, are:
-= -- 2470
-> -- 3892
-< -- 721
-+ -- 2402
-- -- 2435
-* -- 3921
-:= -- 5535
+            1226 strings with 10962 characters,
+and the built_in function-call counts, 68626 in all, are:
+= -- 2438
+> -- 3751
+< -- 696
++ -- 2365
+- -- 2358
+* -- 3569
+:= -- 5339
 add.period$ -- 0
-call.type$ -- 23
-change.case$ -- 312
+call.type$ -- 22
+change.case$ -- 318
 chr.to.int$ -- 132
-cite$ -- 44
-duplicate$ -- 7502
-empty$ -- 7090
-format.name$ -- 1134
-if$ -- 14838
+cite$ -- 42
+duplicate$ -- 7173
+empty$ -- 6802
+format.name$ -- 1032
+if$ -- 14190
 int.to.chr$ -- 0
-int.to.str$ -- 56
+int.to.str$ -- 57
 missing$ -- 0
-newline$ -- 417
-num.names$ -- 943
-pop$ -- 7217
+newline$ -- 389
+num.names$ -- 925
+pop$ -- 6875
 preamble$ -- 1
-purify$ -- 346
+purify$ -- 345
 quote$ -- 0
-skip$ -- 3986
+skip$ -- 3829
 stack$ -- 0
-substring$ -- 1555
-swap$ -- 2230
-text.length$ -- 619
-text.prefix$ -- 22
+substring$ -- 1612
+swap$ -- 2120
+text.length$ -- 577
+text.prefix$ -- 21
 top$ -- 1
-type$ -- 862
+type$ -- 824
 warning$ -- 0
-while$ -- 470
+while$ -- 457
 width$ -- 0
-write$ -- 393
+write$ -- 366
 (There were 4 error messages)

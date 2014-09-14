@@ -118,127 +118,127 @@
 % If this hypothesis is true, it can also be concluded that D181 committee made a serious mistake in their criterion proposing. Dynamics of the suspension system is only a factor that influence the global dynamic behaviour of a running train, so as track irregularities, train speeds, train layouts, etc. Proposing a criterion based only on natural frequencies of the suspension system is unacceptable. What's more, CEN committee using this proposed criterion in Eurocode 1991-2 was another unconscious mistake.
 
 
-\chapter{Train vehicles layouts and geometry}
+% \chapter{Train vehicles layouts and geometry}
 
 
 
-\section{Locomotives}
-\subsection{4-axle locomotives}
-Generally, the relevant parameters for categorisation of 4-axle locomotives are axle load P (18 t to 22,5 t) and the bogie axle spacing (2,2 m to 3,4 m).
+% \section{Locomotives}
+% \subsection{4-axle locomotives}
+% Generally, the relevant parameters for categorisation of 4-axle locomotives are axle load P (18 t to 22,5 t) and the bogie axle spacing (2,2 m to 3,4 m).
 
-Typically the mass per unit length is less than 6,4 t/m and the distance from the end axle to the end of the nearest coupling plane is greater than 1,9 m
+% Typically the mass per unit length is less than 6,4 t/m and the distance from the end axle to the end of the nearest coupling plane is greater than 1,9 m
 
-\subsection{6-axle locomotives}
+% \subsection{6-axle locomotives}
 
-Generally, the relevant parameters for categorisation of 6-axle locomotives are:
+% Generally, the relevant parameters for categorisation of 6-axle locomotives are:
 
-\begin{enumerate}[-]
-\item the maximum axle load P (18 t to 22 t) in combination with;
-\item the distance between axles within a bogie (1,80 m to 2,25 m).
-\end{enumerate}
+% \begin{enumerate}[-]
+% \item the maximum axle load P (18 t to 22 t) in combination with;
+% \item the distance between axles within a bogie (1,80 m to 2,25 m).
+% \end{enumerate}
 
-Typically, the mass per unit length (p) is less than 6,4 t/m and the distance from end axle to the end of the nearest coupling plane (a) is greater than 2,1 m.
+% Typically, the mass per unit length (p) is less than 6,4 t/m and the distance from end axle to the end of the nearest coupling plane (a) is greater than 2,1 m.
 
-\section{Passenger carriages}
+% \section{Passenger carriages}
  
-\section{Wheelset and track dimensions}
+% \section{Wheelset and track dimensions}
 
-Generally the track guage is used as a distance measured between the two rails, more specifically the distance between the inside of the railheads measured 14mm below the surface of the rail. By choosing 14 mm the measurement is less influenced by lipping or lateral wear on the rail head and by the radius r = 13 mm of the rail head face. On normal track the gauge is $1435^{+10}_{-3}$ mm with with a maximum gradient of 1:3000. For new track, however, NS apply the following standards:
+% Generally the track guage is used as a distance measured between the two rails, more specifically the distance between the inside of the railheads measured 14mm below the surface of the rail. By choosing 14 mm the measurement is less influenced by lipping or lateral wear on the rail head and by the radius r = 13 mm of the rail head face. On normal track the gauge is $1435^{+10}_{-3}$ mm with with a maximum gradient of 1:3000. For new track, however, NS apply the following standards:
 
-\begin{enumerate}
-\item Mean gauge per 200 m: $1435^{+10}_{-1}$ mm
-\item Standard deviation within a 200 m section less than 1 mm
-\end{enumerate}
+% \begin{enumerate}
+% \item Mean gauge per 200 m: $1435^{+10}_{-1}$ mm
+% \item Standard deviation within a 200 m section less than 1 mm
+% \end{enumerate}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
-\caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \cite[p.17]{esveld2001modern}}
-\label{fig:wheelset and track dimensions}
-\end{figure}
-
-
-\section{Conicity and Equivalent Conicity of Wheels}
-
-Originally conical tire profiles with an inclination of 1:20 were used. Since a centrally applied load on the railhead is desired, a rail inclination of 1:20, as shown in Figure 2.1, was also selected; this for instance still applies to NS profile NP 46. UIC 54 rail usually has an inclination of 1:40. This inclination matches the S 1002 worn wheel profile which is in general use in Europe. During manufacturing the tires are given a profile which matches the average shape cause by wear. In contrast to the straight conical profile this has a hollow form.
-
-It is clear that regarding a worn profile the conicity depends on the actual shape of the rail head and tire, including any wear, track gauge, and rail inclination. Likewise, elastic deformation of the wheelset and rail fastenings plays a role.
-
-Generally, the effective or equivalent conicity is defined as:
-
-$$ \gamma_e = \frac{\Delta r}{2y} = \frac{r_1 - r_2}{2y}  $$
-
-Here $r_1 - r_2$ is the instantaneous difference in rolling radius of the wheel treads; generally speaking this is a non-linear function of the lateral displacement y of the wheelset with respect to the central position. The difference between conical and worn profiles is given in Figure.\ref{fig:conicalwornprofiles}. To enable numerical comparisons $\gamma_e$ is determined at a certain lateral displacement $y=\bar{y}$.
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
+% \caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \cite[p.17]{esveld2001modern}}
+% \label{fig:wheelset and track dimensions}
+% \end{figure}
 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
-    \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \cite[2.4]{esveld2001modern}}
-    \label{fig:conicalwornprofiles}
-\end{figure}
+% \section{Conicity and Equivalent Conicity of Wheels}
 
-With a conical profile the conicity is constant and above equation becomes:
+% Originally conical tire profiles with an inclination of 1:20 were used. Since a centrally applied load on the railhead is desired, a rail inclination of 1:20, as shown in Figure 2.1, was also selected; this for instance still applies to NS profile NP 46. UIC 54 rail usually has an inclination of 1:40. This inclination matches the S 1002 worn wheel profile which is in general use in Europe. During manufacturing the tires are given a profile which matches the average shape cause by wear. In contrast to the straight conical profile this has a hollow form.
 
-$$ \gamma_e = \frac{\Delta r}{2y} =\frac{(r+\gamma y)-(r-\gamma y)}{2y} = \gamma $$
+% It is clear that regarding a worn profile the conicity depends on the actual shape of the rail head and tire, including any wear, track gauge, and rail inclination. Likewise, elastic deformation of the wheelset and rail fastenings plays a role.
 
+% Generally, the effective or equivalent conicity is defined as:
 
-\section{Worn wheel profiles}
+% $$ \gamma_e = \frac{\Delta r}{2y} = \frac{r_1 - r_2}{2y}  $$
 
-A perfectly conical wheel profile is unstable as far as its shape is concerned, but will take on a shape that is stable as the effect of wear.
-
-Practical research has shown that over a period of time wheel profiles stabilise with wear at an equivalent conicity of 0.2 to 0.3. With regards to running stability, the equivalent conicity must remain below 0.4 and to ensure the centering effect it must be greater than 0.1.
-
-\section{Trains in Netherlands}
-
-Passenger trains now in service include following models:
-
-\begin{enumerate}
-    \item The DD-AR (Dubbeldeksaggloregiomaterieel) \\  EMUs were delivered as DDM-2/3 resembling the bilevel rail cars series DDM-1 from 1985 and operates in fixed formations of 3 or 4 coaches. 4 car trains use a class 1700 locomotive for traction, 3 car trains use an mDDM motorcar, which resembles a DD-AR driving trailer but has electric motors and a single passenger deck on top; the level of this deck is higher than that of a regular single deck rail car, but lower than the upper deck of the other coaches. Three types of coaches are available: Bv (second class), ABv (first and second class) and Bvk (second class driving trailer). The DDM-2/3 series are being modernised from 2010–2013 and after modernisation the series was renamed as NID (Nieuwe Intercity Dubbeldekker).
-    \item The VIRM (Verlengd Interregiomaterieel) \\ also called Regiorunner was partially rebuilt from trainsets DD-IRM (Dubbeldeks Interregiomaterieel). DD-IRM was delivered in 3- and 4-car trainsets. 3-car trainsets got one extra coach, 4-car trainsets got two extra coaches. Also, new 4- and 6-car trainsets were built. Thus, a train consists of one or more combinations of 4 or 6 double deck coaches; each combination (multiple unit) has electric motors. More than three hundred coaches are currently operative in the Netherlands.
-    \item The Koploper (ICM) (Intercitymaterieel) \\ is a 3- or 4-car multiple unit that when coupled with another one, allows passengers to walk through (the name Koploper being a play on words – literally "head walker", but in actual use meaning "front runner"). The Dutch Railway Company decided to close the heads permanently on 31 October 2005 because the mechanism broke down too often. A scheduled modernisation of around 7 million euro will see the ICM fleet updated. The renovated ICM trains provide 13\% more seats (reducing the leg room to uncomfortable small for the long haul journeys they serve in 2nd class, which is further aggravated by a waste bin that is placed on the backsides of the seats in front), have a new interior, a bathroom accessible by wheelchairs, airconditioning as well as upgrades to the engine and connection systems. The head doors are removed. Also, these (renovated) trains are the first trains in the NS fleet equipped with OBIS. OBIS provides a (free) WiFi-connection on board, along with in-train journey information provided through screens and (automated) vocal announcements through the trains speakers. This journey information provides the actual status, and thus is always up-to-date to the actual situation this trip, and the stations is passes.
-    \item The Sprinter (SGM, Stads Gewestelijk Materieel) \\ is a two or three car electric, used on small distances. They are named Sprinter because they're able to accelerate and brake quite fast, making them very suitable for 'stoptrein' services. They were also specifically designed for urban environments where they run commuter services. As a result, they are most commonly found in the Randstad area. The initial idea was that the Sprinter would provide somewhat of a subway/metro service but this plan failed as the cities of Amsterdam and Rotterdam continued to construct their own rapid transit systems. Nevertheless, in the densely populated Randstad, the Sprinters remain popular. Two car versions were revised and renamed to Citypendel. All Sprinters are now refurbished into the new white/yellow/dark blue livery.
-\end{enumerate}
-
-All of passenger train coaches have a wheel diameter of 920 mm. 
-
-Locomotives of freight trains have wheel diameter of 1000 mm.
-
-\section{Lateral Track Irregularities}
-This section describes allowable lateral track irregularities defined in EN13848-5\cite{13848}. 
-
-Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
-
-For lateral deviations, the following wavelengths shall be considered: $D1 = 3 -25 m$, $D2 = 25 - 70 m$ and $D3 = 70 - 200 m$. 
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{lateraldeviationdefine}
-    \caption{Lateral deviation definition. Lateral deviations $y_p$ for each rail with 1: running surface, 2: reference line and 3: centre line of running table}
-    \label{fig:lateraldeviationdefine}
-\end{figure}
-
-Table \ref{tab:lateraldeviation} defines the allowable standard deviation for lateral track irregularities.
-
-\begin{table}[h]
-    \centering
-    \caption{Alignment - AL - Standard deviation. Extracted from \cite[Table B.6]{13848}}
-    \begin{tabular}{cc}
-        \hline
-        Speed(km/h) & Standard deviation(mm) \\
-        \hline
-        $V\leq 90$ & 1.5 to 1.8 \\
-        $80 < V \leq 120$ & 1.2 to 1.5 \\
-        $120 < V \leq 160$ & 1.0 to 1.3 \\
-        $160 <V \leq 230$ & 0.8 to 1.1 \\
-        $230 <V \leq 300$ & 0.7 to 1.0 \\
-        \hline
-    \end{tabular}
-    \label{tab:lateraldeviation}
-\end{table}
+% Here $r_1 - r_2$ is the instantaneous difference in rolling radius of the wheel treads; generally speaking this is a non-linear function of the lateral displacement y of the wheelset with respect to the central position. The difference between conical and worn profiles is given in Figure.\ref{fig:conicalwornprofiles}. To enable numerical comparisons $\gamma_e$ is determined at a certain lateral displacement $y=\bar{y}$.
 
 
-\chapter{Parametric Study}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
+%     \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \cite[2.4]{esveld2001modern}}
+%     \label{fig:conicalwornprofiles}
+% \end{figure}
+
+% With a conical profile the conicity is constant and above equation becomes:
+
+% $$ \gamma_e = \frac{\Delta r}{2y} =\frac{(r+\gamma y)-(r-\gamma y)}{2y} = \gamma $$
+
+
+% \section{Worn wheel profiles}
+
+% A perfectly conical wheel profile is unstable as far as its shape is concerned, but will take on a shape that is stable as the effect of wear.
+
+% Practical research has shown that over a period of time wheel profiles stabilise with wear at an equivalent conicity of 0.2 to 0.3. With regards to running stability, the equivalent conicity must remain below 0.4 and to ensure the centering effect it must be greater than 0.1.
+
+% \section{Trains in Netherlands}
+
+% Passenger trains now in service include following models:
+
+% \begin{enumerate}
+%     \item The DD-AR (Dubbeldeksaggloregiomaterieel) \\  EMUs were delivered as DDM-2/3 resembling the bilevel rail cars series DDM-1 from 1985 and operates in fixed formations of 3 or 4 coaches. 4 car trains use a class 1700 locomotive for traction, 3 car trains use an mDDM motorcar, which resembles a DD-AR driving trailer but has electric motors and a single passenger deck on top; the level of this deck is higher than that of a regular single deck rail car, but lower than the upper deck of the other coaches. Three types of coaches are available: Bv (second class), ABv (first and second class) and Bvk (second class driving trailer). The DDM-2/3 series are being modernised from 2010–2013 and after modernisation the series was renamed as NID (Nieuwe Intercity Dubbeldekker).
+%     \item The VIRM (Verlengd Interregiomaterieel) \\ also called Regiorunner was partially rebuilt from trainsets DD-IRM (Dubbeldeks Interregiomaterieel). DD-IRM was delivered in 3- and 4-car trainsets. 3-car trainsets got one extra coach, 4-car trainsets got two extra coaches. Also, new 4- and 6-car trainsets were built. Thus, a train consists of one or more combinations of 4 or 6 double deck coaches; each combination (multiple unit) has electric motors. More than three hundred coaches are currently operative in the Netherlands.
+%     \item The Koploper (ICM) (Intercitymaterieel) \\ is a 3- or 4-car multiple unit that when coupled with another one, allows passengers to walk through (the name Koploper being a play on words – literally "head walker", but in actual use meaning "front runner"). The Dutch Railway Company decided to close the heads permanently on 31 October 2005 because the mechanism broke down too often. A scheduled modernisation of around 7 million euro will see the ICM fleet updated. The renovated ICM trains provide 13\% more seats (reducing the leg room to uncomfortable small for the long haul journeys they serve in 2nd class, which is further aggravated by a waste bin that is placed on the backsides of the seats in front), have a new interior, a bathroom accessible by wheelchairs, airconditioning as well as upgrades to the engine and connection systems. The head doors are removed. Also, these (renovated) trains are the first trains in the NS fleet equipped with OBIS. OBIS provides a (free) WiFi-connection on board, along with in-train journey information provided through screens and (automated) vocal announcements through the trains speakers. This journey information provides the actual status, and thus is always up-to-date to the actual situation this trip, and the stations is passes.
+%     \item The Sprinter (SGM, Stads Gewestelijk Materieel) \\ is a two or three car electric, used on small distances. They are named Sprinter because they're able to accelerate and brake quite fast, making them very suitable for 'stoptrein' services. They were also specifically designed for urban environments where they run commuter services. As a result, they are most commonly found in the Randstad area. The initial idea was that the Sprinter would provide somewhat of a subway/metro service but this plan failed as the cities of Amsterdam and Rotterdam continued to construct their own rapid transit systems. Nevertheless, in the densely populated Randstad, the Sprinters remain popular. Two car versions were revised and renamed to Citypendel. All Sprinters are now refurbished into the new white/yellow/dark blue livery.
+% \end{enumerate}
+
+% All of passenger train coaches have a wheel diameter of 920 mm. 
+
+% Locomotives of freight trains have wheel diameter of 1000 mm.
+
+% \section{Lateral Track Irregularities}
+% This section describes allowable lateral track irregularities defined in EN13848-5\cite{13848}. 
+
+% Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
+
+% For lateral deviations, the following wavelengths shall be considered: $D1 = 3 -25 m$, $D2 = 25 - 70 m$ and $D3 = 70 - 200 m$. 
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{lateraldeviationdefine}
+%     \caption{Lateral deviation definition. Lateral deviations $y_p$ for each rail with 1: running surface, 2: reference line and 3: centre line of running table}
+%     \label{fig:lateraldeviationdefine}
+% \end{figure}
+
+% Table \ref{tab:lateraldeviation} defines the allowable standard deviation for lateral track irregularities.
+
+% \begin{table}[h]
+%     \centering
+%     \caption{Alignment - AL - Standard deviation. Extracted from \cite[Table B.6]{13848}}
+%     \begin{tabular}{cc}
+%         \hline
+%         Speed(km/h) & Standard deviation(mm) \\
+%         \hline
+%         $V\leq 90$ & 1.5 to 1.8 \\
+%         $80 < V \leq 120$ & 1.2 to 1.5 \\
+%         $120 < V \leq 160$ & 1.0 to 1.3 \\
+%         $160 <V \leq 230$ & 0.8 to 1.1 \\
+%         $230 <V \leq 300$ & 0.7 to 1.0 \\
+%         \hline
+%     \end{tabular}
+%     \label{tab:lateraldeviation}
+% \end{table}
+
+
+\chapter{Study on vehicle wavelength}
 % The objective of parametric study is to observe lateral vibration frequency range of different trains types. Due to limited source of reliable vehicle data, train modelled in this study is the same train data used in ERRI Report RP6\cite{d181} where necessary. Considering effects that was assumed to have been taken into account by ERRI in previous chapter, following parameters to be checked are determined. 
 
 % Parameters to be examined:
@@ -387,7 +387,7 @@ Table \ref{tab:lateraldeviation} defines the allowable standard deviation for la
 % \item bridge stiffness
 % \end{enumerate}
 
-\section{Effects investigated in Parametric Study}
+\section{Effects investigated in wavelength study}
 
 Effects investigated in this report will be the same effects investigated in DT 329, which is described in Sec.\ref{sec:resonanceinvestigated}. However, according to the statement in Sec.2.3[Summary of results] in the same report,
 
@@ -428,7 +428,7 @@ conicity range will be 0.2 to 0.3.
 It is suggested that vehicle maintenance sector ensure wheels of train wheels stay in the safe zone of conicity. 
 
 
-\section{Parametric Study on Frequency of Klingel movement}
+\section{Study on frequency of Klingel movement}
 
 Klingel movement is proposed by Klingel which can well predict the moving trend of a single wheelset on a straight railway track. However, the kinematic movement of a certain wheelset assembled into a running train is different from the movement of a single free wheelset. This is due to multiple bodies interact with each other, introducing more complicated mechanism in wheel/rail interaction. 
 
@@ -454,24 +454,24 @@ The train parameter used in this part of parametric study is attached in the App
 \begin{table}[htbp]
   \centering
   \caption{Add caption}
-    \begin{tabular}{rrrrrrrrr}
+    \begin{tabular}{cccccccccccccccc}
     \toprule
-    \textbf{} & \textbf{Speed} & \textbf{Gauge} & \textbf{Base wheel distance} & \textbf{Radius} & \textbf{Conicity} & \textbf{Wavelength\_0()} & \textbf{Wavelength} & \textbf{Frequency for 1m/s} \\
+    & Gauge & BWD & Radius & Conicity & Wavelength\_0() &Wavelength & Frequency(1m/s) \\
     \midrule
-    \textbf{BR CLASS 56 LOCOMOTIVE} & 1.0000 & 1435.0000 & 1500.0000 & 290.0000 & 0.0500 & 12.8175 & 18.5418 & 0.054 \\
-    \textbf{FS E444 LOCOMOTIVE} & 1.0000 & 1435.0000 & 1500.0000 & 550.0000 & 0.0500 & 17.6517 & 25.5349 & 0.039 \\
-    \textbf{FS ETR500 LOCOMOTIVE} & 1.0000 & 1435.0000 & 1500.0000 & 550.0000 & 0.0500 & 17.6517 & 25.5349 & 0.039 \\
-    \textbf{UIC FREIGHT WAGON (LADEN)} & 1.0000 & 1435.0000 & 1500.0000 & 460.0000 & 0.0500 & 16.1430 & 23.3524 & 0.043 \\
-    \textbf{FS ETR500 COACH} & 1.0000 & 1435.0000 & 1500.0000 & 440.0000 & 0.0500 & 15.7882 & 22.8391 & 0.044 \\
-    \textbf{UIC COACH} & 1.0000 & 1435.0000 & 1500.0000 & 445.0000 & 0.0500 & 15.8776 & 22.9685 & 0.044 \\
-    \textbf{} &       &       &       &       &       &       &       &  \\
-    \textbf{} & 1.0000 & 1435.0000 & 1500.0000 & 500.0000 & 0.0250 & 23.8016 & 34.4313 & 0.029 \\
-    \textbf{} & 1.0000 & 1435.0000 & 1500.0000 & 500.0000 & 0.2000 & 8.4151 & 12.1733 & 0.082 \\
-    \textbf{} & 1.0000 & 1435.0000 & 1500.0000 & 500.0000 & 0.3000 & 6.8709 & 9.9395 & 0.101 \\
-    \textbf{} &       &       &       &       &       &       &       &  \\
-    \textbf{} & 1.0000 & 1435.0000 & 1500.0000 & 460.0000 & 0.0250 & 22.8297 & 33.0253 & 0.030 \\
-    \textbf{} & 1.0000 & 1435.0000 & 1500.0000 & 460.0000 & 0.2000 & 8.0715 & 11.6762 & 0.086 \\
-    \textbf{} & 1.0000 & 1435.0000 & 1500.0000 & 460.0000 & 0.3000 & 6.5904 & 9.5336 & 0.105 \\
+    BR CLASS 56 LOCOMOTIVE  & 1435 & 1500 & 290 & 0.0500 & 12.8175 & 18.5418 & 0.054 \\
+    FS E444 LOCOMOTIVE  & 1435 & 1500 & 550 & 0.0500 & 17.6517 & 25.5349 & 0.039 \\
+    FS ETR500 LOCOMOTIVE  & 1435 & 1500 & 550 & 0.0500 & 17.6517 & 25.5349 & 0.039 \\
+    UIC FREIGHT WAGON (LADEN)  & 1435 & 1500 & 460 & 0.0500 & 16.1430 & 23.3524 & 0.043 \\
+    FS ETR500 COACH  & 1435 & 1500 & 440 & 0.0500 & 15.7882 & 22.8391 & 0.044 \\
+    UIC COACH  & 1435 & 1500 & 445 & 0.0500 & 15.8776 & 22.9685 & 0.044 \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{} & 1435 & 1500 & 500 & 0.0250 & 23.8016 & 34.4313 & 0.029 \\
+    \textbf{} & 1435 & 1500 & 500 & 0.2000 & 8.4151 & 12.1733 & 0.082 \\
+    \textbf{} & 1435 & 1500 & 500 & 0.3000 & 6.8709 & 9.9395 & 0.101 \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{} & 1435 & 1500 & 460 & 0.0250 & 22.8297 & 33.0253 & 0.030 \\
+    \textbf{} & 1435 & 1500 & 460 & 0.2000 & 8.0715 & 11.6762 & 0.086 \\
+    \textbf{} & 1435 & 1500 & 460 & 0.3000 & 6.5904 & 9.5336 & 0.105 \\
     \bottomrule
     \end{tabular}%
   \label{tab:addlabel}%
@@ -561,7 +561,7 @@ $$ f = v \frac{1}{\lambda} $$
 
 \end{figure}
 
-\section{Parametric study on frequency caused by axle repeat pattern}
+\section{Study on frequency caused by axle repeat pattern}
 
 Following wavelength of axle repeat pattern is obtained by extracting MU standards in \cite{EC15528}. Detailed information can be found in Appendix.\ref{app:mu}
 % Table generated by Excel2LaTeX from sheet 'Axle repeat pattern'
@@ -659,9 +659,9 @@ $$ f = v \frac{1}{\lambda_{repeat}} $$
 \end{tikzpicture}
 \end{figure}
 
-\section{Conclusion of parametric study}
+\section{Conclusion of wavelength study}
 
-This parametric study illustrates a tool of obtaining danger zone for train speed for a specific bridge first lateral natural frequency. 
+This wavelength study illustrates a tool of obtaining danger zone for train speed for a specific bridge first lateral natural frequency. 
 
 For example, if a bridge has a first lateral natural frequency of 0.3Hz:
 
@@ -676,21 +676,464 @@ For example, if a bridge has a first lateral natural frequency of 0.3Hz:
 
 As a conclusion, if the speed of train is regulated above 16m/s, there won't be resonance between bridge and train.
 
+
+\chapter{Parametric study on bridge lateral response}
+In previous chapters, load models of vehicles on tracks have been discussed. These load models provides more precise inputs for dynamic analysis of railway bridges. Quantifying bridge response using a simplified model becomes feasible.
+
+To simulate a harmonic vehicle loading in worst case scenario, loads are designed as harmonic loads moving along the bridge. They have an amplitude of peak lateral force obtained in Figure.\ref{fig:peaklateralforceregression}, and a same frequency as bridge's first natural frequency. 
+
+Bridge is modelled as simply supported uniform beam.
+
+Parameters to be studied include:
+
+\begin{enumerate}[-]
+    \item length, mass, stiffness of the bridge
+    \item speed of the train
+\end{enumerate}
+ 
+\section{Adopted theory}
+
+Solution provided by Fryba\cite{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \cite[Section II.2.1]{fryba1999vibration} and presented below.
+
+\begin{quote}
+
+The solution of the problem of a harmonic concentrated force moving at constant speed $c$ over a simply supported beam with span $l$ is carried out under the same assumptions as that discussed in Chap. 1. The time-variable concentrated force is of the form
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{harmonicloadbeam}
+    \caption{Schematic representation of a generic beam crossed by a harmonic load}
+    \label{fig:harmonicloadbeam}
+\end{figure}
+
+\begin{equation}
+    P(t) = Q \sin \Omega t
+\end{equation}
+
+where $Q$ is the amplitude and $\Omega$ is the circular frequency of the harmonic force. Vibration of the beam is then described by the equation
+
+\begin{equation}\label{eq:equationofmotion}
+    EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +2\mu\omega_b \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
+\end{equation}
+
+by the boundary conditions (1.2) and by the initial conditions (1.3). The symbols used in \ref{eq:equationofmotion} have the same meaning as those of Chap. 1.
+
+Eq.\ref{eq:equationofmotion} together with conditions (1.2) and (1.3) will again be solved by the method of integral transformations. Following the Fourier sine transformation according to (1.9), Eqs.\ref{eq:equationofmotion} and (1.2) give
+
+\begin{equation}
+    \frac{d^2 V(j,t)}{d t^2} + 2\omega_b\frac{dV(j,t)}{dt} + \omega_{(j)}^2 V(j,t) = \frac{Q}{\mu} \sin\Omega t \sin j\omega t
+\end{equation}
+
+Solving the above with (1.3) by the Laplace-Carson transformation (1.15) - making use of Eq.(27.24) in doing so and of the notation
+
+\begin{equation}
+    \begin{tabular}{cc}
+        $r_1 = \Omega + j\omega$; & $r_2 = \Omega - j\omega$ \\
+    \end{tabular}
+\end{equation}
+
+we get
+
+\begin{equation}\label{eq:V*}
+    V^* (j,p) = \frac{Q}{2\mu} (\frac{1}{p^2+r_2^2}-\frac{1}{p^2+r_1^2})\frac{p^2}{(p+\omega_b)^2+\omega_{(j)}^{'2}}
+\end{equation}
+
+After inverse transformations of Eq.\ref{eq:V*} according to (27.24) and (1.9) the required result for $t \leq T$ is
+
+\begin{dmath}\label{eq:v(x,t)complicated}
+    v(x,t) = \sum_{j=1}^{\infty} \frac{Q}{\mu l}\{\frac{1}{(\omega_{(j)}^2 - r_2^2)+4\omega_b^2r_2^2}[(\omega_{j}^2-r_2^2])(\cos r_2t-e^{-\omega_bt}\cos \omega_{(j)}^' t) + 2\omega_b r_2 \sin r_2 t - \frac{\omega_b}{\omega_{(j)}^'}(\omega_{(j)}^2 + r_2^2)e^{-\omega_b t}\sin \omega_{(j)}^'t]-\frac{1}{(\omega_{(J)}^2 - r_1^2)^2 + 4\omega_b^2r_1^2}[(\omega_{(j)}^2-r_1^2)(\cos r_1t-e^{-\omega_b t}\cos\omega{(j)}^'t)+2\omega_b r_1 \sin r_1 t- \frac{\omega_b}{\omega_{(j)}^'}(\omega_{(j)}^2+r_1^2)e^{-\omega_b t}\sin \omega_{(j)}^' t]\}\sin\frac{j\pi x}{l}
+\end{dmath}
+
+We shall now simplify Eq.\ref{eq:v(x,t)complicated} to fit the case most frequently met with in practical applications. Thus, for example, it is entirely satisfactory to use only the first of its terms($j=1$); further, as we know from Chap. 1, parameters $\alpha$ and $\beta$ are usually much smaller than 1 ($\alpha = \sfrac{\omega}{\omega_{(1)}} \ll 1$, $\beta = \sfrac{\omega_b}{\omega_{(1)}} \ll 1$). And finally, since in practice a harmonic force is always accompanied by a constant force $P$, we shall introduce in \ref{eq:v(x,t)complicated} also the deflection $v_0$ according to (1.21). Following these simplifications Eq.(2.6) takes on the form
+
+\begin{dmath}\label{eq:v(x,t)withP}
+v(x,t) = v_0 \frac{Q}{p}\frac{\omega_{(1)}^2}{\Omega^2}\frac{1}{(\frac{\omega_{(1)}^2}{\Omega^2}-1)^2+4(\frac{\omega^2}{\Omega^2}+\frac{\omega_b^2}{\Omega^2})}\{[(\frac{\omega_{(1)}^2}{\Omega^2}-1)^2+4\frac{\omega_b^2}{\Omega^2}]^{\sfrac{1}{2}} \sin (\Omega t + \varphi)\sin \omega t + 2\frac{\omega}{\Omega}(\cos \Omega t \cos \omega t - e^{-\omega_b t}\cos \omega_{(1)}t)\}\sin\frac{\pi x}{l}
+\end{dmath}
+
+where
+
+\begin{equation}
+    \tan \varphi = -\frac{2\sfrac{\omega_b}{\Omega}}{\sfrac{\omega_{(1)}^2}{\Omega^2}-1}
+\end{equation}
+
+The beam reaches the state of highest dynamic stressing in the region of resonance, i.e. whenever $\Omega$ is close or just equal to $\omega_{(1)}$, i.e.
+
+\begin{equation}
+    \Omega = \omega_{(1)}
+\end{equation}
+
+In such a case Eq.\ref{eq:v(x,t)withP} can further be simplified to 
+
+\begin{equation}\label{eq:v(x,t)simplewithP}
+    v(x,t) = v_0 \frac{Q\omega_{(1)}}{2P}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
+\end{equation}
+
+\end{quote}
+
+
+\section{Refining analytical solution}
+In the case of lateral dynamics, constant force $P$ in Eq.\ref{eq:v(x,t)simplewithP} doesn't exist. 
+
+According to (1.21)
+
+\begin{equation}
+    v_0 = \frac{Pl^3}{48EJ} \approx \frac{2P}{\mu l \omega_{(1)}^2} = \frac{2Pl^3}{\pi ^4 EJ}
+\end{equation}
+
+
+substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
+
+\begin{equation}\label{eq:v(x,t)simpleharmonic}
+    v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
+\end{equation}
+
+with 
+
+\begin{dmath}
+    \begin{tabular}{c c c}
+        $Q = \{$\begin{tabular}{c c c}
+            $5.2064\cdot c^{0.7495}$ & $c \leq 120 km/h$ \\
+            $3.58\cdot c^{0.7495}$ & $120 km/h < c \leq  200 km/h $\\
+            $3.10\cdot c^{0.7495}$ & $200 km/h \leq c \leq 350 km/h$ \\ \end{tabular}; 
+
+        & $\omega_1 = \frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$ ;
+
+        & $\omega = \frac{\pi c}{l}$ \\ 
+ 
+    \end{tabular}
+\end{dmath}
+
+A matlab script is written to perform iterate calculations based on Eq.\ref{eq:v(x,t)simpleharmonic}. The code is titled as \textit{fog.m}, attached in Appendix.\ref{sec:matlabscripts}. 
+
+\section{Damping}
+Damping is an important parameter influencing the dynamic behaviour of a structure. \ref{eq:equationofmotion} uses a different form of damping expression $\omega_b$, which can be converted from normal damping coefficient. Equation of motion using damping coefficient:
+
+\begin{equation}\label{eq:equationofmotiondampingcoefficient}
+    EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +\chi \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
+\end{equation}
+
+where $\chi$ stands for damping coefficient. By comparing \ref{eq:equationofmotiondampingcoefficient} and \ref{eq:equationofmotion}:
+
+\begin{equation}
+    \omega_b = \frac{\chi}{2\mu}
+\end{equation}
+
+and
+
+\begin{dmath}
+\begin{tabular}{cc}
+
+    $\chi = \zeta * \chi_{crit}$ 
+    & $\chi_{crit} = 2\sqrt{EJ\cdot \mu}$
+\end{tabular}
+\end{dmath}
+
+so 
+
+\begin{equation}
+    \omega_b = \zeta \sqrt{\frac{EJ}{\mu}}
+\end{equation}
+
+where $\zeta$ is the structure damping ratio stated in EN1991-
+
+Adopting $\zeta = 0.001$ for steel railway bridges. This $\zeta$ value is used among all DT329 simulations run files. See Figure.\ref{fig:examplerunfile} for example.
+
+\section{Script structure}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+    \node[draw] (fog) at (0,0) {
+        fog.m
+    };
+    \node[draw] (speed) at (6,1.5) {
+        Speedenvelop.m
+    };
+    \node[draw] (mass) at (6,0.5) {
+        Massenvelop.m
+    };
+    \node[draw] (stiff) at (6,-0.5) {
+        Stiffenvelop.m
+    };
+    \node[draw] (span) at (6,-1.5) {
+        Spanenvelop.m
+    };
+    \draw[->,draw=blue] (fog) to (speed);
+    \draw[->,draw=blue] (fog) to (mass);
+    \draw[->,draw=blue] (fog) to (stiff);
+    \draw[->,draw=blue] (fog) to (span);
+\end{tikzpicture}
+
+\caption{Overview of script structure }
+\label{fig:scriptstructure}
+\end{figure}
+
+In order to conduct the study efficiently, scripts in Matlab language are written to automate research procedure. See Appendix.\ref{sec:matlabscripts} for codes.
+
+\textit{fog.m} is the core file for response calculation. This file is responsible for receiving bridge/train parameter input and yield time-history response for mid-span of the bridge. It also handles conversion of force amplitude from train speed. Calculation of bridge stiffness is also implemented, making it easier to input stiffness representing routine used in DT329.
+
+Other scripts files are written to iterate fog.m in different parameters in order to conduct parametric study.
+
+Read comments between the code for detailed explanation.
+\textbf{remember to add comment}
+
+\section{Comparison between analytical model and DT329 simulation results}
+
+
+Several resonance phenomenon were produced during DT329 resonance study. By comparing with the output of reproduced resonance in DT329, the analytical model can be verified.
+
+\subsection{First attempt}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c1}
+    \caption{Figure C1 extracted from \cite{d181dt329} }
+    \label{fig:c1}
+\end{figure}
+
+It can be observed in Figure.\ref{fig:c1} that the greatest resonance happened at train running at $14m/s$, on a bridge with following parameters: $l=54m$, $EJ=2.43e10Nm^2$, $mu=6000kg/m$. Displacement is approximately $15mm$ and acceleration is approximately $1.0m/s^2$.
+
+A analytical run is done using the exactly same bridge parameters and using the load model proposed in Figure.\ref{fig:peaklateralforceregression}. 
+
+\begin{figure}[h!]
+\centering 
+\newlength\figureheight 
+\newlength\figurewidth 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/EJ24300000000L54mu6000c14.tikz} 
+\caption{EJ24300000000L54mu6000c14.tikz} 
+\label{fig:EJ24300000000L54mu6000c14} 
+\end{figure}
+
+Output is presented in Figure.\ref{fig:EJ24300000000L54mu6000c14}. Figure.\ref{fig:EJ24300000000L54mu6000c14} shows the time-history of mid-span response under model moving at $14m/s$, with maximum deflection at $17.1mm$ and maximum acceleration at $0.97 m/s^2$.
+
+It can be concluded than analytical solution coincides well with the output of the simulations in the first comparison attempt because the output were close to each other and analytical output is slightly higher. This is acceptable because analytical model simulates a perfect resonance scenario while DT329 simulations takes multiple-axles into account. Axles may interfere with each other(different axle spacing) in the sense of harmoniously exciting the bridge, introducing disturbance into the development of resonance. So DT329 simulations are not perfect resonance scenarios and their output is supposed to be lower than analytical solutions.
+
+\subsection{Second attempt}
+
+The second attempt of comparison is conducted by extracting data from Figure.\ref{fig:c3}.  The bridge parameters are $l=54m$, $EJ=2.43e10Nm^2$, $mu=6000kg/m$, train is running at $60km/h$, converted to $16.67m/s$. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c3}
+    \caption{Figure C3 extracted from \cite{d181dt329} }
+    \label{fig:c3}
+\end{figure}
+
+Maximum displacement in simulation is approximately $12.5mm$ and acceleration is approximately 0$.3m/s$. The acceleration value is surprisingly low with a step change. The reason causing this unexpected trend in acceleration is unknown, it is recommended to adopt $1.0m/s$ as a more general acceleration value. $1.0m/s$ is the acceleration for $1/3404$ stiffness and $1/5576$ stiffness. It can been seen that at these 2 stiffness, the resonance effect is already building up.
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/EJ24300000000L54mu6000c17.tikz} 
+\caption{EJ24300000000L54mu6000c17.tikz} 
+\label{fig:EJ24300000000L54mu6000c17} 
+\end{figure}
+
+Analytical solution outputs maximum displacement $21.8mm$, and maximum deflection at $1.06m/s^2$. Analytical solution is still conservative compared to simulation results. 
+
+\subsubsection{Third attempt}
+
+The third attempt is to reproduce the resonance on a longer bridge. The bridge parameters are $l=120m$, $EJ=3e11Nm^2$, $mu=6000kg/m$. Maximum displacement is approximate $17mm$ and maximum acceleration is approximate $1.0m/s^2$
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c9}
+    \caption{Figure C3 extracted from \cite{d181dt329} }
+    \label{fig:c9}
+\end{figure}
+
+The analytical result if presented in Figure.\ref{fig:EJ300000000000L120mu6000c15}.
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/EJ300000000000L120mu6000c15.tikz} 
+\caption{EJ300000000000L120mu6000c15.tikz} 
+\label{fig:EJ300000000000L120mu6000c15} 
+\end{figure}
+
+The maximum displacement yielded from analytical solution is $1.65mm$ and maximum acceleration is $0.099m/s^2$. Analytical solution is no longer valid in this because its output is dramatically smaller than DT329 simulations. 
+
+The only difference between 3rd attempt and other two attempts is the length of the bridge while other two attempts yield satisfying results. The reason for this is that force model is no longer valid when bridge is longer. Longer bridge can have more traction units running on it simultaneously, introducing greater lateral force to the bridge. 
+
+Several additional attempts of analytical calculation were done to see the magnitude of an equivalent lateral force sufficient in producing the same displacement($17mm$) as DT329 simulation does. These additional calculations were done by manually increasing the force input little by little. It is then found that an equivalent force of $120kN$ is barely enough for reproduce such a displacement.
+
+EN1991-2 states that nosing force has an characteristic value of $100kN$ while in this case an equivalent force of $120kN$ is needed to reproduce $17mm$ displacement. What's more, trains running at higher speed, which is also completely possible, will result in even higher lateral force than $120kN$.
+
+It can be concluded that the magnitude of nosing force defined in EN1991-2 is not conservative for the whole range of bridges, especially for long span bridges. 
+
+\subsection{Alternative load model}
+
+An alternative load model can be found in \cite[Figure.4.1]{d181} and it is extracted as Figure.\ref{fig:lateralUDL}. Although this model is also proposed in RP6 but due to unknown reason it is not adopted in EN1991-2. This model is more accurate in the sense that it gives a more detailed relationship between lateral force and bridge length. This concept coincides and proofs the conclusion in previous section.
+
+However, the background of this plot is also unknown. It is believed that data of track quality study of Parametric Study DT329\cite{d181dt329} in phase II is used to create the plot but explanation is nowhere to be found. This plot is hardly usable for practical purposes but it is a good reference for a rough idea of lateral force induced by trains on a bridge with certain length.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{lateraluniformdistribute}
+    \caption{Lateral actions U.D.L. Extracted from \cite[Figure.4.1]{d181} }
+    \label{fig:lateralUDL}
+\end{figure}
+
+To use this plot in analytical solution, an equivalent concentrated force needed to be converted from uniformly distributed force.
+
+The deflection at mid-span of a simply supported beam loaded by uniformly distributed load $q$ is
+
+$$ \delta = \frac{5}{384} \frac{ql\cdot l^3}{EI} $$
+
+The deflection at mid-span of a simply supported beam loaded by concentrated force $P$ at mid-span is
+
+$$ \delta = \frac{1}{48} \frac{P\cdot l^3}{EI} $$
+
+Thus equivalent concentrated force $P$ can be obtain by 
+
+$$P = \frac{1 \cdot 384}{48 \cdot 5} ql = \frac{5}{8}ql$$
+
+For example, using the alternative load model in Figure.\ref{fig:lateralUDL}, equivalent concentrated force for $120m$ bridge is $\sfrac{5}{8}\cdot 120m \cdot 4kN/m=300kN$. It gives an conservative force output compared to 120kN.
+
+\section{Alternative analytical model for longer span bridges}
+Moving continuous load model can be adopted.
+
+\textbf{Add deduction procedure}
+
+Solution:
+
+\begin{equation}
+    v(x,t) = \frac{v_0}{2}(1+\cos \omega t)\sin \frac{\pi x}{l}
+\end{equation}
+
+Maximum deflection
+
+\begin{equation}
+    v_{max} = v_0
+\end{equation}
+
+No dynamics amplification for longer span bridges. Calculate using alternative load model. This is because train speed is far lower than critical speed.
+
+\section{Parametric research}
+Since it is concluded in previous chapter that load model is no longer valid when 
+span is large, this parametric research will focus on stiffness of the bridge and mass of the bridge. Length of the bridge will be fixed at $54m$.
+
+\subsection{Mass}
+
+The first parameter examined is mass. \textit{Massenvelop.m} is run to iterate calculation. Mass were checked from $1000kg/m$ to $12000kg/m$. Other parameters were $l=54m$, $EJ=2.43e10Nm^2$, $mu=6000kg/m$. The output are presented in Figure.\ref{fig:medefEJ24300000000L54c14min1000max12000} as deflection and Figure.\ref{fig:meaccEJ24300000000L54c14min1000max12000} as acceleration.
+
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/medefEJ24300000000L54c14min1000max12000.tikz} 
+\caption{medefEJ24300000000L54c14min1000max12000.tikz} 
+\label{fig:medefEJ24300000000L54c14min1000max12000} 
+\end{figure}
+
+Incresed mass generally decreases deflection in trend but with a lengthening periodic sinuous wave shape. Further (linear)regression on deflection can be made from peaks.
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/meaccEJ24300000000L54c14min1000max12000.tikz} 
+\caption{meaccEJ24300000000L54c14min1000max12000.tikz} 
+\label{fig:meaccEJ24300000000L54c14min1000max12000} 
+\end{figure}
+
+The acceleration simply decreases as mass increases.
+
+\subsection{Stiffness}
+
+The next parameter examined is stiffness. \textit{Speedenvelop.m} is run to iterate calculation. Stiffness were checked from $2e10 Nm^2$ to $3e11 Nm^2$ Other parameters are $l=54m$, $mu=4000kg/m$, $c=14m/s$. The output is presented in Figure.\ref{fig:stedefmin20000000000max300000000000L54c14mu4000} as deflection and Figure.\ref{fig:steaccmin20000000000max300000000000L54c14mu4000} as acceleration.
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/stedefmin20000000000max300000000000L54c14mu4000.tikz} 
+\caption{stedefmin20000000000max300000000000L54c14mu4000.tikz} 
+\label{fig:stedefmin20000000000max300000000000L54c14mu4000} 
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/steaccmin20000000000max300000000000L54c14mu4000.tikz} 
+\caption{steaccmin20000000000max300000000000L54c14mu4000} 
+\label{fig:steaccmin20000000000max300000000000L54c14mu4000} 
+\end{figure}
+
+\subsection{Speed}
+
+The next parameter examined is speed. \textit{Speedenvelop.m} is run to iterate calculation. Stiffness were checked from $1m/s$ to $30m/s$ Other parameters are $l=54m$, $mu=4000kg/m$,$EJ = 3e10 Nm^2$. The output is presented in Figure.\ref{fig:spedefEJ30000000000L54min1max30mu4000.tikz}as deflection and Figure.\ref{fig:spedefEJ30000000000L54min1max30mu4000.tikz} as acceleration.
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/spedefEJ30000000000L54min1max30mu4000.tikz} 
+\caption{spedefEJ30000000000L54min1max30mu4000} 
+\label{fig:spedefEJ30000000000L54min1max30mu4000.tikz} 
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/speaccEJ30000000000L54min1max30mu4000.tikz} 
+\caption{speaccEJ30000000000L54min1max30mu4000.tikz} 
+\label{fig:speaccEJ30000000000L54min1max30mu4000} 
+\end{figure}
+
+It can be seen that increasing speed increases both maximum deflection and maximum acceleration. 
+
+\subsection{Conclusion}
+
+An analytical method for calculating resonance response at mid-span of the bridge is developed on the basis of load model obtained in previous chapters. But it's no suitable for longer span bridges because load model is no longer valid. For longer span bridges, it is advised to use an alternative load model and a different analytical solution.
+
+Parametric research shows that speed, mass and stiffness all have remarkable effects on the response of the bridge. However, as an easier way of controlling, speed of the train also has the simplest relationship with response of the bridge. Although increased speed provides less time for resonance effect to build up, its increased lateral force is more dominating. 
+
+However, setting up additional speed limit for trains may not be favoured by train operators. Increasing stiffness also provides a reliable decrement in lateral deflection but it can be less effective when original stiffness is already high. Also, increasing stiffness can increase lateral acceleration for a slight effect. This increased acceleration could be critical because for most of time, passenger comfort can be the governing criterion for bridge dynamics design. And passenger comfort criterion is regard to lateral accelerations. 
+
+Controlling mass, on the other hand, can be adopted when running out of options because although increasing mass generally decreases deflection, but due to its sinuous characteristics(Figure.\ref{fig:medefEJ24300000000L54c14min1000max12000}), deflection can increase if not handled properly. It's worth noting that using mass as a way of controlling acceleration is reliable.
+
+Length in practical is not flexible so it's not listed as a way of controlling.
+
+Thus, ways of controlling deflection in more preferable order is 
+
+$$speed > stiffness > mass$$
+
+Ways of controlling acceleration in more preferable order is 
+
+$$speed > mass > stiffness$$
+
+
+
+
 \chapter{Recommendations on improvement on Eurocode}
 
 
-\section{Another criterion proposed by J.J.Reber}
-A SNCB bridge, driver complains 
+% \section{Another criterion proposed by J.J.Reber}
+% A SNCB bridge, driver complains 
 
-To be used in combination with Sijian Deng's criterion.
+% To be used in combination with Sijian Deng's criterion.
 
-\section{Misc}
+% \section{Misc}
 
-Define eigen frequency and natural frequency
+% Define eigen frequency and natural frequency
 
-Define how-to-do and what-to-do a dynamic analysis
+% Define how-to-do and what-to-do a dynamic analysis
 
-\section{Improve criteria for lateral bridge dynamics}
+\subsection{Add reference}
+Please
+
+
+\subsection{Improve criteria for lateral bridge dynamics}
 Following sections provides several orientations for improving criteria for lateral bridge dynamics in terms of safety and serviceability of running stock.
 
 
