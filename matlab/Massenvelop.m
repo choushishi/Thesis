@@ -8,7 +8,7 @@ if EJ<1
 end
 
 for i=1:length(m)
-    maxres(:,i) = fog(EJ,l,m(i,1),c,zeta);
+    maxres(:,i) = fogtest(EJ,l,m(i,1),c,zeta);
 
 end
 
@@ -20,9 +20,9 @@ nameacc = strcat('meacc','EJ',int2str(EJ),'L',int2str(l),'c',int2str(c),'min',in
 figure(1)
 plot(m,maxres(1,:))
 title(strcat('MassEnvelop def from',int2str(min),' to ', int2str(max)));
-matlab2tikz(namedef, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
+%matlab2tikz(namedef, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
 
 figure(2)
 plot(m,maxres(2,:))
 title(strcat('MassEnvelop acc from',int2str(min),' to ', int2str(max)));
-matlab2tikz(nameacc, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
+%matlab2tikz(nameacc, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);

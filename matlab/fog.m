@@ -9,6 +9,7 @@ omega = pi*c/l;
 omegab = zeta*sqrt(EJ/mu);
 omega1a = sqrt(abs(omega1^2-omegab^2));
 
+
 r1 = omega1 + omega;
 r2 = omega1 - omega;
 
@@ -24,9 +25,10 @@ if c < (120/3.6)
     Q = 1000*5.2064*(c*3.6)^0.7495;
 end
 
+v_0 = Q*l^3/(48*EJ);
 
 v1 = @(t) l^3*Q*omega1/(pi^4*EJ) * cos(omega1*t)/(omega^2+omegab^2);
-v2 = @(t)omega*(cos(omega*t)-exp(-omegab*t)-omegab*sin(omega*t));
+v2 = @(t) omega*(cos(omega*t)-exp(-omegab*t)-omegab*sin(omega*t));
 v = @(t) v1(t) * v2(t);
 
 % v11 = 1/((omega1^2-r2^2)^2+4*omegab^2*r2^2);
@@ -60,18 +62,18 @@ tdomain = [0:dt:maxt]';
 for i=1:length(tdomain)
     p(i,1) = v(tdomain(i,1));
     p(i,2) = a(tdomain(i,1));
+    p(i,3) = p(i,1)/v_0;
 end
 
-O = [max(abs(p(:,1))),max(abs(p(:,2)))];
+ 
 
+O = [max(abs(p(:,1))),max(abs(p(:,2))),max(abs(p(:,3)))];
+% 
+% namedef = strcat('defEJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c))
+% nameacc = strcat('accEJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c))
+% nameaco = strcat('dcEJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c))
 % name = strcat('EJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c),'.tikz')
-
-% figure(1)
-% plot(tdomain,p)
-% title(strcat('Max Deflection:',mat2str(O(1,1)),',Max Acceleration:',mat2str(O(1,2))));
-% matlab2tikz(name, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
-
-
+% 
 % figure(1)
 % plot(tdomain,p(:,1))
 % title(strcat('Max Deflection:',mat2str(O(1,1))));
@@ -81,4 +83,8 @@ O = [max(abs(p(:,1))),max(abs(p(:,2)))];
 % plot(tdomain,p(:,2))
 % title(strcat('Max Acceleration:',mat2str(O(1,2))));
 % matlab2tikz(nameacc, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
-
+% 
+% figure(3)
+% plot(tdomain,p(:,3))
+% title(strcat('Dynamic coefficient',mat2str(O(1,3))));
+% matlab2tikz(nameaco, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);

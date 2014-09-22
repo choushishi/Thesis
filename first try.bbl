@@ -16,6 +16,34 @@
   {}
 \endgroup
 
+\entry{abu2000vibration}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Abu-Hilal}{A.-H.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mohsen}{M.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{AHMMM1}
+  \strng{fullhash}{AHMMM1}
+  \field{sortinit}{A}
+  \field{number}{4}
+  \field{pages}{703\bibrangedash 717}
+  \field{title}{Vibration of beams with general boundary conditions due to a
+  moving harmonic load}
+  \field{volume}{232}
+  \field{journaltitle}{Journal of Sound and Vibration}
+  \field{year}{2000}
+\endentry
+
 \entry{13848}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -282,6 +310,34 @@
   \field{sortinit}{I}
   \field{title}{Handbook of railway vehicle dynamics}
   \field{year}{2006}
+\endentry
+
+\entry{majka2008effects}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Majka}{M.}%
+     {Michal}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hartnett}{H.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{MMHM1}
+  \strng{fullhash}{MMHM1}
+  \field{sortinit}{M}
+  \field{number}{6}
+  \field{pages}{556\bibrangedash 572}
+  \field{title}{Effects of speed, load and damping on the dynamic response of
+  railway bridges and vehicles}
+  \field{volume}{86}
+  \field{journaltitle}{Computers \& Structures}
+  \field{year}{2008}
 \endentry
 
 \entry{dynamicslecturenote}{book}{}

@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: first try.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: literature.aux
 A level-1 auxiliary file: theoretical.aux
@@ -42,45 +43,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 2.9
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 22 entries,
+You've used 24 entries,
             6047 wiz_defined-function locations,
-            1226 strings with 10962 characters,
-and the built_in function-call counts, 68626 in all, are:
-= -- 2438
-> -- 3751
-< -- 696
-+ -- 2365
-- -- 2358
-* -- 3569
-:= -- 5339
+            1240 strings with 11314 characters,
+and the built_in function-call counts, 75321 in all, are:
+= -- 2700
+> -- 3987
+< -- 765
++ -- 2439
+- -- 2446
+* -- 4096
+:= -- 5725
 add.period$ -- 0
-call.type$ -- 22
-change.case$ -- 318
+call.type$ -- 24
+change.case$ -- 356
 chr.to.int$ -- 132
-cite$ -- 42
-duplicate$ -- 7173
-empty$ -- 6802
-format.name$ -- 1032
-if$ -- 14190
+cite$ -- 46
+duplicate$ -- 7918
+empty$ -- 7494
+format.name$ -- 1172
+if$ -- 15724
 int.to.chr$ -- 0
-int.to.str$ -- 57
+int.to.str$ -- 63
 missing$ -- 0
-newline$ -- 389
-num.names$ -- 925
-pop$ -- 6875
+newline$ -- 443
+num.names$ -- 1029
+pop$ -- 7503
 preamble$ -- 1
-purify$ -- 345
+purify$ -- 389
 quote$ -- 0
-skip$ -- 3829
+skip$ -- 4239
 stack$ -- 0
-substring$ -- 1612
-swap$ -- 2120
-text.length$ -- 577
-text.prefix$ -- 21
+substring$ -- 1774
+swap$ -- 2383
+text.length$ -- 634
+text.prefix$ -- 25
 top$ -- 1
-type$ -- 824
+type$ -- 900
 warning$ -- 0
-while$ -- 457
+while$ -- 495
 width$ -- 0
-write$ -- 366
+write$ -- 418
 (There were 4 error messages)

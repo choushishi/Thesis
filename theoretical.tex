@@ -677,27 +677,25 @@ For example, if a bridge has a first lateral natural frequency of 0.3Hz:
 As a conclusion, if the speed of train is regulated above 16m/s, there won't be resonance between bridge and train.
 
 
-\chapter{Parametric study on bridge lateral response}
-In previous chapters, load models of vehicles on tracks have been discussed. These load models provides more precise inputs for dynamic analysis of railway bridges. Quantifying bridge response using a simplified model becomes feasible.
-
-To simulate a harmonic vehicle loading in worst case scenario, loads are designed as harmonic loads moving along the bridge. They have an amplitude of peak lateral force obtained in Figure.\ref{fig:peaklateralforceregression}, and a same frequency as bridge's first natural frequency. 
-
-Bridge is modelled as simply supported uniform beam.
-
-Parameters to be studied include:
-
-\begin{enumerate}[-]
-    \item length, mass, stiffness of the bridge
-    \item speed of the train
-\end{enumerate}
+\chapter{Fundamental of analytical approach to be adopted in practical checking method}
  
-\section{Adopted theory}
+\section{Introduction}
+This chapter aims to give a preliminary knowledge of a selected analytical model that simulates the perfect resonance scenario for railway bridge under lateral dynamic load. The knowledge contains the simplified model itself, its assumptions, field of application and explicit solutions. 
 
-Solution provided by Fryba\cite{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \cite[Section II.2.1]{fryba1999vibration} and presented below.
+The output response of the solution to the analytical model is able to provide the maximum bridge response in worst case scenario. Thus it is sufficient to be adopted in practical purposes for verifications of lateral railway bridge dynamics.
 
-\begin{quote}
 
-The solution of the problem of a harmonic concentrated force moving at constant speed $c$ over a simply supported beam with span $l$ is carried out under the same assumptions as that discussed in Chap. 1. The time-variable concentrated force is of the form
+\section{Overview}
+
+To give a clear view of this chapter, following overview is created:
+
+\begin{enumerate}
+    \item The model, its assumptions and field of application. 
+    \item Procedure of solution deduction
+    \item Damping
+\end{enumerate}
+
+\section{The model, its assumptions and field of application}
 
 \begin{figure}[h]
     \centering
@@ -705,6 +703,23 @@ The solution of the problem of a harmonic concentrated force moving at constant 
     \caption{Schematic representation of a generic beam crossed by a harmonic load}
     \label{fig:harmonicloadbeam}
 \end{figure}
+
+Presented in Figure.\ref{fig:harmonicloadbeam}, the model features a simply supported beam which is the simplification of bridge structure and a moving harmonic load introducing resonant dynamic effects caused by the presence of moving train.
+
+The beam is assumed to be uniform in both geometry and material. The stiffness of the beam is the equivalent uniform lateral bending stiffness of the bridge. 
+
+The load is moving in the same speed as the train. The magnitude of load amplitude in going to be discussed in the following chapter. And the load's self vibration frequency is equal to the first natural lateral bending frequency of the beam.
+
+
+This model is valid for single span railway bridges that has a sinuous first natural lateral vibration shape.  
+
+\section{Solution deduction}
+
+Solution provided by Fryba\cite{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \cite[Section II.2.1]{fryba1999vibration} and presented below.
+
+\begin{quote}
+
+The solution of the problem of a harmonic concentrated force moving at constant speed $c$ over a simply supported beam with span $l$ is carried out under the same assumptions as that discussed in Chap. 1. The time-variable concentrated force is of the form
 
 \begin{equation}
     P(t) = Q \sin \Omega t
@@ -770,16 +785,11 @@ In such a case Eq.\ref{eq:v(x,t)withP} can further be simplified to
 
 \end{quote}
 
-
-\section{Refining analytical solution}
-In the case of lateral dynamics, constant force $P$ in Eq.\ref{eq:v(x,t)simplewithP} doesn't exist. 
-
 According to (1.21)
 
 \begin{equation}
     v_0 = \frac{Pl^3}{48EJ} \approx \frac{2P}{\mu l \omega_{(1)}^2} = \frac{2Pl^3}{\pi ^4 EJ}
 \end{equation}
-
 
 substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
 
@@ -787,23 +797,47 @@ substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
     v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
 \end{equation}
 
-with 
+And the mid-span response time-history for deflection is :
 
-\begin{dmath}
-    \begin{tabular}{c c c}
-        $Q = \{$\begin{tabular}{c c c}
-            $5.2064\cdot c^{0.7495}$ & $c \leq 120 km/h$ \\
-            $3.58\cdot c^{0.7495}$ & $120 km/h < c \leq  200 km/h $\\
-            $3.10\cdot c^{0.7495}$ & $200 km/h \leq c \leq 350 km/h$ \\ \end{tabular}; 
+\begin{equation}\label{eq:v(x,t)simpleharmonic}
+    v(\sfrac{l}{2},t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]
+\end{equation}
 
-        & $\omega_1 = \frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$ ;
+Above expression is the ready-to-use expression being adopted in practical checking method to be discussed in following chapter.
 
-        & $\omega = \frac{\pi c}{l}$ \\ 
+% \section{Refining analytical solution}
+% In the case of lateral dynamics, constant force $P$ in Eq.\ref{eq:v(x,t)simplewithP} doesn't exist. 
+
+% According to (1.21)
+
+% \begin{equation}
+%     v_0 = \frac{Pl^3}{48EJ} \approx \frac{2P}{\mu l \omega_{(1)}^2} = \frac{2Pl^3}{\pi ^4 EJ}
+% \end{equation}
+
+
+% substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
+
+% \begin{equation}\label{eq:v(x,t)simpleharmonic}
+%     v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
+% \end{equation}
+
+% with 
+
+% \begin{dmath}
+%     \begin{tabular}{c c c}
+%         $Q = \{$\begin{tabular}{c c c}
+%             $5.2064\cdot c^{0.7495}$ & $c \leq 120 km/h$ \\
+%             $3.58\cdot c^{0.7495}$ & $120 km/h < c \leq  200 km/h $\\
+%             $3.10\cdot c^{0.7495}$ & $200 km/h \leq c \leq 350 km/h$ \\ \end{tabular}; 
+
+%         & $\omega_1 = \frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$ ;
+
+%         & $\omega = \frac{\pi c}{l}$ \\ 
  
-    \end{tabular}
-\end{dmath}
+%     \end{tabular}
+% \end{dmath}
 
-A matlab script is written to perform iterate calculations based on Eq.\ref{eq:v(x,t)simpleharmonic}. The code is titled as \textit{fog.m}, attached in Appendix.\ref{sec:matlabscripts}. 
+% A matlab script is written to perform iterate calculations based on Eq.\ref{eq:v(x,t)simpleharmonic}. The code is titled as \textit{fog.m}, attached in Appendix.\ref{sec:matlabscripts}. 
 
 \section{Damping}
 Damping is an important parameter influencing the dynamic behaviour of a structure. \ref{eq:equationofmotion} uses a different form of damping expression $\omega_b$, which can be converted from normal damping coefficient. Equation of motion using damping coefficient:
@@ -818,21 +852,38 @@ where $\chi$ stands for damping coefficient. By comparing \ref{eq:equationofmoti
     \omega_b = \frac{\chi}{2\mu}
 \end{equation}
 
-and
+where:
 
-\begin{dmath}
-\begin{tabular}{cc}
+$\omega_b$: circular frequency of damping
 
-    $\chi = \zeta * \chi_{crit}$ 
-    & $\chi_{crit} = 2\sqrt{EJ\cdot \mu}$
-\end{tabular}
-\end{dmath}
+$\chi$: damping coefficient
 
-so 
+$\mu$: mass per unit length of the bridge
+
+also, in \cite[Page.704]{abu2000vibration} it is mentioned that:
+
+\begin{quote}
+    The external and internal damping of the beam are assumed to be proportional to the mass and stiffness of the beam respectively,i.e., $r_a = \gamma_1 \mu$.., where $\gamma_1$ and $\gamma_2$ are proportionality constants.
+\end{quote}
+
+thus:
+
 
 \begin{equation}
-    \omega_b = \zeta \sqrt{\frac{EJ}{\mu}}
+    \omega_b = \frac{\gamma_1}{2}
 \end{equation}
+
+and it is mentioned in \cite[Eq.8]{abu2000vibration} that:
+
+$$\zeta = \frac{\gamma_1}{\omega_1}$$
+
+so:
+
+$$\gamma_1 = \zeta\omega_1$$
+
+so:
+
+$$\omega_b = \frac{1}{2}\zeta\omega_1 = \frac{1}{2}\frac{\zeta\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$$
 
 where $\zeta$ is the structure damping ratio stated in EN1991-
 
@@ -959,9 +1010,9 @@ The maximum displacement yielded from analytical solution is $1.65mm$ and maximu
 
 The only difference between 3rd attempt and other two attempts is the length of the bridge while other two attempts yield satisfying results. The reason for this is that force model is no longer valid when bridge is longer. Longer bridge can have more traction units running on it simultaneously, introducing greater lateral force to the bridge. 
 
-Several additional attempts of analytical calculation were done to see the magnitude of an equivalent lateral force sufficient in producing the same displacement($17mm$) as DT329 simulation does. These additional calculations were done by manually increasing the force input little by little. It is then found that an equivalent force of $120kN$ is barely enough for reproduce such a displacement.
+Several additional attempts of analytical calculation were done to see the magnitude of an equivalent lateral force sufficient in producing the same displacement($17mm$) as DT329 simulation does. These additional calculations were done by manually increasing the force input little by little. It is then found that an equivalent force of $1200kN$ is barely enough for reproduce such a displacement.
 
-EN1991-2 states that nosing force has an characteristic value of $100kN$ while in this case an equivalent force of $120kN$ is needed to reproduce $17mm$ displacement. What's more, trains running at higher speed, which is also completely possible, will result in even higher lateral force than $120kN$.
+EN1991-2 states that nosing force has an characteristic value of $100kN$ while in this case an equivalent force of $1200kN$ is needed to reproduce $17mm$ displacement. What's more, trains running at higher speed, which is also completely possible, will result in even higher lateral force than $120kN$.
 
 It can be concluded that the magnitude of nosing force defined in EN1991-2 is not conservative for the whole range of bridges, especially for long span bridges. 
 
@@ -993,6 +1044,16 @@ Thus equivalent concentrated force $P$ can be obtain by
 $$P = \frac{1 \cdot 384}{48 \cdot 5} ql = \frac{5}{8}ql$$
 
 For example, using the alternative load model in Figure.\ref{fig:lateralUDL}, equivalent concentrated force for $120m$ bridge is $\sfrac{5}{8}\cdot 120m \cdot 4kN/m=300kN$. It gives an conservative force output compared to 120kN.
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/UDL2CL.tikz} 
+\caption{Total load verses span calculated from Figure.\ref{fig:lateralUDL}} 
+\label{fig:UDL2CL} 
+\end{figure}
+
 
 \section{Alternative analytical model for longer span bridges}
 Moving continuous load model can be adopted.
@@ -1046,7 +1107,9 @@ The acceleration simply decreases as mass increases.
 
 \subsection{Stiffness}
 
-The next parameter examined is stiffness. \textit{Speedenvelop.m} is run to iterate calculation. Stiffness were checked from $2e10 Nm^2$ to $3e11 Nm^2$ Other parameters are $l=54m$, $mu=4000kg/m$, $c=14m/s$. The output is presented in Figure.\ref{fig:stedefmin20000000000max300000000000L54c14mu4000} as deflection and Figure.\ref{fig:steaccmin20000000000max300000000000L54c14mu4000} as acceleration.
+The next parameter examined is stiffness. \textit{Speedenvelop.m} is run to iterate calculation. Stiffness were checked from $2e10 Nm^2$ to $3e11 Nm^2$ Other parameters are $l=54m$, $mu=4000kg/m$, $c=14m/s$. The output is presented in Figure.\ref{fig:stedefmin20000000000max300000000000L54c14mu4000} as deflection and Figure.\ref{fig:steaccmin20000000000max300000000000L54c14mu4000} as acceleration. 
+
+
 
 \begin{figure}[h!]
 \centering 
@@ -1065,6 +1128,21 @@ The next parameter examined is stiffness. \textit{Speedenvelop.m} is run to iter
 \input{./matlab/steaccmin20000000000max300000000000L54c14mu4000.tikz} 
 \caption{steaccmin20000000000max300000000000L54c14mu4000} 
 \label{fig:steaccmin20000000000max300000000000L54c14mu4000} 
+\end{figure}
+
+In addition, dynamic coefficient is plotted in Figure.\ref{fig:steacomin20000000000max300000000000L54c14mu4000}. Dynamic coefficient becomes relevant in stiffness case.This is because stiffness is relevant to static deflection. Static deflection decreases as stiffness increases. 
+
+The dynamic coefficient is an indication for the amplification level of resonance effect. Usually symboled as $\delta$, dynamic coefficient is simply the ratio of the maximum dynamic deflection to the static deflection at mid-span of a beam:
+
+$$\delta = \frac{MAX v(\sfrac{l}{2},t )}{v_0}$$
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/steacomin20000000000max300000000000L54c14mu4000.tikz} 
+\caption{steacomin20000000000max300000000000L54c14mu4000} 
+\label{fig:steacomin20000000000max300000000000L54c14mu4000} 
 \end{figure}
 
 \subsection{Speed}
@@ -1098,7 +1176,7 @@ An analytical method for calculating resonance response at mid-span of the bridg
 
 Parametric research shows that speed, mass and stiffness all have remarkable effects on the response of the bridge. However, as an easier way of controlling, speed of the train also has the simplest relationship with response of the bridge. Although increased speed provides less time for resonance effect to build up, its increased lateral force is more dominating. 
 
-However, setting up additional speed limit for trains may not be favoured by train operators. Increasing stiffness also provides a reliable decrement in lateral deflection but it can be less effective when original stiffness is already high. Also, increasing stiffness can increase lateral acceleration for a slight effect. This increased acceleration could be critical because for most of time, passenger comfort can be the governing criterion for bridge dynamics design. And passenger comfort criterion is regard to lateral accelerations. 
+However, setting up additional speed limit for trains may not be favoured by train operators. Increasing stiffness also provides a reliable decrement in lateral deflection but it can be less effective when original stiffness is already high. Also, increasing stiffness can increase lateral acceleration for a slight effect. This increased acceleration could be critical because for most of time, passenger comfort can be the governing criterion for bridge dynamics design. And passenger comfort criterion is regard to lateral accelerations. In addition, dynamic coefficient also increases when stiffness increase. 
 
 Controlling mass, on the other hand, can be adopted when running out of options because although increasing mass generally decreases deflection, but due to its sinuous characteristics(Figure.\ref{fig:medefEJ24300000000L54c14min1000max12000}), deflection can increase if not handled properly. It's worth noting that using mass as a way of controlling acceleration is reliable.
 
@@ -1113,7 +1191,260 @@ Ways of controlling acceleration in more preferable order is
 $$speed > mass > stiffness$$
 
 
+\chapter{New practical method for checking lateral dynamic response of railway bridges}
 
+\section{Introduction}
+
+This chapter proposes a new method for checking lateral dynamic response of railway bridges. This method aims to provide an engineering solution for checking the deflection and acceleration of railway bridges under horizontal dynamic train load. The method features the combined usage of a simplified analytical structure model and a more refined lateral force model. The analytical structure model simulates a perfect resonance scenario for the target bridge. And the refined load model, which is a concentrated harmonic moving load, represents the lateral dynamic effects that occur because of the passing of the train. The combination of these two analytical elements will generate a resonance response conservative compared to the simulation output in DT329 because varies types of disturbance were included in these simulation runs.
+
+The analytical structure model and its explicit solution has already been worked out in previous chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
+
+\section{Overview of this chapter}
+
+To give a clear overview of this chapter, procedure of development of the method is given as following:
+
+\begin{enumerate}
+    \item \textit{Developing:} Develop a more practical load model to be used in pair with the analytical model introduced in previous chapter. See Section.\ref{sec:refinedloadmodel}
+        \begin{enumerate}[label*=\arabic*.]
+            \item Introduction to the usage of analytical model.  
+            \item Find the analytical equivalent nosing forces amplitude for freight trains in 3 different cases presented in DT329 resonance research simulation. The equivalent nosing force amplitude is the exact force amplitude to be substituted into analytical model as lateral harmonic force input, yielding the same response in DT329 simulation output. See Section.\ref{sec:findingequivalentamplitude}
+            \item Find regular pattern and key parameter for the magnitude of nosing forces amplitude for freight trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
+            \item Develop a conservative load model based on observed pattern of nosing force of freight trains. This load model is conservative because of the research result of DT329, that freight trains generates greater lateral force on track compare to passenger trains and high speed trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
+        \end{enumerate} 
+    \item \textit{Verifying:} Validate the feasibility of combined usage of conservative load model and analytical model
+        % \begin{enumerate}[label*=\arabic*.]
+        %     \item What 
+        % \end{enumerate}
+    \item \textit{Finalizing:} Illustrate the usage of the method by applying it on a real railway bridge
+\end{enumerate}
+
+\section{Development of refined load model}\label{sec:refinedloadmodel}
+
+The load model provided in EN1991-2(nosing force) and D181 RP6(proposed criteria) are too conservative. The reason is that these forces are obtained by simulations ran on poorest maintained tracks with $7mm$ track irregularity standard deviation. In fact tracks are allowed to have lateral irregularities up to $1.8mm$ according to EN13848(Section.\ref{sec:lateraltrackirrgularities}). So existing lateral force models are enormous compared to real-life scenario. 
+
+In addition, the existing load models are representative for hunting effects\cite[Proposed criteria]{d181}. However, according to \cite{majka2008effects}, although affected by varies parameters, critical speed for hunting effect is normally at 120km/h for modern railway vehicle and tracks. So at least for trains running slower that 120km/h, it can be conclude that hunting is not occurring. And their lateral force should be much less than the force magnitude mentioned in either EN1991-2 or D181 RP6.
+
+Thus these existing load models are too big and not suitable for the analytical solution. A more precise load model is needed for coupled usage for analytical solution.
+
+\subsection{Introduction to the analytical model to be used in pair with equivalent force amplitude}
+
+The analytical model itself and its explicit expression have already been introduced and described in previous chapter. This section will give a overview on the input parameters of both VAMPIRE simulation and analytical model. This is not only due to the fact that VAMPIRE simulation was proved by D181 committee to be in close prediction with situ measurements, but also because in following sections VAMPIRE simulation results will be used as reference comparison data for the development of analytical model's pairing load model. 
+
+\begin{table}[h!]
+    \centering
+    \caption{Comparison between input parameters of DT329 VAMPIRE simulations and analytical model}
+    \begin{tabular}{c|cc}
+        \hline
+        & Simulation & Analytical model \\
+        \hline
+        Bridge structure & simply supported beam & simply supported beam \\
+        Span & Yes & Yes \\
+        Stiffness & Yes & Yes \\
+        Mass & Yes & Yes \\
+        Damping & Yes & Yes \\
+        Train & complete train as mass spring system & single moving harmonic load \\
+        Train Speed & Yes & Yes \\
+        Track irregularities & Yes & No \\
+        Wheel profile & Yes & No \\
+        Wheel-rail interaction & Yes & No \\
+        \hline
+    \end{tabular}
+    \label{tab:comparisonsimulationanalytical}
+\end{table}
+
+As demonstrated in Table.\ref{tab:comparisonsimulationanalytical}, while input parameters for simulation are complicated, analytical model possesses less input parameters. 
+
+The single moving harmonic load in analytical model shall be capable of providing dynamic effect caused by train speed, track irregularities, wheel profile and wheel-rail interaction to the analytical model. Correct single moving harmonic load input shall yield the same result as VAMPIRE simulation provided that same span, stiffness, mass and damping value are adopted in both two calculating methods.
+
+Thus finding the correct expression for the harmonic moving force is vital to the analytical model. The harmonic moving force has 3 parameters: speed $c$, frequency $\Omega$  and amplitude $Q$. Since speed $c$ simply equals to train speed and frequency $\Omega$ equals to the first natural bending frequency of the beam $\omega_1$, the amplitude of the harmonic force remains to be researched. Further development of the amplitude expression will be discussed in following sections.
+
+
+
+\subsection{Finding equivalent lateral force amplitude for specific cases}\label{sec:findingequivalentamplitude}
+In this section, equivalent lateral force amplitudes for analytical solution are obtained. The equivalent lateral force amplitude does not represent real force magnitude in rail/wheel interaction, but a force amplitude that yields same result as VAMPIRE simulations using same input parameters if substituted into analytical solution. So this lateral force amplitude may not be correct if adopted in other structure models. On the other hand, analytical solution may yield imprecise results if not substituted with this exact equivalent force amplitude. They can only be used in pair with each other.
+
+Thus in order to perform the comparison mentioned above, both input and output data of DT 329 VAMPIRE simulations are selected as reference data. The input data will be substituted into analytical model and the output data of VAMPIRE simulation will be compared with output of analytical model. 
+
+3 sets of reference data are extracted from DT329 report. They are C1,C3,C9 in Figure.\ref{fig:c1},\ref{fig:c3} and \ref{fig:c9} respectively. These data are all resonance study so they are qualified to be used as reference data. Please note that C1,C3,C9 were all done on freight trains on same track sample. Finally 3 equivalent forces are collected from these 3 test samples to see regular pattern and relevant parameters for freight trains.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c1}
+    \caption{Figure C1 extracted from \cite{d181dt329} }
+    \label{fig:c1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c3}
+    \caption{Figure C3 extracted from \cite{d181dt329} }
+    \label{fig:c3}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c9}
+    \caption{Figure C9 extracted from \cite{d181dt329} }
+    \label{fig:c9}
+\end{figure}
+
+By observing Eq.\ref{eq:v(x,t)simpleharmonic}, it is concluded that force amplitude is an independent variable and perfectly linear to the analytical output. Thus the equivalent force is obtained by inputing bridge parameters and train speed into the analytical solution Eq.\ref{eq:v(x,t)simpleharmonic} and manually increasing the force amplitude little by little until the peak response output reaches the same magnitude of peak simulation output. The parameters used and their corresponding results are presented in Table.\ref{tab:parametersetupsandequivalentforce}.
+
+
+\begin{table}[h!]
+    \centering
+    \caption{Parameter setups and equivalent force amplitude for C1,C3,C9}
+    \begin{tabular}{c|ccc}
+        \hline
+        & C1 & C3 & C9 \\
+        \hline
+        Stiffness($\sfrac{\delta_0}{l}$) & 1/4000 & 1/4000 & 1/10000 \\
+        Span($m$) & 54m & 54 & 120 \\ 
+        Mass per unit length($kg/m$) & 6000 & 6000 & 6000\\
+        Speed of train($m/s$) & 14 & 16.67(60km/h) & 14\\
+        Damping ratio & 1\% & 1\% & 1\%\\
+        Train type & Freight & Freight & Freight \\
+        Track & Coupled freight track & Coupled freight track & Coupled freight track \\
+        \hline
+        Equivalent load amplitude(kN) & 14 & 15 & 14 \\
+        \hline
+    \end{tabular}
+    \label{tab:parametersetupsandequivalentforce}
+\end{table}
+
+\subsection{Key parameter for equivalent force amplitude and hypothesis expression for refined load model}\label{sec:keyparameterforequivalentamplitudeandhypothesis}
+
+By observing the equivalent load amplitude illustrated in Table.\ref{tab:parametersetupsandequivalentforce}, it is found that the equivalent load amplitude yielded by analytical solution meets the general principle of lateral track force concluded by DT329 track quality research. The general principle is that the lateral force is only relevant to speed if track quality and wheel conicity are fixed. And lateral force is irrelevant to the bridge parameters.
+ 
+Because equivalent force amplitude meets the general lateral force principle, it is further expected that the equivalent force amplitude also has a similar form of force-speed relationship of DT329 VAMPIRE simulations. Due to the lack of reference data, it is impossible to make a reliable regression. Only a hypothesis expression can be created by scaling Eq.\ref{for:regressionfreight} to 14kN at 14m/s(reference data set C1). Please note only C1 was used in creating the hypothesis expression so C3 and C9 remains available for the verification.
+
+\begin{equation}
+    Q= 1928\times c^{0.7495}
+\end{equation}
+
+where:
+
+$Q$: equivalent force amplitude($N$)
+
+$c$: speed of the train($m/s$)
+
+This scaling is reasonable because: according to the conclusion of DT329 track quality research, lateral forces generated on 7mm standard deviation tracks has a certain relationship with speed(Eq.\ref{for:regressionfreight}). And it is also concluded that at same speed, lateral forces are linear to the track stand deviation. Thus, since all 3 reference data are run on the same track, force output of analytical model at each speed(14m/s and 16.67m/s) could be scaled from Eq.\ref{for:regressionfreight} 's results at these speeds. Furthermore, a scale factor is then applied on Eq.\ref{for:regressionfreight} to reflect the scaling to the whole speed domain and this yields above equation.
+
+As a conclusion, this hypothesis expression is obtained by processing the output of VAMPIRE simulation on freight trains and coupled freight track(poorer than passenger line and high speed line). So it is in closest prediction in the effects generated by freight trains. However, since passenger trains and high speed trains yields lower lateral force compared with freight trains, this hypothesis expression remains conservative for all train types.
+
+\section{Verification of the method}
+
+In this section the combined usage of analytical model and hypothesis expression for equivalent force amplitude is examined and verified. A matlab script is written to function the analytical model with hypothesis expression for equivalent load amplitude implemented. Now that force amplitude $Q$ is a function of speed, there's no longer necessary to input the force amplitude manually. To verify the correctness of combined usage of these two elements, other reference data from resonance research in DT329 are selected. 
+
+To assure conservative comparison, only axle repeat pattern resonance results are selected because their output are more pronounced than kinematic resonance effect. Altogether 5 sets of reference data are selected. They include 2 reference data for freight trains(C3,C9), 2 reference data for passenger train(C12,C13) and 1 reference data for high-speed train(C14). Due to the fact that freight trains yield greater force than the other two types of trains, the analytical result should be conservative for the latter 3 cases. Since the output of C3 and C9 are already presented in Table.\ref{tab:parametersetupsandequivalentforce} so they are not being presented with other 3 sets of data this time. The bridge parameters and trains speed involved in these 3 cases(C12,C13,C14) are input into the analytical solution to yield analytical results.
+
+\begin{table}[h!]
+    \centering
+    \caption{Comparison of results of simulation output and analytical output using refined load model}
+    \begin{tabular}{c|ccc}
+        \hline
+         & C12 & C13 & C14\\
+        \hline
+        Stiffness($\sfrac{\delta_0}{t}$) & 1/10000 & 1/12000 & 1/10000\\
+        Span($m$) & 54 & 54 & 38\\
+        Mass per unit length($kg/m$) & 6000 & 6000 & 10000\\
+        Speed of train($m/s$) & 55.6 & 55.6 & 65\\
+        Damping ratio & 1\% & 1\% & 1\%\\
+        Train type & Passenger & Passenger & High speed \\
+        Track & Passenger Track & Passenger Track & High speed track\\
+        \hline
+        Peak Simulation displacement($mm$) & 1.48 & 1.41 & 0.117\\
+        Peak Analytical displacement($mm$) & 6.6 & 5.8 & 3.0 \\
+        \hline
+    \end{tabular}
+    \label{tab:comparisonresultssimulationanalytical}
+\end{table}
+
+
+In Table.\ref{tab:comparisonresultssimulationanalytical} the parameters involved in these 3 cases and their corresponding peak analytical results as well as peak simulation results are presented. 
+
+
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    symbolic x coords={C9,C1,C3,C12,C13,C14},
+    xtick=data,
+    legend style={at={(0.5,-0.15)},
+        anchor=north,legend columns=-1},
+    ybar=5pt,% configures `bar shift'
+    bar width=9pt,
+    nodes near coords,
+]
+\addplot 
+    coordinates {(C9, 19.7) (C1, 14.5) (C3, 14.1)   (C12,6.6) (C13,5.8) 
+        (C14, 3.0) };
+\addplot 
+    coordinates {(C9, 17.8) (C1, 14.2) (C3, 12.5)  (C12,1.48) (C13,1.41)
+         (C14,0.117) };
+\legend{Peak analytical displacement,Peak simulation displacement}
+\end{axis}
+\end{tikzpicture}
+\caption{Comparison between peak simulation result and peak analytical result}
+\label{fig:comparisonpeaksimulationanalytical}
+\end{figure}
+
+To clearer illustrate the comparison of both peak results from simulation and analytical, Figure.\ref{fig:comparisonpeaksimulationanalytical} is created with rearranged x-axis order to make the descending trend more obvious. Please note all data sets except for C1 are valid for verification(C1 is used in creation of expression).
+
+It can be seen that analytical results always keep a conservative margin above the simulation results. As expected, margins for C12,C13,C14 are bigger compared to C9,C1,C3 proofs that the analytical solution becomes more conservative if adopted to passenger train and high-speed train. What's more, the descending trend of analytical results follows the descending trend of simulation results perfectly regardless of train types. Thus considering these reasons, the analytical solution is sufficient for universal application on all train types.
+
+\section{Finalizing the method for practical usage}
+
+In practical usage, the speed that generates the highest peak response is unknown. Thus it is necessary to obtain the peak response for all speeds within the possible speed range. This is done by iterating the existing Matlab script with different speed. The increment in speed iteration is set in a way that ensures at least 1000 runs are done to guarantee precession. An example is illustrated as follows to show the usage on a real bridge project.
+
+For an arch railway bridge located near Amsterdam, possessing following parameters:
+
+$L = 255m$, $m = 5222e3kg$, $\mu = 2.0478e4 kg/m$, $EJ = 6.56e12Nm^2$
+
+to test through a speed range of $1m/s - 30m/s$
+
+Before beginning the calculation, make sure you have fog.m and Speedenvelop.m in your current working directory. By inputting following command in Matlab console, 
+
+\texttt{Speedenvelop(6.56e12,255,2.0478e4,1,30,0.01)}
+
+
+the envelop for displacement is generated and illustrated in Figure.\ref{fig:spedefEJ6560000000000L255min1max30mu20478.tikz}
+
+\begin{figure}[h!]
+\centering 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/spedefEJ6560000000000L255min1max30mu20478.tikz} 
+\caption{spedefEJ6560000000000L255min1max30mu20478} 
+\label{fig:spedefEJ6560000000000L255min1max30mu20478.tikz} 
+\end{figure}
+
+The plot shows that the critical speed appears at approximately $5m/s$ and corresponding peak deflection response is approximately $11mm$. 
+
+Since the relationship between end support rotation angle and mid-span deflection is widely known as:
+
+$$ \varphi = \frac{3}{L}\cdot \delta_0  $$
+
+and rotation is yielded as:
+
+$$ \varphi = \frac{3}{255}\times 0.011 = 0.00013 $$
+
+This value is much lower than the rotation value regulated in EN1991-2. See Section.\ref{sec:Transverse-deformations-and-vibrations} for criteria details.
+
+Thus the conclusion can be made that this bridge is safe subjected to lateral dynamic load.
+
+However, if encountering unfavourable peak result, a filter can be applied on the train speed to further cut off the peak response. In previous chapter it has been already be concluded that all resonance effects between train and bridge are wavelength phenomenon. In order to couple frequency with bridge's first natural bending frequency, the train needs to operate at a certain speed range. 
+
+For example, assuming the train's wavelength is 20m-40m, including both axle repeat wavelength and kinematic wavelength. 
+
+The natural frequency of the bridge in this example is 
+
+$$ f_1 = \frac{\pi}{2l^2}\sqrt{\frac{EJ}{\mu}} = \frac{\pi}{2\times 255^2}\sqrt{\frac{6.56e12}{1.0478e4}} = 0.4Hz$$
+
+so the possible resonance speed is obtained by multiplying wavelength range with natural frequency, yielding: $8m/s$ and $16m/s$
+
+The maximum response in deflection is lowered to 1.05 mm. The filter is more effective if the natural frequency of the bridge is higher.
 
 \chapter{Recommendations on improvement on Eurocode}
 
