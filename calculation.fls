@@ -1,0 +1,11 @@
+PWD /Users/Choushishi/Documents/TUD/Thesis/Backup/try
+INPUT /usr/local/texlive/2014/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/Choushishi/Documents/TUD/Thesis/Backup/try/calculation.tex
+OUTPUT /Users/Choushishi/Documents/TUD/Thesis/Backup/try/calculation.log
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT /Users/Choushishi/Documents/TUD/Thesis/Backup/try/calculation.pdf
+INPUT /usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map

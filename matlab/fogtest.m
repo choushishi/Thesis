@@ -76,19 +76,22 @@ end
 
 O = [max(abs(p(:,1))),max(abs(p(:,2))),max(abs(p(:,3)))];
 
-% % name = strcat('EJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c),'.tikz')
+namedaf = strcat('EJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c),'daf','.tikz');
 % % 
-% figure(1)
-% plot(tdomain,p(:,1))
+figure(1)
+plot(tdomain,p(:,1))
+% grid on
 % title(strcat('Max Deflection:',mat2str(O(1,1))));
 % % % matlab2tikz(namedef, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
 % % % 
 % figure(2)
 % plot(tdomain,p(:,2))
+% grid on
 % title(strcat('Max Acceleration:',mat2str(O(1,2))));
 % % % matlab2tikz(nameacc, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
 % % % 
 % figure(3)
 % plot(tdomain,p(:,3))
+% grid on
 % title(strcat('Max Deflection:',mat2str(O(1,1)),',Max Acceleration:',mat2str(O(1,2))));
-% % matlab2tikz(name, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
+% matlab2tikz(namedaf, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);

@@ -13,7 +13,8 @@ xmin=0,
 xmax=30,
 ymin=0.0075,
 ymax=0.011,
-title={SpeedEnvelop def from1 to30}
+xlabel = $v(m/s)$,
+ylabel = Deflection($m$)
 ]
 \addplot [color=blue,solid,forget plot]
   table[row sep=crcr]{%

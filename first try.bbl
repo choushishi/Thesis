@@ -276,6 +276,11 @@
   \field{year}{1999}
 \endentry
 
+\entry{trainparameters}{article}{}
+  \field{sortinit}{G}
+  \field{title}{Gegevens trein materieel tbv dynamica analyses}
+\endentry
+
 \entry{EC0}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -358,44 +363,6 @@
   Mechanics: CT 4145}
 \endentry
 
-\entry{giuseppe2012dynamic}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Piccardoa}{P.}%
-     {Giuseppe}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tubino}{T.}%
-     {Federica}{F.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{PGTF1}
-  \strng{fullhash}{PGTF1}
-  \field{sortinit}{P}
-  \field{title}{Dynamic response of Euler-Bernoulli beams to resonant harmonic
-  moving loads}
-  \field{year}{2012}
-\endentry
-
-\entry{uic}{manual}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Railways(UIC)}{R.}%
-     {International~Union}{I.~U.}%
-     {of}{o.}%
-     {}{}}%
-  }
-  \strng{namehash}{RIUo1}
-  \strng{fullhash}{RIUo1}
-  \field{sortinit}{R}
-  \field{title}{Design requirements for rail-bridges based on interaction
-  phenomena between train, track and bridge}
-  \warn{\item Invalid format of field 'date' \item Invalid format of field
-  'date'}
-\endentry
-
 \entry{da2007dynamic}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -412,32 +379,23 @@
   \field{year}{2007}
 \endentry
 
-\entry{sun2002dynamic}{article}{}
-  \name{author}{2}{}{%
+\entry{UIC776-2}{book}{}
+  \name{author}{1}{}{%
     {{}%
-     {Sun}{S.}%
-     {Yan~Quan}{Y.~Q.}%
+     {UIC}{U.}%
      {}{}%
-     {}{}}%
-    {{}%
-     {Dhanasekar}{D.}%
-     {Manicka}{M.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
-    {Elsevier}%
+    {UIC}%
   }
-  \strng{namehash}{SYQDM1}
-  \strng{fullhash}{SYQDM1}
-  \field{sortinit}{S}
-  \field{number}{5}
-  \field{pages}{1337\bibrangedash 1359}
-  \field{title}{A dynamic model for the vertical interaction of the rail track
-  and wagon system}
-  \field{volume}{39}
-  \field{journaltitle}{International Journal of Solids and Structures}
-  \field{year}{2002}
+  \strng{namehash}{U1}
+  \strng{fullhash}{U1}
+  \field{sortinit}{U}
+  \field{title}{UIC Leaflet 776-2:Design requirements for rail-bridges based on
+  interaction phenomena between train, track and bridge}
+  \field{year}{June 2009}
 \endentry
 
 \entry{12299}{book}{}

@@ -1,64 +1,104 @@
 %!TEX root = first try.tex
 
+
 \chapter{INTRODUCTION}
 
 \section{Summary of topic}
 
-The lateral dynamic behaviour of steel railway bridges are minimally discussed in Eurocodes and designers lack knowledge of background of criteria proposed in the code. For example, there is one criterion in Eurocode requiring railway bridges should have a lateral natural frequency higher than 1.2Hz. However, this criterion is becoming more and more unsuitable because longer span provides lower natural frequencies. For bridges having span more than 100m, it is almost guaranteed that the first lateral natural frequency of the bridge fall below 1.2Hz, unable to meet the requirement of Eurocode. 
 
-Criteria on lateral dynamics of railway bridges are complicated if taking vehicle systems and interaction into account. Designers need a better knowledge on railway dynamics and a tool in calculating the lateral dynamic behaviour of the whole system. This tool needs to be simple to meet the engineering needs.  
+Lateral railway bridge dynamics is an engineering topic that related to both bridge structure and operating railway vehicles. The knowledge of lateral dynamics of railway bridge is seldom known to structure engineers but it is only until recently this topic catches focus. The reason is that an Eurocode criterion regarding the topic is frequently rejecting new long span railway bridge designs. 
+
+Although there's no records of bridge/vehicle failure due to lateral railway vehicle dynamic loading, it is found during the research process of this thesis that ERRI(former UIC) had already done investigation on this topic before 1994 and presented the results in D181 report series. This information of D181 is hardly known to both researchers and engineers after Eurocode EN1991-2's publication in 1994. However, several criterion proposed by D181 committee were adopted in EN1991-2 and one of them is rejecting new railway designs 20 years after it was originally proposed. 
+
+Obviously, throughout D181 report series and EN1991-2, it can been seen that almost no attention is put on lateral dynamics of long span railway bridges. This thesis aims to review both documents and conduct further researches on the topic.
 
 \section{Motivation of the thesis}
 
+The lateral dynamic behaviour of steel railway bridges are minimally discussed in Eurocodes and designers lack knowledge of background of the criteria proposed in the code. For example, there is one criterion in Eurocode requiring railway bridges should have a lateral natural frequency higher than 1.2Hz. However, this criterion is becoming more and more unsuitable for modern bridge designs because longer span provides lower natural frequencies. For bridges having span longer than 100m, it is almost guaranteed that the first lateral natural frequency of the bridge is lower than 1.2Hz, and unable to meet the requirement of EN1991-2. 
+
+Since for most bridge designs, changing the bridge parameters to meet the 1.2Hz criterion isn't a viable option because it's expensive to add stiffness to the bridge, the projects need a solution to solve the problem. To gain more knowledge on the topic, a research on the background of 1.2Hz criterion is initiated by Iv-Infra, presented in this report. The discovery in the background research stimulates further researches on the topic. 
 
 \section{Objectives and research question}\label{sec:introduction}
 
-% The main goal is to think of a method to verify whether a bridge is expected to encounter transverse dynamic problems. 
 
-% In the literature study the criteria of different systems involved in dynamic response of steel railway bridges will be investigated. Governing criteria will be selected into an inventory. The criteria inventory is useful by providing what to represent in simplified model. 
+The report has following objectives.
 
-% The simplified model will be developed based on real train information in order to natively support Dutch designers. The result simplified model output shall be in cooperation with the criteria inventory made in previous steps.
-
-% Using the developed model and the knowledge of literature study, an imaginary steel railway bridge can be designed, in order to verify the reliability of the newly developed tool. 
+\begin{enumerate}[-]
+\item Provide insight knowledge of lateral dynamics of railway bridges. Since the general knowledge about the 
 
 
-The main goal of this thesis is to discuss the sufficiency and reliability of current criteria regarding lateral dynamics of steel railway bridges that exist in Eurocode 1991-2. Original reports where criteria were proposed will be reviewed to reveal the background of them to Eurocode users. 
+\item Find the source of 1.2Hz criterion. Interpret its original intention by reviewing the original documents. Give a conclusion on the correctness of 1.2Hz criterion based on the interpretation.
+\item Find alternative strategy for validating the lateral dynamics of railway bridges
+\item Develop a practical method based on newly found strategy 
+\end{enumerate}
 
-Depending on the output of previous step, if the current requirements/criteria show lack of reliability/sufficiency of Eurocode 1991-2, further recommendation will be made for revising or amending current Eurocode.
+\vspace*{0.5cm}
 
-This report also aims to providing knowledge of railway bridge dynamics to Eurocode users. The dynamics of railway bridge concerns cross-field knowledge, including intelligence of railway tracks/ vehicles/ bridge structures, etc. Some of them are essential to dynamics problem but unfamiliar to Eurocode users. Thus the report is willing to convey users the reason and importance of dynamic concerns of railway bridges.
+The research question can be summarized as:
 
+\textit{Conclude the correctness of current existing criterion on lateral railway bridge dynamics and develop new practical method for checking lateral dynamics of railway bridges based on an alternative checking strategy. }
 
 
 \section{Main steps}
 
-In order to provide a better tool for designers when they encounter lateral dynamic problems on steel railway bridges, following objectives are made:
+In order to carry out the objectives and research questions, the thesis will be conducted in following steps:
+
 
 \begin{enumerate}
 
-\item Literature research of dynamic actions as well as their criteria on railway bridges, rails and train vehicles in order to give a better understanding of the background of the criteria which is unclear to the designers. Study the dynamic behaviour of these system respectively. Then discuss their effects when combined.
+\item Literature research on the knowledge regarding lateral railway bridge dynamics. This section aims to provide insight knowledge to readers so emphasis is placed on fundamental information. Since general dynamics of the bridges are widely discussed and the only thing that differs is that railway bridges are subjected to railway vehicle loads, literature research also focuses on conveying basic knowledge of dynamics of railway vehicles.
 
-\item Find the original reports which proposed 1.2Hz criterion but assess the content of these reports.
+\item Find the original reports which proposed 1.2Hz criterion and assess the content of these reports. Further investigate the research process and conclusions of these reports to yield more useful information for following researches.
 
-\item Study wavelength range of trains running in the Netherlands.
+\item Using the knowledge in the original reports, study the wavelength range of trains running in the Netherlands.
 
-\item Develop a analytical model for simple calculating time-history of the dynamic response of the bridge under train vehicle load. 
+\item Develop a practical method for simple calculating the time-history of the dynamic response of the bridge under train vehicle load on the basis of numerical simulation results provided by D181 committee in their report series.
 
-\item Conduct parametric research using the analytical model developed in previous step. Propose design strategy based on this parametric research.
+\item Apply above developed practical method on a real project to finalize the method for engineering usage and as well as illustrates the usage of the method.
 
 \end{enumerate}
 
-% \section{Research methodology}
-% Add content
 \section{Outline of the report}
+
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[
+    node distance = 5mm and 4mm,
+    point/.style={circle, inner sep =0pt, minimum size = 1pt, fill =black}]
+    \matrix[row sep = 5mm, column sep =4 mm] {
+        \node[punkt] (Literature) {Literature research}; & & 
+        \node(dummy1) [point] {}; & \\
+        \node[punkt] (1991)  {Investigation of EN1991-2}; &
+        \node[punkt] (D181) {Investigation of D181 report series}; &
+        \node[punkt] (Wavelength) {Lateral Wavelength of Dutch Vehicles}; &
+        \node[punkt] (Practical) {Practical method for checking lateral dynamics of railway bridges}; \\
+        & \node [point] (dummy3) {}; &
+         &
+        \node [point] (dummy5) {}; \\
+    };
+    
+    \graph {
+        (Literature) -> (1991) ;
+        (Literature) -- (dummy1) -> (Wavelength);
+        (1991) -> (D181) -> (Wavelength) -> (Practical);
+        (D181) -- (dummy3) -- (dummy5) -> (Practical);
+    };
+\end{tikzpicture}
+\caption{Logic relationship of chapters}
+\label{fig:logicchpater}
+\end{figure}
+
+The logic relationship of selected chapters is illustrated in Figure.\ref{fig:logicchpater}
+
 The report is created in following structure:
 
 \begin{enumerate}
-   \item Literature study on basic concepts of railway bridge dynamics.
-   \item Deep investigation of EN1991-2 supporting research report series
-   \item Wavelength study
-   \item Development of analytical model
-   \item Parametric research based on analytical model
-   \item Design strategies for railway bridge dynamics
-   \item Suggestions for Eurocode
+    \item Literature study on basic concepts of railway bridge dynamics.
+    \item Deep investigation of EN1991-2 supporting research report series
+    \item Wavelength study
+    \item Introduction to the analytical method
+    \item Development of the new practical checking method by adopting the analytical model and outputs of VAMPIRE simulations
+    \item Suggestions for Eurocode
+    \item Conclusions
 \end{enumerate}

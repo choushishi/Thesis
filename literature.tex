@@ -2,17 +2,104 @@
 
 \chapter{Basic concepts of railway bridge dynamics}
 
-In this chapter some basic concepts of railway bridge dynamics will be described in order to provide preliminary relevant knowledge for following chapters. The knowledge will be introduced in the order of railway related only to bridge related. 
+In this chapter basic concepts of railway bridge dynamics will be described in order to provide preliminary relevant knowledge for following chapters. The knowledge will be introduced in the order of railway dynamics related only to bridge dynamics related. 
 
-\section{Sources induce transverse dynamic reactions}
+\section{Basic railway dynamic effects}
+
+\subsection{Sources induce transverse dynamic reactions}
 According to \cite{da2007dynamic}\cite{fryba1996dynamics}\cite{EC12}, following sources are identified:
 
 \begin{enumerate} [-]
-	\item Horizontal track irregularities
-	\item Sinusoidal motion of conical wheels along cylindrical rail heads
-	\item Centrifugal forces on curved tracks
-	\item Train switches
+    \item Sinusoidal motion of conical wheels along cylindrical rail heads
+    \item Horizontal track irregularities
+    \item Centrifugal forces on curved tracks
+    \item Train switches
 \end{enumerate}
+
+\subsection{Lateral movement of a wheelset on straight track}
+
+\subsubsection{Theory according to Klingel}
+
+If a wheelset with conical tire profiles is laterally displaced from central position, this displacement is counteracted due to different rolling radii of the wheels. This results in a periodical movement of the wheelset which was described by Klingel in 1883 and is therefore often referred to as the Klingel movement. When analysing the case, the wheelset is modelled as a biconus travelling on an ideally straight track as shown in Figure.\ref{fig:wheelsetbiconus}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{wheelsetbiconus}
+    \caption{Wheelset biconus in general position. Extracted from \cite[Figure 2.2]{esveld2001modern}}
+    \label{fig:wheelsetbiconus}
+\end{figure}
+
+
+The Klingel movement is therefore purely a kinematic movement in which forces play no part in the derivation. As a result, Figure.\ref{fig:klingelmovement} visualizes the Klingel movement. The lateral displacement $y$ is a harmonic, undamped function of the distance co-ordinate $x$ as long as the amplitude moves within the flangeway clearance $fwc$. This is illustrated in Figure.\ref{fig:fwc}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{klingelmovement}
+    \caption{Klingel movement. Extracted from \cite[Figure 2.3]{esveld2001modern}}
+    \label{fig:klingelmovement}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fwc}
+    \caption{Undisturbed lateral movement of a wheelset. Extracted from \cite[Figure 2.4]{esveld2001modern}}
+    \label{fig:fwc}
+\end{figure}
+
+Introducing the speed, the time domain frequency of the Klingel movement is:
+
+$$ f = \frac{V}{L_k} $$
+
+and hence the maximum lateral acceleration can be calculated as:
+
+$$\ddot{y}_{max} = 4\pi^2y_0\frac{v^2}{L_k^2}$$
+
+If the frequency $f$ coincides with one of the natural frequencies of the rolling stock, the vehicle ride becomes unstable. The lateral acceleration, which is a measure of the forces, shows the adverse effect of high speed and/or small wavelength. A conicity, for example, of 1:40 in comparison with 1:20 therefore gives a greater wavelength and a lower lateral acceleration at the same speed. The progressively increasing conicity in the case of worn profiles due to increasing lateral axle movement, therefore, has an adverse effect in this respect.
+
+\subsubsection{Hunting movement}
+
+It should be noted that the Klingel theory is simple and instructive but does not include the effect of coupled axes, mass forces, and adhension forces. In reality, the amplitude $y_0$ of the Klingel movement is dependent on alignment, dynamic vehicle behaviour, and the speed of the rolling stock. 
+
+Generally speaking, $y_0$ due to slip will increase with speed until it is equal to half the flangeway clearance. Flanging then occurs as a result of which the axle will rebound. 
+
+This means that the lateral movement takes on a completely different behaviour which is known as hunting. As shown in the drawing in Figure\ref{fig:flangingwheelset} the movement changes from a harmonic to a zig-zag shape. The wavelength becomes shorter and the frequency increases quickly until it is in the critical range for the rollin g stock and resonance occurs.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{flangingwheelset}
+    \caption{Influence of flanging on lateral wheelset movement. Extracted from \cite[Figure 2.5]{esveld2001modern}}
+    \label{fig:flangingwheelset}
+\end{figure}
+
+This phenomenon is shown in Figure\ref{fig:amplitudefrequencystability}. The bogie design, as far as conicity and flangeway clearance are concerned, must be such that stable running is always guaranteed for the speed range in which the vehicle is to be used.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{amplitudefrequencyinstability}
+    \caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \cite[Figure 2.6]{esveld2001modern}}
+    \label{fig:amplitudefrequencystability}
+\end{figure}
+
+\subsection{Single and two-point contact between wheel and rail}
+In the case of single-point contact, according to Figure, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure, the application points do not coincide.
+
+Flanging occurs in the situation of double contact. 
+
+\begin{figure}[h!]
+\centering
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{singlecontact}
+        \caption{Single contact point.  Extracted from \cite[Figure 2.13]{esveld2001modern}}
+        \label{fig:singlecontact}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{doublecontact}
+        \caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \cite[Figure 2.14]{esveld2001modern}}
+        \label{fig:doublecontract}
+    \end{subfigure}
+\end{figure}
 
 \section{Wheel-Rail Interface}
 
@@ -94,90 +181,6 @@ Table \ref{tab:lateraldeviation} defines the allowable standard deviation for la
     \label{tab:lateraldeviation}
 \end{table}
 
-\section{Lateral movement of a wheelset on straight track}
-
-\subsection{Theory according to Klingel}
-
-If a wheelset with conical tire profiles is laterally displaced from central position, this displacement is counteracted due to different rolling radii of the wheels. This results in a periodical movement of the wheelset which was described by Klingel in 1883 and is therefore often referred to as the Klingel movement. When analysing the case, the wheelset is modelled as a biconus travelling on an ideally straight track as shown in Figure.\ref{fig:wheelsetbiconus}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{wheelsetbiconus}
-	\caption{Wheelset biconus in general position. Extracted from \cite[Figure 2.2]{esveld2001modern}}
-	\label{fig:wheelsetbiconus}
-\end{figure}
-
-
-The Klingel movement is therefore purely a kinematic movement in which forces play no part in the derivation. As a result, Figure.\ref{fig:klingelmovement} visualizes the Klingel movement. The lateral displacement $y$ is a harmonic, undamped function of the distance co-ordinate $x$ as long as the amplitude moves within the flangeway clearance $fwc$. This is illustrated in Figure.\ref{fig:fwc}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{klingelmovement}
-	\caption{Klingel movement. Extracted from \cite[Figure 2.3]{esveld2001modern}}
-	\label{fig:klingelmovement}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{fwc}
-	\caption{Undisturbed lateral movement of a wheelset. Extracted from \cite[Figure 2.4]{esveld2001modern}}
-	\label{fig:fwc}
-\end{figure}
-
-Introducing the speed, the time domain frequency of the Klingel movement is:
-
-$$ f = \frac{V}{L_k} $$
-
-and hence the maximum lateral acceleration can be calculated as:
-
-$$\ddot{y}_{max} = 4\pi^2y_0\frac{v^2}{L_k^2}$$
-
-If the frequency $f$ coincides with one of the natural frequencies of the rolling stock, the vehicle ride becomes unstable. The lateral acceleration, which is a measure of the forces, shows the adverse effect of high speed and/or small wavelength. A conicity, for example, of 1:40 in comparison with 1:20 therefore gives a greater wavelength and a lower lateral acceleration at the same speed. The progressively increasing conicity in the case of worn profiles due to increasing lateral axle movement, therefore, has an adverse effect in this respect.
-
-\subsection{Hunting movement}
-
-It should be noted that the Klingel theory is simple and instructive but does not include the effect of coupled axes, mas forces, and adhension forces. In reality, the amplitude $y_0$ of the Klingel movement is dependent on alignment, dynamic vehicle behaviour, and the speed of the rolling stock. 
-
-Generally speaking, $y_0$ due to slip will increase with speed until it is equal to half the flangeway clearance. Flanging then occurs as a result of which the axle will rebound. 
-
-This means that the lateral movement takes on a completely different behaviour which is known as hunting. As shown in the drawing in Figure\ref{fig:flangingwheelset} the movement changes from a harmonic to a zig-zag shape. The wavelength becomes shorter and the frequency increases quickly until it is in the critical range for the rollin g stock and resonance occurs.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.5\textwidth]{flangingwheelset}
-	\caption{Influence of flanging on lateral wheelset movement. Extracted from \cite[Figure 2.5]{esveld2001modern}}
-	\label{fig:flangingwheelset}
-\end{figure}
-
-This phenomenon is shown in Figure\ref{fig:amplitudefrequencystability}. The bogie design, as far as conicity and flangeway clearance are concerned, must be such that stable running is always guaranteed for the speed range in which the vehicle is to be used.
-
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.5\textwidth]{amplitudefrequencyinstability}
-	\caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \cite[Figure 2.6]{esveld2001modern}}
-	\label{fig:amplitudefrequencystability}
-\end{figure}
-
-\section{Single and two-point contact between wheel and rail}
-In the case of single-point contact, according to Figure, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure, the application points do not coincide.
-
-Flanging occurs in the situation of double contact. 
-
-\begin{figure}[h!]
-\centering
-	\begin{subfigure}[b]{0.2\textwidth}
-    	\centering
-    	\includegraphics[width=\textwidth]{singlecontact}
-    	\caption{Single contact point.  Extracted from \cite[Figure 2.13]{esveld2001modern}}
-    	\label{fig:singlecontact}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.5\textwidth}
-    	\includegraphics[width=\textwidth]{doublecontact}
-    	\caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \cite[Figure 2.14]{esveld2001modern}}
-    	\label{fig:doublecontract}
-	\end{subfigure}
-\end{figure}
 
 \section{Dynamic theories}
 
@@ -273,147 +276,76 @@ When the frequency of force equals frequency of mass-spring system, the amplitud
 
 Resonance can also happen when a harmonic force is loaded on an Euler-Bernoulli beam. It can be loaded anywhere on the beam to produce resonance. 
 
-\subsection{Resonance between moving load and simplified beam bridge model}\label{sec:harmonicloadmodel}
-It becomes a much more complicated problem when moving load is applied on an Euler-Bernoulli beam though analytical solution is still possible. Moving harmonic loads can represent, for instance, a component of the load transmitted to rails by moving trains. Thus it suits the aim of this thesis well.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{harmonicloadbeam}
-	\caption{Schematic representation of a generic beam crossed by a harmonic load}
-	\label{fig:harmonicloadbeam}
+\section{Analysing methods for lateral dynamics of railway bridges }
+
+Several analysing methods for vertical dynamics of railway bridges were briefed in \cite[A6.2]{UIC776-2}. Methods that can be applied also on lateral direction are selected:
+
+\begin{quote}
+
+Various programs are available and details can be found in ERRI report D 214/RP7 (see Bibliography - page 43); they can be used to calculate the dynamic response under live train loads, of isostatic bridges, series of isostatic decks, continuous bridges using the beam theory, the dynamic response of plates and by taking into account the two longitudinal and transversal modes. They can also run calculations for orthotropic square plates and skew plates.
+
+...
+
+Two types of analyses can be carried out: with or without interaction with the train.
+
+The most problematic cases, for example special structures (bridges with long spans such as bowstring bridges), have to be solved using generic finite element programs.
+
+Various programs such as ANSYS, NASTRAN, ABAQUS, SAP, FASTRUDL and so on, can be used to obtain the modal responses of bridge decks. Modelling can be done with beam models using torsional characteristics if the bridge is not a skew bridge and the structure is not a special case (see above). However, spatial modelling is necessary in such cases.
+
+Dynamic analysis of a structure can be used to resolve a system of differential equations of lesser importance. Two fundamental approaches may be implemented: one method consists in solving the system of equation by direct integration, whereas the other defines the solution based on the natural modes of vibration of the structure. This is known as modal superposition. 
+\end{quote}
+
+\subsection{Modal analysis}
+Modal analysis is used to calculate the natural modes and frequencies of the model, as well as resulting variables(participation factors, effective modal masses)
+
+For undamped, free vibrations, the equation of movement without a second element is reduced to:
+
+$$  [K] - \omega^2[M][\Phi_i] = 0 $$
+
+where $\Phi$ represents the circular frequency vector (=pulse) and $[\Phi]$ is the modal crossing matrix consisting of natural orthonorm modal vectors $[\Phi_i]$ in relation to $[M]$ or $[K]$.
+
+In principle, all the modes with natural frequencies lower than the cut-off frequency should be retained; in practice, the modes retained are often those making an important contribution to the response(criterion of the sum of effective modal mass of the structure). When the natural vectors are calculated, the modal matrix is formed $[\Phi]$ after which the $\omega_i$ can be deduced.
+
+\subsection{Analysis by modal superposition}
+The fundamental equation of the dynamic approach represents a system of N simultaneous differential equations, where N is the number of degrees of freedom of the structure. If three-dimensional modelling is used, this number N is equal to six times the number of nodes less the number of ddl blocked at the supprt. When the number increases to a value that is very high for large models, the size of the problem needs to be reduced by transformation techniques. Solving the differential equations then becomes faster and is more accurate.
+
+The integration method used is now as follows: for each mode i, the resulting equation gives an evaluation introduced by the Duhamel integral of the Fourier transform. The sum of the solutions gives the full response. The integration approach for mobile loads is a slow process.
+
+Modal superposition is used to accurately quantify the respective contributions of each mode to the total dynamic response and to identify the risks of resonance and dynamic amplification of some types of stresses.
+
+\subsection{Numerical methods}
+
+When the analysis uses numerical methods to directly integrate the dynamic equation, the loads become the dynamic system in the case of vehicles and their internal behaviour impacts the response from the structure.
+
+- the two systems can be considered separate systems,
+
+- the vehicle can be considered a finite element.
+
+This last method takes track profile defects into account and deduces the force of interaction between the structure and the vehicle as well as the internal forces in the dynamic system that is built.
+
+In this method, the equation of the dynamics is solved, with or without prior transformation, by using the conventional algorithms for numerical resolution of second-degree differential equations. These numerical methods calculates the response to regularly spaced time intervals(in general). The selected time pitch determines the accuracy of the results and has a bearing on the length of computer calculations.
+
+Numerical integration methods are all based on the search for balanced solutions of the dynamic equation at regular time intervals.
+
+\subsubsection{VAMPIRE}
+
+VAMPIRE is a FEM simulation software developed by DeltaRail. It allows the user to build a dynamic model of any rail vehicle and study the response of the vehicle to real measured track geometry or user specified inputs in the form of track displacements and external force inputs. Rail vehicles can be modelled with simulated instrumentation allowing almost any aspect of behaviour to be studied. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{vampire}
+    \caption{A sample project being conducted in VAMPIRE}
+    \label{fig:vampire}
 \end{figure}
 
-In most cases force input are hard to determine because of the complicity of wheel-rail interaction. But, in the context of lateral dynamics, the process can be simplified by adopting nosing forces. 
-
-Giuseppe Piccoardo \cite{giuseppe2012dynamic} has provided following solutions:
-
-The deflection $q(x,t)$ of a Euler-Bernoulli prismatic beam to a harmonic load moving with a constant speed $c$ (Figure\ref{fig:harmonicloadbeam}) is described by the well-known field equation
-
-$$\mu \frac{\partial^2 q(x,t)}{\partial t^2} + \chi \frac{\partial q(x,t)}{\partial t}+EJ\frac{\partial^4 q(x,t)}{\partial x^4} = F_0 \sin(\Omega t)\delta(x-ct)[H(t)-H(t-L/c)]$$
-
-where $\mu$ is the mass per unit length, $\chi$ is the damping coefficient, $EJ$ is the flexural stiffness, $F_0$ and $\Omega$ are, respectively, the amplitude and the circular frequency of the moving load, $\delta$ is the Dirac delta function, $H$ is the Heaviside step function, $L$ is the beam span length.
-
-By using convolution integral, the solution can be expressed as:
-
-\begin{equation}
-	\label{eq:convolutionbefore}
-	\begin{split}
-		\tilde{p}(\tilde{t})=\varepsilon \exp (-\varepsilon \xi^* \tilde{t}) & \{ [\int_0^{\tilde{t}} \sin (\tilde{\Omega}\tilde{\tau})\phi_j(\varepsilon\Omega_c^* \tilde{\tau}) \exp (\xi^* \tilde{tau}) \cos(\tilde{\tau})]\sin(\tilde{t}) \\ 
-		& -[\int_0^{\tilde{t}} \sin (\tilde{\Omega}\tilde{\tau})\phi_j(\varepsilon\Omega_c^* \tilde{\tau}) \exp (\xi^* \tilde{tau}) \cos(\tilde{\tau})]\cos(\tilde{t})\}
-	\end{split}
-\end{equation}
-
-Under the hypothesis that $\tilde{\Omega} = 1$ (i.e., perfect resonance), Eq.\ref{eq:convolutionbefore} can be rewritten as follows
-
-\begin{equation}
-	\begin{split}
-		\tilde{p}(\tilde{t})=\varepsilon \exp (-\varepsilon \xi^* \tilde{t}) & \{-[\frac{1}{2}\int_0^{\tilde{t}}\phi_j (\varepsilon \Omega_c^* \exp (\varepsilon \xi^* \tilde{tau}d\tilde{\tau}))]\cos (\tilde{t}) \\
-		& +[\frac{1}{2}\int_0^{\tilde{t}}\sin(2\tilde{\tau})\phi_j (\varepsilon \Omega_c^* \exp (\varepsilon \xi^* \tilde{tau}d\tilde{\tau}))]\sin (\tilde{t}) \\
-		& +[\frac{1}{2}\int_0^{\tilde{t}}\cos(2\tilde{\tau})\phi_j (\varepsilon \Omega_c^* \exp (\varepsilon \xi^* \tilde{tau}d\tilde{\tau}))]\cos (\tilde{t})\}
-	\end{split}
-\end{equation}
-
-This equation can be solved numerically.
-
-
-\section{FEM Modelling of rail-vehicle system}
-
-\subsection{Modelling of railway vehicles}
-According to Newton's law, 2 basic load effects are produced by moving train: vertical forces due to vehicle weight, and inertia effects caused by vehicle acceleration. The loads on a railway bridge are very complex problems thus in engineering practice, loads are often simplified. But, the simplification depends on the purpose of the analysis. 
-
-\subsubsection{Moving vertical forces model}
-If the inertia effects are neglected, loads of the moving trains can be modelled as moving vertical forces. For example, load diagram for type TALGO trains is shown in Figure.\ref{fig:verticalmodel} proposed by \cite{uic}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{verticalmodel.pdf}
-	\caption{Moving vertical force model for TALGO trains}
-	\label{fig:verticalmodel}
-\end{figure}
-
-\subsubsection{Advanced models}
-Nowadays more and more models have been proposed to meet different requirements of railway bridge dynamic analysis. The complexity of these models differs from each other but they are all more complicated than moving vertical forces models. For example, vehicle-bridge interaction model takes vehicle suspension system into account, which gives an alternative for discovering resonance effects between bridge and the vehicle suspension systems. 
-
-See Figure.\ref{fig:advancedmodel} for an example of advanced model.
-
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=0.8\textwidth]{advancedmodel.pdf}
-	\caption{A dynamic model for the vertical interaction of the rail track and wagon system. Proposed in \cite{sun2002dynamic}}
-	\label{fig:advancedmodel}
-\end{figure}
-
-
-\subsubsection{Models proposed in Eurocodes}
-
-See Chapter~\ref{sec:train-models}
-
-\subsection{Track model}
-Proposed in \cite[A.6.1.3]{uic}, the track is represented by Timoshenko beam elements for the rails and takes account of the rail/sleeper fastening characteristics as well as the ballast(if one exists).
-
-\textit{``A sleeper is generally represented by two beam elements, with two covering the rail and one used for the deck. Sleepers and ballast are modelled as concentrated masses. They are linked to the nodes of the rail and the bridge by a parallel spring and damper system. The track can be modelled to any length on both side of the bridges, where the stiffening effect of the bridge has to be taken into account. The effects of track distribution are not considered. Each vehicle is able to absorb the kinetic energy of the bridge and it is for this reason that, at resonance, the deflections and accelerations of the bridge obtained with this model are lower than those obtained with a live load diagram."}
-
-The most complete model for analysing train/track/bridge interaction is shown in Figure
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{trackmodel.pdf}
-	\caption{Diagram of the dynamic train-track-bridge model. Extracted from \cite[Fig. 15]{uic}}
-	\label{fig:trackmodel}
-\end{figure}
-
+There are also many similar simulation software on the market which puts emphasis on railway vehicle dynamic behaviour, but VAMPIRE is specially selected for introduction because it was the software used by D181 committee, whose report series originally proposed 1.2Hz criterion by using the assistance of VAMPIRE. Also, the output results provided by D181 reports is an important foundation for the development of new practical method. More detailed description of these VAMPIRE simulation runs will be illustrated in Chapter.\ref{sec:D181reportseries}.
 
 \chapter{Literature Review of regulations regarding lateral railway bridge dynamics in 1991-2} 
-Eurocode 1990 and Eurocode 1991-2 and their corresponding National Annex are primary codes to be fulfilled through out the whole process of conducting a railway bridge in Netherlands. It is of great importance to study dynamic effect on railway bridges due to increasing usage of public train service. What's more, as the need on capacity of railway service increase, high-speed train dynamic loading becomes a more general issue in the design of railway bridges. It is common knowledge that bridge structures loaded by high-speed trains have bigger chance of resonance, as well as of being required to be dynamic analysed in designing process. 
+Eurocode 1990 and Eurocode 1991-2 and their corresponding National Annex are primary codes to be fulfilled through out the whole process of conducting a railway bridge in Netherlands. It is of great importance to study dynamic effect on railway bridges due to increasing usage of public train service.
 
-Unfortunately in Chapter 6.4 of Eurocode NEN-EN 1991-2-2003, the description of various subjects is vague including general procedures of conductinga dynamic analyses and methods of additional dynamic analysing calculating, etc. The following paragraphs aim to summarize Chapter 6.4 of Eurocode 1991-2 \cite{EC12}, in order to give a better interpretation. 
+This literature review aims to filter out criteria and requirements related to lateral railway bridge dynamics in EN1991-2.
 
-This literature research will be done by reviewing both physics knowledge and engineering standards.
-
-% \section{Forced Vibrations under Harmonic Force}
-% Assume there is a simple one degree-of-freedom mass-spring system and an external force is acting on it. The force is given as $F(t)= F_0 \cos(\omega t)$. In this case the equation of motion takes the form
-% \begin{equation}
-% 	m\ddot{x} + kx = F_0 \cos(\omega t)
-% \end{equation}
-
-% The general solution can be written as
-% \begin{equation}
-% 	x(t) = A\cos(\omega_n t)+B\sin(\omega_n t) +\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
-% \end{equation}
-
-% The unknown constants A and B depend on the initial conditions.
-
-% The steady-state solution is given as:
-
-% \begin{equation}
-% 	x_{steady}= X \cos(\omega t) = \frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
-% \end{equation}
-
-% The amplitude of vibrations of the mass-spring system is given by:
-% \begin{equation}
-% 	|X|=|\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}|
-% \end{equation}
-
-% The amplitude-frequency dependencies is shown in \ref{fig:amplitude-frequency-characteristic} 
-
-% \begin{figure}[h]
-% 	\centering
-% 	\includegraphics[width=0.6\textwidth]{amplitudefrequencycharacteristic.pdf}
-% 	\caption{Amplitude-frequency characteristic. Extracted from \cite[2.2.2]{dynamicslecturenote}}
-% 	\label{fig:amplitude-frequency-characteristic}
-% \end{figure}
-
-
-% \section{Introduction to the dynamics of railway bridges}
-
-% \cite{fryba1996dynamics}Dynamics of railway bridges is concerned with the study of deflections and stresses in railway bridges. The loads are represented by the moving wheel and axle forces, by means of which railway vehicles transmit their load and inertia actions to railway bridges. A survey of the dynamic effects of vehicles on railway bridges is given in Figure.\ref{fig:dynamic effects}
-
-% \begin{figure}[h]
-% 	\centering
-% 	\includegraphics[width=0.6\textwidth]{dynamiceffects.pdf}
-% 	\caption{Dynamic effects of railway vehicles on bridges. Extracted from \cite[1.1]{fryba1996dynamics} }
-% 	\label{fig:dynamic effects}
-% \end{figure}
 
 \section{Factors influencing dynamic behaviour}
 As stated in\cite[6.4.2]{EC12} there are 11 factors influencing dynamic behaviour of a railway bridge. The principal factors which influence dynamic behaviour are:
@@ -463,26 +395,6 @@ Other factors may include:
 	\item The limits given in A2.4.4.2 and A2.4.4.3\cite{EC0} take into account the mitigating effects of track maintenance (for example to overcome the effects of the settlement of foundations, creep, etc.) 
 \end{enumerate}
 
-
-% \section{Vertical Dynamic effects}
-% As stated in EN 1991-2\cite{EC12}, the static stress and deformations (and associated bridge deck acceleration) induced in a bridge are increased and decreased under the effects of moving traffic by the following:
-
-% \begin{enumerate}[-]
-% 	\item the rapid rate of loading due to the speed of traffic crossing the structure and the inertial response (impact) of the structure,
-% 	\item the passage of successive loads with approximately uniform spacing which can excite the structure and under certain circumstances create resonance (where the frequency excitation(or a multiple there of) matches a natural frequency of the structure (or a multiple there of), there is a possibility that the vibrations caused by successive axles running onto the structure will be excessive),
-% 	\item variations in wheel loads resulting from track or vehicle imperfections (including wheel irregulations).
-% \end{enumerate}
-% For determining the effects (stresses, deflections, bridge deck acceleration etc.) of rail traffic actions the above effects shall be taken into account.
-
-
-% \subsection{Train Actions}
-% See section \ref{designprocedures}
-
-
-% \subsection{Wind Actions}
-% The nature of the wind load is dynamic. This means that its magnitude varies with respect to time and space.
-
-% According to \cite{mohammadi2013wind}: The limitations behind the applications of the EN-1991-1-4, Eurocode1, actions on structures-general actions-wind load-part 1-4, lead the structural designers to a great confusion. This may be due to the fact that, EC1 provides only the guid- ance for the bridges whose fundamental mode of vibrations have constant sign (e.g. simply supported structures) or a simple linear sign (e.g. cantilever structures) and these modes are the governing mode of vibrations of the structure; it analyzes only the along-wind response of the structure and not the cross wind response and the simplified methods recommended in this code are covering only the structures with simple geometrical configurations.
 
 \section{Horizontal transverse dynamic effects}
 There's only one criterion in the Eurocodes mentioned that the bridge's first lateral natural frequency should no lower that 1.2 Hz. 
@@ -1123,36 +1035,17 @@ Until now there's no further instructions in EN1991-2 for bridges which can not 
 
 \section{Conclusion}
 
-There are altogether two regulations regarding lateral dynamics of railway bridges in EN1991-2. They are:
+By reviewing EN1991-2 thoroughly, it is found that there are altogether two regulations regarding lateral dynamics of railway bridges. They are:
 
 \begin{enumerate}
 	\item Nosing force(action)
 	\item 1.2Hz criterion 
 \end{enumerate}
 
+Although vertical dynamics of railway bridges is focused a lot, there's only two statements about lateral dynamics of railway bridges. What's more, there's no quantifying criteria even if a dynamic analysis is done. 
+
 These two regulations have the same background documents: D181 report series. The analysis of D181 report series will be carried out in following chapter.
-
-% \paragraph{Longitudinal displacements}
-% For rails on the bridge and on the adjacent abutment, the permissible additional rail stresses due to the combined response of the structure and the track, due to variable actions, should be limited to the following design values:
-
-% \begin{enumerate}
-% 	\item Compression: $72KN/mm^2$
-% 	\item Tension: $92KN/mm^2$
-% \end{enumerate}
-
-% \begin{figure}[p]
-% 	\centering
-% 	\includegraphics[width=0.8\textwidth]{modeltrackstructure.pdf}
-% 	\caption{Model of a track/structure system. Extracted from \cite[Figure 6.19]{EC12}}
-% 	\label{fig:modeltrackstructure}
-% \end{figure}
-
-% \begin{figure}[p]
-% 	\centering
-% 	\includegraphics[width=0.8\textwidth]{variationlongitudinalshearforce.pdf}
-% 	\caption{Variation of longitudinal shear force with longitudinal track displacement for one track. Extracted from \cite[Figure 6.20]{EC12}}
-% 	\label{fig:variationlongitudinalshearforce}
-% \end{figure}
+]{modeltrackstructure.pdf}
 
 % When determining the combined response of track and structure to traction and braking forces, these forces should not be applied on the adjacent embankment unless a complete analysis is carried out considering the approach, passage over and departure from the bridge of rail traffic on the adjacent embankments to evaluate the most adverse load effects.
 
@@ -1388,7 +1281,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \end{figure}
 
 
-\chapter{Investigation of report series created by D181 Committee Group}
+\chapter{Investigation of report series created by D181 Committee Group}\label{sec:D181reportseries}
 
 
 \section{Introduction}

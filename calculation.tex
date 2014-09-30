@@ -1,9 +1,5 @@
 %!TEX root = first try.tex
 
-% \chapter{Case study}
-
-% A case study to assess the feasibility of the methods/criteria developed in previous paragraphs by using both FEM software and methods/criteria. 
-
 
 \chapter{Conclusion}
 
@@ -18,13 +14,13 @@
 
 In addition, D181 did research on other 2 resonance phenomenons, including axle repeat pattern resonance and kinematic movement resonance. Resonance was proofed to be possible and was successfully reproduced using VAMPIRE software. These two resonance are wavelength phenomenon, meaning resonance can happen on any train/bridge combination.
 
-Nosing force model was proposed by investigating the peak lateral force on first two traction units of the train in DT329. But this force is only representative for total peak lateral force for first two traction units of the running train. When the bridge is longer, larger total peak force could occur because more traction units will be expected to run on the bridge simultaneously. 
+However, the dynamic effects start to build up at a broader frequency, which means even if the resonance is avoided between bridge and train, the response of the bridge will still be amplified by dynamic loading. The relationship between total peak lateral force of the first two traction units and speed is found by using the simulation output and regression approach. The lateral force is greatly dependant on track quality, train type and speed.
 
-The relationship between total peak lateral force of the first two traction units and speed is found by using the simulation output and regression approach. The lateral force is greatly dependant on track quality, train type and speed.
+Nosing force model was proposed by investigating the peak lateral force on track with a standard deviation of 7mm. Such track irregularities ensures the occurrence of hunting effects thus this value is conservative. However, for tracks maintained as regulation requires, up to 2mm standard deviation is allowed. Since track force increases as track standard deviation does, it can be concluded that 100kN of characteristic value for nosing force is very conservative.
 
-A analytical solution for calculating real-time responses of the bridge is also developed. The solution uses the regression force model found in previous chapters. It is shown that when bridge length is near 50m, analytical output is close to simulation output. However, when length is higher, the analytical output is getting smaller than simulation output. This is due to when bridge length is longer than the length of two traction units, the lateral force model is no longer valid.
+By using the knowledge above, a practical method for easy calculating real-time mid-span resonance responses of the bridge is also developed. The method features a analytical model and an equivalent amplitude model. The equivalent amplitude model is developed based on both the simulation result of VAMPIRE software and the relationship between lateral force and train speed discovered earlier in the report. The practical method shows reasonable conservative prediction when compared to other reference data in DT329 reports.
 
-From the analytical results it can also be conclude that design value(100kN) of nosing force in EN1991-2 can be non-conservative when bridge length is longer. Several designing strategy is proposed in controlling both dynamic deflection and dynamic acceleration.
+However, as VAMPIRE simulation results only have span up to 120m, there’s no benchmark can be found to validate the correctness of the formula for longer span inputs. So it is highly advisable that more simulations/measurements to be done to verify the correctness of result for longer span bridges.
 
 
 

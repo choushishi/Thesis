@@ -238,154 +238,14 @@
 % \end{table}
 
 
-\chapter{Study on vehicle wavelength}
-% The objective of parametric study is to observe lateral vibration frequency range of different trains types. Due to limited source of reliable vehicle data, train modelled in this study is the same train data used in ERRI Report RP6\cite{d181} where necessary. Considering effects that was assumed to have been taken into account by ERRI in previous chapter, following parameters to be checked are determined. 
+\chapter{Lateral wavelength research on Dutch railway vehicles}\label{sec:wavelengthstudy}
 
-% Parameters to be examined:
-% \begin{enumerate}
-% \item different layouts
-% \item suspension system stiffness
-% \item mass of the train
-% \item track irregularities
-% \item bridge span
-% \item bridge mass
-% \item bridge stiffness
-% \end{enumerate}
+As a conclusion in DT329 report, the lateral dynamic effects of railway vehicles are all wavelength phenomenon. The lateral wavelength of trains is a constant characteristics of themselves which doesn't change with outer environment. However, while the wavelength for axle repeat pattern is easy to get, the wavelength for kinematic movement normally requires heavy FEM simulations and post analysis of the response spectrum. 
 
+Although it has been concluded in the previous chapter that avoiding resonance frequency is not a correct strategy for dynamics design in general, investigating the wavelength of trains can serve for the practical analysing methods that will be developed in following chapters in an alternative way.
 
-% To assess the effects of different parameters on train lateral frequency, following parametric study using FEM software are conducted. Please note that by default, the loading of every single axle is 22.5t, according to the maximum allowable axle load defined in \cite{EC15528}
+This research aims to investigate both wavelength of trains running in the Netherlands. The axle repeat pattern wavelength is created by collecting all the possible axle layouts. The kinematic movement wavelength is created by developing a approximate methods that avoids heavy FEM simulations. 
 
-% The process will start from comparably easy models then develop them into more sophisticated ones. With the development of the models, effects will be added into account one by one. Details of modelling will be described in following sections.
-
-% \section{Basic phenomenon modelling}
-% Phenomenon to be modelled: kinetic movement. track irregularities impact. 
-% The aim of modelling is to reproduce FEM analysis by VAMPIRE software done by ERRI D181 committee in 1996. 
-
-% Complicated simulation of vehicle-structure system is broken done into more basic modules. The order of modelling is shown in Fig.\ref{fig:modellingsequence}. More sophisticated model develops basing on simpler ones to minimize the appearance of errors. 
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{modellingsequence.pdf}
-%     \caption{Modelling sequence}
-%     \label{fig:modellingsequence}
-% \end{figure}
-
-
-% \subsection{Track irregularities profile modelling}
-% Trying to find a way of introducing track irregularities into the current model
-% Track irregularities are small imperfections cause by manufacturing, train running, etc. Sample track irregularities over a certain length of track can be measured, as well as numerical generated. Track irregularities is the first effect to be modelled because it is the exciting source of other train lateral dynamic effects.
-
-% An example of numerically generated track irrgularity profile is illustrated in Fig.\ref{fig:trackirregularities70_120}
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{trackirregularities70_120.pdf}
-%     \caption{Track alignment irregularities with wavelengths between 70 and 120. Extracted from \cite{dias2008study}}
-%     \label{fig:trackirregularities70_120}
-% \end{figure}
-
-
-
-% \subsection{Kinetic movement of single wheel-set}
-% This step is to reproduce and evaluate the reliability of a basic wheelset-track model. The result of this model will be compared with Klingel formula.
-
-% To be noted: Klignel kinematic movement description makes a number of simplifying assumptions since it neglects forces. For one, it assumes that the rolling resistance is zero. A wheelset (not attached to a train or truck), is given a push forward on a straight and level track. The wheelset starts coasting and never slows down since there are no forces (except downward forces on the wheelset to make it adhere to the track and not slip). But in the FEM model forces will be included to pave the way for following analyses.
-
-% Research showed that Klingel's formula coincides well with measured data from experiments. This proves that if the result of this simulation coincides with what Klingel formula predicted, the model is reliable.
-
-% This wheel-set will move on rigid and fixed tracks.
-
-% Some thoughts:
-% I need to model simplified contact stress, but due to unknown friction force, how do I maintain constant speed of train?
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{wheelsetmodel.pdf}
-%     \caption{Wheelset movement model}
-%     \label{fig:wheelsetmovementmodel}
-% \end{figure}
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{singlewheelset.pdf}
-%     \caption{Single wheel set kinetic oscillation view from top}
-%     \label{fig:singlewheelset}
-% \end{figure}
-
-
-% \subsection{Kinetic movement of single car}
-% This step is to add more sophisticated mass-spring system attached to the single wheel-set model in previous section. The mass-spring system represents the suspension system of cars in lateral direction. However, since the data to be used is the same data used in 1996, using more up-to-date train data is suggested for future researches.
-
-% Several car types will be input including locomotives, passenger car and freight car.
-
-% The car will move on flexible and fixed tracks. 
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{trainmodellongwheelprofile.pdf}
-%     \caption{Sample view of one single car model model used in FEM software from the front}
-%     \label{fig:trainmodellong}
-% \end{figure}
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{trainmodellateralsimple.pdf}
-%     \caption{Car model on rigid ground}
-%     \label{fig:trainmodellateralsimple}
-% \end{figure}
-
-% An example of table of suspension parameters is listed in Fig.\ref{fig:suspensiondata}:
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{suspensiondataexample.pdf}
-%     \caption{example of table of suspension parameters extract from RP6\cite{d181}}
-%     \label{fig:suspensiondata}
-% \end{figure}
-
-% Other parameter tables used are included in the appendix.
-
-% \subsection{Kinetic movement of complete train}
-% This step is to assemble car models defined in previous steps, trying to find out the influence of axle layouts on lateral frequency of single wheelset. Assemble rules are according to \cite{EC15528}. 
-
-% The connections between cars are hinged. 
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{trainmodellateralsimplecomplete.pdf}
-%     \caption{Complete train model on rigid ground}
-%     \label{fig:trainmodellateralsimplecomplete}
-% \end{figure}
-
-
-% \subsection{Coupled system modelling}
-% From now on train model will move on bridge decks modelled as simply supported beams.
-
-% Only one span of beam will be modelled because in RP6\cite[2.3]{d181} following statement mentioned 'there is no evidence that the resonant behaviour of the span has any effect on subsequent spans, since the resonant effects do not appear to grow from span to span.'. 
-
-% Relative interfacing between track and bridge structure will be neglected. Thus ballast will not be modelled. Track and bridge structure will be modelled as a whole to shorten calculation time. 
-
-% The interfacing of two systems will be investigated by following parametric studies.
-
-% Till this step the basics of modelling are finished. Future parametric studies will use this 
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{trainmodellateral.pdf}
-%     \caption{View of vehicle-Structure coupling model used in FEM software from the side3}
-%     \label{fig:trainmodellateral}
-% \end{figure}
-
-% Parameters to be examined:
-% \begin{enumerate}
-% \item different layouts
-% \item suspension system stiffness
-% \item mass of the train
-% \item track irregularities
-% \item bridge span
-% \item bridge mass
-% \item bridge stiffness
-% \end{enumerate}
 
 \section{Effects investigated in wavelength study}
 
@@ -397,24 +257,6 @@ Even when the axle repeat frequency matches the first lateral bending mode of ea
 
 the third investigated resonance effect 'coincidence between the length of the span and the kinematic wavelength of the trailing vehicles' is neglected in this thesis. 
 
-
-\section{Speed range of dynamic consideration}
-
-The thesis will focus on normal speed trains because IV-Groep is only interested in normal speed train lines, which its projects are being built for. Higher boundary is set according to maximum speed allowed on Dutch railways, while lower boundary is set according to an estimation. The reason for a lower boundary speed is that dynamics issues for railway infrastructures increase with respect to vehicle speed, which means generally less concern is needed when the speed of train is low. It's certain that there exists a threshold of speed for every type of train that dynamic behaviour of them start to be a problem to concern but this threshold of speed varies from different scenarios. Till now no solid research can give a value to this threshold of speed so this is why estimation of lowest speed is adopted. 
-
-My assumption of lower boundary of speed for consideration is 120 km/h. This is still very conservative because according to logic diagram Eurocode 1991-2\cite{EC12}, dynamic check is always needed when $V \geq 200km/h$ for vertical direction. Under same speed, the kinematic energy passed to bridge by running vehicle in vertical direction is apparently higher than that in lateral direction on a straight track. So it is believed that in lateral direction, the threshold will be even higher that 200 km/h according to Eurocode 1991-2. Value 120 km/h is taken according to \cite[Appendix F]{EC15528}: \textit{Speeds which do not require dynamic compatibility checks} where 120 km/h is the lowest speed can be found in the table, excluding special vehicle. This table is attached in this thesis in Appendix.\ref{app:speedsafe}.
-
-Upper boundary for consideration:
-
-Normal trains running on Dutch railway has a speed limit of 160 km/h so the upper boundary for speed is set to 160 km/h, which is also 44.44 m/s. 
-
-$$ V_{max} = 44.44m/s $$
-
-Lower boundary for consideration:
-
-$$ V_{min} = 33.33m/s $$
-
-However, it is strongly advised that future research investigate the lowest speed threshold for dynamic for consideration for train vehicles in the Netherlands due to the fact that the lower boundary used in this thesis in an assumption.
 
 \section{Equivalent conicity used in this study}
 According to \cite[Section.2.6]{esveld2001modern}, 
@@ -428,13 +270,15 @@ conicity range will be 0.2 to 0.3.
 It is suggested that vehicle maintenance sector ensure wheels of train wheels stay in the safe zone of conicity. 
 
 
-\section{Study on frequency of Klingel movement}
+\section{Study on wavelength of lateral kinematic movement}
+
+The kinematic movememnt of the train on the rail is much similar to klingel movement. This section aims to assess the capability of using klingel formula to predict the wavelength of the whole train.
 
 Klingel movement is proposed by Klingel which can well predict the moving trend of a single wheelset on a straight railway track. However, the kinematic movement of a certain wheelset assembled into a running train is different from the movement of a single free wheelset. This is due to multiple bodies interact with each other, introducing more complicated mechanism in wheel/rail interaction. 
 
-This parametric study focuses on Klingel movement of a single wheelset. First part of the parametric study will try to discuss the relationship of Kiingle frequency of a wheelset and kinematic movement frequency of a whole train. Second part of the parametric study will use realistic data of Dutch railway/vehilces to assess the frequency bandwidth of Dutch native trains.
+This  study focuses on Klingel movement of a bogie. First part of the  study will try to discuss the relationship of Kiingle frequency of a wheelset and kinematic movement frequency of a whole train. Second part of the study will use realistic data of Dutch railway/vehilces to assess the frequency bandwidth of Dutch native trains.
 
-Parametric to be studied:
+This section will include following parameters to be studied:
 
 Speed of train, radius of the wheel and conicity of the wheel. 
 
@@ -442,49 +286,9 @@ Gauge distance is fixed to 1435mm according to UIC standard.
 
 Frequency is linear to speed if other parameters are fixed.
 
-\section{Comparison between Klingle movement and train kinematic movement studied in D181 DT329}
+\subsection{Comparison between Klingle movement and train kinematic movement studied in D181 DT329}
 
-By comparing the result from above parametric study and kinematic wavelength obtained by D181, presented as table.C2 in original report, parametric study results show close prediction for kinematic wavelength of freight train locomotive/coach/wagon. It's because freight train suspension system is simpler and stiffer compared to passenger train's, making the behaviour of train acts more similar to the behaviour of a single wheelset of bigger mass. However, results of  wavelength of single wheelset is 33\% shorter than kinematic wavelength of train because suspension system of passenger coaches are much more sophisticated. The wavelength of passenger coach is highly related to the characteristics of its suspension systems. These data is often difficult to obtain. 
-
-
-
-The train parameter used in this part of parametric study is attached in the Appendix.\ref{app:mu}. 
-
-% Table generated by Excel2LaTeX from sheet 'Sheet 1'
-\begin{table}[htbp]
-  \centering
-  \caption{Add caption}
-    \begin{tabular}{cccccccccccccccc}
-    \toprule
-    & Gauge & BWD & Radius & Conicity & Wavelength\_0() &Wavelength & Frequency(1m/s) \\
-    \midrule
-    BR CLASS 56 LOCOMOTIVE  & 1435 & 1500 & 290 & 0.0500 & 12.8175 & 18.5418 & 0.054 \\
-    FS E444 LOCOMOTIVE  & 1435 & 1500 & 550 & 0.0500 & 17.6517 & 25.5349 & 0.039 \\
-    FS ETR500 LOCOMOTIVE  & 1435 & 1500 & 550 & 0.0500 & 17.6517 & 25.5349 & 0.039 \\
-    UIC FREIGHT WAGON (LADEN)  & 1435 & 1500 & 460 & 0.0500 & 16.1430 & 23.3524 & 0.043 \\
-    FS ETR500 COACH  & 1435 & 1500 & 440 & 0.0500 & 15.7882 & 22.8391 & 0.044 \\
-    UIC COACH  & 1435 & 1500 & 445 & 0.0500 & 15.8776 & 22.9685 & 0.044 \\
-    \textbf{}       &       &       &       &       &       &       &  \\
-    \textbf{} & 1435 & 1500 & 500 & 0.0250 & 23.8016 & 34.4313 & 0.029 \\
-    \textbf{} & 1435 & 1500 & 500 & 0.2000 & 8.4151 & 12.1733 & 0.082 \\
-    \textbf{} & 1435 & 1500 & 500 & 0.3000 & 6.8709 & 9.9395 & 0.101 \\
-    \textbf{}       &       &       &       &       &       &       &  \\
-    \textbf{} & 1435 & 1500 & 460 & 0.0250 & 22.8297 & 33.0253 & 0.030 \\
-    \textbf{} & 1435 & 1500 & 460 & 0.2000 & 8.0715 & 11.6762 & 0.086 \\
-    \textbf{} & 1435 & 1500 & 460 & 0.3000 & 6.5904 & 9.5336 & 0.105 \\
-    \bottomrule
-    \end{tabular}%
-  \label{tab:addlabel}%
-\end{table}%
-
-
-
-
-\section{Assess of frequency bandwidth based on realistic data of Dutch Rail/Vehicle}
-
-The wavelength of passenger coach is highly related to the characteristics of its suspension systems. These data is often difficult to obtain. To establish an easy approach, wavelength of passenger train calculated in this section will be multiplied by an amplification factor of 1.5. This value is obtain by train wavelength/wheelset wavelength ratio in previous parametric study. Please note this factor is an estimation. However, wavelength of freight train is not modified due to the conclusion that freight train's suspension system is stiff enough for the Klingle movement of a single wheelset to describe the kinematic movement of a whole freight train.
-
-However, future research is highly recommended to be conducted to study the kinematic wavelength of complete vehicles in the Netherlands, using realistic data of their suspension systems.
+In this section the kinematic wave length of trains used in D181 VAMPIRE simulations will be calculated by klingel's formula and compared with the wavelength value obtained in VAPIRE simulation.
 
 Klingel's formula:
 Klingel has done experiments and has given that the wavelength of a single wheelset:
@@ -507,67 +311,170 @@ where:
 
 I = Rigid wheel base
 
-Thus range of $\lambda$ is obtained by inputing data discussed in previous sections of this chapter.
+By inputting the related train parameters in used in VAMPIRE simulations into the Klingel formula, following table is obtained.
 
-Following plots are generated according to linear relationship between frequency and speed:
+\begin{table}[h]
+  \centering
+  \caption{Approxiamte letaral kinematic wavelength calcualted by improved Klingel formula}
+    \begin{tabular}{cccccccccccccccc}
+    \toprule
+    & Gauge & BWD & Radius & Conicity & Wavelength($\lambda_0$) &Wavelength($\lambda$) & \\
+    \midrule
+    BR CLASS 56 LOCO  & 1435 & 4180 & 290 & 0.05 & 12.8175 & 39.4750 \\
+    FS E444 LOCO  & 1435 & 2600 & 550 & 0.05 & 17.6517 & 36.5301 \\
+    FS ETR500 LOCO  & 1435 & 3000 & 550 & 0.05 & 17.6517 & 40.9070\\
+    UIC FREIGHT WAGON  & 1435 & 0 & 460 & 0.05 & 16.1430 & 16.1430 \\
+    FS ETR500 COACH  & 1435 & 3000 & 440 & 0.05 & 15.7882 & 36.5883 & \\
+    UIC COACH  & 1435 & 2560 & 445 & 0.05 & 15.8776 & 32.4718 &  \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
 
-$$ f = v \frac{1}{\lambda} $$
+
+By comparing the result from above table and kinematic wavelength obtained by D181, extracted as Table.\ref{tab:329kinematicwavelength}, parametric study results show close prediction for kinematic wavelength of freight train locomotive/coach/wagon. It's because freight train suspension system is simpler and stiffer compared to passenger train's, making the behaviour of train acts more similar to the behaviour of a single wheelset of bigger mass. 
 
 
-\begin{figure}[h!]
-\centering
-\begin{tikzpicture}[trim axis left, trim axis right]
-\begin{axis}[
-    title = {Lateral frequency of freight train with respect to speed},
-    xlabel={$v(m/s)$},
-    ylabel={$f(Hz)$},
-    ymin = 0, xmin = 0, xmax = 44.4,
-    legend entries={$\sfrac{1}{\lambda}=0.059$,$\sfrac{1}{\lambda} =0.072$,$v=33.3 m/s$,$f=0.3Hz$},
-    grid = both,
-    minor y tick num= 4,
-    minor x tick num= 4,
-    legend pos = north west,
-]
-\addplot[blue, domain = 0:44.4,samples=201,name path = A]{0.059*x};
-\addplot[red, domain = 0:44.4,samples=201, name path = B]{0.072*x};
-\addplot[mark=none, dashed]  coordinates {(33.3,0) (33.3,5) };
-\addplot[domain = 0:44.4,samples=10,dashed]{0.3};
-\addplot[gray] fill between[of=A and B];
-\end{axis}
-\end{tikzpicture}
+Wavelength for UIC freight wagon is a special case and it's not meeting the wavelength results in VAMPIRE simulations. This is probably because this car has a different design. It can be seen from in the parameter form that only 2 axles are installed and there's no wagon installed. See Figure.\ref{fig:2axlefreight} and Figure.\ref{fig:4axlefreight} for their different axle configurations.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{2alxefreight.png}
+	\caption{Example of a 2-axle freight wagon}
+	\label{fig:2axlefreight}
 \end{figure}
 
-\begin{figure}[h!]
-\centering
-\begin{tikzpicture}[trim axis left, trim axis right]
-\begin{axis}[
-    title = {Lateral frequency of passenger train with respect to speed},
-    xlabel={$v(m/s)$},
-    ylabel={$f(Hz)$},
-    ymin = 0, xmin = 0, xmax = 44.4,
-    legend entries={$\sfrac{1}{\lambda}=0.062$,$\sfrac{1}{\lambda}=0.076$,$v=33.3 m/s$,$f=0.3Hz$},
-    grid = both,
-    minor y tick num= 4,
-    minor x tick num= 4,
-    legend pos = north west,
-]
-\addplot[blue, domain = 0:44.4,samples=201, name path = A]{0.062*x};
-\addplot[red, domain = 0:44.4,samples=201, name path = B]{0.076*x};
-\addplot[mark=none,dashed]  coordinates {(33.3,0) (33.3,3.5) };
-\addplot[domain = 0:44.4,samples=10,dashed]{0.3};
-\addplot[gray] fill between[of=A and B];
-\end{axis}
-\end{tikzpicture}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{4alxefreight.png}
+	\caption{Example of a 4-axle freight wagon}
+	\label{fig:4axlefreight}
 \end{figure}
 
-\section{Study on frequency caused by axle repeat pattern}
 
-Following wavelength of axle repeat pattern is obtained by extracting MU standards in \cite{EC15528}. Detailed information can be found in Appendix.\ref{app:mu}
-% Table generated by Excel2LaTeX from sheet 'Axle repeat pattern'
+The train parameter used in this part of parametric study is attached in the Appendix.\ref{app:mu}. 
+
+
+\section{Assess of wavelength bandwidth based on realistic data of Dutch Rail/Vehicle}
+
+The wavelength of passenger coach is highly related to the characteristics of its suspension systems. These data is often difficult to obtain. Since the improved Klingel formula ignored the effect of suspension system, the results in this section is only approximate value for the wavelength of kinematic movement.
+
+
+Future research is highly recommended to be conducted to study the kinematic wavelength of complete vehicles in the Netherlands, using realistic data of their suspension systems.
+
+
+Table.\ref{tab:wavelengthrealistic} is created by processing Dutch wheel radius and wheelbase data collected from document\cite{trainparameters}. 
+Thus range of $\lambda$ is obtained by inputting realistic data in Kingel formula, illustrated the table.
+
+\begin{table}[h]
+  \centering
+  \caption{Wavelength of kinematic movement generated by realistic value}
+    \begin{tabular}{cccccccccccccccc}
+    \toprule
+    & Gauge & BWD & Radius & Conicity & Wavelength\_0() &Wavelength & \\
+    \midrule
+    \textbf{Freight 2-axle} & 1435 & 0 & 500 & 0.05 & 16.8303 & 16.8303 \\
+    \textbf{} & 1435 & 0 & 500 & 0.2 & 8.4151 & 8.4151  \\
+    \textbf{} & 1435 & 0 & 500 & 0.3 & 6.8709 & 6.8709  \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{Freight 4-axle} & 1435 & 1800 & 500 & 0.05 & 16.8303 & 26.9988 \\
+    \textbf{} & 1435 & 1800 & 500 & 0.2 & 8.4151 & 13.4994  \\
+    \textbf{} & 1435 & 1800 & 500 & 0.3 & 6.8709 & 11.0222  \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{Passenger} & 1435 & 2500 & 460 & 0.05 & 16.1430 & 32.4275 \\
+    \textbf{} & 1435 & 2500 & 460 & 0.2 & 8.0715 & 16.2137  \\
+    \textbf{} & 1435 & 2500 & 460 & 0.3 & 6.5904 & 13.2385 \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{} & 1435 & 2750 & 460 & 0.05 & 16.1430 & 34.8947 \\
+    \textbf{} & 1435 & 2750 & 460 & 0.2 & 8.0715 & 17.4473  \\
+    \textbf{} & 1435 & 2750 & 460 & 0.3 & 6.5904 & 14.2457  \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{Locomotive} & 1435 & 2400 & 500 & 0.05 & 16.8303 & 32.7960 \\
+    \textbf{} & 1435 & 2400 & 500 & 0.2 & 8.4151 & 16.3980  \\
+    \textbf{} & 1435 & 2400 & 500 & 0.3 & 6.8709 & 13.3889  \\
+    \textbf{}       &       &       &       &       &       &       &  \\
+    \textbf{} & 1435 & 2950 & 500 & 0.05 & 16.8303 & 38.4751 \\
+    \textbf{} & 1435 & 2950 & 500 & 0.2 & 8.4151 & 19.2376  \\
+    \textbf{} & 1435 & 2950 & 500 & 0.3 & 6.8709 & 15.7074  \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:wavelengthrealistic}%
+\end{table}%
+
+For conservative usage, please take the value yielded by 0.3 wheel conicity. However, as proved in previous section, this estimation is in closest estimation of simulation results when concity is 0.05.
+
+% Figure.\ref{fig:wavelengthkinematicfreight} and Figure.\ref{fig:wavelengthkinematicpass} are generated according to linear relationship between frequency and speed, using the wavelength $\lambda$ obtained in Table.\ref{tab:wavelengthrealistic}:
+
+% $$ f = v \frac{1}{\lambda} $$
+
+
+% \begin{figure}[h!]
+% \centering
+% \begin{tikzpicture}[trim axis left, trim axis right]
+% \begin{axis}[
+%     xlabel={$v(m/s)$},
+%     ylabel={$f(Hz)$},
+%     ymin = 0, xmin = 0, xmax = 44.4,
+%     legend entries={$\sfrac{1}{\lambda}=0.059$,$\sfrac{1}{\lambda} =0.072$,$v=33.3 m/s$,$f=0.3Hz$},
+%     grid = both,
+%     minor y tick num= 4,
+%     minor x tick num= 4,
+%     legend pos = north west,
+% ]
+% \addplot[blue, domain = 0:44.4,samples=201,name path = A]{0.059*x};
+% \addplot[red, domain = 0:44.4,samples=201, name path = B]{0.072*x};
+% \addplot[mark=none, dashed]  coordinates {(33.3,0) (33.3,5) };
+% \addplot[domain = 0:44.4,samples=10,dashed]{0.3};
+% \addplot[gray] fill between[of=A and B];
+% \end{axis}
+% \end{tikzpicture}
+% \caption{Lateral frequency of freight train with respect to speed(Kinematic movement)}
+% \label{fig:wavelengthkinematicfreight}
+% \end{figure}
+
+% \begin{figure}[h!]
+% \centering
+% \begin{tikzpicture}[trim axis left, trim axis right]
+% \begin{axis}[
+%     xlabel={$v(m/s)$},
+%     ylabel={$f(Hz)$},
+%     ymin = 0, xmin = 0, xmax = 44.4,
+%     legend entries={$\sfrac{1}{\lambda}=0.062$,$\sfrac{1}{\lambda}=0.076$,$v=33.3 m/s$,$f=0.3Hz$},
+%     grid = both,
+%     minor y tick num= 4,
+%     minor x tick num= 4,
+%     legend pos = north west,
+% ]
+% \addplot[blue, domain = 0:44.4,samples=201, name path = A]{0.062*x};
+% \addplot[red, domain = 0:44.4,samples=201, name path = B]{0.076*x};
+% \addplot[mark=none,dashed]  coordinates {(33.3,0) (33.3,3.5) };
+% \addplot[domain = 0:44.4,samples=10,dashed]{0.3};
+% \addplot[gray] fill between[of=A and B];
+% \end{axis}
+% \end{tikzpicture}
+% \caption{Lateral frequency of passenger train with respect to speed(Kinematic movement)}
+% \label{fig:wavelengthkinematicpass}
+% \end{figure}
+
+\section{Lateral wavelength of axle repeat pattern of Dutch Railway Vehicles}
+
+This section will generate lateral wavelength value of axle repeat pattern of Dutch Railway Vehicles. Although DT329 provided wavelength values for some trains in Table.\ref{tab:329axlerepeat} but the way of obtaining these values was not mentioned. So an interpretation is needed to understand how to obtain the axle repeat pattern wavelength.
+
+By observing Table.\ref{tab:329axlerepeat}, it can be seen that axle spacing layout is the only raw data needed to generate axle repeat pattern wavelength. The value is regardless of all other parameters. There are several axle space combinations in the table, but only one combination was finally put emphasis on during the analysis phase of axle repeat resonance research. They are
+
+\begin{enumerate}[-]
+    \item \textit{'wagon n axle m - wagon n+1 axle m'} for freight train, 
+    \item \textit{'coach n axle m - coach n+1 axle m'} for passenger train,
+    \item \textit{'coach n axle m - coach n+1 axle m'} for high speed train.
+\end{enumerate}
+
+It's still hard to comprehend above combinations so further interpretation is done by comparing it to train parameters in Appendix.\ref{app:dt329data}. It is found 
+
+By comparing Fig.\ref{fig:trainparameters} and Table.\ref{tab:329axlerepeat}. It can be seen that 'wagon n axle m - wagon n+1 axle m' means the distance between one axle in the previous car and another axle in next car in the same location. The same goes for passenger train and high speed train. To better understand this spacing, please see L\_Coa in Figure.\ref{fig:trainparameters}. 
+
 \begin{table}[h!]
   \centering
-  \caption{Wavelength of axle repeat pattern(m)}
+  \caption{Wavelength of axle repeat pattern($m$)}
     \begin{tabular}{rrrrrrrrr}
     \toprule
     \textbf{Type} & \textbf{L\_coa min} & \textbf{L\_coa max} & \textbf{2*L\_coa min } & \textbf{2*L\_coa max} \\
@@ -580,104 +487,85 @@ Following wavelength of axle repeat pattern is obtained by extracting MU standar
     \textbf{AB\_4} & 18.7  & 19.2  & 37.4  & 38.4  \\
     \textbf{SA\_1} & 9.2   & 9.8   & 18.4  & 19.6  \\
     \textbf{SA\_2} & 12.8  & 13.5  & 25.6  & 27    \\
+
     \bottomrule
     \end{tabular}%
   \label{tab:wavelengthaxlerepeat}%
 \end{table}%
 
-Range of wavelength(m) of first repeat pattern mode:
+Lateral wavelength of axle repeat pattern is then obtained by extracting all possible L\_Coa values from MU standards in \cite{EC15528}, illustrated in Table.\ref{tab:wavelengthaxlerepeat}. Detailed information about MU classes can be found in Appendix.\ref{app:mu}.
 
-$$ \lambda_{1stRepeat} \in (9.2,9.8) \cup (12.8,13.5) \cup (14.9, 16) \cup (17,17,5) \cup (18.7, 19.5) \cup (23.8,27.5)$$
+Since in DT329 resonance study, double length of L\_Coa is not taken into account in analysis phase, it is advisable for the usage of lateral axle repeat pattern wavelength, extracting only L\_Coa min column and L\_Coa max column.
 
-Range of wavelength(m) of second repeat pattern mode:
 
-$$ \lambda_{2ndRepeat} \in (18.4,19.6) \cup (25.6,27) \cup (29.8, 32) \cup (34,35) \cup (37.4, 39) \cup (37.6,55)$$
-
-Range of frequency(Hz) yielded by dividing 1m/s with wavelength of first repeat pattern mode:
-
-$$ \frac{1}{\lambda_{1stRepeat}} \in (0.036,0.042) \cup (0.051,0.053) \cup (0.057,0.059) \cup (0.063,0.067) \cup (0.074,0.078) \cup (0.102,0.109)   $$
-
-Range of frequency(Hz) yielded by dividing 1m/s with wavelength of second repeat pattern mode:
-
-$$ \frac{1}{\lambda_{2ndRepeat}} \in (0.018,0.021) \cup (0.026,0.027) \cup (0.029,0.029) \cup (0.031,0.034) \cup (0.037,0.039) \cup (0.051,0.054)   $$
-
-Following plot is generated according to linear relationship between frequency and speed:
-
-$$ f = v \frac{1}{\lambda_{repeat}} $$
-
-\begin{figure}[h]
-\centering
-\begin{tikzpicture} 
-    \begin{axis}[
-    title = {Two repeat pattern frequencies with respect to speed},
-    xlabel={$v(m/s)$},
-    ylabel={$f(Hz)$},
-    ymin = 0, xmin = 0, xmax = 44.4,
-    %legend entries={$i=0.057$,$i=0.07$,$v=33.3 m/s$,$f=0.3Hz$},
-    grid = both,
-    minor y tick num= 4,
-    minor x tick num= 4,
-    ]
-    \addplot[blue,name path=A,domain=0:44.4] {0.036*x};
-    \addplot[red, name path=B,domain=0:44.4] {0.042*x};
-    \addplot[black] fill between[of=A and B];
-    \addplot[blue,name path=C,domain=0:44.4] {0.051*x};
-    \addplot[red, name path=D,domain=0:44.4] {0.053*x};
-    \addplot[black] fill between[of=C and D];
-    \addplot[blue,name path=E,domain=0:44.4] {0.057*x};
-    \addplot[red, name path=F,domain=0:44.4] {0.059*x};
-    \addplot[black] fill between[of=E and F];
-    \addplot[blue,name path=G,domain=0:44.4] {0.063*x};
-    \addplot[red, name path=H,domain=0:44.4] {0.067*x};
-    \addplot[black] fill between[of=G and H];
-    \addplot[blue,name path=I,domain=0:44.4] {0.074*x};
-    \addplot[red, name path=J,domain=0:44.4] {0.078*x};
-    \addplot[black] fill between[of=I and J];
-    \addplot[blue,name path=K,domain=0:44.4] {0.102*x};
-    \addplot[red, name path=L,domain=0:44.4] {0.109*x};
-    \addplot[black] fill between[of=K and L];
-    \addplot[blue,name path=M,domain=0:44.4] {0.018*x};
-    \addplot[red, name path=N,domain=0:44.4] {0.021*x};
-    \addplot[gray] fill between[of=M and N];
-    \addplot[blue,name path=O,domain=0:44.4] {0.026*x};
-    \addplot[red, name path=P,domain=0:44.4] {0.027*x};
-    \addplot[gray] fill between[of=O and P];
-    \addplot[blue,name path=Q,domain=0:44.4] {0.029*x};
-    \addplot[red, name path=R,domain=0:44.4] {0.029*x};
-    \addplot[gray] fill between[of=Q and R];
-    \addplot[blue,name path=S,domain=0:44.4] {0.031*x};
-    \addplot[red, name path=T,domain=0:44.4] {0.034*x};
-    \addplot[gray] fill between[of=S and T];
-    \addplot[blue,name path=U,domain=0:44.4] {0.037*x};
-    \addplot[red, name path=V,domain=0:44.4] {0.039*x};
-    \addplot[gray] fill between[of=U and V];
-    \addplot[blue,name path=W,domain=0:44.4] {0.051*x};
-    \addplot[red, name path=X,domain=0:44.4] {0.054*x};
-    \addplot[gray] fill between[of=W and X];
-    \addplot[dashed,thick,red, domain=0:44.4] {0.3};
-\end{axis}
-\end{tikzpicture}
-\end{figure}
+% \begin{figure}[h!]
+% \centering
+% \begin{tikzpicture} 
+%     \begin{axis}[
+%     xlabel={$v(m/s)$},
+%     ylabel={$f(Hz)$},
+%     ymin = 0, xmin = 0, xmax = 44.4,
+%     %legend entries={$i=0.057$,$i=0.07$,$v=33.3 m/s$,$f=0.3Hz$},
+%     grid = both,
+%     minor y tick num= 4,
+%     minor x tick num= 4,
+%     ]
+%     \addplot[blue,name path=A,domain=0:44.4] {0.036*x};
+%     \addplot[red, name path=B,domain=0:44.4] {0.042*x};
+%     \addplot[black] fill between[of=A and B];
+%     \addplot[blue,name path=C,domain=0:44.4] {0.051*x};
+%     \addplot[red, name path=D,domain=0:44.4] {0.053*x};
+%     \addplot[black] fill between[of=C and D];
+%     \addplot[blue,name path=E,domain=0:44.4] {0.057*x};
+%     \addplot[red, name path=F,domain=0:44.4] {0.059*x};
+%     \addplot[black] fill between[of=E and F];
+%     \addplot[blue,name path=G,domain=0:44.4] {0.063*x};
+%     \addplot[red, name path=H,domain=0:44.4] {0.067*x};
+%     \addplot[black] fill between[of=G and H];
+%     \addplot[blue,name path=I,domain=0:44.4] {0.074*x};
+%     \addplot[red, name path=J,domain=0:44.4] {0.078*x};
+%     \addplot[black] fill between[of=I and J];
+%     \addplot[blue,name path=K,domain=0:44.4] {0.102*x};
+%     \addplot[red, name path=L,domain=0:44.4] {0.109*x};
+%     \addplot[black] fill between[of=K and L];
+%     \addplot[blue,name path=M,domain=0:44.4] {0.018*x};
+%     \addplot[red, name path=N,domain=0:44.4] {0.021*x};
+%     \addplot[gray] fill between[of=M and N];
+%     \addplot[blue,name path=O,domain=0:44.4] {0.026*x};
+%     \addplot[red, name path=P,domain=0:44.4] {0.027*x};
+%     \addplot[gray] fill between[of=O and P];
+%     \addplot[blue,name path=Q,domain=0:44.4] {0.029*x};
+%     \addplot[red, name path=R,domain=0:44.4] {0.029*x};
+%     \addplot[gray] fill between[of=Q and R];
+%     \addplot[blue,name path=S,domain=0:44.4] {0.031*x};
+%     \addplot[red, name path=T,domain=0:44.4] {0.034*x};
+%     \addplot[gray] fill between[of=S and T];
+%     \addplot[blue,name path=U,domain=0:44.4] {0.037*x};
+%     \addplot[red, name path=V,domain=0:44.4] {0.039*x};
+%     \addplot[gray] fill between[of=U and V];
+%     \addplot[blue,name path=W,domain=0:44.4] {0.051*x};
+%     \addplot[red, name path=X,domain=0:44.4] {0.054*x};
+%     \addplot[gray] fill between[of=W and X];
+%     \addplot[dashed,thick,red, domain=0:44.4] {0.3};
+% \end{axis}
+% \end{tikzpicture}
+% \caption{Two repeat pattern frequencies with respect to speed}
+% \label{fig:repeatpatternfrequencies}
+% \end{figure}
 
 \section{Conclusion of wavelength study}
 
-This wavelength study illustrates a tool of obtaining danger zone for train speed for a specific bridge first lateral natural frequency. 
+The lateral resonance effects between running train and railway bridge include two phenomenon: Axle repeat pattern and Kinematic movement. Those two phenomenon are all wavelength phenomenon, which means for every specific train, the wavelength of its axle repeat pattern and kinematic movement remains constant. In other word, the frequency of lateral dynamic effect caused by the operating of trains on bridge is directly related to the speed.
 
-For example, if a bridge has a first lateral natural frequency of 0.3Hz:
+Since the wavelength for the two phenomenon on the same train are not likely to be equal, the possible range of wavelength for both phenomenon were investigated in this chapter. The possible axle repeat pattern wavelength is approximately 10m-30m covering all train types and kinematic wavelength is 13m to 17m covering all train types. It can be seen that axle repeat pattern possess a broader range of wavelength than kinematic movement.
 
-\begin{enumerate}
-\item To avoid resonance between freight train and bridge caused by kinematic frequency coincidence, speed of train should be regulated above 4m/s
+It also can be concluded that for any railway bridge, resonance between the bridge itself and train can happen if the train is running at a corresponding resonance speed according to its wavelength. So avoiding resonance is not a valid strategy to choose, not to mention the apparent frequency shift phenomenon to be discussed in following chapters. 
 
-\item To avoid resonance between passenger train and bridge caused by kinematic frequency coincidence, speed of train should be regulated above 5m/s
-
-\item To avoid resonance caused by axle repeat pattern, speed of train should be regulated above 16m/s
-
-\end{enumerate}
-
-As a conclusion, if the speed of train is regulated above 16m/s, there won't be resonance between bridge and train.
+To be noted that these wavelength are also not the exact wavelength in real-life scenario but an estimation, especially for kinematic movement. But it gave away a rough idea about the magnitude of trains' wavelength, and, can be used for practical design purposes. To see the usage of studied wavelength, please see Chapter.\ref{sec:parcticalmethod}
 
 
-\chapter{Fundamental of analytical approach to be adopted in practical checking method}
+
+\chapter{Essentials of analytical approach to be adopted in practical checking method}
  
 \section{Introduction}
 This chapter aims to give a preliminary knowledge of a selected analytical model that simulates the perfect resonance scenario for railway bridge under lateral dynamic load. The knowledge contains the simplified model itself, its assumptions, field of application and explicit solutions. 
@@ -803,41 +691,34 @@ And the mid-span response time-history for deflection is :
     v(\sfrac{l}{2},t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]
 \end{equation}
 
+where:
+
+$v$ : deflection of the beam($m$)
+
+$l$ : span of the beam($m$)
+
+$EJ$ : lateral stiffness of the beam($Nm^2$)
+
+$Q$ : amplitude of harmonic load($N$)
+
+$c$ : speed of the train($m/s$)
+
+$\zeta$ : damping ratio
+
+$\mu$ : mass per unit length of the beam($kg/m$)
+
+$\omega_1$ : first natural circular frequency of the beam
+
+$\omega_1=\frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$
+
+$\omega = \sfrac{\pi c}{l}$
+
+$\omega_b = \frac{1}{2}\zeta\omega_1 $
+
+
+ 
 Above expression is the ready-to-use expression being adopted in practical checking method to be discussed in following chapter.
 
-% \section{Refining analytical solution}
-% In the case of lateral dynamics, constant force $P$ in Eq.\ref{eq:v(x,t)simplewithP} doesn't exist. 
-
-% According to (1.21)
-
-% \begin{equation}
-%     v_0 = \frac{Pl^3}{48EJ} \approx \frac{2P}{\mu l \omega_{(1)}^2} = \frac{2Pl^3}{\pi ^4 EJ}
-% \end{equation}
-
-
-% substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
-
-% \begin{equation}\label{eq:v(x,t)simpleharmonic}
-%     v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
-% \end{equation}
-
-% with 
-
-% \begin{dmath}
-%     \begin{tabular}{c c c}
-%         $Q = \{$\begin{tabular}{c c c}
-%             $5.2064\cdot c^{0.7495}$ & $c \leq 120 km/h$ \\
-%             $3.58\cdot c^{0.7495}$ & $120 km/h < c \leq  200 km/h $\\
-%             $3.10\cdot c^{0.7495}$ & $200 km/h \leq c \leq 350 km/h$ \\ \end{tabular}; 
-
-%         & $\omega_1 = \frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$ ;
-
-%         & $\omega = \frac{\pi c}{l}$ \\ 
- 
-%     \end{tabular}
-% \end{dmath}
-
-% A matlab script is written to perform iterate calculations based on Eq.\ref{eq:v(x,t)simpleharmonic}. The code is titled as \textit{fog.m}, attached in Appendix.\ref{sec:matlabscripts}. 
 
 \section{Damping}
 Damping is an important parameter influencing the dynamic behaviour of a structure. \ref{eq:equationofmotion} uses a different form of damping expression $\omega_b$, which can be converted from normal damping coefficient. Equation of motion using damping coefficient:
@@ -887,63 +768,64 @@ $$\omega_b = \frac{1}{2}\zeta\omega_1 = \frac{1}{2}\frac{\zeta\pi^2}{l^2}\sqrt{\
 
 where $\zeta$ is the structure damping ratio stated in EN1991-
 
-Adopting $\zeta = 0.001$ for steel railway bridges. This $\zeta$ value is used among all DT329 simulations run files. See Figure.\ref{fig:examplerunfile} for example.
+Adopting $\zeta = 1\%$ for steel railway bridges. This $\zeta$ value is used among all DT329 simulations run files. See Figure.\ref{fig:examplerunfile} for example.
+T329 resonance study. By comparing with the output of reproduced resonance in DT329, the analytical model can be verified.
 
-\section{Script structure}
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}
-    \node[draw] (fog) at (0,0) {
-        fog.m
-    };
-    \node[draw] (speed) at (6,1.5) {
-        Speedenvelop.m
-    };
-    \node[draw] (mass) at (6,0.5) {
-        Massenvelop.m
-    };
-    \node[draw] (stiff) at (6,-0.5) {
-        Stiffenvelop.m
-    };
-    \node[draw] (span) at (6,-1.5) {
-        Spanenvelop.m
-    };
-    \draw[->,draw=blue] (fog) to (speed);
-    \draw[->,draw=blue] (fog) to (mass);
-    \draw[->,draw=blue] (fog) to (stiff);
-    \draw[->,draw=blue] (fog) to (span);
-\end{tikzpicture}
+\section{Verification of the explicit solution}
+Since circular frequency of damping $\omega_b$ is not clearly defined by Fryba, it is necessary to verify the correctness of both explicit solution and deduced $\omega_b$ expression.
 
-\caption{Overview of script structure }
-\label{fig:scriptstructure}
-\end{figure}
+The verification is done by comparing the result of Eq.\ref{eq:v(x,t)simpleharmonic} with the result of a explicit solution in a different form obtained by another deducing method.  
 
-In order to conduct the study efficiently, scripts in Matlab language are written to automate research procedure. See Appendix.\ref{sec:matlabscripts} for codes.
+The result in \cite{abu2000vibration} is selected to compare. This report is researching vibration of beams with general boundary conditions due to a moving harmonic load. The differential equation is illustrated as follows:
 
-\textit{fog.m} is the core file for response calculation. This file is responsible for receiving bridge/train parameter input and yield time-history response for mid-span of the bridge. It also handles conversion of force amplitude from train speed. Calculation of bridge stiffness is also implemented, making it easier to input stiffness representing routine used in DT329.
+\begin{equation}\label{eq:hilal}
+    EIv''''+\mu \ddot{v} + r_a \dot{v}+r_i \dot{v}''' = p(x,t)
+\end{equation}
 
-Other scripts files are written to iterate fog.m in different parameters in order to conduct parametric study.
+The difference between Eq.\ref{eq:hilal} and Eq.\ref{eq:v(x,t)simpleharmonic} is that it offers broader boundary conditions such as changing speed of the load and various kinds of supports. As a result of more general equation, the deduction steps are much more complicated. However, two solutions should yield same results under same boundary conditions that:
 
-Read comments between the code for detailed explanation.
-\textbf{remember to add comment}
+\begin{enumerate}
+    \item Load moving at constant speed,
+    \item Frequency of load equals frequency of the beam,
+    \item Internal damping is 0,
+    \item Simple hinge support at both ends of the beam.
+\end{enumerate}
 
-\section{Comparison between analytical model and DT329 simulation results}
-
-
-Several resonance phenomenon were produced during DT329 resonance study. By comparing with the output of reproduced resonance in DT329, the analytical model can be verified.
-
-\subsection{First attempt}
+One plot from the parametric study of \cite{abu2000vibration} meets the above requirement and is selected and illustrated in Figure. Parameter used in this plot is $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{c1}
-    \caption{Figure C1 extracted from \cite{d181dt329} }
-    \label{fig:c1}
+    \includegraphics[width=0.5\textwidth]{hilalplot}
+    \caption{Reference plot extracted from \cite{abu2000vibration}. Condition: $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$. Y axis for dynamic amplification factor.}
+    \label{fig:hilalplot}
 \end{figure}
 
-It can be observed in Figure.\ref{fig:c1} that the greatest resonance happened at train running at $14m/s$, on a bridge with following parameters: $l=54m$, $EJ=2.43e10Nm^2$, $mu=6000kg/m$. Displacement is approximately $15mm$ and acceleration is approximately $1.0m/s^2$.
+Next step is to translate parameters used in above plot to usable parameters in Eq.\ref{eq:v(x,t)simpleharmonic}.
 
-A analytical run is done using the exactly same bridge parameters and using the load model proposed in Figure.\ref{fig:peaklateralforceregression}. 
+
+$$c_{cr} = \frac{\omega_1 L}{\pi} = \frac{\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+
+$$\alpha = \frac{c}{c_{cr}}$$
+
+$$c = \alpha c_{cr} = \frac{\alpha\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+
+$EJ$,$\mu$,$l$ needs to be selected to yield value for $c$, thus following values are randomly selected:
+
+$$EJ = 2.43e10 Nm^2$$
+
+$$l = 54m$$
+
+$$\mu = 6000 kg/m$$
+
+$$c_{cr} = 117.05 m/s$$
+
+$$ c = 29.26 m/s $$
+
+A Matlab script is written to automate numerical calculating procedure. By typing 
+
+\texttt{fogtest(2.43e10,54,6000,29.26,0.05)}
+
+into the console. Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} is obtained.
 
 \begin{figure}[h!]
 \centering 
@@ -951,262 +833,32 @@ A analytical run is done using the exactly same bridge parameters and using the 
 \newlength\figurewidth 
 \setlength\figureheight{6cm} 
 \setlength\figurewidth{6cm} 
-\input{./matlab/EJ24300000000L54mu6000c14.tikz} 
-\caption{EJ24300000000L54mu6000c14.tikz} 
-\label{fig:EJ24300000000L54mu6000c14} 
+\input{./matlab/EJ24300000000L54mu6000c29daf.tikz} 
+\caption{Time history of dynamic amplification factor in mid-span of the beam. Parameters:$EJ=2.43e10Nm^2$,$L=54m$,$\mu=6000kg/m$,$c=29.26m/s$} 
+\label{fig:EJ24300000000L54mu6000c29daf.tikz} 
 \end{figure}
 
-Output is presented in Figure.\ref{fig:EJ24300000000L54mu6000c14}. Figure.\ref{fig:EJ24300000000L54mu6000c14} shows the time-history of mid-span response under model moving at $14m/s$, with maximum deflection at $17.1mm$ and maximum acceleration at $0.97 m/s^2$.
+By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} it can be concluded that results are the same. Then it can be further concluded that Eq.\ref{eq:v(x,t)simpleharmonic} and expression for $\omega_b$ are both correct.
 
-It can be concluded than analytical solution coincides well with the output of the simulations in the first comparison attempt because the output were close to each other and analytical output is slightly higher. This is acceptable because analytical model simulates a perfect resonance scenario while DT329 simulations takes multiple-axles into account. Axles may interfere with each other(different axle spacing) in the sense of harmoniously exciting the bridge, introducing disturbance into the development of resonance. So DT329 simulations are not perfect resonance scenarios and their output is supposed to be lower than analytical solutions.
 
-\subsection{Second attempt}
-
-The second attempt of comparison is conducted by extracting data from Figure.\ref{fig:c3}.  The bridge parameters are $l=54m$, $EJ=2.43e10Nm^2$, $mu=6000kg/m$, train is running at $60km/h$, converted to $16.67m/s$. 
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{c3}
-    \caption{Figure C3 extracted from \cite{d181dt329} }
-    \label{fig:c3}
-\end{figure}
-
-Maximum displacement in simulation is approximately $12.5mm$ and acceleration is approximately 0$.3m/s$. The acceleration value is surprisingly low with a step change. The reason causing this unexpected trend in acceleration is unknown, it is recommended to adopt $1.0m/s$ as a more general acceleration value. $1.0m/s$ is the acceleration for $1/3404$ stiffness and $1/5576$ stiffness. It can been seen that at these 2 stiffness, the resonance effect is already building up.
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/EJ24300000000L54mu6000c17.tikz} 
-\caption{EJ24300000000L54mu6000c17.tikz} 
-\label{fig:EJ24300000000L54mu6000c17} 
-\end{figure}
-
-Analytical solution outputs maximum displacement $21.8mm$, and maximum deflection at $1.06m/s^2$. Analytical solution is still conservative compared to simulation results. 
-
-\subsubsection{Third attempt}
-
-The third attempt is to reproduce the resonance on a longer bridge. The bridge parameters are $l=120m$, $EJ=3e11Nm^2$, $mu=6000kg/m$. Maximum displacement is approximate $17mm$ and maximum acceleration is approximate $1.0m/s^2$
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{c9}
-    \caption{Figure C3 extracted from \cite{d181dt329} }
-    \label{fig:c9}
-\end{figure}
-
-The analytical result if presented in Figure.\ref{fig:EJ300000000000L120mu6000c15}.
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/EJ300000000000L120mu6000c15.tikz} 
-\caption{EJ300000000000L120mu6000c15.tikz} 
-\label{fig:EJ300000000000L120mu6000c15} 
-\end{figure}
-
-The maximum displacement yielded from analytical solution is $1.65mm$ and maximum acceleration is $0.099m/s^2$. Analytical solution is no longer valid in this because its output is dramatically smaller than DT329 simulations. 
-
-The only difference between 3rd attempt and other two attempts is the length of the bridge while other two attempts yield satisfying results. The reason for this is that force model is no longer valid when bridge is longer. Longer bridge can have more traction units running on it simultaneously, introducing greater lateral force to the bridge. 
-
-Several additional attempts of analytical calculation were done to see the magnitude of an equivalent lateral force sufficient in producing the same displacement($17mm$) as DT329 simulation does. These additional calculations were done by manually increasing the force input little by little. It is then found that an equivalent force of $1200kN$ is barely enough for reproduce such a displacement.
-
-EN1991-2 states that nosing force has an characteristic value of $100kN$ while in this case an equivalent force of $1200kN$ is needed to reproduce $17mm$ displacement. What's more, trains running at higher speed, which is also completely possible, will result in even higher lateral force than $120kN$.
-
-It can be concluded that the magnitude of nosing force defined in EN1991-2 is not conservative for the whole range of bridges, especially for long span bridges. 
-
-\subsection{Alternative load model}
-
-An alternative load model can be found in \cite[Figure.4.1]{d181} and it is extracted as Figure.\ref{fig:lateralUDL}. Although this model is also proposed in RP6 but due to unknown reason it is not adopted in EN1991-2. This model is more accurate in the sense that it gives a more detailed relationship between lateral force and bridge length. This concept coincides and proofs the conclusion in previous section.
-
-However, the background of this plot is also unknown. It is believed that data of track quality study of Parametric Study DT329\cite{d181dt329} in phase II is used to create the plot but explanation is nowhere to be found. This plot is hardly usable for practical purposes but it is a good reference for a rough idea of lateral force induced by trains on a bridge with certain length.
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{lateraluniformdistribute}
-    \caption{Lateral actions U.D.L. Extracted from \cite[Figure.4.1]{d181} }
-    \label{fig:lateralUDL}
-\end{figure}
-
-To use this plot in analytical solution, an equivalent concentrated force needed to be converted from uniformly distributed force.
-
-The deflection at mid-span of a simply supported beam loaded by uniformly distributed load $q$ is
-
-$$ \delta = \frac{5}{384} \frac{ql\cdot l^3}{EI} $$
-
-The deflection at mid-span of a simply supported beam loaded by concentrated force $P$ at mid-span is
-
-$$ \delta = \frac{1}{48} \frac{P\cdot l^3}{EI} $$
-
-Thus equivalent concentrated force $P$ can be obtain by 
-
-$$P = \frac{1 \cdot 384}{48 \cdot 5} ql = \frac{5}{8}ql$$
-
-For example, using the alternative load model in Figure.\ref{fig:lateralUDL}, equivalent concentrated force for $120m$ bridge is $\sfrac{5}{8}\cdot 120m \cdot 4kN/m=300kN$. It gives an conservative force output compared to 120kN.
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/UDL2CL.tikz} 
-\caption{Total load verses span calculated from Figure.\ref{fig:lateralUDL}} 
-\label{fig:UDL2CL} 
-\end{figure}
-
-
-\section{Alternative analytical model for longer span bridges}
-Moving continuous load model can be adopted.
-
-\textbf{Add deduction procedure}
-
-Solution:
-
-\begin{equation}
-    v(x,t) = \frac{v_0}{2}(1+\cos \omega t)\sin \frac{\pi x}{l}
-\end{equation}
-
-Maximum deflection
-
-\begin{equation}
-    v_{max} = v_0
-\end{equation}
-
-No dynamics amplification for longer span bridges. Calculate using alternative load model. This is because train speed is far lower than critical speed.
-
-\section{Parametric research}
-Since it is concluded in previous chapter that load model is no longer valid when 
-span is large, this parametric research will focus on stiffness of the bridge and mass of the bridge. Length of the bridge will be fixed at $54m$.
-
-\subsection{Mass}
-
-The first parameter examined is mass. \textit{Massenvelop.m} is run to iterate calculation. Mass were checked from $1000kg/m$ to $12000kg/m$. Other parameters were $l=54m$, $EJ=2.43e10Nm^2$, $mu=6000kg/m$. The output are presented in Figure.\ref{fig:medefEJ24300000000L54c14min1000max12000} as deflection and Figure.\ref{fig:meaccEJ24300000000L54c14min1000max12000} as acceleration.
-
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/medefEJ24300000000L54c14min1000max12000.tikz} 
-\caption{medefEJ24300000000L54c14min1000max12000.tikz} 
-\label{fig:medefEJ24300000000L54c14min1000max12000} 
-\end{figure}
-
-Incresed mass generally decreases deflection in trend but with a lengthening periodic sinuous wave shape. Further (linear)regression on deflection can be made from peaks.
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/meaccEJ24300000000L54c14min1000max12000.tikz} 
-\caption{meaccEJ24300000000L54c14min1000max12000.tikz} 
-\label{fig:meaccEJ24300000000L54c14min1000max12000} 
-\end{figure}
-
-The acceleration simply decreases as mass increases.
-
-\subsection{Stiffness}
-
-The next parameter examined is stiffness. \textit{Speedenvelop.m} is run to iterate calculation. Stiffness were checked from $2e10 Nm^2$ to $3e11 Nm^2$ Other parameters are $l=54m$, $mu=4000kg/m$, $c=14m/s$. The output is presented in Figure.\ref{fig:stedefmin20000000000max300000000000L54c14mu4000} as deflection and Figure.\ref{fig:steaccmin20000000000max300000000000L54c14mu4000} as acceleration. 
-
-
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/stedefmin20000000000max300000000000L54c14mu4000.tikz} 
-\caption{stedefmin20000000000max300000000000L54c14mu4000.tikz} 
-\label{fig:stedefmin20000000000max300000000000L54c14mu4000} 
-\end{figure}
-
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/steaccmin20000000000max300000000000L54c14mu4000.tikz} 
-\caption{steaccmin20000000000max300000000000L54c14mu4000} 
-\label{fig:steaccmin20000000000max300000000000L54c14mu4000} 
-\end{figure}
-
-In addition, dynamic coefficient is plotted in Figure.\ref{fig:steacomin20000000000max300000000000L54c14mu4000}. Dynamic coefficient becomes relevant in stiffness case.This is because stiffness is relevant to static deflection. Static deflection decreases as stiffness increases. 
-
-The dynamic coefficient is an indication for the amplification level of resonance effect. Usually symboled as $\delta$, dynamic coefficient is simply the ratio of the maximum dynamic deflection to the static deflection at mid-span of a beam:
-
-$$\delta = \frac{MAX v(\sfrac{l}{2},t )}{v_0}$$
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/steacomin20000000000max300000000000L54c14mu4000.tikz} 
-\caption{steacomin20000000000max300000000000L54c14mu4000} 
-\label{fig:steacomin20000000000max300000000000L54c14mu4000} 
-\end{figure}
-
-\subsection{Speed}
-
-The next parameter examined is speed. \textit{Speedenvelop.m} is run to iterate calculation. Stiffness were checked from $1m/s$ to $30m/s$ Other parameters are $l=54m$, $mu=4000kg/m$,$EJ = 3e10 Nm^2$. The output is presented in Figure.\ref{fig:spedefEJ30000000000L54min1max30mu4000.tikz}as deflection and Figure.\ref{fig:spedefEJ30000000000L54min1max30mu4000.tikz} as acceleration.
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/spedefEJ30000000000L54min1max30mu4000.tikz} 
-\caption{spedefEJ30000000000L54min1max30mu4000} 
-\label{fig:spedefEJ30000000000L54min1max30mu4000.tikz} 
-\end{figure}
-
-
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/speaccEJ30000000000L54min1max30mu4000.tikz} 
-\caption{speaccEJ30000000000L54min1max30mu4000.tikz} 
-\label{fig:speaccEJ30000000000L54min1max30mu4000} 
-\end{figure}
-
-It can be seen that increasing speed increases both maximum deflection and maximum acceleration. 
-
-\subsection{Conclusion}
-
-An analytical method for calculating resonance response at mid-span of the bridge is developed on the basis of load model obtained in previous chapters. But it's no suitable for longer span bridges because load model is no longer valid. For longer span bridges, it is advised to use an alternative load model and a different analytical solution.
-
-Parametric research shows that speed, mass and stiffness all have remarkable effects on the response of the bridge. However, as an easier way of controlling, speed of the train also has the simplest relationship with response of the bridge. Although increased speed provides less time for resonance effect to build up, its increased lateral force is more dominating. 
-
-However, setting up additional speed limit for trains may not be favoured by train operators. Increasing stiffness also provides a reliable decrement in lateral deflection but it can be less effective when original stiffness is already high. Also, increasing stiffness can increase lateral acceleration for a slight effect. This increased acceleration could be critical because for most of time, passenger comfort can be the governing criterion for bridge dynamics design. And passenger comfort criterion is regard to lateral accelerations. In addition, dynamic coefficient also increases when stiffness increase. 
-
-Controlling mass, on the other hand, can be adopted when running out of options because although increasing mass generally decreases deflection, but due to its sinuous characteristics(Figure.\ref{fig:medefEJ24300000000L54c14min1000max12000}), deflection can increase if not handled properly. It's worth noting that using mass as a way of controlling acceleration is reliable.
-
-Length in practical is not flexible so it's not listed as a way of controlling.
-
-Thus, ways of controlling deflection in more preferable order is 
-
-$$speed > stiffness > mass$$
-
-Ways of controlling acceleration in more preferable order is 
-
-$$speed > mass > stiffness$$
-
-
-\chapter{New practical method for checking lateral dynamic response of railway bridges}
+\chapter{New practical method for checking lateral resonance response of railway bridges based on VAMPIRE simulation results }\label{sec:parcticalmethod}
 
 \section{Introduction}
 
-This chapter proposes a new method for checking lateral dynamic response of railway bridges. This method aims to provide an engineering solution for checking the deflection and acceleration of railway bridges under horizontal dynamic train load. The method features the combined usage of a simplified analytical structure model and a more refined lateral force model. The analytical structure model simulates a perfect resonance scenario for the target bridge. And the refined load model, which is a concentrated harmonic moving load, represents the lateral dynamic effects that occur because of the passing of the train. The combination of these two analytical elements will generate a resonance response conservative compared to the simulation output in DT329 because varies types of disturbance were included in these simulation runs.
+This chapter proposes a new method for checking lateral resonance response of railway bridges. This method aims to provide an engineering solution for checking the deflection and acceleration of railway bridges when resonance happens under horizontal dynamic train load. Both creation and verification of the method is based on VAMPIRE simulation results provided in DT329 research.
 
-The analytical structure model and its explicit solution has already been worked out in previous chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
+The method features the combined usage of a simplified analytical structure model and a more refined lateral force model. The analytical structure model simulates a perfect resonance scenario for railway bridge. And the refined load model, which is a concentrated harmonic moving load, represents the lateral dynamic effects that occur because of the passing of the train. The combination of these two analytical elements will generate a resonance response conservative compared to the simulation output in DT329 because varies types of disturbance were included in these simulation runs.
+
+The analytical structure model will adopted the model introduced in previous chapter and its explicit solution has already been worked out in the same chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
 
 \section{Overview of this chapter}
 
 To give a clear overview of this chapter, procedure of development of the method is given as following:
 
 \begin{enumerate}
-    \item \textit{Developing:} Develop a more practical load model to be used in pair with the analytical model introduced in previous chapter. See Section.\ref{sec:refinedloadmodel}
+    \item \textit{Developing:} Develop a more practical load model to be used in pair with the analytical model introduced in previous chapter based on the VAMPIRE simulation outputs. See Section.\ref{sec:refinedloadmodel}
         \begin{enumerate}[label*=\arabic*.]
-            \item Introduction to the usage of analytical model.  
+            \item Overview of both VAMPIRE numerical simulation method and analytical method. See Section.\ref{sec:overviewvampireanalytical}
             \item Find the analytical equivalent nosing forces amplitude for freight trains in 3 different cases presented in DT329 resonance research simulation. The equivalent nosing force amplitude is the exact force amplitude to be substituted into analytical model as lateral harmonic force input, yielding the same response in DT329 simulation output. See Section.\ref{sec:findingequivalentamplitude}
             \item Find regular pattern and key parameter for the magnitude of nosing forces amplitude for freight trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
             \item Develop a conservative load model based on observed pattern of nosing force of freight trains. This load model is conservative because of the research result of DT329, that freight trains generates greater lateral force on track compare to passenger trains and high speed trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
@@ -1218,6 +870,24 @@ To give a clear overview of this chapter, procedure of development of the method
     \item \textit{Finalizing:} Illustrate the usage of the method by applying it on a real railway bridge
 \end{enumerate}
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[node distance=1cm, auto,]
+    \node[punkt] (set1) {VAMPIRE simulation results inventory 1};
+    \node[punkt, inner sep=15pt,right=2cm of set1]
+        (am) {Analytical Method:Explicit solution and equivalent load amplitude};
+    \node[punkt, right=2cm of am] (set2) {VAMPIRE simulation results inventory 2};
+    \draw[->] (set1) to (am);
+    \draw[->] (set2) to (am);
+    \node[right=0.8cm of set1] (dummy1) {};
+    \node[above=0.1cm of dummy1] (creation) {creation};
+    \node[right=0.9cm of am] (dummy2) {};
+    \node[above=0.1cm of dummy2] (verification) {verification};
+\end{tikzpicture}
+\caption{Workflow of the creation of analytical method}
+\label{fig:workflowanalyticalmethod}
+\end{figure}
+
 \section{Development of refined load model}\label{sec:refinedloadmodel}
 
 The load model provided in EN1991-2(nosing force) and D181 RP6(proposed criteria) are too conservative. The reason is that these forces are obtained by simulations ran on poorest maintained tracks with $7mm$ track irregularity standard deviation. In fact tracks are allowed to have lateral irregularities up to $1.8mm$ according to EN13848(Section.\ref{sec:lateraltrackirrgularities}). So existing lateral force models are enormous compared to real-life scenario. 
@@ -1226,7 +896,7 @@ In addition, the existing load models are representative for hunting effects\cit
 
 Thus these existing load models are too big and not suitable for the analytical solution. A more precise load model is needed for coupled usage for analytical solution.
 
-\subsection{Introduction to the analytical model to be used in pair with equivalent force amplitude}
+\subsection{Overview of VAMPIRE numerical simulation method and analytical method}\label{sec:overviewvampireanalytical}
 
 The analytical model itself and its explicit expression have already been introduced and described in previous chapter. This section will give a overview on the input parameters of both VAMPIRE simulation and analytical model. This is not only due to the fact that VAMPIRE simulation was proved by D181 committee to be in close prediction with situ measurements, but also because in following sections VAMPIRE simulation results will be used as reference comparison data for the development of analytical model's pairing load model. 
 
@@ -1254,7 +924,7 @@ The analytical model itself and its explicit expression have already been introd
 
 As demonstrated in Table.\ref{tab:comparisonsimulationanalytical}, while input parameters for simulation are complicated, analytical model possesses less input parameters. 
 
-The single moving harmonic load in analytical model shall be capable of providing dynamic effect caused by train speed, track irregularities, wheel profile and wheel-rail interaction to the analytical model. Correct single moving harmonic load input shall yield the same result as VAMPIRE simulation provided that same span, stiffness, mass and damping value are adopted in both two calculating methods.
+That table shows that the single moving harmonic load in analytical model shall be capable of providing dynamic effect caused by train speed, track irregularities, wheel profile and wheel-rail interaction to the analytical model. Correct single moving harmonic load input shall yield the same result as VAMPIRE simulation provided that same span, stiffness, mass and damping value are adopted in both two calculating methods.
 
 Thus finding the correct expression for the harmonic moving force is vital to the analytical model. The harmonic moving force has 3 parameters: speed $c$, frequency $\Omega$  and amplitude $Q$. Since speed $c$ simply equals to train speed and frequency $\Omega$ equals to the first natural bending frequency of the beam $\omega_1$, the amplitude of the harmonic force remains to be researched. Further development of the amplitude expression will be discussed in following sections.
 
@@ -1334,7 +1004,28 @@ As a conclusion, this hypothesis expression is obtained by processing the output
 
 \section{Verification of the method}
 
-In this section the combined usage of analytical model and hypothesis expression for equivalent force amplitude is examined and verified. A matlab script is written to function the analytical model with hypothesis expression for equivalent load amplitude implemented. Now that force amplitude $Q$ is a function of speed, there's no longer necessary to input the force amplitude manually. To verify the correctness of combined usage of these two elements, other reference data from resonance research in DT329 are selected. 
+In this section the combined usage of analytical model and hypothesis expression for equivalent force amplitude is examined and verified. A matlab script is written to function the analytical model with hypothesis expression for equivalent load amplitude implemented. Now that force amplitude $Q$ is a function of speed, there's no longer necessary to input the force amplitude manually. To verify the correctness of combined usage of these two elements, other reference data from resonance research in DT329 are selected and presented in Figure.\ref{fig:c12}, \ref{fig:c13} and \ref{fig:c14}. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c12}
+    \caption{Figure C12 extracted from \cite{d181dt329} }
+    \label{fig:c12}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c13}
+    \caption{Figure C13 extracted from \cite{d181dt329} }
+    \label{fig:c13}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{c14}
+    \caption{Figure C14 extracted from \cite{d181dt329}. An minor error is observed in y-axis label. Upper boundary of the axis should be 0.116 }
+    \label{fig:c14}
+\end{figure}
 
 To assure conservative comparison, only axle repeat pattern resonance results are selected because their output are more pronounced than kinematic resonance effect. Altogether 5 sets of reference data are selected. They include 2 reference data for freight trains(C3,C9), 2 reference data for passenger train(C12,C13) and 1 reference data for high-speed train(C14). Due to the fact that freight trains yield greater force than the other two types of trains, the analytical result should be conservative for the latter 3 cases. Since the output of C3 and C9 are already presented in Table.\ref{tab:parametersetupsandequivalentforce} so they are not being presented with other 3 sets of data this time. The bridge parameters and trains speed involved in these 3 cases(C12,C13,C14) are input into the analytical solution to yield analytical results.
 
@@ -1398,9 +1089,17 @@ It can be seen that analytical results always keep a conservative margin above t
 
 In practical usage, the speed that generates the highest peak response is unknown. Thus it is necessary to obtain the peak response for all speeds within the possible speed range. This is done by iterating the existing Matlab script with different speed. The increment in speed iteration is set in a way that ensures at least 1000 runs are done to guarantee precession. An example is illustrated as follows to show the usage on a real bridge project.
 
-For an arch railway bridge located near Amsterdam, possessing following parameters:
+For an arch railway bridge located near Amsterdam, first step to is to collect following parameters:
 
 $L = 255m$, $m = 5222e3kg$, $\mu = 2.0478e4 kg/m$, $EJ = 6.56e12Nm^2$
+
+where:
+
+$L$: span of the bridge
+
+$\mu$: uniform mass per unit length of the bridge
+
+$EJ$: lateral stiffness of the bridge
 
 to test through a speed range of $1m/s - 30m/s$
 
@@ -1416,7 +1115,7 @@ the envelop for displacement is generated and illustrated in Figure.\ref{fig:spe
 \setlength\figureheight{6cm} 
 \setlength\figurewidth{6cm} 
 \input{./matlab/spedefEJ6560000000000L255min1max30mu20478.tikz} 
-\caption{spedefEJ6560000000000L255min1max30mu20478} 
+\caption{Peak deflection at mid-span with regard to changing train speed. Parameters: $EJ = 6.56e12Nm^2$, $L= 255m$,$\mu = 20478 kg/m$, $c_{min}=1m/s$, $c_{max} = 30m/s$} 
 \label{fig:spedefEJ6560000000000L255min1max30mu20478.tikz} 
 \end{figure}
 
@@ -1436,33 +1135,32 @@ Thus the conclusion can be made that this bridge is safe subjected to lateral dy
 
 However, if encountering unfavourable peak result, a filter can be applied on the train speed to further cut off the peak response. In previous chapter it has been already be concluded that all resonance effects between train and bridge are wavelength phenomenon. In order to couple frequency with bridge's first natural bending frequency, the train needs to operate at a certain speed range. 
 
-For example, assuming the train's wavelength is 20m-40m, including both axle repeat wavelength and kinematic wavelength. 
+For example, according to Chapter.\ref{sec:wavelengthstudy}, the possible wavelength range for trains in the Netherlands is approximately 10m-30m, including both axle repeat wavelength and kinematic wavelength. 
 
 The natural frequency of the bridge in this example is 
 
 $$ f_1 = \frac{\pi}{2l^2}\sqrt{\frac{EJ}{\mu}} = \frac{\pi}{2\times 255^2}\sqrt{\frac{6.56e12}{1.0478e4}} = 0.4Hz$$
 
-so the possible resonance speed is obtained by multiplying wavelength range with natural frequency, yielding: $8m/s$ and $16m/s$
+so the possible resonance speedis obtained by multiplying wavelength range with natural frequency, yielding: $4m/s$ and $12m/s$
 
-The maximum response in deflection is lowered to 1.05 mm. The filter is more effective if the natural frequency of the bridge is higher.
+Although this speed filtering range doesn't help to cut off maximum response in this case because critical speed stills remains in the speed range, the filter can be more effective for bridges possessing higher first natural frequency simply because both lower and upper boundary for speed filtering range is linear to beam's first natural frequency. While it's not likely for upper boundary to shift to the left side of the critical speed, it's more favourable for lower boundary to shift to the right side of the critical speed.
+
+\section{Conclusion}
+
+The new practical method for checking lateral resonance response of railway bridge is developed in this chapter. This method is capable to simulate a resonance scenario where the bridge was passed by a moving railway vehicle. 
+
+The method shows conservative prediction compared to VAMPIRE simulations. However, since lack of data can be used to further verify the practical method, results on longer span bridges can not be verified until new simulations or measurements data are obtained.
+
+A general conclusion in finalizing phase of practical method is, for a certain bridge, faster train speed doesn't necessary cause higher resonance response of the bridge. As can be seen in Figure.\ref{fig:spedefEJ6560000000000L255min1max30mu20478.tikz}, critical speed appears at approximately $5m/s$, and response start to fall when speed is higher than $5m/s$. This means comparing to higher load amplitude caused by higher train speed, the shorter loading time caused by same reason is more dominating. By considering the fact in Figure.\ref{fig:comparisonpeaksimulationanalytical} that the analytical is even more conservative for higher speed, it can be concluded than high-speed trains cause less dynamic problem for lateral bridge dynamics.
+
+Matlab scripts are already written and attached for the convenience of readers. Since the explicit solution has been given in the chapter, it's completely possible to adopt them in other mathematical software for different preferences.
+
 
 \chapter{Recommendations on improvement on Eurocode}
 
 
-% \section{Another criterion proposed by J.J.Reber}
-% A SNCB bridge, driver complains 
-
-% To be used in combination with Sijian Deng's criterion.
-
-% \section{Misc}
-
-% Define eigen frequency and natural frequency
-
-% Define how-to-do and what-to-do a dynamic analysis
-
 \subsection{Add reference}
-Please
-
+Please add reference to the criteria.
 
 \subsection{Improve criteria for lateral bridge dynamics}
 Following sections provides several orientations for improving criteria for lateral bridge dynamics in terms of safety and serviceability of running stock.
