@@ -46,7 +46,8 @@
 \usepackage[toc,page]{appendix}
 
 % Packages for citing and reference
-\usepackage[backend=bibtex]{biblatex} 
+% \usepackage[backend=bibtex]{biblatex} 
+\usepackage[numbers,super]{natbib}
 
 % Packages for plotting
 \usepackage{pgfplots}
@@ -82,9 +83,12 @@
 % Define command for keyword in abstract
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords:---}} #1}
 
-\bibliography{ref} 
+% \bibliography{ref} 
 
 \begin{document}
+
+
+
 
 \include{titlepage}
 
@@ -93,19 +97,20 @@
 
 Dynamics of railway bridges is a complicated problem that normally needs numerical simulation to conduct researches. However, this thesis takes advantage of the numerical results provided in D181 reports and based on these results, further conclusions are made by using them in analytical model. 
 
-Recently long span railway bridges being designed in the Netherlands are being rejected by a particular EN1991-2 criterion that requires bridges to possess a first lateral natural frequency higher than 1.2Hz. Due to the fact that generally bridge's first lateral natural frequency decreases as the span increases, it can be seen that 1.2Hz criterion is rejecting almost all bridge with a span longer than 100m. 
+Recently long span railway bridges being designed in the Netherlands are being rejected by a particular EN1991-2 criterion that requires bridges to possess a first lateral natural frequency higher than 1.2Hz. Due to the fact that generally bridge's first lateral natural frequency decreases as the span increases, it can be seen that 1.2Hz criterion is rejecting almost all bridge with a span longer than 150m. 
 
-This report succeeds in pursuing the original documents of 1.2Hz criterion and thes knowledge in the documents initiates further researches on the lateral dynamics of railway bridges. Besides 1.2Hz criterion itself, following topics are researched with the information provided by D181 report series:
+This report succeeds in pursuing the original documents of 1.2Hz criterion and the knowledge in the documents initiates further researches on the lateral dynamics of railway bridges. Besides 1.2Hz criterion itself, following topics are researched with the information provided by D181 report series:
 
 \begin{enumerate}
-    \item Two train-bridge lateral resonance mechanisms, including axle repeat pattern resonance and kinematic movement resonance,
+    \item Train-bridge lateral resonance mechanisms, including axle repeat pattern resonance and kinematic movement resonance,
     \item Lateral force on tracks caused by the operation of railway vehicle and key parameters influencing the force,
     \item Lateral wavelength of trains running in the Netherlands, including axle repeat pattern wavelength and kinematic movement wavelength
 \end{enumerate}
     
 Taking advantage of the items above, a practical method for checking the lateral railway bridge dynamics is developed to quantify the lateral dynamic resonance response of railway under horizontal dynamic vehicle load. This method aims to serve for engineering purposes and provide an alternative way of verifying railway bridge lateral dynamics other than 1.2Hz criterion. The practical method is developed by an analytical approach, based on the VAMPIRE simulation results in D181 DT329.
 
-Once the exact expression for practical method has been obtained, an illustration of the usage of the practical method is conducted on the basis of a real bridge project. The method is also implemented in Matlab scripts to automate the checking procedure.
+An illustration of the usage of the practical method is conducted on the basis of a real bridge project. The method is also implemented in Matlab scripts to automate the checking procedure.
+
 
 \vspace*{1cm}
 
@@ -151,6 +156,7 @@ Delft,  \today
 
 \include{calculation}
 
-
-\printbibliography 
+\bibliography{ref} 
+\bibliographystyle{plainnat}
+% \printbibliography 
 \end{document}

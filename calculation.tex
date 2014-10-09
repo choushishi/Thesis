@@ -4,7 +4,7 @@
 \chapter{Conclusion}
 
 
-2 proposed criteria in RP6\cite{d181} were adopted in Eurocode 1991-2. One of them is 1.2Hz criterion. It was adopted without amending. The other one is lateral force models. Loading models were adopted in a different name as 'nosing force' in \cite[A6.5.2]{EC12}. 
+Two proposed criteria in RP6\citet{d181} were adopted in Eurocode 1991-2. One of them is 1.2Hz criterion. It was adopted without amending. The other one is lateral force models. Loading models were adopted in a different name as 'nosing force' in \citet[A6.5.2]{EC12}. 
 
 \begin{enumerate}[-]
 \item The 1.2Hz criterion was aiming to avoid the occurrence of resonance between bridge first lateral vibration mode and vehicle sway mode, however, no research can be found among all D181 report series to support this hypothesis. This criterion was proposed without a valid background.
@@ -22,7 +22,30 @@ By using the knowledge above, a practical method for easy calculating real-time 
 
 However, as VAMPIRE simulation results only have span up to 120m, there’s no benchmark can be found to validate the correctness of the formula for longer span inputs. So it is highly advisable that more simulations/measurements to be done to verify the correctness of result for longer span bridges.
 
+\chapter{Recommandations on future reseraches}
 
+Future reseaches to be proposed in this section are mainly related to heavy FEM transient analysis. Although D181 commiittee conducted a number of simulations in D181 report seriers, the response of longer span bridges remaines unknown. What's more, D181 report series were created in 1990's. The trains and their parameters used in the report are too old for nowadays usage.
+
+The aim of proposed FEM simulations is to verify the practical method described in this thesis. The method is needed to be verified for longer span bridges and modern vehicle design. As a conclusion, simulations with following objectives are needed to be done:
+
+\begin{enumerate}
+    \item Lateral forces on tracks of modern vehicles/tracks
+    \item Resonance response of bridges with span longer than 150m
+\end{enumerate}
+
+These simulations should be done with following extra requirements on the basis of simulations done in resonance study of DT329:
+
+\begin{enumerate}
+    \item More realistic and up-to-date data on modern train vehicles
+    \item More realistic data on lateral track irregularities
+    \item Broader range of bridge span to be investigated(greater than 150m)
+\end{enumerate}
+
+Transient simulations of this topic is very resource demanding. It is impossible for this thesis to carry out these simulations. Thus above simulations are proposed to whoever poceesing the resource and willingness to further investigate the topic. It is further proposed that lateral force data caused by running trains to be evaluated more frequently.
+
+The practical method should be verified by comparing its own result with result of newly conducted simulations. The result of practical method should be conservative according to the comparison. 
+
+It is also possible to verify the amplitude in practical method to a less conservative value according to newly conducted simulations. It is expected that newly conducted simulations yield smaller lateral force on tracks because advanced suspension systems implemented in modern vehicle designs and better track quality. 
 
 \begin{appendices}
 
@@ -32,91 +55,92 @@ However, as VAMPIRE simulation results only have span up to 120m, there’s no b
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp11}
-    \caption{BR CLASS 56 LOCOMOTIVE. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{BR CLASS 56 LOCOMOTIVE. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp12}
-    \caption{BR CLASS 56 LOCOMOTIVE. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{BR CLASS 56 LOCOMOTIVE. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp21}
-    \caption{UIC FREIGHT WAGON (LADEN). Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{UIC FREIGHT WAGON (LADEN). Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp22}
-    \caption{UIC FREIGHT WAGON (LADEN). Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{UIC FREIGHT WAGON (LADEN). Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp31}
-    \caption{FS ETR500 LOCOMOTIVE. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{FS ETR500 LOCOMOTIVE. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp32}
-    \caption{FS ETR500 LOCOMOTIVE. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{FS ETR500 LOCOMOTIVE. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp41}
-    \caption{FS ETR500 COACH. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{FS ETR500 COACH. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp42}
-    \caption{FS ETR500 COACH. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{FS ETR500 COACH. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp51}
-    \caption{FS E444 LOCOMOTIVE. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{FS E444 LOCOMOTIVE. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp52}
-    \caption{FS E444 LOCOMOTIVE. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{FS E444 LOCOMOTIVE. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp61}
-    \caption{UIC COACH. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{UIC COACH. Extract from \citet[Appendix 2]{d181dt329}}
+    \label{fig:uicoach}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{vp62}
-    \caption{UIC COACH. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{UIC COACH. Extract from \citet[Appendix 2]{d181dt329}}
 \end{figure}
 
 \begin{figure}[h]    \centering
     \includegraphics[width=\textwidth]{track1}
-    \caption{Horizontal track irregularities for freight trains. Extract from \cite[Figure 2.1]{d181}}
+    \caption{Horizontal track irregularities for freight trains. Extract from \citet[Figure 2.1]{d181}}
     \label{fig:track1}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{track2}
-    \caption{Horizontal track irregularities for standard passenger trains. Extract from \cite[Figure 2.1]{d181}}
+    \caption{Horizontal track irregularities for standard passenger trains. Extract from \citet[Figure 2.1]{d181}}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{track3}
-    \caption{Horizontal track irregularities for high speed passenger train. Extract from \cite[Figure 2.1]{d181}}
+    \caption{Horizontal track irregularities for high speed passenger train. Extract from \citet[Figure 2.1]{d181}}
     \label{fig:track3}
 \end{figure}
 
@@ -148,7 +172,7 @@ However, as VAMPIRE simulation results only have span up to 120m, there’s no b
     coach n axle m - coach n+3 axle m & 69.3 & 1.20 & 1.40 \\
     \hline
     \end{tabular}
-    \caption{Axle repeat patterns and typical frequencies. Extracted from \cite[Appendix C]{d181dt329}}
+    \caption{Axle repeat patterns and typical frequencies. Extracted from \citet[Appendix C]{d181dt329}}
     \label{tab:329axlerepeat}
 \end{table}
 
@@ -162,7 +186,7 @@ However, as VAMPIRE simulation results only have span up to 120m, there’s no b
     Coach/wagon & 24 - 39 & 34 - 38 & 36 - 40 \\
     \hline
     \end{tabular}
-    \caption{Kinematic wavelength ranges per vehicle, with BR P1 profiles. Extracted from \cite[Appendix C]{d181dt329}}
+    \caption{Kinematic wavelength ranges per vehicle, with BR P1 profiles. Extracted from \citet[Appendix C]{d181dt329}}
     \label{tab:329kinematicwavelength}
 \end{table}
 
@@ -171,21 +195,21 @@ However, as VAMPIRE simulation results only have span up to 120m, there’s no b
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{speedsafe.pdf}
-    \caption{Speed limit (in km/h) in relationship Line Category/Locomotive Class and vehicle type. Extract from \cite[Appendix F]{EC15528}}
+    \caption{Speed limit (in km/h) in relationship Line Category/Locomotive Class and vehicle type. Extract from \citet[Appendix F]{EC15528}}
 \end{figure}
 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{lateralloadcasesample}
-    \caption{LATERAL WHEEL AND AXLE FORCES FOR BRIDGES. Extract from \cite[Fig 3.1]{d181}}
+    \caption{LATERAL WHEEL AND AXLE FORCES FOR BRIDGES. Extract from \citet[Fig 3.1]{d181}}
     \label{fig:lateralloadcasesample}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{examplerunfile}
-    \caption{Example run file. Extracted from \cite{d181dt329}.  }
+    \caption{Example run file. Extracted from \citet{d181dt329}.  }
     \label{fig:examplerunfile}
 \end{figure}
 
@@ -231,7 +255,7 @@ Each MU-Group comprises of serveral MU-Classes. Table
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{trainparameters.pdf}
-\caption{Train parameters related to MU-Groups. Extracted from \cite[Annex C]{EC15528}}
+\caption{Train parameters related to MU-Groups. Extracted from \citet[Annex C]{EC15528}}
 \label{fig:trainparameters}
 \end{figure}
 
@@ -249,7 +273,7 @@ Each MU-Group comprises of serveral MU-Classes. Table
     No\_Units & Number of units within a train & - \\
     \hline
     \end{tabular}
-    \caption{Explanation of train parameters. Extracted from \cite[Annex C]{EC15528}}
+    \caption{Explanation of train parameters. Extracted from \citet[Annex C]{EC15528}}
     \label{tab:explanationtrainparameters}
 \end{table}
 
@@ -388,8 +412,8 @@ Each MU-Group comprises of serveral MU-Classes. Table
     $u3$ & $4.25m \leq u3 \leq 6.25m $ \\
     \hline
     \end{tabular}
-    \caption{Train parameters for conformity with MU-Class SA\_1}
-    \label{tab:SA1}
+    \caption{Train parameters for conformity with MU-Class SA\_2}
+    \label{tab:SA2}
 \end{table}
 
 \chapter{Regression commands for R console}\label{sec:Rregression}
@@ -421,15 +445,15 @@ Achieved convergence tolerance: 2.868e-06
 
 \chapter{Matlab scripts}\label{sec:matlabscripts}
 \section{fog.m}
-\lstinputlisting{./matlab/fog.m}
+\lstinputlisting[breaklines=true]{./matlab/fog.m}
 \section{Speedenvelop.m}
-\lstinputlisting{./matlab/Speedenvelop.m}
-\section{Spanenvelop.m}
-\lstinputlisting{./matlab/Spanenvelop.m}
-\section{Stiffenvelop.m}
-\lstinputlisting{./matlab/Stiffenvelop.m}
-\section{Massenvelop.m}
-\lstinputlisting{./matlab/Massenvelop.m}
+\lstinputlisting[breaklines=true]{./matlab/Speedenvelop.m}
+% \section{Spanenvelop.m}
+% \lstinputlisting{./matlab/Spanenvelop.m}
+% \section{Stiffenvelop.m}
+% \lstinputlisting{./matlab/Stiffenvelop.m}
+% \section{Massenvelop.m}
+% \lstinputlisting{./matlab/Massenvelop.m}
 
 
 \chapter{Train vehicles}

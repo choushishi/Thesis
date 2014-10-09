@@ -1,4 +1,8 @@
-function O=fog(EJ,l,mu,c,zeta)
+% This script is the main utility to function automated bridge lateral dynamic response evaluation
+
+function O=fogtest(EJ,l,mu,c,zeta)
+
+
 
 if EJ<1
     EJ = 100000*l^2/(48*EJ);
@@ -7,28 +11,37 @@ end
 omega1 = pi^2/l^2*sqrt(EJ/mu);
 omega = pi*c/l;
 omegab = zeta*sqrt(EJ/mu);
+omegab = 0.5*zeta*omega1;
+% omegab = omega1*sqrt(1-zeta^2)
 omega1a = sqrt(abs(omega1^2-omegab^2));
+Omega = 2*pi*c/10;
 
+r1 = Omega + omega;
+r2 = Omega - omega;
 
-r1 = omega1 + omega;
-r2 = omega1 - omega;
+% if c >= (200/3.6) 
+%     Q = 3.10*(c*3.6)^0.7495;
+% end
+% 
+% if c >= (120/3.6) && c < (200/3.6)
+%     Q = 3.58*(c*3.6)^0.7495;
+% end
+% 
+% if c < (120/3.6)
+%     Q = 5.2064*(c*3.6)^0.7495;
+% end
 
-if c >= (200/3.6)
-    Q = 1000*3.10*(c*3.6)^0.7495;
-end
-
-if c >= (120/3.6) && c < (200/3.6)
-    Q = 1000*3.58*(c*3.6)^0.7495;
-end
-
-if c < (120/3.6)
-    Q = 1000*5.2064*(c*3.6)^0.7495;
-end
-
+% Q = Q;
+% Q = 10000
+Q = 1928*c^0.7495;
+f = omega1/(2*pi);
 v_0 = Q*l^3/(48*EJ);
+%omegab = 0.0001*sqrt(EJ/mu);
+
+beta = omegab/omega1;
 
 v1 = @(t) l^3*Q*omega1/(pi^4*EJ) * cos(omega1*t)/(omega^2+omegab^2);
-v2 = @(t) omega*(cos(omega*t)-exp(-omegab*t)-omegab*sin(omega*t));
+v2 = @(t)omega*(cos(omega*t)-exp(-omegab*t))-omegab*sin(omega*t);
 v = @(t) v1(t) * v2(t);
 
 % v11 = 1/((omega1^2-r2^2)^2+4*omegab^2*r2^2);
@@ -65,26 +78,24 @@ for i=1:length(tdomain)
     p(i,3) = p(i,1)/v_0;
 end
 
- 
-
 O = [max(abs(p(:,1))),max(abs(p(:,2))),max(abs(p(:,3)))];
-% 
-% namedef = strcat('defEJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c))
-% nameacc = strcat('accEJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c))
-% nameaco = strcat('dcEJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c))
-% name = strcat('EJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c),'.tikz')
-% 
-% figure(1)
-% plot(tdomain,p(:,1))
+
+namedaf = strcat('EJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c),'daf','.tikz');
+% % 
+figure(1)
+plot(tdomain,p(:,1))
+% grid on
 % title(strcat('Max Deflection:',mat2str(O(1,1))));
-% matlab2tikz(namedef, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
-% 
+% % % matlab2tikz(namedef, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
+% % % 
 % figure(2)
 % plot(tdomain,p(:,2))
+% grid on
 % title(strcat('Max Acceleration:',mat2str(O(1,2))));
-% matlab2tikz(nameacc, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
-% 
+% % % matlab2tikz(nameacc, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
+% % % 
 % figure(3)
 % plot(tdomain,p(:,3))
-% title(strcat('Dynamic coefficient',mat2str(O(1,3))));
-% matlab2tikz(nameaco, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);
+% grid on
+% title(strcat('Max Deflection:',mat2str(O(1,1)),',Max Acceleration:',mat2str(O(1,2))));
+% matlab2tikz(namedaf, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);

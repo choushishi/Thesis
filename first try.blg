@@ -1,87 +1,97 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: first try.aux
-The style file: biblatex.bst
 A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: literature.aux
 A level-1 auxiliary file: theoretical.aux
 A level-1 auxiliary file: calculation.aux
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: first_try-blx.bib
-Database file #2: ref.bib
-I was expecting a `,' or a `}'---line 299 of file ref.bib
+The style file: plainnat.bst
+Database file #1: ref.bib
+I was expecting a `,' or a `}'---line 317 of file ref.bib
  : 
- : author={Eurocode, CEN},
+ : author={CEN},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 309 of file ref.bib
+I was expecting a `,' or a `}'---line 327 of file ref.bib
  : 
- : author={Eurocode, CEN},
+ : author={CEN},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 319 of file ref.bib
+I was expecting a `,' or a `}'---line 337 of file ref.bib
  : 
- : author={Eurocode, CEn},
+ : author={CEN},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 457 of file ref.bib
+I was expecting a `,' or a `}'---line 475 of file ref.bib
  :   
  :   author={DelatRail}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Biblatex version: 2.9
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Warning--to sort, need author, editor, or key in 1990a2
+Warning--to sort, need author or key in trainparameters
+Warning--empty author and editor in 1990a2
+Warning--empty publisher in 1990a2
+Warning--empty year in 1990a2
+Warning--empty year in 1990a2
+Warning--empty author in trainparameters
+Warning--empty journal in trainparameters
+Warning--empty year in trainparameters
+Warning--empty year in trainparameters
+Warning--empty publisher in 13848
+Warning--empty year in 13848
+Warning--empty year in 13848
+Warning--empty journal in cuadrado2008analysis
+Warning--empty year in d181
+Warning--empty year in d181dt329
+Warning--empty year in d181rp2
+Warning--empty journal in da2007dynamic
+Warning--empty journal in esveld2001modern
+Warning--empty year in dynamicslecturenote
+Warning--empty year in dynamicslecturenote
+Warning--empty publisher in 12299
+Warning--empty year in 12299
+Warning--empty publisher in 13803
+Warning--empty year in 13803
 You've used 23 entries,
-            6047 wiz_defined-function locations,
-            1232 strings with 11046 characters,
-and the built_in function-call counts, 70141 in all, are:
-= -- 2494
-> -- 3754
-< -- 712
-+ -- 2377
-- -- 2360
-* -- 3616
-:= -- 5340
-add.period$ -- 0
+            2773 wiz_defined-function locations,
+            692 strings with 7747 characters,
+and the built_in function-call counts, 7453 in all, are:
+= -- 600
+> -- 270
+< -- 21
++ -- 107
+- -- 81
+* -- 484
+:= -- 1153
+add.period$ -- 65
 call.type$ -- 23
-change.case$ -- 337
-chr.to.int$ -- 130
-cite$ -- 44
-duplicate$ -- 7370
-empty$ -- 7039
-format.name$ -- 1034
-if$ -- 14589
-int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 0
-newline$ -- 404
-num.names$ -- 942
-pop$ -- 7161
+change.case$ -- 83
+chr.to.int$ -- 20
+cite$ -- 73
+duplicate$ -- 462
+empty$ -- 765
+format.name$ -- 106
+if$ -- 1548
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 35
+newline$ -- 119
+num.names$ -- 84
+pop$ -- 293
 preamble$ -- 1
-purify$ -- 363
+purify$ -- 73
 quote$ -- 0
-skip$ -- 3926
+skip$ -- 269
 stack$ -- 0
-substring$ -- 1574
-swap$ -- 2190
-text.length$ -- 581
-text.prefix$ -- 24
-top$ -- 1
-type$ -- 862
-warning$ -- 0
-while$ -- 453
+substring$ -- 129
+swap$ -- 29
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 188
+warning$ -- 25
+while$ -- 71
 width$ -- 0
-write$ -- 380
+write$ -- 270
 (There were 4 error messages)

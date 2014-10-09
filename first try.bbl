@@ -1,419 +1,138 @@
-% $ biblatex auxiliary file $
-% $ biblatex version 2.4 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\entry{abu2000vibration}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Abu-Hilal}{A.-H.}%
-     {M}{M}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Mohsen}{M.}%
-     {M}{M}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Elsevier}%
-  }
-  \strng{namehash}{AHMMM1}
-  \strng{fullhash}{AHMMM1}
-  \field{sortinit}{A}
-  \field{number}{4}
-  \field{pages}{703\bibrangedash 717}
-  \field{title}{Vibration of beams with general boundary conditions due to a
-  moving harmonic load}
-  \field{volume}{232}
-  \field{journaltitle}{Journal of Sound and Vibration}
-  \field{year}{2000}
-\endentry
+\bibitem[199()]{1990a2}
+\emph{EN 1990 AMD 2 : 2005(E) Annex A2 to EN 1990}.
 
-\entry{13848}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {CEN}{C.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{C1}
-  \strng{fullhash}{C1}
-  \field{sortinit}{C}
-  \field{title}{EN 13848-5:2008+A1 Railway applications - Track - Track
-  geometry quality - Part 5: Geometric quality levels - Plain line}
-\endentry
+\bibitem[tra()]{trainparameters}
+Gegevens trein materieel tbv dynamica analyses.
 
-\entry{code2005518}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Code}{C.}%
-     {UIC}{U.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CU1}
-  \strng{fullhash}{CU1}
-  \field{sortinit}{C}
-  \field{title}{518: Testing and approval of railway vehicles from the point of
-  view of their dynamic behaviour--Safety--Track fatigue--Ride quality}
-  \field{journaltitle}{International Union of Railways, 3rd ed., Paris}
-  \field{year}{2005}
-\endentry
+\bibitem[Abu-Hilal and Mohsen(2000)]{abu2000vibration}
+M~Abu-Hilal and M~Mohsen.
+\newblock Vibration of beams with general boundary conditions due to a moving
+  harmonic load.
+\newblock \emph{Journal of Sound and Vibration}, 232\penalty0 (4):\penalty0
+  703--717, 2000.
 
-\entry{d181dt329}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Committee}{C.}%
-     {ERRI~D181}{E.~D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {UIC}%
-  }
-  \strng{namehash}{CED1}
-  \strng{fullhash}{CED1}
-  \field{sortinit}{C}
-  \field{title}{ERRI D 181/DT 329 E: LATERAL FORCES ON RAILWAY BRIDGES,
-  PARAMETRIC STUDY PART1,PART 2}
-  \field{year}{1995}
-\endentry
+\bibitem[CEN()]{13848}
+CEN.
+\newblock \emph{EN 13848-5:2008+A1 Railway applications - Track - Track
+  geometry quality - Part 5: Geometric quality levels - Plain line}.
 
-\entry{d181}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Committee}{C.}%
-     {ERRI~D181}{E.~D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {UIC}%
-  }
-  \strng{namehash}{CED1}
-  \strng{fullhash}{CED1}
-  \field{sortinit}{C}
-  \field{title}{RP6: Final report, D181 LATERAL FORCES ON RAILWAY BRIDGES}
-  \field{year}{1996}
-\endentry
+\bibitem[CEN(1991)]{EC12}
+CEN.
+\newblock 1: Actions on structures, part 2: Traffic loads on bridges.
+\newblock \emph{Brussels: European Standard EN}, 2:\penalty0 2003, 1991.
 
-\entry{cuadrado2008analysis}{article}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Cuadrado~Sanguino}{C.~S.}%
-     {Manuel}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Gonz{\'a}lez~Requejo}{G.~R.}%
-     {Pedro}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Goicolea~Ruigomez}{G.~R.}%
-     {Jose~Maria}{J.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Nasarre}{N.}%
-     {Jorge}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dias}{D.}%
-     {Rui}{R.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Plasser \& Theurer}%
-  }
-  \strng{namehash}{CSM+1}
-  \strng{fullhash}{CSMGRPGRJMNJDR1}
-  \field{sortinit}{C}
-  \field{title}{Analysis of Lateral Displacements in Large Railway Viaducts
-  Under Traffic Loads. Impact on Ride Safety and Passenger Comfort.}
-  \field{year}{2008}
-\endentry
+\bibitem[CEN(2002)]{EC0}
+CEN.
+\newblock \emph{Eurocode: Basis of structural design}.
+\newblock BSI, 2002.
 
-\entry{en200714363}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {EN}{E.}%
-     {BS}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EB1}
-  \strng{fullhash}{EB1}
-  \field{sortinit}{E}
-  \field{pages}{6\bibrangedash 36}
-  \field{title}{14363: 2005}
-  \field{journaltitle}{Railway applications-Testing for the acceptance of
-  running characteristics of railway vehicles-Testing of running behavior and
-  stationary tests}
-  \field{year}{2007}
-\endentry
+\bibitem[CEN(2007)]{en200714363}
+CEN.
+\newblock 14363: 2005.
+\newblock \emph{Railway applications-Testing for the acceptance of running
+  characteristics of railway vehicles-Testing of running behavior and
+  stationary tests}, pages 6--36, 2007.
 
-\entry{1990a2}{book}{}
-  \field{sortinit}{E}
-  \field{title}{EN 1990 AMD 2 : 2005(E) Annex A2 to EN 1990}
-\endentry
+\bibitem[CEN(2013)]{EC15528}
+CEN.
+\newblock pren 15528:2013, railway applications — line categories for
+  managing the interface between load limits of vehicles and infrastructure.
+\newblock \emph{Brussels: European Standard EN}, 2013.
 
-\entry{esveld2001modern}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Esveld}{E.}%
-     {Coenraad}{C.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {MRT-productions Zaltbommel, Netherlands}%
-  }
-  \strng{namehash}{EC1}
-  \strng{fullhash}{EC1}
-  \field{sortinit}{E}
-  \field{title}{Modern railway track}
-  \field{year}{2001}
-\endentry
+\bibitem[Cuadrado~Sanguino et~al.(2008)Cuadrado~Sanguino, Gonz{\'a}lez~Requejo,
+  Goicolea~Ruigomez, Nasarre, and Dias]{cuadrado2008analysis}
+Manuel Cuadrado~Sanguino, Pedro Gonz{\'a}lez~Requejo, Jose~Maria
+  Goicolea~Ruigomez, Jorge Nasarre, and Rui Dias.
+\newblock Analysis of lateral displacements in large railway viaducts under
+  traffic loads. impact on ride safety and passenger comfort.
+\newblock 2008.
 
-\entry{EC12}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Eurocode}{E.}%
-     {CEN}{C.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EC2}
-  \strng{fullhash}{EC2}
-  \field{sortinit}{E}
-  \field{pages}{2003}
-  \field{title}{1: Actions on structures, Part 2: Traffic loads on bridges}
-  \field{volume}{2}
-  \field{journaltitle}{Brussels: European Standard EN}
-  \field{year}{1991}
-\endentry
+\bibitem[D181Committee({\natexlab{a}})]{d181}
+D181Committee.
+\newblock \emph{RP6: Final report, D181 LATERAL FORCES ON RAILWAY BRIDGES}.
+\newblock UIC, {\natexlab{a}}.
 
-\entry{EC15528}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Eurocode}{E.}%
-     {CEN}{C.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EC2}
-  \strng{fullhash}{EC2}
-  \field{sortinit}{E}
-  \field{title}{prEN 15528:2013, Railway applications — Line categories for
-  managing the interface between load limits of vehicles and infrastructure}
-  \field{journaltitle}{Brussels: European Standard EN}
-  \field{year}{2013}
-\endentry
+\bibitem[D181Committee({\natexlab{b}})]{d181dt329}
+D181Committee.
+\newblock \emph{ERRI D 181/DT 329 E: LATERAL FORCES ON RAILWAY BRIDGES,
+  PARAMETRIC STUDY PART1,PART 2}.
+\newblock UIC, {\natexlab{b}}.
 
-\entry{fryba1996dynamics}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Fryba}{F.}%
-     {L.}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Fr{\`y}ba}{F.}%
-     {L.}{L.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {T. Telford}%
-  }
-  \strng{namehash}{FLFL1}
-  \strng{fullhash}{FLFL1}
-  \field{sortinit}{F}
-  \field{isbn}{9780727720443}
-  \field{title}{Dynamics of railway bridges}
-  \field{year}{1996}
-\endentry
+\bibitem[D181Committee({\natexlab{c}})]{d181rp2}
+D181Committee.
+\newblock \emph{RP2: Submitted programs and example of application}.
+\newblock UIC, {\natexlab{c}}.
 
-\entry{fryba1999vibration}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Fryba}{F.}%
-     {Ladislav}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Fr{\`y}ba}{F.}%
-     {Ladislav}{L.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Thomas Telford}%
-  }
-  \strng{namehash}{FLFL2}
-  \strng{fullhash}{FLFL2}
-  \field{sortinit}{F}
-  \field{title}{Vibration of solids and structures under moving loads}
-  \field{year}{1999}
-\endentry
+\bibitem[da~Silva~Dias(2007)]{da2007dynamic}
+Rui~Filipe da~Silva~Dias.
+\newblock Dynamic behaviour of high speed railway bridges. vehicles lateral
+  dynamic behaviour.
+\newblock 2007.
 
-\entry{trainparameters}{article}{}
-  \field{sortinit}{G}
-  \field{title}{Gegevens trein materieel tbv dynamica analyses}
-\endentry
+\bibitem[Esveld(2001)]{esveld2001modern}
+Coenraad Esveld.
+\newblock Modern railway track.
+\newblock 2001.
 
-\entry{EC0}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Institution}{I.}%
-     {British~Standards}{B.~S.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {BSI}%
-  }
-  \strng{namehash}{IBS1}
-  \strng{fullhash}{IBS1}
-  \field{sortinit}{I}
-  \field{title}{Eurocode: Basis of structural design}
-  \field{year}{2002}
-\endentry
+\bibitem[Fr{\`y}ba(1996)]{fryba1996dynamics}
+L.~Fr{\`y}ba.
+\newblock \emph{Dynamics of railway bridges}.
+\newblock T. Telford, 1996.
+\newblock ISBN 9780727720443.
 
-\entry{iwnicki2006handbook}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Iwnicki}{I.}%
-     {Simon}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {CRC Press}%
-  }
-  \strng{namehash}{IS1}
-  \strng{fullhash}{IS1}
-  \field{sortinit}{I}
-  \field{title}{Handbook of railway vehicle dynamics}
-  \field{year}{2006}
-\endentry
+\bibitem[Fr{\`y}ba(1999)]{fryba1999vibration}
+Ladislav Fr{\`y}ba.
+\newblock \emph{Vibration of solids and structures under moving loads}.
+\newblock Thomas Telford, 1999.
 
-\entry{majka2008effects}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Majka}{M.}%
-     {Michal}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hartnett}{H.}%
-     {Michael}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Elsevier}%
-  }
-  \strng{namehash}{MMHM1}
-  \strng{fullhash}{MMHM1}
-  \field{sortinit}{M}
-  \field{number}{6}
-  \field{pages}{556\bibrangedash 572}
-  \field{title}{Effects of speed, load and damping on the dynamic response of
-  railway bridges and vehicles}
-  \field{volume}{86}
-  \field{journaltitle}{Computers \& Structures}
-  \field{year}{2008}
-\endentry
+\bibitem[Iwnicki(2006)]{iwnicki2006handbook}
+Simon Iwnicki.
+\newblock \emph{Handbook of railway vehicle dynamics}.
+\newblock CRC Press, 2006.
 
-\entry{dynamicslecturenote}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Metrikine}{M.}%
-     {A.V.}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Delft University of Technology}%
-  }
-  \strng{namehash}{MA1}
-  \strng{fullhash}{MA1}
-  \field{sortinit}{M}
-  \field{title}{Dynamics, Slender Structures and an Introduction to Continuum
-  Mechanics: CT 4145}
-\endentry
+\bibitem[Majka and Hartnett(2008)]{majka2008effects}
+Michal Majka and Michael Hartnett.
+\newblock Effects of speed, load and damping on the dynamic response of railway
+  bridges and vehicles.
+\newblock \emph{Computers \& Structures}, 86\penalty0 (6):\penalty0 556--572,
+  2008.
 
-\entry{da2007dynamic}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Silva~Dias}{S.~D.}%
-     {Rui~Filipe}{R.~F.}%
-     {da}{d.}%
-     {}{}}%
-  }
-  \strng{namehash}{SDRFd1}
-  \strng{fullhash}{SDRFd1}
-  \field{sortinit}{S}
-  \field{title}{Dynamic Behaviour of High Speed Railway Bridges. Vehicles
-  Lateral Dynamic Behaviour}
-  \field{year}{2007}
-\endentry
+\bibitem[Metrikine()]{dynamicslecturenote}
+A.V. Metrikine.
+\newblock \emph{Dynamics, Slender Structures and an Introduction to Continuum
+  Mechanics: CT 4145}.
+\newblock Delft University of Technology.
 
-\entry{UIC776-2}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {UIC}{U.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {UIC}%
-  }
-  \strng{namehash}{U1}
-  \strng{fullhash}{U1}
-  \field{sortinit}{U}
-  \field{title}{UIC Leaflet 776-2:Design requirements for rail-bridges based on
-  interaction phenomena between train, track and bridge}
-  \field{year}{June 2009}
-\endentry
-
-\entry{12299}{book}{}
-  \field{sortinit}{U}
-  \field{title}{UNE-ENV 12299: Aplicaciones ferroviarias. Comodidad de viaje
+\bibitem[UIC({\natexlab{a}})]{12299}
+UIC.
+\newblock \emph{UNE-ENV 12299: Aplicaciones ferroviarias. Comodidad de viaje
   para los viajeros. Medici\'{o}n y evaluaci\'{o}n.}
-  \field{year}{2000}
-\endentry
+\newblock {\natexlab{a}}.
 
-\entry{13803}{book}{}
-  \field{sortinit}{U}
-  \field{title}{UNE-ENV 13803-1 EX: Aplicaciones ferroviarias. Par\'{a}metros
+\bibitem[UIC({\natexlab{b}})]{13803}
+UIC.
+\newblock \emph{UNE-ENV 13803-1 EX: Aplicaciones ferroviarias. Par\'{a}metros
   de proyecto de trazado de la v\'{\i}a. Ancho de v\'{\i}a de 1 435mm y
   mayores. Parte 1: Plena v\'{\i}a.}
-  \field{year}{2006}
-\endentry
+\newblock {\natexlab{b}}.
 
-\lossort
-\endlossort
+\bibitem[UIC(2005)]{code2005518}
+UIC.
+\newblock 518: Testing and approval of railway vehicles from the point of view
+  of their dynamic behaviour--safety--track fatigue--ride quality.
+\newblock \emph{International Union of Railways, 3rd ed., Paris}, 2005.
 
-\endinput
+\bibitem[UIC(June 2009)]{UIC776-2}
+UIC.
+\newblock \emph{UIC Leaflet 776-2:Design requirements for rail-bridges based on
+  interaction phenomena between train, track and bridge}.
+\newblock UIC, June 2009.
+
+\end{thebibliography}

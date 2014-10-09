@@ -4,7 +4,7 @@ dv = 0.2;
 v = [min:dv:max]';
 
 for i=1:length(v)
-    maxres(:,i) = fogtest(EJ,l,mu,v(i,1),zeta);
+    maxres(:,i) = fog(EJ,l,mu,v(i,1),zeta);
     speed = v(i,1);
 end
 

@@ -7,25 +7,28 @@ In this chapter basic concepts of railway bridge dynamics will be described in o
 \section{Basic railway dynamic effects}
 
 \subsection{Sources induce transverse dynamic reactions}
-According to \cite{da2007dynamic}\cite{fryba1996dynamics}\cite{EC12}, following sources are identified:
+According to \citet{da2007dynamic}, \citet{fryba1996dynamics} and \citet{EC12}, following sources are identified:
 
 \begin{enumerate} [-]
-    \item Sinusoidal motion of conical wheels along cylindrical rail heads
-    \item Horizontal track irregularities
-    \item Centrifugal forces on curved tracks
-    \item Train switches
+    \item Sinusoidal motion of conical wheels along cylindrical rail heads. See Section.\ref{sec:klingel}
+    \item Horizontal track irregularities. See Section.\ref{sec:lateraltrackirrgularities}
+    \item Centrifugal forces on curved tracks. This source is not disccused because only straight tracks are discussed in this thesis.
+    \item Train switches. This source is not disccussed because of the same reasone as above item.
 \end{enumerate}
 
 \subsection{Lateral movement of a wheelset on straight track}
 
-\subsubsection{Theory according to Klingel}
+Following knowledge in all subsections of this section is extracted from \citet{esveld2001modern}. 
 
+\subsubsection{Theory according to Klingel}\label{sec:klingel}
+
+\begin{quote}
 If a wheelset with conical tire profiles is laterally displaced from central position, this displacement is counteracted due to different rolling radii of the wheels. This results in a periodical movement of the wheelset which was described by Klingel in 1883 and is therefore often referred to as the Klingel movement. When analysing the case, the wheelset is modelled as a biconus travelling on an ideally straight track as shown in Figure.\ref{fig:wheelsetbiconus}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{wheelsetbiconus}
-    \caption{Wheelset biconus in general position. Extracted from \cite[Figure 2.2]{esveld2001modern}}
+    \caption{Wheelset biconus in general position. Extracted from \citet[Figure 2.2]{esveld2001modern}}
     \label{fig:wheelsetbiconus}
 \end{figure}
 
@@ -35,14 +38,14 @@ The Klingel movement is therefore purely a kinematic movement in which forces pl
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{klingelmovement}
-    \caption{Klingel movement. Extracted from \cite[Figure 2.3]{esveld2001modern}}
+    \caption{Klingel movement. Extracted from \citet[Figure 2.3]{esveld2001modern}}
     \label{fig:klingelmovement}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{fwc}
-    \caption{Undisturbed lateral movement of a wheelset. Extracted from \cite[Figure 2.4]{esveld2001modern}}
+    \caption{Undisturbed lateral movement of a wheelset. Extracted from \citet[Figure 2.4]{esveld2001modern}}
     \label{fig:fwc}
 \end{figure}
 
@@ -55,9 +58,9 @@ and hence the maximum lateral acceleration can be calculated as:
 $$\ddot{y}_{max} = 4\pi^2y_0\frac{v^2}{L_k^2}$$
 
 If the frequency $f$ coincides with one of the natural frequencies of the rolling stock, the vehicle ride becomes unstable. The lateral acceleration, which is a measure of the forces, shows the adverse effect of high speed and/or small wavelength. A conicity, for example, of 1:40 in comparison with 1:20 therefore gives a greater wavelength and a lower lateral acceleration at the same speed. The progressively increasing conicity in the case of worn profiles due to increasing lateral axle movement, therefore, has an adverse effect in this respect.
-
+\end{quote}
 \subsubsection{Hunting movement}
-
+\begin{quote}
 It should be noted that the Klingel theory is simple and instructive but does not include the effect of coupled axes, mass forces, and adhension forces. In reality, the amplitude $y_0$ of the Klingel movement is dependent on alignment, dynamic vehicle behaviour, and the speed of the rolling stock. 
 
 Generally speaking, $y_0$ due to slip will increase with speed until it is equal to half the flangeway clearance. Flanging then occurs as a result of which the axle will rebound. 
@@ -67,7 +70,7 @@ This means that the lateral movement takes on a completely different behaviour w
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{flangingwheelset}
-    \caption{Influence of flanging on lateral wheelset movement. Extracted from \cite[Figure 2.5]{esveld2001modern}}
+    \caption{Influence of flanging on lateral wheelset movement. Extracted from \citet[Figure 2.5]{esveld2001modern}}
     \label{fig:flangingwheelset}
 \end{figure}
 
@@ -77,12 +80,12 @@ This phenomenon is shown in Figure\ref{fig:amplitudefrequencystability}. The bog
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{amplitudefrequencyinstability}
-    \caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \cite[Figure 2.6]{esveld2001modern}}
+    \caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \citet[Figure 2.6]{esveld2001modern}}
     \label{fig:amplitudefrequencystability}
 \end{figure}
 
 \subsection{Single and two-point contact between wheel and rail}
-In the case of single-point contact, according to Figure, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure, the application points do not coincide.
+In the case of single-point contact, according to Figure.\ref{fig:singlecontact}, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure.\ref{fig:doublecontract}, the application points do not coincide.
 
 Flanging occurs in the situation of double contact. 
 
@@ -91,20 +94,21 @@ Flanging occurs in the situation of double contact.
     \begin{subfigure}[b]{0.2\textwidth}
         \centering
         \includegraphics[width=\textwidth]{singlecontact}
-        \caption{Single contact point.  Extracted from \cite[Figure 2.13]{esveld2001modern}}
+        \caption{Single contact point.  Extracted from \citet[Figure 2.13]{esveld2001modern}}
         \label{fig:singlecontact}
     \end{subfigure}
     \begin{subfigure}[b]{0.5\textwidth}
         \includegraphics[width=\textwidth]{doublecontact}
-        \caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \cite[Figure 2.14]{esveld2001modern}}
+        \caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \citet[Figure 2.14]{esveld2001modern}}
         \label{fig:doublecontract}
     \end{subfigure}
+    \caption{Single and double contact of wheel-rail interface}
 \end{figure}
-
+\end{quote}
 \section{Wheel-Rail Interface}
-
+Following knowledge in all subsections of this section is extracted from \citet{esveld2001modern}. 
 \subsection{Wheelset and track dimensions}
-
+\begin{quote}
 Generally the track guage is used as a distance measured between the two rails, more specifically the distance between the inside of the railheads measured 14mm below the surface of the rail. By choosing 14 mm the measurement is less influenced by lipping or lateral wear on the rail head and by the radius r = 13 mm of the rail head face. On normal track the gauge is $1435^{+10}_{-3}$ mm with with a maximum gradient of 1:3000. For new track, however, NS apply the following standards:
 
 \begin{enumerate}
@@ -115,11 +119,15 @@ Generally the track guage is used as a distance measured between the two rails, 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
-\caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \cite[p.17]{esveld2001modern}}
+\caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \citet[p.17]{esveld2001modern}}
 \label{fig:wheelset and track dimensions}
 \end{figure}
 
+\end{quote}
+
 \subsection{Conicity and Equivalent Conicity of Wheels}
+
+\begin{quote}
 
 Originally conical tire profiles with an inclination of 1:20 were used. Since a centrally applied load on the railhead is desired, a rail inclination of 1:20, as shown in Figure 2.1, was also selected; this for instance still applies to NS profile NP 46. UIC 54 rail usually has an inclination of 1:40. This inclination matches the S 1002 worn wheel profile which is in general use in Europe. During manufacturing the tires are given a profile which matches the average shape cause by wear. In contrast to the straight conical profile this has a hollow form.
 
@@ -131,7 +139,11 @@ $$ \gamma_e = \frac{\Delta r}{2y} = \frac{r_1 - r_2}{2y}  $$
 
 Here $r_1 - r_2$ is the instantaneous difference in rolling radius of the wheel treads; generally speaking this is a non-linear function of the lateral displacement y of the wheelset with respect to the central position. The difference between conical and worn profiles is given in Figure.\ref{fig:conicalwornprofiles}. To enable numerical comparisons $\gamma_e$ is determined at a certain lateral displacement $y=\bar{y}$.
 
+\end{quote}
+
 \subsection{Worn wheel profiles}
+
+\begin{quote}
 
 A perfectly conical wheel profile is unstable as far as its shape is concerned, but will take on a shape that is stable as the effect of wear.
 
@@ -140,7 +152,7 @@ Practical research has shown that over a period of time wheel profiles stabilise
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
-    \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \cite[2.4]{esveld2001modern}}
+    \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \citet[2.4]{esveld2001modern}}
     \label{fig:conicalwornprofiles}
 \end{figure}
 
@@ -148,8 +160,11 @@ With a conical profile the conicity is constant and above equation becomes:
 
 $$ \gamma_e = \frac{\Delta r}{2y} =\frac{(r+\gamma y)-(r-\gamma y)}{2y} = \gamma $$
 
-\subsection{Lateral Track Irregularities}\label{sec:lateraltrackirrgularities}
-This section describes allowable lateral track irregularities defined in EN13848-5\cite{13848}. 
+\end{quote}
+
+\section{Lateral Track Irregularities}\label{sec:lateraltrackirrgularities}
+
+This section describes allowable lateral track irregularities defined in EN13848-5\citet{13848}. 
 
 Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
 
@@ -166,7 +181,7 @@ Table \ref{tab:lateraldeviation} defines the allowable standard deviation for la
 
 \begin{table}[h]
     \centering
-    \caption{Alignment - AL - Standard deviation. Extracted from \cite[Table B.6]{13848}}
+    \caption{Alignment - AL - Standard deviation. Extracted from \citet[Table B.6]{13848}}
     \begin{tabular}{cc}
         \hline
         Speed(km/h) & Standard deviation(mm) \\
@@ -268,18 +283,18 @@ The amplitude-frequency dependencies is shown in \ref{fig:amplitude-frequency-ch
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{amplitudefrequencycharacteristic.pdf}
-	\caption{Amplitude-frequency characteristic. Extracted from \cite[2.2.2]{dynamicslecturenote}}
+	\caption{Amplitude-frequency characteristic. Extracted from \citet[2.2.2]{dynamicslecturenote}}
 	\label{fig:amplitude-frequency-characteristic}
 \end{figure}
 
-When the frequency of force equals frequency of mass-spring system, the amplitude of vibration is infinitely high. It means system becomes unstable and normally it's a dangerous sign. This phenomenon is called resonance. Resonance can happen if the frequency of excitation coincides with the natural frequency of the excited systems.
+When the frequency of force equals frequency of mass-spring system, the amplitude of vibration is infinitely high. It means system becomes unstable and normally it's a dangerous sign. This phenomenon is called resonance.
 
 Resonance can also happen when a harmonic force is loaded on an Euler-Bernoulli beam. It can be loaded anywhere on the beam to produce resonance. 
 
 
 \section{Analysing methods for lateral dynamics of railway bridges }
 
-Several analysing methods for vertical dynamics of railway bridges were briefed in \cite[A6.2]{UIC776-2}. Methods that can be applied also on lateral direction are selected:
+Several analysing methods for vertical dynamics of railway bridges were briefed in \citet[A6.2]{UIC776-2}. Methods that can be applied also on lateral direction are selected:
 
 \begin{quote}
 
@@ -297,6 +312,11 @@ Dynamic analysis of a structure can be used to resolve a system of differential 
 \end{quote}
 
 \subsection{Modal analysis}
+
+Knowledge on modal analysis is extracted from \citet{UIC776-2}
+
+\begin{quote}
+
 Modal analysis is used to calculate the natural modes and frequencies of the model, as well as resulting variables(participation factors, effective modal masses)
 
 For undamped, free vibrations, the equation of movement without a second element is reduced to:
@@ -307,14 +327,25 @@ where $\Phi$ represents the circular frequency vector (=pulse) and $[\Phi]$ is t
 
 In principle, all the modes with natural frequencies lower than the cut-off frequency should be retained; in practice, the modes retained are often those making an important contribution to the response(criterion of the sum of effective modal mass of the structure). When the natural vectors are calculated, the modal matrix is formed $[\Phi]$ after which the $\omega_i$ can be deduced.
 
+\end{quote}
+
 \subsection{Analysis by modal superposition}
+
+Knowledge on modal superposition is extracted from \citet{UIC776-2}
+
+\begin{quote}
 The fundamental equation of the dynamic approach represents a system of N simultaneous differential equations, where N is the number of degrees of freedom of the structure. If three-dimensional modelling is used, this number N is equal to six times the number of nodes less the number of ddl blocked at the supprt. When the number increases to a value that is very high for large models, the size of the problem needs to be reduced by transformation techniques. Solving the differential equations then becomes faster and is more accurate.
 
 The integration method used is now as follows: for each mode i, the resulting equation gives an evaluation introduced by the Duhamel integral of the Fourier transform. The sum of the solutions gives the full response. The integration approach for mobile loads is a slow process.
 
 Modal superposition is used to accurately quantify the respective contributions of each mode to the total dynamic response and to identify the risks of resonance and dynamic amplification of some types of stresses.
+\end{quote}
 
 \subsection{Numerical methods}
+
+Knowledge on numerical methods is extracted from \citet{UIC776-2}
+
+\begin{quote}
 
 When the analysis uses numerical methods to directly integrate the dynamic equation, the loads become the dynamic system in the case of vehicles and their internal behaviour impacts the response from the structure.
 
@@ -327,6 +358,8 @@ This last method takes track profile defects into account and deduces the force 
 In this method, the equation of the dynamics is solved, with or without prior transformation, by using the conventional algorithms for numerical resolution of second-degree differential equations. These numerical methods calculates the response to regularly spaced time intervals(in general). The selected time pitch determines the accuracy of the results and has a bearing on the length of computer calculations.
 
 Numerical integration methods are all based on the search for balanced solutions of the dynamic equation at regular time intervals.
+
+\end{quote}
 
 \subsubsection{VAMPIRE}
 
@@ -348,7 +381,7 @@ This literature review aims to filter out criteria and requirements related to l
 
 
 \section{Factors influencing dynamic behaviour}
-As stated in\cite[6.4.2]{EC12} there are 11 factors influencing dynamic behaviour of a railway bridge. The principal factors which influence dynamic behaviour are:
+As stated in\citet[6.4.2]{EC12} there are 11 factors influencing dynamic behaviour of a railway bridge. The principal factors which influence dynamic behaviour are:
 \begin{enumerate}[-]
 	\item the speed of traffic across the bridge
 	\item the span L of the element and the influence line length for deflection of the element being considered
@@ -363,6 +396,8 @@ As stated in\cite[6.4.2]{EC12} there are 11 factors influencing dynamic behaviou
 	\item the dynamic characteristics of the track (ballast, sleepers, track components etc.)
 \end{enumerate}
 
+\vspace*{0.2cm}
+
 Other factors may include:
 
 \begin{enumerate}
@@ -374,7 +409,7 @@ Other factors may include:
 \end{enumerate}
 
 \section{Requirements for railway bridge verification}
-\cite{EC0} propose following requirements
+\citet{EC0} propose following requirements. Criteria regarding lateral direction are bolded.
 
 
 \begin{enumerate}
@@ -391,23 +426,23 @@ Other factors may include:
 		\item \textbf{horizontal rotation of a deck about a vertical axis at ends of a deck (to ensure acceptable horizontal track geometry and passenger comfort)}
 		\item \textbf{limits on the first natural frequency of lateral vibration of the span to avoid the occurrence of resonance between the lateral motion of vehicles on their suspension and the bridge}
 	\end{enumerate}
-	\item Checks on bridge deformations should be performed for passenger comfort, i.e. vertical deflection of the deck to limit coach body acceleration in accordance with A2.4.4.3\cite{EC0}
-	\item The limits given in A2.4.4.2 and A2.4.4.3\cite{EC0} take into account the mitigating effects of track maintenance (for example to overcome the effects of the settlement of foundations, creep, etc.) 
+	\item Checks on bridge deformations should be performed for passenger comfort, i.e. vertical deflection of the deck to limit coach body acceleration in accordance with A2.4.4.3\citet{EC0}
+	\item The limits given in A2.4.4.2 and A2.4.4.3\citet{EC0} take into account the mitigating effects of track maintenance (for example to overcome the effects of the settlement of foundations, creep, etc.) 
 \end{enumerate}
 
 
 \section{Horizontal transverse dynamic effects}
-There's only one criterion in the Eurocodes mentioned that the bridge's first lateral natural frequency should no lower that 1.2 Hz. 
+There's only one criterion in the Eurocodes mentiones that the bridge's first lateral natural frequency should not be lower that 1.2 Hz. 
 
-However, as more and more long-span bridges are built nowadays, this requirement is not valid for more bridges. This is because, in general, the lateral natural frequency of a bridge decreases when span increases. For bridges with span longer than 100m, there's few bridge can have a lateral frequency higher than 1.2Hz, according to senior engineers' designing experience.
+However, as more and more long-span bridges are built nowadays, this requirement is not valid for more bridges. This is because, in general, the lateral natural frequency of a bridge decreases when span increases. For bridges with span longer than 150m, there's few bridge can have a lateral frequency higher than 1.2Hz, according to senior engineers' designing experience.
 
-So it is vital to discuss horizontal dynamic effects for the sake of longer span bridges. In additional, study the requirements for horizontal vibration of railway bridges to make the results of dynamic analysis usable.
+So it is vital to discuss horizontal dynamic effects for the sake of longer span bridges. In addition, a study has been carried out on the requirements for horizontal vibration of railway bridges to make the results of dynamic analysis usable.
 
 
 
 % \subsection{Horizontal vibration of a beam}
 
-% Fryba\cite{fryba1996dynamics} described the first two sources in mathematical terms:
+% Fryba\citet{fryba1996dynamics} described the first two sources in mathematical terms:
 % Consider a simply supported beam loaded by moving train loading, horizontal vibrations of the beam in a transverse direction $ w(x,t) $ are generated by lateral random forces $ H_n (t) $ due to random irregularities and sinusoidal motion. The differential equation for the deformation is:
 
 % \begin{equation}
@@ -416,7 +451,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 
 % where $ H_n(t) $ stands for forces due to random irregularities and sinusoidal motion. $ H_n(t) $ is of a typically random character and can be replaced by horizontal transverse forces with zero mean values. See Figure.~\ref{fig:trackirrg} for example.
 
-% \cite[Table 9.1]{fryba1996dynamics} gives sample of natural frequencies of steel truss bridges with open deck. Shown as follow Table~\ref{tab:spatialvibrationsteel}. Please note that truss bridges have high stiffness.
+% \citet[Table 9.1]{fryba1996dynamics} gives sample of natural frequencies of steel truss bridges with open deck. Shown as follow Table~\ref{tab:spatialvibrationsteel}. Please note that truss bridges have high stiffness.
 
 % \begin{table}[h]
 % 	\centering
@@ -464,17 +499,17 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % \begin{figure}[p]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{trackirregularities.pdf}
-% 	\caption{Example of a track lateral alignment irregularities profile for a track with low irregularities in a total length of 1209m.  Extracted from \cite{da2007dynamic}}
+% 	\caption{Example of a track lateral alignment irregularities profile for a track with low irregularities in a total length of 1209m.  Extracted from \citet{da2007dynamic}}
 % 	\label{fig:trackirrg}
 % \end{figure}
 
 
 % \subsubsection{Centrifugal forces}
-% In \cite[6.5.1]{EC12} specifies following principles about centrifugal forces act on railway bridges:
+% In \citet[6.5.1]{EC12} specifies following principles about centrifugal forces act on railway bridges:
 
 % Where the track on a bridge is curved over the whole or part of the length of the bridge, the centrifugal force and the track cant shall be taken into account.
 
-% The centrifugal forces should be taken to act outwards in a horizontal direction at a height of 1.80m above the running surface (see \cite[Figure 1.1]{EC12}). For some traffic types, e.g. double stacked containers, an increased value of $h_t$ should be specified.
+% The centrifugal forces should be taken to act outwards in a horizontal direction at a height of 1.80m above the running surface (see \citet[Figure 1.1]{EC12}). For some traffic types, e.g. double stacked containers, an increased value of $h_t$ should be specified.
 
 % The centrifugal force shall always be combined with the vertical load. The centrifugal force shall not be multiplied by the dynamic factor $\varPhi_1$ or $\varPhi_3$.
 
@@ -492,10 +527,10 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 
 % \begin{tabular}{ll}
 % $Q_{tk}$,$q_{tk}$ & Characteristic values of the centrifugal forces\\
-% $Q_{vk}$,$q_{vk}$ & Characteristic values of the vertical loads specified in \cite[6.3]{EC12}\\
+% $Q_{vk}$,$q_{vk}$ & Characteristic values of the vertical loads specified in \citet[6.3]{EC12}\\
 % $f$ & Reduction factor, see below \\
-% $v$ & Maximum speed in accordance with \cite[6.5.1(5)]{EC12}[m/s]\\
-% $V$ & Maximum speed in accordance with \cite[6.5.1(5)]{EC12}[km/h]\\
+% $v$ & Maximum speed in accordance with \citet[6.5.1(5)]{EC12}[m/s]\\
+% $V$ & Maximum speed in accordance with \citet[6.5.1(5)]{EC12}[km/h]\\
 % $g$ & Acceleration due to gravity [9.81$m/s^2$]\\
 % $r$ & Radius of curvature [m].
 % \end{tabular}
@@ -509,7 +544,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
  
 
 % \section{Torsional vibration}
-% According to \cite[9.1.3]{fryba1996dynamics}, the horizontal lateral forces of railway vehicles act on the rial top level,i.e. outside the cross section centroid of the bridge in the majority of cases. Let the difference of elevations be $ h $. Consequently, they affect the bridge by twisting moments $ hH_n(t) $. The differential equation of a beam due to simple torsion is 
+% According to \citet[9.1.3]{fryba1996dynamics}, the horizontal lateral forces of railway vehicles act on the rial top level,i.e. outside the cross section centroid of the bridge in the majority of cases. Let the difference of elevations be $ h $. Consequently, they affect the bridge by twisting moments $ hH_n(t) $. The differential equation of a beam due to simple torsion is 
 % \begin{equation}
 % 	-GI_\xi \xi''(x,t)+\mu \ddot{\xi}(x,t)=\sum_{n=1}^{N}\varepsilon_n \delta (x+d_n-ct)h H_n(t)
 % \end{equation}
@@ -519,7 +554,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 
 
 % \section{Theoretical bridge models}
-% According to \cite[Chapter.2]{fryba1996dynamics}, theoretical models of railway bridges are of two types
+% According to \citet[Chapter.2]{fryba1996dynamics}, theoretical models of railway bridges are of two types
 
 % \begin{enumerate}[-]
 % 	\item with continuously distributed mass
@@ -583,13 +618,13 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % 	\item Aesthetics
 % \end{enumerate}
 
-% \cite{macdougall2004state}: Use of high-strength steels for bridge construction in Japan dates back to the 1960s. Several hundred bridges been constructed using 500MPa and 600MPa yield strength steel, and steel with a normal yield strength of 800 MPa has also been used on several projects. In Europe, a variety of high-strength steels with yield strength from 460MPa to 690MPa are available for bridge applications. European structural steel standard EN 10025: 2004 grade S460ML, which has a nominal yield strength of 460MPa, can be welded at room temperature for plate thickness up to 90mm and has a specified minimum Charpy V-notch(CVN) evergy of 27 J at -50$^\circ$C.
+% \citet{macdougall2004state}: Use of high-strength steels for bridge construction in Japan dates back to the 1960s. Several hundred bridges been constructed using 500MPa and 600MPa yield strength steel, and steel with a normal yield strength of 800 MPa has also been used on several projects. In Europe, a variety of high-strength steels with yield strength from 460MPa to 690MPa are available for bridge applications. European structural steel standard EN 10025: 2004 grade S460ML, which has a nominal yield strength of 460MPa, can be welded at room temperature for plate thickness up to 90mm and has a specified minimum Charpy V-notch(CVN) evergy of 27 J at -50$^\circ$C.
 
 % \section{Modelling of railway vehicles}
 % According to Newton's law, 2 basic load effects are produced by moving train: vertical forces due to vehicle weight, and inertia effects caused by vehicle acceleration. The loads on a railway bridge are very complex problems thus in engineering practice, loads are often simplified. But, the simplification depends on the purpose of the analysis. 
 
 % \subsection{Moving vertical forces model}
-% If the inertia effects are neglected, loads of the moving trains can be modelled as moving vertical forces. For example, load diagram for type TALGO trains is shown in Figure.\ref{fig:verticalmodel} proposed by \cite{uic}.
+% If the inertia effects are neglected, loads of the moving trains can be modelled as moving vertical forces. For example, load diagram for type TALGO trains is shown in Figure.\ref{fig:verticalmodel} proposed by \citet{uic}.
 
 % \begin{figure}[h]
 % 	\centering
@@ -606,7 +641,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % \begin{figure}[p]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{advancedmodel.pdf}
-% 	\caption{A dynamic model for the vertical interaction of the rail track and wagon system. Proposed in \cite{sun2002dynamic}}
+% 	\caption{A dynamic model for the vertical interaction of the rail track and wagon system. Proposed in \citet{sun2002dynamic}}
 % 	\label{fig:advancedmodel}
 % \end{figure}
 
@@ -616,7 +651,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % See Chapter~\ref{sec:train-models}
 
 % \section{Track model}
-% Proposed in \cite[A.6.1.3]{uic}, the track is represented by Timoshenko beam elements for the rails and takes account of the rail/sleeper fastening characteristics as well as the ballast(if one exists).
+% Proposed in \citet[A.6.1.3]{uic}, the track is represented by Timoshenko beam elements for the rails and takes account of the rail/sleeper fastening characteristics as well as the ballast(if one exists).
 
 % \textit{``A sleeper is generally represented by two beam elements, with two covering the rail and one used for the deck. Sleepers and ballast are modelled as concentrated masses. They are linked to the nodes of the rail and the bridge by a parallel spring and damper system. The track can be modelled to any length on both side of the bridges, where the stiffening effect of the bridge has to be taken into account. The effects of track distribution are not considered. Each vehicle is able to absorb the kinetic energy of the bridge and it is for this reason that, at resonance, the deflections and accelerations of the bridge obtained with this model are lower than those obtained with a live load diagram."}
 
@@ -625,7 +660,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{trackmodel.pdf}
-% 	\caption{Diagram of the dynamic train-track-bridge model. Extracted from \cite[Fig. 15]{uic}}
+% 	\caption{Diagram of the dynamic train-track-bridge model. Extracted from \citet[Fig. 15]{uic}}
 % 	\label{fig:trackmodel}
 % \end{figure}
 
@@ -634,7 +669,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 
 
 % \subsection{Requirements for railway bridge verification}
-% \cite{EC0} propose following requirements
+% \citet{EC0} propose following requirements
 
 
 % \begin{enumerate}
@@ -651,14 +686,14 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % 		\item horizontal rotation of a deck about a vertical axis at ends of a deck (to ensure acceptable horizontal track geometry and passenger comfort)
 % 		\item limits on the first natural frequency of lateral vibration of the span to avoid the occurrence of resonance between the lateral motion of vehicles on their suspension and the bridge
 % 	\end{enumerate}
-% 	\item Checks on bridge deformations should be performed for passenger comfort, i.e. vertical deflection of the deck to limit coach body acceleration in accordance with A2.4.4.3\cite{EC0}
-% 	\item The limits given in A2.4.4.2 and A2.4.4.3\cite{EC0} take into account the mitigating effects of track maintenance (for example to overcome the effects of the settlement of foundations, creep, etc.) 
+% 	\item Checks on bridge deformations should be performed for passenger comfort, i.e. vertical deflection of the deck to limit coach body acceleration in accordance with A2.4.4.3\citet{EC0}
+% 	\item The limits given in A2.4.4.2 and A2.4.4.3\citet{EC0} take into account the mitigating effects of track maintenance (for example to overcome the effects of the settlement of foundations, creep, etc.) 
 % \end{enumerate}
 
 % \subsection{Conceptual check}
 % The conceptual check is to help designers avoid unsafe designs in conceptual stage. Once the bridge type and rough geometry is sketched, designers can easily know whether the bridge would have dynamic problem in the future. 
 
-% For example, in  \cite[cl.8.7.4]{calgaro2010designers}, it is stated that if the bridge meets criteria ~\ref{cr:nocheck} , no dynamic analysis in necessary. 
+% For example, in  \citet[cl.8.7.4]{calgaro2010designers}, it is stated that if the bridge meets criteria ~\ref{cr:nocheck} , no dynamic analysis in necessary. 
 
 % \begin{equation}
 % 	\label{cr:nocheck}
@@ -669,7 +704,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 
 % \subsection{Logic diagram}
 
-% This logic diagram is used to determine whether a dynamic analysis is required, as shown in Figure~\ref{fig:logicdiagram}, is represented in \cite{EC12} Chapter 6.4 Dynamic Effects, where $V [Km/h]$ is the Maximum Line Speed at the site, $L [m]$, the span length, $n_0 [Hz]$, the first nature frequency under permanent loads, $n_T$, the first natural torsional frequency for the same load, $v [m/s]$ the maximum nominal speed and finally $(v/n_0)_{lim}$, as given in Annex F of EN1991-2. The frequency first of vibration, $n_0$, must be within the limits established in figure~\ref{fig:frequencylimit}.
+% This logic diagram is used to determine whether a dynamic analysis is required, as shown in Figure~\ref{fig:logicdiagram}, is represented in \citet{EC12} Chapter 6.4 Dynamic Effects, where $V [Km/h]$ is the Maximum Line Speed at the site, $L [m]$, the span length, $n_0 [Hz]$, the first nature frequency under permanent loads, $n_T$, the first natural torsional frequency for the same load, $v [m/s]$ the maximum nominal speed and finally $(v/n_0)_{lim}$, as given in Annex F of EN1991-2. The frequency first of vibration, $n_0$, must be within the limits established in figure~\ref{fig:frequencylimit}.
 
 % Checking through the logic diagram is regarded as first step is because designers can try to avoid designs that will be required to be dynamic analysed in the very beginning of the designing phase. 
 
@@ -693,20 +728,20 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % 	\begin{subfigure}[b]{0.45\textwidth}
 %     	\centering
 %     	\includegraphics[width=\textwidth]{logicdiagram.pdf}
-%     	\caption{Flow chart for determining whether a dynamic analysis is required. Extracted from EN1991-2\cite{EC12}}
+%     	\caption{Flow chart for determining whether a dynamic analysis is required. Extracted from EN1991-2\citet{EC12}}
 %     	\label{fig:logicdiagram}
 % 	\end{subfigure}
 % 	\begin{subfigure}[b]{0.45\textwidth}
 %     	\includegraphics[width=\textwidth]{frequencylimit.pdf}
-%     	\caption{Limits for bridge natural frequencies, $n_0 [Hz]$, as a function $L [m]$. Extracted from EN1991-2\cite{EC12}.}
+%     	\caption{Limits for bridge natural frequencies, $n_0 [Hz]$, as a function $L [m]$. Extracted from EN1991-2\citet{EC12}.}
 %     	\label{fig:frequencylimit}
 % 	\end{subfigure}
-% \caption{Logic diagram for determining whether dynamic analyses are necessary, extracted from \cite[6.4.4]{EC12}}
+% \caption{Logic diagram for determining whether dynamic analyses are necessary, extracted from \citet[6.4.4]{EC12}}
 % \label{logicandlimit}
 % \end{figure}
 
 % \subsection{Train models}\label{sec:train-models}
-% According to NEN 1991-2\cite{EC12} and Designers Guide\cite{calgaro2010designers} Rail traffic actions are defined by means of load models, Four models of railway loading are given:
+% According to NEN 1991-2\citet{EC12} and Designers Guide\citet{calgaro2010designers} Rail traffic actions are defined by means of load models, Four models of railway loading are given:
 % \begin{enumerate}[$\bullet$]
 % 	\item LM71 and LM SW/0(for continuous bridges) to represent normal rail traffic on mainline railways (passenger and heavy freight traffic)
 % 	\item SW/2 to represent abnormal loads or waggons
@@ -735,7 +770,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{lm71.pdf}
-% 	\caption{Load Model 71 and characteristic values for vertical loads. Extracted from EN1991-2\cite{EC12}}
+% 	\caption{Load Model 71 and characteristic values for vertical loads. Extracted from EN1991-2\citet{EC12}}
 % 	\label{lm71}
 % \end{figure}
 
@@ -749,7 +784,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{lmsw.pdf}
-% 	\caption{Load Models SW/0 and SW/2.. Extracted from EN1991-2\cite{EC12}}
+% 	\caption{Load Models SW/0 and SW/2.. Extracted from EN1991-2\citet{EC12}}
 % 	\label{lmsw}
 % \end{figure}
 
@@ -781,7 +816,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{hslma.pdf}
-% 	\caption{Diagram of Universal Dynamic Train HSLM-A. Extracted from EN 1991-2\cite{EC12}}
+% 	\caption{Diagram of Universal Dynamic Train HSLM-A. Extracted from EN 1991-2\citet{EC12}}
 % 	\label{fig:hslma}
 % \end{figure}
 
@@ -803,21 +838,21 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % 		A10 & 11 & 27 & 2.0 & 210 \\			
 % 		\hline		
 % 	\end{tabular}
-% 	\caption{HSLM-A, definition of ten trains. Extracted from EN1991-2\cite{EC12}}
+% 	\caption{HSLM-A, definition of ten trains. Extracted from EN1991-2\citet{EC12}}
 % 	\label{tab:hslma}
 % \end{table}
 
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{hslmb.pdf}
-% 	\caption{Diagram of Universal Dynamic Train HSLM-B. Extracted from EN 1991-2\cite{EC12}}
+% 	\caption{Diagram of Universal Dynamic Train HSLM-B. Extracted from EN 1991-2\citet{EC12}}
 % 	\label{fig:hslmbdiagram}
 % \end{figure}
 
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{hslmb2.pdf}
-% 	\caption{Universal Dynamic Train HSLM-B. Extracted from EN 1991-2\cite{EC12}}
+% 	\caption{Universal Dynamic Train HSLM-B. Extracted from EN 1991-2\citet{EC12}}
 % 	\label{fig:hslmbtable}
 % \end{figure}
 
@@ -834,7 +869,7 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % 		Simply supported span & HSLM-B & HSLM-A \\
 % 		Continuous structure or Complex Structure & Trains A1 to A10 inclusive & Trains A1 to A10 inclusive\\
 % 	\end{tabular}
-% 	\caption{Application of HSLM-A and HSLM-B. Data extracted from EN 1991-2\cite{EC12}}
+% 	\caption{Application of HSLM-A and HSLM-B. Data extracted from EN 1991-2\citet{EC12}}
 % 	\label{hslmapplication}
 % \end{table}
 
@@ -852,25 +887,25 @@ So it is vital to discuss horizontal dynamic effects for the sake of longer span
 % 		\begin{equation}
 % 			\varPhi_3=\dfrac{2.16}{\sqrt{L_\varPhi}-0.2}+0.73 \quad with 1.00\leq \varPhi_3\leq 2.0
 % 		\end{equation}\\
-% 	where $ L_\varPhi $ is the `determinant' length (length associated with $ \varPhi $ ) in metres as defined in Table 6.2, EN1991-2\cite{EC12}.
+% 	where $ L_\varPhi $ is the `determinant' length (length associated with $ \varPhi $ ) in metres as defined in Table 6.2, EN1991-2\citet{EC12}.
 % \end{enumerate}
 
 \subsection{Nosing force}\label{sec:nosingforce}
-Nosing force is defined in Eurocode 1991-2. Its original background can be found in \cite[Proposed criteria]{d181}. It is defined as a representation of actions, in combine with actions like vertical loads, dynamic effects, centrifugal forces, traction and braking forces, etc.
+Nosing force is defined in Eurocode 1991-2. Its original background can be found in \citet[Proposed criteria]{d181}. It is defined as a representation of actions, in combine with actions like vertical loads, dynamic effects, centrifugal forces, traction and braking forces, etc.
 
 The evidence of RP6 is the background of nosing force in EN1991-2 is the following repeating literature:
 
-In \cite[6.5.2]{EC12}:
+In \citet[6.5.2]{EC12}:
 \begin{quote}
 	(1)P The nosing force shall be taken as a concentrated force acting horizontally, at the top of the rails, perpendicular to the centre-line of track. It shall be applied on both straight track....
 \end{quote}
 
-In \cite[4.1B]{d181}:
+In \citet[4.1B]{d181}:
 \begin{quote}
 	These forces shall be applied at the top of the rails in the most unfavourable position and acting horizontally, perpendicular to the track centreline...
 \end{quote}
 
-With another statement also helps proofing RP6 is the background of nosing force in EN1991-2 in \cite[4:Draft Recommendations]{d181}:
+With another statement also helps proofing RP6 is the background of nosing force in EN1991-2 in \citet[4:Draft Recommendations]{d181}:
 
 \begin{quote}
 	These can therefore be expressed as follows: (Article \textbf{6.5.2} of ENV 1991-3 of 1994)...
@@ -878,11 +913,11 @@ With another statement also helps proofing RP6 is the background of nosing force
 
 ENV 1991-3 was renamed to EN 1991-2 in 2003.
 
-Originally in \cite[4:Draft Recommendations]{d181}, nosing forces was defined as lateral forces from vehicle/bridge interaction as a result of \textbf{hunting}.
+Originally in \citet[4:Draft Recommendations]{d181}, nosing forces was defined as lateral forces from vehicle/bridge interaction as a result of \textbf{hunting}.
 
-The characteristic value of the nosing force shall be taken as $Q_{sk} = 100kN$. It shall not be multiplied by the factor $\Phi$ (\cite[6.45]{EC12}) or by the factor $f$ in \cite[6.51]{EC12}. 
+The characteristic value of the nosing force shall be taken as $Q_{sk} = 100kN$. It shall not be multiplied by the factor $\Phi$ (\citet[6.45]{EC12}) or by the factor $f$ in \citet[6.51]{EC12}. 
 
-The characteristic value of the nosing force should be multiplied by the factor $\alpha$ in accordance with \cite[6.3.2]{EC12} for values of $\alpha \geq 1$
+The characteristic value of the nosing force should be multiplied by the factor $\alpha$ in accordance with \citet[6.3.2]{EC12} for values of $\alpha \geq 1$
 
 The nosing force shall always be combined with a vertical traffic load.
 
@@ -892,7 +927,7 @@ A detailed analysis on the background of nosing force will be given in Section.\
 % A static analysis shall be carried out with the load models defined in Section Load Models(LM71 and where required Load Models SW/0 and SW/2). The result shall be multiplied by the dynamic factor $ \Phi $ (and if required multiplied by $ \alpha $)
 
 % \subsection{Bridge parameters}
-% In designers' guide\cite{calgaro2010designers}, bridge parameters on dynamic effects are discussed.
+% In designers' guide\citet{calgaro2010designers}, bridge parameters on dynamic effects are discussed.
 
 % \subsubsection{Structural damping}
 % Structural damping is a key parameter in dynamic analysis. The magnitude of the vibrations depends heavily on structural damping, especially in proximity to resonance.
@@ -904,18 +939,18 @@ A detailed analysis on the background of nosing force will be given in Section.\
 % Maximum dynamic load effects are likely to occur at resonant peaks when a multiple of the frequency of loading and a natural frequency of the structure coincide. Any overestimation of bridge stiffness will overestimate the natural frequency of the structure and speed at which resonance occurs; it provides conservative results.
 
 % \section{Dynamic analysis}
-% EN 1991-2\cite{EC12} doesn't specify the method of dynamic analysing, but UIC Leaflet 776\textsuperscript{2}\cite{uic} indicates that  for normal bridges there are 4 methods of analysing(an approximate method and three simplified method). However, 776\textsuperscript{2}\cite{uic} also indicates for special structures (bridges with long spans such as bowstring bridges), have to be solved using generic finite element (FEM) programs.
+% EN 1991-2\citet{EC12} doesn't specify the method of dynamic analysing, but UIC Leaflet 776\textsuperscript{2}\citet{uic} indicates that  for normal bridges there are 4 methods of analysing(an approximate method and three simplified method). However, 776\textsuperscript{2}\citet{uic} also indicates for special structures (bridges with long spans such as bowstring bridges), have to be solved using generic finite element (FEM) programs.
 
-% Analysing using FEM programs can be very time and money consuming providing a complicated structure. Fortunately UIC Leaflet 776\textsuperscript{2}\cite{uic} is an optional reference so FEM analysing is not required in EN 1991-2 \cite{EC12}. Thus finding a simplified way of analysing complicated bridge structures is vital. The development of dynamic analysing methods will be discussed in Chapter.\ref{sec:dynamic-analysing-methods}
+% Analysing using FEM programs can be very time and money consuming providing a complicated structure. Fortunately UIC Leaflet 776\textsuperscript{2}\citet{uic} is an optional reference so FEM analysing is not required in EN 1991-2 \citet{EC12}. Thus finding a simplified way of analysing complicated bridge structures is vital. The development of dynamic analysing methods will be discussed in Chapter.\ref{sec:dynamic-analysing-methods}
 
 \subsection{Verification of the Limit States}
-\cite[6.4.6.5]{EC12} proposes following principles to be followed during design:
+\citet[6.4.6.5]{EC12} proposes following principles to be followed during design:
 
 To ensure traffic safety:
 \begin{enumerate}
 	\item The verification of maximum peak deck acceleration shall be regarded as a traffic safety requirement checked at the serviceability limit state for the prevention of track instability
-	\item The dynamic enhancement of load effects shall be allowed for by multiplying the static loading by the dynamic factor $\varPhi$ defined in \cite[6.4.5]{EC12}. If a dynamic analysis is necessary, the results of the dynamic analysis shall be compared with the results of the static analysis enhanced by $\varPhi$ (and if required multiplied by $\alpha$ in accordance with \cite[6.3.2]{EC12}) and the most unfavourable load effects shall be used for the bridge design.
-	\item If a dynamic analysis is necessary, a check shall be carried out according to \cite[6.4.6.6]{EC12} to establish whether the additional fatigue loading at high speeds and at resonance is covered by consideration of the stresses due to load effects from $\varPhi \times LM71$ (and if required $\varPhi \times Load Model SW/0$ for continuous structures and classified vertical load in accordance with \cite[6.3.2(3)]{EC12} where required). The most adverse fatigue loading shall be used in the design.  
+	\item The dynamic enhancement of load effects shall be allowed for by multiplying the static loading by the dynamic factor $\varPhi$ defined in \citet[6.4.5]{EC12}. If a dynamic analysis is necessary, the results of the dynamic analysis shall be compared with the results of the static analysis enhanced by $\varPhi$ (and if required multiplied by $\alpha$ in accordance with \citet[6.3.2]{EC12}) and the most unfavourable load effects shall be used for the bridge design.
+	\item If a dynamic analysis is necessary, a check shall be carried out according to \citet[6.4.6.6]{EC12} to establish whether the additional fatigue loading at high speeds and at resonance is covered by consideration of the stresses due to load effects from $\varPhi \times LM71$ (and if required $\varPhi \times Load Model SW/0$ for continuous structures and classified vertical load in accordance with \citet[6.3.2(3)]{EC12} where required). The most adverse fatigue loading shall be used in the design.  
 \end{enumerate}
 
 % \subsection{Ultimate limit states}
@@ -965,7 +1000,7 @@ To ensure traffic safety:
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{definitiondecktwist.pdf}
-% 	\caption{Definition of deck twist. Extracted from \cite[Figure A2.1]{1990a2}}
+% 	\caption{Definition of deck twist. Extracted from \citet[Figure A2.1]{1990a2}}
 % 	\label{fig:difinitiondecktwist}
 % \end{figure}
 
@@ -975,12 +1010,12 @@ To ensure traffic safety:
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{definitionangularrotations.pdf}
-% 	\caption{Definition of anular rotations at the end of the decks. Extracted from \cite[Figure A2.2]{1990a2}}
+% 	\caption{Definition of anular rotations at the end of the decks. Extracted from \citet[Figure A2.2]{1990a2}}
 % 	\label{fig:difinitionangularrotations}
 % \end{figure}
 
 \subsubsection{Transverse deformations and vibrations}\label{sec:Transverse-deformations-and-vibrations}
-\cite[A2.4.4.2.4]{1990a2}  proposed that transverse deformation and vibration of the deck shall be checked for characteristic combinations of Load Model 71 and SW/0 as appropriate multiplied by the dynamic factor $\phi$ and $\alpha$ (or real train with the relevant dynamic factor if appropriate), wind loads, nosing force, centrifugal forces in accordance with \cite[6]{EC12} and the effect of a transverse temperature differential across the bridge.
+\citet[A2.4.4.2.4]{1990a2}  proposed that transverse deformation and vibration of the deck shall be checked for characteristic combinations of Load Model 71 and SW/0 as appropriate multiplied by the dynamic factor $\phi$ and $\alpha$ (or real train with the relevant dynamic factor if appropriate), wind loads, nosing force, centrifugal forces in accordance with \citet[6]{EC12} and the effect of a transverse temperature differential across the bridge.
 
 The transverse deflection $ \delta_h $ at the top of the deck should be limited to ensure:
 
@@ -1022,7 +1057,7 @@ The transverse deflection $ \delta_h $ at the top of the deck should be limited 
 
 \textbf{The first natural frequency of lateral vibration of a span should not be less than $f_{h0}$. The value for $f_{h0}$ may be defined in the National Annex. The recommended value is: $f_{h0}=1.2 Hz$}
 
-Evidence of \cite{d181} is the origin of \cite[A.2.4.4.2.4(3)]{EC12} is found in \cite[p4.2: Lateral Frequencies]{d181}:
+Evidence of \citet{d181} is the origin of \citet[A.2.4.4.2.4(3)]{EC12} is found in \citet[p4.2: Lateral Frequencies]{d181}:
 
 \begin{quote}
 In order to avoid the phenomena of lateral resonance in vehicles, the first natural frequency of lateral vibration of the span $f_{lt}$ such that:
@@ -1055,7 +1090,7 @@ These two regulations have the same background documents: D181 report series. Th
 
 % \subsubsection{Serviceability limit states - passenger comfort}
 
-% For these type of verifications \cite{1990a2} defines the limiting values for the maximum vertical deflection for passenger comfort, as following:
+% For these type of verifications \citet{1990a2} defines the limiting values for the maximum vertical deflection for passenger comfort, as following:
 
 % \begin{enumerate}
 % 	\item Comfort criteria
@@ -1074,14 +1109,14 @@ These two regulations have the same background documents: D181 report series. Th
 % 		Acceptable & $2.0m/s^2$\\
 % 		\hline
 % 	\end{tabular}
-% 	\caption{Recommended accelerations values to ensure the respective levels of comfort. Extracted from \cite[Table A 2.9]{1990a2}.}
+% 	\caption{Recommended accelerations values to ensure the respective levels of comfort. Extracted from \citet[Table A 2.9]{1990a2}.}
 % 	\label{recommendedaccelerationsvalues}
 % \end{table}
 
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{recommendedlevelofcomfort.pdf}
-% 	\caption{Maximum permissible vertical deflection $\delta$ for railway bridges with 3 or more successive simply supported spans corresponding to a permissible vertical acceleration of $b_v=1m/s^2$ in a coach for speed $V$[km/h]. Extracted from \cite[Figure A2.3]{1990a2}}
+% 	\caption{Maximum permissible vertical deflection $\delta$ for railway bridges with 3 or more successive simply supported spans corresponding to a permissible vertical acceleration of $b_v=1m/s^2$ in a coach for speed $V$[km/h]. Extracted from \citet[Figure A2.3]{1990a2}}
 % 	\label{fig:recommendedlevelofcomfort}
 % \end{figure}
 
@@ -1138,7 +1173,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \subsection{Method based on impact factor}
 
 % \subsection{Method based on dynamic train signature}
-% As mentioned in \cite[A.4.3]{uic}, the dynamic signature of a train is obtained by breaking down the load diagram of a train in Fourier series and by extrapolating it to the natural modes. It represents the dynamic excitation features of the train and is independent of the characteristics of the structure. The signature depends on axle spacing and loads only. However, newly developed Train dynamic signature method like LIR method takes structure characteristics into account, giving more applicable solutions for specific bridge projects.
+% As mentioned in \citet[A.4.3]{uic}, the dynamic signature of a train is obtained by breaking down the load diagram of a train in Fourier series and by extrapolating it to the natural modes. It represents the dynamic excitation features of the train and is independent of the characteristics of the structure. The signature depends on axle spacing and loads only. However, newly developed Train dynamic signature method like LIR method takes structure characteristics into account, giving more applicable solutions for specific bridge projects.
 
 % Train dynamic signature is a useful method of producing quick analyses on resonance characteristics of the vehicle-bridge systems. The method is especially effective for simple bridge structures.
 
@@ -1186,7 +1221,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \end{equation}
 
 % \subsubsection{LIR method}
-% LIR method is based on residual influence line. It is applicable only on statistically determined bridges, too. The solution of the displacements and accelerations in the midspan, of the simply supported beam, is developed by \citeauthor{dominguez2001dinamica}. The solution is given as follows:
+% LIR method is based on residual influence line. It is applicable only on statistically determined bridges, too. The solution of the displacements and accelerations in the midspan, of the simply supported beam, is developed by \citetauthor{dominguez2001dinamica}. The solution is given as follows:
 
 % \begin{equation}
 % 	\centering
@@ -1226,7 +1261,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.6\textwidth]{trainsig.pdf}
-% 	\caption{Train dynamic signatures for the seven real trains, considering a damping value of $\xi = 0.00$. Extracted from \cite[Figure 2.20]{da2007dynamic}}
+% 	\caption{Train dynamic signatures for the seven real trains, considering a damping value of $\xi = 0.00$. Extracted from \citet[Figure 2.20]{da2007dynamic}}
 % 	\label{trainsig}
 % \end{figure}
 
@@ -1250,7 +1285,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{movingloads.pdf}
-% 	\caption{Nodal force time history definition for a single moving load $F$, with speed $v$. Extracted from \cite[Figure 2.15]{da2007dynamic}}
+% 	\caption{Nodal force time history definition for a single moving load $F$, with speed $v$. Extracted from \citet[Figure 2.15]{da2007dynamic}}
 % 	\label{fig:movingloads}
 % \end{figure}
 
@@ -1267,7 +1302,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{vehicle-structure.pdf}
-% 	\caption{Model for analysis of vehicle-structure system. Extracted from \cite[Figure 12]{lei2002analyses}}
+% 	\caption{Model for analysis of vehicle-structure system. Extracted from \citet[Figure 12]{lei2002analyses}}
 % 	\label{fig:vehicle-structure}
 % \end{figure}
 
@@ -1276,7 +1311,7 @@ These two regulations have the same background documents: D181 report series. Th
 % \begin{figure}[h]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{simplifiedvehiclestructure.pdf}
-% 	\caption{Load train with vehicle-bridge interaction: simplified interaction model and variables definition. Extracted from \cite[Figure15]{lei2002analyses}}
+% 	\caption{Load train with vehicle-bridge interaction: simplified interaction model and variables definition. Extracted from \citet[Figure15]{lei2002analyses}}
 % 	\label{fig:simplified-vehicle-structure}
 % \end{figure}
 
@@ -1325,7 +1360,7 @@ In this thesis DT 329 and RP 6 are obtained and studied, but other reports in En
 \section{Investigation of DT329}
 \subsection{Methodology of Parametric Research DT329}
 
-The DT329 research was conducted in two phases. It is noted that all studies were done using VAMPIRE software. The reliability of simulation has been discussed and confirmed in previous reports. 
+The DT329 research was conducted in two phases. It is noted that all studies were done using VAMPIRE software. The reliability of simulation has been discussed and confirmed in a previous report of \citet{d181rp2}.
 
 In the initial phase 11 sets of bridge parameters were selected for the simulation. 52 combinations of bridge parameters and train configurations were examined. The goal of the initial phase is to filter out most influencing parameters for bridge dynamics.
 
@@ -1501,7 +1536,7 @@ In addition, for freight train runs, since the locomotive has two bogies of thre
 
 Peak values for each of the outputs produced for the required ranges were obtained. For bridge outputs, peak values were taken for the period where any part of the train was on the bridge. For loco and leading coach/wagon outputs, peak values were taken whilst the vehicle in question was in contact with the bridge.
 
-Peak values for each output were then read into a spread sheet where they could be compared more easily to check for emerging trends. The spread sheet has been partially automated to produce graphs of a single output for each train type for a single varying bridge parameter, for given values of the other bridge parameters. Figures 4 to 30(\cite{d181dt329}) show typical plots which have been produced in this manner.
+Peak values for each output were then read into a spread sheet where they could be compared more easily to check for emerging trends. The spread sheet has been partially automated to produce graphs of a single output for each train type for a single varying bridge parameter, for given values of the other bridge parameters. Figures 4 to 30 of original \citet{d181dt329} report show typical plots which have been produced in this manner.
 
 \subsection{Investigation of resonance phenomenon studied in DT329}\label{sec:resonance329}
 
@@ -1559,7 +1594,7 @@ Coincidence of vehicle kinematic frequency with bridge first lateral bending mod
 \end{figure}
 
 \subsubsection{Apparent shift in resonance frequency}\label{sec:apparentshift}
-It is frequently observed in the output of both resonance effects that apparent resonance happens at some frequencies higher than frequencies calculated on theory. This is explained in following quote on \cite[Page 13, Secondary Phase]{d181dt329}. However, the explanation wasn't verified by further studies. They can only be treated as hypothesis.
+It is frequently observed in the output of both resonance effects that apparent resonance happens at some frequencies higher than frequencies calculated on theory. This is explained in following quote on \citet[Page 13, Secondary Phase]{d181dt329}. However, the explanation wasn't verified by further studies. They can only be treated as hypothesis.
 
 \begin{quote}
 Although the peak mid span displacement was expected to occur at 28.5 mis, it can be seen that for the runs with just the coaches that the peak occurs at about 32 m/s. This is confirmed to be a resonance-type effect rather than a discrete event in the time histories of the runs, a selection of which are shown in Figure C6(Original report), of which an extract of 100-285m follows as Figure C7(Original report). This speed is mid way between axle passing frequency coinciding with first bending mode of the bridge, and kinematic frequency coinciding with the first bending mode. So, the apparent shift in resonant frequency may be due to a combination of these effects (see discussion of kinematic frequency resonance results). However, an alternative explanation may be that as track forces generally increase with speed, the deflection of the span would be expected to increase. If this effect continued through a resonant band, the peak displacement would appear greater at a speed slightly above that calculated for resonance, as sketched in Figure \ref{fig:apparentshift}.
@@ -1568,7 +1603,7 @@ Although the peak mid span displacement was expected to occur at 28.5 mis, it ca
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{apparentshift}
-    \caption{Sketch of Possible Explanation for Apparent Shift in Resonant Frequency. Extract from \cite[Appendix 2]{d181dt329}}
+    \caption{Sketch of Possible Explanation for Apparent Shift in Resonant Frequency. Extract from \citet[Appendix 2]{d181dt329}}
     \label{fig:apparentshift}
 \end{figure}
 
@@ -1581,27 +1616,27 @@ Both explanations indicate that apparent resonance frequency can hardly be predi
 
 \subsection{Debate on proposed 1.2Hz criterion}\label{sec:1.2criterion329}
 
-The value of frequency limit, 1.2Hz is explained in \cite[p3.2: Criterion 2]{d181}:
+The value of frequency limit, 1.2Hz is explained in \citet[p3.2: Criterion 2]{d181}:
 
 \begin{quote}
 To avoid the occurrence of resonance in the lateral motion of the vehicles due to the lateral motion of the bridge, a limit value lower than the first natural frequency $f_1t$ of the lateral vibration of the span studied should be fixed. The natural frequency for lateral movements is between 0.5 and 0.7 Hz for coaches and between 0.7 and 1 Hz for locomotives. We therefore propose a safety margin $F_{lt} \geq 1.2Hz$
 
 \end{quote}
 
-The original author of report RP6 Graham Scott was contacted to reveal the background of 'natural frequency for lateral movements'. Mr.Scott is still in charge of the development of software VAMPIRE and he's still active in the field. Unfortunately he was unable to remember what did 'natural frequency for lateral movements' stand for in previous quotes since it was written nearly 20 years ago. He passed me to his colleague Alan Minnis for further questions. Mr.Minnis stated following:
+The original author of report RP6, mr.Graham Scott, was contacted to reveal the background of 'natural frequency for lateral movements'. Mr.Scott is still in charge of the development of software VAMPIRE and he's still active in the field. Unfortunately he was unable to remember what did 'natural frequency for lateral movements' stand for in previous quotes since it was written nearly 20 years ago. He passed me to his colleague Alan Minnis for further questions. Mr.Minnis stated following:
 
 \begin{quote}
 Looking at the values I think they would refer to typical rigid body modes of a vehicle.  These are independent of speed and a typical passenger coach with air suspension will have a lower sway frequency of around 0.6Hz which is within 0.5-0.7Hz.  Locomotives tend to have a slightly stiffer suspension hence the slightly higher frequency range.
 \end{quote}
 
-Mr.Minnis statements, combined with results yielded in supporting parametric report DT329 proves 1.2Hz criterion is aiming to avoid occurrence of resonance. But this isn't a feasible strategy in following reasons:
+Mr.Minnis statements, combined with results yielded in supporting parametric report DT329 proves 1.2Hz criterion is aiming to avoid occurrence of resonance. But this isn't a feasible strategy for the following reasons:
 
 \begin{enumerate} 
     \item The resonance between rigid body mode of train and first lateral vibration mode of the bridge has never been discussed in all D181 report series. No research proofed this kind of resonance can be critical in real life scenario.
 
     \item There are lots of evidence can be found in report DT329, showing resonance can happen on a bridge with a first lateral natural frequency even higher than 1.2Hz, which is self-conflicting with 1.2Hz criterion. In fact, the resonance could happen at any frequency on theory. However, the magnitude of resonance effect ranges from less pronounced to more pronounced from case to case.  
 
-    For example, \cite[Page 14,Phase II]{d181dt329} shows resonance occurs on 1.71Hz:
+    For example, \citet[Page 14,Phase II]{d181dt329} shows resonance occurs on 1.71Hz:
         \begin{quote}
             The first lateral bending mode of this bridge is at 1. 71 Hz. The kinematic wavelength of the passenger coaches is around 34-38 m, giving a kinematic frequency range of 1.46 - 1.63Hz.Speeds of 58.14 m/s(1.53-1.71 Hz)and 64.6m/s(1.7-1.9Hz)were also done. The mid span lateral displacement for each of the time histories are shown in Figure C12(Orignial report). The slowest speed appears to show the greatest resonance.
         \end{quote}
@@ -1610,7 +1645,7 @@ Mr.Minnis statements, combined with results yielded in supporting parametric rep
 \subsection{Lateral forces on railway bridges}\label{sec:lateralforce329}
 
 \subsubsection{Basic characteristics of lateral force on railway bridges}
-It is concluded in initial phase of the study that presence of the bridge doesn't influence the track forces and track quality is a major factor in determining the lateral forces generated by a particular train on \cite[Page 7, Secondary Phase]{d181dt329}
+It is concluded in initial phase of the study that presence of the bridge doesn't influence the track forces and track quality is a major factor in determining the lateral forces generated by a particular train on \citet[Page 7, Secondary Phase]{d181dt329}
 
 
 
@@ -1625,22 +1660,44 @@ The resonance effects mentioned in the previous sections were only observed in d
 
 Influence on the total lateral force as a result of hunting of single vehicle bodies were examined. Three parameters were involved in this parametric research. They were vehicle speed, track irregularities deviation and wheel conicity.
 
-Vehicle speed plays a key role. When speed is 60 km/h for freight trains, in the response output, there is very limited influence by increasing both track deviation and conicity. Different conicity tends to yield same force output. Same as track deviation. See Figure B1.
+Vehicle speed plays a key role. When speed is 60 km/h for freight trains, in the response output, there is very limited influence by increasing both track deviation and conicity. Different conicity tends to yield same force output. Same as track deviation. See Figure.\ref{fig:b1}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{b1}
+    \caption{Figure B1 extracted from \citet{d181dt329}}
+    \label{fig:b1}
+\end{figure}
+
 
 When speed increases, output of different conicity on same track deviation is more scattered. Similarly, increased deviation yields yields greater output. They are two basic trends observed in all output data.
 
-However, it is uncertain which conicity will yield greater output compared to other 2 conicity setups. Surprisingly, in some cases, best maintained wheel profile (effective conicity 0.05) generates greater output than poorly maintained wheels (effective conicity 0.4). See Figure B2. The most obvious case of this kind is freight train running at 100 km/h on track with 5.7mm (approximate) deviation.
+However, it is uncertain which conicity will yield greater output compared to other 2 conicity setups. Surprisingly, in some cases, best maintained wheel profile (effective conicity 0.05) generates greater output than poorly maintained wheels (effective conicity 0.4). See Figure.\ref{fig:b2}. The most obvious case of this kind is freight train running at 100 km/h on track with 5.7mm (approximate) deviation.
 
-Different from conicity, the influence of increasing track deviation is simply predictable. Research report DT329 provided approximate linear function for relationship between lateral force and track deviation. These linear functions can be extracted from plots B1-B30 of DT329.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{b2}
+    \caption{Figure B2 extracted from \citet{d181dt329}}
+    \label{fig:b2}
+\end{figure}
+
+Different from conicity, the influence of increasing track deviation is simply predictable. Research report DT329 provided an approximate linear function for relationship between lateral force and track deviation. These linear functions can be extracted from plots B1-B30 of DT329.
 
 Since peak force output of 120 km/h freight train and 200 km/h passenger train are close(2\% difference), it is reasonable to conclude that passenger train tends to yield smaller result than freight train at same speed. This is probably due to passenger trains have more sophisticated suspension system designed to suppress lateral motion of the vehicle. Unfortunately, only one speed of 200km/h configuration was available in DT329. But since freight train yields greater output, it is conservative for designer to adopt force output of freight trains for speeds of 60km/h, 100km/h, 120km/h.
 
-It is worthy to point out a suspicious mistake of DT329 in Table.\ref{tab:peaklateralforce}. Report claimed that output data were filtered by statistical analysis. The peak lateral track force was determined from a statistical analysis of lateral track forces as $M \pm 3\sigma$ where $M$ is the mean lateral force value over the segment and $\sigma$ is the standard deviation over the segment. It does not give a true maximum lateral force but on which is greater than 99.5\% of all force values. It is obvious in Table.\ref{tab:peaklateralforce} that output data of 160kN for freight train wagon was not filtered by statistical analysis. It is the greatest value among all raw output data of freight train running at 100 km/h. See Figure B7. This data of 160kN also illustrates that 
+It is worthy to point out a suspicious mistake of DT329 in Table.\ref{tab:peaklateralforce}. Report claimed that output data were filtered by statistical analysis. The peak lateral track force was determined from a statistical analysis of lateral track forces as $M \pm 3\sigma$ where $M$ is the mean lateral force value over the segment and $\sigma$ is the standard deviation over the segment. It does not give a true maximum lateral force but on which is greater than 99.5\% of all force values. It is obvious in Table.\ref{tab:peaklateralforce} that output data of 160kN for freight train wagon was not filtered by statistical analysis. It is the greatest value among all raw output data of freight train running at 100 km/h. See Figure.\ref{fig:b7}. This data of 160kN also illustrates that 
 peak forces will be influenced by discrete features in the track geometry which may not be reflected thoroughly in the standard deviation. This thesis report suggest substitute 160kN with 80kN(value by approximate observation). See Table.[note1]\ref{tab:peaklateralforce}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{b7}
+    \caption{Figure B7 extracted from \citet{d181dt329}}
+    \label{fig:b7}
+\end{figure}
 
 \begin{table}[h!]
     \centering
-    \caption{Peak Lateral Track Force Over All Track Qualities. Extracted From \cite[Tab. B1]{d181dt329}}
+    \caption{Peak Lateral Track Force Over All Track Qualities. Extracted From \citet[Tab. B1]{d181dt329}}
     \begin{tabular}{cccc}
         \hline
         Peak lateral force(kN) & Locomotive Total & Coach/Wagon & Total \\ 
@@ -1655,7 +1712,7 @@ peak forces will be influenced by discrete features in the track geometry which 
         \hline
     \end{tabular}
     \begin{flushleft}
-    Note1: Force value 160kN for wagon of freight train running at 100 km/h is not representative. But it is not filtered by statistical analysis. It is advised to substitute 160kN with 80kN. 80kN is obtained by approximate observation of \cite[Figure B7]{d181dt329}. As a result, total force is reduced from 250kN to 170kN.
+    Note1: Force value 160kN for wagon of freight train running at 100 km/h is not representative. But it is not filtered by statistical analysis. It is advised to substitute 160kN with 80kN. 80kN is obtained by approximate observation of \citet[Figure B7]{d181dt329}. As a result, total force is reduced from 250kN to 170kN.
     \end{flushleft}
     \label{tab:peaklateralforce}
 \end{table}
@@ -1752,18 +1809,18 @@ F_{lh} = 3.10\cdot v^{0.7495}
 \end{figure}
 
 \subsubsection{Application of lateral force model}
-Formula\ref{for:regressionfreight},\ref{for:regressionpassenger} and \ref{for:regressionhighspeed} can be used as load forces for different design scenario. However, these loads are normally higher than the load defined in EN1991-2\cite[6.5.2 Nosing force]{EC12}. EN 1991-2 states that the characteristic value of the nosing force shall be taken as $Q_sk = 100 kN$. 
+Formula\ref{for:regressionfreight},\ref{for:regressionpassenger} and \ref{for:regressionhighspeed} can be used as load forces for different design scenario. However, these loads are normally higher than the load defined in EN1991-2\citet[6.5.2 Nosing force]{EC12}. EN 1991-2 states that the characteristic value of the nosing force shall be taken as $Q_sk = 100 kN$. 
 
-It is worthy to note that although in RP6\cite[Proposed criteria]{d181} several load model with loading magnitude ranging from 70 kN to 270 kN were originally proposed, EN1991-2 uses a single characteristic value of 100 kN for all design scenarios. 
+It is worthy to note that although in RP6\citet[Proposed criteria]{d181} several load model with loading magnitude ranging from 70 kN to 270 kN were originally proposed, EN1991-2 uses a single characteristic value of 100 kN for all design scenarios. 
 
 
 Since no document has explained this modification, this is probably due to the consideration of lower track irregularity deviation during the creation of EN1991-2.
 
-As explained in previous chapter, peak force is generally linear to track standard deviation. Most of the peak lateral force described in DT329 was obtained on track with 7mm standard deviation, while EN13848-5\cite{13848} allows much lower track standard deviation defined in Table \ref{tab:lateraldeviation}. This means peak lateral force on tracks(if maintained according to Eurocode regulations) is also much smaller than peak force obtained in DT329. 
+As explained in previous chapter, peak force is generally linear to track standard deviation. Most of the peak lateral force described in DT329 was obtained on track with 7mm standard deviation, while EN13848-5\citet{13848} allows much lower track standard deviation defined in Table \ref{tab:lateraldeviation}. This means peak lateral force on tracks(if maintained according to Eurocode regulations) is also much smaller than peak force obtained in DT329. 
 
 EN1991-2 states the usage of nosing force. See \ref{sec:nosingforce}. Moreover, since loading model is obtained in Figure.\ref{fig:peaklateralforceregression}, a response solution of the bridge can also be obtained. 
 
-This can be done by using the solution in \ref{sec:harmonicloadmodel} and substitute peak force into the formula as the amplitude of harmonic force $F$. Development of this method is presented in Chapter. 
+This can be done by using the solution in \ref{sec:analyticalmodel} and substitute peak force into the formula as the amplitude of harmonic force $F$. Development of this method is presented in Chapter.\ref{sec:parcticalmethod}. 
  
 It should be noted that the proposed model in RP6, as well as modified model in EN1991-2, is based on the investigation of first two traction units of the train. It is suspected that when bridge is longer, more traction units can run on the bridge simultaneously, introducing bigger force to the bridge. This can lead to a problem that EN1991-2 is non-conservative in the magnitude of nosing force when applied to longer bridges. However, this suspecting hypothesis is not verified in this chapter.  
 
@@ -1775,6 +1832,6 @@ The resonance phenomenon was successfully reproduced and observed, though its on
 
 Please note that every bridge will always have resonance with running train because axle repeat pattern and kinematic movement are both wavelength phenomenon, which means there is always a speed of train yielding a vibration frequency coincides with the first lateral natural frequency of bridge. However, the effect of resonance happening on long-span bridge is usually unpronounced since the speed of the train is low as 2.5m/s to 14m/s when resonance occurs.  
 
-Some of the conclusion and proposed criteria in RP6 were adopted in Eurocode 1991-2. One of them is 1.2Hz criterion. It was adopted without amending. The other one is lateral force models. They were adopted in a different name as 'nosing force' in \cite[A6.5.2]{EC12}. 
+Some of the conclusion and proposed criteria in RP6 were adopted in Eurocode 1991-2. One of them is 1.2Hz criterion. It was adopted without amending. The other one is lateral force models. They were adopted in a different name as 'nosing force' in \citet[A6.5.2]{EC12}. 
 
-The 1.2Hz criterion was under debate and proofed unreliable in fulfilling its original intention, avoiding occurrence of resonance. There is no research in D181 report series supporting this criterion, nor there exists literature behind the natural frequency of vehicles. This criterion ignored the fact of future bridge designs with long span would certainly have a natural frequency lower than 1.2 Hz. It is advised that Eurocode review this criterion and revise it.
+The 1.2Hz criterion was under debate and proofed unreliable in fulfilling its original intention, avoiding occurrence of resonance. There is no research in D181 report series supporting this criterion, nor there exists literature behind the natural frequency of vehicles. This criterion ignored the fact that future bridge designs with long span would certainly have a natural frequency lower than 1.2 Hz. It is advised that Eurocode review this criterion and revise it.

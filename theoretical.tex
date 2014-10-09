@@ -11,7 +11,7 @@
 
 % \subsection{Supporting report D181 RP6}\label{sec:1.2hz}
 
-% Evidence of \cite{d181} is the origin of \cite[A.2.4.4.2.4(3)]{EC12} is found in \cite[p4.2: Lateral Frequencies]{d181}:
+% Evidence of \citet{d181} is the origin of \citet[A.2.4.4.2.4(3)]{EC12} is found in \citet[p4.2: Lateral Frequencies]{d181}:
 
 % In order to avoid the phenomena of lateral resonance in vehicles, the first natural frequency of lateral vibration of the span $f_{lt}$ such that:
 
@@ -21,7 +21,7 @@
 
 % The statement exactly coincides with criterion A.2.4.4.2.4(3) in Eurocode 1991. It is sufficient to acknowledge D181 RP6 as the origin of criterion A.2.4.4.2.4(3) because this report is created by UIC.
 
-% The value of frequency limit, 1.2Hz is explained in \cite[p3.2: Criterion 2]{d181}:
+% The value of frequency limit, 1.2Hz is explained in \citet[p3.2: Criterion 2]{d181}:
 
 % \begin{quote}
 % To avoid the occurrence of resonance in the lateral motion of the vehicles due to the lateral motion of the bridge, a limit value lower than the first natural frequency $f_1t$ of the lateral vibration of the span studied should be fixed. The natural frequency for lateral movements is between 0.5 and 0.7 Hz for coaches and between 0.7 and 1 Hz for locomotives. We therefore propose a safety margin $F_{lt} \geq 1.2Hz$
@@ -33,20 +33,20 @@
 
 % It can also be concluded that the bridge is actually meeting the origin purpose of the criterion if the first lateral frequency of the bridge is out of the domain of train frequency. But it arouses another problem that trains' lateral movement frequency is completely dependent on train parameters. However, the train frequency domain proposed in RP6 is extracted from data obtained before 1996 in France. It means that for example, the train vehicle running on railways nowadays can be completely different from the train running before 1996. So updating train dynamics data is also essential to make use of this requirement.
 
-% It's also important to study how did D181 committee obtained the train frequency data. The procedure is described in report D181 DT329 E\cite{d181dt329}. 
+% It's also important to study how did D181 committee obtained the train frequency data. The procedure is described in report D181 DT329 E\citet{d181dt329}. 
 
 % \subsection{Supporting report D181 DT329 E}
 
 % \subsubsection{Methodology adopted in D181 DT329 E}
-% The methodology used to obtain train frequency was described as following quoting \cite[p.4]{d181dt329}:
+% The methodology used to obtain train frequency was described as following quoting \citet[p.4]{d181dt329}:
 
 % \begin{quote}
-% The dynamic lateral response to the passage of different train types of various theoretical bridge models to be examined using VAMPIRE\cite{vampire}. The method of modelling behaviour adopted is the Theory of Normal Modes. Each train is modelled as a series of masses interconnected by suspension components of known characteristic. Time-step integrations are then performed to simulate the passage of a train over the bridge model along a track sample, which extends beyond the bridge.
+% The dynamic lateral response to the passage of different train types of various theoretical bridge models to be examined using VAMPIRE\citet{vampire}. The method of modelling behaviour adopted is the Theory of Normal Modes. Each train is modelled as a series of masses interconnected by suspension components of known characteristic. Time-step integrations are then performed to simulate the passage of a train over the bridge model along a track sample, which extends beyond the bridge.
 
 % Comparisons of measured bridge responses with VAMPIRE simulations of the bridges and trains involved were the subject of earlier studies for ERRI Committee D 181, the results being documented in RP 3, RP 4, and RP 5 of the Committee. Each vibration model was derived from finite element analysis of the bridge structure.
 % \end{quote}
 
-% It can be acknowledged from above statement that 2 sets of data were taken into account, one is generated in simulations, the other is measure via situ tests. Please note that VAMPIRE is a simulation software developed and maintained by DeltaRail. An input file for VAMPIRE is given in \cite{d181dt329} but VAMPIRE is inaccessible since it's a commercial software. Thus the lateral effects taken into account are unclear. So hypothesis was made based on input data given by \cite{d181dt329}
+% It can be acknowledged from above statement that 2 sets of data were taken into account, one is generated in simulations, the other is measure via situ tests. Please note that VAMPIRE is a simulation software developed and maintained by DeltaRail. An input file for VAMPIRE is given in \citet{d181dt329} but VAMPIRE is inaccessible since it's a commercial software. Thus the lateral effects taken into account are unclear. So hypothesis was made based on input data given by \citet{d181dt329}
 
 % Inventory of input data
 % \begin{enumerate}[-]
@@ -68,7 +68,7 @@
 
 % \subsubsection{Types of resonance investigated in DT329} \label{sec:resonanceinvestigated}
 
-% Three sources of resonance have been examined according to DT 329 \cite{d181dt329}:
+% Three sources of resonance have been examined according to DT 329 \citet{d181dt329}:
 
 % \begin{quote}
 % The first source of resonance considered was frequency coincidence between the axle repeat pattern in the trailing vehicles and the first lateral bending mode of the bridge. Secondly, coincidence between the kinematic wavelength at a given train speed and first lateral bending mode of the bridge was examined. Thirdly, coincidence between the length of the span and the kinematic wavelength of the trailing vehicles was considered.
@@ -77,7 +77,7 @@
 % Explanations of these resonance effects have been given in DT 329:
 
 % \begin{quote}
-% Axle repeat patterns are wavelength phenomena - regardless of vehicle speed, the repeat length is constant. However, since frequency is speed divided by wavelength, the frequency of the axle repeat pattern vary with train speed. A table of axle repeat pattern lengths, and typical frequencies arising from train speed are given in \cite[Appendix C Table C1]{d181dt329}. This table is extracted as table\ref{tab:329axlerepeat}. 
+% Axle repeat patterns are wavelength phenomena - regardless of vehicle speed, the repeat length is constant. However, since frequency is speed divided by wavelength, the frequency of the axle repeat pattern vary with train speed. A table of axle repeat pattern lengths, and typical frequencies arising from train speed are given in \citet[Appendix C Table C1]{d181dt329}. This table is extracted as table\ref{tab:329axlerepeat}. 
 
 % Kinematic wavelength also gives rise to frequencies which vary with speed for the same reason. For first lateral bending mode coincidence with kinematic frequency, the kinematic wavelength of each train type had to be established, by running each train at a range of typical operating speeds over a discrete lateral irregularity, and examining the frequency content of the lateral wheel motion. The resulting wavelength ranges are tabulated in \ref{tab:329kinematicwavelength}. The most likely possible resonance in the initial studies to be of this type was between the passenger train at 200km/h on passenger track and BR P1 profiles, and a span of 54m, stiffness 1/10000, mass/length of 6 tonnes/m. This combination was examined by varying the speed between 1/7000 and 1/12000 running the train at 55.556m/s. Another combination was examined - the ETR500 train running between 65 - 80 m/s on high speed track and BR P1 wheel profiles, for a span of 38m, stiffness 1/10000, and mass/length 10 tonne/m; the span in this case was chosen to coincide with the kinematic wavelength of the coaches.
 % \end{quote}
@@ -104,7 +104,7 @@
 % \begin{figure}[h]
 %     \centering
 %     \includegraphics[width=0.8\textwidth]{c16.pdf}
-%     \caption{Evidence of resonance caused by kinematic wavelength with span. Extract from \cite[C16]{d181dt329} }
+%     \caption{Evidence of resonance caused by kinematic wavelength with span. Extract from \citet[C16]{d181dt329} }
 %     \label{fig:c16}
 % \end{figure}
 
@@ -153,7 +153,7 @@
 % \begin{figure}[h]
 % \centering
 % \includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
-% \caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \cite[p.17]{esveld2001modern}}
+% \caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \citet[p.17]{esveld2001modern}}
 % \label{fig:wheelset and track dimensions}
 % \end{figure}
 
@@ -174,7 +174,7 @@
 % \begin{figure}[h]
 %     \centering
 %     \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
-%     \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \cite[2.4]{esveld2001modern}}
+%     \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \citet[2.4]{esveld2001modern}}
 %     \label{fig:conicalwornprofiles}
 % \end{figure}
 
@@ -205,7 +205,7 @@
 % Locomotives of freight trains have wheel diameter of 1000 mm.
 
 % \section{Lateral Track Irregularities}
-% This section describes allowable lateral track irregularities defined in EN13848-5\cite{13848}. 
+% This section describes allowable lateral track irregularities defined in EN13848-5\citet{13848}. 
 
 % Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
 
@@ -222,7 +222,7 @@
 
 % \begin{table}[h]
 %     \centering
-%     \caption{Alignment - AL - Standard deviation. Extracted from \cite[Table B.6]{13848}}
+%     \caption{Alignment - AL - Standard deviation. Extracted from \citet[Table B.6]{13848}}
 %     \begin{tabular}{cc}
 %         \hline
 %         Speed(km/h) & Standard deviation(mm) \\
@@ -249,17 +249,17 @@ This research aims to investigate both wavelength of trains running in the Nethe
 
 \section{Effects investigated in wavelength study}
 
-Effects investigated in this report will be the same effects investigated in DT 329, which is described in Sec.\ref{sec:resonanceinvestigated}. However, according to the statement in Sec.2.3[Summary of results] in the same report,
+Effects investigated in this report will be the same effects investigated in DT 329, which is described in Sec.\ref{sec:resonance329}. However, according to the statement in Sec.2.3[Summary of results] in the same report,
 
 \begin{quote}
 Even when the axle repeat frequency matches the first lateral bending mode of each span, there is no evidence that the resonant behaviour of the span and train has any effect on subsequent spans, since the resonant effects do not appear to grow from span to span.
 \end{quote}
 
-the third investigated resonance effect 'coincidence between the length of the span and the kinematic wavelength of the trailing vehicles' is neglected in this thesis. 
+the third investigated resonance effect 'coincidence between the length of the span and the kinematic wavelength of the trailing vehicles' is neglected in this thesis because it is concluded in \citet{d181dt329} that resonance do not grow from span to span. 
 
 
 \section{Equivalent conicity used in this study}
-According to \cite[Section.2.6]{esveld2001modern}, 
+According to \citet[Section.2.6]{esveld2001modern}, 
 
 \begin{quote}
     Practical research has shown that over a period of time wheel profiles stabilise with wear at an equivalent conicity of 0.2 to 0.3. With regards to running stability, the equivalent conicity must remain below 0.4 and to ensure the centering effect it must be greater than 0.1.
@@ -267,7 +267,7 @@ According to \cite[Section.2.6]{esveld2001modern},
 
 conicity range will be 0.2 to 0.3.
 
-It is suggested that vehicle maintenance sector ensure wheels of train wheels stay in the safe zone of conicity. 
+It is suggested by this report that vehicle maintenance sector ensure wheels of train wheels stay in the safe zone of conicity. 
 
 
 \section{Study on wavelength of lateral kinematic movement}
@@ -276,15 +276,16 @@ The kinematic movememnt of the train on the rail is much similar to klingel move
 
 Klingel movement is proposed by Klingel which can well predict the moving trend of a single wheelset on a straight railway track. However, the kinematic movement of a certain wheelset assembled into a running train is different from the movement of a single free wheelset. This is due to multiple bodies interact with each other, introducing more complicated mechanism in wheel/rail interaction. 
 
-This  study focuses on Klingel movement of a bogie. First part of the  study will try to discuss the relationship of Kiingle frequency of a wheelset and kinematic movement frequency of a whole train. Second part of the study will use realistic data of Dutch railway/vehilces to assess the frequency bandwidth of Dutch native trains.
+This  study focuses on Klingel movement of a bogie. First part of the  study will try to discuss the relationship of Klingle frequency of a wheelset and kinematic movement frequency of a whole train. Second part of the study will use realistic data of Dutch railway/vehilces to assess the frequency bandwidth of Dutch native trains.
 
 This section will include following parameters to be studied:
 
-Speed of train, radius of the wheel and conicity of the wheel. 
+\begin{enumerate}[-]
+	\item Speed of train, radius of the wheel and conicity of the wheel. 
+	\item Gauge distance is fixed to 1435mm according to UIC standard. 
+	\item Frequency is linear to speed if other parameters are fixed.
+\end{enumerate}
 
-Gauge distance is fixed to 1435mm according to UIC standard. 
-
-Frequency is linear to speed if other parameters are fixed.
 
 \subsection{Comparison between Klingle movement and train kinematic movement studied in D181 DT329}
 
@@ -311,7 +312,7 @@ where:
 
 I = Rigid wheel base
 
-By inputting the related train parameters in used in VAMPIRE simulations into the Klingel formula, following table is obtained.
+By inputting the related train parameters used in VAMPIRE simulations into the Klingel formula, following table is obtained.
 
 \begin{table}[h]
   \centering
@@ -328,14 +329,14 @@ By inputting the related train parameters in used in VAMPIRE simulations into th
     UIC COACH  & 1435 & 2560 & 445 & 0.05 & 15.8776 & 32.4718 &  \\
     \bottomrule
     \end{tabular}%
-  \label{tab:addlabel}%
+  \label{tab:wavelengthkinematic}%
 \end{table}%
 
 
-By comparing the result from above table and kinematic wavelength obtained by D181, extracted as Table.\ref{tab:329kinematicwavelength}, parametric study results show close prediction for kinematic wavelength of freight train locomotive/coach/wagon. It's because freight train suspension system is simpler and stiffer compared to passenger train's, making the behaviour of train acts more similar to the behaviour of a single wheelset of bigger mass. 
+By comparing the result from Table.\ref{tab:wavelengthkinematic} and kinematic wavelength obtained by D181, extracted as Table.\ref{tab:329kinematicwavelength}, parametric study results show close prediction for kinematic wavelength of freight train locomotive/coach/wagon. It's because freight train suspension system is simpler and stiffer compared to passenger train's, making the behaviour of train acts more similar to the behaviour of a single wheelset of bigger mass. 
 
 
-Wavelength for UIC freight wagon is a special case and it's not meeting the wavelength results in VAMPIRE simulations. This is probably because this car has a different design. It can be seen from in the parameter form that only 2 axles are installed and there's no wagon installed. See Figure.\ref{fig:2axlefreight} and Figure.\ref{fig:4axlefreight} for their different axle configurations.
+Wavelength for UIC freight wagon is a special case and it's not meeting the wavelength results in VAMPIRE simulations. This is probably because this car has a different design. It can be seen from in Figure.\ref{fig:uicoach} that only 2 axles are installed and there's no wagon installed. See Figure.\ref{fig:2axlefreight} and Figure.\ref{fig:4axlefreight} for their different axle configurations.
 
 \begin{figure}[h]
 	\centering
@@ -357,14 +358,14 @@ The train parameter used in this part of parametric study is attached in the App
 
 \section{Assess of wavelength bandwidth based on realistic data of Dutch Rail/Vehicle}
 
-The wavelength of passenger coach is highly related to the characteristics of its suspension systems. These data is often difficult to obtain. Since the improved Klingel formula ignored the effect of suspension system, the results in this section is only approximate value for the wavelength of kinematic movement.
+The wavelength of passenger coach is highly related to the characteristics of its suspension systems. These data are often difficult to obtain. Since the improved Klingel formula ignored the effect of suspension system, the results in this section is only approximate value for the wavelength of kinematic movement.
 
 
 Future research is highly recommended to be conducted to study the kinematic wavelength of complete vehicles in the Netherlands, using realistic data of their suspension systems.
 
 
-Table.\ref{tab:wavelengthrealistic} is created by processing Dutch wheel radius and wheelbase data collected from document\cite{trainparameters}. 
-Thus range of $\lambda$ is obtained by inputting realistic data in Kingel formula, illustrated the table.
+Table.\ref{tab:wavelengthrealistic} is created by processing Dutch wheel radius and wheelbase data collected from document\citet{trainparameters}. 
+Thus range of $\lambda$ is obtained by inputting realistic data in Kingel formula, illustrated in Table.\ref{tab:wavelengthrealistic}.
 
 \begin{table}[h]
   \centering
@@ -493,9 +494,10 @@ By comparing Fig.\ref{fig:trainparameters} and Table.\ref{tab:329axlerepeat}. It
   \label{tab:wavelengthaxlerepeat}%
 \end{table}%
 
-Lateral wavelength of axle repeat pattern is then obtained by extracting all possible L\_Coa values from MU standards in \cite{EC15528}, illustrated in Table.\ref{tab:wavelengthaxlerepeat}. Detailed information about MU classes can be found in Appendix.\ref{app:mu}.
+Lateral wavelength of axle repeat pattern is then obtained by extracting all possible L\_Coa values from MU standards in \citet{EC15528}, illustrated in Table.\ref{tab:wavelengthaxlerepeat}. Detailed information about MU classes can be found in Appendix.\ref{app:mu}.
 
-Since in DT329 resonance study, double length of L\_Coa is not taken into account in analysis phase, it is advisable for the usage of lateral axle repeat pattern wavelength, extracting only L\_Coa min column and L\_Coa max column.
+
+After examing the content in analysing section of DT329 resonance study, it is found that double length of L\_Coa is not taken into account in analysis phase. This means although D181 committee calculated double length of L\_Coa, these values were never used. Thus it is advisable for the usage of lateral axle repeat pattern wavelength, extracting only L\_Coa min column and L\_Coa max column.
 
 
 % \begin{figure}[h!]
@@ -559,13 +561,13 @@ The lateral resonance effects between running train and railway bridge include t
 
 Since the wavelength for the two phenomenon on the same train are not likely to be equal, the possible range of wavelength for both phenomenon were investigated in this chapter. The possible axle repeat pattern wavelength is approximately 10m-30m covering all train types and kinematic wavelength is 13m to 17m covering all train types. It can be seen that axle repeat pattern possess a broader range of wavelength than kinematic movement.
 
-It also can be concluded that for any railway bridge, resonance between the bridge itself and train can happen if the train is running at a corresponding resonance speed according to its wavelength. So avoiding resonance is not a valid strategy to choose, not to mention the apparent frequency shift phenomenon to be discussed in following chapters. 
+It also can be concluded that for any railway bridge, resonance between the bridge itself and train can happen if the train is running at a corresponding resonance speed according to its wavelength. So avoiding resonance is not a valid strategy to choose, not to mention the apparent frequency shift phenomenon to be discussed in Chapter.\ref{sec:resonance329}. 
 
 To be noted that these wavelength are also not the exact wavelength in real-life scenario but an estimation, especially for kinematic movement. But it gave away a rough idea about the magnitude of trains' wavelength, and, can be used for practical design purposes. To see the usage of studied wavelength, please see Chapter.\ref{sec:parcticalmethod}
 
 
 
-\chapter{Essentials of analytical approach to be adopted in practical checking method}
+\chapter{Essentials of analytical approach to be adopted in practical checking method}\label{sec:analyticalmodel}
  
 \section{Introduction}
 This chapter aims to give a preliminary knowledge of a selected analytical model that simulates the perfect resonance scenario for railway bridge under lateral dynamic load. The knowledge contains the simplified model itself, its assumptions, field of application and explicit solutions. 
@@ -596,14 +598,14 @@ Presented in Figure.\ref{fig:harmonicloadbeam}, the model features a simply supp
 
 The beam is assumed to be uniform in both geometry and material. The stiffness of the beam is the equivalent uniform lateral bending stiffness of the bridge. 
 
-The load is moving in the same speed as the train. The magnitude of load amplitude in going to be discussed in the following chapter. And the load's self vibration frequency is equal to the first natural lateral bending frequency of the beam.
+The load is moving in the same speed as the train. The magnitude of load amplitude is going to be discussed in the following chapter. The load's self vibration frequency is equal to the first natural lateral bending frequency of the beam.
 
 
 This model is valid for single span railway bridges that has a sinuous first natural lateral vibration shape.  
 
 \section{Solution deduction}
 
-Solution provided by Fryba\cite{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \cite[Section II.2.1]{fryba1999vibration} and presented below.
+Solution provided by Fryba\citet{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \citet[Section II.2.1]{fryba1999vibration} and presented below.
 
 \begin{quote}
 
@@ -681,7 +683,7 @@ According to (1.21)
 
 substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
 
-\begin{equation}\label{eq:v(x,t)simpleharmonic}
+\begin{equation}
     v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
 \end{equation}
 
@@ -741,7 +743,7 @@ $\chi$: damping coefficient
 
 $\mu$: mass per unit length of the bridge
 
-also, in \cite[Page.704]{abu2000vibration} it is mentioned that:
+also, in \citet[Page.704]{abu2000vibration} it is mentioned that:
 
 \begin{quote}
     The external and internal damping of the beam are assumed to be proportional to the mass and stiffness of the beam respectively,i.e., $r_a = \gamma_1 \mu$.., where $\gamma_1$ and $\gamma_2$ are proportionality constants.
@@ -754,7 +756,7 @@ thus:
     \omega_b = \frac{\gamma_1}{2}
 \end{equation}
 
-and it is mentioned in \cite[Eq.8]{abu2000vibration} that:
+and it is mentioned in \citet[Eq.8]{abu2000vibration} that:
 
 $$\zeta = \frac{\gamma_1}{\omega_1}$$
 
@@ -776,7 +778,7 @@ Since circular frequency of damping $\omega_b$ is not clearly defined by Fryba, 
 
 The verification is done by comparing the result of Eq.\ref{eq:v(x,t)simpleharmonic} with the result of a explicit solution in a different form obtained by another deducing method.  
 
-The result in \cite{abu2000vibration} is selected to compare. This report is researching vibration of beams with general boundary conditions due to a moving harmonic load. The differential equation is illustrated as follows:
+The result in \citet{abu2000vibration} is selected to compare. This report is researching vibration of beams with general boundary conditions due to a moving harmonic load. The differential equation is illustrated as follows:
 
 \begin{equation}\label{eq:hilal}
     EIv''''+\mu \ddot{v} + r_a \dot{v}+r_i \dot{v}''' = p(x,t)
@@ -791,12 +793,12 @@ The difference between Eq.\ref{eq:hilal} and Eq.\ref{eq:v(x,t)simpleharmonic} is
     \item Simple hinge support at both ends of the beam.
 \end{enumerate}
 
-One plot from the parametric study of \cite{abu2000vibration} meets the above requirement and is selected and illustrated in Figure. Parameter used in this plot is $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$
+One plot from the parametric study of \citet{abu2000vibration} meets the above requirement and is selected and illustrated in Figure. Parameter used in this plot is $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{hilalplot}
-    \caption{Reference plot extracted from \cite{abu2000vibration}. Condition: $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$. Y axis for dynamic amplification factor.}
+    \caption{Reference plot extracted from \citet{abu2000vibration}. Condition: $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$. Y axis for dynamic amplification factor.}
     \label{fig:hilalplot}
 \end{figure}
 
@@ -838,7 +840,7 @@ into the console. Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} is obtained
 \label{fig:EJ24300000000L54mu6000c29daf.tikz} 
 \end{figure}
 
-By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} it can be concluded that results are the same. Then it can be further concluded that Eq.\ref{eq:v(x,t)simpleharmonic} and expression for $\omega_b$ are both correct.
+By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} it can be concluded that results are the same on y-axis. The difference of x-axis is because in Figure.\ref{fig:hilalplot} time axis is scaled to 1 but in Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} time is not scaled. Then it can be further concluded that Eq.\ref{eq:v(x,t)simpleharmonic} and expression for $\omega_b$ are both correct.
 
 
 \chapter{New practical method for checking lateral resonance response of railway bridges based on VAMPIRE simulation results }\label{sec:parcticalmethod}
@@ -847,21 +849,21 @@ By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu60
 
 This chapter proposes a new method for checking lateral resonance response of railway bridges. This method aims to provide an engineering solution for checking the deflection and acceleration of railway bridges when resonance happens under horizontal dynamic train load. Both creation and verification of the method is based on VAMPIRE simulation results provided in DT329 research.
 
-The method features the combined usage of a simplified analytical structure model and a more refined lateral force model. The analytical structure model simulates a perfect resonance scenario for railway bridge. And the refined load model, which is a concentrated harmonic moving load, represents the lateral dynamic effects that occur because of the passing of the train. The combination of these two analytical elements will generate a resonance response conservative compared to the simulation output in DT329 because varies types of disturbance were included in these simulation runs.
+The method features the combined usage of a simplified analytical structural model and a more refined lateral force model. The analytical structure model simulates a perfect resonance scenario for railway bridge. And the refined load model, which is a concentrated harmonic moving load, represents the lateral dynamic effects that occur because of the passing of the train. The combination of these two analytical elements will generate a resonance response conservative compared to the simulation output in DT329 because various types of disturbance were included in these simulation runs.
 
-The analytical structure model will adopted the model introduced in previous chapter and its explicit solution has already been worked out in the same chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
+The analytical structural model that was introduced in the previous chapter and its explicit solution has already been worked out in the same chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
 
 \section{Overview of this chapter}
 
-To give a clear overview of this chapter, procedure of development of the method is given as following:
+To give a clear overview of this chapter, procedure of development of the method  as following:
 
 \begin{enumerate}
     \item \textit{Developing:} Develop a more practical load model to be used in pair with the analytical model introduced in previous chapter based on the VAMPIRE simulation outputs. See Section.\ref{sec:refinedloadmodel}
         \begin{enumerate}[label*=\arabic*.]
             \item Overview of both VAMPIRE numerical simulation method and analytical method. See Section.\ref{sec:overviewvampireanalytical}
-            \item Find the analytical equivalent nosing forces amplitude for freight trains in 3 different cases presented in DT329 resonance research simulation. The equivalent nosing force amplitude is the exact force amplitude to be substituted into analytical model as lateral harmonic force input, yielding the same response in DT329 simulation output. See Section.\ref{sec:findingequivalentamplitude}
+            \item Find the analytical equivalent nosing forces amplitude for freight trains in 3 different cases presented in DT329 resonance research simulation. See Section.\ref{sec:findingequivalentamplitude}
             \item Find regular pattern and key parameter for the magnitude of nosing forces amplitude for freight trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
-            \item Develop a conservative load model based on observed pattern of nosing force of freight trains. This load model is conservative because of the research result of DT329, that freight trains generates greater lateral force on track compare to passenger trains and high speed trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
+            \item Develop a conservative load model based on observed pattern of nosing force of freight trains. See Section.\ref{sec:keyparameterforequivalentamplitudeandhypothesis}
         \end{enumerate} 
     \item \textit{Verifying:} Validate the feasibility of combined usage of conservative load model and analytical model
         % \begin{enumerate}[label*=\arabic*.]
@@ -890,15 +892,15 @@ To give a clear overview of this chapter, procedure of development of the method
 
 \section{Development of refined load model}\label{sec:refinedloadmodel}
 
-The load model provided in EN1991-2(nosing force) and D181 RP6(proposed criteria) are too conservative. The reason is that these forces are obtained by simulations ran on poorest maintained tracks with $7mm$ track irregularity standard deviation. In fact tracks are allowed to have lateral irregularities up to $1.8mm$ according to EN13848(Section.\ref{sec:lateraltrackirrgularities}). So existing lateral force models are enormous compared to real-life scenario. 
+The load model provided in EN1991-2(nosing force) and D181 RP6(proposed criteria) are too conservative for dynamic analysis. The reason is that these forces are obtained by simulations ran on poorest maintained tracks with $7mm$ track irregularity standard deviation. In fact tracks are allowed to have lateral irregularities up to $1.8mm$ according to EN13848(Section.\ref{sec:lateraltrackirrgularities}). So existing lateral force models are enormous compared to real-life scenario. 
 
-In addition, the existing load models are representative for hunting effects\cite[Proposed criteria]{d181}. However, according to \cite{majka2008effects}, although affected by varies parameters, critical speed for hunting effect is normally at 120km/h for modern railway vehicle and tracks. So at least for trains running slower that 120km/h, it can be conclude that hunting is not occurring. And their lateral force should be much less than the force magnitude mentioned in either EN1991-2 or D181 RP6.
+In addition, the existing load models are representative for hunting effects\citet[Proposed criteria]{d181}. However, according to \citet{majka2008effects}, although affected by varies parameters, critical speed for hunting effect is normally at 120km/h for modern railway vehicle and tracks. So at least for trains running slower than 120km/h, it can be conclude that hunting is not occurring. And their lateral force should be much less than the force magnitude mentioned in either EN1991-2 or D181 RP6.
 
 Thus these existing load models are too big and not suitable for the analytical solution. A more precise load model is needed for coupled usage for analytical solution.
 
 \subsection{Overview of VAMPIRE numerical simulation method and analytical method}\label{sec:overviewvampireanalytical}
 
-The analytical model itself and its explicit expression have already been introduced and described in previous chapter. This section will give a overview on the input parameters of both VAMPIRE simulation and analytical model. This is not only due to the fact that VAMPIRE simulation was proved by D181 committee to be in close prediction with situ measurements, but also because in following sections VAMPIRE simulation results will be used as reference comparison data for the development of analytical model's pairing load model. 
+The analytical model itself and its explicit expression have already been introduced and described in previous chapter. This section will give a overview on the input parameters of both VAMPIRE simulation and analytical model. This is not only due to the fact that VAMPIRE simulation was proved by D181 committee to be in close prediction with situ measurements, but also because in following sections VAMPIRE simulation results will be used as benchmark data for the development of analytical model's pairing load model. 
 
 \begin{table}[h!]
     \centering
@@ -931,30 +933,30 @@ Thus finding the correct expression for the harmonic moving force is vital to th
 
 
 \subsection{Finding equivalent lateral force amplitude for specific cases}\label{sec:findingequivalentamplitude}
-In this section, equivalent lateral force amplitudes for analytical solution are obtained. The equivalent lateral force amplitude does not represent real force magnitude in rail/wheel interaction, but a force amplitude that yields same result as VAMPIRE simulations using same input parameters if substituted into analytical solution. So this lateral force amplitude may not be correct if adopted in other structure models. On the other hand, analytical solution may yield imprecise results if not substituted with this exact equivalent force amplitude. They can only be used in pair with each other.
+In this section, equivalent lateral force amplitudes for the analytical solution are obtained. The equivalent lateral force amplitude does not represent real force magnitude in rail/wheel interaction, but a force amplitude that yields same result as VAMPIRE simulations using same input parameters if substituted into analytical solution. So this lateral force amplitude may not be correct if adopted in other structure models. On the other hand, analytical solution may yield imprecise results if not substituted with this exact equivalent force amplitude. They can only be used in pair with each other.
 
 Thus in order to perform the comparison mentioned above, both input and output data of DT 329 VAMPIRE simulations are selected as reference data. The input data will be substituted into analytical model and the output data of VAMPIRE simulation will be compared with output of analytical model. 
 
-3 sets of reference data are extracted from DT329 report. They are C1,C3,C9 in Figure.\ref{fig:c1},\ref{fig:c3} and \ref{fig:c9} respectively. These data are all resonance study so they are qualified to be used as reference data. Please note that C1,C3,C9 were all done on freight trains on same track sample. Finally 3 equivalent forces are collected from these 3 test samples to see regular pattern and relevant parameters for freight trains.
+3 sets of reference data are extracted from DT329 report. They are C1,C3,C9 in Figure.\ref{fig:c1},\ref{fig:c3} and \ref{fig:c9} respectively. These data are all extracted from resonance study so they are qualified to be used as reference data. Please note that C1,C3,C9 were all done on freight trains on same track sample. Finally 3 equivalent forces are collected from these 3 test samples to see regular pattern and relevant parameters for freight trains.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c1}
-    \caption{Figure C1 extracted from \cite{d181dt329} }
+    \caption{Figure C1 extracted from \citet{d181dt329} }
     \label{fig:c1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c3}
-    \caption{Figure C3 extracted from \cite{d181dt329} }
+    \caption{Figure C3 extracted from \citet{d181dt329} }
     \label{fig:c3}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c9}
-    \caption{Figure C9 extracted from \cite{d181dt329} }
+    \caption{Figure C9 extracted from \citet{d181dt329} }
     \label{fig:c9}
 \end{figure}
 
@@ -1004,26 +1006,26 @@ As a conclusion, this hypothesis expression is obtained by processing the output
 
 \section{Verification of the method}
 
-In this section the combined usage of analytical model and hypothesis expression for equivalent force amplitude is examined and verified. A matlab script is written to function the analytical model with hypothesis expression for equivalent load amplitude implemented. Now that force amplitude $Q$ is a function of speed, there's no longer necessary to input the force amplitude manually. To verify the correctness of combined usage of these two elements, other reference data from resonance research in DT329 are selected and presented in Figure.\ref{fig:c12}, \ref{fig:c13} and \ref{fig:c14}. 
+In this section the combined usage of analytical model and hypothesis expression for equivalent force amplitude is examined and verified. A matlab script is written to function the analytical model with hypothesis expression for equivalent load amplitude implemented. Now that force amplitude $Q$ is a function of speed, it's no longer necessary to input the force amplitude manually. To verify the correctness of combined usage of these two elements, other reference data from resonance research in DT329 are selected and presented in Figure.\ref{fig:c12}, \ref{fig:c13} and \ref{fig:c14}. 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c12}
-    \caption{Figure C12 extracted from \cite{d181dt329} }
+    \caption{Figure C12 extracted from \citet{d181dt329} }
     \label{fig:c12}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c13}
-    \caption{Figure C13 extracted from \cite{d181dt329} }
+    \caption{Figure C13 extracted from \citet{d181dt329} }
     \label{fig:c13}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c14}
-    \caption{Figure C14 extracted from \cite{d181dt329}. An minor error is observed in y-axis label. Upper boundary of the axis should be 0.116 }
+    \caption{Figure C14 extracted from \citet{d181dt329}. An minor error is observed in y-axis label. Upper boundary of y-axis should be 0.116 }
     \label{fig:c14}
 \end{figure}
 
@@ -1074,10 +1076,10 @@ In Table.\ref{tab:comparisonresultssimulationanalytical} the parameters involved
 \addplot 
     coordinates {(C9, 17.8) (C1, 14.2) (C3, 12.5)  (C12,1.48) (C13,1.41)
          (C14,0.117) };
-\legend{Peak analytical displacement,Peak simulation displacement}
+\legend{Analytical peak displacement,VAMPIRE peak simulation displacement}
 \end{axis}
 \end{tikzpicture}
-\caption{Comparison between peak simulation result and peak analytical result}
+\caption{Comparison between VAMPIRE peak simulation result and analytical peak result}
 \label{fig:comparisonpeaksimulationanalytical}
 \end{figure}
 
@@ -1085,7 +1087,7 @@ To clearer illustrate the comparison of both peak results from simulation and an
 
 It can be seen that analytical results always keep a conservative margin above the simulation results. As expected, margins for C12,C13,C14 are bigger compared to C9,C1,C3 proofs that the analytical solution becomes more conservative if adopted to passenger train and high-speed train. What's more, the descending trend of analytical results follows the descending trend of simulation results perfectly regardless of train types. Thus considering these reasons, the analytical solution is sufficient for universal application on all train types.
 
-\section{Finalizing the method for practical usage}
+\chapter{Finalizing the method for practical usage using real bridge parameters}
 
 In practical usage, the speed that generates the highest peak response is unknown. Thus it is necessary to obtain the peak response for all speeds within the possible speed range. This is done by iterating the existing Matlab script with different speed. The increment in speed iteration is set in a way that ensures at least 1000 runs are done to guarantee precession. An example is illustrated as follows to show the usage on a real bridge project.
 
@@ -1159,10 +1161,19 @@ Matlab scripts are already written and attached for the convenience of readers. 
 \chapter{Recommendations on improvement on Eurocode}
 
 
-\subsection{Add reference}
-Please add reference to the criteria.
+\section{Recommandations of this thesis}
 
-\subsection{Improve criteria for lateral bridge dynamics}
+It is advised that Eurocode committee spend more effort in providing background information to structural designers on cross-field topics. For example, railway bridge engineering is related to both fields of structural engineering and railway engineering. The knowledge of railway engineering is seldomly known among structrual engineers and they hardly know the key to the problem. So it is vital for the code to provide its users with sufficient background information.
+
+This can be done by adding references of various statements and criteria. Even with good luck, this thesis spent over 3 month of time in trying to find the original research documents for the 1.2Hz criterion. And it can be expected that if no reference is recorded, finding the source would be even more difficult for other researches in the future.
+
+By simply adding reference to the criteria, this amount of wasted time could be saved for a better course. Thus this thesis suggest references to be added for the sake of future researches/designs.
+
+Also, this thesis suggests make deeper evaluation on the criteria being adopted in the code. At least in this report it is found that the 1.2Hz criterion isn't a correct verification strategy. 
+
+Last but not least, this thesis suggests Eucocode committee possess a further vision for the future. For example, in EN1991-2 railway bridge dynamics, there's no instruction can be found for bridges with span longer than 150m in the logic diagram. This means during the creation process of EN1991-2, the possibility of longer span bridges in the future is neglected, causing potential problem for future designs. 
+
+\section{Other lateral railway bridge dynamics related criteria extracted from other codes}
 Following sections provides several orientations for improving criteria for lateral bridge dynamics in terms of safety and serviceability of running stock.
 
 
@@ -1172,11 +1183,11 @@ Requirements other than bridge first lateral frequency higher than 1.2Hz. Since 
 \begin{enumerate}[-]
     \item Requirements regarding traffic safety for vehicles
     \begin{enumerate}
-        \item Guiding Force: \cite{code2005518} , \cite{en200714363} and\cite{cuadrado2008analysis} propose safty limitations against railway vehicle overturning. From\cite{en200714363} the maximum guiding force for a vehicle with a load per axle of 170kN(AVE) is 66kN per axle and 48kN per axle for a vehicle with a load per axle of 112kN(ICE2). For the R1 freight wagon(load per axle of 245kN), the maximum guiding force per axle is 78kN.
-        \item Maximum lateral acceleration of the railway vehicle: proposed by \cite{13803}
+        \item Guiding Force: \citet{code2005518} , \citet{en200714363} and\citet{cuadrado2008analysis} propose safty limitations against railway vehicle overturning. From\citet{en200714363} the maximum guiding force for a vehicle with a load per axle of 170kN(AVE) is 66kN per axle and 48kN per axle for a vehicle with a load per axle of 112kN(ICE2). For the R1 freight wagon(load per axle of 245kN), the maximum guiding force per axle is 78kN.
+        \item Maximum lateral acceleration of the railway vehicle: proposed by \citet{13803}
     \end{enumerate}
     \item Requirements regarding safety for bridge\\
-    \cite{EC0} A2.4.4.1(2): Horizontal transverse deflection(to ensure acceptable horizontal track radii) and horizontal rotation of a deck about a vertical axis at ends of a deck(to ensure acceptable acceptable horizontal track geometry and passenger comfort)
+    \citet{EC0} A2.4.4.1(2): Horizontal transverse deflection(to ensure acceptable horizontal track radii) and horizontal rotation of a deck about a vertical axis at ends of a deck(to ensure acceptable acceptable horizontal track geometry and passenger comfort)
 \end{enumerate}
 
 
@@ -1194,15 +1205,15 @@ Derailment mechanisms
     \item longitudinal train forces
 \end{enumerate}
 
-The four types of derailment: flange climb derailment, derailment caused by guage widening and rail roll-over, derailment caused by track panel shift, derailment cause by vehicle lateral instability have a common cause of high lateral force at the wheel-rail interface. According to \cite[Chapter 8, IV]{iwnicki2006handbook} any conditions that lead to high lateral forces or lead to lower the ability of the system to sustain the force should be corrected. 
+The four types of derailment: flange climb derailment, derailment caused by guage widening and rail roll-over, derailment caused by track panel shift, derailment cause by vehicle lateral instability have a common cause of high lateral force at the wheel-rail interface. According to \citet[Chapter 8, IV]{iwnicki2006handbook} any conditions that lead to high lateral forces or lead to lower the ability of the system to sustain the force should be corrected. 
 
-\subsubsection{Flange climb derailment}
+\subsection{Flange climb derailment}
 Wheel flange climb derailments are caused by wheels climbing onto the top of the railhead then further running over the rail. Wheel climb derailments generally occur in situations where the wheel experiences a high lateral force combined with circumstances where the vertical force is reduced on the flanging wheel. The high lateral force is usually induced by a large wheelset angle-of-attack. The vertical force on the flanging wheel can be reduced significantly on bogies having poor vertical wheel load equalisations, such as when negotiating rough track, large track twist, or when the car is experiencing roll resonances. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.4\textwidth]{forcesatflangecontactlocation.pdf}
-    \caption{Forces at flange contact location. Extracted from \cite[Figure8.4]{iwnicki2006handbook}}
+    \caption{Forces at flange contact location. Extracted from \citet[Figure8.4]{iwnicki2006handbook}}
     \label{fig:forcesatflangecontactlocation}
 \end{figure}
 
@@ -1218,13 +1229,13 @@ Nadal's famous L/V ratio limiting criterion, given by Equation.\ref{eq:nadalcrit
     \frac{L}{V}=\frac{\tan \delta - \mu}{1+ \mu \tan \delta}
 \end{equation}
 
-\subsubsection{Derailment caused by guage widening and rail rollover}
+\subsection{Derailment caused by guage widening and rail rollover}
 Derailments caused by guage widening usually involve a combination of wide gauges and large lateral rail defections(rail roll), as shown in Figure\ref{fig:gaugewideningderailment}. Large lateral forces from the wheels act to spread the rails in curves. Both rails may experience significant lateral translation and/or railhead roll, which often cause the nonflanging wheel to drop between rails.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{gaugewideningderailment.pdf}
-    \caption{Gauge widening derailment. Extracted from \cite[Figure8.18]{iwnicki2006handbook}}
+    \caption{Gauge widening derailment. Extracted from \citet[Figure8.18]{iwnicki2006handbook}}
     \label{fig:gaugewideningderailment}
 \end{figure}
 
@@ -1243,13 +1254,13 @@ under an equilibrium condition, just before the rail starts to roll, $M$ approac
 
 This L/V ratio is considered as the critical value to evaluate the risk of rail roll. When the L/V ratio is larger than the ratio of $d/h$, the risk of rail roll becomes high. The critical L/V ratio for rail roll can vary from above 0.6 for contact at the gauge side to approximately 0.2 when the contact position is at the far-field side based on the dimension of the rails. This is because the distance $d$ is reduced. Note that this L/V ratio is calculate assuming that neither the rail fasteners nor the torsional stiffness of the rail section provide any restraint.
 
-\subsubsection{Derailment caused by track panel shift}
+\subsection{Derailment caused by track panel shift}
 Track panel shift is the cumulative lateral displacement of the track panel, including rails, tie plates and ties, over the ballast, as shown in Figure\ref{fig:lateraltrackpanelshift}. A small shift of these components may not immediately cause the loss of guidance to bogies. However, as the situation gradually depreciates to a certain level, wheels could lose guidance and drop to the ground at some speed. The derailments caused by track panel usually result in one wheel falling between the rails and the other falling outside of the track.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{lateraltrackpanelshift.pdf}
-    \caption{Lateral track panel shift. Extracted from \cite[Figure8.27]{iwnicki2006handbook}}
+    \caption{Lateral track panel shift. Extracted from \citet[Figure8.27]{iwnicki2006handbook}}
     \label{fig:lateraltrackpanelshift}
 \end{figure}
 
@@ -1260,15 +1271,15 @@ Researched by the French National Railways suggested that the limiting lateral a
     L_c = aV+b
 \end{equation}
 
-where $L_c$ is the critical lateral load and $V$ is the vertical axle load. \cite[Table 8.2]{iwnicki2006handbook} lists two groups of suggested valued of $a$ and $b$. It is possible that different values for $a$ and $b$ can be specified in different area.
+where $L_c$ is the critical lateral load and $V$ is the vertical axle load. \citet[Table 8.2]{iwnicki2006handbook} lists two groups of suggested valued of $a$ and $b$. It is possible that different values for $a$ and $b$ can be specified in different area.
 
-\subsubsection{Derailment caused by vehicle lateral instability}
+\subsection{Derailment caused by vehicle lateral instability}
 On tangent track, the wheelset generally oscillates around the track centre due to any vehicle and track irregularities, as shown in Figure\ref{fig:wheelsetoscillatesaroundthetrackcentre}. This movement occurs because vehicle and track are never absolutely smooth and symmetric. This self-centring capability of a wheelset is induced by the coned shape of the wheel tread. However, as speed is increased, if the whelset conicity is high, the lateral movement of wheelset, as well as the associated bogie and car body motion, can cause oscillations with large amplitude  and a well-defined wavelength. The lateral movements are limited only by the contact of the wheel flanges with the rail. This vehicle dynamic response is also termed as vehicle hunting, and can produce high lateral forces to damage track to cause derailments.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{wheelsetoscillatesaroundthetrackcentre.pdf}
-    \caption{Wheelset oscillates around the track centre. Extracted from \cite[Figure8.28]{iwnicki2006handbook}}
+    \caption{Wheelset oscillates around the track centre. Extracted from \citet[Figure8.28]{iwnicki2006handbook}}
     \label{fig:wheelsetoscillatesaroundthetrackcentre}
 \end{figure}
 
@@ -1278,6 +1289,6 @@ Hunting predominantly occurs in empty or lightweight vehicles. The critical hunt
 
 \subsection{Requirements for traffic serviceability(horizontal)}
 
-The criteria Comfort Indexes for assessing ride comfort in railway vehicles proposed in \cite{12299}. This standard describes a methodology for assessing ride comfort as a function of longitudinal, vertical and transverse accelerations.
+The criteria Comfort Indexes for assessing ride comfort in railway vehicles proposed in \citet{12299}. This standard describes a methodology for assessing ride comfort as a function of longitudinal, vertical and transverse accelerations.
 
 Comfort Index indicates the percentage of passengers experimenting discomfort in a specific situation. These indexes can be computed via empiric formula given in the standard, which depend on variables such as lateral acceleration, rate of change of acceleration and rolling velocity. All these values are filtered with a moving average filter that eliminates small wavelength components. Using this methodology for the computed worst-case situations, the comfort indexes have been found excellent, therefore no passenger should feel uncomfortable.
