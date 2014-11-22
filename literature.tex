@@ -1373,28 +1373,6 @@ In the secondary phase, the influence of selected parameters were categorized in
 They were studied by using the same simulation method used in initial research phase.
 
 
-
-
-% For the initial phase, the dynamic lateral response to the passage of different train types were examined.
-
-% The method of modelling bridge behaviour adopted is the Theory of Normal Modes. Each train is modelled as a series of masses interconnected by suspension components of known characteristic. Time-step integrations are then performed to simulate the passage of a train over the bridge model along a track sample, which extends beyond the bridge.
-
-% Comparisons of measured bridge responses with VAMPIRE simulations of the bridges and trains involved were the subject of earlier studies for ERRI Committee D 181, the results being documented in reports RP 3, RP 4, and RP 5 of the Committee. Each vibration model was derived from finite element analysis of the bridge structure.
-
-% The committee have selected eleven sets of bridge parameters to be subjected to a selection of lateral load conditions. Lateral loading is provided by three train types, each running at two speeds within their respective operational ranges, on track appropriate to the train type. The combinations selected for this phase are tabulated in Appendix 1. Since the bridge design parameters are necessarily general, finite element techniques for producing bridge vibration models are inappropriate; general transverse beam vibration theory is used instead.
-
-% For the secondary phase, as part of ERRI(UIC) investigation of Lateral Forces on Railway Bridges, the ERRI D181 Committee have commissioned British Rail Research (BRR) to carry out a parametric study(DT329) using their VAMPIRE dynamics software. 
-
-% The study has investigated the influence of key bridge parameters and of different train types on the lateral deflections and lateral forces exerted on the bridge. The study has been carried out in two phases.
-
-% The first phase examined 52 combinations of bridge parameters and train configurations. This study showed that some of the input parameters had little influence on the dynamic behaviour of the bridge and that others had a significant influence. There were also some parameters which appeared to show resonant effects at particular values. The results were presented in the initial report (Reference [1], part 1 of this ERRl D 181/DT 329).
-
-% From the results of the first phase of the study, the ERRI DI81 Committee were able to select the cases for the second part in order to concentrate on those parameters which had the largest influence on the behaviour of the bridge. The cases to be considered were divided into three categories. These investigated the influence of multiple span bridges (viaducts), the influence of track quality and the influence of stiffness/span/frequency on the resonant behaviour of the bridge.
-
-
-
-% Focus is placed on secondary phase of study of DT329, since it consists research on resonance behaviour of the bridge.
-
 \subsection{Modelling}\label{sec:modelling329}
 A special version of VAMPIRE with bridge module implemented was used to run simulation analysis. 
 
@@ -1824,6 +1802,25 @@ This can be done by using the solution in \ref{sec:analyticalmodel} and substitu
  
 It should be noted that the proposed model in RP6, as well as modified model in EN1991-2, is based on the investigation of first two traction units of the train. It is suspected that when bridge is longer, more traction units can run on the bridge simultaneously, introducing bigger force to the bridge. This can lead to a problem that EN1991-2 is non-conservative in the magnitude of nosing force when applied to longer bridges. However, this suspecting hypothesis is not verified in this chapter.  
 
+\section{Evaluating nosing force proposed by EN1991-2}
+The evualtation is done by comaparing peak result of calculation adopting nosing force and of FEM VAMPIRE simulation on the same bridge.
+
+The bridge in Figure.\ref{fig:c9} is choosen with following parameters:
+
+$l = 120m$
+
+$Stiff: \sfrac{1}{10000}$  (defleciton/span ratio at midspan under 100kN point load at midspan )
+
+$\mu = 6000kg/m$
+
+Peak result for VAMPIRE simulation: 17mm
+
+Accoridng to section.\ref{sec:nosingforce}, the characteristic value of the nosing force shall be taken as $Q_{sk} = 100kN$. It shall not be multiplied by the factor $\Phi$ or by the factor $f$. Thus, according to simple support Euler-beam theory, the deflection under 100kN nosing force is:
+
+$\delta_{nosing} = 120m \cdot \sfrac{1}{10000} = 0.012m = 12mm$
+
+It can be seen that nosing force doesn't give conservative result compared to VAMPIRE simulations. A resonance effect was reproduced in simulation. Thus the  reason for the nonconservative result is although some dynamic actions are taken into account by nosing force, the resonance effect is not included.
+
 
 \section{Conclusion of D181 report series}
 The report series managed to create load models for lateral dynamics railway effects. It is worthy to note that the lateral force on the track wasn't influenced by the presence of the bridge. The major influencing parameter for lateral force is track quality and conicity of the wheel profile. 
@@ -1835,3 +1832,5 @@ Please note that every bridge will always have resonance with running train beca
 Some of the conclusion and proposed criteria in RP6 were adopted in Eurocode 1991-2. One of them is 1.2Hz criterion. It was adopted without amending. The other one is lateral force models. They were adopted in a different name as 'nosing force' in \citet[A6.5.2]{EC12}. 
 
 The 1.2Hz criterion was under debate and proofed unreliable in fulfilling its original intention, avoiding occurrence of resonance. There is no research in D181 report series supporting this criterion, nor there exists literature behind the natural frequency of vehicles. This criterion ignored the fact that future bridge designs with long span would certainly have a natural frequency lower than 1.2 Hz. It is advised that Eurocode review this criterion and revise it.
+
+Also, the nosing force proposed doesn't provide conservative result when there is resonance between the vehicle and the bridge.

@@ -1,6 +1,6 @@
 % This script is the main utility to function automated bridge lateral dynamic response evaluation
 
-function O=fogtest(EJ,l,mu,c,zeta)
+function O=fogtest(EJ,l,mu,c,zeta,linecolor)
 
 
 
@@ -82,8 +82,8 @@ O = [max(abs(p(:,1))),max(abs(p(:,2))),max(abs(p(:,3)))];
 
 namedaf = strcat('EJ',int2str(EJ),'L',int2str(l),'mu',int2str(mu),'c',int2str(c),'daf','.tikz');
 % % 
-figure(1)
-plot(tdomain,p(:,1))
+% figure(1)
+% plot(tdomain,p(:,1),linecolor)
 % grid on
 % title(strcat('Max Deflection:',mat2str(O(1,1))));
 % % % matlab2tikz(namedef, 'height', '\figureheight', 'width', '\figurewidth','showInfo', false);

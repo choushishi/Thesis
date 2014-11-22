@@ -4,10 +4,9 @@ dv = 0.2;
 v = [min:dv:max]';
 
 for i=1:length(v)
-    maxres(:,i) = fog(EJ,l,mu,v(i,1),zeta);
+    maxres(:,i) = fog(EJ,l,mu,v(i,1),zeta,'b');
     speed = v(i,1);
 end
-
 
 % figure('name','speed_envolop');
 % plot(v,maxres);
