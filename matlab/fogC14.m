@@ -1,6 +1,6 @@
 % This script is the main utility to function automated bridge lateral dynamic response evaluation
 
-function O=fog(EJ,l,mu,c,zeta)
+function O=fogC14(EJ,l,mu,c,zeta)
 
 
 
@@ -33,7 +33,7 @@ r2 = Omega - omega;
 
 % Q = Q;
 % Q = 10000
-Q = 1928*c^0.7495;
+Q = 277.8*c^0.7495;
 f = omega1/(2*pi);
 v_0 = Q*l^3/(48*EJ);
 %omegab = 0.0001*sqrt(EJ/mu);

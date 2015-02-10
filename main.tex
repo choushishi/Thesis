@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[12pt]{report}
 
 % match packages
 \usepackage{amsmath}
@@ -14,10 +14,11 @@
 
 \usepackage{xcolor}
 \usepackage{sectsty}
-\chapterfont{\color{cyan}}  % sets colour of chapters
-\sectionfont{\color{cyan}}  % sets colour of sections
+\chapterfont{\color{cyan}}  % sets color of chapters
+\sectionfont{\color{cyan}\LARGE}  % sets color and font of sections
 \subsectionfont{\color{cyan}}
 \subsubsectionfont{\color{cyan}}
+
 
 % Package and setting for including pictures
 \usepackage{graphicx}
@@ -83,12 +84,13 @@
 % Define command for keyword in abstract
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords:---}} #1}
 
-% \bibliography{ref} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%            Begin Document              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-
-
-
 
 \include{titlepage}
 
@@ -160,5 +162,4 @@ Delft,  \today
 
 \bibliography{ref} 
 \bibliographystyle{plainnat}
-% \printbibliography 
 \end{document}

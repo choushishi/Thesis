@@ -1,7 +1,7 @@
 %!TEX root = main.tex
 
 
-\chapter{Lateral wavelength research on Dutch railway vehicles}\label{sec:wavelengthstudy}
+\chapter{Learning the lateral wavelength of Dutch railway vehicles by using the simulation results presented in D181 reports}\label{sec:wavelengthstudy}
 
 As a conclusion in DT329 report, the lateral dynamic effects of railway vehicles are all wavelength phenomenon. The lateral wavelength of trains is a constant characteristics of themselves which doesn't change with outer environment. However, while the wavelength for axle repeat pattern is easy to get, the wavelength for kinematic movement normally requires heavy FEM simulations and post analysis of the response spectrum. 
 
@@ -328,7 +328,7 @@ It also can be concluded that for any railway bridge, resonance between the brid
 
 To be noted that these wavelength are also not the exact wavelength in real-life scenario but an estimation, especially for kinematic movement. But it gave away a rough idea about the magnitude of trains' wavelength, and, can be used for practical design purposes. To see the usage of studied wavelength, please see Chapter.\ref{sec:parcticalmethod}.
 
-\chapter{New practical method for checking lateral resonance response of railway bridges based on VAMPIRE simulation results }\label{sec:parcticalmethod}
+\chapter{Development of new practical method for checking lateral resonance response of railway bridges based on VAMPIRE simulation results }\label{sec:parcticalmethod}
 
 \section{Introduction}
 
@@ -336,7 +336,7 @@ This chapter proposes a new method for checking lateral resonance response of ra
 
 The method features the combined usage of a simplified analytical structural model and a more refined lateral force model. The analytical structure model simulates a perfect resonance scenario for railway bridge. And the refined load model, which is a concentrated harmonic moving load, represents the lateral dynamic effects that occur because of the passing of the train. The combination of these two analytical elements will generate a resonance response conservative compared to the simulation output in DT329 because various types of disturbance were included in these simulation runs.
 
-The analytical structural model that was introduced in the previous chapter and its explicit solution has already been worked out in the same chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
+The analytical structural model that was introduced in Appendix.\ref{sec:analyticalmodel} and its explicit solution has already been worked out in the same chapter. Thus the main objective of this chapter is finding a better lateral force load model because current existing ones are too conservative(see Section.\ref{sec:refinedloadmodel}). The refined load model shall be able to be adopted universally for all regular train types. Once this load model is obtained and verified, it is then possible to take advantage of the combination of the load model and analytical solution for practical designing purposes.
 
 \section{Overview of this chapter}
 
@@ -572,6 +572,65 @@ To clearer illustrate the comparison of both peak results from simulation and an
 
 It can be seen that analytical results always keep a conservative margin above the simulation results. As expected, margins for C12,C13,C14 are bigger compared to C9,C1,C3 proofs that the analytical solution becomes more conservative if adopted to passenger train and high-speed train. What's more, the descending trend of analytical results follows the descending trend of simulation results perfectly regardless of train types. Thus considering these reasons, the analytical solution is sufficient for universal application on all train types.
 
+\section{Equivalent load amplitude created using every other setup available}
+Although the equivalent load amplitude using C1 as reference has been created, the result is not valid yet because C1 is equivalent to other 5 setup scenarios(C3,C9,C12,C13,C14). It is also necessary to carry out the same calculating process on other 5 setup scenarios.
+
+Taking advantage of the process developed during the creation of C1 equivalent amplitude, the load equivalent amplitude of other 5 setups are calculated and then presented in the Table.\ref{tab:allLoadEquivalentAmplitude}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Load equivalent amplitude(N) from all available setups}
+    \begin{tabular}{cccccc}
+        \hline
+        C1 & C3 & C9 & C12 & C13 & C14 \\
+        \hline
+        1928 & 1721 & 1760 & 427 & 463 & 228 \\
+        \hline
+    \end{tabular}
+    \label{tab:allLoadEquivalentAmplitude}
+\end{table}
+
+Their corresponding benchmarks are presented in Table.\ref{tab:allBenchmark}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Benchmark on analytical peak displacement generated by all equivalent load amplitude by comparing simulation peak displacement}
+    \begin{tabular}{ccccccc}
+        \hline
+        Analytical Peak Displacement & C1 & C3 & C9 & C12 & C13 & C14 \\
+        \hline
+        C1 & 0.0145 & 0.0141 & 0.0197 & 0.0066 & 0.0058 & 0.0003 \\
+        C3 & 0.013 & 0.0125 & 0.0174 & 0.0059 & 0.0051 & 0.0036 \\
+        C9 & 0.013 & 0.0128 & 0.0178 & 0.0061 & 0.0053 & 0.0032 \\
+        C12 & 0.0032 & 0.0031 & 0.0043 & 0.00148 & 0.0013 & 0.0008 \\
+        C13 & 0.0035 & 0.0034 & 0.0047 & 0.0016 & 0.00141 & 0.0002 \\
+        C14 & 0.0021 & 0.0020 & 0.0028 & 0.0010 & 0.0008 & 0.00012 \\
+        \hline
+        Simulation Peak Displacement & 0.0014 & 0.0125 & 0.0178 & 0.00148 & 0.00141 & 0.00012 \\
+        \hline
+        \label{tab:allBenchmark}
+    \end{tabular}
+\end{table}
+
+Among all the equivalent load amplitude, the one created from C1 is most satisfying because its all outputs are conservative towards simulation output. Other equivalent load amplitude shows at least one nonconservative output. 
+
+It can also be observed that the results of C12,C13,C14 are unacceptable due to the reason that their magnitude are too small. They can't predict reliable result for (C1,C3,C9). Their corresponding equivalent load amplitude will be ignored in the rest of the thesis.
+
+Since there is few data available, it's meaningless to conduct further statistical procedures. The rest of the thesis will use the result of C1 because it's all conservative. However, the following section will give a simple guidance for statistical analysis provided by more simulations were done.
+
+\section{Suggestions for further statistical analysis }
+
+On the basis of more simulations could be conducted in the future, this section aims to give suggestions for further statistical analysis to improve the accuracy of the formula.
+
+\paragraph{Filter out the influence of the parameters} It's essential to learn what roles are parameters playing in the simulation, so the simulations/analysis to be done should be planned ahead with a main objective which is  filtering out the influence on the bridge peak resonance displacement of the parameters such as bridge length, train speed, etc.
+
+For example, by just looking at simulation peak displacement of C12,C13,C14, they are obviously small in magnitude compared to other 3. This is probably due to the reason that they all involve high speed train running. It could be that higher train speed tend to yield smaller deflection. However, this is only a hypothesis and needs more simulations to confirm.
+
+\paragraph{Select correct statistical strategy} 
+
+Content to be added after retrieving EN1990 Annex D.
+
+
 \chapter{Finalizing the method for practical usage using real bridge parameters}
 
 In practical usage, the speed that generates the highest peak response is unknown. Thus it is necessary to obtain the peak response for all speeds within the possible speed range. This is done by iterating the existing Matlab script with different speed. The increment in speed iteration is set in a way that ensures at least 1000 runs are done to guarantee precession. An example is illustrated as follows to show the usage on a real bridge project.
@@ -684,8 +743,10 @@ These simulations should be done with following extra requirements on the basis 
     \item Broader range of bridge span to be investigated(greater than 150m)
 \end{enumerate}
 
-Transient simulations of this topic is very resource demanding. It is impossible for this thesis to carry out these simulations. Thus above simulations are proposed to whoever poceesing the resource and willingness to further investigate the topic. It is further proposed that lateral force data caused by running trains to be evaluated more frequently.
+More accurate statistical result can be yielded with more simulation data. Since now only 6 sets of data can be used, the new practical method can hardly be globally reliable. However, it is recommended that future research uses a larger simulation data base to further improve the accuracy of the new method.
+
+Transient simulations of this topic is very resource demanding. It is impossible for this thesis to carry out these simulations. Thus above simulations are proposed to whoever poceesing the resource and willingness to further investigate the topic. It is also proposed that lateral force data caused by running trains to be evaluated more frequently.
 
 The practical method should be verified by comparing its own result with result of newly conducted simulations. The result of practical method should be conservative according to the comparison. 
 
-It is also possible to verify the amplitude in practical method to a less conservative value according to newly conducted simulations. It is expected that newly conducted simulations yield smaller lateral force on tracks because advanced suspension systems implemented in modern vehicle designs and better track quality.
+It is possible to modify the amplitude in practical method to a less conservative value according to newly conducted simulations. It is expected that newly conducted simulations yield smaller lateral force on tracks because of the advanced suspension systems implemented in modern vehicle designs and better track quality.

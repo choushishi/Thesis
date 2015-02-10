@@ -1,6 +1,6 @@
 %!TEX root = main.tex
 
-\chapter{Criteria regarding lateral railway bridge dynamics included in EN1991-2 and their origins}\label{Chap:selectedCriteria}
+\chapter{Selected criteria to be investigated in this thesis}\label{Chap:selectedCriteria}
 
 In this chapter, firstly, several criteria regarding lateral railway bridge dynamics included in Eurocode EN1991-2 are selected. The reason for the selection is that the selected criteria tend to causing inevitable violation for modern long-span railway bridge designs. 
 
@@ -80,12 +80,12 @@ Originally in \citet[4:Draft Recommendations]{d181}, nosing forces was defined a
 Since all criteria regarding lateral railway bridge dynamics come from the same research project: \textit{D181:Lateral Forces on Railway Bridges}, it's essential to interpret the whole report series in order to have a better understanding on its proposed criteria. Next chapter will lay emphasis on interpreting and in the end, conduct assessment on the criteria.
 
 
-\chapter{Interpretation of report series created by D181 Committee Group}\label{sec:D181reportseries}
+\chapter{Evaluation on the supporting research of the selected criteria: D181 research}\label{sec:D181reportseries}
 
 
 \section{Introduction}
 
-This chapter aims to interpret several key documents within the research report series D181. The interpreted documents contains relative contents to the problem-causing criteria filtered out already in Chapter.\ref{Chap:selectedCriteria}.
+This chapter aims to interpret several key documents within the research report series D181. The investigated documents contains relative contents to the problem-causing criteria filtered out already in Chapter.\ref{Chap:selectedCriteria}.
 
 D181 Committee Group is created by UIC, in order to investigate Lateral Forces on Railway Bridges. Some of the proposed criteria in reports created by this committee group are adopted by Eurocode Committee to created Eurocode 1991-2. The goal of this interpretation is to summarize the research done by D181 report series and and give further conclusion.
 
@@ -124,36 +124,6 @@ In the secondary phase, the influence of selected parameters were categorized in
 They were studied by using the same simulation method used in initial research phase.
 
 
-\section{Interpretation of resonance phenomenon studied in DT329}\label{sec:resonance329}
-
-2 types of resonance were studied in DT329, including:
-
-\begin{enumerate}
-    \item Resonance caused by axle repeat pattern
-    \item Resonance caused by kinematic movement
-\end{enumerate}
-
-The summary of these resonances effects are presented in following paragraphs. 
-
-Frequency shift phenomenon is an important characteristics observed from resonance effects lists above. It is explained in Section \ref{sec:apparentshift}
-
-\subsubsection{Resonance caused by axle repeat pattern}
-
-Axle repeat patterns are wavelength phenomena - regardless of vehicle speed, the repeat length is constant. However, since frequency is speed divided by wavelength, the frequency of the axle repeat patterns vary with train speed. A table of axle repeat pattern lengths, and typical frequencies arising from train speed are given in Figure.\ref{tab:329axlerepeat}
-
-By running train at different speeds shows resonance is possible between train and bridge if the axle passing frequency coincides with the first lateral bridge mode. The effect occurring in bridge lateral displacement over a limited frequency range around the resonance frequency.
-
-
-However, the speed on theory which should yield resonance effect may be different from the speed that actually triggered resonance.
-
-\subsubsection{Resonance caused by kinematic movement of trains} 
-Kinematic wavelength also gives rise to frequencies which vary with speed for the same reason. For first lateral bending mode coincidence with kinematic frequency, the kinematic wavelength of each train type had to be established, by running each train at a range of typical operating speeds over a discrete lateral irregularity, and examining the frequency content of the lateral wheel motion. The resulting wavelength ranges are tabulated in Table.\ref{tab:329kinematicwavelength}. See Figure \ref{fig:workflow329kinematic} for an overview of workflow of this study.
-
-The most likely possible resonance in the initial studies to be of this type was between the passenger train at 200 km/h (55.556 m/s) on passenger track and BR PI wheel profiles, and a span of 54 m, stiffness 1/10000, mass/length of 6 tonnes/m. This combination was examined by varying the speed between 55.556 - 64.6 m/s over the span, and by varying the stiffness of the span between 117000 and 1112000 running the train at 55.556 m/s. Another combination was examined - the ETR500 train running between 65 - 80 m/s on high speed track and BR PI wheel profiles, for a span of 38 m, stiffness 1110000, and mass/length 10 tonne/m; the span in this case was chosen to coincide with the kinematic wavelength of the coaches.
-
-Coincidence of vehicle kinematic frequency with bridge first lateral bending mode may cause resonance to occur over a broad range of frequencies to a less pronounced effect than coincidence of axle passing frequencies. Evidence of coincidence of kinematic wavelength with length of span has been found in the lateral acceleration of bridges, but was not demonstrated in the lateral bridge displacement in the cases examined. For short kinematic wavelengths, this effect could not be seen, possibly because of lack of time for the bridge to respond.
-
-
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}
@@ -179,7 +149,47 @@ Coincidence of vehicle kinematic frequency with bridge first lateral bending mod
 \label{fig:workflow329kinematic}
 \end{figure}
 
-\subsubsection{Apparent shift in resonance frequency}\label{sec:apparentshift}
+
+\section{Interpretation of resonance phenomenon studied in DT329}\label{sec:resonance329}
+
+2 types of resonance were studied in DT329, including:
+
+\begin{enumerate}
+    \item Resonance caused by axle repeat pattern
+    \item Resonance caused by kinematic movement
+\end{enumerate}
+
+Frequency shift phenomenon is an important characteristics observed from resonance effects lists above. It is explained in Section \ref{sec:apparentshift}
+
+\subsection{Mechanism of resonance caused by axle repeat pattern}
+
+In \citet[3.4.3]{d181dt329}, explanation on the mechanism of such resonance is explained as following:
+
+\begin{quote}
+    Axle repeat patterns are wavelength phenomena - regardless of vehicle speed, the repeat length is constant. However, since frequency is speed divided by wavelength, the frequency of the axle repeat patterns vary with train speed. A table of axle repeat pattern lengths, and typical frequencies arising from train speed are given in Figure.\ref{tab:329axlerepeat}
+
+    By running train at different speeds shows resonance is possible between train and bridge if the axle passing frequency coincides with the first lateral bridge mode. The effect occurring in bridge lateral displacement over a limited frequency range around the resonance frequency.
+\end{quote}
+
+
+
+However, the speed on theory which should yield resonance effect may be different from the speed that actually triggered resonance.
+
+\subsection{Mechanism of resonance caused by kinematic movement of trains} 
+
+In \citet[3.4.3]{d181dt329}, explanation on the mechanism of such resonance is explained as following:
+
+\begin{quote}
+Kinematic wavelength also gives rise to frequencies which vary with speed for the same reason. For first lateral bending mode coincidence with kinematic frequency, the kinematic wavelength of each train type had to be established, by running each train at a range of typical operating speeds over a discrete lateral irregularity, and examining the frequency content of the lateral wheel motion. The resulting wavelength ranges are tabulated in Table.\ref{tab:329kinematicwavelength}. See Figure \ref{fig:workflow329kinematic} for an overview of workflow of this study.
+
+The most likely possible resonance in the initial studies to be of this type was between the passenger train at 200 km/h (55.556 m/s) on passenger track and BR PI wheel profiles, and a span of 54 m, stiffness 1/10000, mass/length of 6 tonnes/m. This combination was examined by varying the speed between 55.556 - 64.6 m/s over the span, and by varying the stiffness of the span between 117000 and 1112000 running the train at 55.556 m/s. Another combination was examined - the ETR500 train running between 65 - 80 m/s on high speed track and BR PI wheel profiles, for a span of 38 m, stiffness 1110000, and mass/length 10 tonne/m; the span in this case was chosen to coincide with the kinematic wavelength of the coaches.
+
+Coincidence of vehicle kinematic frequency with bridge first lateral bending mode may cause resonance to occur over a broad range of frequencies to a less pronounced effect than coincidence of axle passing frequencies. Evidence of coincidence of kinematic wavelength with length of span has been found in the lateral acceleration of bridges, but was not demonstrated in the lateral bridge displacement in the cases examined. For short kinematic wavelengths, this effect could not be seen, possibly because of lack of time for the bridge to respond.
+
+\end{quote}
+
+
+\subsection{Apparent shift in resonance frequency}\label{sec:apparentshift}
 It is frequently observed in the output of both resonance effects that apparent resonance happens at some frequencies higher than frequencies calculated on theory. This is explained in following quote on \citet[Page 13, Secondary Phase]{d181dt329}. However, the explanation wasn't verified by further studies. They can only be treated as hypothesis.
 
 \begin{quote}
@@ -215,20 +225,18 @@ The original author of report RP6, mr.Graham Scott, was contacted to reveal the 
 Looking at the values I think they would refer to typical rigid body modes of a vehicle.  These are independent of speed and a typical passenger coach with air suspension will have a lower sway frequency of around 0.6Hz which is within 0.5-0.7Hz.  Locomotives tend to have a slightly stiffer suspension hence the slightly higher frequency range.
 \end{quote}
 
-Mr.Minnis statements, combined with results yielded in supporting parametric report DT329 proves 1.2Hz criterion is aiming to avoid occurrence of resonance. But this isn't a feasible strategy for the following reasons:
+Mr.Minnis statements, combined with results yielded in supporting parametric report DT329 proves 1.2Hz criterion is aiming to avoid occurrence of resonance. But this \textbf{isn't} a feasible strategy for the following reasons:
 
 \begin{enumerate} 
     \item The resonance between rigid body mode of train and first lateral vibration mode of the bridge has never been discussed in all D181 report series. No research proofed this kind of resonance can be critical in real life scenario.
 
-    \item There are lots of evidence can be found in report DT329, showing resonance can happen on a bridge with a first lateral natural frequency even higher than 1.2Hz, which is self-conflicting with 1.2Hz criterion. In fact, the resonance could happen at any frequency on theory. However, the magnitude of resonance effect ranges from less pronounced to more pronounced from case to case.  
-
-    For example, \citet[Page 14,Phase II]{d181dt329} shows resonance occurs on 1.71Hz:
+    \item There are lots of evidence can be found in report DT329, showing resonance can happen on a bridge with a first lateral natural frequency even higher than 1.2Hz, which is self-conflicting with 1.2Hz criterion. In fact, the resonance could happen at any frequency on theory. For example, \citet[Page 14,Phase II]{d181dt329} shows resonance occurs on 1.71Hz:
         \begin{quote}
             The first lateral bending mode of this bridge is at 1. 71 Hz. The kinematic wavelength of the passenger coaches is around 34-38 m, giving a kinematic frequency range of 1.46 - 1.63Hz.Speeds of 58.14 m/s(1.53-1.71 Hz)and 64.6m/s(1.7-1.9Hz)were also done. The mid span lateral displacement for each of the time histories are shown in Figure C12(Orignial report). The slowest speed appears to show the greatest resonance.
         \end{quote}
 \end{enumerate}
 
-\subsection{Lateral forces on railway bridges}\label{sec:lateralforce329}
+\subsection{A new lateral force model based on RP6 simulation results}\label{sec:lateralforce329}
 
 \subsubsection{Basic characteristics of lateral force on railway bridges}
 It is concluded in initial phase of the study that presence of the bridge doesn't influence the track forces and track quality is a major factor in determining the lateral forces generated by a particular train on \citet[Page 7, Secondary Phase]{d181dt329}
