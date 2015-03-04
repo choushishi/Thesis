@@ -3,8 +3,13 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: introduction.aux
-A level-1 auxiliary file: firstSegment.aux
-A level-1 auxiliary file: secondSegment.aux
+A level-1 auxiliary file: c1.aux
+A level-1 auxiliary file: c2.aux
+A level-1 auxiliary file: c3.aux
+A level-1 auxiliary file: c4.aux
+A level-1 auxiliary file: c5.aux
+A level-1 auxiliary file: c6.aux
+A level-1 auxiliary file: c7.aux
 A level-1 auxiliary file: thirdSegment.aux
 The style file: plainnat.bst
 Database file #1: ref.bib
@@ -28,70 +33,57 @@ I was expecting a `,' or a `}'---line 475 of file ref.bib
  :   author={DelatRail}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in trainparameters
 Warning--to sort, need author, editor, or key in 1990a2
 Warning--empty author and editor in 1990a2
 Warning--empty publisher in 1990a2
 Warning--empty year in 1990a2
 Warning--empty year in 1990a2
-Warning--empty author in trainparameters
-Warning--empty journal in trainparameters
-Warning--empty year in trainparameters
-Warning--empty year in trainparameters
 Warning--empty publisher in 13848
 Warning--empty year in 13848
 Warning--empty year in 13848
-Warning--empty journal in cuadrado2008analysis
 Warning--empty year in d181
 Warning--empty year in d181dt329
-Warning--empty year in d181rp2
-Warning--empty journal in da2007dynamic
 Warning--empty journal in esveld2001modern
-Warning--empty year in dynamicslecturenote
-Warning--empty year in dynamicslecturenote
-Warning--empty publisher in 12299
-Warning--empty year in 12299
-Warning--empty publisher in 13803
-Warning--empty year in 13803
-You've used 23 entries,
+Warning--empty journal in reberpresentation
+You've used 12 entries,
             2773 wiz_defined-function locations,
-            692 strings with 7742 characters,
-and the built_in function-call counts, 7453 in all, are:
-= -- 600
-> -- 270
-< -- 21
-+ -- 107
-- -- 81
-* -- 484
-:= -- 1153
-add.period$ -- 65
-call.type$ -- 23
-change.case$ -- 83
-chr.to.int$ -- 20
-cite$ -- 73
-duplicate$ -- 462
-empty$ -- 765
-format.name$ -- 106
-if$ -- 1548
-int.to.chr$ -- 4
+            653 strings with 6162 characters,
+and the built_in function-call counts, 3741 in all, are:
+= -- 297
+> -- 121
+< -- 11
++ -- 49
+- -- 36
+* -- 233
+:= -- 584
+add.period$ -- 33
+call.type$ -- 12
+change.case$ -- 41
+chr.to.int$ -- 11
+cite$ -- 37
+duplicate$ -- 239
+empty$ -- 399
+format.name$ -- 49
+if$ -- 775
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 35
-newline$ -- 119
-num.names$ -- 84
-pop$ -- 293
+missing$ -- 18
+newline$ -- 65
+num.names$ -- 44
+pop$ -- 147
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 36
 quote$ -- 0
-skip$ -- 269
+skip$ -- 138
 stack$ -- 0
-substring$ -- 129
-swap$ -- 29
-text.length$ -- 1
+substring$ -- 62
+swap$ -- 12
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 188
-warning$ -- 25
-while$ -- 71
+type$ -- 97
+warning$ -- 12
+while$ -- 36
 width$ -- 0
-write$ -- 270
+write$ -- 143
 (There were 4 error messages)

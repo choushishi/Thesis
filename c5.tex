@@ -1,0 +1,60 @@
+%!TEX root = main.tex
+
+\chapter{Practical usage of simplified model}
+
+In practical usage, the speed that generates the highest peak response is unknown. Thus it is necessary to obtain the peak response for all speeds within the possible speed range. This is done by iteratively solving the explicit solution Eq.\ref{eq:v(x,t)simpleharmonic} with a speed range. The increment in speed iteration is set in a way that ensures at least 1000 runs are done to guarantee precession. An example is illustrated as follows to show the usage on a real bridge project.
+
+A case study is done to illustrate the work flow in using the simplified model. Matlab scripts are written to automate the process. Scripts are presented in Appendix.\ref{sec:matlabscripts}.
+
+\section{Case study}
+For an arch railway bridge located near Amsterdam, first step to is to collect following parameters:
+
+$L = 255m$, $m = 5222e3kg$, $\mu = 2.0478e4 kg/m$, $EJ = 6.56e12Nm^2$
+
+where:
+
+$L$: span of the bridge
+
+$\mu$: uniform mass per unit length of the bridge
+
+$EJ$: lateral stiffness of the bridge
+
+to test through a speed range of $1m/s - 30m/s$
+
+By inputting following command into Matlab console\footnote{Before beginning the calculation, make sure fog.m and Speedenvelop.m are in current working directory. }, 
+
+\texttt{>>Speedenvelop(6.56e12,255,2.0478e4,1,30,0.01)}
+
+
+the envelop for displacement is generated and illustrated in Figure.\ref{fig:spedefEJ6560000000000L255min1max30mu20478.tikz}
+
+\begin{figure}[h!]
+\centering 
+% \newlength\figureheight 
+% \newlength\figurewidth 
+\setlength\figureheight{6cm} 
+\setlength\figurewidth{6cm} 
+\input{./matlab/spedefEJ6560000000000L255min1max30mu20478.tikz} 
+\caption{Peak deflection at mid-span with regard to changing train speed. Parameters: $EJ = 6.56e12Nm^2$, $L= 255m$,$\mu = 20478 kg/m$, $c_{min}=1m/s$, $c_{max} = 30m/s$} 
+\label{fig:spedefEJ6560000000000L255min1max30mu20478.tikz} 
+\end{figure}
+
+The plot shows that the critical speed appears at approximately $5m/s$ and corresponding peak deflection response is approximately $11mm$. 
+
+Since the relationship between end support rotation angle and mid-span deflection is widely known as:
+
+$$ \varphi = \frac{3}{L}\cdot \delta_0  $$
+
+and rotation is yielded as:
+
+$$ \varphi = \frac{3}{255}\times 0.011 = 0.00013 $$
+
+This value is much lower than the rotation value regulated in EN1991-2. See Section.\ref{sec:Transverse-deformations-and-vibrations} for criteria details.
+
+Thus the conclusion can be made that this bridge is safe subjected to lateral dynamic load.
+
+\section{Conclusion}
+
+A general conclusion of practical method is, for a certain bridge, faster train speed does not necessary result in higher resonance response of the bridge. As can be seen in Figure.\ref{fig:spedefEJ6560000000000L255min1max30mu20478.tikz}, critical speed appears at approximately $5m/s$, and response start to fall when speed is higher than $5m/s$. This means comparing to higher load amplitude caused by higher train speed, the shorter loading time caused by same reason is more dominating. By considering the fact in Figure.\ref{fig:comparisonpeaksimulationanalytical} that the explicit solution is even more conservative for higher speed. Tt can be concluded that high-speed trains cause less dynamic problem for lateral bridge dynamics.
+
+Matlab scripts are already written and attached for the convenience of designers. Since the explicit solution has been given in the chapter, it's completely possible to adopt them in other mathematical software for different preferences.

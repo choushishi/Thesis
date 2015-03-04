@@ -3,33 +3,31 @@
 
 \chapter{Introduction}
 
-\section{Summary of topic}
+\section{Context of the thesis}
+This master thesis is initiated by Iv-Infra to assist the designing of a long-span railway bridge. 
 
+During the validation process of bridge lateral dynamics, the bridge could not meet the Eurocode standard, that all railway bridges should possess first lateral natural frequency higher than $1.2Hz$. However, for long-span(longer than $100m$) bridges with adequate structural safety, they normally possess first lateral natural frequencies that are below $1.0Hz$. It is costly and excessive wasting to increase their first lateral natural frequency to $1.2Hz$. Moreover, for the current stage of the project, it is not possible to modify the design of the bridge. Thus increasing the natural frequency of the bridge to meet the criterion is not a valid solution.
 
-Lateral railway bridge dynamics is an engineering topic that related to both bridge structure and operating railway vehicles. There is little knowledge about lateral dynamics of railway bridges among structural engineers, but it is only until recently this topic catches focus. The reason is that an Eurocode criterion regarding the topic is frequently rejecting new long span railway bridge designs. 
+Moreover, there is no further instruction to guide the design when bridge can not meet this particular criterion. With no option left within the codes, Iv-Infra seeks alternative assessment for the safety of lateral dynamics of the railway bridge by initiating this thesis. 
 
-Although there's no records of bridge/vehicle failure due to lateral railway vehicle dynamic loading, it is found during the research process of this thesis that ERRI(former UIC) had already done investigation on this topic before 1994 and presented the results in D181 report series. This information of D181 is hardly known to both researchers and engineers after Eurocode EN1991-2's publication in 1994. However, several criterion proposed by D181 committee were adopted in EN1991-2.
+\section{Lateral dynamics of railway bridge}
+Lateral dynamics of railway bridge is an engineering topic that relates to both bridge structure and operating railway vehicles. Till now there is no record of bridge/vehicle failure due to lateral railway vehicle dynamic loading. 
 
-Throughout D181 report series and EN1991-2, it can been seen that almost no attention is put on lateral dynamics of long span railway bridges. This thesis aims to review both documents and conduct further researches on the topic and propose a simplier 'engineering' verification method of lateral dynamics of railway bridges.
-
-\section{Motivation of the thesis}
-
-The lateral dynamic behaviour of steel railway bridges are minimally discussed in Eurocodes and designers lack knowledge of background of the criteria proposed in the code. For example, there is one criterion in Eurocode requiring railway bridges should have a lateral natural frequency higher than 1.2Hz. However, this criterion is becoming more and more unsuitable for modern bridge designs because longer span provides lower natural frequencies. For bridges having span longer than 100m, it is almost guaranteed that the first lateral natural frequency of the bridge is lower than 1.2Hz, and unable to meet the requirement of EN1991-2. 
-
-Since for most bridge designs, changing the bridge parameters to meet the 1.2Hz criterion isn't a viable option because it's expensive to add stiffness to the bridge, the projects need a solution to solve the problem. To gain more knowledge on the topic, a research on the background of 1.2Hz criterion is initiated by Iv-Infra, presented in this report. The discovery in the background research stimulates further researches including domestic lateral wavelength of trains in the Netherlands, lateral force on tracks, simplier engineering verification method, etc. 
+There are few researches done on this topic. European Rail Research Institute(ERRI), former International Union of Railways(UIC), had systematically investigated this topic in 1994. Several criteria proposed by the investigation were adopted in Eurocode. 
 
 \section{Objectives and research question}\label{sec:introduction}
 
+The main objective of this thesis is to help Iv-Infra to assess the lateral dynamics of railway bridge. In order to do so, the principle of assessing lateral dynamics must be comprehended first. 
 
-The report has following objectives.
+Eurocode has offered assessing methods in its criteria related to lateral dynamics of railway bridges. However, there's no additional explanation for these criteria. In other words, the principle of the assessing methods is uncertain. Thus, the first objective of this thesis is to analyze the criteria in Eurocode, in order to interpret the principle of Eurocode assessing methods. By using the principle interpreted in previous step, the development of an alternative assessing method can be inspired and guided. 
+
+As a conclusion, the objectives of this thesis can be summarized as follows:
 
 \begin{enumerate}[-]
-\item Provide insight into lateral dynamics of railway bridges. Since the general knowledge about the 
 
+\item Analyze Eurocode criteria and interpret the principle of lateral dynamics assessing process
+\item Find an alternative method to assess the lateral dynamics of railway bridges
 
-\item Find the source of 1.2Hz criterion. Interpret its original intention by reviewing the original documents. Give a conclusion on the correctness of 1.2Hz criterion based on the interpretation.
-\item Find alternative strategy for validating the lateral dynamics of railway bridges
-\item Develop a practical method based on newly found strategy 
 \end{enumerate}
 
 \vspace*{0.5cm}
@@ -38,72 +36,55 @@ The research question can be summarized as:
 
 \vspace*{0.5cm}
 
-\textit{Conclude the correctness of current existing criterion on lateral railway bridge dynamics and develop new practical method for checking lateral dynamics of railway bridges based on an alternative checking strategy. }
+\emph{Interpret the principle of lateral dynamics validation process and develop an alternative method to assess the lateral dynamics of railway bridges}
 
 
 \section{Main steps}
 
-In order to carry out the objectives and research questions, the thesis will be conducted in following steps:
-
+In order to carry out the objectives and research questions, the thesis project is planned to be conducted in following steps:
 
 \begin{enumerate}
 
-\item Literature research on the knowledge regarding lateral railway bridge dynamics. This section aims to provide insight to readers so emphasis is placed on fundamental information. Since general dynamics of the bridges are widely discussed and the only thing that differs is that railway bridges are subjected to railway vehicle loads, literature research also focuses on conveying basic knowledge of dynamics of railway vehicles.
+\item Literature research on the theory of lateral railway bridge dynamics
 
-\item Find the original reports that proposed the 1.2Hz criterion and assess the content of these reports. Further investigate the research process and conclusions of these reports to yield more useful information for following researches.
+\item Filter out Eurocode criteria related to lateral dynamics of railway bridges and trace the origin of these criteria
 
-\item Using the knowledge in the original reports, study the dynamics properties of trains running in the Netherlands.
+\item Analyze these criteria and conclude the principle of Eurocode assessing method
 
-\item Develop a practical method for simple calculating the time-history of the dynamic response of the bridge under train vehicle load on the basis of numerical simulation results provided by D181 committee in their report series.
+\item Develop an alternative method for assessing the lateral dynamics of railway bridges
 
-\item Apply above developed practical method on a real project to finalize the method for engineering usage and as well as illustrates the usage of the method.
+\item Use the alternative method to validate the bridge design of Iv-Infra
 
 \end{enumerate}
 
-\begin{figure}[h!]
-\centering
-\begin{tikzpicture}[
-    node distance = 5mm and 4mm,
-    point/.style={circle, inner sep =0pt, minimum size = 1pt, fill =black}]
-    \matrix[row sep = 5mm, column sep =4 mm] {
-        \node[punkt] (Literature) {Literature research}; & & 
-        \node(dummy1) [point] {}; & \\
-        \node[punkt] (1991)  {Investigation of EN1991-2}; &
-        \node[punkt] (D181) {Investigation of D181 report series}; &
-        \node[punkt] (Wavelength) {Lateral Wavelength of Dutch Vehicles}; &
-        \node[punkt] (Practical) {Practical method for checking lateral dynamics of railway bridges}; \\
-        & \node [point] (dummy3) {}; &
-         &
-        \node [point] (dummy5) {}; \\
-    };
-    
-    \graph {
-        (Literature) -> (1991) ;
-        (Literature) -- (dummy1) -> (Wavelength);
-        (1991) -> (D181) -> (Wavelength) -> (Practical);
-        (D181) -- (dummy3) -- (dummy5) -> (Practical);
-    };
-\end{tikzpicture}
-\caption{Logic relationship of chapters}
-\label{fig:logicchpater}
-\end{figure}
+\section{Outline of the report}
+The report is consists of 3 main parts: \textbf{Introduction}, \textbf{Body} and \textbf{Conclusion}.
 
-The logic relationship of refined key steps is illustrated in Figure.\ref{fig:logicchpater}.However, as primarily knowledge which doesn't serve as thesis author's contribution, the literature research is moved to appendix.
+\textbf{Introduction} contains Context of the thesis, Brief introduction to the topic, Research objectives and question and Outline of the report.
 
-% \newpage
-% \section{Outline of the report}
+\textbf{Body} is consisted of three parts. The first part contains literature research on the theory of lateral railway bridge dynamics. The second part mainly aims to describe the analysis process and the conclusion of the analysis while the third part aims to describe the development of the alternative assessing method.
 
+\textbf{Conclusion} contains conclusions for the whole thesis and recommendations for whom may concern in the future. 
 
+Thus the outline can be concluded as follows:
 
-
-% The report is created in following structure:
-
-% \begin{enumerate}
-%     \item Literature study on basic concepts of railway bridge dynamics.
-%     \item Deep investigation of EN1991-2 supporting research report series
-%     \item Wavelength study
-%     \item Introduction to the analytical method
-%     \item Development of the new practical checking method by adopting the analytical model and outputs of VAMPIRE simulations
-%     \item Suggestions for Eurocode
-%     \item Conclusions
-% \end{enumerate}
+\begin{enumerate}
+    \item \textbf{Introduction}
+    \begin{enumerate}
+        \item[a.] Context of the thesis
+        \item[b.] Brief introduction to the topic
+        \item[c.] Research objectives and question
+        \item[d.] Outline of the report
+    \end{enumerate}
+    \item \textbf{Body}
+    \begin{enumerate}
+        \item[a.] Literature research on the theory of lateral railway bridge dynamics
+        \item[b.] Analysis of Eurocode criteria
+        \item[c.] Development of alternative assessing method 
+    \end{enumerate}
+    \item \textbf{Conclusion}
+    \begin{enumerate}
+        \item[a.] Conclusions
+        \item[b.] Recommendations
+    \end{enumerate} 
+\end{enumerate}

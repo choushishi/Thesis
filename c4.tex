@@ -1,0 +1,559 @@
+%!TEX root = main.tex
+
+\chapter{Simplified model for assessing lateral railway bridge resonance behavior}
+This simplified model aims to simulate the lateral resonance behavior of a railway bridge. 
+
+\section{Assumptions}
+
+It is assumed that the bridge is straight and uniform, simply supported on both ends. One track is installed on the center-line of the bridge. A train is moving uniformly along the track. The train and the bridge are under resonance. Only lateral displacement is taken into account. Deformations of other directions are neglected.
+
+The bridge is modeled as a uniform, simply supported beam. The deflection of the beam represents the lateral deflection of the bridge. The stiffness of the beam is specified as a deflection at the mid span per unit span length arising from a static point load at mid span on the bridge. The length of the beam equals to the span of the bridge. The mass of the beam equals to the mass of the bridge.
+
+A concentrated load presenting the total lateral force induced from the vehicle to the bridge is applied on the beam. The concentrated load is harmonically exciting the beam thus simulating the vehicle-bridge resonance.
+
+The resonance is simulated by setting the magnitude of the concentrated load to oscillate under the same frequency as the first lateral natural frequency of the bridge. The movement of the vehicle is also simulated by setting the load to move at a constant speed, from one end of the beam towards the other end of the beam. 
+
+The force initially locates at one end when time is $0$. Force initial phase is $0$. 
+
+The model diagram is presented Figure.\ref{fig:harmonicloadbeam}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{harmonicloadbeam}
+    \caption{Schematic representation of a generic beam crossed by a harmonic load}
+    \label{fig:harmonicloadbeam}
+\end{figure}
+
+\section{Equation of motion}
+The governing equation motion for the model is shown in Eq.\ref{eq:equationofmotion}. 
+
+
+\begin{figure}[h]
+	\centering
+	\begin{equation}
+		\label{eq:equationofmotion}
+		EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +2\mu\omega_b \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t
+	\end{equation}
+	\begin{tabular}{@{}>{$}l<{$}l@{}}
+		where: & \\
+		EJ & Lateral stiffness of the beam \\
+		v & Lateral displacement of the beam \\
+		x & Horizontal axis label\\
+		\mu & Mass per unit length of the beam \\
+		\omega_b & Circular frequency of damping \\
+		c & Speed of moving load \\
+		Q & Amplitude of load \\
+		\Omega & Circular frequency of load. $\Omega$ equals to first lateral \\
+		& natural frequency of the bridge \\
+		\delta & Delft function \\
+	\end{tabular}
+\end{figure}
+
+
+\section{The explicit solution}
+The explicit solution of the motion equation is derived by Fryba\citep{fryba1999vibration}. Derived equation for mid-span lateral displacement is Eq.\ref{eq:v(x,t)simpleharmonic}. \emph{This equation will be referred as 'the explicit solution' in following paragraphs.}
+
+\begin{figure}[h]
+	\centering
+	\begin{equation}
+		\label{eq:v(x,t)simpleharmonic}
+		v(\sfrac{l}{2},t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]
+	\end{equation}
+	\begin{tabular}{@{}>{$}l<{$}l@{}}
+		where: & \\
+		l & span of the beam($m$) \\ 
+		\zeta & damping ratio \\
+		\omega_1 & first natural circular frequency of the beam \\
+		& $=\frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$\\
+		\omega & $= \sfrac{\pi c}{l}$ \\
+		\omega_b & = $\frac{1}{2}\zeta\omega_1$ \\ 
+	\end{tabular}
+\end{figure}
+
+\paragraph{Damping in the expression}
+This paragraph aims to derive the correct expression for the damping component in the expression for Eq.\ref{eq:v(x,t)simpleharmonic}.
+
+Eq.\ref{eq:equationofmotion} uses a form of damping expression $\omega_b$, which can be converted from normal damping coefficient. Equation of motion using damping coefficient is shown in Eq.\ref{eq:equationofmotiondampingcoefficient}:
+
+\begin{equation}\label{eq:equationofmotiondampingcoefficient}
+    EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +\chi \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
+\end{equation}
+
+where $\chi$ stands for damping coefficient. By comparing \ref{eq:equationofmotiondampingcoefficient} and \ref{eq:equationofmotion}:
+
+\begin{equation}
+    \omega_b = \frac{\chi}{2\mu}
+\end{equation}
+
+where:
+
+$\omega_b$: circular frequency of damping
+
+$\chi$: damping coefficient
+
+$\mu$: mass per unit length of the bridge
+
+also, in \citep[Page.704]{abu2000vibration} it is mentioned that:
+
+\begin{quote}
+    The external and internal damping of the beam are assumed to be proportional to the mass and stiffness of the beam respectively,i.e., $r_a = \gamma_1 \mu$.., where $\gamma_1$ and $\gamma_2$ are proportionality constants.
+\end{quote}
+
+thus:
+
+
+\begin{equation}
+    \omega_b = \frac{\gamma_1}{2}
+\end{equation}
+
+and it is mentioned in \citep[Eq.8]{abu2000vibration} that:
+
+$$\zeta = \frac{\gamma_1}{\omega_1}$$
+
+so:
+
+$$\gamma_1 = \zeta\omega_1$$
+
+so:
+
+$$\omega_b = \frac{1}{2}\zeta\omega_1 = \frac{1}{2}\frac{\zeta\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$$
+
+
+\section{Mathematical validation of derived expressions}
+
+Since circular frequency of damping $\omega_b$ is not clearly defined by Fryba, it is necessary to verify the correctness of both explicit solution and deduced $\omega_b$ expression.
+
+The verification is done by comparing the result of Eq.\ref{eq:v(x,t)simpleharmonic} with the result of a explicit solution in a different form obtained by another deducing method.  
+
+The result in \citet{abu2000vibration} is selected to be the benchmark for verification. This report is researching vibration of beams with general boundary conditions due to a moving harmonic load. The differential equation is illustrated as follows:
+
+\begin{equation}\label{eq:hilal}
+    EIv''''+\mu \ddot{v} + r_a \dot{v}+r_i \dot{v}''' = p(x,t)
+\end{equation}
+
+The difference between Eq.\ref{eq:hilal} and Eq.\ref{eq:v(x,t)simpleharmonic} is that it offers broader boundary conditions such as changing speed of the load and various kinds of supports. As a result of more general equation, the deduction steps are much more complicated. However, two solutions should yield same results under same boundary conditions that:
+
+\begin{enumerate}
+    \item Load moving at constant speed,
+    \item Frequency of load equals frequency of the beam,
+    \item Internal damping is 0,
+    \item Simple hinge support at both ends of the beam.
+\end{enumerate}
+
+One plot from the parametric study of \citet{abu2000vibration} meets the above requirement and is selected and illustrated in Figure. Parameters used in this plot is $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height = 0.25\textheight]{hilalplot}
+    \caption{Reference plot extracted from \citet{abu2000vibration}. Condition: $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$. Y axis for dynamic amplification factor.}
+    \label{fig:hilalplot}
+\end{figure}
+
+Next step is to translate parameters used in above plot to usable parameters in Eq.\ref{eq:v(x,t)simpleharmonic}.
+
+
+$$c_{cr} = \frac{\omega_1 L}{\pi} = \frac{\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+
+$$c = \alpha c_{cr} = \frac{\alpha\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+
+$EJ$,$\mu$,$l$ needs to be selected to yield value for $c$, thus following values are randomly selected:
+
+$$
+\begin{array}{c}
+	EJ = 2.43e10 Nm^2 \\
+	l = 54m \\
+	\mu = 6000 kg/m \\ 
+	c_{cr} = 117.05 m/s \\
+	c = 29.26 m/s  \\
+\end{array}
+$$
+
+A Matlab script is written to automate numerical calculating procedure. The script is presented in Appendix.\ref{sec:matlabscripts}. By typing 
+
+\texttt{>>fog(2.43e10,54,6000,29.26,0.05)}
+
+into the console. Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} is obtained.
+
+\begin{figure}[h!]
+\centering 
+\newlength\figureheight 
+\newlength\figurewidth 
+\setlength\figureheight{4cm} 
+\setlength\figurewidth{4cm} 
+\input{./matlab/EJ24300000000L54mu6000c29daf.tikz} 
+\caption{Time history of dynamic amplification factor in mid-span of the beam. Parameters:$EJ=2.43e10Nm^2$,$L=54m$,$\mu=6000kg/m$,$c=29.26m/s$} 
+\label{fig:EJ24300000000L54mu6000c29daf.tikz} 
+\end{figure}
+
+By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} it can be concluded that results are the same on y-axis. The difference of x-axis is because in Figure.\ref{fig:hilalplot} time axis is scaled to 1 but in Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} time is not scaled. Then it can be further concluded that Eq.\ref{eq:v(x,t)simpleharmonic} and expression for $\omega_b$ are both correct.
+
+\section{Parameter calculation}
+The parameters needed for solving the explicit solution(Eq.\ref{eq:v(x,t)simpleharmonic}) are:
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{cc}
+		\hline
+		$l$ & Length of the beam \\ 
+		$\zeta$ & Damping ratio \\
+		$Q$ & Amplitude of the load \\
+		$EJ$ & Lateral stiffness of the beam \\
+		$\mu$ & Mass per unit length \\
+		$c$ & Speed of train \\
+		\hline
+	\end{tabular}
+\end{table}
+	
+
+Despite parameter $Q$, other parameters are the fundamental attributes of bridge and vehicle which do not need further derivation. Thus this section aims to derive the expression for $Q$.
+
+The expression of $Q$ will be determined in following sequence:
+
+Firstly a \emph{hypothesis expression} for amplitude $Q$ will be made depend on a \emph{peak lateral force model}. Then the hypothesis amplitude, together with the explicit solution embedding it, will be validated by confirming if the explicit solution is able to reproduce similar results with numerical vehicle-bridge resonance simulations.\footnote{Lateral resonance research\citep[Figure.C1,C2,...,C30]{d181dt329} provides input and output data of these simulations}.
+
+Paragraphs in this section are arranged accordingly to above sequence. They are written in following layout:
+
+\begin{enumerate}
+	\item Peak lateral model
+	\item Hypothesis expression for $Q$
+	\item Validation of the explicit solution
+\end{enumerate}
+
+\subsection{Peak lateral force model}\label{sec:peaklateralforcemodel}
+
+The peak lateral force model is obtained by statistically fitting the peak force results of different train speeds provided by UIC research\citep{d181dt329}. The model is expected to describe the relationship between peak lateral force and train speed. 
+
+The peak lateral force of different train types under different train speeds are presented in Table.\ref{tab:peaklateralforce}. Two figures(bold numbers) are modified\footnote{
+	The original values are 160 and 250 respectively. Output data in the table should have been filtered by standard deviation filter. The table data does not represent true maximum lateral force but a value greater than 99.5\% of all force values. However, it is obvious that output data of 160kN was not filtered. It is the greatest value among all raw output data of freight train running at 100 km/h. It is not possible to calculate the explicit standard value because raw data are presented in the form of chart image. The modified value of 80kN is obtained by approximate observation. As a result, the total lateral force is modified to 170kN.} from original table.
+The data in the table will be used to create the speed-based expression for peak lateral force model. 
+
+\begin{table}[h!]
+    \centering
+    \caption{Peak Lateral Track Force Over All Track Qualities. Extracted From \citet[Tab. B1]{d181dt329}}
+    \begin{tabular}{cccc}
+
+        \hline
+         & \multicolumn{3}{c}{Peak lateral force(kN)} \\
+        Train type and speed & Locomotive & Coach/Wagon & Total \\ 
+        \hline
+        Freight 60 km/h & 50 & 60 & 110\\
+        Freight 100 km/h & 90 & \textbf{\textit{80}}& \textbf{\textit{170}}\\
+        Freight 120 km/h & 75 & 110 & 185 \\
+        Passenger 200 km/h & 140 & 50 & 190 \\
+        High Speed 350 km/h & 125 & 125 & 250 \\
+        Passenger 200 km/h(worn) & 190 & 80 & 270 \\
+        High Speed 350 km/h & 330 & 225 & 555 \\
+        \hline
+    \end{tabular}
+    \label{tab:peaklateralforce}
+\end{table}
+
+The model is created by fitting the data in Table.\ref{tab:peaklateralforce} to a function. The function should be able to satisfy following characteristics:
+
+\begin{enumerate}
+	\item 0kN lateral force when speed is 0km/h
+	\item Simply increasing in value but generally decreasing in increment\footnote{It can be observed from Table.\ref{tab:peaklateralforce}  that the relationship between lateral force and speed is not linear. The fact that force increment decreases as speed increases can also be observed.}
+\end{enumerate}
+
+Finally function form $F=a*v^b$ is selected because its satisfying characteristics. The first regression is conducted according to freight train data because it possesses the most sets of data. R language was used to perform regression process. 
+
+The fitting result is presented in Formula.\ref{for:regressionfreight}. It is in good likelihood with original data. Achieved convergence tolerance is $2.868e-06$.  See Appendix.\ref{sec:Rregression} for code.
+
+\begin{equation}
+\label{for:regressionfreight}
+F_{lf} = 5.2064\cdot v^{0.7495}
+\end{equation}
+
+Since 1 set of data is available for passenger train, Formula.\ref{for:regressionfreight} is scaled by a constant factor to create regression for passenger trains. Please note that this regression can not be verified because lack of data. However, since freight train has a greater lateral force then passenger train, it is conservative to adopt lateral force of freight train when calculating consequences related to passenger trains. It is still reasonable to adopt this regression since passenger trains are just simply less stiff than freight trains. 
+
+The scale factor $k_{pf}$ is obtained by comparing force value yielded by Formula.\ref{for:regressionfreight} at 200km/h and original passenger train force(190kN) data at 200km/h.
+
+$$k_{pf} = \frac{190}{a_{lf}\cdot 200^{b_{lf}}}$$
+$$a_{lp} = a_{lf}\cdot k_{pf}$$
+merge above two equations, yield
+$$a_{lp} = \frac{190}{200^{b_{lf}}} = \frac{190}{200^{0.7495}} \approx 3.58$$
+
+and 
+
+$$F_{lp} = a_{lp}\cdot v^{0.7495}$$
+
+thus
+
+\begin{equation}\label{for:regressionpassenger}
+F_{lp} = 3.58\cdot v^{0.7495}
+\end{equation}
+
+Lateral force for high speed train were obtained in same manner. The scale factor $k_{hf}$ is obtained by comparing force value yielded by Formula.\ref{for:regressionfreight} at 350km/h and original high speed train force(250kN) data at 350km/h.
+
+$$k_{hf} = \frac{250}{a_{lf}\cdot 350^{b_{lf}}}$$
+$$a_{lh} = a_{lf}\cdot k_{hf}$$
+merge above two equations, yield
+$$a_{lh} = \frac{250}{350^{b_{lf}}} = \frac{250}{350^{0.7495}} \approx 3.10$$
+
+and 
+
+$$F_{lh} = a_{lh}\cdot v^{0.7495}$$
+thus
+
+\begin{equation}\label{for:regressionhighspeed}
+F_{lh} = 3.10\cdot v^{0.7495}
+\end{equation}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+    % title = {Peak lateral track forces over all track qualities(worn profile scenario neglected)},
+    width = 0.9\textwidth,
+    xlabel={$v(km/s)$},
+    ylabel={$F(kN)$},
+    ymin = 0, xmin = 0, xmax = 350,
+    grid = both,
+    ytick = {50,100,...,250},
+    xtick = {60,100,120,200,350},
+    legend style={
+    at={(0,0)},
+    anchor=north west,at={(axis description cs:0.45,0.43)}}] 
+    ]
+    \addplot[name path = C,mark=*, green] coordinates {(200,190) (350,250)};
+    \addplot[blue,name path = B,mark=*] coordinates {(120,185) (200,190)};
+    \addplot[red,name path = A,mark=*] coordinates {(0,0) (60,110) (100,170) (120,185)};
+    \addplot[red,name path = D, domain = 0:120, dashed]{5.2064*x^0.7498};
+    \addplot[blue,name path = E, domain = 0:200, dashed]{3.58*x^0.7498};
+    \addplot[name path = F, domain = 0:350, dashed, green]{3.1*x^0.7498};
+    \addplot[domain = 0:350] {100};
+    \legend{high speed train, passenger train, freight train, approximate freight train ,approximate passenger train, approximate high speed train, EN1991-2 nosing force},
+    \end{axis}
+\end{tikzpicture}
+\caption{Total peak lateral track forces over all track qualities(worn profile scenario neglected)}
+\label{fig:peaklateralforceregression}
+\end{figure}
+
+\paragraph{Evaluation on the peak lateral force model}
+By examining the magnitude of forces illustrated in Figure.\ref{fig:peaklateralforceregression}, it is found that these forces are not reasonable because their magnitude is obviously too high.
+
+The reason for this phenomenon is because the force data are extracted from simulations whose track quality ranges from well-maintained to very poor\footnote{Up to 6mm deviation}. Poor tracks result in extremely high lateral forces, however such tracks are not allowed in the Netherlands. 
+
+The magnitude of forces can be calibrated if simulations based on realistic data of Dutch rails are provided. See Section.\ref{sec:recommendationsonsimulations} for recommendations on conducting simulations.
+
+
+\subsection{Hypothesis expression for amplitude $Q$}
+
+In this chapter a hypothesis expression for amplitude $Q$ is obtained. The hypothesis is based on \emph{peak lateral force model} in Section.\ref{sec:peaklateralforcemodel} and \emph{numerical simulation results}\footnote{All the numerical simulation results used in this chapter are extracted from a lateral force research\citep{d181dt329}. The correctness of these numerical simulations are verified during the research.}. 
+
+The numerical simulations\citep[among Figure.C1,C2,...,C30]{d181dt329} used in this section successfully produced resonance between railway vehicle and bridge. Thus they are suitable for calculating the parameters of resonance model. Simulations used in this paragraph uses input from normal tracks and wheels data which is representative for British railway tracks and vehicles in 1990s. Thus although the peak lateral force model is very conservative, the amplitude determined based on representative simulations still generates reasonable results. 
+
+There are two steps to create the hypothesis:
+
+\begin{enumerate}
+	\item Calculate the magnitude of $Q$ using inputs of different numerical simulation
+	\item Make hypothesis based on calculated magnitude
+\end{enumerate}
+	
+The following paragraphs of this section are written in above order.
+
+\paragraph{Magnitude of $Q$} Inputs of 3 simulation cases are selected to calculate $Q$. They are abbreviated to C1,C3,C9\footnote{Abbreviations are used in following paragraphs to represent simulation cases } and presented in Figure.\ref{fig:c1},\ref{fig:c3} and \ref{fig:c9} respectively. $Q$ is calculated by substituting the peak displacement value of simulation output into the left hand side of the explicit solution and simulation inputs into right hand side of the same equation. With 3 sets of input and output data, 3 values of $Q$ are obtained. They are illustrated in Table.\ref{tab:parametersetupsandequivalentforce} together with the corresponding input data.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height = 0.25\textheight]{c1}
+    \caption{Figure C1 extracted from \citet{d181dt329} }
+    \label{fig:c1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height = 0.25\textheight]{c3}
+    \caption{Figure C3 extracted from \citet{d181dt329} }
+    \label{fig:c3}
+\end{figure}
+
+
+
+\begin{table}[ht!]
+    \centering
+    \caption{Parameter inputs and magnitude of amplitude $Q$}
+    \begin{tabularx}{\textwidth}{c|XXX}
+        \hline
+        & \multicolumn{3}{c}{Simulation cases}  \\
+        Parameters & C1 & C3 & C9 \\
+        \hline
+        $EJ$($\sfrac{\delta_0}{l}$) & 1/4000 & 1/4000 & 1/10000 \\
+        $l$($m$) & 54m & 54 & 120 \\ 
+        $\mu$($kg/m$) & 6000 & 6000 & 6000\\
+        $c$($m/s$) & 14 & 16.67(60km/h) & 14\\
+        $\zeta$ & 1\% & 1\% & 1\%\\
+        Train  & Freight & Freight & Freight \\
+        Track &  Freight  & Freight & Freight \\
+        \hline
+        Amplitude $Q$(kN) & 14 & 15 & 14 \\
+        \hline
+    \end{tabularx}
+    \label{tab:parametersetupsandequivalentforce}
+\end{table}
+
+\paragraph{Hypothesis expression}By observing calculated magnitudes of amplitude $Q$, it is found that $Q$ possesses the general characteristics of peak lateral force model that the lateral force is only relevant to speed if track quality and wheel conicity are fixed. And lateral force is irrelevant to the bridge parameters.
+ 
+Because amplitude $Q$ possesses the general lateral force characteristics, it is further expected that $Q$ also has a similar form of force-speed relationship as peak lateral force model. Thus hypothesis expression is created by scaling Eq.\ref{for:regressionfreight}. 
+
+The exponential component does not change when scaling, so to scale the equation one set of input and output data is needed. Data $(Q = 14kN, c=14m/s)$ from C1 is selected. Please note only C1 was used in creating the hypothesis expression so C3 and C9 remains available for the verification.
+
+The hypothesis expression for amplitude $Q$, which is the result of scaling, is presented in Eq.\ref{eq:hypothesisexpression}.
+
+\begin{equation}\label{eq:hypothesisexpression}
+    Q= 1928\times c^{0.7495}
+\end{equation}
+
+Please note that this hypothesis expression is created based on a specifically chosen simulation case C1. To be scientific, expression based on other simulations will be investigated in Section.\ref{sec:supplementaryparametercalculation}.
+
+\section{Benchmark for the model}
+Since amplitude $Q$ is a function of train speed $c$, the explicit solution is fully derived and only contains basic parameters. This sections aims to validate the capability of the explicit solution in yielding reasonable output.
+
+New simulation cases\footnote{To assure conservativeness during the validation process, only axle repeat pattern resonance simulations are selected because their output are more pronounced than kinematic resonance effect.\citep{d181dt329}} C12,C13,C14\footnote{Abbreviation in original research. These abbreviation will continually be used in the following paragraphs.} are selected to take part in validation process. They are presented in Figure.\ref{fig:c12}, \ref{fig:c13} and \ref{fig:c14} respectively. As mentioned above, C3 and C9 are also available for the validation, therefore there are altogether 5 sets of simulation can be used for validation.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height = 0.25\textheight]{c12}
+    \caption{Figure C12 extracted from \citet{d181dt329} }
+    \label{fig:c12}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height = 0.25\textheight]{c13}
+    \caption{Figure C13 extracted from \citet{d181dt329} }
+    \label{fig:c13}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height = 0.25\textheight]{c14}
+    \caption{Figure C14 extracted from \citet{d181dt329}. An minor error is observed in y-axis label. Upper boundary of y-axis should be 0.116 }
+    \label{fig:c14}
+\end{figure}
+
+The explicit solution is solved by inputing bridge parameters and trains speed of these 5 cases(C3,C9,C12,C13,C14). The results and their corresponding parameters are presented in Table.\ref{tab:comparisonresultssimulationanalytical}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Comparison of results of simulation output and analytical output using refined load model}
+    \begin{tabularx}{\textwidth}{X|XXXXX}
+        \hline
+        & \multicolumn{5}{c}{Simulation cases} \\
+        Parameters & C3 & C9 & C12 & C13 & C14\\
+        \hline
+        $EJ$($\sfrac{\delta_0}{t}$) &1/4000 & 1/10000& 1/10000 & 1/12000 & 1/10000\\
+        $l$($m$) & 54 & 120 & 54 & 54 & 38\\
+        $\mu$($kg/m$) & 6000 & 6000 & 6000 & 6000 & 10000\\
+        $c$($m/s$) &16.67 & 14 & 55.6 & 55.6 & 65\\
+        $\zeta$ & 1\% & 1\% & 1\% & 1\% & 1\%\\
+        Train & Freight & Freight & Passenger & Passenger & High speed \\
+        Track & Freight & Freight & Passenger  & Passenger  & High speed \\
+        \hline
+        PSD($mm$) & 12.5 & 17.8 & 1.48 & 1.41 & 0.117\\
+        RES($mm$) & 14.1 & 19.7 & 6.6 & 5.8 & 3.0 \\
+        \hline
+    \end{tabularx}
+    \begin{flushleft}
+    	\vspace{0.5cm}
+    	PSD: Peak simulation displacement \\
+    	RES: Result of the explicit solution
+    \end{flushleft}
+    \label{tab:comparisonresultssimulationanalytical}
+\end{table}
+
+To clearer illustrate the comparison of both peak results from simulation and explicit solution, Figure.\ref{fig:comparisonpeaksimulationanalytical} is created with rearranged order to make descending trend more obvious.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	width = 0.6\textwidth,
+    symbolic x coords={C9,C3,C12,C13,C14},
+    xtick=data,
+    legend style={at={(0.5,-0.15)},
+        anchor=north,legend columns=-1},
+    ybar=5pt,% configures `bar shift'
+    bar width=9pt,
+    nodes near coords,
+]
+\addplot 
+    coordinates {(C9, 19.7) (C3, 14.1)   (C12,6.6) (C13,5.8) 
+        (C14, 3.0) };
+\addplot 
+    coordinates {(C9, 17.8) (C3, 12.5)  (C12,1.48) (C13,1.41)
+         (C14,0.117) };
+\legend{Result of explicit solution,Peak displacement of numerical simulation}
+\end{axis}
+\end{tikzpicture}
+\caption{Comparison between VAMPIRE peak simulation result and analytical peak result}
+\label{fig:comparisonpeaksimulationanalytical}
+\end{figure}
+
+\paragraph{Benchmark conclusion}
+
+It can be seen that explicit solution results always keep a conservative margin above the numerical simulation results. 
+
+Difference between explicit solution and numerical simulation result for C12,C13 and C14 is bigger compared to difference for C9 and C3. It is due to the fact that the amplitude $Q$ is calculated based on freight train lateral forces and freight trains induce greater lateral force compared to passenger trains and high speed trains(See Figure.\ref{fig:peaklateralforceregression}).
+
+The descending trend of explicit solution results follows the descending trend of numerical simulation results perfectly regardless of train types. 
+
+Thus considering above reasons, the model shows satisfying performance. However, since there are few data available as benchmark, this model is still not verified for real-life application.
+
+\section{Supplementary parameter calculation and benchmark}\label{sec:supplementaryparametercalculation}
+Although the hypothesis expression based on C1 has been validated, this process is not generic because C1 is chosen specifically. To be scientific it is also necessary to derive expression of amplitude $Q$ based on other 5 simulation cases. 
+
+The load equivalent amplitude of other 5 setups are calculated and their constant component are presented in the Table.\ref{tab:allLoadEquivalentAmplitude}. Their corresponding benchmarks are presented in Table.\ref{tab:allBenchmark}. Calculation processes are omitted because they are conducted in the same way as C1-based amplitude $Q$.
+
+\begin{table}[h!]
+    \centering
+    \caption{Constant component of amplitude $Q$($N$) from all available setups}
+    \begin{tabular}{cccccc}
+        \hline
+        C1 & C3 & C9 & C12 & C13 & C14 \\
+        \hline
+        1928 & 1721 & 1760 & 427 & 463 & 228 \\
+        \hline
+    \end{tabular}
+    \label{tab:allLoadEquivalentAmplitude}
+\end{table}
+
+\begin{table}[h!]
+	\tiny
+    \centering
+    \caption{Benchmark of explicit solution results}
+    \begin{tabularx}{\textwidth}{XXXXXXX}
+        \hline
+         & \multicolumn{6}{c}{Analytical results of cases}\\
+        \cline{2-7}
+        Base simulation cases for $Q$ & C1 & C3 & C9 & C12 & C13 & C14 \\
+        \hline
+        C1 & 0.0145 & 0.0141 & 0.0197 & 0.0066 & 0.0058 & 0.003 \\
+        C3 & 0.013 & 0.0125 & 0.0174 & 0.0059 & 0.0051 & 0.0036 \\
+        C9 & 0.013 & 0.0128 & 0.0178 & 0.0061 & 0.0053 & 0.0032 \\
+        C12 & 0.0032 & 0.0031 & 0.0043 & 0.00148 & 0.0013 & 0.0008 \\
+        C13 & 0.0035 & 0.0034 & 0.0047 & 0.0016 & 0.00141 & 0.0002 \\
+        C14 & 0.0021 & 0.0020 & 0.0028 & 0.0010 & 0.0008 & 0.00012 \\
+        \hline
+        Simulation Peak Displacement & 0.014 & 0.0125 & 0.0178 & 0.00148 & 0.00141 & 0.00012 \\
+        \hline
+        \label{tab:allBenchmark}
+    \end{tabularx}
+\end{table}
+
+Among all amplitude $Q$, the one created from C1 is most satisfying because its outputs are all conservative towards numerical simulation output. Other  amplitude shows at least one nonconservative output. 
+
+It can also be observed that the results of C12,C13 and C14 are unacceptable due to the reason that their output are too small compared to numerical simulation output . They can't predict reliable result for C1,C3 and C9.
+
+Since there is few data available, it's meaningless to conduct further statistical procedures. The rest of the thesis will use amplitude $Q$ base C1 because it is conservative on all benchmark. 
+
+\section{Evaluation on the model}
+A simplified model for checking lateral resonance response of railway bridge is developed in this chapter. This model is capable of simulating a resonance scenario where the bridge is passed by a moving railway vehicle. However, several disadvantages of the current model should be noted:
+
+\begin{enumerate}
+	\item Only one concentrated force is modeled to represent the lateral dynamic effect induced by railway vehicle. It means the load in the model can not represent the distribution of vehicle axle forces. 
+	\item Amplitude $Q$ is calculated based on a specifically chosen numerical simulation case. However, the aim of the model is to generically simulate vehicle-bridge response behavior, and such specifically choosing may be against this principle of generic.  
+	\item The model is not fully validated because of the small quantity of available simulation results for validation. These simulation scenarios can not represent generic real-life scenarios.
+	\item The model is not calibrated for modern Dutch railway because model parameter $Q$ is based on data generated by old railway vehicles.\footnote{Simulations\citep{d181dt329} were conducted during 1990s using parameters extracted from real trains at the time. Compared to trains of 1990s, modern railway vehicles possess more sophisticated suspension systems designed to suppress the lateral motion of the vehicle thus they are expected to induce lower lateral forces to tracks.} 
+\end{enumerate}

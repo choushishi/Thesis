@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass{report}
 
 % match packages
 \usepackage{amsmath}
@@ -8,32 +8,31 @@
 % \usepackage{enumerate}
 \usepackage{fixltx2e}
 \usepackage[shortlabels]{enumitem}
-\setlist{nosep}
+% \setlist{nosep} #no separation space between enumerate items
 
-\usepackage[left=1.5in, right=1in, top=1in, bottom=1in, includefoot, headheight=13.6pt]{geometry}
+% \usepackage[left=1.5in, right=1in, top=1in, bottom=1in, includefoot, headheight=13.6pt]{geometry}
+\usepackage{parskip} %no indention, looks better
 
 \usepackage{xcolor}
 \usepackage{sectsty}
-\chapterfont{\color{cyan}}  % sets color of chapters
-\sectionfont{\color{cyan}\LARGE}  % sets color and font of sections
-\subsectionfont{\color{cyan}}
-\subsubsectionfont{\color{cyan}}
+% \chapterfont{\color{cyan}}  % sets color of chapters
+% \sectionfont{\color{cyan}\LARGE}  % sets color and font of sections
+% \subsectionfont{\color{cyan}}
+% \subsubsectionfont{\color{cyan}}
+% \paragraphfont{\color{cyan}}
 
 
 % Package and setting for including pictures
 \usepackage{graphicx}
 \graphicspath{ {./Image/} }
-\usepackage{caption}
+\usepackage[font={small,it}]{caption} % Why arguments? because caption and content look alike and therefore, they look like shit
 \usepackage{subcaption}
+
 
 % Packages for tables
 \usepackage{tabularx}	%limiting table width
 \usepackage{multirow}
 \usepackage{booktabs}
-
-% Package for generating dummy text
-\usepackage[english]{babel}
-\usepackage{blindtext}
 
 % Package and Settings for table of contents
 % Hyperlink Settings
@@ -47,8 +46,7 @@
 \usepackage[toc,page]{appendix}
 
 % Packages for citing and reference
-% \usepackage[backend=bibtex]{biblatex} 
-\usepackage[numbers,super]{natbib}
+\usepackage[numbers]{natbib}
 
 % Packages for plotting
 \usepackage{pgfplots}
@@ -97,45 +95,43 @@
 \begin{abstract}
 
 
-Dynamics of railway bridges is a complicated problem that normally needs numerical simulation to conduct researches. However, this thesis takes advantage of the numerical results provided in D181 reports and based on these results, further conclusions are made by using them in analytical model. 
+Dynamics of railway bridges is a complicated problem that normally needs numerical simulation to conduct researches on. However, this thesis takes advantage of the numerical results provided in previous researches and based on these researches, further conclusions are made by using them in simplified model. 
 
-Recently long span railway bridges being designed in the Netherlands are being rejected by a particular EN1991-2 criterion that requires bridges to possess a first lateral natural frequency higher than 1.2Hz. Due to the fact that generally bridge's first lateral natural frequency decreases as the span increases, it can be seen that 1.2Hz criterion is rejecting almost all bridge with a span longer than 150m. 
+Recently long span railway bridges being designed in the Netherlands are being rejected by a particular Eurocode criterion that requires bridges to possess a first lateral natural frequency higher than $1.2Hz$. Due to the fact that generally bridge's first lateral natural frequency decreases as the span increases, it can be seen that $1.2Hz$ criterion is rejecting almost all bridge with a span longer than 150m. 
 
-This report succeeds in pursuing the original documents of 1.2Hz criterion and the knowledge in the documents initiates further researches on the lateral dynamics of railway bridges. Besides 1.2Hz criterion itself, following topics are researched with the information provided by D181 report series:
+This report succeeds in pursuing the original documents of $1.2Hz$ criterion and the knowledge in the documents initiates further researches on the lateral dynamics of railway bridges. Besides $1.2Hz$ criterion itself, following topics are researched with the information provided by previous researches:
 
 \begin{enumerate}
     \item Train-bridge lateral resonance mechanisms, including axle repeat pattern resonance and kinematic movement resonance,
-    \item Lateral force on tracks caused by the operation of railway vehicle and key parameters influencing the force,
-    \item Lateral wavelength of trains running in the Netherlands, including axle repeat pattern wavelength and kinematic movement wavelength
+    \item Lateral force on tracks caused by the operation of railway vehicle and key parameters influencing the force.
+    % \item Lateral wavelength of trains running in the Netherlands, including axle repeat pattern wavelength and kinematic movement wavelength
 \end{enumerate}
     
-Taking advantage of the items above, a practical method for checking the lateral railway bridge dynamics is developed to quantify the lateral dynamic resonance response of railway under horizontal dynamic vehicle load. This method aims to serve for engineering purposes and provide an alternative way of verifying railway bridge lateral dynamics other than 1.2Hz criterion. The practical method is developed by an analytical approach, based on the VAMPIRE simulation results in D181 DT329.
+Taking advantage of the items above, a simplified model for checking the lateral railway bridge dynamics is developed to quantify the lateral dynamic resonance response of railway bridge under horizontal dynamic vehicle load. This method aims to serve for engineering purposes and provide an alternative way of verifying railway bridge lateral dynamics. The practical method is developed by an analytical approach, based on the numerical simulation results provided by other researches.
 
 An illustration of the usage of the practical method is conducted on the basis of a real bridge project. The method is also implemented in Matlab scripts to automate the checking procedure.
 
 
 \vspace*{1cm}
 
-\keywords{Eurocode, D181, railway bridge dynamics, lateral dynamics, rail dynamics, analytical solution, 1.2Hz criterion, train wavelength, nosing force, lateral force on track}
+\keywords{Eurocode, railway bridge dynamics, lateral dynamics, rail dynamics, analytical solution, 1.2Hz criterion, train wavelength, nosing force, lateral force on track}
 
 \end{abstract}
 
 
 
 
-\chapter*{Acknowledgements}
+\chapter*{Acknowledgments}
 
 Hereby I would like to express my deepest appreciation to all those who helped me in completing this thesis and my engineering studies.
 
 First of all, I would like to thank to Matthijs van Almen, my daily supervisor at Iv-Infra, for his patient guidance during the entire thesis process. His guidance is like the light that helps me finding the right path in the darkness. Nevertheless, his way of thinking also enlightened me. I would never have completed the thesis without his help. 
 
-I also want to express my appreciation to Prof. Frans Bijaard, Dr. Roland Abspoel, Dr. Micha{\"e}l Steenbergen, Prof. Rolf Dollevoet,  the members of the thesis committee from Delft University of Technology. Their professional knowledge and general interest in the topic were valuable assets to my work.
+I also want to express my appreciation to Prof. Frans Bijaard, Ir. Roland Abspoel, Dr. Micha{\"e}l Steenbergen, Prof. Rolf Dollevoet,  the members of the thesis committee from Delft University of Technology. Their professional knowledge and general interest in the topic were valuable assets to my work.
 
 Special thanks to Michel Koop, who provided me with the opportunity to carry out this research at Iv-Infra, to Charalampos Bouras, who was always eager to provide help whenever I needed, and to all the colleagues at the steel department of Iv-Infra, who provided me a friendly atmosphere.
 
 I really appreciate the help of Ron van der Zwan and the access to ERRI D181 research resources he provided. I also appreciate Paul Vos, Jean-Jacques Reber sharing their background information of D181 committee. Same appreciation goes to Alan Minnis from DeltaRail for providing the information of D181 DT329 researches.
-
-Thanks to  the contributors of both StackOverflow who generously sharing the knowledge and {\LaTeX} for maintaining such an incredible package. 
 
 I am deeply grateful to my parents, Guolin Deng and Jiafen Wang, who always believed in me and were supporting my studies in The Netherlands. 
 
@@ -154,9 +150,23 @@ Delft,  \today
 
 \include{introduction}
 
-\include{firstSegment}
+\include{c1}
 
-\include{secondSegment}
+\include{c2}
+
+\include{c3}
+
+\include{c4}
+
+\include{c5}
+
+\include{c6}
+
+\include{c7}
+
+% \include{firstSegment}
+
+% \include{secondSegment}
 
 \include{thirdSegment}
 

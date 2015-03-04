@@ -1,118 +1,119 @@
-\BOOKMARK [0][-]{chapter.1}{INTRODUCTION}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Summary of topic}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Motivation of the thesis}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Context of the thesis}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Lateral dynamics of railway bridge}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{Objectives and research question}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.4}{Main steps}{chapter.1}% 5
-\BOOKMARK [0][-]{chapter.2}{Basic concepts of railway bridge dynamics}{}% 6
-\BOOKMARK [1][-]{section.2.1}{Basic railway dynamic effects}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.1.1}{Sources induce transverse dynamic reactions}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.2}{Lateral movement of a wheelset on straight track}{section.2.1}% 9
-\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Theory according to Klingel}{subsection.2.1.2}% 10
-\BOOKMARK [3][-]{subsubsection.2.1.2.2}{Hunting movement}{subsection.2.1.2}% 11
-\BOOKMARK [2][-]{subsection.2.1.3}{Single and two-point contact between wheel and rail}{section.2.1}% 12
-\BOOKMARK [1][-]{section.2.2}{Wheel-Rail Interface}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.1}{Wheelset and track dimensions}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.2}{Conicity and Equivalent Conicity of Wheels}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.3}{Worn wheel profiles}{section.2.2}% 16
-\BOOKMARK [1][-]{section.2.3}{Lateral Track Irregularities}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.4}{Dynamic theories}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.4.1}{Natural frequencies and shapes of bridge}{section.2.4}% 19
-\BOOKMARK [2][-]{subsection.2.4.2}{Basic resonance concept}{section.2.4}% 20
-\BOOKMARK [1][-]{section.2.5}{Analysing methods for lateral dynamics of railway bridges }{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.5.1}{Modal analysis}{section.2.5}% 22
-\BOOKMARK [2][-]{subsection.2.5.2}{Analysis by modal superposition}{section.2.5}% 23
-\BOOKMARK [2][-]{subsection.2.5.3}{Numerical methods}{section.2.5}% 24
-\BOOKMARK [3][-]{subsubsection.2.5.3.1}{VAMPIRE}{subsection.2.5.3}% 25
-\BOOKMARK [0][-]{chapter.3}{Literature Review of regulations regarding lateral railway bridge dynamics in 1991-2}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Factors influencing dynamic behaviour}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{Requirements for railway bridge verification}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.3}{Horizontal transverse dynamic effects}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.1}{Nosing force}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.2}{Verification of the Limit States}{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.3}{Serviceability limit states - traffic safety}{section.3.3}% 32
-\BOOKMARK [3][-]{subsubsection.3.3.3.1}{Transverse deformations and vibrations}{subsection.3.3.3}% 33
-\BOOKMARK [1][-]{section.3.4}{Conclusion}{chapter.3}% 34
-\BOOKMARK [0][-]{chapter.4}{Investigation of report series created by D181 Committee Group}{}% 35
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.1.1}{Structure of report series}{section.4.1}% 37
-\BOOKMARK [2][-]{subsection.4.1.2}{Items of interests in report series}{section.4.1}% 38
-\BOOKMARK [1][-]{section.4.2}{Investigation of DT329}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.2.1}{Methodology of Parametric Research DT329}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.2}{Modelling}{section.4.2}% 41
-\BOOKMARK [3][-]{subsubsection.4.2.2.1}{Model of bridge}{subsection.4.2.2}% 42
-\BOOKMARK [3][-]{subsubsection.4.2.2.2}{Bridge parameters}{subsection.4.2.2}% 43
-\BOOKMARK [3][-]{subsubsection.4.2.2.3}{Vehicle parameters}{subsection.4.2.2}% 44
-\BOOKMARK [3][-]{subsubsection.4.2.2.4}{Track}{subsection.4.2.2}% 45
-\BOOKMARK [3][-]{subsubsection.4.2.2.5}{Contact data}{subsection.4.2.2}% 46
-\BOOKMARK [3][-]{subsubsection.4.2.2.6}{Data produced}{subsection.4.2.2}% 47
-\BOOKMARK [2][-]{subsection.4.2.3}{Investigation of resonance phenomenon studied in DT329}{section.4.2}% 48
-\BOOKMARK [3][-]{subsubsection.4.2.3.1}{Resonance caused by axle repeat pattern}{subsection.4.2.3}% 49
-\BOOKMARK [3][-]{subsubsection.4.2.3.2}{Resonance caused by kinematic movement of trains}{subsection.4.2.3}% 50
-\BOOKMARK [3][-]{subsubsection.4.2.3.3}{Apparent shift in resonance frequency}{subsection.4.2.3}% 51
-\BOOKMARK [1][-]{section.4.3}{Investigation of RP6}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.3.1}{Debate on proposed 1.2Hz criterion}{section.4.3}% 53
-\BOOKMARK [2][-]{subsection.4.3.2}{Lateral forces on railway bridges}{section.4.3}% 54
-\BOOKMARK [3][-]{subsubsection.4.3.2.1}{Basic characteristics of lateral force on railway bridges}{subsection.4.3.2}% 55
-\BOOKMARK [3][-]{subsubsection.4.3.2.2}{Refining of lateral force model}{subsection.4.3.2}% 56
-\BOOKMARK [3][-]{subsubsection.4.3.2.3}{Application of lateral force model}{subsection.4.3.2}% 57
-\BOOKMARK [1][-]{section.4.4}{Evaluating nosing force proposed by EN1991-2}{chapter.4}% 58
-\BOOKMARK [1][-]{section.4.5}{Conclusion of D181 report series}{chapter.4}% 59
-\BOOKMARK [0][-]{chapter.5}{Lateral wavelength research on Dutch railway vehicles}{}% 60
-\BOOKMARK [1][-]{section.5.1}{Effects investigated in wavelength study}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.2}{Equivalent conicity used in this study}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.3}{Study on wavelength of lateral kinematic movement}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.3.1}{Comparison between Klingle movement and train kinematic movement studied in D181 DT329}{section.5.3}% 64
-\BOOKMARK [1][-]{section.5.4}{Assess of wavelength bandwidth based on realistic data of Dutch Rail/Vehicle}{chapter.5}% 65
-\BOOKMARK [1][-]{section.5.5}{Lateral wavelength of axle repeat pattern of Dutch Railway Vehicles}{chapter.5}% 66
-\BOOKMARK [1][-]{section.5.6}{Conclusion of wavelength study}{chapter.5}% 67
-\BOOKMARK [0][-]{chapter.6}{Essentials of analytical approach to be adopted in practical checking method}{}% 68
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 69
-\BOOKMARK [1][-]{section.6.2}{Overview}{chapter.6}% 70
-\BOOKMARK [1][-]{section.6.3}{The model, its assumptions and field of application}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.4}{Solution deduction}{chapter.6}% 72
-\BOOKMARK [1][-]{section.6.5}{Damping}{chapter.6}% 73
-\BOOKMARK [1][-]{section.6.6}{Verification of the explicit solution}{chapter.6}% 74
-\BOOKMARK [0][-]{chapter.7}{New practical method for checking lateral resonance response of railway bridges based on VAMPIRE simulation results }{}% 75
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 76
-\BOOKMARK [1][-]{section.7.2}{Overview of this chapter}{chapter.7}% 77
-\BOOKMARK [1][-]{section.7.3}{Development of refined load model}{chapter.7}% 78
-\BOOKMARK [2][-]{subsection.7.3.1}{Overview of VAMPIRE numerical simulation method and analytical method}{section.7.3}% 79
-\BOOKMARK [2][-]{subsection.7.3.2}{Finding equivalent lateral force amplitude for specific cases}{section.7.3}% 80
-\BOOKMARK [2][-]{subsection.7.3.3}{Key parameter for equivalent force amplitude and hypothesis expression for refined load model}{section.7.3}% 81
-\BOOKMARK [1][-]{section.7.4}{Verification of the method}{chapter.7}% 82
-\BOOKMARK [0][-]{chapter.8}{Finalizing the method for practical usage using real bridge parameters}{}% 83
-\BOOKMARK [1][-]{section.8.1}{Conclusion}{chapter.8}% 84
-\BOOKMARK [0][-]{chapter.9}{Recommendations on improvement on Eurocode}{}% 85
-\BOOKMARK [1][-]{section.9.1}{Recommandations of this thesis}{chapter.9}% 86
-\BOOKMARK [1][-]{section.9.2}{Other lateral railway bridge dynamics related criteria extracted from other codes}{chapter.9}% 87
-\BOOKMARK [2][-]{subsection.9.2.1}{Requirements for traffic safety\(horizontal\)}{section.9.2}% 88
-\BOOKMARK [2][-]{subsection.9.2.2}{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{section.9.2}% 89
-\BOOKMARK [2][-]{subsection.9.2.3}{Flange climb derailment}{section.9.2}% 90
-\BOOKMARK [2][-]{subsection.9.2.4}{Derailment caused by guage widening and rail rollover}{section.9.2}% 91
-\BOOKMARK [2][-]{subsection.9.2.5}{Derailment caused by track panel shift}{section.9.2}% 92
-\BOOKMARK [2][-]{subsection.9.2.6}{Derailment caused by vehicle lateral instability}{section.9.2}% 93
-\BOOKMARK [2][-]{subsection.9.2.7}{Requirements for traffic serviceability\(horizontal\)}{section.9.2}% 94
-\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 95
-\BOOKMARK [0][-]{chapter.11}{Recommandations on future reseraches}{}% 96
-\BOOKMARK [0][-]{section*.56}{Appendices}{}% 97
-\BOOKMARK [0][-]{Appendix.1.A}{Plots and diagrams used in D181 DT 329}{}% 98
-\BOOKMARK [0][-]{Appendix.1.B}{Speeds which do not require dynamic compatibility checks}{}% 99
-\BOOKMARK [0][-]{Appendix.1.C}{MU-Groups and MU-Classes}{}% 100
-\BOOKMARK [1][-]{section.1.C.1}{Definition}{Appendix.1.C}% 101
-\BOOKMARK [2][-]{subsection.1.C.1.1}{Train parameters of MU-Class CB\1371}{section.1.C.1}% 102
-\BOOKMARK [2][-]{subsection.1.C.1.2}{Train parameters of MU-Class CB\1372}{section.1.C.1}% 103
-\BOOKMARK [2][-]{subsection.1.C.1.3}{Train parameters of MU-Class AB\1371}{section.1.C.1}% 104
-\BOOKMARK [2][-]{subsection.1.C.1.4}{Train parameters of MU-Class AB\1372}{section.1.C.1}% 105
-\BOOKMARK [2][-]{subsection.1.C.1.5}{Train parameters of MU-Class AB\1373}{section.1.C.1}% 106
-\BOOKMARK [2][-]{subsection.1.C.1.6}{Train parameters of MU-Class AB\1374}{section.1.C.1}% 107
-\BOOKMARK [2][-]{subsection.1.C.1.7}{Train parameters of MU-Class SA\1371}{section.1.C.1}% 108
-\BOOKMARK [2][-]{subsection.1.C.1.8}{Train parameters of MU-Class SA\1372}{section.1.C.1}% 109
-\BOOKMARK [0][-]{Appendix.1.D}{Regression commands for R console}{}% 110
-\BOOKMARK [0][-]{Appendix.1.E}{Matlab scripts}{}% 111
-\BOOKMARK [1][-]{section.1.E.1}{fog.m}{Appendix.1.E}% 112
-\BOOKMARK [1][-]{section.1.E.2}{Speedenvelop.m}{Appendix.1.E}% 113
-\BOOKMARK [0][-]{Appendix.1.F}{Train vehicles}{}% 114
-\BOOKMARK [1][-]{section.1.F.1}{Locomotives}{Appendix.1.F}% 115
-\BOOKMARK [2][-]{subsection.1.F.1.1}{4-axle locomotives}{section.1.F.1}% 116
-\BOOKMARK [2][-]{subsection.1.F.1.2}{6-axle locomotives}{section.1.F.1}% 117
-\BOOKMARK [1][-]{section.1.F.2}{Trains in Netherlands}{Appendix.1.F}% 118
+\BOOKMARK [1][-]{section.1.5}{Outline of the report}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Basic concepts of railway bridge dynamics}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Basic railway dynamic effects}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Sources induce transverse dynamic reactions}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{Lateral movement of a wheelset on straight track}{section.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Theory according to Klingel}{subsection.2.1.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.2.2}{Hunting movement}{subsection.2.1.2}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{Single and two-point contact between wheel and rail}{section.2.1}% 13
+\BOOKMARK [1][-]{section.2.2}{Wheel-Rail Interface}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{Wheelset and track dimensions}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Conicity and Equivalent Conicity of Wheels}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.3}{Worn wheel profiles}{section.2.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Lateral Track Irregularities}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{Dynamic theories}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Natural frequencies and shapes of bridge}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{Basic resonance concept}{section.2.4}% 21
+\BOOKMARK [1][-]{section.2.5}{Analysing methods for lateral dynamics of railway bridges }{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.5.1}{Modal analysis}{section.2.5}% 23
+\BOOKMARK [2][-]{subsection.2.5.2}{Analysis by modal superposition}{section.2.5}% 24
+\BOOKMARK [2][-]{subsection.2.5.3}{Numerical methods}{section.2.5}% 25
+\BOOKMARK [3][-]{subsubsection.2.5.3.1}{VAMPIRE}{subsection.2.5.3}% 26
+\BOOKMARK [0][-]{chapter.3}{Literature Review of regulations regarding lateral railway bridge dynamics in 1991-2}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Factors influencing dynamic behaviour}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Requirements for railway bridge verification}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.3}{Horizontal transverse dynamic effects}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.1}{Nosing force}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.2}{Verification of the Limit States}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.3}{Serviceability limit states - traffic safety}{section.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.3.1}{Transverse deformations and vibrations}{subsection.3.3.3}% 34
+\BOOKMARK [1][-]{section.3.4}{Conclusion}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Investigation of report series created by D181 Committee Group}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.1.1}{Structure of report series}{section.4.1}% 38
+\BOOKMARK [2][-]{subsection.4.1.2}{Items of interests in report series}{section.4.1}% 39
+\BOOKMARK [1][-]{section.4.2}{Investigation of DT329}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.2.1}{Methodology of Parametric Research DT329}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.2}{Modelling}{section.4.2}% 42
+\BOOKMARK [3][-]{subsubsection.4.2.2.1}{Model of bridge}{subsection.4.2.2}% 43
+\BOOKMARK [3][-]{subsubsection.4.2.2.2}{Bridge parameters}{subsection.4.2.2}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.2.3}{Vehicle parameters}{subsection.4.2.2}% 45
+\BOOKMARK [3][-]{subsubsection.4.2.2.4}{Track}{subsection.4.2.2}% 46
+\BOOKMARK [3][-]{subsubsection.4.2.2.5}{Contact data}{subsection.4.2.2}% 47
+\BOOKMARK [3][-]{subsubsection.4.2.2.6}{Data produced}{subsection.4.2.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.3}{Investigation of resonance phenomenon studied in DT329}{section.4.2}% 49
+\BOOKMARK [3][-]{subsubsection.4.2.3.1}{Resonance caused by axle repeat pattern}{subsection.4.2.3}% 50
+\BOOKMARK [3][-]{subsubsection.4.2.3.2}{Resonance caused by kinematic movement of trains}{subsection.4.2.3}% 51
+\BOOKMARK [3][-]{subsubsection.4.2.3.3}{Apparent shift in resonance frequency}{subsection.4.2.3}% 52
+\BOOKMARK [1][-]{section.4.3}{Investigation of RP6}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.3.1}{Debate on proposed 1.2Hz criterion}{section.4.3}% 54
+\BOOKMARK [2][-]{subsection.4.3.2}{Lateral forces on railway bridges}{section.4.3}% 55
+\BOOKMARK [3][-]{subsubsection.4.3.2.1}{Basic characteristics of lateral force on railway bridges}{subsection.4.3.2}% 56
+\BOOKMARK [3][-]{subsubsection.4.3.2.2}{Refining of lateral force model}{subsection.4.3.2}% 57
+\BOOKMARK [3][-]{subsubsection.4.3.2.3}{Application of lateral force model}{subsection.4.3.2}% 58
+\BOOKMARK [1][-]{section.4.4}{Evaluating nosing force proposed by EN1991-2}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.5}{Conclusion of D181 report series}{chapter.4}% 60
+\BOOKMARK [0][-]{chapter.5}{Lateral wavelength research on Dutch railway vehicles}{}% 61
+\BOOKMARK [1][-]{section.5.1}{Effects investigated in wavelength study}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.2}{Equivalent conicity used in this study}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.3}{Study on wavelength of lateral kinematic movement}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.3.1}{Comparison between Klingle movement and train kinematic movement studied in D181 DT329}{section.5.3}% 65
+\BOOKMARK [1][-]{section.5.4}{Assess of wavelength bandwidth based on realistic data of Dutch Rail/Vehicle}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.5}{Lateral wavelength of axle repeat pattern of Dutch Railway Vehicles}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.6}{Conclusion of wavelength study}{chapter.5}% 68
+\BOOKMARK [0][-]{chapter.6}{Essentials of analytical approach to be adopted in practical checking method}{}% 69
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.2}{Overview}{chapter.6}% 71
+\BOOKMARK [1][-]{section.6.3}{The model, its assumptions and field of application}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.4}{Solution deduction}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.5}{Damping}{chapter.6}% 74
+\BOOKMARK [1][-]{section.6.6}{Verification of the explicit solution}{chapter.6}% 75
+\BOOKMARK [0][-]{chapter.7}{New practical method for checking lateral resonance response of railway bridges based on VAMPIRE simulation results }{}% 76
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 77
+\BOOKMARK [1][-]{section.7.2}{Overview of this chapter}{chapter.7}% 78
+\BOOKMARK [1][-]{section.7.3}{Development of refined load model}{chapter.7}% 79
+\BOOKMARK [2][-]{subsection.7.3.1}{Overview of VAMPIRE numerical simulation method and analytical method}{section.7.3}% 80
+\BOOKMARK [2][-]{subsection.7.3.2}{Finding equivalent lateral force amplitude for specific cases}{section.7.3}% 81
+\BOOKMARK [2][-]{subsection.7.3.3}{Key parameter for equivalent force amplitude and hypothesis expression for refined load model}{section.7.3}% 82
+\BOOKMARK [1][-]{section.7.4}{Verification of the method}{chapter.7}% 83
+\BOOKMARK [0][-]{chapter.8}{Finalizing the method for practical usage using real bridge parameters}{}% 84
+\BOOKMARK [1][-]{section.8.1}{Conclusion}{chapter.8}% 85
+\BOOKMARK [0][-]{chapter.9}{Recommendations on improvement on Eurocode}{}% 86
+\BOOKMARK [1][-]{section.9.1}{Recommandations of this thesis}{chapter.9}% 87
+\BOOKMARK [1][-]{section.9.2}{Other lateral railway bridge dynamics related criteria extracted from other codes}{chapter.9}% 88
+\BOOKMARK [2][-]{subsection.9.2.1}{Requirements for traffic safety\(horizontal\)}{section.9.2}% 89
+\BOOKMARK [2][-]{subsection.9.2.2}{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}{section.9.2}% 90
+\BOOKMARK [2][-]{subsection.9.2.3}{Flange climb derailment}{section.9.2}% 91
+\BOOKMARK [2][-]{subsection.9.2.4}{Derailment caused by guage widening and rail rollover}{section.9.2}% 92
+\BOOKMARK [2][-]{subsection.9.2.5}{Derailment caused by track panel shift}{section.9.2}% 93
+\BOOKMARK [2][-]{subsection.9.2.6}{Derailment caused by vehicle lateral instability}{section.9.2}% 94
+\BOOKMARK [2][-]{subsection.9.2.7}{Requirements for traffic serviceability\(horizontal\)}{section.9.2}% 95
+\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 96
+\BOOKMARK [0][-]{chapter.11}{Recommandations on future reseraches}{}% 97
+\BOOKMARK [0][-]{section*.55}{Appendices}{}% 98
+\BOOKMARK [0][-]{Appendix.1.A}{Plots and diagrams used in D181 DT 329}{}% 99
+\BOOKMARK [0][-]{Appendix.1.B}{Speeds which do not require dynamic compatibility checks}{}% 100
+\BOOKMARK [0][-]{Appendix.1.C}{MU-Groups and MU-Classes}{}% 101
+\BOOKMARK [1][-]{section.1.C.1}{Definition}{Appendix.1.C}% 102
+\BOOKMARK [2][-]{subsection.1.C.1.1}{Train parameters of MU-Class CB\1371}{section.1.C.1}% 103
+\BOOKMARK [2][-]{subsection.1.C.1.2}{Train parameters of MU-Class CB\1372}{section.1.C.1}% 104
+\BOOKMARK [2][-]{subsection.1.C.1.3}{Train parameters of MU-Class AB\1371}{section.1.C.1}% 105
+\BOOKMARK [2][-]{subsection.1.C.1.4}{Train parameters of MU-Class AB\1372}{section.1.C.1}% 106
+\BOOKMARK [2][-]{subsection.1.C.1.5}{Train parameters of MU-Class AB\1373}{section.1.C.1}% 107
+\BOOKMARK [2][-]{subsection.1.C.1.6}{Train parameters of MU-Class AB\1374}{section.1.C.1}% 108
+\BOOKMARK [2][-]{subsection.1.C.1.7}{Train parameters of MU-Class SA\1371}{section.1.C.1}% 109
+\BOOKMARK [2][-]{subsection.1.C.1.8}{Train parameters of MU-Class SA\1372}{section.1.C.1}% 110
+\BOOKMARK [0][-]{Appendix.1.D}{Regression commands for R console}{}% 111
+\BOOKMARK [0][-]{Appendix.1.E}{Matlab scripts}{}% 112
+\BOOKMARK [1][-]{section.1.E.1}{fog.m}{Appendix.1.E}% 113
+\BOOKMARK [1][-]{section.1.E.2}{Speedenvelop.m}{Appendix.1.E}% 114
+\BOOKMARK [0][-]{Appendix.1.F}{Train vehicles}{}% 115
+\BOOKMARK [1][-]{section.1.F.1}{Locomotives}{Appendix.1.F}% 116
+\BOOKMARK [2][-]{subsection.1.F.1.1}{4-axle locomotives}{section.1.F.1}% 117
+\BOOKMARK [2][-]{subsection.1.F.1.2}{6-axle locomotives}{section.1.F.1}% 118
+\BOOKMARK [1][-]{section.1.F.2}{Trains in Netherlands}{Appendix.1.F}% 119

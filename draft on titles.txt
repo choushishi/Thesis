@@ -1,0 +1,50 @@
+
+Abstract
+
+Acknowledgments
+
+Table of Contents
+
+Introduction
+	Motivation of the thesis
+	Context of the thesis
+	Brief introduction to the topic
+	Objectives and research question
+	Outline of the report
+
+Introduction to documents used in this report
+	EN1991-2
+	D181 research series
+
+1.2Hz Criterion
+	Original intension of 1.2Hz criterion
+	Debate on 1.2Hz criterion
+	Conclusion
+
+A new vehicle-bridge model for bridge structure validation
+	Model 
+		Theory of lateral railway bridge resonance
+		Vehicle-bridge model
+		Optimization of the model formula
+	Parameters of the model
+		Bridge parameters
+		Vehicle parameters
+		Equivalent load amplitude(ELA)
+	Determination of ELA
+		Lateral force model from simulation results
+		Creating ELA from lateral force model
+	Benchmark for the model
+	Lateral wavelength of running Dutch railway vehicles
+		Key effects and parameters
+		Comparison between Klingel movement and train kinematic movement
+		Kinematic wavelength of Dutch rail vehicle
+		Axle repeat wavelength of Dutch rail vehicle
+		Conclusion
+	Practical usage of the model
+
+
+Conclusion
+
+Recommendations for future researches
+
+Recommendations for Eurocode

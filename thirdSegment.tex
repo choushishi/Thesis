@@ -1,516 +1,379 @@
 %!TEX root = main.tex
-
-\chapter{Recommendations on improvement on Eurocode}
-
-
-\section{Recommandations of this thesis}
-
-It is advised that Eurocode committee spend more effort in providing background information to structural designers on cross-field topics. For example, railway bridge engineering is related to both fields of structural engineering and railway engineering. The knowledge of railway engineering is seldom known among structural engineers and they hardly know the key to the problem. So it is vital for the code to provide its users with sufficient background information.
-
-This can be done by adding references of various statements and criteria. Even with good luck, this thesis spent over 3 month of time in trying to find the original research documents for the 1.2Hz criterion. And it can be expected that if no reference is recorded, finding the source would be even more difficult for other researches in the future.
-
-By simply adding reference to the criteria, this amount of wasted time could be saved for a better course. Thus this thesis suggest references to be added for the sake of future researches/designs.
-
-Also, this thesis suggests make deeper evaluation on the criteria being adopted in the code. At least in this report it is found that the 1.2Hz criterion isn't a correct verification strategy. 
-
-Last but not least, this thesis suggests Eurocode committee possess a further vision for the future. For example, in EN1991-2 railway bridge dynamics, there's no instruction can be found for bridges with span longer than 150m in the logic diagram. This means during the creation process of EN1991-2, the possibility of longer span bridges in the future is neglected, causing potential problem for future designs. 
-
-\section{Other lateral railway bridge dynamics related criteria extracted from other codes}
-Following sections provides several orientations for improving criteria for lateral bridge dynamics in terms of safety and serviceability of running stock.
-
-
-\subsection{Requirements for traffic safety(horizontal)}
-Requirements other than bridge first lateral frequency higher than 1.2Hz. Since there's no further requirements mentioned by Eurocode, following requirements are gathered from other European codes, eg. British standards, UIC leaflet, etc.
-
-\begin{enumerate}[-]
-    \item Requirements regarding traffic safety for vehicles
-    \begin{enumerate}
-        \item Guiding Force: \citet{code2005518} , \citet{en200714363} and\citet{cuadrado2008analysis} propose safty limitations against railway vehicle overturning. From\citet{en200714363} the maximum guiding force for a vehicle with a load per axle of 170kN(AVE) is 66kN per axle and 48kN per axle for a vehicle with a load per axle of 112kN(ICE2). For the R1 freight wagon(load per axle of 245kN), the maximum guiding force per axle is 78kN.
-        \item Maximum lateral acceleration of the railway vehicle: proposed by \citet{13803}
-    \end{enumerate}
-    \item Requirements regarding safety for bridge\\
-    \citet{EC0} A2.4.4.1(2): Horizontal transverse deflection(to ensure acceptable horizontal track radii) and horizontal rotation of a deck about a vertical axis at ends of a deck(to ensure acceptable acceptable horizontal track geometry and passenger comfort)
-\end{enumerate}
-
-
-\subsection{Requirements for traffic safety on derailment: Railway vehicle derailment mechanism and safety criteria}
-
-Derailment mechanisms
-\begin{enumerate}
-    \item vehicle resonant response
-    \item lateral instability
-    \item vehicle overturning
-    \item vertical wheel unloading
-    \item flange climb
-    \item rail roll-over
-    \item track panel shift
-    \item longitudinal train forces
-\end{enumerate}
-
-The four types of derailment: flange climb derailment, derailment caused by guage widening and rail roll-over, derailment caused by track panel shift, derailment cause by vehicle lateral instability have a common cause of high lateral force at the wheel-rail interface. According to \citet[Chapter 8, IV]{iwnicki2006handbook} any conditions that lead to high lateral forces or lead to lower the ability of the system to sustain the force should be corrected. 
-
-\subsection{Flange climb derailment}
-Wheel flange climb derailments are caused by wheels climbing onto the top of the railhead then further running over the rail. Wheel climb derailments generally occur in situations where the wheel experiences a high lateral force combined with circumstances where the vertical force is reduced on the flanging wheel. The high lateral force is usually induced by a large wheelset angle-of-attack. The vertical force on the flanging wheel can be reduced significantly on bogies having poor vertical wheel load equalizations, such as when negotiating rough track, large track twist, or when the car is experiencing roll resonances. 
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.4\textwidth]{forcesatflangecontactlocation.pdf}
-    \caption{Forces at flange contact location. Extracted from \citet[Figure8.4]{iwnicki2006handbook}}
-    \label{fig:forcesatflangecontactlocation}
-\end{figure}
-
-The criterion L/V ratio can be expressed as:
-
-\begin{equation}
-    \frac{L}{V}=\frac{\tan \delta -\frac{F_2}{F_3}}{1+\frac{F_2}{F_3}\tan \delta}
-\end{equation}
-
-Nadal's famous L/V ratio limiting criterion, given by Equation.\ref{eq:nadalcriterion}, was proposed for the saturated condition $F_2/F_3=\mu$
-
-\begin{equation}\label{eq:nadalcriterion}
-    \frac{L}{V}=\frac{\tan \delta - \mu}{1+ \mu \tan \delta}
-\end{equation}
-
-\subsection{Derailment caused by guage widening and rail rollover}
-Derailments caused by guage widening usually involve a combination of wide gauges and large lateral rail defections(rail roll), as shown in Figure\ref{fig:gaugewideningderailment}. Large lateral forces from the wheels act to spread the rails in curves. Both rails may experience significant lateral translation and/or railhead roll, which often cause the non-flanging wheel to drop between rails.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{gaugewideningderailment.pdf}
-    \caption{Gauge widening derailment. Extracted from \citet[Figure8.18]{iwnicki2006handbook}}
-    \label{fig:gaugewideningderailment}
-\end{figure}
-
-\paragraph{AAR Chapter XI rail roll criterion}
-The AAR Chapter XI rail roll criterion is established by using the L/V ratio. The roll moment about the pivot point is given by,
-
-\begin{equation}
-    M=Vd-Lh
-\end{equation}
-
-under an equilibrium condition, just before the rail starts to roll, $M$ approaches to zero, then,
-
-\begin{equation}
-    \frac{L}{V}=\frac{d}{h}
-\end{equation}
-
-This L/V ratio is considered as the critical value to evaluate the risk of rail roll. When the L/V ratio is larger than the ratio of $d/h$, the risk of rail roll becomes high. The critical L/V ratio for rail roll can vary from above 0.6 for contact at the gauge side to approximately 0.2 when the contact position is at the far-field side based on the dimension of the rails. This is because the distance $d$ is reduced. Note that this L/V ratio is calculate assuming that neither the rail fasteners nor the torsional stiffness of the rail section provide any restraint.
-
-\subsection{Derailment caused by track panel shift}
-Track panel shift is the cumulative lateral displacement of the track panel, including rails, tie plates and ties, over the ballast, as shown in Figure\ref{fig:lateraltrackpanelshift}. A small shift of these components may not immediately cause the loss of guidance to bogies. However, as the situation gradually depreciates to a certain level, wheels could lose guidance and drop to the ground at some speed. The derailments caused by track panel usually result in one wheel falling between the rails and the other falling outside of the track.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{lateraltrackpanelshift.pdf}
-    \caption{Lateral track panel shift. Extracted from \citet[Figure8.27]{iwnicki2006handbook}}
-    \label{fig:lateraltrackpanelshift}
-\end{figure}
-
-\paragraph{Panel shift criterion}
-Researched by the French National Railways suggested that the limiting lateral axle load can be defined in a general expression for preventing excessive track panel shift:
-
-\begin{equation}
-    L_c = aV+b
-\end{equation}
-
-where $L_c$ is the critical lateral load and $V$ is the vertical axle load. \citet[Table 8.2]{iwnicki2006handbook} lists two groups of suggested valued of $a$ and $b$. It is possible that different values for $a$ and $b$ can be specified in different area.
-
-\subsection{Derailment caused by vehicle lateral instability}
-On tangent track, the wheelset generally oscillates around the track centre due to any vehicle and track irregularities, as shown in Figure\ref{fig:wheelsetoscillatesaroundthetrackcentre}. This movement occurs because vehicle and track are never absolutely smooth and symmetric. This self-centring capability of a wheelset is induced by the coned shape of the wheel tread. However, as speed is increased, if the whelset conicity is high, the lateral movement of wheelset, as well as the associated bogie and car body motion, can cause oscillations with large amplitude  and a well-defined wavelength. The lateral movements are limited only by the contact of the wheel flanges with the rail. This vehicle dynamic response is also termed as vehicle hunting, and can produce high lateral forces to damage track to cause derailments.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{wheelsetoscillatesaroundthetrackcentre.pdf}
-    \caption{Wheelset oscillates around the track centre. Extracted from \citet[Figure8.28]{iwnicki2006handbook}}
-    \label{fig:wheelsetoscillatesaroundthetrackcentre}
-\end{figure}
-
-Derailment cause by vehicle hunting can have derailment mechanisms of all four types discussed in the previous sections. The high lateral force induced from hunting may cause wheel flange climbing on the rail, gauge widening, rail roll-over, track panel shift, or combinations of these. The safety concerns for this type of derailment, usually occurring at higher speeds, make it an important area of study.
-
-Hunting predominantly occurs in empty or lightweight vehicles. The critical hunting speed is highly dependent on the vehicle/track characteristics. Investigation of the critical speed for such a system with nonlinearities is to examine the vehicle response to a disturbance using a numerical solution of the equations of motion.
-
-\subsection{Requirements for traffic serviceability(horizontal)}
-
-The criteria Comfort Indexes for assessing ride comfort in railway vehicles proposed in \citet{12299}. This standard describes a methodology for assessing ride comfort as a function of longitudinal, vertical and transverse accelerations.
-
-Comfort Index indicates the percentage of passengers experimenting discomfort in a specific situation. These indexes can be computed via empiric formula given in the standard, which depend on variables such as lateral acceleration, rate of change of acceleration and rolling velocity. All these values are filtered with a moving average filter that eliminates small wavelength components. Using this methodology for the computed worst-case situations, the comfort indexes have been found excellent, therefore no passenger should feel uncomfortable.
-
-
 \begin{appendices}
 
-\chapter{Basic concepts of railway bridge dynamics}
+% \chapter{Basic concepts of railway bridge dynamics}
 
-In this chapter basic concepts of railway bridge dynamics will be described in order to provide preliminary relevant knowledge for following chapters. The knowledge will be introduced in the order of railway dynamics related only to bridge dynamics related. 
+% In this chapter basic concepts of railway bridge dynamics will be described in order to provide preliminary relevant knowledge for following chapters. The knowledge will be introduced in the order of railway dynamics related only to bridge dynamics related. 
 
-\section{Basic railway dynamic effects}
+% \section{Basic railway dynamic effects}
 
-\subsection{Sources induce transverse dynamic reactions}
-According to \citet{da2007dynamic}, \citet{fryba1996dynamics} and \citet{EC12}, following sources are identified:
+% \subsection{Sources induce transverse dynamic reactions}
+% According to \citet{da2007dynamic}, \citet{fryba1996dynamics} and \citet{EC12}, following sources are identified:
 
-\begin{enumerate} [-]
-    \item Sinusoidal motion of conical wheels along cylindrical rail heads. See Section.\ref{sec:klingel}
-    \item Horizontal track irregularities. See Section.\ref{sec:lateraltrackirrgularities}
-    \item Centrifugal forces on curved tracks. This source is not disccused because only straight tracks are discussed in this thesis.
-    \item Train switches. This source is not disccussed because of the same reasone as above item.
-\end{enumerate}
-
-\subsection{Lateral movement of a wheelset on straight track}
-
-Following knowledge in all subsections of this section is extracted from \citet{esveld2001modern}. 
-
-\subsubsection{Theory according to Klingel}\label{sec:klingel}
-
-\begin{quote}
-If a wheelset with conical tire profiles is laterally displaced from central position, this displacement is counteracted due to different rolling radii of the wheels. This results in a periodical movement of the wheelset which was described by Klingel in 1883 and is therefore often referred to as the Klingel movement. When analysing the case, the wheelset is modelled as a biconus travelling on an ideally straight track as shown in Figure.\ref{fig:wheelsetbiconus}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{wheelsetbiconus}
-    \caption{Wheelset biconus in general position. Extracted from \citet[Figure 2.2]{esveld2001modern}}
-    \label{fig:wheelsetbiconus}
-\end{figure}
+% \begin{enumerate} [-]
+%     \item Sinusoidal motion of conical wheels along cylindrical rail heads. See Section.\ref{sec:klingel}
+%     \item Horizontal track irregularities. See Section.\ref{sec:lateraltrackirrgularities}
+%     \item Centrifugal forces on curved tracks. This source is not disccused because only straight tracks are discussed in this thesis.
+%     \item Train switches. This source is not disccussed because of the same reasone as above item.
+% \end{enumerate}
+
+% \subsection{Lateral movement of a wheelset on straight track}
+
+% Following knowledge in all subsections of this section is extracted from \citet{esveld2001modern}. 
+
+% \subsubsection{Theory according to Klingel}\label{sec:klingel}
+
+% \begin{quote}
+% If a wheelset with conical tire profiles is laterally displaced from central position, this displacement is counteracted due to different rolling radii of the wheels. This results in a periodical movement of the wheelset which was described by Klingel in 1883 and is therefore often referred to as the Klingel movement. When analysing the case, the wheelset is modelled as a biconus travelling on an ideally straight track as shown in Figure.\ref{fig:wheelsetbiconus}
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{wheelsetbiconus}
+%     \caption{Wheelset biconus in general position. Extracted from \citet[Figure 2.2]{esveld2001modern}}
+%     \label{fig:wheelsetbiconus}
+% \end{figure}
 
 
-The Klingel movement is therefore purely a kinematic movement in which forces play no part in the derivation. As a result, Figure.\ref{fig:klingelmovement} visualizes the Klingel movement. The lateral displacement $y$ is a harmonic, undamped function of the distance co-ordinate $x$ as long as the amplitude moves within the flangeway clearance $fwc$. This is illustrated in Figure.\ref{fig:fwc}.
+% The Klingel movement is therefore purely a kinematic movement in which forces play no part in the derivation. As a result, Figure.\ref{fig:klingelmovement} visualizes the Klingel movement. The lateral displacement $y$ is a harmonic, undamped function of the distance co-ordinate $x$ as long as the amplitude moves within the flangeway clearance $fwc$. This is illustrated in Figure.\ref{fig:fwc}.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{klingelmovement}
-    \caption{Klingel movement. Extracted from \citet[Figure 2.3]{esveld2001modern}}
-    \label{fig:klingelmovement}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{klingelmovement}
+%     \caption{Klingel movement. Extracted from \citet[Figure 2.3]{esveld2001modern}}
+%     % \label{fig:klingelmovement}
+% \end{figure}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{fwc}
-    \caption{Undisturbed lateral movement of a wheelset. Extracted from \citet[Figure 2.4]{esveld2001modern}}
-    \label{fig:fwc}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{fwc}
+%     \caption{Undisturbed lateral movement of a wheelset. Extracted from \citet[Figure 2.4]{esveld2001modern}}
+%     \label{fig:fwc}
+% \end{figure}
 
-Introducing the speed, the time domain frequency of the Klingel movement is:
+% Introducing the speed, the time domain frequency of the Klingel movement is:
 
-$$ f = \frac{V}{L_k} $$
+% $$ f = \frac{V}{L_k} $$
 
-and hence the maximum lateral acceleration can be calculated as:
+% and hence the maximum lateral acceleration can be calculated as:
 
-$$\ddot{y}_{max} = 4\pi^2y_0\frac{v^2}{L_k^2}$$
+% $$\ddot{y}_{max} = 4\pi^2y_0\frac{v^2}{L_k^2}$$
 
-If the frequency $f$ coincides with one of the natural frequencies of the rolling stock, the vehicle ride becomes unstable. The lateral acceleration, which is a measure of the forces, shows the adverse effect of high speed and/or small wavelength. A conicity, for example, of 1:40 in comparison with 1:20 therefore gives a greater wavelength and a lower lateral acceleration at the same speed. The progressively increasing conicity in the case of worn profiles due to increasing lateral axle movement, therefore, has an adverse effect in this respect.
-\end{quote}
-\subsubsection{Hunting movement}
-\begin{quote}
-It should be noted that the Klingel theory is simple and instructive but does not include the effect of coupled axes, mass forces, and adhension forces. In reality, the amplitude $y_0$ of the Klingel movement is dependent on alignment, dynamic vehicle behaviour, and the speed of the rolling stock. 
+% If the frequency $f$ coincides with one of the natural frequencies of the rolling stock, the vehicle ride becomes unstable. The lateral acceleration, which is a measure of the forces, shows the adverse effect of high speed and/or small wavelength. A conicity, for example, of 1:40 in comparison with 1:20 therefore gives a greater wavelength and a lower lateral acceleration at the same speed. The progressively increasing conicity in the case of worn profiles due to increasing lateral axle movement, therefore, has an adverse effect in this respect.
+% \end{quote}
+% \subsubsection{Hunting movement}
+% \begin{quote}
+% It should be noted that the Klingel theory is simple and instructive but does not include the effect of coupled axes, mass forces, and adhension forces. In reality, the amplitude $y_0$ of the Klingel movement is dependent on alignment, dynamic vehicle behaviour, and the speed of the rolling stock. 
 
-Generally speaking, $y_0$ due to slip will increase with speed until it is equal to half the flangeway clearance. Flanging then occurs as a result of which the axle will rebound. 
+% Generally speaking, $y_0$ due to slip will increase with speed until it is equal to half the flangeway clearance. Flanging then occurs as a result of which the axle will rebound. 
 
-This means that the lateral movement takes on a completely different behaviour which is known as hunting. As shown in the drawing in Figure\ref{fig:flangingwheelset} the movement changes from a harmonic to a zig-zag shape. The wavelength becomes shorter and the frequency increases quickly until it is in the critical range for the rollin g stock and resonance occurs.
+% This means that the lateral movement takes on a completely different behaviour which is known as hunting. As shown in the drawing in Figure\ref{fig:flangingwheelset} the movement changes from a harmonic to a zig-zag shape. The wavelength becomes shorter and the frequency increases quickly until it is in the critical range for the rollin g stock and resonance occurs.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{flangingwheelset}
-    \caption{Influence of flanging on lateral wheelset movement. Extracted from \citet[Figure 2.5]{esveld2001modern}}
-    \label{fig:flangingwheelset}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{flangingwheelset}
+%     \caption{Influence of flanging on lateral wheelset movement. Extracted from \citet[Figure 2.5]{esveld2001modern}}
+%     % \label{fig:flangingwheelset}
+% \end{figure}
 
-This phenomenon is shown in Figure\ref{fig:amplitudefrequencystability}. The bogie design, as far as conicity and flangeway clearance are concerned, must be such that stable running is always guaranteed for the speed range in which the vehicle is to be used.
+% This phenomenon is shown in Figure\ref{fig:amplitudefrequencystability}. The bogie design, as far as conicity and flangeway clearance are concerned, must be such that stable running is always guaranteed for the speed range in which the vehicle is to be used.
 
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{amplitudefrequencyinstability}
-    \caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \citet[Figure 2.6]{esveld2001modern}}
-    \label{fig:amplitudefrequencystability}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{amplitudefrequencyinstability}
+%     \caption{Increase in amplitude and frequency with speed and the development of instability. Extracted from \citet[Figure 2.6]{esveld2001modern}}
+%     \label{fig:amplitudefrequencystability}
+% \end{figure}
 
-\subsection{Single and two-point contact between wheel and rail}
-In the case of single-point contact, according to Figure.\ref{fig:singlecontact}, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure.\ref{fig:doublecontract}, the application points do not coincide.
+% \subsection{Single and two-point contact between wheel and rail}
+% In the case of single-point contact, according to Figure.\ref{fig:singlecontact}, wheel load and lateral force act on the same point. This situation occurs when using worn wheel profiles. In the case of two-point contact, shown in Figure.\ref{fig:doublecontract}, the application points do not coincide.
 
-Flanging occurs in the situation of double contact. 
+% Flanging occurs in the situation of double contact. 
 
-\begin{figure}[h!]
-\centering
-    \begin{subfigure}[b]{0.2\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{singlecontact}
-        \caption{Single contact point.  Extracted from \citet[Figure 2.13]{esveld2001modern}}
-        \label{fig:singlecontact}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{doublecontact}
-        \caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \citet[Figure 2.14]{esveld2001modern}}
-        \label{fig:doublecontract}
-    \end{subfigure}
-    \caption{Single and double contact of wheel-rail interface}
-\end{figure}
-\end{quote}
-\section{Wheel-Rail Interface}
-Following knowledge in all subsections of this section is extracted from \citet{esveld2001modern}. 
-\subsection{Wheelset and track dimensions}
-\begin{quote}
-Generally the track guage is used as a distance measured between the two rails, more specifically the distance between the inside of the railheads measured 14mm below the surface of the rail. By choosing 14 mm the measurement is less influenced by lipping or lateral wear on the rail head and by the radius r = 13 mm of the rail head face. On normal track the gauge is $1435^{+10}_{-3}$ mm with with a maximum gradient of 1:3000. For new track, however, NS apply the following standards:
+% \begin{figure}[h!]
+% \centering
+%     \begin{subfigure}[b]{0.2\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{singlecontact}
+%         \caption{Single contact point.  Extracted from \citet[Figure 2.13]{esveld2001modern}}
+%         \label{fig:singlecontact}
+%     \end{subfigure}
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \includegraphics[width=\textwidth]{doublecontact}
+%         \caption{Double contact point. Forces on rails in case of lateral slip in curves. Extracted from \citet[Figure 2.14]{esveld2001modern}}
+%         \label{fig:doublecontract}
+%     \end{subfigure}
+%     \caption{Single and double contact of wheel-rail interface}
+% \end{figure}
+% \end{quote}
+% \section{Wheel-Rail Interface}
+% Following knowledge in all subsections of this section is extracted from \citet{esveld2001modern}. 
+% \subsection{Wheelset and track dimensions}
+% \begin{quote}
+% Generally the track guage is used as a distance measured between the two rails, more specifically the distance between the inside of the railheads measured 14mm below the surface of the rail. By choosing 14 mm the measurement is less influenced by lipping or lateral wear on the rail head and by the radius r = 13 mm of the rail head face. On normal track the gauge is $1435^{+10}_{-3}$ mm with with a maximum gradient of 1:3000. For new track, however, NS apply the following standards:
 
-\begin{enumerate}
-\item Mean gauge per 200 m: $1435^{+10}_{-1}$ mm
-\item Standard deviation within a 200 m section less than 1 mm
-\end{enumerate}
+% \begin{enumerate}
+% \item Mean gauge per 200 m: $1435^{+10}_{-1}$ mm
+% \item Standard deviation within a 200 m section less than 1 mm
+% \end{enumerate}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
-\caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \citet[p.17]{esveld2001modern}}
-\label{fig:wheelset and track dimensions}
-\end{figure}
+% % \begin{figure}[h]
+% % \centering
+% % \includegraphics[width=0.8\textwidth]{wheelsettrackdimension.pdf}
+% % \caption{Wheelset and track dimensions for straight normal gauge track. Extracted from \citet[p.17]{esveld2001modern}}
+% % \label{fig:wheelset and track dimensions}
+% % \end{figure}
 
-\end{quote}
+% \end{quote}
 
-\subsection{Conicity and Equivalent Conicity of Wheels}
+% \subsection{Conicity and Equivalent Conicity of Wheels}
 
-\begin{quote}
+% \begin{quote}
 
-Originally conical tire profiles with an inclination of 1:20 were used. Since a centrally applied load on the railhead is desired, a rail inclination of 1:20, as shown in Figure 2.1, was also selected; this for instance still applies to NS profile NP 46. UIC 54 rail usually has an inclination of 1:40. This inclination matches the S 1002 worn wheel profile which is in general use in Europe. During manufacturing the tires are given a profile which matches the average shape cause by wear. In contrast to the straight conical profile this has a hollow form.
+% Originally conical tire profiles with an inclination of 1:20 were used. Since a centrally applied load on the railhead is desired, a rail inclination of 1:20, as shown in Figure 2.1, was also selected; this for instance still applies to NS profile NP 46. UIC 54 rail usually has an inclination of 1:40. This inclination matches the S 1002 worn wheel profile which is in general use in Europe. During manufacturing the tires are given a profile which matches the average shape cause by wear. In contrast to the straight conical profile this has a hollow form.
 
-It is clear that regarding a worn profile the conicity depends on the actual shape of the rail head and tire, including any wear, track gauge, and rail inclination. Likewise, elastic deformation of the wheelset and rail fastenings plays a role.
+% It is clear that regarding a worn profile the conicity depends on the actual shape of the rail head and tire, including any wear, track gauge, and rail inclination. Likewise, elastic deformation of the wheelset and rail fastenings plays a role.
 
-Generally, the effective or equivalent conicity is defined as:
+% Generally, the effective or equivalent conicity is defined as:
 
-$$ \gamma_e = \frac{\Delta r}{2y} = \frac{r_1 - r_2}{2y}  $$
+% $$ \gamma_e = \frac{\Delta r}{2y} = \frac{r_1 - r_2}{2y}  $$
 
-Here $r_1 - r_2$ is the instantaneous difference in rolling radius of the wheel treads; generally speaking this is a non-linear function of the lateral displacement y of the wheelset with respect to the central position. The difference between conical and worn profiles is given in Figure.\ref{fig:conicalwornprofiles}. To enable numerical comparisons $\gamma_e$ is determined at a certain lateral displacement $y=\bar{y}$.
+% Here $r_1 - r_2$ is the instantaneous difference in rolling radius of the wheel treads; generally speaking this is a non-linear function of the lateral displacement y of the wheelset with respect to the central position. The difference between conical and worn profiles is given in Figure.\ref{fig:conicalwornprofiles}. To enable numerical comparisons $\gamma_e$ is determined at a certain lateral displacement $y=\bar{y}$.
 
-\end{quote}
+% \end{quote}
 
-\subsection{Worn wheel profiles}
+% \subsection{Worn wheel profiles}
 
-\begin{quote}
+% \begin{quote}
 
-A perfectly conical wheel profile is unstable as far as its shape is concerned, but will take on a shape that is stable as the effect of wear.
+% A perfectly conical wheel profile is unstable as far as its shape is concerned, but will take on a shape that is stable as the effect of wear.
 
-Practical research has shown that over a period of time wheel profiles stabilise with wear at an equivalent conicity of 0.2 to 0.3. With regards to running stability, the equivalent conicity must remain below 0.4 and to ensure the centering effect it must be greater than 0.1.
+% Practical research has shown that over a period of time wheel profiles stabilise with wear at an equivalent conicity of 0.2 to 0.3. With regards to running stability, the equivalent conicity must remain below 0.4 and to ensure the centering effect it must be greater than 0.1.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
-    \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \citet[2.4]{esveld2001modern}}
-    \label{fig:conicalwornprofiles}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.6\textwidth]{conicalwornprofiles.pdf}
+%     \caption{$y-\Delta r$ curves. Difference between conical and worn wheel profiles. Extracted from \citet[2.4]{esveld2001modern}}
+%     \label{fig:conicalwornprofiles}
+% \end{figure}
 
-With a conical profile the conicity is constant and above equation becomes:
+% With a conical profile the conicity is constant and above equation becomes:
 
-$$ \gamma_e = \frac{\Delta r}{2y} =\frac{(r+\gamma y)-(r-\gamma y)}{2y} = \gamma $$
+% $$ \gamma_e = \frac{\Delta r}{2y} =\frac{(r+\gamma y)-(r-\gamma y)}{2y} = \gamma $$
 
-\end{quote}
+% \end{quote}
 
-\section{Lateral Track Irregularities}\label{sec:lateraltrackirrgularities}
+% \section{Lateral Track Irregularities}\label{sec:lateraltrackirrgularities}
 
-This section describes allowable lateral track irregularities defined in EN13848-5\citet{13848}. 
+% This section describes allowable lateral track irregularities defined in EN13848-5\citet{13848}. 
 
-Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
+% Lateral alignment irregularities was defined in EN13838-1. It states:"Deviation $y_p$ in y-direction of consecutive positions of point P... on any rail, expressed as an excursion from the mean horizontal position (reference line) covering the wavelength ranges stipulated below and calculated from successive measurements ...". See Figure \ref{fig:lateraldeviationdefine}.
 
-For lateral deviations, the following wavelengths shall be considered: $D1 = 3 -25 m$, $D2 = 25 - 70 m$ and $D3 = 70 - 200 m$. 
+% For lateral deviations, the following wavelengths shall be considered: $D1 = 3 -25 m$, $D2 = 25 - 70 m$ and $D3 = 70 - 200 m$. 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{lateraldeviationdefine}
-    \caption{Lateral deviation definition. Lateral deviations $y_p$ for each rail with 1: running surface, 2: reference line and 3: centre line of running table}
-    \label{fig:lateraldeviationdefine}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{lateraldeviationdefine}
+%     \caption{Lateral deviation definition. Lateral deviations $y_p$ for each rail with 1: running surface, 2: reference line and 3: centre line of running table}
+%     % \label{fig:lateraldeviationdefine}
+% \end{figure}
 
-Table \ref{tab:lateraldeviation} defines the allowable standard deviation for lateral track irregularities. Lateral track irregularity has great influence on vehicle's lateral dynamic behaviour.
+% Table \ref{tab:lateraldeviation} defines the allowable standard deviation for lateral track irregularities. Lateral track irregularity has great influence on vehicle's lateral dynamic behaviour.
 
-\begin{table}[h]
-    \centering
-    \caption{Alignment - AL - Standard deviation. Extracted from \citet[Table B.6]{13848}}
-    \begin{tabular}{cc}
-        \hline
-        Speed(km/h) & Standard deviation(mm) \\
-        \hline
-        $V\leq 90$ & 1.5 to 1.8 \\
-        $80 < V \leq 120$ & 1.2 to 1.5 \\
-        $120 < V \leq 160$ & 1.0 to 1.3 \\
-        $160 <V \leq 230$ & 0.8 to 1.1 \\
-        $230 <V \leq 300$ & 0.7 to 1.0 \\
-        \hline
-    \end{tabular}
-    \label{tab:lateraldeviation}
-\end{table}
+% \begin{table}[h]
+%     \centering
+%     \caption{Alignment - AL - Standard deviation. Extracted from \citet[Table B.6]{13848}}
+%     \begin{tabular}{cc}
+%         \hline
+%         Speed(km/h) & Standard deviation(mm) \\
+%         \hline
+%         $V\leq 90$ & 1.5 to 1.8 \\
+%         $80 < V \leq 120$ & 1.2 to 1.5 \\
+%         $120 < V \leq 160$ & 1.0 to 1.3 \\
+%         $160 <V \leq 230$ & 0.8 to 1.1 \\
+%         $230 <V \leq 300$ & 0.7 to 1.0 \\
+%         \hline
+%     \end{tabular}
+%     % \label{tab:lateraldeviation}
+% \end{table}
 
 
-\section{Dynamic theories}
+% \section{Dynamic theories}
 
-\subsection{Natural frequencies and shapes of bridge}
-Undamped Euler-Bernoulli beam theory is adopted to obtain natural wave shapes and frequencies of a bridge structure. This theory is the simplest bridge dynamic model which assumes that the bridge behaves as a vibrating uniform beam. 
+% \subsection{Natural frequencies and shapes of bridge}
+% Undamped Euler-Bernoulli beam theory is adopted to obtain natural wave shapes and frequencies of a bridge structure. This theory is the simplest bridge dynamic model which assumes that the bridge behaves as a vibrating uniform beam. 
 
-The bridge is simply supported at both ends, and the stiffness is specified as a deflection at the mid span per unit span length arising from a static point load of 100kN at mid span.
+% The bridge is simply supported at both ends, and the stiffness is specified as a deflection at the mid span per unit span length arising from a static point load of 100kN at mid span.
 
-The equation of vibration of a uniform beam is:
+% The equation of vibration of a uniform beam is:
 
-$$\frac{\partial^2 y}{\partial t^2} + a^2\frac{\partial^4 y}{\partial x^4}=0$$
+% $$\frac{\partial^2 y}{\partial t^2} + a^2\frac{\partial^4 y}{\partial x^4}=0$$
 
-where: 
+% where: 
 
-y = deflection of beam
+% y = deflection of beam
 
-x = coordinates along longitudinal axis
+% x = coordinates along longitudinal axis
 
-t = time 
+% t = time 
 
-$a^2$ = EI/m
+% $a^2$ = EI/m
 
-EI = flexural rigidity
+% EI = flexural rigidity
 
-and, m = mass per unit length
+% and, m = mass per unit length
 
-The general solution is:
+% The general solution is:
 
-$$y(x,t) = (A\cos pt+B\sin pt)(C\cos kx + D\sin kx + F\cosh kx + Gsinh kx)$$
+% $$y(x,t) = (A\cos pt+B\sin pt)(C\cos kx + D\sin kx + F\cosh kx + Gsinh kx)$$
 
-which consists of independent time and distance parts. The distance dependent part of the solution gives the family of mode shapes which the beam will exhibit. Thus, generally, a beam has mode shapes which satisfy:
+% which consists of independent time and distance parts. The distance dependent part of the solution gives the family of mode shapes which the beam will exhibit. Thus, generally, a beam has mode shapes which satisfy:
 
-$$y(x) = C\cos kx + D\sin kx + F\cosh kx + Gsinh kx $$
+% $$y(x) = C\cos kx + D\sin kx + F\cosh kx + Gsinh kx $$
 
-For a beam which is simply supported at either end the general solution simplifies, giving a family of normalized amplitude mode shapes as follows:
+% For a beam which is simply supported at either end the general solution simplifies, giving a family of normalized amplitude mode shapes as follows:
 
-$$y_r = \sin \frac{r\pi x}{L}$$
+% $$y_r = \sin \frac{r\pi x}{L}$$
 
-for $r = 1,2,3...,n$ and $L = span length$
+% for $r = 1,2,3...,n$ and $L = span length$
 
-with corresponding angular frequencies, $\omega_r$, of:
+% with corresponding angular frequencies, $\omega_r$, of:
 
-$$\omega_r = \frac{r^2 \pi^2}{L^2}\sqrt{\frac{EI}{m}}$$
+% $$\omega_r = \frac{r^2 \pi^2}{L^2}\sqrt{\frac{EI}{m}}$$
 
-thus natural frequencies $f_r$ of beam, are:
+% thus natural frequencies $f_r$ of beam, are:
 
-$$f_r = \frac{r^2 \pi}{2L^2}\sqrt{\frac{EI}{m}}$$
+% $$f_r = \frac{r^2 \pi}{2L^2}\sqrt{\frac{EI}{m}}$$
 
-\subsection{Basic resonance concept}
-The most simplest resonance scenario happens at a one degree-of-freedom mass-spring system loaded by a force whose frequency coincides with the natural frequency of mass-spring system.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{massbeammodel.pdf}
-	\caption{Mass beam model of span L}
-	\label{fig:massbeammodel}
-\end{figure}
+% \subsection{Basic resonance concept}
+% The most simplest resonance scenario happens at a one degree-of-freedom mass-spring system loaded by a force whose frequency coincides with the natural frequency of mass-spring system.
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.8\textwidth]{massbeammodel.pdf}
+% 	\caption{Mass beam model of span L}
+% 	\label{fig:massbeammodel}
+% \end{figure}
 
-Assume there is a simple one degree-of-freedom mass-spring system and an external force is acting on it. The force is given as $F(t)= F_0 \cos(\omega t)$. In this case the equation of motion takes the form
-\begin{equation}
-	m\ddot{x} + kx = F_0 \cos(\omega t)
-\end{equation}
+% Assume there is a simple one degree-of-freedom mass-spring system and an external force is acting on it. The force is given as $F(t)= F_0 \cos(\omega t)$. In this case the equation of motion takes the form
+% \begin{equation}
+% 	m\ddot{x} + kx = F_0 \cos(\omega t)
+% \end{equation}
 
-The general solution can be written as
-\begin{equation}
-	x(t) = A\cos(\omega_n t)+B\sin(\omega_n t) +\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
-\end{equation}
+% The general solution can be written as
+% \begin{equation}
+% 	x(t) = A\cos(\omega_n t)+B\sin(\omega_n t) +\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
+% \end{equation}
 
-where $\omega_n = 2\pi\sqrt{k/m}$
+% where $\omega_n = 2\pi\sqrt{k/m}$
 
-The unknown constants A and B depend on the initial conditions.
+% The unknown constants A and B depend on the initial conditions.
 
-The steady-state solution is given as:
+% The steady-state solution is given as:
 
-\begin{equation}
-	x_{steady}= X \cos(\omega t) = \frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
-\end{equation}
+% \begin{equation}
+% 	x_{steady}= X \cos(\omega t) = \frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}\cos(\omega t)
+% \end{equation}
 
-The amplitude of vibrations of the mass-spring system is given by:
-\begin{equation}
-	|X|=|\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}|
-\end{equation}
+% The amplitude of vibrations of the mass-spring system is given by:
+% \begin{equation}
+% 	|X|=|\frac{F_0}{k}\frac{1}{1-\omega^2/\omega_n^2}|
+% \end{equation}
 
-The amplitude-frequency dependencies is shown in \ref{fig:amplitude-frequency-characteristic} 
+% The amplitude-frequency dependencies is shown in \ref{fig:amplitude-frequency-characteristic} 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\textwidth]{amplitudefrequencycharacteristic.pdf}
-	\caption{Amplitude-frequency characteristic. Extracted from \citet[2.2.2]{dynamicslecturenote}}
-	\label{fig:amplitude-frequency-characteristic}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.6\textwidth]{amplitudefrequencycharacteristic.pdf}
+% 	\caption{Amplitude-frequency characteristic. Extracted from \citet[2.2.2]{dynamicslecturenote}}
+% 	\label{fig:amplitude-frequency-characteristic}
+% \end{figure}
 
-When the frequency of force equals frequency of mass-spring system, the amplitude of vibration is infinitely high. It means system becomes unstable and normally it's a dangerous sign. This phenomenon is called resonance.
+% When the frequency of force equals frequency of mass-spring system, the amplitude of vibration is infinitely high. It means system becomes unstable and normally it's a dangerous sign. This phenomenon is called resonance.
 
-Resonance can also happen when a harmonic force is loaded on an Euler-Bernoulli beam. It can be loaded anywhere on the beam to produce resonance. 
+% Resonance can also happen when a harmonic force is loaded on an Euler-Bernoulli beam. It can be loaded anywhere on the beam to produce resonance. 
 
 
-\section{Analysing methods for lateral dynamics of railway bridges }
+% \section{Analysing methods for lateral dynamics of railway bridges }
 
-Several analysing methods for vertical dynamics of railway bridges were briefed in \citet[A6.2]{UIC776-2}. Methods that can be applied also on lateral direction are selected:
+% Several analysing methods for vertical dynamics of railway bridges were briefed in \citet[A6.2]{UIC776-2}. Methods that can be applied also on lateral direction are selected:
 
-\begin{quote}
+% \begin{quote}
 
-Various programs are available and details can be found in ERRI report D 214/RP7 (see Bibliography - page 43); they can be used to calculate the dynamic response under live train loads, of isostatic bridges, series of isostatic decks, continuous bridges using the beam theory, the dynamic response of plates and by taking into account the two longitudinal and transversal modes. They can also run calculations for orthotropic square plates and skew plates.
+% Various programs are available and details can be found in ERRI report D 214/RP7 (see Bibliography - page 43); they can be used to calculate the dynamic response under live train loads, of isostatic bridges, series of isostatic decks, continuous bridges using the beam theory, the dynamic response of plates and by taking into account the two longitudinal and transversal modes. They can also run calculations for orthotropic square plates and skew plates.
 
-...
+% ...
 
-Two types of analyses can be carried out: with or without interaction with the train.
+% Two types of analyses can be carried out: with or without interaction with the train.
 
-The most problematic cases, for example special structures (bridges with long spans such as bowstring bridges), have to be solved using generic finite element programs.
+% The most problematic cases, for example special structures (bridges with long spans such as bowstring bridges), have to be solved using generic finite element programs.
 
-Various programs such as ANSYS, NASTRAN, ABAQUS, SAP, FASTRUDL and so on, can be used to obtain the modal responses of bridge decks. Modelling can be done with beam models using torsional characteristics if the bridge is not a skew bridge and the structure is not a special case (see above). However, spatial modelling is necessary in such cases.
+% Various programs such as ANSYS, NASTRAN, ABAQUS, SAP, FASTRUDL and so on, can be used to obtain the modal responses of bridge decks. Modelling can be done with beam models using torsional characteristics if the bridge is not a skew bridge and the structure is not a special case (see above). However, spatial modelling is necessary in such cases.
 
-Dynamic analysis of a structure can be used to resolve a system of differential equations of lesser importance. Two fundamental approaches may be implemented: one method consists in solving the system of equation by direct integration, whereas the other defines the solution based on the natural modes of vibration of the structure. This is known as modal superposition. 
-\end{quote}
+% Dynamic analysis of a structure can be used to resolve a system of differential equations of lesser importance. Two fundamental approaches may be implemented: one method consists in solving the system of equation by direct integration, whereas the other defines the solution based on the natural modes of vibration of the structure. This is known as modal superposition. 
+% \end{quote}
 
-\subsection{Modal analysis}
+% \subsection{Modal analysis}
 
-Knowledge on modal analysis is extracted from \citet{UIC776-2}
+% Knowledge on modal analysis is extracted from \citet{UIC776-2}
 
-\begin{quote}
+% \begin{quote}
 
-Modal analysis is used to calculate the natural modes and frequencies of the model, as well as resulting variables(participation factors, effective modal masses)
+% Modal analysis is used to calculate the natural modes and frequencies of the model, as well as resulting variables(participation factors, effective modal masses)
 
-For undamped, free vibrations, the equation of movement without a second element is reduced to:
+% For undamped, free vibrations, the equation of movement without a second element is reduced to:
 
-$$  [K] - \omega^2[M][\Phi_i] = 0 $$
+% $$  [K] - \omega^2[M][\Phi_i] = 0 $$
 
-where $\Phi$ represents the circular frequency vector (=pulse) and $[\Phi]$ is the modal crossing matrix consisting of natural orthonorm modal vectors $[\Phi_i]$ in relation to $[M]$ or $[K]$.
+% where $\Phi$ represents the circular frequency vector (=pulse) and $[\Phi]$ is the modal crossing matrix consisting of natural orthonorm modal vectors $[\Phi_i]$ in relation to $[M]$ or $[K]$.
 
-In principle, all the modes with natural frequencies lower than the cut-off frequency should be retained; in practice, the modes retained are often those making an important contribution to the response(criterion of the sum of effective modal mass of the structure). When the natural vectors are calculated, the modal matrix is formed $[\Phi]$ after which the $\omega_i$ can be deduced.
+% In principle, all the modes with natural frequencies lower than the cut-off frequency should be retained; in practice, the modes retained are often those making an important contribution to the response(criterion of the sum of effective modal mass of the structure). When the natural vectors are calculated, the modal matrix is formed $[\Phi]$ after which the $\omega_i$ can be deduced.
 
-\end{quote}
+% \end{quote}
 
-\subsection{Analysis by modal superposition}
+% \subsection{Analysis by modal superposition}
 
-Knowledge on modal superposition is extracted from \citet{UIC776-2}
+% Knowledge on modal superposition is extracted from \citet{UIC776-2}
 
-\begin{quote}
-The fundamental equation of the dynamic approach represents a system of N simultaneous differential equations, where N is the number of degrees of freedom of the structure. If three-dimensional modelling is used, this number N is equal to six times the number of nodes less the number of ddl blocked at the supprt. When the number increases to a value that is very high for large models, the size of the problem needs to be reduced by transformation techniques. Solving the differential equations then becomes faster and is more accurate.
+% \begin{quote}
+% The fundamental equation of the dynamic approach represents a system of N simultaneous differential equations, where N is the number of degrees of freedom of the structure. If three-dimensional modelling is used, this number N is equal to six times the number of nodes less the number of ddl blocked at the supprt. When the number increases to a value that is very high for large models, the size of the problem needs to be reduced by transformation techniques. Solving the differential equations then becomes faster and is more accurate.
 
-The integration method used is now as follows: for each mode i, the resulting equation gives an evaluation introduced by the Duhamel integral of the Fourier transform. The sum of the solutions gives the full response. The integration approach for mobile loads is a slow process.
+% The integration method used is now as follows: for each mode i, the resulting equation gives an evaluation introduced by the Duhamel integral of the Fourier transform. The sum of the solutions gives the full response. The integration approach for mobile loads is a slow process.
 
-Modal superposition is used to accurately quantify the respective contributions of each mode to the total dynamic response and to identify the risks of resonance and dynamic amplification of some types of stresses.
-\end{quote}
+% Modal superposition is used to accurately quantify the respective contributions of each mode to the total dynamic response and to identify the risks of resonance and dynamic amplification of some types of stresses.
+% \end{quote}
 
-\subsection{Numerical methods}
+% \subsection{Numerical methods}
 
-Knowledge on numerical methods is extracted from \citet{UIC776-2}
+% Knowledge on numerical methods is extracted from \citet{UIC776-2}
 
-\begin{quote}
+% \begin{quote}
 
-When the analysis uses numerical methods to directly integrate the dynamic equation, the loads become the dynamic system in the case of vehicles and their internal behaviour impacts the response from the structure.
+% When the analysis uses numerical methods to directly integrate the dynamic equation, the loads become the dynamic system in the case of vehicles and their internal behaviour impacts the response from the structure.
 
-- the two systems can be considered separate systems,
+% - the two systems can be considered separate systems,
 
-- the vehicle can be considered a finite element.
+% - the vehicle can be considered a finite element.
 
-This last method takes track profile defects into account and deduces the force of interaction between the structure and the vehicle as well as the internal forces in the dynamic system that is built.
+% This last method takes track profile defects into account and deduces the force of interaction between the structure and the vehicle as well as the internal forces in the dynamic system that is built.
 
-In this method, the equation of the dynamics is solved, with or without prior transformation, by using the conventional algorithms for numerical resolution of second-degree differential equations. These numerical methods calculates the response to regularly spaced time intervals(in general). The selected time pitch determines the accuracy of the results and has a bearing on the length of computer calculations.
+% In this method, the equation of the dynamics is solved, with or without prior transformation, by using the conventional algorithms for numerical resolution of second-degree differential equations. These numerical methods calculates the response to regularly spaced time intervals(in general). The selected time pitch determines the accuracy of the results and has a bearing on the length of computer calculations.
 
-Numerical integration methods are all based on the search for balanced solutions of the dynamic equation at regular time intervals.
+% Numerical integration methods are all based on the search for balanced solutions of the dynamic equation at regular time intervals.
 
-\end{quote}
+% \end{quote}
 
-\subsubsection{VAMPIRE}
+% \subsubsection{VAMPIRE}
 
-VAMPIRE is a FEM simulation software developed by DeltaRail. It allows the user to build a dynamic model of any rail vehicle and study the response of the vehicle to real measured track geometry or user specified inputs in the form of track displacements and external force inputs. Rail vehicles can be modelled with simulated instrumentation allowing almost any aspect of behaviour to be studied. 
+% VAMPIRE is a FEM simulation software developed by DeltaRail. It allows the user to build a dynamic model of any rail vehicle and study the response of the vehicle to real measured track geometry or user specified inputs in the form of track displacements and external force inputs. Rail vehicles can be modelled with simulated instrumentation allowing almost any aspect of behaviour to be studied. 
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{vampire}
-    \caption{A sample project being conducted in VAMPIRE}
-    \label{fig:vampire}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{vampire}
+%     \caption{A sample project being conducted in VAMPIRE}
+%     \label{fig:vampire}
+% \end{figure}
 
-There are also many similar simulation software on the market which puts emphasis on railway vehicle dynamic behaviour, but VAMPIRE is specially selected for introduction because it was the software used by D181 committee, whose report series originally proposed 1.2Hz criterion by using the assistance of VAMPIRE. Also, the output results provided by D181 reports is an important foundation for the development of new practical method. More detailed description of these VAMPIRE simulation runs will be illustrated in Chapter.\ref{sec:D181reportseries}.
+% There are also many similar simulation software on the market which puts emphasis on railway vehicle dynamic behaviour, but VAMPIRE is specially selected for introduction because it was the software used by D181 committee, whose report series originally proposed 1.2Hz criterion by using the assistance of VAMPIRE. Also, the output results provided by D181 reports is an important foundation for the development of new practical method. More detailed description of these VAMPIRE simulation runs will be illustrated in Chapter.\ref{sec:D181reportseries}.
 
 \chapter{Literature Review of regulations regarding lateral railway bridge dynamics in 1991-2} 
 Eurocode 1990 and Eurocode 1991-2 and their corresponding National Annex are primary codes to be fulfilled through out the whole process of conducting a railway bridge in Netherlands. It is of great importance to study dynamic effect on railway bridges due to increasing usage of public train service.
@@ -609,7 +472,6 @@ The characteristic value of the nosing force should be multiplied by the factor 
 
 The nosing force shall always be combined with a vertical traffic load.
 
-A detailed analysis on the background of nosing force will be given in Section.\ref{sec:lateralforce329}
 
 
 \subsection{Verification of the Limit States}
@@ -677,7 +539,7 @@ $$f_{lt} \geq 1.2Hz$$
 
 \end{quote}
 
-Until now there's no further instructions in EN1991-2 for bridges which can not pass 1.2Hz criterion. However, for bridges longer than 100 meters, they are almost guaranteed to fail 1.2Hz criterion. In order to solve this problem, a detailed analysis is conducted in Sec.\ref{sec:1.2criterion329}
+Until now there's no further instructions in EN1991-2 for bridges which can not pass 1.2Hz criterion. However, for bridges longer than 100 meters, they are almost guaranteed to fail 1.2Hz criterion.
 
 \section{Conclusion}
 
@@ -691,7 +553,7 @@ By reviewing EN1991-2 thoroughly, it is found that there are altogether two regu
 Although vertical dynamics of railway bridges is focused a lot, there's only two statements about lateral dynamics of railway bridges. What's more, there's no quantifying criteria even if a dynamic analysis is done. 
 
 These two regulations have the same background documents: D181 report series. The analysis of D181 report series will be carried out in following chapter.
-]{modeltrackstructure.pdf}
+% ]{modeltrackstructure.pdf}
 
 \chapter{General information of report series D181 and its selected documents}\label{app:generalInformationD181}
 
@@ -998,278 +860,278 @@ Peak values for each output were then read into a spread sheet where they could 
     \label{tab:329kinematicwavelength}
 \end{table}
 
-\chapter{Essentials of analytical approach to be adopted in practical checking method}\label{sec:analyticalmodel}
+% \chapter{Essentials of analytical approach to be adopted in practical checking method}\label{sec:analyticalmodel}
  
-\section{Introduction}
-This chapter aims to give a preliminary knowledge of a selected analytical model that simulates the perfect resonance scenario for railway bridge under lateral dynamic load. The knowledge contains the simplified model itself, its assumptions, field of application and explicit solutions. 
+% \section{Introduction}
+% This chapter aims to give a preliminary knowledge of a selected analytical model that simulates the perfect resonance scenario for railway bridge under lateral dynamic load. The knowledge contains the simplified model itself, its assumptions, field of application and explicit solutions. 
 
-The output response of the solution to the analytical model is able to provide the maximum bridge response in worst case scenario. Thus it is sufficient to be adopted in practical purposes for verifications of lateral railway bridge dynamics.
-
-
-\section{Overview}
-
-To give a clear view of this chapter, following overview is created:
-
-\begin{enumerate}
-    \item The model, its assumptions and field of application. 
-    \item Procedure of solution deduction
-    \item Damping
-\end{enumerate}
-
-\section{The model, its assumptions and field of application}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{harmonicloadbeam}
-    \caption{Schematic representation of a generic beam crossed by a harmonic load}
-    \label{fig:harmonicloadbeam}
-\end{figure}
-
-Presented in Figure.\ref{fig:harmonicloadbeam}, the model features a simply supported beam which is the simplification of bridge structure and a moving harmonic load introducing resonant dynamic effects caused by the presence of moving train.
-
-The beam is assumed to be uniform in both geometry and material. The stiffness of the beam is the equivalent uniform lateral bending stiffness of the bridge. 
-
-The load is moving in the same speed as the train. The magnitude of load amplitude is going to be discussed in the following chapter. The load's self vibration frequency is equal to the first natural lateral bending frequency of the beam.
+% The output response of the solution to the analytical model is able to provide the maximum bridge response in worst case scenario. Thus it is sufficient to be adopted in practical purposes for verifications of lateral railway bridge dynamics.
 
 
-This model is valid for single span railway bridges that has a sinuous first natural lateral vibration shape.  
+% \section{Overview}
 
-\section{Solution deduction}
+% To give a clear view of this chapter, following overview is created:
 
-Solution provided by Fryba\citet{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \citet[Section II.2.1]{fryba1999vibration} and presented below.
+% \begin{enumerate}
+%     \item The model, its assumptions and field of application. 
+%     \item Procedure of solution deduction
+%     \item Damping
+% \end{enumerate}
 
-\begin{quote}
+% \section{The model, its assumptions and field of application}
 
-The solution of the problem of a harmonic concentrated force moving at constant speed $c$ over a simply supported beam with span $l$ is carried out under the same assumptions as that discussed in Chap. 1. The time-variable concentrated force is of the form
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{harmonicloadbeam}
+%     \caption{Schematic representation of a generic beam crossed by a harmonic load}
+%     % \label{fig:harmonicloadbeam}
+% \end{figure}
 
-\begin{equation}
-    P(t) = Q \sin \Omega t
-\end{equation}
+% Presented in Figure.\ref{fig:harmonicloadbeam}, the model features a simply supported beam which is the simplification of bridge structure and a moving harmonic load introducing resonant dynamic effects caused by the presence of moving train.
 
-where $Q$ is the amplitude and $\Omega$ is the circular frequency of the harmonic force. Vibration of the beam is then described by the equation
+% The beam is assumed to be uniform in both geometry and material. The stiffness of the beam is the equivalent uniform lateral bending stiffness of the bridge. 
 
-\begin{equation}\label{eq:equationofmotion}
-    EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +2\mu\omega_b \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
-\end{equation}
+% The load is moving in the same speed as the train. The magnitude of load amplitude is going to be discussed in the following chapter. The load's self vibration frequency is equal to the first natural lateral bending frequency of the beam.
 
-by the boundary conditions (1.2) and by the initial conditions (1.3). The symbols used in \ref{eq:equationofmotion} have the same meaning as those of Chap. 1.
 
-Eq.\ref{eq:equationofmotion} together with conditions (1.2) and (1.3) will again be solved by the method of integral transformations. Following the Fourier sine transformation according to (1.9), Eqs.\ref{eq:equationofmotion} and (1.2) give
+% This model is valid for single span railway bridges that has a sinuous first natural lateral vibration shape.  
 
-\begin{equation}
-    \frac{d^2 V(j,t)}{d t^2} + 2\omega_b\frac{dV(j,t)}{dt} + \omega_{(j)}^2 V(j,t) = \frac{Q}{\mu} \sin\Omega t \sin j\omega t
-\end{equation}
+% \section{Solution deduction}
 
-Solving the above with (1.3) by the Laplace-Carson transformation (1.15) - making use of Eq.(27.24) in doing so and of the notation
+% Solution provided by Fryba\citet{fryba1999vibration} is used to analyse the problem. A harmonic moving along a beam is a fundamental dynamics topic and was first solved by S.P.Timoshenko. Fryba further deduced the basic results, and set them forth in the form of useful formulae. This model is used to simulate a perfect resonance scenario which yields conservative results for designing and checking of the dynamics behaviour of the bridge. Deduction procedure is extracted from \citet[Section II.2.1]{fryba1999vibration} and presented below.
 
-\begin{equation}
-    \begin{tabular}{cc}
-        $r_1 = \Omega + j\omega$; & $r_2 = \Omega - j\omega$ \\
-    \end{tabular}
-\end{equation}
+% \begin{quote}
 
-we get
+% The solution of the problem of a harmonic concentrated force moving at constant speed $c$ over a simply supported beam with span $l$ is carried out under the same assumptions as that discussed in Chap. 1. The time-variable concentrated force is of the form
 
-\begin{equation}\label{eq:V*}
-    V^* (j,p) = \frac{Q}{2\mu} (\frac{1}{p^2+r_2^2}-\frac{1}{p^2+r_1^2})\frac{p^2}{(p+\omega_b)^2+\omega_{(j)}^{'2}}
-\end{equation}
+% \begin{equation}%\label{eq:equationofmotion}
+%     P(t) = Q \sin \Omega t
+% \end{equation}
 
-After inverse transformations of Eq.\ref{eq:V*} according to (27.24) and (1.9) the required result for $t \leq T$ is
+% where $Q$ is the amplitude and $\Omega$ is the circular frequency of the harmonic force. Vibration of the beam is then described by the equation
 
-\begin{dmath}\label{eq:v(x,t)complicated}
-    v(x,t) = \sum_{j=1}^{\infty} \frac{Q}{\mu l}\{\frac{1}{(\omega_{(j)}^2 - r_2^2)+4\omega_b^2r_2^2}[(\omega_{j}^2-r_2^2])(\cos r_2t-e^{-\omega_bt}\cos \omega_{(j)}^' t) + 2\omega_b r_2 \sin r_2 t - \frac{\omega_b}{\omega_{(j)}^'}(\omega_{(j)}^2 + r_2^2)e^{-\omega_b t}\sin \omega_{(j)}^'t]-\frac{1}{(\omega_{(J)}^2 - r_1^2)^2 + 4\omega_b^2r_1^2}[(\omega_{(j)}^2-r_1^2)(\cos r_1t-e^{-\omega_b t}\cos\omega{(j)}^'t)+2\omega_b r_1 \sin r_1 t- \frac{\omega_b}{\omega_{(j)}^'}(\omega_{(j)}^2+r_1^2)e^{-\omega_b t}\sin \omega_{(j)}^' t]\}\sin\frac{j\pi x}{l}
-\end{dmath}
+% \begin{equation}
+%     EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +2\mu\omega_b \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
+% \end{equation}
 
-We shall now simplify Eq.\ref{eq:v(x,t)complicated} to fit the case most frequently met with in practical applications. Thus, for example, it is entirely satisfactory to use only the first of its terms($j=1$); further, as we know from Chap. 1, parameters $\alpha$ and $\beta$ are usually much smaller than 1 ($\alpha = \sfrac{\omega}{\omega_{(1)}} \ll 1$, $\beta = \sfrac{\omega_b}{\omega_{(1)}} \ll 1$). And finally, since in practice a harmonic force is always accompanied by a constant force $P$, we shall introduce in \ref{eq:v(x,t)complicated} also the deflection $v_0$ according to (1.21). Following these simplifications Eq.(2.6) takes on the form
+% by the boundary conditions (1.2) and by the initial conditions (1.3). The symbols used in \ref{eq:equationofmotion} have the same meaning as those of Chap. 1.
 
-\begin{dmath}\label{eq:v(x,t)withP}
-v(x,t) = v_0 \frac{Q}{p}\frac{\omega_{(1)}^2}{\Omega^2}\frac{1}{(\frac{\omega_{(1)}^2}{\Omega^2}-1)^2+4(\frac{\omega^2}{\Omega^2}+\frac{\omega_b^2}{\Omega^2})}\{[(\frac{\omega_{(1)}^2}{\Omega^2}-1)^2+4\frac{\omega_b^2}{\Omega^2}]^{\sfrac{1}{2}} \sin (\Omega t + \varphi)\sin \omega t + 2\frac{\omega}{\Omega}(\cos \Omega t \cos \omega t - e^{-\omega_b t}\cos \omega_{(1)}t)\}\sin\frac{\pi x}{l}
-\end{dmath}
+% Eq.\ref{eq:equationofmotion} together with conditions (1.2) and (1.3) will again be solved by the method of integral transformations. Following the Fourier sine transformation according to (1.9), Eqs.\ref{eq:equationofmotion} and (1.2) give
 
-where
+% \begin{equation}
+%     \frac{d^2 V(j,t)}{d t^2} + 2\omega_b\frac{dV(j,t)}{dt} + \omega_{(j)}^2 V(j,t) = \frac{Q}{\mu} \sin\Omega t \sin j\omega t
+% \end{equation}
 
-\begin{equation}
-    \tan \varphi = -\frac{2\sfrac{\omega_b}{\Omega}}{\sfrac{\omega_{(1)}^2}{\Omega^2}-1}
-\end{equation}
+% Solving the above with (1.3) by the Laplace-Carson transformation (1.15) - making use of Eq.(27.24) in doing so and of the notation
 
-The beam reaches the state of highest dynamic stressing in the region of resonance, i.e. whenever $\Omega$ is close or just equal to $\omega_{(1)}$, i.e.
+% \begin{equation}
+%     \begin{tabular}{cc}
+%         $r_1 = \Omega + j\omega$; & $r_2 = \Omega - j\omega$ \\
+%     \end{tabular}
+% \end{equation}
 
-\begin{equation}
-    \Omega = \omega_{(1)}
-\end{equation}
+% we get
 
-In such a case Eq.\ref{eq:v(x,t)withP} can further be simplified to 
+% \begin{equation}\label{eq:V*}
+%     V^* (j,p) = \frac{Q}{2\mu} (\frac{1}{p^2+r_2^2}-\frac{1}{p^2+r_1^2})\frac{p^2}{(p+\omega_b)^2+\omega_{(j)}^{'2}}
+% \end{equation}
 
-\begin{equation}\label{eq:v(x,t)simplewithP}
-    v(x,t) = v_0 \frac{Q\omega_{(1)}}{2P}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
-\end{equation}
+% After inverse transformations of Eq.\ref{eq:V*} according to (27.24) and (1.9) the required result for $t \leq T$ is
 
-\end{quote}
+% \begin{dmath}\label{eq:v(x,t)complicated}
+%     v(x,t) = \sum_{j=1}^{\infty} \frac{Q}{\mu l}\{\frac{1}{(\omega_{(j)}^2 - r_2^2)+4\omega_b^2r_2^2}[(\omega_{j}^2-r_2^2])(\cos r_2t-e^{-\omega_bt}\cos \omega_{(j)}^' t) + 2\omega_b r_2 \sin r_2 t - \frac{\omega_b}{\omega_{(j)}^'}(\omega_{(j)}^2 + r_2^2)e^{-\omega_b t}\sin \omega_{(j)}^'t]-\frac{1}{(\omega_{(J)}^2 - r_1^2)^2 + 4\omega_b^2r_1^2}[(\omega_{(j)}^2-r_1^2)(\cos r_1t-e^{-\omega_b t}\cos\omega{(j)}^'t)+2\omega_b r_1 \sin r_1 t- \frac{\omega_b}{\omega_{(j)}^'}(\omega_{(j)}^2+r_1^2)e^{-\omega_b t}\sin \omega_{(j)}^' t]\}\sin\frac{j\pi x}{l}
+% \end{dmath}
 
-According to (1.21)
+% We shall now simplify Eq.\ref{eq:v(x,t)complicated} to fit the case most frequently met with in practical applications. Thus, for example, it is entirely satisfactory to use only the first of its terms($j=1$); further, as we know from Chap. 1, parameters $\alpha$ and $\beta$ are usually much smaller than 1 ($\alpha = \sfrac{\omega}{\omega_{(1)}} \ll 1$, $\beta = \sfrac{\omega_b}{\omega_{(1)}} \ll 1$). And finally, since in practice a harmonic force is always accompanied by a constant force $P$, we shall introduce in \ref{eq:v(x,t)complicated} also the deflection $v_0$ according to (1.21). Following these simplifications Eq.(2.6) takes on the form
 
-\begin{equation}
-    v_0 = \frac{Pl^3}{48EJ} \approx \frac{2P}{\mu l \omega_{(1)}^2} = \frac{2Pl^3}{\pi ^4 EJ}
-\end{equation}
+% \begin{dmath}\label{eq:v(x,t)withP}
+% v(x,t) = v_0 \frac{Q}{p}\frac{\omega_{(1)}^2}{\Omega^2}\frac{1}{(\frac{\omega_{(1)}^2}{\Omega^2}-1)^2+4(\frac{\omega^2}{\Omega^2}+\frac{\omega_b^2}{\Omega^2})}\{[(\frac{\omega_{(1)}^2}{\Omega^2}-1)^2+4\frac{\omega_b^2}{\Omega^2}]^{\sfrac{1}{2}} \sin (\Omega t + \varphi)\sin \omega t + 2\frac{\omega}{\Omega}(\cos \Omega t \cos \omega t - e^{-\omega_b t}\cos \omega_{(1)}t)\}\sin\frac{\pi x}{l}
+% \end{dmath}
 
-substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
+% where
 
-\begin{equation}
-    v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
-\end{equation}
+% \begin{equation}
+%     \tan \varphi = -\frac{2\sfrac{\omega_b}{\Omega}}{\sfrac{\omega_{(1)}^2}{\Omega^2}-1}
+% \end{equation}
 
-And the mid-span response time-history for deflection is :
+% The beam reaches the state of highest dynamic stressing in the region of resonance, i.e. whenever $\Omega$ is close or just equal to $\omega_{(1)}$, i.e.
 
-\begin{equation}\label{eq:v(x,t)simpleharmonic}
-    v(\sfrac{l}{2},t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]
-\end{equation}
+% \begin{equation}
+%     \Omega = \omega_{(1)}
+% \end{equation}
 
-where:
+% In such a case Eq.\ref{eq:v(x,t)withP} can further be simplified to 
 
-$v$ : deflection of the beam($m$)
+% \begin{equation}\label{eq:v(x,t)simplewithP}
+%     v(x,t) = v_0 \frac{Q\omega_{(1)}}{2P}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
+% \end{equation}
 
-$l$ : span of the beam($m$)
+% \end{quote}
 
-$EJ$ : lateral stiffness of the beam($Nm^2$)
+% According to (1.21)
 
-$Q$ : amplitude of harmonic load($N$)
+% \begin{equation}
+%     v_0 = \frac{Pl^3}{48EJ} \approx \frac{2P}{\mu l \omega_{(1)}^2} = \frac{2Pl^3}{\pi ^4 EJ}
+% \end{equation}
 
-$c$ : speed of the train($m/s$)
+% substitute $v_0$ into Eq.\ref{eq:v(x,t)simplewithP}
 
-$\zeta$ : damping ratio
+% \begin{equation}
+%     v(x,t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]\sin\frac{\pi x}{l}
+% \end{equation}
 
-$\mu$ : mass per unit length of the beam($kg/m$)
+% And the mid-span response time-history for deflection is :
 
-$\omega_1$ : first natural circular frequency of the beam
+% \begin{equation}%\label{eq:v(x,t)simpleharmonic}
+%     v(\sfrac{l}{2},t) = \frac{l^3Q\omega_{(1)}}{\pi^4 EJ}\frac{\cos \omega_{(1)}t}{\omega^2+\omega_b^2}[\omega(\cos\omega t - e^{-\omega_b t})-\omega_b\sin\omega t]
+% \end{equation}
 
-$\omega_1=\frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$
+% where:
 
-$\omega = \sfrac{\pi c}{l}$
+% $v$ : deflection of the beam($m$)
 
-$\omega_b = \frac{1}{2}\zeta\omega_1 $
+% $l$ : span of the beam($m$)
+
+% $EJ$ : lateral stiffness of the beam($Nm^2$)
+
+% $Q$ : amplitude of harmonic load($N$)
+
+% $c$ : speed of the train($m/s$)
+
+% $\zeta$ : damping ratio
+
+% $\mu$ : mass per unit length of the beam($kg/m$)
+
+% $\omega_1$ : first natural circular frequency of the beam
+
+% $\omega_1=\frac{\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$
+
+% $\omega = \sfrac{\pi c}{l}$
+
+% $\omega_b = \frac{1}{2}\zeta\omega_1 $
 
 
  
-Above expression is the ready-to-use expression being adopted in practical checking method to be discussed in following chapter.
+% Above expression is the ready-to-use expression being adopted in practical checking method to be discussed in following chapter.
 
 
-\section{Damping}
-Damping is an important parameter influencing the dynamic behaviour of a structure. \ref{eq:equationofmotion} uses a different form of damping expression $\omega_b$, which can be converted from normal damping coefficient. Equation of motion using damping coefficient:
+% \section{Damping}
+% Damping is an important parameter influencing the dynamic behaviour of a structure. \ref{eq:equationofmotion} uses a different form of damping expression $\omega_b$, which can be converted from normal damping coefficient. Equation of motion using damping coefficient:
 
-\begin{equation}\label{eq:equationofmotiondampingcoefficient}
-    EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +\chi \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
-\end{equation}
+% \begin{equation}%\label{eq:equationofmotiondampingcoefficient}
+%     EJ\frac{\partial^4 v(x,t)}{\partial x^4} + \mu\frac{\partial^2 v(x,t)}{\partial t^2} +\chi \frac{\partial v(x,t)}{\partial t} = \delta(x-ct)Q\sin\Omega t 
+% \end{equation}
 
-where $\chi$ stands for damping coefficient. By comparing \ref{eq:equationofmotiondampingcoefficient} and \ref{eq:equationofmotion}:
+% where $\chi$ stands for damping coefficient. By comparing \ref{eq:equationofmotiondampingcoefficient} and \ref{eq:equationofmotion}:
 
-\begin{equation}
-    \omega_b = \frac{\chi}{2\mu}
-\end{equation}
+% \begin{equation}
+%     \omega_b = \frac{\chi}{2\mu}
+% \end{equation}
 
-where:
+% where:
 
-$\omega_b$: circular frequency of damping
+% $\omega_b$: circular frequency of damping
 
-$\chi$: damping coefficient
+% $\chi$: damping coefficient
 
-$\mu$: mass per unit length of the bridge
+% $\mu$: mass per unit length of the bridge
 
-also, in \citet[Page.704]{abu2000vibration} it is mentioned that:
+% also, in \citet[Page.704]{abu2000vibration} it is mentioned that:
 
-\begin{quote}
-    The external and internal damping of the beam are assumed to be proportional to the mass and stiffness of the beam respectively,i.e., $r_a = \gamma_1 \mu$.., where $\gamma_1$ and $\gamma_2$ are proportionality constants.
-\end{quote}
+% \begin{quote}
+%     The external and internal damping of the beam are assumed to be proportional to the mass and stiffness of the beam respectively,i.e., $r_a = \gamma_1 \mu$.., where $\gamma_1$ and $\gamma_2$ are proportionality constants.
+% \end{quote}
 
-thus:
-
-
-\begin{equation}
-    \omega_b = \frac{\gamma_1}{2}
-\end{equation}
-
-and it is mentioned in \citet[Eq.8]{abu2000vibration} that:
-
-$$\zeta = \frac{\gamma_1}{\omega_1}$$
-
-so:
-
-$$\gamma_1 = \zeta\omega_1$$
-
-so:
-
-$$\omega_b = \frac{1}{2}\zeta\omega_1 = \frac{1}{2}\frac{\zeta\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$$
-
-where $\zeta$ is the structure damping ratio stated in EN1991-
-
-Adopting $\zeta = 1\%$ for steel railway bridges. This $\zeta$ value is used among all DT329 simulations run files. See Figure.\ref{fig:examplerunfile} for example.
-T329 resonance study. By comparing with the output of reproduced resonance in DT329, the analytical model can be verified.
-
-\section{Verification of the explicit solution}
-Since circular frequency of damping $\omega_b$ is not clearly defined by Fryba, it is necessary to verify the correctness of both explicit solution and deduced $\omega_b$ expression.
-
-The verification is done by comparing the result of Eq.\ref{eq:v(x,t)simpleharmonic} with the result of a explicit solution in a different form obtained by another deducing method.  
-
-The result in \citet{abu2000vibration} is selected to compare. This report is researching vibration of beams with general boundary conditions due to a moving harmonic load. The differential equation is illustrated as follows:
-
-\begin{equation}\label{eq:hilal}
-    EIv''''+\mu \ddot{v} + r_a \dot{v}+r_i \dot{v}''' = p(x,t)
-\end{equation}
-
-The difference between Eq.\ref{eq:hilal} and Eq.\ref{eq:v(x,t)simpleharmonic} is that it offers broader boundary conditions such as changing speed of the load and various kinds of supports. As a result of more general equation, the deduction steps are much more complicated. However, two solutions should yield same results under same boundary conditions that:
-
-\begin{enumerate}
-    \item Load moving at constant speed,
-    \item Frequency of load equals frequency of the beam,
-    \item Internal damping is 0,
-    \item Simple hinge support at both ends of the beam.
-\end{enumerate}
-
-One plot from the parametric study of \citet{abu2000vibration} meets the above requirement and is selected and illustrated in Figure. Parameter used in this plot is $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{hilalplot}
-    \caption{Reference plot extracted from \citet{abu2000vibration}. Condition: $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$. Y axis for dynamic amplification factor.}
-    \label{fig:hilalplot}
-\end{figure}
-
-Next step is to translate parameters used in above plot to usable parameters in Eq.\ref{eq:v(x,t)simpleharmonic}.
+% thus:
 
 
-$$c_{cr} = \frac{\omega_1 L}{\pi} = \frac{\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+% \begin{equation}
+%     \omega_b = \frac{\gamma_1}{2}
+% \end{equation}
 
-$$\alpha = \frac{c}{c_{cr}}$$
+% and it is mentioned in \citet[Eq.8]{abu2000vibration} that:
 
-$$c = \alpha c_{cr} = \frac{\alpha\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+% $$\zeta = \frac{\gamma_1}{\omega_1}$$
 
-$EJ$,$\mu$,$l$ needs to be selected to yield value for $c$, thus following values are randomly selected:
+% so:
 
-$$EJ = 2.43e10 Nm^2$$
+% $$\gamma_1 = \zeta\omega_1$$
 
-$$l = 54m$$
+% so:
 
-$$\mu = 6000 kg/m$$
+% $$\omega_b = \frac{1}{2}\zeta\omega_1 = \frac{1}{2}\frac{\zeta\pi^2}{l^2}\sqrt{\frac{EJ}{\mu}}$$
 
-$$c_{cr} = 117.05 m/s$$
+% where $\zeta$ is the structure damping ratio stated in EN1991-
 
-$$ c = 29.26 m/s $$
+% Adopting $\zeta = 1\%$ for steel railway bridges. This $\zeta$ value is used among all DT329 simulations run files. See Figure.\ref{fig:examplerunfile} for example.
+% T329 resonance study. By comparing with the output of reproduced resonance in DT329, the analytical model can be verified.
 
-A Matlab script is written to automate numerical calculating procedure. By typing 
+% \section{Verification of the explicit solution}
+% Since circular frequency of damping $\omega_b$ is not clearly defined by Fryba, it is necessary to verify the correctness of both explicit solution and deduced $\omega_b$ expression.
 
-\texttt{fogtest(2.43e10,54,6000,29.26,0.05)}
+% The verification is done by comparing the result of Eq.\ref{eq:v(x,t)simpleharmonic} with the result of a explicit solution in a different form obtained by another deducing method.  
 
-into the console. Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} is obtained.
+% The result in \citet{abu2000vibration} is selected to compare. This report is researching vibration of beams with general boundary conditions due to a moving harmonic load. The differential equation is illustrated as follows:
 
-\begin{figure}[h!]
-\centering 
-\setlength\figureheight{6cm} 
-\setlength\figurewidth{6cm} 
-\input{./matlab/EJ24300000000L54mu6000c29daf.tikz} 
-\caption{Time history of dynamic amplification factor in mid-span of the beam. Parameters:$EJ=2.43e10Nm^2$,$L=54m$,$\mu=6000kg/m$,$c=29.26m/s$} 
-\label{fig:EJ24300000000L54mu6000c29daf.tikz} 
-\end{figure}
+% \begin{equation}\label{eq:hilal}
+%     EIv''''+\mu \ddot{v} + r_a \dot{v}+r_i \dot{v}''' = p(x,t)
+% \end{equation}
 
-By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} it can be concluded that results are the same on y-axis. The difference of x-axis is because in Figure.\ref{fig:hilalplot} time axis is scaled to 1 but in Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} time is not scaled. Then it can be further concluded that Eq.\ref{eq:v(x,t)simpleharmonic} and expression for $\omega_b$ are both correct.
+% The difference between Eq.\ref{eq:hilal} and Eq.\ref{eq:v(x,t)simpleharmonic} is that it offers broader boundary conditions such as changing speed of the load and various kinds of supports. As a result of more general equation, the deduction steps are much more complicated. However, two solutions should yield same results under same boundary conditions that:
+
+% \begin{enumerate}
+%     \item Load moving at constant speed,
+%     \item Frequency of load equals frequency of the beam,
+%     \item Internal damping is 0,
+%     \item Simple hinge support at both ends of the beam.
+% \end{enumerate}
+
+% One plot from the parametric study of \citet{abu2000vibration} meets the above requirement and is selected and illustrated in Figure. Parameter used in this plot is $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{hilalplot}
+%     \caption{Reference plot extracted from \citet{abu2000vibration}. Condition: $\alpha = 0.25$, $\zeta = 0.05$, $\beta  = 1$. Y axis for dynamic amplification factor.}
+%     \label{fig:hilalplot}
+% \end{figure}
+
+% Next step is to translate parameters used in above plot to usable parameters in Eq.\ref{eq:v(x,t)simpleharmonic}.
+
+
+% $$c_{cr} = \frac{\omega_1 L}{\pi} = \frac{\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+
+% $$\alpha = \frac{c}{c_{cr}}$$
+
+% $$c = \alpha c_{cr} = \frac{\alpha\pi}{l}\sqrt{\frac{EJ}{\mu}}$$
+
+% $EJ$,$\mu$,$l$ needs to be selected to yield value for $c$, thus following values are randomly selected:
+
+% $$EJ = 2.43e10 Nm^2$$
+
+% $$l = 54m$$
+
+% $$\mu = 6000 kg/m$$
+
+% $$c_{cr} = 117.05 m/s$$
+
+% $$ c = 29.26 m/s $$
+
+% A Matlab script is written to automate numerical calculating procedure. By typing 
+
+% \texttt{fogtest(2.43e10,54,6000,29.26,0.05)}
+
+% into the console. Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} is obtained.
+
+% \begin{figure}[h!]
+% \centering 
+% \setlength\figureheight{6cm} 
+% \setlength\figurewidth{6cm} 
+% \input{./matlab/EJ24300000000L54mu6000c29daf.tikz} 
+% \caption{Time history of dynamic amplification factor in mid-span of the beam. Parameters:$EJ=2.43e10Nm^2$,$L=54m$,$\mu=6000kg/m$,$c=29.26m/s$} 
+% \label{fig:EJ24300000000L54mu6000c29daf.tikz} 
+% \end{figure}
+
+% By observing Figure.\ref{fig:hilalplot} and Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} it can be concluded that results are the same on y-axis. The difference of x-axis is because in Figure.\ref{fig:hilalplot} time axis is scaled to 1 but in Figure.\ref{fig:EJ24300000000L54mu6000c29daf.tikz} time is not scaled. Then it can be further concluded that Eq.\ref{eq:v(x,t)simpleharmonic} and expression for $\omega_b$ are both correct.
 
 
 \chapter{Speeds which do not require dynamic compatibility checks} \label{app:speedsafe}

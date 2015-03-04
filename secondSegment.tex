@@ -35,7 +35,7 @@ It is suggested by this report that vehicle maintenance sector ensure wheels of 
 
 \section{Study on wavelength of lateral kinematic movement}
 
-The kinematic movememnt of the train on the rail is much similar to klingel movement. This section aims to assess the capability of using klingel formula to predict the wavelength of the whole train.
+The kinematic movement of the train on the rail is much similar to klingel movement. This section aims to assess the capability of using klingel formula to predict the wavelength of the whole train.
 
 Klingel movement is proposed by Klingel which can well predict the moving trend of a single wheelset on a straight railway track. However, the kinematic movement of a certain wheelset assembled into a running train is different from the movement of a single free wheelset. This is due to multiple bodies interact with each other, introducing more complicated mechanism in wheel/rail interaction. 
 
@@ -428,21 +428,21 @@ Thus in order to perform the comparison mentioned above, both input and output d
     \centering
     \includegraphics[width=0.8\textwidth]{c1}
     \caption{Figure C1 extracted from \citet{d181dt329} }
-    \label{fig:c1}
+    % \label{fig:c1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c3}
     \caption{Figure C3 extracted from \citet{d181dt329} }
-    \label{fig:c3}
+    % \label{fig:c3}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{c9}
     \caption{Figure C9 extracted from \citet{d181dt329} }
-    \label{fig:c9}
+    % \label{fig:c9}
 \end{figure}
 
 By observing Eq.\ref{eq:v(x,t)simpleharmonic}, it is concluded that force amplitude is an independent variable and perfectly linear to the analytical output. Thus the equivalent force is obtained by inputing bridge parameters and train speed into the analytical solution Eq.\ref{eq:v(x,t)simpleharmonic} and manually increasing the force amplitude little by little until the peak response output reaches the same magnitude of peak simulation output. The parameters used and their corresponding results are presented in Table.\ref{tab:parametersetupsandequivalentforce}.
@@ -466,7 +466,7 @@ By observing Eq.\ref{eq:v(x,t)simpleharmonic}, it is concluded that force amplit
         Equivalent load amplitude(kN) & 14 & 15 & 14 \\
         \hline
     \end{tabular}
-    \label{tab:parametersetupsandequivalentforce}
+    % \label{tab:parametersetupsandequivalentforce}
 \end{table}
 
 \subsection{Key parameter for equivalent force amplitude and hypothesis expression for refined load model}\label{sec:keyparameterforequivalentamplitudeandhypothesis}
@@ -606,7 +606,7 @@ Their corresponding benchmarks are presented in Table.\ref{tab:allBenchmark}.
         C13 & 0.0035 & 0.0034 & 0.0047 & 0.0016 & 0.00141 & 0.0002 \\
         C14 & 0.0021 & 0.0020 & 0.0028 & 0.0010 & 0.0008 & 0.00012 \\
         \hline
-        Simulation Peak Displacement & 0.0014 & 0.0125 & 0.0178 & 0.00148 & 0.00141 & 0.00012 \\
+        Simulation Peak Displacement & 0.014 & 0.0125 & 0.0178 & 0.00148 & 0.00141 & 0.00012 \\
         \hline
         \label{tab:allBenchmark}
     \end{tabular}
@@ -658,8 +658,8 @@ the envelop for displacement is generated and illustrated in Figure.\ref{fig:spe
 
 \begin{figure}[h!]
 \centering 
-\newlength\figureheight 
-\newlength\figurewidth 
+% \newlength\figureheight 
+% \newlength\figurewidth 
 \setlength\figureheight{6cm} 
 \setlength\figurewidth{6cm} 
 \input{./matlab/spedefEJ6560000000000L255min1max30mu20478.tikz} 

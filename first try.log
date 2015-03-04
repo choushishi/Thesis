@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.9)  22 NOV 2014 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.9)  26 FEB 2015 03:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1331,7 +1331,7 @@ enefit from \pgfplotsset{compat=1.10} (current compat level: 1.8).
 \openout2 = `titlepage.aux'.
 
 (./titlepage.tex
-<./Image/TU_d_line_P1_color_1.jpg, id=481, 481.8pt x 226.6869pt>
+<./Image/TU_d_line_P1_color_1.jpg, id=485, 481.8pt x 226.6869pt>
 File: ./Image/TU_d_line_P1_color_1.jpg Graphic file (type jpg)
 
 <use ./Image/TU_d_line_P1_color_1.jpg>
@@ -1339,7 +1339,7 @@ Package pdftex.def Info: ./Image/TU_d_line_P1_color_1.jpg used on input line 31
 .
 (pdftex.def)             Requested size: 130.08733pt x 61.20627pt.
 
-<./Image/Iv-Infra.jpg, id=482, 119.0046pt x 69.1383pt>
+<./Image/Iv-Infra.jpg, id=486, 119.0046pt x 69.1383pt>
 File: ./Image/Iv-Infra.jpg Graphic file (type jpg)
 
 <use ./Image/Iv-Infra.jpg>
@@ -1371,202 +1371,40 @@ l.149 \tableofcontents
 \openout5 = `"first try.toc"'.
 
  [4] (./first try.lof
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 5.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 6.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 7.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 8.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 9.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 11.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 5 undefined on inpu
-t line 12.
-
-
-Package natbib Warning: Citation `dynamicslecturenote' on page 5 undefined on i
-nput line 15.
-
-
-Package natbib Warning: Citation `d181dt329' on page 5 undefined on input line 
-22.
-
-
-Package natbib Warning: Citation `d181dt329' on page 5 undefined on input line 
-23.
-
-
-Package natbib Warning: Citation `d181dt329' on page 5 undefined on input line 
-24.
-
-
-Package natbib Warning: Citation `d181dt329' on page 5 undefined on input line 
-25.
-
-
-Package natbib Warning: Citation `abu2000vibration' on page 5 undefined on inpu
-t line 32.
-
-
-Overfull \hbox (10.22571pt too wide) in paragraph at lines 33--33
+Overfull \hbox (10.22571pt too wide) in paragraph at lines 32--32
  [][] [][][]\OT1/cmr/m/n/10 Time his-tory of dy-namic am-pli-fi-ca-tion fac-tor
  in mid-span of the beam. Parameters:$\OML/cmm/m/it/10 EJ \OT1/cmr/m/n/10 = 
  []
 
-
-Package natbib Warning: Citation `d181dt329' on page 5 undefined on input line 
-36.
-
-
-Package natbib Warning: Citation `d181dt329' on page 5 undefined on input line 
-37.
-
 [5
 
 ]
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-38.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-39.
+Overfull \hbox (32.01056pt too wide) in paragraph at lines 65--65
+ [][] [][][]\OT1/cmr/m/n/10 Horizontal track ir-reg-u-lar-i-ties for stan-dard 
+pas-sen-ger trains. Ex-tract from D181Committee$[]$$[]$, 
+ []
 
 
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-40.
+Overfull \hbox (34.98277pt too wide) in paragraph at lines 66--66
+ [][] [][][]\OT1/cmr/m/n/10 Horizontal track ir-reg-u-lar-i-ties for high speed
+ pas-sen-ger train. Ex-tract from D181Committee$[]$$[]$, 
+ []
 
 
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-41.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 6 undefined on i
-nput line 46.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 6 undefined on i
-nput line 47.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 6 undefined on i
-nput line 48.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 6 undefined on i
-nput line 49.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-53.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-54.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-55.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-56.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-57.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-58.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-59.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-60.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-61.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-62.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-63.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-64.
-
-
-Package natbib Warning: Citation `d181' on page 6 undefined on input line 65.
-
-
-Package natbib Warning: Citation `d181' on page 6 undefined on input line 66.
-
-
-Package natbib Warning: Citation `d181' on page 6 undefined on input line 67.
-
-
-Package natbib Warning: Citation `EC15528' on page 6 undefined on input line 69
-.
-
-
-Package natbib Warning: Citation `d181' on page 6 undefined on input line 70.
-
-
-Package natbib Warning: Citation `d181dt329' on page 6 undefined on input line 
-71.
-
-
-Package natbib Warning: Citation `EC15528' on page 6 undefined on input line 73
-.
+Overfull \hbox (34.27707pt too wide) in paragraph at lines 69--69
+ [][] [][][]\OT1/cmr/m/n/10 LATERAL WHEEL AND AXLE FORCES FOR BRIDGES. Ex-tract
+ from D181Committee$[]$$[]$, 
+ []
 
 )
 \tf@lof=\write6
 \openout6 = `"first try.lof"'.
 
  [6] (./first try.lot
-
-Package natbib Warning: Citation `13848' on page 7 undefined on input line 4.
-
-
-Package natbib Warning: Citation `d181dt329' on page 7 undefined on input line 
-8.
-
-
-Package natbib Warning: Citation `d181dt329' on page 7 undefined on input line 
-23.
-
-
-Package natbib Warning: Citation `d181dt329' on page 7 undefined on input line 
-24.
-
-
-Package natbib Warning: Citation `EC15528' on page 7 undefined on input line 28
-.
+Overfull \hbox (5.28821pt too wide) in paragraph at lines 8--8
+ [][] [][][]\OT1/cmr/m/n/10 Peak Lat-eral Track Force Over All Track Qual-i-tie
+s. Ex-tracted From D181Committee$[]$$[]$, 
+ []
 
 )
 \tf@lot=\write7
@@ -1582,32 +1420,12 @@ Chapter 1.
 [8
 
 
-]
-Overfull \hbox (22.19542pt too wide) in paragraph at lines 86--87
- [][] 
- []
-
-) [9]
+]) [9]
 \openout2 = `literature.aux'.
 
  (./literature.tex
 Chapter 2.
-
-Package natbib Warning: Citation `da2007dynamic' on page 10 undefined on input 
-line 10.
-
-
-Package natbib Warning: Citation `fryba1996dynamics' on page 10 undefined on in
-put line 10.
-
-
-Package natbib Warning: Citation `EC12' on page 10 undefined on input line 10.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 21.
-
-<./Image/wheelsetbiconus.pdf, id=856, 174.47966pt x 164.22876pt>
+<./Image/wheelsetbiconus.pdf, id=923, 174.47966pt x 164.22876pt>
 File: ./Image/wheelsetbiconus.pdf Graphic file (type pdf)
 
 <use ./Image/wheelsetbiconus.pdf>
@@ -1615,17 +1433,9 @@ Package pdftex.def Info: ./Image/wheelsetbiconus.pdf used on input line 30.
 (pdftex.def)             Requested size: 216.81pt x 204.08257pt.
 
 
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 31.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 31.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/klingelmovement.pdf, id=859, 307.64876pt x 113.15866pt>
+<./Image/klingelmovement.pdf, id=928, 307.64876pt x 113.15866pt>
 File: ./Image/klingelmovement.pdf Graphic file (type pdf)
 
 <use ./Image/klingelmovement.pdf>
@@ -1633,29 +1443,13 @@ Package pdftex.def Info: ./Image/klingelmovement.pdf used on input line 40.
 (pdftex.def)             Requested size: 346.89732pt x 127.60359pt.
 
 
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 41.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 41.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/fwc.pdf, id=860, 185.27237pt x 87.6607pt>
+<./Image/fwc.pdf, id=931, 185.27237pt x 87.6607pt>
 File: ./Image/fwc.pdf Graphic file (type pdf)
  <use ./Image/fwc.pdf>
 Package pdftex.def Info: ./Image/fwc.pdf used on input line 47.
 (pdftex.def)             Requested size: 216.81pt x 102.58533pt.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 48.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 10 undefined on inp
-ut line 48.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1665,23 +1459,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [11 <./Image/wheelsetbiconus.pdf> <./Image/klingelmovement.pdf>]
-<./Image/flangingwheelset.pdf, id=891, 188.13828pt x 93.1184pt>
+<./Image/flangingwheelset.pdf, id=968, 188.13828pt x 93.1184pt>
 File: ./Image/flangingwheelset.pdf Graphic file (type pdf)
 
 <use ./Image/flangingwheelset.pdf>
 Package pdftex.def Info: ./Image/flangingwheelset.pdf used on input line 72.
 (pdftex.def)             Requested size: 216.81pt x 107.31548pt.
 
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 73.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 73.
-
-
-<./Image/amplitudefrequencyinstability.pdf, id=893, 175.68806pt x 186.71878pt>
+<./Image/amplitudefrequencyinstability.pdf, id=972, 175.68806pt x 186.71878pt>
 File: ./Image/amplitudefrequencyinstability.pdf Graphic file (type pdf)
 
 <use ./Image/amplitudefrequencyinstability.pdf>
@@ -1690,31 +1475,14 @@ t line 82.
 (pdftex.def)             Requested size: 216.81pt x 230.42058pt.
 
 
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 83.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 83.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Image/singlecontact.pdf, id=896, 79.61324pt x 108.9165pt>
+<./Image/singlecontact.pdf, id=977, 79.61324pt x 108.9165pt>
 File: ./Image/singlecontact.pdf Graphic file (type pdf)
 
 <use ./Image/singlecontact.pdf>
 Package pdftex.def Info: ./Image/singlecontact.pdf used on input line 96.
 (pdftex.def)             Requested size: 86.72267pt x 118.64682pt.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 97.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 97.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--97
 []\OT1/cmr/m/n/9 (a) |Sin-gle con-tact
@@ -1725,7 +1493,12 @@ Underfull \hbox (badness 6910) in paragraph at lines 97--97
 \OT1/cmr/m/n/9 point. Ex-tracted
  []
 
-<./Image/doublecontact.pdf, id=897, 182.97942pt x 103.71237pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\OT1/cmr/m/n/9 from Es-veld$[]$$[]$,
+ []
+
+<./Image/doublecontact.pdf, id=980, 182.97942pt x 103.71237pt>
 File: ./Image/doublecontact.pdf Graphic file (type pdf)
 
 <use ./Image/doublecontact.pdf>
@@ -1733,23 +1506,11 @@ Package pdftex.def Info: ./Image/doublecontact.pdf used on input line 101.
 (pdftex.def)             Requested size: 216.81pt x 122.89384pt.
 
 
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 102.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 102.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 12 undefined on inp
-ut line 109.
 
 [12 <./Image/fwc.pdf> <./Image/flangingwheelset.pdf>] [13 <./Image/amplitudefre
 quencyinstability.pdf> <./Image/singlecontact.pdf> <./Image/doublecontact.pdf>]
-<./Image/wheelsettrackdimension.pdf, id=949, 381.92035pt x 174.15143pt>
+<./Image/wheelsettrackdimension.pdf, id=1035, 381.92035pt x 174.15143pt>
 File: ./Image/wheelsettrackdimension.pdf Graphic file (type pdf)
 
 <use ./Image/wheelsettrackdimension.pdf>
@@ -1757,39 +1518,15 @@ Package pdftex.def Info: ./Image/wheelsettrackdimension.pdf used on input line
 121.
 (pdftex.def)             Requested size: 346.89732pt x 158.18571pt.
 
-
-Package natbib Warning: Citation `esveld2001modern' on page 14 undefined on inp
-ut line 122.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 14 undefined on inp
-ut line 122.
-
-<./Image/conicalwornprofiles.pdf, id=951, 173.2589pt x 203.025pt>
+<./Image/conicalwornprofiles.pdf, id=1039, 173.2589pt x 203.025pt>
 File: ./Image/conicalwornprofiles.pdf Graphic file (type pdf)
 
 <use ./Image/conicalwornprofiles.pdf>
 Package pdftex.def Info: ./Image/conicalwornprofiles.pdf used on input line 154
 .
 (pdftex.def)             Requested size: 260.17465pt x 304.88676pt.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 14 undefined on inp
-ut line 155.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 14 undefined on inp
-ut line 155.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14 <./Image/wheelsettrackdimension.pdf>]
-
-Package natbib Warning: Citation `13848' on page 15 undefined on input line 167
-.
-
-<./Image/lateraldeviationdefine.pdf, id=968, 368.15895pt x 116.70752pt>
+ [14 <./Image/wheelsettrackdimension.pdf>] <./Image/lateraldeviationdefine.pdf,
+ id=1058, 368.15895pt x 116.70752pt>
 File: ./Image/lateraldeviationdefine.pdf Graphic file (type pdf)
 
 <use ./Image/lateraldeviationdefine.pdf>
@@ -1801,39 +1538,23 @@ Package pdftex.def Info: ./Image/lateraldeviationdefine.pdf used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: Citation `13848' on page 15 undefined on input line 184
-.
-
-
-Package natbib Warning: Citation `13848' on page 15 undefined on input line 184
-.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15 <./Image/conicalwornprofiles.pdf>] [16 <./Image/lateraldeviationdefine.pdf>
-] <./Image/massbeammodel.pdf, id=1062, 770.88pt x 297.11pt>
+] <./Image/massbeammodel.pdf, id=1155, 770.88pt x 297.11pt>
 File: ./Image/massbeammodel.pdf Graphic file (type pdf)
 
 <use ./Image/massbeammodel.pdf>
 Package pdftex.def Info: ./Image/massbeammodel.pdf used on input line 251.
 (pdftex.def)             Requested size: 346.89732pt x 133.69826pt.
 
-<./Image/amplitudefrequencycharacteristic.pdf, id=1064, 207.2019pt x 179.02855p
+<./Image/amplitudefrequencycharacteristic.pdf, id=1157, 207.2019pt x 179.02855p
 t>
 File: ./Image/amplitudefrequencycharacteristic.pdf Graphic file (type pdf)
  <use ./Image/amplitudefrequencycharacteristic.pdf>
 Package pdftex.def Info: ./Image/amplitudefrequencycharacteristic.pdf used on i
 nput line 285.
 (pdftex.def)             Requested size: 260.17465pt x 224.81227pt.
-
-
-Package natbib Warning: Citation `dynamicslecturenote' on page 17 undefined on 
-input line 286.
-
-
-Package natbib Warning: Citation `dynamicslecturenote' on page 17 undefined on 
-input line 286.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1844,24 +1565,8 @@ Overfull \hbox (4.26451pt too wide) in paragraph at lines 295--295
 dges 
  []
 
-
-Package natbib Warning: Citation `UIC776-2' on page 18 undefined on input line 
-297.
-
-[18 <./Image/amplitudefrequencycharacteristic.pdf>]
-
-Package natbib Warning: Citation `UIC776-2' on page 19 undefined on input line 
-316.
-
-
-Package natbib Warning: Citation `UIC776-2' on page 19 undefined on input line 
-334.
-
-
-Package natbib Warning: Citation `UIC776-2' on page 19 undefined on input line 
-346.
-
-[19] <./Image/vampire.jpg, id=1111, 577.15625pt x 248.93pt>
+[18 <./Image/amplitudefrequencycharacteristic.pdf>] [19]
+<./Image/vampire.jpg, id=1210, 577.15625pt x 248.93pt>
 File: ./Image/vampire.jpg Graphic file (type jpg)
 
 <use ./Image/vampire.jpg>
@@ -1869,84 +1574,15 @@ Package pdftex.def Info: ./Image/vampire.jpg used on input line 370.
 (pdftex.def)             Requested size: 346.89732pt x 149.62503pt.
  [20 <./Image/vampire.jpg>]
 Chapter 3.
-
-Package natbib Warning: Citation `EC12' on page 21 undefined on input line 384.
-
-
-
-Package natbib Warning: Citation `EC0' on page 21 undefined on input line 412.
-
 [21
 
 ]
-
-Package natbib Warning: Citation `EC0' on page 22 undefined on input line 429.
-
-
-Package natbib Warning: Citation `EC0' on page 22 undefined on input line 430.
-
-
-Package natbib Warning: Citation `d181' on page 22 undefined on input line 894.
-
-
-
-Package natbib Warning: Citation `EC12' on page 22 undefined on input line 898.
-
+Overfull \hbox (5.42717pt too wide) in paragraph at lines 894--895
+\OT1/cmr/m/n/10 Nosing force is de-fined in Eu-rocode 1991-2. Its orig-i-nal ba
+ck-ground can be found in D181Committee$[]$$[]$,
+ []
 
 [22]
-
-Package natbib Warning: Citation `d181' on page 23 undefined on input line 903.
-
-
-
-Package natbib Warning: Citation `d181' on page 23 undefined on input line 908.
-
-
-
-Package natbib Warning: Citation `d181' on page 23 undefined on input line 916.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 918.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 918.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 920.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 947.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 952.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 952.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 953.
-
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 953.
-
-
-
-Package natbib Warning: Citation `1990a2' on page 23 undefined on input line 10
-18.
-
-
-Package natbib Warning: Citation `EC12' on page 23 undefined on input line 1018
-.
-
-
 Overfull \hbox (3.99228pt too wide) in paragraph at lines 1039--1039
 []|\OT1/cmr/m/n/10 Maximum
  []
@@ -1970,17 +1606,10 @@ Overfull \hbox (12.6312pt too wide) in paragraph at lines 1039--1039
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [23]
-
-Package natbib Warning: Citation `d181' on page 24 undefined on input line 1060
-.
-
-
-Package natbib Warning: Citation `EC12' on page 24 undefined on input line 1060
-.
-
-
-Package natbib Warning: Citation `d181' on page 24 undefined on input line 1060
-.
+Overfull \hbox (4.22812pt too wide) in paragraph at lines 1060--1061
+[]\OT1/cmr/m/n/10 Evidence of D181Committee$[]$$[]$$[]$ is the ori-gin of CEN$[
+]$$[]$, A.2.4.4.2.4(3)$[]$ is found in D181Committee$[]$$[]$,
+ []
 
 [24]
 Chapter 4.
@@ -1998,30 +1627,16 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 [25
 
-]
-
-Package natbib Warning: Citation `d181rp2' on page 26 undefined on input line 1
-363.
-
-[26]
-<./Image/bridgeparametercombination.pdf, id=1205, 396.29198pt x 296.2264pt>
+] [26]
+<./Image/bridgeparametercombination.pdf, id=1331, 396.29198pt x 296.2264pt>
 File: ./Image/bridgeparametercombination.pdf Graphic file (type pdf)
 
 <use ./Image/bridgeparametercombination.pdf>
 Package pdftex.def Info: ./Image/bridgeparametercombination.pdf used on input l
 ine 1445.
 (pdftex.def)             Requested size: 433.62001pt x 324.13242pt.
- [27 <./Image/bridgeparametercombination.pdf>] [28]
-
-Package natbib Warning: Citation `d181dt329' on page 29 undefined on input line
- 1517.
-
-[29]
-
-Package natbib Warning: Citation `d181dt329' on page 30 undefined on input line
- 1575.
-
-<./Image/apparentshift.pdf, id=1249, 843.75223pt x 596.58884pt>
+ [27 <./Image/bridgeparametercombination.pdf>] [28] [29]
+<./Image/apparentshift.pdf, id=1377, 843.75223pt x 596.58884pt>
 File: ./Image/apparentshift.pdf Graphic file (type pdf)
 
 <use ./Image/apparentshift.pdf>
@@ -2029,90 +1644,33 @@ Package pdftex.def Info: ./Image/apparentshift.pdf used on input line 1583.
 (pdftex.def)             Requested size: 433.62001pt x 306.5958pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 30 undefined on input line
- 1584.
-
-
-Package natbib Warning: Citation `d181dt329' on page 30 undefined on input line
- 1584.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30]
-
-Package natbib Warning: Citation `d181' on page 31 undefined on input line 1597
-.
-
-[31 <./Image/apparentshift.pdf>]
-
-Package natbib Warning: Citation `d181dt329' on page 32 undefined on input line
- 1617.
-
-
-Package natbib Warning: Citation `d181dt329' on page 32 undefined on input line
- 1626.
-
-<./Image/b1.pdf, id=1300, 843.75223pt x 596.58884pt>
+[30] [31 <./Image/apparentshift.pdf>]
+<./Image/b1.pdf, id=1433, 843.75223pt x 596.58884pt>
 File: ./Image/b1.pdf Graphic file (type pdf)
  <use ./Image/b1.pdf>
 Package pdftex.def Info: ./Image/b1.pdf used on input line 1645.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 32 undefined on input line
- 1646.
-
-
-Package natbib Warning: Citation `d181dt329' on page 32 undefined on input line
- 1646.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Image/b2.pdf, id=1302, 843.75223pt x 596.58884pt>
+<./Image/b2.pdf, id=1437, 843.75223pt x 596.58884pt>
 File: ./Image/b2.pdf Graphic file (type pdf)
  <use ./Image/b2.pdf>
 Package pdftex.def Info: ./Image/b2.pdf used on input line 1657.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 32 undefined on input line
- 1658.
-
-
-Package natbib Warning: Citation `d181dt329' on page 32 undefined on input line
- 1658.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32] [33 <./Image/b1.pdf> <./Image/b2.pdf>]
-<./Image/b7.pdf, id=1371, 843.75223pt x 596.58884pt>
+<./Image/b7.pdf, id=1508, 843.75223pt x 596.58884pt>
 File: ./Image/b7.pdf Graphic file (type pdf)
  <use ./Image/b7.pdf>
 Package pdftex.def Info: ./Image/b7.pdf used on input line 1671.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 34 undefined on input line
- 1672.
-
-
-Package natbib Warning: Citation `d181dt329' on page 34 undefined on input line
- 1672.
-
-
-Package natbib Warning: Citation `d181dt329' on page 34 undefined on input line
- 1678.
-
-
-Package natbib Warning: Citation `d181dt329' on page 34 undefined on input line
- 1678.
-
-
-Package natbib Warning: Citation `d181dt329' on page 34 undefined on input line
- 1693.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2124,36 +1682,11 @@ Missing character: There is no , in font nullfont!
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package natbib Warning: Citation `EC12' on page 36 undefined on input line 1790
-.
-
-
-Package natbib Warning: Citation `d181' on page 36 undefined on input line 1792
-.
-
-
-Package natbib Warning: Citation `13848' on page 36 undefined on input line 179
-7.
-
-[36] [37]
-
-Package natbib Warning: Citation `EC12' on page 38 undefined on input line 1832
-.
-
-) [38]
+[36] [37]) [38]
 \openout2 = `theoretical.aux'.
 
  (./theoretical.tex
 Chapter 5.
-
-Package natbib Warning: Citation `d181dt329' on page 39 undefined on input line
- 258.
-
-
-Package natbib Warning: Citation `esveld2001modern' on page 39 undefined on inp
-ut line 262.
-
 [39
 
 
@@ -2166,86 +1699,41 @@ Overfull \hbox (26.85294pt too wide) in paragraph at lines 320--333
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40] <./Image/2alxefreight.png, id=1456, 99.11314pt x 33.03772pt>
+[40] <./Image/2alxefreight.png, id=1604, 99.11314pt x 33.03772pt>
 File: ./Image/2alxefreight.png Graphic file (type png)
 
 <use ./Image/2alxefreight.png>
 Package pdftex.def Info: ./Image/2alxefreight.png used on input line 343.
 (pdftex.def)             Requested size: 216.81pt x 72.2723pt.
 
-<./Image/4alxefreight.png, id=1458, 1027.84pt x 513.92pt>
+<./Image/4alxefreight.png, id=1606, 1027.84pt x 513.92pt>
 File: ./Image/4alxefreight.png Graphic file (type png)
 
 <use ./Image/4alxefreight.png>
 Package pdftex.def Info: ./Image/4alxefreight.png used on input line 350.
 (pdftex.def)             Requested size: 216.81pt x 108.40472pt.
-
-
-Package natbib Warning: Citation `trainparameters' on page 41 undefined on inpu
-t line 367.
-
-[41 <./Image/2alxefreight.png> <./Image/4alxefreight.png>] [42]
-
-Package natbib Warning: Citation `EC15528' on page 43 undefined on input line 4
-97.
-
-[43]
+ [41 <./Image/2alxefreight.png> <./Image/4alxefreight.png>] [42] [43]
 Chapter 6.
-<./Image/harmonicloadbeam.pdf, id=1490, 269.31555pt x 92.85616pt>
+<./Image/harmonicloadbeam.pdf, id=1641, 269.08528pt x 92.7465pt>
 File: ./Image/harmonicloadbeam.pdf Graphic file (type pdf)
 
 <use ./Image/harmonicloadbeam.pdf>
 Package pdftex.def Info: ./Image/harmonicloadbeam.pdf used on input line 592.
-(pdftex.def)             Requested size: 216.81pt x 74.75258pt.
+(pdftex.def)             Requested size: 216.81pt x 74.72942pt.
  [44
 
- <./Image/harmonicloadbeam.pdf>]
-
-Package natbib Warning: Citation `fryba1999vibration' on page 45 undefined on i
-nput line 608.
-
-
-Package natbib Warning: Citation `fryba1999vibration' on page 45 undefined on i
-nput line 608.
-
-[45] [46]
-
-Package natbib Warning: Citation `abu2000vibration' on page 47 undefined on inp
-ut line 746.
-
-
-Package natbib Warning: Citation `abu2000vibration' on page 47 undefined on inp
-ut line 759.
-
-[47]
-
-Package natbib Warning: Citation `abu2000vibration' on page 48 undefined on inp
-ut line 781.
-
-
-Package natbib Warning: Citation `abu2000vibration' on page 48 undefined on inp
-ut line 796.
-
-<./Image/hilalplot.pdf, id=1611, 116.21889pt x 76.05875pt>
+ <./Image/harmonicloadbeam.pdf>] [45]
+[46] [47] <./Image/hilalplot.pdf, id=1714, 116.21889pt x 76.05875pt>
 File: ./Image/hilalplot.pdf Graphic file (type pdf)
 
 <use ./Image/hilalplot.pdf>
 Package pdftex.def Info: ./Image/hilalplot.pdf used on input line 800.
 (pdftex.def)             Requested size: 216.81pt x 141.9088pt.
-
-
-Package natbib Warning: Citation `abu2000vibration' on page 48 undefined on inp
-ut line 801.
-
-
-Package natbib Warning: Citation `abu2000vibration' on page 48 undefined on inp
-ut line 801.
-
-[48 <./Image/hilalplot.pdf>]
+ [48 <./Image/hilalplot.pdf>]
 \figureheight=\skip70
 \figurewidth=\skip71
- (./matlab/EJ24300000000L54mu6000c29daf.tikz)
-[49]
+
+(./matlab/EJ24300000000L54mu6000c29daf.tikz) [49]
 Chapter 7.
 [50
 
@@ -2255,63 +1743,31 @@ Overfull \hbox (14.77971pt too wide) in paragraph at lines 888--889
  []
 
 
-Package natbib Warning: Citation `d181' on page 51 undefined on input line 897.
-
-
-
-Package natbib Warning: Citation `majka2008effects' on page 51 undefined on inp
-ut line 897.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51] <./Image/c1.pdf, id=1709, 843.75223pt x 596.58884pt>
+[51] <./Image/c1.pdf, id=1817, 843.75223pt x 596.58884pt>
 File: ./Image/c1.pdf Graphic file (type pdf)
  <use ./Image/c1.pdf>
 Package pdftex.def Info: ./Image/c1.pdf used on input line 944.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 52 undefined on input line
- 945.
-
-
-Package natbib Warning: Citation `d181dt329' on page 52 undefined on input line
- 945.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Image/c3.pdf, id=1710, 843.75223pt x 596.58884pt>
+<./Image/c3.pdf, id=1820, 843.75223pt x 596.58884pt>
 File: ./Image/c3.pdf Graphic file (type pdf)
  <use ./Image/c3.pdf>
 Package pdftex.def Info: ./Image/c3.pdf used on input line 951.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 52 undefined on input line
- 952.
-
-
-Package natbib Warning: Citation `d181dt329' on page 52 undefined on input line
- 952.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Image/c9.pdf, id=1711, 843.75223pt x 596.58884pt>
+<./Image/c9.pdf, id=1823, 843.75223pt x 596.58884pt>
 File: ./Image/c9.pdf Graphic file (type pdf)
  <use ./Image/c9.pdf>
 Package pdftex.def Info: ./Image/c9.pdf used on input line 958.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 52 undefined on input line
- 959.
-
-
-Package natbib Warning: Citation `d181dt329' on page 52 undefined on input line
- 959.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2325,61 +1781,35 @@ Overfull \hbox (30.91975pt too wide) in paragraph at lines 969--985
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [52] [53 <./Image/c1.pdf> <./Image/c3.pdf>] [54 <./Image/c9.pdf>]
-<./Image/c12.pdf, id=1834, 843.75223pt x 596.58884pt>
+<./Image/c12.pdf, id=1948, 843.75223pt x 596.58884pt>
 File: ./Image/c12.pdf Graphic file (type pdf)
  <use ./Image/c12.pdf>
 Package pdftex.def Info: ./Image/c12.pdf used on input line 1013.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
-
-Package natbib Warning: Citation `d181dt329' on page 55 undefined on input line
- 1014.
-
-
-Package natbib Warning: Citation `d181dt329' on page 55 undefined on input line
- 1014.
-
-<./Image/c13.pdf, id=1835, 843.75223pt x 596.58884pt>
+<./Image/c13.pdf, id=1951, 843.75223pt x 596.58884pt>
 File: ./Image/c13.pdf Graphic file (type pdf)
  <use ./Image/c13.pdf>
 Package pdftex.def Info: ./Image/c13.pdf used on input line 1020.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 55 undefined on input line
- 1021.
-
-
-Package natbib Warning: Citation `d181dt329' on page 55 undefined on input line
- 1021.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Image/c14.pdf, id=1836, 843.75223pt x 596.58884pt>
+<./Image/c14.pdf, id=1954, 843.75223pt x 596.58884pt>
 File: ./Image/c14.pdf Graphic file (type pdf)
  <use ./Image/c14.pdf>
 Package pdftex.def Info: ./Image/c14.pdf used on input line 1027.
 (pdftex.def)             Requested size: 346.89732pt x 245.27664pt.
 
 
-Package natbib Warning: Citation `d181dt329' on page 55 undefined on input line
- 1028.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package natbib Warning: Citation `d181dt329' on page 55 undefined on input line
- 1028.
-
+[55 <./Image/c12.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[55 <./Image/c12.pdf>] [56 <./Image/c13.pdf> <./Image/c14.pdf>] [57]
+[56 <./Image/c13.pdf> <./Image/c14.pdf>] [57]
 Chapter 8.
 (./matlab/spedefEJ6560000000000L255min1max30mu20478.tikz)
 
@@ -2389,39 +1819,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [59] [60]
 Chapter 9.
-
-Package natbib Warning: Citation `code2005518' on page 61 undefined on input li
-ne 1186.
-
-
-Package natbib Warning: Citation `en200714363' on page 61 undefined on input li
-ne 1186.
-
-
-Package natbib Warning: Citation `cuadrado2008analysis' on page 61 undefined on
- input line 1186.
-
-
-Package natbib Warning: Citation `en200714363' on page 61 undefined on input li
-ne 1186.
-
 [61
 
 ]
-
-Package natbib Warning: Citation `13803' on page 62 undefined on input line 118
-7.
-
-
-Package natbib Warning: Citation `EC0' on page 62 undefined on input line 1190.
-
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 62 undefined on 
-input line 1208.
-
-
-<./Image/forcesatflangecontactlocation.pdf, id=1955, 170.79619pt x 135.8693pt>
+<./Image/forcesatflangecontactlocation.pdf, id=2082, 170.79619pt x 135.8693pt>
 File: ./Image/forcesatflangecontactlocation.pdf Graphic file (type pdf)
 
 <use ./Image/forcesatflangecontactlocation.pdf>
@@ -2430,35 +1831,18 @@ t line 1215.
 (pdftex.def)             Requested size: 173.44534pt x 137.98776pt.
 
 
-Package natbib Warning: Citation `iwnicki2006handbook' on page 62 undefined on 
-input line 1216.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 62 undefined on 
-input line 1216.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[62] <./Image/gaugewideningderailment.pdf, id=1975, 227.68272pt x 162.59465pt>
+[62] <./Image/gaugewideningderailment.pdf, id=2108, 227.68272pt x 162.59465pt>
 File: ./Image/gaugewideningderailment.pdf Graphic file (type pdf)
 
 <use ./Image/gaugewideningderailment.pdf>
 Package pdftex.def Info: ./Image/gaugewideningderailment.pdf used on input line
  1237.
 (pdftex.def)             Requested size: 346.89732pt x 247.75673pt.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 63 undefined on 
-input line 1238.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 63 undefined on 
-input line 1238.
-
-[63 <./Image/forcesatflangecontactlocation.pdf> <./Image/gaugewideningderailmen
-t.pdf>]
-<./Image/lateraltrackpanelshift.pdf, id=2123, 308.99602pt x 118.08171pt>
+ [63 <./Image/forcesatflangecontactlocation.pdf> <./Image/gaugewideningderailme
+nt.pdf>]
+<./Image/lateraltrackpanelshift.pdf, id=2257, 308.99602pt x 118.08171pt>
 File: ./Image/lateraltrackpanelshift.pdf Graphic file (type pdf)
 
 <use ./Image/lateraltrackpanelshift.pdf>
@@ -2466,20 +1850,7 @@ Package pdftex.def Info: ./Image/lateraltrackpanelshift.pdf used on input line
 1262.
 (pdftex.def)             Requested size: 346.89732pt x 132.5767pt.
 
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 64 undefined on 
-input line 1263.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 64 undefined on 
-input line 1263.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 64 undefined on 
-input line 1274.
-
-
-<./Image/wheelsetoscillatesaroundthetrackcentre.pdf, id=2125, 393.54468pt x 172
+<./Image/wheelsetoscillatesaroundthetrackcentre.pdf, id=2262, 393.54468pt x 172
 .61835pt>
 File: ./Image/wheelsetoscillatesaroundthetrackcentre.pdf Graphic file (type pdf
 )
@@ -2489,32 +1860,14 @@ d on input line 1281.
 (pdftex.def)             Requested size: 346.89732pt x 152.1601pt.
 
 
-Package natbib Warning: Citation `iwnicki2006handbook' on page 64 undefined on 
-input line 1282.
-
-
-Package natbib Warning: Citation `iwnicki2006handbook' on page 64 undefined on 
-input line 1282.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[64 <./Image/lateraltrackpanelshift.pdf>]
-
-Package natbib Warning: Citation `12299' on page 65 undefined on input line 129
-2.
-
-) [65 <./Image/wheelsetoscillatesaroundthetrackcentre.pdf>]
+[64 <./Image/lateraltrackpanelshift.pdf>]) [65 <./Image/wheelsetoscillatesaroun
+dthetrackcentre.pdf>]
 \openout2 = `calculation.aux'.
 
  (./calculation.tex
 Chapter 10.
-
-Package natbib Warning: Citation `d181' on page 66 undefined on input line 7.
-
-
-Package natbib Warning: Citation `EC12' on page 66 undefined on input line 7.
-
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -2531,19 +1884,11 @@ Chapter 11.
 
 ]
 Appendix A.
-<./Image/vp11.pdf, id=2270, 596.58884pt x 843.75223pt>
+<./Image/vp11.pdf, id=2414, 596.58884pt x 843.75223pt>
 File: ./Image/vp11.pdf Graphic file (type pdf)
  <use ./Image/vp11.pdf>
 Package pdftex.def Info: ./Image/vp11.pdf used on input line 57.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 58.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 58.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 59.
@@ -2551,19 +1896,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 59.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp12.pdf, id=2271, 596.58884pt x 843.75223pt>
+<./Image/vp12.pdf, id=2417, 596.58884pt x 843.75223pt>
 File: ./Image/vp12.pdf Graphic file (type pdf)
  <use ./Image/vp12.pdf>
 Package pdftex.def Info: ./Image/vp12.pdf used on input line 63.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 64.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 64.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 65.
@@ -2571,19 +1908,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 65.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp21.pdf, id=2272, 596.58884pt x 843.75223pt>
+<./Image/vp21.pdf, id=2420, 596.58884pt x 843.75223pt>
 File: ./Image/vp21.pdf Graphic file (type pdf)
  <use ./Image/vp21.pdf>
 Package pdftex.def Info: ./Image/vp21.pdf used on input line 69.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 70.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 70.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 71.
@@ -2591,19 +1920,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 71.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp22.pdf, id=2273, 596.58884pt x 843.75223pt>
+<./Image/vp22.pdf, id=2423, 596.58884pt x 843.75223pt>
 File: ./Image/vp22.pdf Graphic file (type pdf)
  <use ./Image/vp22.pdf>
 Package pdftex.def Info: ./Image/vp22.pdf used on input line 75.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 76.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 76.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 77.
@@ -2611,19 +1932,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp31.pdf, id=2274, 596.58884pt x 843.75223pt>
+<./Image/vp31.pdf, id=2426, 596.58884pt x 843.75223pt>
 File: ./Image/vp31.pdf Graphic file (type pdf)
  <use ./Image/vp31.pdf>
 Package pdftex.def Info: ./Image/vp31.pdf used on input line 81.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 82.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 82.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 83.
@@ -2631,19 +1944,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 83.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp32.pdf, id=2275, 596.58884pt x 843.75223pt>
+<./Image/vp32.pdf, id=2429, 596.58884pt x 843.75223pt>
 File: ./Image/vp32.pdf Graphic file (type pdf)
  <use ./Image/vp32.pdf>
 Package pdftex.def Info: ./Image/vp32.pdf used on input line 87.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 88.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 88.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 89.
@@ -2651,19 +1956,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 89.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp41.pdf, id=2276, 596.58884pt x 843.75223pt>
+<./Image/vp41.pdf, id=2432, 596.58884pt x 843.75223pt>
 File: ./Image/vp41.pdf Graphic file (type pdf)
  <use ./Image/vp41.pdf>
 Package pdftex.def Info: ./Image/vp41.pdf used on input line 93.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 94.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 94.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 95.
@@ -2671,19 +1968,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 95.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp42.pdf, id=2277, 596.58884pt x 843.75223pt>
+<./Image/vp42.pdf, id=2435, 596.58884pt x 843.75223pt>
 File: ./Image/vp42.pdf Graphic file (type pdf)
  <use ./Image/vp42.pdf>
 Package pdftex.def Info: ./Image/vp42.pdf used on input line 99.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 100.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 100.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 101.
@@ -2691,19 +1980,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 101.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp51.pdf, id=2278, 596.58884pt x 843.75223pt>
+<./Image/vp51.pdf, id=2438, 596.58884pt x 843.75223pt>
 File: ./Image/vp51.pdf Graphic file (type pdf)
  <use ./Image/vp51.pdf>
 Package pdftex.def Info: ./Image/vp51.pdf used on input line 105.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 106.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 106.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 107.
@@ -2711,19 +1992,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 107.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp52.pdf, id=2279, 596.58884pt x 843.75223pt>
+<./Image/vp52.pdf, id=2441, 596.58884pt x 843.75223pt>
 File: ./Image/vp52.pdf Graphic file (type pdf)
  <use ./Image/vp52.pdf>
 Package pdftex.def Info: ./Image/vp52.pdf used on input line 111.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 112.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 112.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 113.
@@ -2731,19 +2004,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 113.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp61.pdf, id=2280, 596.58884pt x 843.75223pt>
+<./Image/vp61.pdf, id=2444, 596.58884pt x 843.75223pt>
 File: ./Image/vp61.pdf Graphic file (type pdf)
  <use ./Image/vp61.pdf>
 Package pdftex.def Info: ./Image/vp61.pdf used on input line 117.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 118.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 118.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 120.
@@ -2751,19 +2016,11 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 120.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/vp62.pdf, id=2281, 596.58884pt x 843.75223pt>
+<./Image/vp62.pdf, id=2447, 596.58884pt x 843.75223pt>
 File: ./Image/vp62.pdf Graphic file (type pdf)
  <use ./Image/vp62.pdf>
 Package pdftex.def Info: ./Image/vp62.pdf used on input line 124.
 (pdftex.def)             Requested size: 433.62001pt x 613.28185pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 125.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 125.
 
 
 LaTeX Warning: Float too large for page by 14.85184pt on input line 126.
@@ -2771,7 +2028,7 @@ LaTeX Warning: Float too large for page by 14.85184pt on input line 126.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/track1.pdf, id=2282, 597.23125pt x 845.1575pt>
+<./Image/track1.pdf, id=2450, 597.23125pt x 845.1575pt>
 File: ./Image/track1.pdf Graphic file (type pdf)
 
 <use ./Image/track1.pdf>
@@ -2779,33 +2036,22 @@ Package pdftex.def Info: ./Image/track1.pdf used on input line 129.
 (pdftex.def)             Requested size: 433.62001pt x 613.63268pt.
 
 
-Package natbib Warning: Citation `d181' on page 69 undefined on input line 130.
-
-
-
-Package natbib Warning: Citation `d181' on page 69 undefined on input line 130.
-
-
-
-LaTeX Warning: Float too large for page by 15.20267pt on input line 132.
+LaTeX Warning: Float too large for page by 27.20267pt on input line 132.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/track2.pdf, id=2283, 597.23125pt x 845.1575pt>
+<./Image/track2.pdf, id=2453, 597.23125pt x 845.1575pt>
 File: ./Image/track2.pdf Graphic file (type pdf)
 
 <use ./Image/track2.pdf>
 Package pdftex.def Info: ./Image/track2.pdf used on input line 136.
 (pdftex.def)             Requested size: 433.62001pt x 613.63268pt.
 
-
-Package natbib Warning: Citation `d181' on page 69 undefined on input line 137.
-
-
-
-Package natbib Warning: Citation `d181' on page 69 undefined on input line 137.
-
+Underfull \hbox (badness 1242) in paragraph at lines 137--137
+[]\OT1/cmr/m/n/10 Figure A.14: |Hor-i-zon-tal track ir-reg-u-lar-i-ties for sta
+n-dard pas-sen-ger trains. Ex-tract from
+ []
 
 
 LaTeX Warning: Float too large for page by 27.20267pt on input line 138.
@@ -2813,7 +2059,7 @@ LaTeX Warning: Float too large for page by 27.20267pt on input line 138.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/track3.pdf, id=2284, 597.23125pt x 845.1575pt>
+<./Image/track3.pdf, id=2456, 597.23125pt x 845.1575pt>
 File: ./Image/track3.pdf Graphic file (type pdf)
 
 <use ./Image/track3.pdf>
@@ -2821,34 +2067,10 @@ Package pdftex.def Info: ./Image/track3.pdf used on input line 142.
 (pdftex.def)             Requested size: 433.62001pt x 613.63268pt.
 
 
-Package natbib Warning: Citation `d181' on page 69 undefined on input line 143.
-
-
-
-Package natbib Warning: Citation `d181' on page 69 undefined on input line 143.
-
-
-
 LaTeX Warning: Float too large for page by 27.20267pt on input line 145.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 175.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 175.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 189.
-
-
-Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
- 189.
 
 [69
 
@@ -2858,22 +2080,14 @@ Package natbib Warning: Citation `d181dt329' on page 69 undefined on input line
 [79 <./Image/vp52.pdf>] [80 <./Image/vp61.pdf>] [81 <./Image/vp62.pdf>]
 [82 <./Image/track1.pdf>] [83 <./Image/track2.pdf>] [84 <./Image/track3.pdf>]
 Appendix B.
-<./Image/speedsafe.pdf, id=2718, 412.07883pt x 462.6613pt>
+<./Image/speedsafe.pdf, id=2896, 412.07883pt x 462.6613pt>
 File: ./Image/speedsafe.pdf Graphic file (type pdf)
 
 <use ./Image/speedsafe.pdf>
 Package pdftex.def Info: ./Image/speedsafe.pdf used on input line 197.
 (pdftex.def)             Requested size: 303.53267pt x 340.79675pt.
 
-
-Package natbib Warning: Citation `EC15528' on page 85 undefined on input line 1
-98.
-
-
-Package natbib Warning: Citation `EC15528' on page 85 undefined on input line 1
-98.
-
-<./Image/lateralloadcasesample.pdf, id=2719, 597.432pt x 845.31813pt>
+<./Image/lateralloadcasesample.pdf, id=2899, 597.432pt x 845.31813pt>
 File: ./Image/lateralloadcasesample.pdf Graphic file (type pdf)
 
 <use ./Image/lateralloadcasesample.pdf>
@@ -2881,34 +2095,23 @@ Package pdftex.def Info: ./Image/lateralloadcasesample.pdf used on input line 2
 04.
 (pdftex.def)             Requested size: 433.62001pt x 613.55582pt.
 
-
-Package natbib Warning: Citation `d181' on page 85 undefined on input line 205.
-
-
-
-Package natbib Warning: Citation `d181' on page 85 undefined on input line 205.
+Underfull \hbox (badness 2368) in paragraph at lines 205--205
+[]\OT1/cmr/m/n/10 Figure B.2: |LAT-ERAL WHEEL AND AXLE FORCES FOR BRIDGES. Ex-t
+ract from
+ []
 
 
-
-LaTeX Warning: Float too large for page by 15.12581pt on input line 207.
+LaTeX Warning: Float too large for page by 27.12581pt on input line 207.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Image/examplerunfile.pdf, id=2720, 843.75223pt x 596.58884pt>
+<./Image/examplerunfile.pdf, id=2902, 843.75223pt x 596.58884pt>
 File: ./Image/examplerunfile.pdf Graphic file (type pdf)
 
 <use ./Image/examplerunfile.pdf>
 Package pdftex.def Info: ./Image/examplerunfile.pdf used on input line 211.
 (pdftex.def)             Requested size: 433.62001pt x 306.5958pt.
-
-
-Package natbib Warning: Citation `d181dt329' on page 85 undefined on input line
- 212.
-
-
-Package natbib Warning: Citation `d181dt329' on page 85 undefined on input line
- 212.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2918,7 +2121,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  <./Image/speedsafe.pdf>] [86 <./Image/lateralloadcasesample.pdf>] [87 <./Image
 /examplerunfile.pdf>]
 Appendix C.
-<./Image/trainparameters.pdf, id=2828, 510.81027pt x 395.41486pt>
+<./Image/trainparameters.pdf, id=3012, 510.81027pt x 395.41486pt>
 File: ./Image/trainparameters.pdf Graphic file (type pdf)
 
 <use ./Image/trainparameters.pdf>
@@ -2926,23 +2129,7 @@ Package pdftex.def Info: ./Image/trainparameters.pdf used on input line 257.
 (pdftex.def)             Requested size: 346.89732pt x 268.54065pt.
 
 
-Package natbib Warning: Citation `EC15528' on page 88 undefined on input line 2
-58.
-
-
-Package natbib Warning: Citation `EC15528' on page 88 undefined on input line 2
-58.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `EC15528' on page 88 undefined on input line 2
-76.
-
-
-Package natbib Warning: Citation `EC15528' on page 88 undefined on input line 2
-76.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3021,19 +2208,23 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 [97
 
-]) [98]
-No file "first try".bbl.
+]) [98] (./first try.bbl
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+ [99
 
-Package natbib Warning: There were undefined citations.
 
+]) [100]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
-(./first try.aux (./titlepage.aux) (./introduction.aux) (./literature.aux)
-(./theoretical.aux) (./calculation.aux))
+ (./first try.aux (./titlepage.aux)
+(./introduction.aux) (./literature.aux) (./theoretical.aux) (./calculation.aux)
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `"first try".out' has not changed.
-(rerunfilecheck)             Checksum: 36F1B48CD438C0B5DFE6BF4D122DC379;10089.
+(rerunfilecheck)             Checksum: D6D06CB7409FB9872FCBD03FAC9FB746;10173.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3042,38 +2233,38 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 39686 strings out of 493117
- 922394 string characters out of 6135433
- 1680046 words of memory out of 5000000
- 41862 multiletter control sequences out of 15000+600000
- 12675 words of font info for 46 fonts, out of 8000000 for 9000
+ 39640 strings out of 493117
+ 921224 string characters out of 6135433
+ 1680309 words of memory out of 5000000
+ 41788 multiletter control sequences out of 15000+600000
+ 12367 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,102p,37442b,2221s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,19n,102p,37442b,2220s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "first try.pdf" (100 pages, 16584711 bytes).
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "first try.pdf" (102 pages, 16723559 bytes).
 PDF statistics:
- 3288 PDF objects out of 3580 (max. 8388607)
- 2738 compressed objects within 28 object streams
- 614 named destinations out of 1000 (max. 500000)
- 1222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3489 PDF objects out of 3580 (max. 8388607)
+ 2897 compressed objects within 29 object streams
+ 641 named destinations out of 1000 (max. 500000)
+ 1230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
